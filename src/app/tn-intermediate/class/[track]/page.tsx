@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { BookOpenText, Mic2, PenLine, Headphones, ArrowRight, ArrowLeft } from 'lucide-react';
+import { BookOpenText, Mic2, PenLine, Headphones, ArrowLeft } from 'lucide-react';
 import { getTnIntermediateLessonsByTrack, tnIntermediateTracks } from '@/data/tnIntermediateModules';
 import type { ModuleTrack } from '@/types/module';
+import LessonDayCard from '@/components/LessonDayCard';
 
 interface PageProps {
   params: Promise<{ track: string }>;
@@ -69,20 +70,11 @@ export default async function TrackPage({ params }: PageProps) {
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {lessons.map((lesson) => (
-            <Link
+            <LessonDayCard
               key={lesson.id}
+              lesson={lesson}
               href={`/tn-intermediate/class/${lesson.track}/${lesson.day}`}
-              className="group border border-(--border) hover:border-primary/40 hover:bg-(--hover) rounded-xl p-4 transition-colors"
-            >
-              <p className="text-xs text-primary font-semibold mb-1">Day {lesson.day}</p>
-              <p className="text-sm font-medium text-(--text) group-hover:text-primary transition-colors leading-snug">
-                {lesson.title}
-              </p>
-              <p className="text-xs text-(--text-muted) mt-1.5 line-clamp-2">{lesson.subtitle}</p>
-              <span className="mt-3 inline-flex items-center gap-1 text-xs text-primary">
-                Buka <ArrowRight className="w-3 h-3" />
-              </span>
-            </Link>
+            />
           ))}
         </div>
       )}

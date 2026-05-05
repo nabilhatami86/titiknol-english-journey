@@ -2811,6 +2811,276 @@ const readingLessons: ModuleLesson[] = [
     ],
   },
 
+  // ── Mid-Test Reading Intermediate ────────────────────────────────────────────
+  {
+    id: "int-reading-midtest",
+    track: "reading",
+    day: 10.5,
+    tutor: "Ms. Siska",
+    title: "Mid-Test Reading Intermediate",
+    subtitle: "Secrets of a Happy Brain — Penilaian Tengah Program",
+    overview:
+      "Mid-Test Reading Intermediate. Bacalah teks 'Secrets of a Happy Brain' dengan seksama, lalu jawab 10 soal Multiple Choice dan 10 soal Vocabulary Matching.",
+    passage: [
+      "The human brain remembers negative experiences more easily than positive ones. Our brains have developed this way because threats, like dangerous animals, had a more immediate effect on our ancestors' survival compared to positive things like food or shelter. As a result, you likely know what makes you unhappy, but do you know what makes you happy?",
+      "(Otak manusia lebih mudah mengingat pengalaman negatif daripada yang positif. Otak kita berkembang seperti ini karena ancaman, seperti hewan berbahaya, memiliki dampak yang lebih langsung terhadap kelangsungan hidup nenek moyang kita dibandingkan hal-hal positif seperti makanan atau tempat berlindung. Hasilnya, kamu mungkin tahu apa yang membuatmu tidak bahagia — tapi tahukah kamu apa yang membuatmu bahagia?)",
+      "Research suggest that our level of happiness depends partly on factors we cannot control – our genes and our life circumstances. But our level of happiness is also shaped by the choices we make. If you've been chasing wealth, fame, good looks, material things, and power, you may be looking for happiness in all the wrong places. Psychologists suggest that the following seven habits make people happier.",
+      "(Penelitian menunjukkan bahwa tingkat kebahagiaan kita sebagian bergantung pada faktor-faktor yang tidak dapat kita kendalikan — gen kita dan keadaan hidup kita. Namun tingkat kebahagiaan kita juga dibentuk oleh pilihan-pilihan yang kita buat. Psikolog menyarankan bahwa tujuh kebiasaan berikut membuat orang lebih bahagia.)",
+      "People who form close relationships tend to be happier than those who do not. The number of friends we have is not important. What matters is the quality of our relationship. Relationship that bring happiness usually involve the sharing of feeling, mutual respect, acceptance, trust, fun, and empathy.",
+      "(Orang yang membentuk hubungan dekat cenderung lebih bahagia. Yang penting adalah kualitas hubungan kita. Hubungan yang membawa kebahagiaan biasanya melibatkan berbagi perasaan, saling menghormati, penerimaan, kepercayaan, kesenangan, dan empati.)",
+      "People who make a habit of caring for the wellbeing of others tend to be happier. This might involve volunteering for an organization or reaching out to support friends and family on a regular basis.",
+      "(Orang yang membiasakan diri peduli terhadap kesejahteraan orang lain cenderung lebih bahagia. Ini mungkin melibatkan sukarela untuk sebuah organisasi atau menghubungi teman dan keluarga secara rutin.)",
+      "People who exercise regularly improve both their physical and mental well-being. Some research has shown that exercise can be as effective as medication in treating depression.",
+      "(Orang yang berolahraga secara teratur meningkatkan kesejahteraan fisik dan mental mereka. Beberapa penelitian menunjukkan bahwa olahraga bisa seefektif obat dalam mengatasi depresi.)",
+      "When we are so interested in an activity we enjoy that we lose track of time, we are in a state of flow. The activity could be making art, playing piano, surfing, or playing a game. People who experience flow in their work or hobbies tend to be happier.",
+      "(Ketika kita sangat tertarik pada suatu aktivitas sehingga kita lupa waktu, kita berada dalam kondisi 'flow'. Aktivitasnya bisa berupa membuat seni, bermain piano, selancar, atau bermain game. Orang yang mengalami flow cenderung lebih bahagia.)",
+      "People who include spirituality in their daily life tend to be happier. Practicing spirituality is a way of recognizing and trying to understand the wonder and beauty of existence. Some people do this by going to a place of worship or praying. Some people practice yoga or meditation. Some people go for long walks in nature.",
+      "(Orang yang memasukkan spiritualitas dalam kehidupan sehari-hari cenderung lebih bahagia. Mempraktikkan spiritualitas adalah cara untuk mengenali dan memahami keajaiban dan keindahan keberadaan. Beberapa orang pergi ke tempat ibadah atau berdoa, berlatih yoga atau meditasi, atau berjalan panjang di alam.)",
+      "People are more likely to be happy if they know what their strengths are and use them regularly. People who set goals and use their strength to achieve them tend to be happier. People are especially happy when they can use their strengths to serve the greater good.",
+      "(Orang lebih mungkin bahagia jika mereka tahu kekuatan mereka dan menggunakannya secara teratur. Orang yang menetapkan tujuan dan menggunakannya untuk mencapainya cenderung lebih bahagia, terutama ketika kekuatan itu digunakan untuk melayani kebaikan yang lebih besar.)",
+      "People who think positively by being grateful, mindful, and optimistic are more likely to be happy. Being grateful means being thankful. Being mindful means being open to, focusing on, and enjoying the experience of the present moment. Being optimistic means being hopeful about the future.",
+      "(Orang yang berpikir positif dengan bersyukur, mindful, dan optimis lebih mungkin bahagia. Bersyukur = berterima kasih. Mindful = fokus dan menikmati pengalaman saat ini. Optimis = penuh harapan tentang masa depan.)",
+    ],
+    materialSections: [
+      {
+        title: "7 Kebiasaan Orang Bahagia",
+        points: [
+          "1. Bentuk hubungan dekat yang berkualitas — empati, kepercayaan, saling menghormati",
+          "2. Peduli kesejahteraan orang lain — sukarela, mendukung teman & keluarga",
+          "3. Olahraga rutin — meningkatkan kesehatan fisik & mental; seefektif obat depresi",
+          "4. Alami 'flow' — begitu asyik dengan aktivitas hingga lupa waktu",
+          "5. Masukkan spiritualitas — ibadah, doa, yoga, meditasi, jalan di alam",
+          "6. Kenali & gunakan kekuatanmu — tetapkan tujuan, layani kebaikan lebih besar",
+          "7. Berpikir positif — bersyukur (thankful), mindful (present), optimis (hopeful)",
+        ],
+      },
+      {
+        title: "Key Vocabulary",
+        points: [
+          "immediate (adj) — langsung/segera | 'a more immediate effect on our ancestors' survival'",
+          "circumstances (n) — keadaan/kondisi | 'our genes and our life circumstances'",
+          "ancestors (n) — nenek moyang | 'our ancestors' survival'",
+          "psychologist (n) — psikolog | 'Psychologists suggest that the following seven habits'",
+          "empathy (n) — empati | 'mutual respect, acceptance, trust, fun, and empathy'",
+          "effective (adj) — efektif | 'exercise can be as effective as medication'",
+          "spirituality (n) — spiritualitas | 'include spirituality in their daily life'",
+          "meditation (n) — meditasi | 'Some people practice yoga or meditation'",
+          "shelter (n) — tempat berlindung | 'positive things like food or shelter'",
+          "optimistic (adj) — optimis | 'Being optimistic means being hopeful about the future'",
+        ],
+      },
+    ],
+    exercises: [
+      {
+        id: "int-rmt-mc1",
+        type: "multiple-choice",
+        question: "Things we cannot control that affect our level of happiness are ......",
+        options: [
+          "A. Our genes",
+          "B. The number and quality of relationship we have",
+          "C. The number of volunteer positions we have",
+        ],
+        correctAnswer: "A",
+        reason:
+          "A — Teks: 'factors we cannot control – our genes and our life circumstances.' Genes tidak bisa dikendalikan.",
+      },
+      {
+        id: "int-rmt-mc2",
+        type: "multiple-choice",
+        question: "What is part of thinking positively?",
+        options: [
+          "A. Feeling bad about decisions we have made",
+          "B. Wishing that we could change the past",
+          "C. Appreciating what we have",
+        ],
+        correctAnswer: "C",
+        reason:
+          "C — Teks: 'Being grateful means being thankful' dan 'Being mindful means being open to, focusing on, and enjoying the experience of the present moment.' — menghargai apa yang kita miliki = bersyukur.",
+      },
+      {
+        id: "int-rmt-mc3",
+        type: "multiple-choice",
+        question: "Why doesn't the brain remember positive experiences as much as negative ones?",
+        options: [
+          "A. Our ancestors didn't understand what made them happy",
+          "B. Positive experiences like having food and shelter were necessary for the survival of our ancestors",
+          "C. Positive experiences were not as important for the survival of our ancestors as negative ones",
+        ],
+        correctAnswer: "C",
+        reason:
+          "C — Teks: 'threats had a more immediate effect on our ancestors' survival compared to positive things like food or shelter.' — ancaman lebih penting untuk kelangsungan hidup.",
+      },
+      {
+        id: "int-rmt-mc4",
+        type: "multiple-choice",
+        question: "According to the reading, people are in a state of flow when ......",
+        options: [
+          "A. We feel the need to help others",
+          "B. Time seems to pass very quickly",
+          "C. People include spirituality in their daily lives",
+        ],
+        correctAnswer: "B",
+        reason:
+          "B — Teks: 'we lose track of time, we are in a state of flow' — lupa waktu = waktu terasa berlalu sangat cepat.",
+      },
+      {
+        id: "int-rmt-mc5",
+        type: "multiple-choice",
+        question: "How does the author explain spirituality?",
+        options: [
+          "A. It is a way of recognizing the need to protect and preserve the beauty of nature",
+          "B. It is a way of making new friends",
+          "C. It is a way of recognizing and trying to understand the wonder and beauty of life",
+        ],
+        correctAnswer: "C",
+        reason:
+          "C — Teks: 'Practicing spirituality is a way of recognizing and trying to understand the wonder and beauty of existence.'",
+      },
+      {
+        id: "int-rmt-mc6",
+        type: "multiple-choice",
+        question: "What is not mentioned in the reading as being part of a quality relationship?",
+        options: [
+          "A. Mutual respect",
+          "B. Enthusiasm",
+          "C. Sharing of feelings",
+        ],
+        correctAnswer: "B",
+        reason:
+          "B — Teks menyebutkan: 'sharing of feeling, mutual respect, acceptance, trust, fun, and empathy' — 'enthusiasm' tidak disebutkan sama sekali.",
+      },
+      {
+        id: "int-rmt-mc7",
+        type: "multiple-choice",
+        question: "What would the author think is not a way of caring for the well-being of others?",
+        options: [
+          "A. Practicing yoga or meditation",
+          "B. Giving advice to a friend who has marriage problems",
+          "C. Volunteering at a home for old people",
+        ],
+        correctAnswer: "A",
+        reason:
+          "A — Yoga/meditasi disebutkan dalam konteks SPIRITUALITAS, bukan caring for others. Caring for others = 'volunteering for an organization or reaching out to support friends and family.'",
+      },
+      {
+        id: "int-rmt-mc8",
+        type: "multiple-choice",
+        question: "The writer probably believes that .......... can help someone experiencing depression.",
+        options: [
+          "A. Learning to play the piano or guitar",
+          "B. Learning to make art",
+          "C. Starting an exercise program",
+        ],
+        correctAnswer: "C",
+        reason:
+          "C — Teks: 'exercise can be as effective as medication in treating depression.'",
+      },
+      {
+        id: "int-rmt-mc9",
+        type: "multiple-choice",
+        question: "What is not part of being mindful?",
+        options: [
+          "A. Enjoying the memory of a past experience",
+          "B. Focusing in this moment",
+          "C. Taking pleasure in what you are doing at this time",
+        ],
+        correctAnswer: "A",
+        reason:
+          "A — Teks: 'Being mindful means being open to, focusing on, and enjoying the experience of the present moment.' — mindfulness = SAAT INI, bukan masa lalu.",
+      },
+      {
+        id: "int-rmt-mc10",
+        type: "multiple-choice",
+        question: "What is not given as a way people can include spirituality in their daily lives?",
+        options: [
+          "A. Going to a place of worship",
+          "B. Taking long walks in nature",
+          "C. Getting regular exercise",
+        ],
+        correctAnswer: "C",
+        reason:
+          "C — Teks menyebutkan ibadah, yoga/meditasi, jalan di alam sebagai bentuk spiritualitas. Getting regular exercise disebutkan untuk WELLBEING, bukan spiritualitas.",
+      },
+      {
+        id: "int-rmt-vocab0",
+        type: "task",
+        section: "final",
+        question:
+          "Find these words in the text. Use the context to choose the best meaning.\n\nWord bank: circumstances · psychologist · negative · positive · empathy · immediate · ancestor · effective · shelter · meditation\n\n1. A building that covers and protects people or things is called a _______.\n2. A person who was in someone's family in past times is called an _______.\n3. A scientist who studies and treats the mind is called a _______.\n4. _______ means good or useful.\n5. _______ means happening or done without delay.\n6. _______ means harmful or bad.\n7. Something is _______ if it produces the result that is wanted.\n8. _______ is the ability to understand someone's feelings.\n9. _______ is the act of spending time in quiet thought.\n10. _______ are the conditions in which someone lives.",
+      },
+      {
+        id: "int-rmt-vocab1",
+        type: "short-answer",
+        section: "final",
+        question: "(1) A building that covers and protects people or things is called a _______.",
+        sampleAnswer: "shelter",
+      },
+      {
+        id: "int-rmt-vocab2",
+        type: "short-answer",
+        section: "final",
+        question: "(2) A person who was in someone's family in past times is called an _______.",
+        sampleAnswer: "ancestor",
+      },
+      {
+        id: "int-rmt-vocab3",
+        type: "short-answer",
+        section: "final",
+        question: "(3) A scientist who studies and treats the mind is called a _______.",
+        sampleAnswer: "psychologist",
+      },
+      {
+        id: "int-rmt-vocab4",
+        type: "short-answer",
+        section: "final",
+        question: "(4) _______ means good or useful.",
+        sampleAnswer: "positive",
+      },
+      {
+        id: "int-rmt-vocab5",
+        type: "short-answer",
+        section: "final",
+        question: "(5) _______ means happening or done without delay.",
+        sampleAnswer: "immediate",
+      },
+      {
+        id: "int-rmt-vocab6",
+        type: "short-answer",
+        section: "final",
+        question: "(6) _______ means harmful or bad.",
+        sampleAnswer: "negative",
+      },
+      {
+        id: "int-rmt-vocab7",
+        type: "short-answer",
+        section: "final",
+        question: "(7) Something is _______ if it produces the result that is wanted.",
+        sampleAnswer: "effective",
+      },
+      {
+        id: "int-rmt-vocab8",
+        type: "short-answer",
+        section: "final",
+        question: "(8) _______ is the ability to understand someone's feelings.",
+        sampleAnswer: "empathy",
+      },
+      {
+        id: "int-rmt-vocab9",
+        type: "short-answer",
+        section: "final",
+        question: "(9) _______ is the act of spending time in quiet thought.",
+        sampleAnswer: "meditation",
+      },
+      {
+        id: "int-rmt-vocab10",
+        type: "short-answer",
+        section: "final",
+        question: "(10) _______ are the conditions in which someone lives.",
+        sampleAnswer: "circumstances",
+      },
+    ],
+  },
+
   // ── Day 11: Human Body Parts and Organs ─────────────────────────────────────
   {
     id: "int-reading-11",
@@ -4015,12 +4285,16 @@ const readingLessons: ModuleLesson[] = [
     passage: [
       "Everybody loves a good wedding and I'm no exception. I've been to a load of them in my native Britain and I must say that I usually have a great time. I've also been to a few abroad, including the Caribbean and Spain, and most recently (last week in fact) to one in the mountains of Sardinia. No two weddings are ever the same and I really enjoyed this one for one or two of the differences from those in the UK.",
       "(Semua orang menyukai pernikahan yang baik dan saya pun tidak terkecuali. Saya telah menghadiri banyak pernikahan di negara asal saya, Inggris, dan saya harus mengakui bahwa saya biasanya senang. Saya juga pernah menghadiri beberapa di luar negeri, termasuk Karibia dan Spanyol, dan yang paling baru di pegunungan Sardinia. Tidak ada dua pernikahan yang pernah sama dan saya benar-benar menikmati yang ini karena satu atau dua perbedaan dari yang ada di Inggris.)",
-      "First, the two families spent at least three weeks before the big day preparing all the food, from wonderful home-made delicacies to simple traditional breads and pastas. In my experience, in the UK that onerous task is left to the caterers! In the week leading up to the wedding there is a dinner or some form of celebration every day. This particular ceremony was in a beautiful country church and afterwards the couple was driven to the reception in a wonderfully decorated classic Fiat 500 — really similar to what happens in the UK, even down to the string of tin cans trailing behind the car!",
-      "(Pertama, kedua keluarga menghabiskan setidaknya tiga minggu sebelum hari besar untuk mempersiapkan semua makanan, dari hidangan lezat buatan rumah yang luar biasa hingga roti dan pasta tradisional sederhana. Dalam pengalaman saya, di Inggris tugas berat itu diserahkan kepada katering! Dalam seminggu menjelang pernikahan ada makan malam atau semacam perayaan setiap hari. Upacara diadakan di gereja pedesaan yang indah dan setelahnya pasangan tersebut dibawa ke resepsi dengan Fiat 500 klasik yang didekorasi indah.)",
-      "The reception itself was also very similar until I realized that the seven tables in the hall each sat sixty guests (that's four hundred and twenty), an average number for Sardinia but would be considered a very large wedding where I'm from. The wine flowed, as did the chatter — the famous Italian exuberance showing itself to the full. There were the five or six courses of wonderful food, screaming kids running wild, the ceremonial cutting of the cake by the bride and groom — but no speeches! Not one. In the UK it's traditional for the father of the bride to propose a toast, followed by the groom and finishing with the best man.",
-      "(Resepsinya sendiri juga sangat mirip sampai saya menyadari bahwa tujuh meja di aula masing-masing menampung enam puluh tamu (empat ratus dua puluh orang), jumlah rata-rata untuk Sardinia tetapi dianggap sebagai pernikahan yang sangat besar di tempat asal saya. Wine mengalir, begitu pula obrolan — semangat Italia yang terkenal menampakkan diri sepenuhnya. Ada lima atau enam hidangan makanan yang luar biasa, pemotongan kue secara seremonial oleh pengantin — tetapi tidak ada pidato! Tidak satu pun.)",
-      "Instead there was a delightful custom which I'd never seen before, in which six or seven of the male guests pass round the hall banging trays, drums, pots, pans or basically anything that makes a horrendous noise, selling pieces of the groom's tie which has been cut into tiny bits. The money raised is then given to the happy couple to help them set up their new life together. Finally the evening saw a lot of traditional dancing, a little disco dancing and some karaoke. Can't wait for the next one.",
-      "(Sebaliknya ada kebiasaan yang menyenangkan yang belum pernah saya lihat sebelumnya — enam atau tujuh tamu pria berkeliling aula memukul nampan, drum, panci, atau apa pun yang mengeluarkan suara keras, menjual potongan dasi pengantin pria yang telah dipotong menjadi potongan-potongan kecil. Uang yang terkumpul kemudian diberikan kepada pasangan bahagia untuk membantu mereka memulai kehidupan baru bersama. Akhirnya malam itu dipenuhi banyak tarian tradisional, sedikit dansa disko, dan karaoke.)",
+      "First, the two families spent at least three weeks before the big day preparing all the food, from wonderful home-made delicacies to simple traditional breads and pastas. In my experience, in the UK that onerous task is left to the caterers! In the week leading up to the wedding there is a dinner or some form of celebration every day – training for the stomach I guess. I know that we have the traditional Bachelor party and Bachelorette party, but this is more family orientated and certainly a little less rowdy. This particular ceremony was in a beautiful country church and afterwards the couple was driven to the reception in a wonderfully decorated classic Fiat 500, which was really similar to what happens in the UK, even down to the string of tin cans trailing behind the car!",
+      "(Pertama, kedua keluarga menghabiskan setidaknya tiga minggu sebelum hari besar untuk mempersiapkan semua makanan, dari hidangan lezat buatan rumah yang luar biasa hingga roti dan pasta tradisional sederhana. Dalam pengalaman saya, di Inggris tugas berat itu diserahkan kepada katering! Dalam seminggu menjelang pernikahan ada makan malam atau semacam perayaan setiap hari — latihan untuk perut, saya rasa. Saya tahu kita punya tradisi pesta bujang, tetapi yang ini lebih berorientasi pada keluarga dan tentu saja sedikit lebih tenang. Upacara diadakan di gereja pedesaan yang indah dan setelahnya pasangan tersebut dibawa ke resepsi dengan Fiat 500 klasik yang didekorasi indah, sangat mirip dengan apa yang terjadi di Inggris, bahkan sampai pada rangkaian kaleng timah yang berderak di belakang mobil!)",
+      "The reception itself was also very similar until I realized that the seven tables in the hall each sat sixty guests (that's four hundred and twenty, for those of you who didn't study Math), an average number for Sardinia but would be considered a very large wedding where I'm from.",
+      "(Resepsinya sendiri juga sangat mirip sampai saya menyadari bahwa tujuh meja di aula masing-masing menampung enam puluh tamu (empat ratus dua puluh orang, bagi Anda yang tidak belajar Matematika), jumlah rata-rata untuk Sardinia tetapi dianggap sebagai pernikahan yang sangat besar di tempat asal saya.)",
+      "The wine flowed, as did the chatter – the famous Italian exuberance showing itself to the full. There were five or six courses of wonderful food, screaming kids running wild, the ceremonial cutting of the cake by the bride and groom – but no speeches! Not one. In the UK it's traditional for the father of the bride to propose a toast, followed by the groom and finishing up with that of the best man. His is meant to be the highlight of the lunch or dinner, generally having a good laugh at the groom's expense, but here the groom was spared that particular discomfort.",
+      "(Wine mengalir, begitu pula obrolan — semangat Italia yang terkenal menampakkan diri sepenuhnya. Ada lima atau enam hidangan makanan yang luar biasa, anak-anak berlarian dengan ribut, pemotongan kue secara seremonial oleh pengantin — tetapi tidak ada pidato! Tidak satu pun. Di Inggris sudah menjadi tradisi bagi ayah pengantin wanita untuk mengusulkan toast, diikuti oleh pengantin pria dan diakhiri oleh best man. Pidatonya dimaksudkan menjadi bagian paling meriah, biasanya dengan bergurau tentang pengantin pria, tetapi di sini pengantin pria terhindar dari ketidaknyamanan itu.)",
+      "Instead there was a delightful custom which I'd never seen before, in which six or seven of the male guests pass round the hall banging trays, drums, pots, pans or basically anything that makes a horrendous noise, selling pieces of the groom's tie which has been cut into tiny bits. The money raised is then given to the happy couple to help them set up their new life together. Really nice.",
+      "(Sebaliknya ada kebiasaan yang menyenangkan yang belum pernah saya lihat sebelumnya — enam atau tujuh tamu pria berkeliling aula memukul nampan, drum, panci, atau apa pun yang mengeluarkan suara keras, menjual potongan dasi pengantin pria yang telah dipotong menjadi potongan-potongan kecil. Uang yang terkumpul kemudian diberikan kepada pasangan bahagia untuk membantu mereka memulai kehidupan baru bersama. Sungguh menyenangkan.)",
+      "Finally the evening saw a lot of traditional dancing, a little disco dancing and some karaoke. Pretty much the part I like best, and again I wasn't disappointed. Can't wait for the next one.",
+      "(Akhirnya malam itu dipenuhi banyak tarian tradisional, sedikit dansa disko, dan karaoke. Inilah bagian yang paling saya sukai, dan sekali lagi saya tidak kecewa. Tidak sabar menunggu yang berikutnya.)",
     ],
     materialSections: [
       {
@@ -4050,6 +4324,48 @@ const readingLessons: ModuleLesson[] = [
       },
     ],
     exercises: [
+      {
+        id: "int-r18-mh0",
+        type: "task",
+        question:
+          "A. Matching Heading — Choose the correct heading (i–viii) for each paragraph in the passage below.\n\ni. A surprising absence of a common UK custom.\nii. A lively atmosphere during the celebration.\niii. The writer's general experience of weddings.\niv. A unique way the guests contribute before the wedding.\nv. Problems and challenges during the wedding.\nvi. A wedding tradition that benefits the newlyweds.\nvii. A ceremony that feels familiar to the writer.\nviii. A comparison of wedding sizes.",
+      },
+      {
+        id: "int-r18-mh1",
+        type: "short-answer",
+        question: "Paragraph 1 ___",
+        sampleAnswer: "iii — The writer's general experience of weddings. (Paragraf 1 memperkenalkan penulis sebagai orang yang sering menghadiri pernikahan di berbagai negara.)",
+      },
+      {
+        id: "int-r18-mh2",
+        type: "short-answer",
+        question: "Paragraph 2 ___",
+        sampleAnswer: "vii — A ceremony that feels familiar to the writer. (Paragraf 2 menyebutkan 'really similar to what happens in the UK, even down to the string of tin cans' — upacara terasa akrab bagi penulis.)",
+      },
+      {
+        id: "int-r18-mh3",
+        type: "short-answer",
+        question: "Paragraph 3 ___",
+        sampleAnswer: "viii — A comparison of wedding sizes. (Paragraf 3 membandingkan jumlah tamu: 420 orang di Sardinia vs. yang jauh lebih kecil di Inggris.)",
+      },
+      {
+        id: "int-r18-mh4",
+        type: "short-answer",
+        question: "Paragraph 4 ___",
+        sampleAnswer: "i — A surprising absence of a common UK custom. (Paragraf 4: 'but no speeches! Not one.' — tidak ada pidato yang merupakan tradisi umum di Inggris.)",
+      },
+      {
+        id: "int-r18-mh5",
+        type: "short-answer",
+        question: "Paragraph 5 ___",
+        sampleAnswer: "vi — A wedding tradition that benefits the newlyweds. (Paragraf 5: uang hasil penjualan potongan dasi diberikan kepada pasangan untuk memulai kehidupan baru.)",
+      },
+      {
+        id: "int-r18-mh6",
+        type: "short-answer",
+        question: "Paragraph 6 ___",
+        sampleAnswer: "ii — A lively atmosphere during the celebration. (Paragraf 6 menggambarkan tarian tradisional, disko, dan karaoke — suasana yang meriah.)",
+      },
       {
         id: "int-r18-tf1",
         type: "true-false-not-given",
@@ -4156,14 +4472,14 @@ const readingLessons: ModuleLesson[] = [
     passage: [
       "Stephen William Hawking was an English theoretical physicist, cosmologist, author, and director of research at the Centre for Theoretical Cosmology at the University of Cambridge. Hawking was born on January 8, 1942. At an early age, he showed an interest in science and technology. Although known at school as 'Einstein', Hawking was not initially successful academically. With time, he began to show considerable aptitude for scientific subjects and decided to read mathematics at university. Hawking's father advised him to study medicine, concerned that there were few jobs for mathematics graduates.",
       "(Stephen William Hawking adalah fisikawan teoretis, kosmolog, penulis, dan direktur penelitian di Pusat Kosmologi Teoretis di Universitas Cambridge, Inggris. Hawking lahir pada 8 Januari 1942. Sejak usia dini, ia menunjukkan minat pada sains dan teknologi. Meskipun dikenal di sekolah sebagai 'Einstein', Hawking pada awalnya tidak berhasil secara akademis. Seiring waktu, ia mulai menunjukkan bakat yang cukup besar untuk mata pelajaran sains dan memutuskan untuk belajar matematika di universitas. Ayah Hawking menyarankannya untuk belajar kedokteran, khawatir bahwa ada sedikit pekerjaan untuk lulusan matematika.)",
-      "At university, Hawking was diagnosed with motor neurone disease (also known as amyotrophic lateral sclerosis 'ALS' or Lou Gehrig's disease.) He fell into a depression — though his doctors advised that he continue with his studies, he felt there was little point. His disease progressed more slowly than doctors had predicted. Although Hawking had difficulty walking unsupported, and his speech was almost unintelligible, an initial diagnosis that he had only two years to live proved unfounded. With his Doctoral advisor's encouragement, he returned to his work. Hawking started developing a reputation for brilliance and brashness when he publicly challenged the work of the noted Yorkshire astronomer, Fred Hoyle, at a lecture in June 1964.",
-      "(Di universitas, Hawking didiagnosis dengan penyakit neuron motorik (juga dikenal sebagai amyotrophic lateral sclerosis 'ALS' atau penyakit Lou Gehrig). Ia jatuh ke dalam depresi — meskipun dokternya menyarankannya untuk melanjutkan studinya, ia merasa tidak ada gunanya. Penyakitnya berkembang lebih lambat dari yang diprediksi dokter. Meskipun Hawking kesulitan berjalan tanpa bantuan dan bicaranya hampir tidak dapat dipahami, diagnosis awal bahwa ia hanya punya dua tahun untuk hidup terbukti tidak benar. Dengan dorongan pembimbing doktoralnya, ia kembali ke pekerjaannya.)",
-      "His scientific work included research on the origins and structure of the universe, from the Big Bang to black holes. He revolutionized the field by being the first to set out a theory of cosmology explained by a union of the general theory of relativity and quantum mechanics. He was a vigorous supporter of the many-worlds interpretation of quantum mechanics.",
-      "(Karya ilmiahnya mencakup penelitian tentang asal-usul dan struktur alam semesta, dari Big Bang hingga lubang hitam. Ia merevolusi bidang ini dengan menjadi yang pertama memaparkan teori kosmologi yang dijelaskan oleh perpaduan teori relativitas umum dan mekanika kuantum. Ia adalah pendukung kuat interpretasi banyak-dunia dari mekanika kuantum.)",
-      "Hawking was a fellow of the Royal Society (FRS), a lifetime member of the Pontifical Academy of Sciences, and a recipient of the Presidential Medal of Freedom, the highest civilian award in the United States. In 2002, Hawking was ranked number 25 in the BBC's poll of the 100 Greatest Britons. He was the Lucasian Professor of Mathematics at the University of Cambridge between 1979 and 2009. His book A Brief History of Time appeared on the British Sunday Times best-seller list for a record-breaking 237 weeks.",
-      "(Hawking adalah anggota Royal Society (FRS), anggota seumur hidup Akademi Sains Kepausan, dan penerima Medali Kebebasan Presiden, penghargaan sipil tertinggi di Amerika Serikat. Pada 2002, Hawking menempati peringkat 25 dalam jajak pendapat BBC tentang 100 Orang Inggris Terhebat. Ia adalah Profesor Matematika Lucasian di Universitas Cambridge antara 1979 dan 2009. Bukunya A Brief History of Time muncul dalam daftar bestseller Sunday Times Inggris selama 237 minggu — rekor yang memecahkan catatan sebelumnya.)",
-      "Hawking's illness gradually paralyzed him over the decades. However, even after the loss of his speech, he was still able to communicate through a speech-generating device, initially through the use of a hand-held switch, and eventually by using a single cheek muscle. He died on 14 March 2018 at the age of 76.",
-      "(Penyakit Hawking secara bertahap melumpuhkannya selama beberapa dekade. Namun, bahkan setelah kehilangan kemampuan bicaranya, ia masih bisa berkomunikasi melalui perangkat penghasil ucapan, awalnya menggunakan sakelar genggam, dan akhirnya dengan menggunakan satu otot pipi. Ia meninggal pada 14 Maret 2018 pada usia 76 tahun.)",
+      "Hawking Disease — At university, Hawking was diagnosed with motor neurone disease (also known as amyotrophic lateral sclerosis 'ALS' or Lou Gehrig's disease). He fell into a depression – though his doctors advised that he continue with his studies, he felt there was little point. His disease progressed more slowly than doctors had predicted. Although Hawking had difficulty walking unsupported, and his speech was almost unintelligible, an initial diagnosis that he had only two years to live proved unfounded. With his Doctoral advisor's encouragement, he returned to his work. Hawking started developing a reputation for brilliance and brashness when he publicly challenged the work of the noted Yorkshire astronomer, Fred Hoyle, and his student Jayant Narlikar at a lecture in June 1964.",
+      "(Penyakit Hawking — Di universitas, Hawking didiagnosis dengan penyakit neuron motorik (juga dikenal sebagai amyotrophic lateral sclerosis 'ALS' atau penyakit Lou Gehrig). Ia jatuh ke dalam depresi — meskipun dokternya menyarankannya untuk melanjutkan studinya, ia merasa tidak ada gunanya. Penyakitnya berkembang lebih lambat dari yang diprediksi dokter. Meskipun Hawking kesulitan berjalan tanpa bantuan dan bicaranya hampir tidak dapat dipahami, diagnosis awal bahwa ia hanya punya dua tahun untuk hidup terbukti tidak benar. Dengan dorongan pembimbing doktoralnya, ia kembali ke pekerjaannya. Hawking mulai mengembangkan reputasi untuk kebrilianan dan keberanian ketika ia secara terbuka menantang karya Fred Hoyle dan muridnya Jayant Narlikar pada kuliah Juni 1964.)",
+      "Hawking's Work — His scientific work included research on the origins and structure of the universe, from the Big Bang to black holes. He revolutionized the field by being the first to set out a theory of cosmology explained by a union of the general theory of relativity and quantum mechanics. He was a vigorous supporter of the many-worlds interpretation of quantum mechanics.",
+      "(Karya Hawking — Karya ilmiahnya mencakup penelitian tentang asal-usul dan struktur alam semesta, dari Big Bang hingga lubang hitam. Ia merevolusi bidang ini dengan menjadi yang pertama memaparkan teori kosmologi yang dijelaskan oleh perpaduan teori relativitas umum dan mekanika kuantum. Ia adalah pendukung kuat interpretasi banyak-dunia dari mekanika kuantum.)",
+      "Success — Hawking was a fellow of the Royal Society (FRS), a lifetime member of the Pontifical Academy of Sciences, and a recipient of the Presidential Medal of Freedom, the highest civilian award in the United States. In 2002, Hawking was ranked number 25 in the BBC's poll of the 100 Greatest Britons. He was the Lucasian Professor of Mathematics at the University of Cambridge between 1979 and 2009 and achieved commercial success with works of popular science in which he discusses his own theories and cosmology in general. His book A Brief History of Time appeared on the British Sunday Times best-seller list for a record-breaking 237 weeks.",
+      "(Kesuksesan — Hawking adalah anggota Royal Society (FRS), anggota seumur hidup Akademi Sains Kepausan, dan penerima Medali Kebebasan Presiden, penghargaan sipil tertinggi di Amerika Serikat. Pada 2002, Hawking menempati peringkat 25 dalam jajak pendapat BBC tentang 100 Orang Inggris Terhebat. Ia adalah Profesor Matematika Lucasian di Universitas Cambridge antara 1979 dan 2009, dan meraih kesuksesan komersial dengan karya sains populer yang membahas teori-teorinya sendiri dan kosmologi secara umum. Bukunya A Brief History of Time muncul dalam daftar bestseller Sunday Times Inggris selama 237 minggu yang memecahkan rekor.)",
+      "Death — Hawking's illness gradually paralyzed him over the decades. However, even after the loss of his speech, he was still able to communicate through a speech-generating device, initially through the use of a hand-held switch, and eventually by using a single cheek muscle. He died on 14 March 2018 at the age of 76.",
+      "(Kematian — Penyakit Hawking secara bertahap melumpuhkannya selama beberapa dekade. Namun, bahkan setelah kehilangan kemampuan bicaranya, ia masih bisa berkomunikasi melalui perangkat penghasil ucapan, awalnya menggunakan sakelar genggam, dan akhirnya dengan menggunakan satu otot pipi. Ia meninggal pada 14 Maret 2018 pada usia 76 tahun.)",
     ],
     materialSections: [
       {
@@ -4192,8 +4508,93 @@ const readingLessons: ModuleLesson[] = [
           "⚡ Untuk soal 'how long': hitung dari tahun ke tahun yang disebutkan di teks (1979–2009 = 30 tahun).",
         ],
       },
+      {
+        title: "Kelas Kata (Parts of Speech)",
+        points: [
+          "📌 NOUN (Kata Benda) — orang, tempat, benda, atau konsep:",
+          "✦ physicist, cosmologist, author, disease, depression, diagnosis, aptitude, reputation, achievement",
+          "📌 VERB (Kata Kerja) — aksi atau keadaan:",
+          "✦ diagnosed, revolutionized, paralyzed, proved, achieved, communicated, challenged, returned",
+          "📌 ADJECTIVE (Kata Sifat) — mendeskripsikan noun:",
+          "✦ theoretical, unintelligible, vigorous, considerable, initial, unfounded, commercial",
+          "📌 ADVERB (Kata Keterangan) — mendeskripsikan verb atau adjective:",
+          "✦ initially (pada awalnya), gradually (secara bertahap), eventually (pada akhirnya), publicly (secara terbuka)",
+          "📌 CONJUNCTION (Kata Sambung):",
+          "✦ although, though, however, when — digunakan untuk menghubungkan klausa",
+        ],
+      },
+      {
+        title: "Tenses dalam Teks",
+        points: [
+          "📖 PAST SIMPLE — fakta & kejadian di masa lalu (paling dominan di biografi):",
+          "✦ 'Hawking was born on January 8, 1942.'",
+          "✦ 'He fell into a depression.' | 'He died on 14 March 2018.'",
+          "📖 PAST PERFECT — kejadian yang terjadi SEBELUM titik waktu tertentu di masa lalu:",
+          "✦ 'His disease progressed more slowly than doctors had predicted.'",
+          "  → 'had predicted' terjadi lebih dulu sebelum penyakit berkembang.",
+          "📖 PASSIVE VOICE (Past Passive) — subjek dikenai tindakan, bukan melakukan:",
+          "✦ 'Hawking was diagnosed with ALS.' (bukan: 'Doctors diagnosed Hawking.')",
+          "✦ 'Hawking was ranked number 25 in the BBC's poll.'",
+          "✦ 'Hawking was born on January 8, 1942.'",
+          "💡 Tip: Biografi hampir selalu menggunakan Past Simple + Passive Voice karena menceritakan fakta sejarah seseorang.",
+        ],
+      },
+      {
+        title: "Clause Structures",
+        points: [
+          "📌 CONCESSION CLAUSE (Although / Though) — menyatakan kontras/perlawanan:",
+          "✦ 'Although known at school as Einstein, Hawking was not initially successful academically.'",
+          "  → Meskipun dikenal sebagai Einstein, ia tidak langsung sukses secara akademis.",
+          "✦ 'though his doctors advised that he continue..., he felt there was little point.'",
+          "  → Meskipun dokter menyarankan ia lanjut kuliah, ia merasa percuma.",
+          "📌 NOUN CLAUSE (that-clause) — klausa yang berfungsi sebagai objek atau bagian dari kalimat:",
+          "✦ 'an initial diagnosis that he had only two years to live proved unfounded.'",
+          "  → Klausa 'that he had only two years to live' menjelaskan isi dari diagnosis.",
+          "✦ 'Hawking's father advised him to study medicine, concerned that there were few jobs.'",
+          "📌 TIME CLAUSE (when) — menyatakan kapan suatu kejadian berlangsung:",
+          "✦ 'when he publicly challenged the work of Fred Hoyle... at a lecture in June 1964.'",
+          "📌 RELATIVE / APPOSITIVE PHRASE — mendeskripsikan noun secara langsung:",
+          "✦ 'the Presidential Medal of Freedom, the highest civilian award in the United States.'",
+          "  → Frasa 'the highest civilian award in the United States' menjelaskan penghargaan tersebut.",
+        ],
+      },
     ],
     exercises: [
+      {
+        id: "int-r19-sa1",
+        type: "short-answer",
+        question: "Who is Stephen William Hawking?",
+        sampleAnswer:
+          "Stephen William Hawking was an English theoretical physicist, cosmologist, author, and director of research at the Centre for Theoretical Cosmology at the University of Cambridge.",
+      },
+      {
+        id: "int-r19-sa2",
+        type: "short-answer",
+        question: "What advice did Hawking's father give him regarding his university studies?",
+        sampleAnswer:
+          "Hawking's father advised him to study medicine, concerned that there were few jobs for mathematics graduates.",
+      },
+      {
+        id: "int-r19-sa3",
+        type: "short-answer",
+        question: "Which two scientific theories did Hawking combine to explain his cosmological ideas?",
+        sampleAnswer:
+          "Hawking combined the general theory of relativity and quantum mechanics to explain his cosmological ideas.",
+      },
+      {
+        id: "int-r19-sa4",
+        type: "short-answer",
+        question: "What major award did Hawking receive in the United States?",
+        sampleAnswer:
+          "Hawking received the Presidential Medal of Freedom, which is the highest civilian award in the United States.",
+      },
+      {
+        id: "int-r19-sa5",
+        type: "short-answer",
+        question: "How was Hawking able to communicate after losing his natural speech?",
+        sampleAnswer:
+          "After losing his speech, Hawking communicated through a speech-generating device — initially using a hand-held switch, and eventually by using a single cheek muscle to operate it.",
+      },
       {
         id: "int-r19-tf1",
         type: "true-false-not-given",
@@ -4222,44 +4623,67 @@ const readingLessons: ModuleLesson[] = [
           "FALSE — Teks: 'an initial diagnosis that he had only two years to live proved unfounded.' — diagnosis awal dokter terbukti salah; ia hidup hingga 76 tahun.",
       },
       {
-        id: "int-r19-sa1",
-        type: "short-answer",
+        id: "int-r19-sc0",
+        type: "task",
         section: "final",
-        question: "What is Stephen Hawking's academic background? What is his interest?",
-        sampleAnswer:
-          "Hawking studied mathematics at university and later became a theoretical physicist and cosmologist at the University of Cambridge. He was interested in science and technology from an early age, and his research focused on the origins and structure of the universe, from the Big Bang to black holes.",
+        question:
+          "Summary Completion — Lengkapi ringkasan berikut dengan satu kata/angka/frasa yang tepat berdasarkan teks:\n\n\"Stephen Hawking, an English theoretical physicist, was born on (1) _______ and showed early interest in science, although he was not initially (2) _______ at school. His father encouraged him to study medicine, but Hawking preferred (3) _______. While at university, he was diagnosed with (4) _______, causing a period of depression. However, he continued his studies and later challenged the ideas of astronomer (5) _______. Hawking became famous for combining relativity with (6) _______, and he strongly supported the many-worlds interpretation. He received major honours, including the (7) _______, and his book A Brief History of Time stayed on the best-seller list for (8) _______ weeks.\"",
       },
       {
-        id: "int-r19-sa2",
+        id: "int-r19-sc1",
         type: "short-answer",
         section: "final",
-        question: "What are the symptoms of Stephen Hawking's ailment (ALS)?",
-        sampleAnswer:
-          "His symptoms included difficulty walking unsupported, speech that was almost unintelligible, and gradual paralysis of the body over the decades, eventually causing him to lose his ability to speak entirely.",
+        question: "(1) Stephen Hawking was born on _______.",
+        sampleAnswer: "January 8, 1942",
       },
       {
-        id: "int-r19-sa3",
+        id: "int-r19-sc2",
         type: "short-answer",
         section: "final",
-        question: "How long was Stephen Hawking a professor at the University of Cambridge?",
-        sampleAnswer:
-          "Stephen Hawking was the Lucasian Professor of Mathematics at the University of Cambridge for 30 years, from 1979 to 2009.",
+        question: "(2) He was not initially _______ at school.",
+        sampleAnswer: "successful (academically)",
       },
       {
-        id: "int-r19-sa4",
+        id: "int-r19-sc3",
         type: "short-answer",
         section: "final",
-        question: "What is the title of the bestseller book written by Stephen Hawking?",
-        sampleAnswer:
-          "'A Brief History of Time' — this book appeared on the British Sunday Times bestseller list for a record-breaking 237 weeks.",
+        question: "(3) His father encouraged him to study medicine, but Hawking preferred _______.",
+        sampleAnswer: "mathematics",
       },
       {
-        id: "int-r19-sa5",
+        id: "int-r19-sc4",
         type: "short-answer",
         section: "final",
-        question: "How was Stephen Hawking able to communicate with other people after losing his speech?",
-        sampleAnswer:
-          "After losing his speech, Hawking communicated through a speech-generating device — initially using a hand-held switch, and eventually by using a single cheek muscle to operate it.",
+        question: "(4) While at university, he was diagnosed with _______.",
+        sampleAnswer: "ALS (motor neurone disease / amyotrophic lateral sclerosis)",
+      },
+      {
+        id: "int-r19-sc5",
+        type: "short-answer",
+        section: "final",
+        question: "(5) He later challenged the ideas of astronomer _______.",
+        sampleAnswer: "Fred Hoyle (and his student Jayant Narlikar)",
+      },
+      {
+        id: "int-r19-sc6",
+        type: "short-answer",
+        section: "final",
+        question: "(6) Hawking became famous for combining relativity with _______.",
+        sampleAnswer: "quantum mechanics",
+      },
+      {
+        id: "int-r19-sc7",
+        type: "short-answer",
+        section: "final",
+        question: "(7) He received major honours, including the _______.",
+        sampleAnswer: "Presidential Medal of Freedom",
+      },
+      {
+        id: "int-r19-sc8",
+        type: "short-answer",
+        section: "final",
+        question: "(8) His book A Brief History of Time stayed on the best-seller list for _______ weeks.",
+        sampleAnswer: "237",
       },
     ],
   },
