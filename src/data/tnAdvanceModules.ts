@@ -1,10 +1,10 @@
 import type { ModuleLesson } from "@/types/module";
 import { tnAdvanceSpeakingLessons } from "@/data/speaking/tnAdvanceSpeaking";
 import { advanceGrammarLessons } from "@/data/grammar/tnAdvanceGrammar";
+import { advanceWritingLessons } from "@/data/writing/tnAdvanceWriting";
 
 
 const advanceReadingLessons: ModuleLesson[] = [];
-const advanceWritingLessons: ModuleLesson[] = [];
 
 export interface AdvanceTrackInfo {
   track: ModuleLesson["track"];
