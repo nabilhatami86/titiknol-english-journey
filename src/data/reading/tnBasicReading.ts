@@ -12,22 +12,28 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading tentang perkenalan diri: identitas, keluarga, tempat tinggal, hobi, pekerjaan, dan nilai hidup.",
     passage: [
       "My name is Maisara, but I would like to be called Sara. I am 29 years old and a married woman. I am the second child and the only girl among my 3 brothers in my nuclear family. I am very close to my parents and all of my siblings, especially my youngest brother since he lived with me and my husband.",
+      "(Nama saya Maisara, tapi saya lebih suka dipanggil Sara. Saya berusia 29 tahun dan seorang wanita yang sudah menikah. Saya adalah anak kedua dan satu-satunya perempuan di antara 3 saudara laki-laki saya dalam keluarga inti. Saya sangat dekat dengan orang tua dan semua saudara saya, terutama adik bungsu saya karena dia tinggal bersama saya dan suami.)",
       "I think my family tree is unique because I have a cross-cultural extended family. I have uncles and aunts (from my father's side) with different religious beliefs and cultures which are Christian, Muslim, Buddhist, Hindu, and Pagan. Therefore, we always have a great time gathering together especially when it comes to festivals and celebration days such as Eid Al-Fitr, Christmas, Chinese New Year, Diwali, and wedding ceremonies as well. This is a common situation in my country, especially in my home town.",
+      "(Saya rasa pohon keluarga saya unik karena saya memiliki keluarga besar yang lintas budaya. Saya memiliki paman dan bibi (dari pihak ayah) dengan keyakinan agama dan budaya yang berbeda, yaitu Kristen, Islam, Buddha, Hindu, dan Pagan. Oleh karena itu, kami selalu menghabiskan waktu yang menyenangkan saat berkumpul bersama, terutama ketika perayaan hari-hari besar seperti Idul Fitri, Natal, Tahun Baru Cina, Diwali, dan upacara pernikahan. Ini adalah situasi yang umum di negara saya, khususnya di kota asal saya.)",
       "I live in Malaysia which has two regions; Peninsular Malaysia and Malaysian Borneo (also known as East Malaysia) and they're separated by the South China Sea. I live in Sabah, which is located in Borneo. In my country, Sabah is also known as 'A Land below the Wind'. We have several mountains along with green mountain ranges and natural life. We also have lots of beautiful islands and white sandy beaches along our coast. It's the right destination for those who love snorkeling or scuba diving.",
+      "(Saya tinggal di Malaysia yang memiliki dua wilayah; Semenanjung Malaysia dan Kalimantan Malaysia (juga dikenal sebagai Malaysia Timur), dan keduanya dipisahkan oleh Laut Cina Selatan. Saya tinggal di Sabah, yang terletak di Kalimantan. Di negara saya, Sabah juga dikenal sebagai 'Tanah di Bawah Angin'. Kami memiliki beberapa pegunungan beserta barisan pegunungan hijau dan kekayaan alam. Kami juga memiliki banyak pulau-pulau indah dan pantai berpasir putih di sepanjang garis pantai kami. Ini adalah destinasi yang tepat bagi mereka yang menyukai snorkeling atau menyelam.)",
       "I also love to watch movies, listen to music, or visit my sibling's house in my spare time. Other than that, I love to travel as well. My husband and I always spend our holidays going to new places, whether it's in our country or abroad.",
+      "(Saya juga suka menonton film, mendengarkan musik, atau mengunjungi rumah saudara-saudara saya di waktu luang. Selain itu, saya juga gemar bepergian. Suami saya dan saya selalu menghabiskan liburan dengan pergi ke tempat-tempat baru, baik di dalam maupun luar negeri.)",
       "I took Psychology Counselling while I was at University. After I graduated, I have been working as a Counsellor in Juvenile Centre, which is under Social Welfare Department, for about 5 years. I love my job because it gives me a lot of experiences and shows me a different range of life backgrounds and human behaviors specifically for the youth. All these experiences are useful to me and make me realize that I should be grateful for having a nice and loving family.",
+      "(Saya mengambil jurusan Konseling Psikologi saat di universitas. Setelah lulus, saya telah bekerja sebagai Konselor di Pusat Pembinaan Remaja yang berada di bawah Departemen Kesejahteraan Sosial selama sekitar 5 tahun. Saya menyukai pekerjaan saya karena memberi banyak pengalaman dan memperlihatkan berbagai latar belakang kehidupan dan perilaku manusia, khususnya pada kaum muda. Semua pengalaman ini berguna bagi saya dan membuat saya menyadari bahwa saya harus bersyukur memiliki keluarga yang baik dan penuh kasih.)",
       "However, sometimes I've had a hard time since there are a lot of challenges as well. But even so, I've tried to look on the positive side, because I know that dealing with humans isn't an easy thing. To improve my work performance and myself, I believe there are still many things I have to learn, and need to strive for having a better life in the future.",
+      "(Namun, terkadang saya melewati masa-masa sulit karena ada banyak tantangan juga. Tapi meskipun begitu, saya selalu berusaha melihat sisi positifnya, karena saya tahu bahwa berhadapan dengan manusia bukanlah hal yang mudah. Untuk meningkatkan kinerja kerja dan diri saya sendiri, saya percaya masih banyak hal yang harus saya pelajari, dan perlu terus berusaha demi kehidupan yang lebih baik di masa depan.)",
     ],
     materialSections: [
       {
         title: "Main Passage Focus",
         points: [
-          "Personal identity: name, age, marital status, and family background.",
-          "Cross-cultural extended family with different religious beliefs and cultures.",
-          "Hometown description: Sabah, Malaysia - mountains, islands, beaches.",
-          "Hobbies and spare time activities: movies, music, traveling.",
-          "Work experience as a Counsellor in Juvenile Centre.",
-          "Personal reflection: being grateful and looking on the positive side.",
+          "Para. 1 — Identitas diri: nama, usia, status pernikahan, posisi dalam keluarga inti.",
+          "Para. 2 — Keluarga besar lintas budaya: 5 agama berbeda, perayaan bersama.",
+          "Para. 3 — Deskripsi tempat tinggal: Sabah, Malaysia — pegunungan, pulau, pantai.",
+          "Para. 4 — Hobi dan kegiatan waktu luang: film, musik, traveling.",
+          "Para. 5 — Pengalaman kerja sebagai Konselor; rasa syukur atas keluarga yang baik.",
+          "Para. 6 — Refleksi diri: menghadapi tantangan dengan sikap positif dan tekad untuk terus berkembang.",
         ],
       },
       {
@@ -39,6 +45,46 @@ const basicReadingLessons: ModuleLesson[] = [
           "snorkeling, scuba diving, destination",
           "Psychology Counselling, Juvenile Centre, Social Welfare Department",
           "experiences, grateful, challenges, strive, improve",
+        ],
+      },
+      {
+        title: "Vocabulary List",
+        points: [
+          "1.  nuclear family (n) — keluarga inti | Sinonim: immediate family | Antonim: extended family",
+          "2.  extended family (n) — keluarga besar | Sinonim: relatives | Antonim: nuclear family",
+          "3.  siblings (n) — saudara kandung | Sinonim: brothers and sisters",
+          "4.  cross-cultural (adj) — lintas budaya | Sinonim: multicultural | Antonim: single-culture",
+          "5.  religious beliefs (n) — keyakinan agama | Sinonim: faith, religion",
+          "6.  gathering (n) — pertemuan/perkumpulan | Sinonim: assembly, meeting | Antonim: separation",
+          "7.  festival (n) — festival/perayaan | Sinonim: celebration, event",
+          "8.  ceremony (n) — upacara | Sinonim: ritual, event",
+          "9.  common (adj) — umum/lazim | Sinonim: usual, ordinary | Antonim: rare, unusual",
+          "10. region (n) — wilayah | Sinonim: area, territory | Antonim: whole",
+          "11. separated (adj) — dipisahkan | Sinonim: divided | Antonim: connected",
+          "12. located (adj) — terletak | Sinonim: situated, positioned",
+          "13. mountain range (n) — barisan pegunungan | Sinonim: mountain chain",
+          "14. natural life (n) — kehidupan alam | Sinonim: wildlife, nature",
+          "15. coast (n) — pantai/pesisir | Sinonim: shore, seaside | Antonim: inland",
+          "16. destination (n) — destinasi/tujuan | Sinonim: goal, location",
+          "17. snorkeling (n) — snorkeling (berenang dengan masker) | Sinonim: diving (shallow)",
+          "18. scuba diving (n) — menyelam dengan tabung oksigen",
+          "19. spare time (n) — waktu luang | Sinonim: free time, leisure | Antonim: busy time",
+          "20. abroad (adv) — ke luar negeri | Sinonim: overseas | Antonim: locally",
+          "21. counselling (n) — konseling | Sinonim: guidance, advising",
+          "22. graduated (v) — lulus | Sinonim: finished, completed | Antonim: dropped out",
+          "23. counsellor (n) — konselor | Sinonim: advisor, guide",
+          "24. juvenile (adj) — remaja/pemuda | Sinonim: youth, adolescent | Antonim: adult",
+          "25. social welfare (n) — kesejahteraan sosial | Sinonim: public welfare",
+          "26. experience (n) — pengalaman | Sinonim: exposure, encounter | Antonim: inexperience",
+          "27. behavior (n) — perilaku | Sinonim: conduct, attitude",
+          "28. specifically (adv) — secara khusus | Sinonim: particularly | Antonim: generally",
+          "29. youth (n) — kaum muda/pemuda | Sinonim: young people | Antonim: elderly",
+          "30. grateful (adj) — bersyukur | Sinonim: thankful, appreciative | Antonim: ungrateful",
+          "31. challenge (n) — tantangan | Sinonim: difficulty, obstacle | Antonim: ease",
+          "32. positive side (n) — sisi positif | Sinonim: bright side | Antonim: negative side",
+          "33. dealing with (v phrase) — berhadapan/menangani | Sinonim: handling, managing",
+          "34. improve (v) — meningkatkan/memperbaiki | Sinonim: develop, enhance | Antonim: worsen",
+          "35. strive (v) — berusaha keras/berjuang | Sinonim: struggle, endeavor | Antonim: give up",
         ],
       },
     ],
@@ -93,8 +139,11 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading tentang peran keluarga dalam pembentukan karakter, nilai hidup, dan tradisi.",
     passage: [
       "My Family is the most lovely family in the world and an important unit of society. A small or a big family becomes of great importance to its members and is considered the strongest unit of society because various families together make a nice society. A family becomes the first school for children where they receive all the cultures, traditions, and basic values of life. A family plays a great role in teaching good manners and habits to the newcomers in the family. It helps in nourishing a better character of a person in society. I am feeling fortunate to be born into a small nice family where I learned everything in early childhood.",
+      "(Keluarga saya adalah keluarga yang paling menyenangkan di dunia dan merupakan unit penting dalam masyarakat. Keluarga kecil maupun besar memiliki arti yang sangat penting bagi anggotanya dan dianggap sebagai unit masyarakat yang paling kuat, karena berbagai keluarga bersama-sama membentuk masyarakat yang baik. Keluarga menjadi sekolah pertama bagi anak-anak di mana mereka mendapatkan semua budaya, tradisi, dan nilai-nilai dasar kehidupan. Keluarga memainkan peran besar dalam mengajarkan sopan santun dan kebiasaan yang baik kepada anggota baru keluarga. Hal ini membantu membentuk karakter seseorang yang lebih baik di masyarakat. Saya merasa beruntung dilahirkan dalam keluarga kecil yang baik di mana saya belajar segalanya di masa kanak-kanak awal.)",
       "I belong to a middle-class family. Having six members, they are my mother, my father, my grandparents, my younger sister, and me. Every member of my family follows the orders of my grandfather because he is the head of the family. We respect and enjoy his commanding position in the family. He is a great person because he had performed various adventurous activities during his youth time. He always thinks about our wellness and takes the right decision for us. His decision becomes final in all family matters. He sits on the front chair at the dining table. He teaches us about Indian cultures and traditions every morning and evening. He has a very cool personality and is also a friendly person in the family, so every one of us does not dare to go against him. He is a very effective person and wins everyone's hearts through nice talk. He helps us in doing our homework because he was a teacher. He teaches us about the keys to success in life such as discipline, punctuality, cleanliness, morality, hardwork, and continuity.",
+      "(Saya berasal dari keluarga kelas menengah. Dengan enam anggota, mereka adalah ibu, ayah, kakek-nenek, adik perempuan, dan saya. Setiap anggota keluarga saya mengikuti perintah kakek karena dia adalah kepala keluarga. Kami menghormati dan menikmati posisi komandonya dalam keluarga. Dia adalah orang yang hebat karena telah melakukan berbagai kegiatan petualangan di masa mudanya. Dia selalu memikirkan kesejahteraan kami dan mengambil keputusan yang tepat untuk kami. Keputusannya menjadi final dalam semua urusan keluarga. Dia duduk di kursi terdepan di meja makan. Dia mengajarkan kami tentang budaya dan tradisi India setiap pagi dan sore. Dia memiliki kepribadian yang sangat tenang dan juga merupakan orang yang ramah dalam keluarga, sehingga tidak ada satu pun dari kami yang berani menentangnya. Dia adalah orang yang sangat berpengaruh dan memenangkan hati semua orang melalui pembicaraan yang baik. Dia membantu kami mengerjakan pekerjaan rumah karena dia pernah menjadi guru. Dia mengajarkan kami kunci-kunci sukses dalam hidup seperti disiplin, ketepatan waktu, kebersihan, moralitas, kerja keras, dan konsistensi.)",
       "My grandmother is also a nice woman and tells us nice stories every night. My father is the principal of the school and he is very disciplined. He is very punctual, sincere, and hard-working. He teaches us that when you eat time, time will eat you one day, so never waste your time and use it in positive ways. My mother is a sweet and very simple housewife. She cares for every member of the family and makes a happy environment in the family every day. She gives special care to the grandparents and kids, as well as always helping poor and needy people in society. We have always been taught from our childhood to love and respect elders and help needy people on the way. My sweet small family is full of love, care, peace, prosperity, and discipline.",
+      "(Nenek saya juga seorang wanita yang baik dan menceritakan kisah-kisah indah setiap malam. Ayah saya adalah kepala sekolah dan sangat disiplin. Dia sangat tepat waktu, tulus, dan pekerja keras. Dia mengajarkan kami bahwa ketika kamu membuang waktu, suatu hari waktu akan membuangmu, jadi jangan pernah menyia-nyiakan waktu dan gunakan dengan cara yang positif. Ibu saya adalah seorang ibu rumah tangga yang manis dan sangat sederhana. Dia merawat setiap anggota keluarga dan menciptakan lingkungan yang bahagia dalam keluarga setiap hari. Dia memberikan perhatian khusus kepada kakek-nenek dan anak-anak, serta selalu membantu orang-orang miskin dan membutuhkan di masyarakat. Kami selalu diajarkan sejak kecil untuk mencintai dan menghormati orang yang lebih tua serta membantu orang-orang yang membutuhkan. Keluarga kecil saya yang manis penuh dengan cinta, kepedulian, kedamaian, kemakmuran, dan kedisiplinan.)",
     ],
     materialSections: [
       {
@@ -169,12 +218,19 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading tentang perubahan minat belajar dari matematika ke bahasa Perancis.",
     passage: [
       "Our interests keep changing from time to time. Our favorite color, favorite food, favorite person, or favorite game, everything changes as we grow up and our favorite subject is no exception. Many students love certain subjects in their primary classes, but then completely change as they begin to learn other subjects. My experience has been quite similar. I have also had a shift in interest and my favorite subject has changed with time.",
+      "(Minat kita terus berubah dari waktu ke waktu. Warna favorit, makanan favorit, orang favorit, atau permainan favorit kita, semuanya berubah seiring kita bertumbuh, dan mata pelajaran favorit kita pun tidak terkecuali. Banyak siswa menyukai mata pelajaran tertentu di kelas-kelas awal, tetapi kemudian berubah sepenuhnya ketika mulai mempelajari mata pelajaran lain. Pengalaman saya cukup serupa. Saya juga mengalami pergeseran minat dan mata pelajaran favorit saya berubah seiring waktu.)",
       "I had been a big fan of mathematics from the time numbers were introduced to me in a nursery. While my teacher had taught numbers up to 10, I learned to count up to 50 with the help of my mother. I was so curious and keen on learning this subject that I soon began learning addition. My mother introduced fun ways of learning addition through the use of different things such as spoons, oranges, and soft toys. I also learned subtraction using such innovative methods.",
+      "(Saya telah menjadi penggemar besar matematika sejak angka-angka diperkenalkan kepada saya di taman kanak-kanak. Ketika guru saya mengajarkan angka hingga 10, saya sudah belajar berhitung hingga 50 dengan bantuan ibu. Saya begitu ingin tahu dan bersemangat mempelajari mata pelajaran ini sehingga saya segera mulai belajar penjumlahan. Ibu saya memperkenalkan cara-cara belajar penjumlahan yang menyenangkan melalui penggunaan berbagai benda seperti sendok, jeruk, dan boneka lembut. Saya juga belajar pengurangan menggunakan metode-metode inovatif tersebut.)",
       "Looking at my interest in the subject, my mother soon made me join an abacus class. I also accompanied her to the toy shop to get an abacus for me. I simply loved doing calculations using this ancient method of learning mathematics. Joining the course helped me to enhance my knowledge about the subject. It laid a strong base for me and I performed extremely well in the subject. I scored high in mathematics. Most of the time, I got full marks in it.",
+      "(Melihat minat saya pada mata pelajaran tersebut, ibu saya segera mendaftarkan saya ke kelas sempoa. Saya juga menemaninya ke toko mainan untuk mendapatkan sempoa buat saya. Saya sangat menyukai melakukan perhitungan menggunakan metode belajar matematika kuno ini. Bergabung dengan kursus ini membantu saya meningkatkan pengetahuan tentang mata pelajaran tersebut. Ini memberikan dasar yang kuat bagi saya dan saya tampil sangat baik dalam mata pelajaran tersebut. Saya mendapat nilai tinggi dalam matematika. Sebagian besar waktu, saya mendapat nilai penuh dalam pelajaran itu.)",
       "I used to practice solving mathematics problems. Whenever I was asked to study, I opened my mathematics book and began solving them. I solved mathematics Olympiad problems with a good score. I also joined quite a few inter-school mathematics competitions. Many of my classmates came to me to seek help in the subject. Many still come to me to learn different topics. I help them with the subject whenever they need any kind of assistance.",
+      "(Saya terbiasa berlatih memecahkan soal-soal matematika. Setiap kali diminta untuk belajar, saya membuka buku matematika dan mulai menyelesaikannya. Saya memecahkan soal-soal Olimpiade matematika dengan nilai yang bagus. Saya juga bergabung dalam beberapa kompetisi matematika antar sekolah. Banyak teman sekelas datang kepada saya untuk meminta bantuan dalam mata pelajaran tersebut. Banyak yang masih datang kepada saya untuk mempelajari berbagai topik. Saya membantu mereka dalam mata pelajaran tersebut kapan pun mereka membutuhkan bantuan.)",
       "Then, I changed my interest to French ever since I entered sixth grade. We had an option of choosing between Sanskrit and French as a third subject in this grade and I decided to go for French. While my parents insisted that I should take up Sanskrit as my mother is well versed in the subject and could help me with it, I convinced them otherwise. Although they did not like the idea initially, they realized I took the right decision after I started scoring high in the subject. I was always keen on learning foreign languages. It was something new, fresh, and interesting.",
+      "(Kemudian, saya mengubah minat saya ke bahasa Prancis sejak saya memasuki kelas enam. Kami memiliki pilihan antara Sansekerta dan Prancis sebagai mata pelajaran ketiga di kelas ini dan saya memutuskan untuk memilih Prancis. Meskipun orang tua saya bersikeras agar saya mengambil Sansekerta karena ibu saya mahir dalam mata pelajaran tersebut dan bisa membantu saya, saya meyakinkan mereka sebaliknya. Meskipun mereka awalnya tidak menyukai ide tersebut, mereka menyadari bahwa saya mengambil keputusan yang tepat setelah saya mulai mendapat nilai tinggi dalam mata pelajaran itu. Saya selalu bersemangat untuk mempelajari bahasa asing. Itu adalah sesuatu yang baru, segar, dan menarik.)",
       "My interest in the subject keeps me glued to it. Besides, since I took it up against the wish of my parents, I learn it with all the more zeal to prove them wrong and my decision was right. My French teacher is quite helpful and supportive. Her method of teaching is quite innovative. She makes us understand this new language easily. She has made learning so much fun and interesting. I always look forward to the French class. My friends and I also try to use the sentences we have learned as we converse with each other. I have also started following French artists and listening to French songs.",
+      "(Minat saya pada mata pelajaran itu membuat saya terus terpaku padanya. Selain itu, karena saya mengambilnya bertentangan dengan keinginan orang tua, saya mempelajarinya dengan semangat yang lebih besar untuk membuktikan bahwa mereka salah dan keputusan saya benar. Guru bahasa Prancis saya sangat membantu dan suportif. Metode mengajarnya cukup inovatif. Dia membuat kami memahami bahasa baru ini dengan mudah. Dia membuat belajar menjadi sangat menyenangkan dan menarik. Saya selalu menantikan kelas bahasa Prancis. Teman-teman dan saya juga mencoba menggunakan kalimat-kalimat yang telah kami pelajari saat berbicara satu sama lain. Saya juga mulai mengikuti artis-artis Prancis dan mendengarkan lagu-lagu Prancis.)",
       "French has certainly become my favorite subject and mathematics is my second favorite subject now. I am planning to leave Hindi and take up French when the option to choose between the two is given in the ninth grade.",
+      "(Bahasa Prancis tentu saja telah menjadi mata pelajaran favorit saya dan matematika sekarang menjadi mata pelajaran favorit kedua saya. Saya berencana meninggalkan Hindi dan mengambil Prancis ketika pilihan antara keduanya diberikan di kelas sembilan.)",
     ],
     materialSections: [
       {
@@ -271,10 +327,15 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading tentang figur ayah sebagai role model dalam empati, kerja keras, dan keseimbangan hidup.",
     passage: [
       "My father is not just my hero, but an inspiration for everyone around him. Besides being a great father, a good husband, and an obedient son, he is a very noble human being. He treats everyone alike and does not distinguish between anyone based on their caste, religion, or social status. Everyone in our family, extended family, and neighborhood talk highly about him because of his extremely friendly and helpful nature. People come to him to look for advice as well as for help as they know he has the solution for every problem.",
+      "(Ayah saya bukan hanya pahlawan saya, tetapi juga inspirasi bagi semua orang di sekitarnya. Selain menjadi ayah yang hebat, suami yang baik, dan anak yang patuh, dia adalah manusia yang sangat mulia. Dia memperlakukan semua orang dengan sama dan tidak membeda-bedakan siapapun berdasarkan kasta, agama, atau status sosial mereka. Semua orang dalam keluarga kami, keluarga besar, dan lingkungan sekitar berbicara baik tentangnya karena sifatnya yang sangat ramah dan suka menolong. Orang-orang datang kepadanya untuk mencari saran dan bantuan karena mereka tahu dia memiliki solusi untuk setiap masalah.)",
       "Like the heroes in the movies, my father is always ready to help everyone around. I still remember the incident when one of my father's colleagues fell seriously ill, my father supported his family wholeheartedly. His colleague's family was not financially well off. My father's colleague was the only member of the family that made money. His parents and wife were not only financially dependent on him but also did not know how to deal with the hospital administration and other stuff. My father helped them during their hour of need. He used to spend hours in the hospital helping his colleague's family with the hospital administration. He also tried to help with his colleague's medical expenses. He contributed whatever he could and requested his other office colleagues to support their one colleague who is in need. He became an inspiration for others. Many of his colleagues came forward to contribute to the treatment. Soon, the funds were met and the treatment was completed. I remember the day when that colleague and his family visited our family after his recovery and thanked my father with all their heart. This incident has left a mark on my heart. I feel proud of my father whenever I think of it.",
+      "(Seperti para pahlawan dalam film, ayah saya selalu siap membantu semua orang di sekitarnya. Saya masih ingat kejadian ketika salah satu rekan kerja ayah saya jatuh sakit parah, ayah saya mendukung keluarganya dengan sepenuh hati. Keluarga rekan kerja ayah tidak mampu secara finansial. Rekan kerja ayah adalah satu-satunya anggota keluarga yang mencari nafkah. Orang tua dan istrinya tidak hanya bergantung secara finansial padanya, tetapi juga tidak tahu cara mengurus administrasi rumah sakit dan hal-hal lainnya. Ayah saya membantu mereka di saat-saat mereka membutuhkan. Dia menghabiskan berjam-jam di rumah sakit membantu keluarga rekan kerjanya dengan administrasi rumah sakit. Dia juga mencoba membantu biaya pengobatan rekan kerjanya. Dia menyumbangkan apa pun yang bisa dia berikan dan meminta rekan-rekan kantornya yang lain untuk mendukung rekan mereka yang sedang membutuhkan. Dia menjadi inspirasi bagi orang lain. Banyak rekan kerjanya maju untuk berkontribusi pada pengobatan tersebut. Tidak lama kemudian, dana terkumpul dan pengobatan selesai. Saya ingat hari ketika rekan kerja itu dan keluarganya mengunjungi keluarga kami setelah kesembuhannya dan berterima kasih kepada ayah saya dengan sepenuh hati. Kejadian ini telah meninggalkan bekas di hati saya. Saya bangga dengan ayah saya setiap kali saya memikirkannya.)",
       "My father has taught me how we must be ready to help those around us and how a little help from us can make a difference in other people's life. Another quality of my father that I truly admire is that he is very hard-working. He is appreciated for his hard work and dedication at work. He won several awards during his school and college days and this inspires me to work hard and earn appreciation too. Even in his office, he has won the employee of the year award, the most hard-working team member award, and many other accreditations. I have seen him working for hours whenever his work demands. At times, he even works on holidays. However, this does not mean that he ignores his family and gives priority to his work. He knows how to maintain a work-life balance and we love this thing about him.",
+      "(Ayah saya mengajarkan saya bagaimana kita harus siap membantu orang-orang di sekitar kita dan bagaimana sedikit bantuan dari kita bisa membuat perbedaan dalam kehidupan orang lain. Kualitas lain dari ayah saya yang sungguh saya kagumi adalah bahwa dia sangat pekerja keras. Dia diapresiasi atas kerja keras dan dedikasinya di tempat kerja. Dia memenangkan beberapa penghargaan selama masa sekolah dan kuliah, dan ini menginspirasi saya untuk bekerja keras dan mendapatkan apresiasi juga. Bahkan di kantornya, dia telah memenangkan penghargaan karyawan terbaik tahun ini, penghargaan anggota tim paling pekerja keras, dan banyak akreditasi lainnya. Saya pernah melihatnya bekerja berjam-jam setiap kali pekerjaannya menuntutnya. Terkadang, dia bahkan bekerja saat hari libur. Namun, ini tidak berarti dia mengabaikan keluarga dan mengutamakan pekerjaannya. Dia tahu cara menjaga keseimbangan antara pekerjaan dan kehidupan, dan kami menyukai hal ini darinya.)",
       "Many of my friends share that their fathers are extremely engrossed in their office tasks. They come home late from work and also have to go out with colleagues on the weekends. But I am lucky that my father values his relationships as much as his work. He does not take his family for granted. He makes sure he comes home on time and spends time with us. He also takes us out regularly. Besides, he helps my mother with small household tasks to share her load.",
+      "(Banyak teman saya bercerita bahwa ayah mereka sangat tenggelam dalam pekerjaan kantor mereka. Mereka pulang terlambat dari kerja dan juga harus keluar bersama rekan-rekan di akhir pekan. Tetapi saya beruntung bahwa ayah saya menghargai hubungannya sama seperti pekerjaannya. Dia tidak menganggap keluarganya sebagai hal yang biasa. Dia memastikan dia pulang tepat waktu dan menghabiskan waktu bersama kami. Dia juga mengajak kami keluar secara rutin. Selain itu, dia membantu ibu saya dengan tugas-tugas rumah tangga kecil untuk meringankan bebannya.)",
       "My father is very clear about the fact that family comes first. So, even though he is always ready to help others and is extremely dedicated to his office work, he does not ignore us in the event. He involves us in many of his tasks instead of leaving us behind waiting for him. This helps in two ways. We stay close to him and also learn from his good deeds.",
+      "(Ayah saya sangat jelas bahwa keluarga adalah yang utama. Jadi, meskipun dia selalu siap membantu orang lain dan sangat berdedikasi pada pekerjaan kantornya, dia tidak mengabaikan kami dalam prosesnya. Dia melibatkan kami dalam banyak tugasnya daripada meninggalkan kami menunggunya. Ini membantu dalam dua cara. Kami tetap dekat dengannya dan juga belajar dari perbuatan-perbuatan baiknya.)",
     ],
     materialSections: [
       {
@@ -406,13 +467,21 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading ilmiah populer tentang pengaruh genetik dan lingkungan sosial terhadap sifat dan perilaku manusia.",
     passage: [
       "Many of us tend to look at personality traits as either black or white: good or bad, naughty or nice, sweet or sour. However, shades of grey exist when it comes to the origin of these traits. According to a study published in the journal PLOS Computational Biology, some of us are naturally generous and others are less so, due to not only our genetics but also our social environment.",
+      "(Banyak dari kita cenderung memandang sifat kepribadian sebagai hitam atau putih: baik atau buruk, nakal atau baik hati, manis atau masam. Namun, nuansa abu-abu ada ketika menyangkut asal-usul sifat-sifat ini. Menurut sebuah studi yang diterbitkan dalam jurnal PLOS Computational Biology, beberapa dari kita secara alami dermawan dan yang lain kurang dermawan, bukan hanya karena genetik kita tetapi juga karena lingkungan sosial kita.)",
       "Past research has produced the theory of kin selection, the evolutionary strategy by which animals give up their reproductive success for the benefit of their community. Worker bees, for example, will give up their lives to promote the welfare of the queen bee and they will even commit suicidal attacks on intruders. These behaviors are influenced by genetic polymorphism or gene variations that lead to different types of members within a population. So, in other words, it's hard-wired within the bees to be altruistic toward their relatives. In the current study, researchers wanted to see how much of a role genetic polymorphism plays in social interactions. Is it the environment or the genes that make us naughty or nice?",
+      "(Penelitian sebelumnya telah menghasilkan teori seleksi kerabat, strategi evolusioner di mana hewan mengorbankan keberhasilan reproduksi mereka untuk kepentingan komunitas mereka. Lebah pekerja, misalnya, akan mengorbankan nyawa mereka untuk meningkatkan kesejahteraan ratu lebah dan bahkan akan melakukan serangan bunuh diri terhadap penyusup. Perilaku-perilaku ini dipengaruhi oleh polimorfisme genetik atau variasi gen yang menghasilkan berbagai jenis anggota dalam suatu populasi. Jadi, lebah sudah terprogramkan untuk bersikap altruistik terhadap kerabat mereka. Dalam studi ini, para peneliti ingin melihat seberapa besar peran polimorfisme genetik dalam interaksi sosial. Apakah lingkungan atau gen yang membuat kita nakal atau baik hati?)",
       "Along with a team of international colleagues, Dr. Sasha Dall, a senior lecturer of mathematical ecology at the University of Exeter in England, sought to develop a mathematical framework that would help to examine social behavior in a range of different species to help explain the evolution of these habits. The research team looked at the genes and social interactions that occurred within colonies of microbes to explore why some of us are generous by nature while others aren't. This microbial model of social evolution allowed them to gain a better understanding of how much kindness is influenced by genetics versus the people around us.",
+      "(Bersama tim kolega internasional, Dr. Sasha Dall, seorang dosen senior ekologi matematika di Universitas Exeter di Inggris, berusaha mengembangkan kerangka matematika yang akan membantu memeriksa perilaku sosial pada berbagai spesies untuk menjelaskan evolusi kebiasaan-kebiasaan ini. Tim penelitian melihat gen dan interaksi sosial yang terjadi dalam koloni mikroba untuk mengeksplorasi mengapa beberapa dari kita murah hati secara alami sementara yang lain tidak. Model mikroba evolusi sosial ini memungkinkan mereka memperoleh pemahaman yang lebih baik tentang seberapa besar kebaikan dipengaruhi oleh genetik versus orang-orang di sekitar kita.)",
       'The findings revealed that our social behavior is often determined by a set of "inherited genetic tendencies" that can predict the trajectory of our relationships. Moreover, it was not just the environment and the experiences that predicted how closely we relate to our communities, but also these genetic variations. This is a departure from common belief, which suggests that the knowledge we gain from world events influences our responses and how we act in the future.',
+      "(Temuan mengungkapkan bahwa perilaku sosial kita sering ditentukan oleh serangkaian 'kecenderungan genetik yang diwariskan' yang dapat memprediksi lintasan hubungan kita. Selain itu, bukan hanya lingkungan dan pengalaman yang memprediksi seberapa erat kita berhubungan dengan komunitas kita, tetapi juga variasi genetik ini. Ini merupakan pergeseran dari kepercayaan umum, yang menyatakan bahwa pengetahuan yang kita peroleh dari peristiwa dunia mempengaruhi respons dan cara kita bertindak di masa depan.)",
       'In a statement, however, Dall suggested that DNA influences social behavior more than we think. "Some species rely on inherited instructions on what to do," she said. "Individuals behave differently according to which specific genetic variants they are born with." In other words, our ability to be kind or to be someone rude is inherited — someone who is rude will most likely remain rude even if they are talking to someone kind.',
+      "(Dalam sebuah pernyataan, Dall menyatakan bahwa DNA mempengaruhi perilaku sosial lebih dari yang kita kira. 'Beberapa spesies mengandalkan instruksi yang diwariskan tentang apa yang harus dilakukan,' katanya. 'Individu berperilaku berbeda sesuai dengan varian genetik spesifik yang mereka lahirkan.' Dengan kata lain, kemampuan kita untuk menjadi baik atau menjadi orang yang kasar adalah warisan — seseorang yang kasar kemungkinan besar akan tetap kasar bahkan jika mereka berbicara dengan seseorang yang baik hati.)",
       'In a similar 2011 study, researchers explored the possible links between genetics and so-called "prosocial" behavior — selfless acts that benefit others. In 46 people, they identified three inherited genetic makeups related to social behavior, GG, AG, and AA, to determine how they relate to social behavior. Those with a GG genotype were more likely to be prosocial, they found, while those with AG or AA were less likely to show compassion or parental sensitivity. They also experienced fewer positive emotions. These findings were confirmed after an experiment showed others perceived those with GG genotypes as more caring, trustworthy, and kind.',
+      "(Dalam sebuah studi serupa tahun 2011, para peneliti mengeksplorasi kemungkinan kaitan antara genetik dan perilaku 'prososial' — tindakan tidak mementingkan diri sendiri yang menguntungkan orang lain. Pada 46 orang, mereka mengidentifikasi tiga susunan genetik yang diwariskan terkait perilaku sosial, GG, AG, dan AA, untuk menentukan bagaimana hubungannya dengan perilaku sosial. Mereka menemukan bahwa mereka dengan genotip GG lebih mungkin bersikap prososial, sementara mereka dengan AG atau AA kurang mungkin menunjukkan belas kasih atau sensitivitas parental. Mereka juga mengalami lebih sedikit emosi positif. Temuan ini dikonfirmasi setelah sebuah eksperimen menunjukkan bahwa orang lain menganggap mereka dengan genotip GG lebih peduli, dapat dipercaya, dan baik hati.)",
       "GG genotypes make a person more caring because they're linked to the body's oxytocin receptors, the 2011 study found. Also known as the \"love hormone,\" oxytocin promotes trust, love, and social behavior, thus partially explaining why people with these genes are more likely to be kind and interact well with others.",
+      "(Genotip GG membuat seseorang lebih peduli karena terkait dengan reseptor oksitosin tubuh, menurut studi 2011. Juga dikenal sebagai 'hormon cinta,' oksitosin meningkatkan kepercayaan, cinta, dan perilaku sosial, sehingga sebagian menjelaskan mengapa orang dengan gen ini lebih cenderung bersikap baik dan berinteraksi dengan baik dengan orang lain.)",
       "That said, the current study found genes only have some influence on how we act. If we're born without the GG genotype, it doesn't mean we're destined to be apathetic and rude — our environment also plays a part.",
+      "(Namun demikian, studi ini menemukan bahwa gen hanya memiliki sedikit pengaruh pada cara kita bertindak. Jika kita lahir tanpa genotip GG, bukan berarti kita ditakdirkan untuk menjadi apatis dan kasar — lingkungan kita juga berperan.)",
     ],
     materialSections: [
       {
@@ -488,12 +557,19 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading tentang manfaat hobi: stress relief, skill growth, social bonding, confidence, dan knowledge.",
     passage: [
       "Having a hobby that we enjoy brings us joy and enriches our lives. It gives us something fun to do during our leisure time and allows us to learn new skills. We are very fortunate to have so many different options out there today. There are entire websites devoted to hobbies and interests.",
+      "(Memiliki hobi yang kita nikmati membawa kegembiraan dan memperkaya kehidupan kita. Hobi memberi kita sesuatu yang menyenangkan untuk dilakukan di waktu luang dan memungkinkan kita mempelajari keterampilan baru. Kita sangat beruntung memiliki begitu banyak pilihan berbeda saat ini. Ada seluruh situs web yang didedikasikan untuk hobi dan minat.)",
       "There are many reasons why all of us should have at least one hobby, but here are the main advantages: 1. It makes you more interesting. People who have hobbies have experiences and stories that they can share with others. They also have specialized knowledge that they can teach to anyone who also has an interest in the same topics as they do. 2. It helps to relieve stress by keeping you engaged in something you enjoy. Hobbies give you a way to take your mind off the stresses of everyday life. They let you relax and seek pleasure in activities that are not associated with work, chores, or other responsibilities. 3. Hobbies help you become more patient. To develop a new hobby, you have to learn how to do something that is brand new to you. The odds are there will be a learning curve, and you will need to be patient to build your skills. 4. Having a hobby can help your social life and create a bond with others. A hobby is something that you can frequently enjoy with other people. Whether you join a club, play in a league, or just give others the fruits of your labor, a hobby is a great way to meet and get closer to people who have the same interests as you do. 5. It increases your confidence and self-esteem. The odds are that if you enjoy an activity, you are usually pretty good at it. Any activity in that you can excel is an opportunity for you to build your confidence and develop pride in your accomplishments. 6. It helps develop new skills. A hobby that you dedicate your time to will lead you to build new skills. As you spend more time on your hobby you will become better and better at it. 7. It increases your knowledge. Along with building new skills, you will also gain new knowledge through the development of your hobby.",
+      "(Ada banyak alasan mengapa kita semua harus memiliki setidaknya satu hobi. 1. Hobi membuat kamu lebih menarik — orang yang berhobi memiliki pengalaman dan cerita untuk dibagikan. 2. Hobi membantu menghilangkan stres dengan membuat kamu terlibat dalam hal yang kamu nikmati. 3. Hobi membantu kamu menjadi lebih sabar karena kamu harus belajar hal baru. 4. Hobi dapat membantu kehidupan sosial dan menciptakan ikatan dengan orang lain. 5. Hobi meningkatkan kepercayaan diri dan harga diri. 6. Hobi membantu mengembangkan keterampilan baru. 7. Hobi meningkatkan pengetahuan.)",
       "In case you are wondering what my hobbies are: Over the years, I have had numerous hobbies and interests, but I currently have 3 that I am passionate about. They have positively changed my life and provided me with a lot of joy.",
+      "(Jika kamu bertanya-tanya apa hobi saya: Selama bertahun-tahun, saya telah memiliki banyak hobi dan minat, tetapi saat ini saya memiliki 3 yang saya gemari. Ketiganya telah mengubah hidup saya secara positif dan memberikan banyak kebahagiaan.)",
       "Reading — I love reading books, especially nonfiction ones. I currently read about 60 books per year on a wide array of topics. For example, I am currently reading a book called The Unconquered: In Search of the Amazon's Last Uncontacted Tribes which focuses on a tribe of native Indians that live in isolation in the Amazonian forest. The book is over 800 pages long and offers a fascinating glimpse into their lives and culture. It illustrates the importance of preserving our environment and ecology and is a wonderful read. Every book that I read teaches me something about the world at large and provides me with a new perspective on life. The books are a wonderful way to transport me to a different place and era without actually leaving home. Best of all, I joined my local public library and downloaded ebooks for free!",
+      "(Membaca — Saya suka membaca buku, terutama buku nonfiksi. Saat ini saya membaca sekitar 60 buku per tahun tentang berbagai topik. Setiap buku yang saya baca mengajarkan saya sesuatu tentang dunia dan memberikan perspektif baru tentang kehidupan. Buku adalah cara yang luar biasa untuk membawa saya ke tempat dan era yang berbeda tanpa benar-benar meninggalkan rumah. Yang terbaik, saya bergabung dengan perpustakaan umum setempat dan mengunduh ebook secara gratis!)",
       "Cooking — One of my favorite hobbies is cooking. On average, I cook about 5 days per week and often make extra food. Cooking has taught me so much about patience and focus because those 2 are essential ingredients to making delicious food. The more I cook, the better I get at it. Of course, I have also cooked food that did not turn out so well, but I learned from my mistakes and improved each time. I cook food that is healthy and that I enjoy eating. Best of all, it is generally cheaper and has better taste than eating out at most restaurants.",
+      "(Memasak — Salah satu hobi favorit saya adalah memasak. Rata-rata, saya memasak sekitar 5 hari per minggu dan sering membuat makanan ekstra. Memasak telah mengajarkan saya banyak tentang kesabaran dan fokus karena keduanya adalah bahan penting untuk membuat makanan yang lezat. Semakin sering saya memasak, semakin baik saya dalam hal itu. Tentu saja, saya juga pernah memasak makanan yang hasilnya kurang memuaskan, tetapi saya belajar dari kesalahan dan meningkat setiap kali. Yang terbaik, masakan rumah umumnya lebih murah dan lebih enak daripada makan di sebagian besar restoran.)",
       "Gardening — Edible gardens have become popular in the last couple of years. I started growing my first edible garden several years ago to complement my love for cooking. Not only does my garden provide me with herbs and vegetables that I can use in my favorite dishes, but it also provides me with a healthy and organic food source. I love knowing exactly what has gone into growing the food that I am eating. Additionally, I have learned a lot about what plants grow best in my region, what the best seasons are to grow each of them, and also how much water and sun they need. My edible garden not only nourishes my body but teaches me a lot as well.",
+      "(Berkebun — Kebun yang bisa dimakan telah menjadi populer dalam beberapa tahun terakhir. Saya mulai menanam kebun pertama saya beberapa tahun lalu untuk melengkapi kecintaan saya pada memasak. Tidak hanya kebun saya menyediakan rempah-rempah dan sayuran yang bisa saya gunakan dalam masakan favorit, tetapi juga menyediakan sumber makanan sehat dan organik. Saya suka mengetahui dengan pasti apa yang sudah dimasukkan dalam tumbuhnya makanan yang saya makan. Selain itu, saya telah belajar banyak tentang tanaman mana yang tumbuh paling baik di wilayah saya, musim terbaik untuk menumbuhkan masing-masing, dan berapa banyak air dan sinar matahari yang mereka butuhkan. Kebun saya tidak hanya menyehatkan tubuh tetapi juga mengajarkan banyak hal.)",
       "My hobbies are a very important part of my life. I find them to sweeten my days and give me a great escape from the regular stresses of life. If you have not already done so, I highly recommend that you start to explore and develop at least one hobby that you enjoy. I guarantee you will be very glad you did.",
+      "(Hobi-hobi saya adalah bagian yang sangat penting dari kehidupan saya. Saya merasa hobi-hobi itu memperindah hari-hari saya dan memberikan pelarian yang luar biasa dari tekanan hidup sehari-hari. Jika kamu belum melakukannya, saya sangat merekomendasikan kamu untuk mulai mengeksplorasi dan mengembangkan setidaknya satu hobi yang kamu nikmati. Saya menjamin kamu akan sangat senang melakukannya.)",
     ],
     materialSections: [
       {
@@ -611,12 +687,19 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading deskriptif tentang Bali: pengalaman perjalanan, budaya, pantai, villa, dan kuliner.",
     passage: [
       "Bali is a very famous island in Indonesia. Many tourists from all over the world visit each year, and the island is well known for its art, culture, food, and beaches.",
+      "(Bali adalah pulau yang sangat terkenal di Indonesia. Banyak wisatawan dari seluruh dunia mengunjunginya setiap tahun, dan pulau ini terkenal dengan seni, budaya, makanan, dan pantainya.)",
       "I've been to Bali three times. The first time was packed with sightseeing activities. Although I was exhausted, I fell in love with the beauty of Bali immediately. For the second visit, I spent less time sightseeing and more time relaxing. On my third visit, I went there with my boyfriend and two friends.",
+      "(Saya sudah pergi ke Bali tiga kali. Pertama kali dipenuhi dengan kegiatan wisata. Meskipun saya kelelahan, saya langsung jatuh cinta dengan keindahan Bali. Untuk kunjungan kedua, saya menghabiskan lebih sedikit waktu wisata dan lebih banyak waktu bersantai. Pada kunjungan ketiga, saya pergi bersama pacar dan dua teman.)",
       "We stayed in a two-bedroom villa and it was cheaper to share a villa. We wanted a relaxing trip so we hung out in the villa most of the time during our stay. The room was spacious and the bed was comfortable. There was also a private pool. I must say that staying in a villa was a great experience. It has become one of the reasons why Bali is on the list of my favorite holiday destinations.",
+      "(Kami tinggal di villa dengan dua kamar tidur dan lebih murah untuk berbagi villa. Kami ingin perjalanan yang santai jadi kami menghabiskan sebagian besar waktu di villa selama menginap. Kamarnya luas dan tempat tidurnya nyaman. Ada juga kolam renang pribadi. Saya harus bilang bahwa menginap di villa adalah pengalaman yang luar biasa. Hal itu menjadi salah satu alasan mengapa Bali ada dalam daftar destinasi liburan favorit saya.)",
       "Bali is rich in art and culture. I saw architecture, sculptures, carvings, and paintings all around, and they were amazing. I got to know a little more about the culture of Bali through them.",
+      "(Bali kaya akan seni dan budaya. Saya melihat arsitektur, patung, ukiran, dan lukisan di mana-mana, dan semuanya menakjubkan. Saya mendapat sedikit lebih banyak pengetahuan tentang budaya Bali melalui mereka.)",
       "Another reason that Bali became one of my favorite holiday destinations is because of the beach. In all of my Bali trips, I went to Kuta Beach, one of the famous places among the locals and tourists. I enjoyed taking a walk along the beach with my bare feet and watching the sunset. It was amazing to see how the sky changed its colors during sunset.",
+      "(Alasan lain mengapa Bali menjadi salah satu destinasi liburan favorit saya adalah karena pantainya. Dalam semua perjalanan ke Bali, saya pergi ke Pantai Kuta, salah satu tempat terkenal di kalangan penduduk lokal dan wisatawan. Saya menikmati berjalan di sepanjang pantai dengan kaki telanjang dan menonton matahari terbenam. Sungguh menakjubkan melihat bagaimana langit mengubah warnanya saat matahari terbenam.)",
       "Even though I'm not a foodie type of person, food still plays an important role in my trip. Bebek Bengil is a well-known restaurant in Ubud which famous for its crispy duck. Seafood was another not-to-be-missed food during the trip. We went to Jimbaran Beach to enjoy a sumptuous seafood dinner. The price was slightly expensive but the great view and good companion made it up.",
+      "(Meskipun saya bukan tipe orang pencinta makanan, makanan tetap memainkan peran penting dalam perjalanan saya. Bebek Bengil adalah restoran terkenal di Ubud yang terkenal dengan bebek goreng renyahnya. Makanan laut adalah makanan yang tidak boleh dilewatkan selama perjalanan. Kami pergi ke Pantai Jimbaran untuk menikmati makan malam seafood yang mewah. Harganya sedikit mahal tetapi pemandangan yang indah dan teman yang baik mengimbanginya.)",
       "Bali is a great place for a holiday and it will be one of my favorite holiday destinations for many years to come.",
+      "(Bali adalah tempat yang luar biasa untuk liburan dan akan menjadi salah satu destinasi liburan favorit saya selama bertahun-tahun ke depan.)",
     ],
     materialSections: [
       {
@@ -727,12 +810,19 @@ const basicReadingLessons: ModuleLesson[] = [
       "Materi reading informatif tentang berbagai opsi transportasi umum di Indonesia: pesawat, bus, kereta, kapal, angkot, dan aplikasi.",
     passage: [
       "Indonesia, with its countless and diverse natural, cultural, and historical charms, has been a tourist magnet for decades. Planning your way around this huge archipelago can make or break your overall travel experience. From flights to a local public car, We discover how to navigate public transport in Indonesia.",
+      "(Indonesia, dengan pesona alam, budaya, dan sejarahnya yang tak terhitung dan beragam, telah menjadi magnet wisata selama beberapa dekade. Merencanakan perjalanan di kepulauan yang luas ini dapat membuat atau menghancurkan pengalaman perjalanan Anda secara keseluruhan. Dari penerbangan hingga kendaraan umum lokal, kami menemukan cara menavigasi transportasi umum di Indonesia.)",
       "1. Domestic flight — A sprawling archipelago with five main islands and 17,000 other smaller ones, the most effective and time-efficient way to travel within the country is via domestic flight. Most of the bigger cities like Bali, Lombok, Jakarta, Surabaya, Yogyakarta, and more, have their international airports while smaller towns may only operate domestic flights. Either way, you can conveniently navigate through most of Indonesia's many islands and cities by plane.",
+      "(1. Penerbangan Domestik — Sebagai kepulauan yang luas dengan lima pulau utama dan 17.000 pulau kecil lainnya, cara paling efektif dan efisien waktu untuk bepergian di dalam negeri adalah melalui penerbangan domestik. Sebagian besar kota besar seperti Bali, Lombok, Jakarta, Surabaya, Yogyakarta, dan lainnya, memiliki bandara internasional sementara kota-kota kecil mungkin hanya mengoperasikan penerbangan domestik. Bagaimanapun, Anda dapat dengan mudah berkeliling sebagian besar pulau dan kota Indonesia dengan pesawat.)",
       "2. Bus — Most cities in Indonesia have inter-city bus operators that employ short and long-distance travel buses daily. If you want to take your time traveling through cities and islands in Indonesia, getting around by bus may be more cost-effective depending on the destination. The journey can be long and tedious depending on your travel plans and the distance of your destination, but you can enjoy the marvelous views of nature and towns along the way.",
+      "(2. Bus — Sebagian besar kota di Indonesia memiliki operator bus antar kota yang beroperasi setiap hari dengan bus perjalanan jarak pendek dan jauh. Jika Anda ingin menikmati perjalanan melalui kota dan pulau-pulau di Indonesia, berkeliling dengan bus mungkin lebih hemat biaya tergantung pada tujuan. Perjalanan bisa panjang dan membosankan tergantung rencana perjalanan dan jarak tujuan, tetapi Anda bisa menikmati pemandangan alam dan kota yang menakjubkan di sepanjang jalan.)",
       "3. Train — Indonesia runs a pretty reliable railway service that goes across Java and Sumatra. You can count on the train line to travel short trips like Jakarta-Bandung and longer distances such as Jakarta-Yogyakarta. There are several options for class of travel, from economy to executive class. If you don't mind paying more, the executive class offers a much more convenient trip especially for longer distances, although even the economy class is now air-conditioned, only with less personal space for seating.",
+      "(3. Kereta Api — Indonesia memiliki layanan kereta api yang cukup andal yang melintasi Jawa dan Sumatra. Anda dapat mengandalkan jalur kereta untuk perjalanan jarak pendek seperti Jakarta-Bandung dan jarak jauh seperti Jakarta-Yogyakarta. Ada beberapa pilihan kelas perjalanan, dari kelas ekonomi hingga kelas eksekutif. Jika Anda tidak keberatan membayar lebih, kelas eksekutif menawarkan perjalanan yang jauh lebih nyaman terutama untuk jarak jauh, meskipun bahkan kelas ekonomi kini sudah ber-AC, hanya dengan ruang tempat duduk yang lebih sempit.)",
       "4. Ferry and boats — Being the planet's largest archipelago, sea travel is a real necessity when traveling or living in Indonesia. People move around from one island to another, big or small, with the help of boat operators. The state-run ferry operator is quite reliable, although sadly many companies still employ old and dingy boats.",
+      "(4. Feri dan Kapal — Sebagai kepulauan terbesar di dunia, perjalanan laut adalah kebutuhan nyata ketika bepergian atau tinggal di Indonesia. Orang-orang berpindah dari satu pulau ke pulau lain, besar atau kecil, dengan bantuan operator kapal. Operator feri milik pemerintah cukup andal, meskipun sayangnya banyak perusahaan masih menggunakan kapal tua dan lusuh.)",
       "5. Minivan bus — Minivan bus or angkot runs through most Indonesian cities and towns, big or small. These are non-air-conditioned minivans crafted to fit up to 12 people per vehicle. And while these may not be the most comfortable way to travel the town, fares are cheap and you can conveniently hail or tell the driver to stop anywhere you want within the route, as there are no designated stops for this transportation. Just yell 'Kiri' or simply say 'stop' wherever and the driver will drop you off.",
+      "(5. Bus Minivan — Bus minivan atau angkot beroperasi di sebagian besar kota dan kabupaten Indonesia, besar maupun kecil. Ini adalah minivan tanpa AC yang dirancang untuk menampung hingga 12 orang per kendaraan. Meskipun mungkin bukan cara perjalanan kota yang paling nyaman, tarifnya murah dan Anda dapat dengan mudah menghentikan atau memberitahu pengemudi untuk berhenti di mana saja yang Anda inginkan dalam rute, karena tidak ada halte yang ditentukan untuk transportasi ini. Cukup teriak 'Kiri' atau katakan 'berhenti' di mana saja dan pengemudi akan menurunkan Anda.)",
       "6. Travel apps — Online ride-hailing services can only get you so far but it's still one of the most hassle-free ways to go places, especially when you do not know your way around. Go-Jek, the local ride-hailing app, and Grab are the most used and reliable travel apps to use while traveling in Indonesia.",
+      "(6. Aplikasi Perjalanan — Layanan ride-hailing online hanya bisa membawa Anda sejauh tertentu, tetapi tetap menjadi salah satu cara pergi ke tempat-tempat yang paling bebas kerumitan, terutama ketika Anda tidak tahu jalan. Go-Jek, aplikasi ride-hailing lokal, dan Grab adalah aplikasi perjalanan yang paling banyak digunakan dan diandalkan saat bepergian di Indonesia.)",
     ],
     materialSections: [
       {
@@ -1833,6 +1923,149 @@ const basicReadingLessons: ModuleLesson[] = [
       },
       {
         id: "r19-q6",
+        type: "task",
+        question: "Summarize this passage using a mind map!",
+      },
+    ],
+  },
+  // ── Day 20 · The Power of Language and Communication ────────────────────────
+  {
+    id: "reading-20",
+    track: "reading",
+    day: 20,
+    tutor: "Ms. Lidya",
+    title: "The Power of Language and Communication",
+    subtitle: "How language shapes thinking, identity, and professional success",
+    overview:
+      "Bacaan tentang peran bahasa dalam kehidupan manusia: dari pembentukan kognitif, komunikasi non-verbal, hingga dampaknya terhadap dunia profesional dan pertumbuhan ekonomi.",
+    passage: [
+      "Language is one of the most powerful tools that humans possess. It is not merely a system of communication, but a vehicle through which ideas, emotions, culture, and identity are expressed and preserved. The ability to articulate thoughts clearly and persuasively distinguishes effective communicators from average ones. In today's globalized world, individuals who can navigate multiple languages and communication styles hold a significant advantage, both professionally and socially.",
+
+      "(Bahasa adalah salah satu alat paling kuat yang dimiliki manusia. Bahasa bukan sekadar sistem komunikasi, melainkan sebuah sarana untuk mengekspresikan dan melestarikan gagasan, emosi, budaya, dan identitas. Kemampuan untuk mengartikulasikan pikiran secara jelas dan persuasif membedakan komunikator yang efektif dari yang biasa-biasa saja. Di dunia yang telah mengglobal seperti saat ini, individu yang mampu menavigasi berbagai bahasa dan gaya komunikasi memiliki keunggulan yang signifikan, baik secara profesional maupun sosial.)",
+
+      "Research in linguistics has consistently shown that learning a second language does more than expand one's vocabulary. It fundamentally reshapes the brain's cognitive architecture. Bilingual individuals have been found to exhibit greater mental flexibility, enhanced problem-solving abilities, and a stronger capacity to filter out irrelevant information. Moreover, the process of acquiring a new language forces learners to examine their own native tongue more critically, fostering a deeper appreciation of linguistic nuance and cultural diversity.",
+
+      "(Penelitian dalam bidang linguistik secara konsisten menunjukkan bahwa mempelajari bahasa kedua tidak hanya sekadar memperluas kosakata seseorang. Proses ini secara fundamental membentuk ulang arsitektur kognitif otak. Individu bilingual terbukti menunjukkan fleksibilitas mental yang lebih besar, kemampuan pemecahan masalah yang lebih baik, dan kapasitas yang lebih kuat untuk menyaring informasi yang tidak relevan. Lebih dari itu, proses belajar bahasa baru mendorong pelajar untuk mengkaji bahasa ibu mereka sendiri secara lebih kritis, sehingga menumbuhkan apresiasi yang lebih dalam terhadap nuansa linguistik dan keragaman budaya.)",
+
+      "Communication, however, extends beyond spoken and written language. Non-verbal cues — such as facial expressions, gestures, posture, and tone of voice — constitute a substantial portion of the messages we convey. Studies suggest that in face-to-face interactions, non-verbal communication may account for as much as 70% of the total meaning transmitted. Therefore, mastering a language requires not only grammatical accuracy and vocabulary breadth, but also a keen awareness of cultural norms and interpersonal dynamics.",
+
+      "(Namun, komunikasi tidak hanya terbatas pada bahasa lisan dan tulisan. Isyarat non-verbal — seperti ekspresi wajah, gerak tubuh, postur, dan nada suara — merupakan bagian yang signifikan dari pesan yang kita sampaikan. Penelitian menunjukkan bahwa dalam interaksi tatap muka, komunikasi non-verbal dapat menyumbang hingga 70% dari total makna yang disampaikan. Oleh karena itu, menguasai suatu bahasa tidak hanya memerlukan ketepatan tata bahasa dan kekayaan kosakata, tetapi juga kesadaran yang tajam terhadap norma budaya dan dinamika antarpribadi.)",
+
+      "In professional settings, the ability to communicate effectively is widely regarded as the most critical skill an individual can develop. Companies across the globe increasingly seek employees who can present ideas coherently, collaborate across cultural boundaries, and adapt their communication style to diverse audiences. Consequently, investment in language education has grown substantially in developing nations, as governments and private institutions recognize that linguistic competency is inseparable from economic growth and global competitiveness.",
+
+      "(Dalam lingkungan profesional, kemampuan berkomunikasi secara efektif secara luas dianggap sebagai keterampilan paling kritis yang dapat dikembangkan seseorang. Perusahaan di seluruh dunia semakin mencari karyawan yang mampu menyajikan ide secara koheren, berkolaborasi lintas batas budaya, dan menyesuaikan gaya komunikasi mereka untuk audiens yang beragam. Akibatnya, investasi dalam pendidikan bahasa telah berkembang secara signifikan di negara-negara berkembang, karena pemerintah dan institusi swasta menyadari bahwa kompetensi linguistik tidak dapat dipisahkan dari pertumbuhan ekonomi dan daya saing global.)",
+
+      "Despite its undeniable importance, language learning is not without its challenges. Many learners experience anxiety, fear of making mistakes, and a reluctance to practice with native speakers. Educators and researchers agree that creating a supportive and low-anxiety environment is essential to accelerating language acquisition. When learners feel safe to experiment with the language, make errors, and receive constructive feedback, their progress tends to be significantly more rapid and sustained. In this regard, the journey of language learning is as much about cultivating a resilient mindset as it is about memorizing grammar rules and vocabulary lists.",
+
+      "(Terlepas dari pentingnya yang tak terbantahkan, pembelajaran bahasa tidak luput dari tantangan. Banyak pelajar mengalami kecemasan, rasa takut membuat kesalahan, dan keengganan untuk berlatih dengan penutur asli. Para pendidik dan peneliti sepakat bahwa menciptakan lingkungan yang suportif dan minim tekanan sangat penting untuk mempercepat penguasaan bahasa. Ketika pelajar merasa aman untuk bereksperimen dengan bahasa, membuat kesalahan, dan menerima umpan balik yang konstruktif, kemajuan mereka cenderung jauh lebih pesat dan berkelanjutan. Dalam hal ini, perjalanan belajar bahasa sama-sama tentang menumbuhkan pola pikir yang tangguh seperti halnya menghafal aturan tata bahasa dan daftar kosakata.)",
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. 1 — Language = alat terkuat manusia; menyampaikan ide, emosi, budaya, dan identitas.",
+          "Para. 2 — Belajar bahasa kedua membentuk ulang arsitektur kognitif; bilinguals lebih fleksibel dan kritis.",
+          "Para. 3 — Komunikasi non-verbal (ekspresi, gerak tubuh, nada) = hingga 70% makna dalam tatap muka.",
+          "Para. 4 — Di dunia profesional, komunikasi efektif = skill paling kritis; investasi pendidikan bahasa meningkat.",
+          "Para. 5 — Tantangan belajar: kecemasan & takut salah; solusi = lingkungan suportif + pola pikir tangguh.",
+        ],
+      },
+      {
+        title: "Key Vocabulary",
+        points: [
+          "possess, vehicle, articulate, persuasively, navigate",
+          "linguistics, cognitive, bilingual, flexibility, irrelevant",
+          "non-verbal cues, gestures, posture, constitute, convey",
+          "coherently, collaborate, boundaries, competency, inseparable",
+          "anxiety, reluctance, acquisition, constructive, resilient",
+        ],
+      },
+      {
+        title: "Vocabulary List",
+        points: [
+          "1.  possess (v) — memiliki | Sinonim: own | Antonim: lack",
+          "2.  vehicle (n) — sarana/kendaraan | Sinonim: medium, means",
+          "3.  articulate (v) — mengartikulasikan/mengungkapkan | Sinonim: express | Antonim: mumble",
+          "4.  persuasively (adv) — secara persuasif | Sinonim: convincingly | Antonim: unconvincingly",
+          "5.  navigate (v) — menavigasi | Sinonim: manage, handle | Antonim: avoid",
+          "6.  linguistics (n) — linguistik (ilmu bahasa) | Sinonim: language science",
+          "7.  cognitive (adj) — kognitif | Sinonim: mental, intellectual | Antonim: emotional",
+          "8.  bilingual (adj) — dwibahasa | Sinonim: two-language | Antonim: monolingual",
+          "9.  flexibility (n) — fleksibilitas | Sinonim: adaptability | Antonim: rigidity",
+          "10. irrelevant (adj) — tidak relevan | Sinonim: unrelated | Antonim: relevant",
+          "11. foster (v) — menumbuhkan | Sinonim: nurture, promote | Antonim: hinder",
+          "12. nuance (n) — nuansa | Sinonim: subtlety | Antonim: bluntness",
+          "13. non-verbal (adj) — non-verbal | Sinonim: unspoken | Antonim: verbal",
+          "14. cues (n) — isyarat/petunjuk | Sinonim: signals, hints",
+          "15. gestures (n) — gerak tubuh | Sinonim: body language",
+          "16. posture (n) — postur tubuh | Sinonim: stance, bearing",
+          "17. constitute (v) — membentuk/merupakan | Sinonim: make up | Antonim: exclude",
+          "18. convey (v) — menyampaikan | Sinonim: communicate | Antonim: withhold",
+          "19. breadth (n) — keluasan | Sinonim: scope, range | Antonim: narrowness",
+          "20. keen (adj) — tajam/antusias | Sinonim: sharp | Antonim: indifferent",
+          "21. coherently (adv) — secara koheren | Sinonim: clearly, logically | Antonim: incoherently",
+          "22. collaborate (v) — berkolaborasi | Sinonim: cooperate | Antonim: compete",
+          "23. boundaries (n) — batasan | Sinonim: borders, limits | Antonim: freedom",
+          "24. adapt (v) — menyesuaikan | Sinonim: adjust | Antonim: resist",
+          "25. competency (n) — kompetensi | Sinonim: ability, skill | Antonim: incompetence",
+          "26. inseparable (adj) — tidak terpisahkan | Sinonim: inextricable | Antonim: separable",
+          "27. undeniable (adj) — tak terbantahkan | Sinonim: indisputable | Antonim: debatable",
+          "28. anxiety (n) — kecemasan | Sinonim: worry, nervousness | Antonim: calmness",
+          "29. reluctance (n) — keengganan | Sinonim: unwillingness | Antonim: willingness",
+          "30. acquisition (n) — penguasaan | Sinonim: learning, attainment | Antonim: loss",
+          "31. accelerate (v) — mempercepat | Sinonim: speed up | Antonim: slow down",
+          "32. constructive (adj) — konstruktif | Sinonim: helpful, positive | Antonim: destructive",
+          "33. sustained (adj) — berkelanjutan | Sinonim: continuous | Antonim: temporary",
+          "34. cultivate (v) — menumbuhkan | Sinonim: develop, nurture | Antonim: neglect",
+          "35. resilient (adj) — tangguh | Sinonim: tough, adaptable | Antonim: fragile",
+        ],
+      },
+    ],
+    exercises: [
+      {
+        id: "r20-q1",
+        type: "short-answer",
+        question:
+          "What is the main idea of the first paragraph? (Apa ide pokok paragraf pertama?)",
+      },
+      {
+        id: "r20-q2",
+        type: "short-answer",
+        question:
+          "According to the passage, what are three benefits of being bilingual? (Sebutkan 3 manfaat menjadi bilingual menurut bacaan!)",
+      },
+      {
+        id: "r20-q3",
+        type: "short-answer",
+        question:
+          "What does the passage say about non-verbal communication? How important is it? (Apa yang dikatakan teks tentang komunikasi non-verbal? Seberapa penting?)",
+      },
+      {
+        id: "r20-q4",
+        type: "short-answer",
+        question:
+          "Why has investment in language education grown in developing countries? Mention at least 2 reasons from the text.",
+      },
+      {
+        id: "r20-q5",
+        type: "short-answer",
+        question:
+          "What challenges do language learners face? What is the solution according to the author?",
+      },
+      {
+        id: "r20-q6",
+        type: "task",
+        question:
+          "Do you agree that learning English gives you a significant advantage in professional life? Write 5–7 sentences explaining your opinion. Use evidence from the passage to support your answer!",
+      },
+      {
+        id: "r20-q7",
+        type: "task",
+        question:
+          "Please mention 20 or more vocabulary from this passage that you don't know and memorize those as an entrance ticket for tomorrow!",
+      },
+      {
+        id: "r20-q8",
         type: "task",
         question: "Summarize this passage using a mind map!",
       },
