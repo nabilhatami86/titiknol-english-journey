@@ -1680,8 +1680,11 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
         const middleExercises = lesson.exercises.filter((e) => e.section === 'middle');
         const finalExercises = lesson.exercises.filter((e) => e.section === 'final');
         const quizExercises = lesson.exercises.filter((e) => e.section === 'quiz');
+        const part1Exercises = lesson.exercises.filter((e) => e.section === 'part1');
+        const part2Exercises = lesson.exercises.filter((e) => e.section === 'part2');
         const regularExercises = lesson.exercises.filter((e) => !e.section);
         const hasTestSections = middleExercises.length > 0 || finalExercises.length > 0;
+        const hasPartSections = part1Exercises.length > 0 || part2Exercises.length > 0;
 
         const renderExerciseList = (exercises: typeof lesson.exercises, startNum: number) => (
           <div className="space-y-4">
@@ -2207,6 +2210,43 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
           );
         }
 
+        if (hasPartSections) {
+          return (
+            <div className="space-y-8">
+              {regularExercises.length > 0 && (
+                <section className="space-y-4">
+                  <h2 className="text-lg font-semibold text-(--text)">Exercises</h2>
+                  {renderExerciseList(regularExercises, 1)}
+                </section>
+              )}
+              {part1Exercises.length > 0 && (
+                <section className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="h-px flex-1 bg-(--border)" />
+                    <h2 className="text-sm font-semibold text-(--text-secondary) uppercase tracking-wider whitespace-nowrap px-2">
+                      Part 1
+                    </h2>
+                    <div className="h-px flex-1 bg-(--border)" />
+                  </div>
+                  {renderExerciseList(part1Exercises, regularExercises.length + 1)}
+                </section>
+              )}
+              {part2Exercises.length > 0 && (
+                <section className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="h-px flex-1 bg-primary/30" />
+                    <h2 className="text-sm font-semibold text-primary uppercase tracking-wider whitespace-nowrap px-2">
+                      Part 2
+                    </h2>
+                    <div className="h-px flex-1 bg-primary/30" />
+                  </div>
+                  {renderExerciseList(part2Exercises, regularExercises.length + part1Exercises.length + 1)}
+                </section>
+              )}
+            </div>
+          );
+        }
+
         if (!hasTestSections) {
           return (
             <section className="space-y-4">
@@ -2246,30 +2286,16 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
 
         return (
           <div className="space-y-8">
-            {/* Set 1 = finalExercises (section:'final') — tampil pertama di 3-grup */}
+            {/* finalExercises (section:'final') — tampil pertama di 3-grup */}
             {isThreeGroup && finalExercises.length > 0 && (
               <section className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-px flex-1 bg-(--border)" />
-                  <h2 className="text-sm font-semibold text-(--text-secondary) uppercase tracking-wider whitespace-nowrap">
-                    Set 1
-                  </h2>
-                  <div className="h-px flex-1 bg-(--border)" />
-                </div>
                 {renderExerciseList(finalExercises, 1)}
               </section>
             )}
 
-            {/* Set 2 = regularExercises (no section) */}
+            {/* regularExercises (no section) */}
             {isThreeGroup && regularExercises.length > 0 && (
               <section className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="h-px flex-1 bg-(--border)" />
-                  <h2 className="text-sm font-semibold text-(--text-secondary) uppercase tracking-wider whitespace-nowrap">
-                    Set 2
-                  </h2>
-                  <div className="h-px flex-1 bg-(--border)" />
-                </div>
                 {renderExerciseList(regularExercises, 1)}
               </section>
             )}
@@ -2279,8 +2305,8 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
               <section className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="h-px flex-1 bg-amber-500/30" />
-                  <h2 className={cn('font-semibold flex items-center gap-2 whitespace-nowrap', isThreeGroup ? 'text-sm text-(--text-secondary) uppercase tracking-wider' : 'text-lg text-amber-600 dark:text-amber-400')}>
-                    {isThreeGroup ? 'Set 3' : <><BookText className="w-5 h-5" /> Middle Test</>}
+                  <h2 className="text-lg font-semibold text-amber-600 dark:text-amber-400 flex items-center gap-2 whitespace-nowrap">
+                    <BookText className="w-5 h-5" /> Middle Test
                   </h2>
                   <div className="h-px flex-1 bg-amber-500/30" />
                 </div>

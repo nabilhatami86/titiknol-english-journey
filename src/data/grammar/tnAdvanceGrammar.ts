@@ -249,85 +249,9 @@ const advanceGrammarLessons: ModuleLesson[] = [
     ],
     exercises: [
       {
-        id: "adv-g1-mc1",
-        type: "multiple-choice",
-        question:
-          "My decision depends on ______ he will accept the offer or not.",
-        options: ["A. if", "B. whether", "C. that", "D. what"],
-        correctAnswer: "B. whether",
-        reason:
-          "'Whether' bisa menjadi objek preposisi ('on'), sedangkan 'if' tidak bisa. Pola: depends on + WHETHER + S + V.",
-      },
-      {
-        id: "adv-g1-mc2",
-        type: "multiple-choice",
-        question: "______ or not she passes the exam is not my concern.",
-        options: ["A. If", "B. That", "C. Whether", "D. What"],
-        correctAnswer: "C. Whether",
-        reason:
-          "'Whether' bisa berada di awal kalimat sebagai subject NC, sedangkan 'if' tidak bisa. 'Whether or not she passes' = NC sebagai subject.",
-      },
-      {
-        id: "adv-g1-mc3",
-        type: "multiple-choice",
-        question:
-          "The doctor recommended that the patient ______ a complete rest.",
-        options: ["A. takes", "B. took", "C. take", "D. to take"],
-        correctAnswer: "C. take",
-        reason:
-          "NC of Request: setelah 'recommended that', gunakan V1 (present subjunctive). Meskipun subject 'the patient' singular, subjunctive tetap 'take' (tanpa -s).",
-      },
-      {
-        id: "adv-g1-mc4",
-        type: "multiple-choice",
-        question:
-          "He was surprised by ______ his employees had quit without notice.",
-        options: ["A. that", "B. if", "C. whether", "D. the fact that"],
-        correctAnswer: "D. the fact that",
-        reason:
-          "'The fact that' bisa menjadi objek preposisi ('by'), sedangkan 'that' tidak bisa. Pola: surprised by + THE FACT THAT + S + V.",
-      },
-      {
-        id: "adv-g1-mc5",
-        type: "multiple-choice",
-        question:
-          "I don't know what I should wear to the party. → Abridgement yang benar?",
-        options: [
-          "A. I don't know what wearing to the party.",
-          "B. I don't know what to wear to the party.",
-          "C. I don't know to wear to the party.",
-          "D. I don't know what I wear to the party.",
-        ],
-        correctAnswer: "B. I don't know what to wear to the party.",
-        reason:
-          "Abridgement NC: conjunction dari wh-word (what) + sama subject + ada modal (should) → hapus S + modal, tambah 'to'. 'what I should wear' → 'what to wear'.",
-      },
-      {
-        id: "adv-g1-mc6",
-        type: "multiple-choice",
-        question: "He will hire ______ is the most qualified for the position.",
-        options: ["A. who", "B. whoever", "C. whom", "D. whomever"],
-        correctAnswer: "B. whoever",
-        reason:
-          "'Whoever' = siapa pun yang (subject position dalam NC as object). NC 'whoever is the most qualified' = objek dari 'hire'. 'Who' bisa tetapi 'whoever' lebih tepat untuk menyatakan 'anyone who'.",
-      },
-      {
-        id: "adv-g1-task",
-        type: "task",
-        section: "final",
-        question:
-          "A. Tentukan jenis NC (Question/Statement/Exclamation/Request) dan fungsinya (S/O/Complement/Obj.Prep):\n1. That she survived the accident is a miracle.\n2. The committee suggested that all members attend the meeting.\n3. I wonder whether they have arrived safely.\n4. She is amazed at how quickly he learned the language.\n5. Nobody knows whose car was parked in the director's spot.\n\nB. Buat abridgement dari kalimat berikut:\n6. She doesn't know how she should respond to the offer.\n7. He asked me where he could find a good restaurant.",
-        sampleAnswer:
-          "A.\n1. NC of Statement ('that') — Subject\n2. NC of Request ('that' + V1 subjunctive) — Object\n3. NC of Question (whether) — Object\n4. NC of Exclamation (how) — Object of Preposition\n5. NC of Question (whose + noun as modifier) — Object\n\nB.\n6. She doesn't know how to respond to the offer.\n   (how + she + should respond → how + to respond)\n7. He asked me where to find a good restaurant.\n   (where + he + could find → where + to find)",
-      },
-
-      // ── Exercise 9 — Correct / Incorrect ────────────────────────────────────
-      {
         id: "adv-g1-ex9-1",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"When the season starts is determined by the weather.\"",
+        question: "When the season starts is determined by the weather.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "C — Correct",
         reason:
@@ -336,9 +260,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-2",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"The manual how the device should be built.\"",
+        question: "The manual how the device should be built.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "I — Incorrect",
         reason:
@@ -347,9 +269,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-3",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"The schedule indicated if the teams would be playing in the final game.\"",
+        question: "The schedule indicated if the teams would be playing in the final game.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "C — Correct",
         reason:
@@ -358,9 +278,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-4",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"He refused to enter a plea could not be determined by the lawyer.\"",
+        question: "He refused to enter a plea could not be determined by the lawyer.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "I — Incorrect",
         reason:
@@ -369,9 +287,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-5",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"Talked about where we should go for lunch.\"",
+        question: "Talked about where we should go for lunch.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "I — Incorrect",
         reason:
@@ -380,9 +296,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-6",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"Why the condition of the patient deteriorated so rapidly it was not explained.\"",
+        question: "Why the condition of the patient deteriorated so rapidly it was not explained.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "I — Incorrect",
         reason:
@@ -391,9 +305,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-7",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"Whether or not the new office would be built was to be determined at the meeting.\"",
+        question: "Whether or not the new office would be built was to be determined at the meeting.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "C — Correct",
         reason:
@@ -402,9 +314,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-8",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"That the professor has not yet decided when the paper is due.\"",
+        question: "That the professor has not yet decided when the paper is due.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "I — Incorrect",
         reason:
@@ -413,9 +323,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-9",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"The contract will be awarded is the question to be answered at the meeting.\"",
+        question: "The contract will be awarded is the question to be answered at the meeting.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "I — Incorrect",
         reason:
@@ -424,35 +332,81 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g1-ex9-10",
         type: "multiple-choice",
-        section: "final",
-        question:
-          "Exercise 9 — Correct (C) or Incorrect (I)?\n\n\"He always talked with whomever he pleased and did whatever he wanted.\"",
+        question: "He always talked with whomever he pleased and did whatever he wanted.",
         options: ["C — Correct", "I — Incorrect"],
         correctAnswer: "C — Correct",
         reason:
           "S: He. V1: talked with + NC (whomever he pleased = obj. of prep). Conjunction: and. V2: did + NC (whatever he wanted = object). Compound sentence dengan dua NC. Kalimat benar.",
       },
-
-      // ── Part 1 Translation — NC (Pronoun) ───────────────────────────────────
       {
-        id: "adv-g1-trans1",
-        type: "task",
-        section: "final",
-        question:
-          "PART 1 — Terjemahkan kalimat berikut ke dalam bahasa Inggris menggunakan Noun Clause yang tepat!\n\n1. Yang sudah berumur 17 tahun wajib memiliki KTP.\n2. Kita tidak tahu siapa lagi yang bisa kita percaya di negara ini.\n3. Rakyat sedang melihat apakah semua program yang disampaikan oleh kandidat terpilih akan benar-benar direalisasikan dengan baik.\n4. Beberapa mahasiswa telah mengetahui mana yang harus mereka kerjakan terlebih dulu.\n5. Apa yang kita lakukan hari ini menentukan masa depan kita nanti.",
-        sampleAnswer:
-          "1. Whoever has reached the age of 17 is required to have an ID card.\n   → NC: 'Whoever has reached 17' = subject (whoever = siapa pun yang)\n\n2. We don't know who else we can trust in this country.\n   → NC: 'who else we can trust' = object of 'know'\n\n3. The people are watching whether all programs proposed by the elected candidate will truly be realized properly.\n   → NC: 'whether all programs...realized' = object of 'watching'\n\n4. Some students have already known which one they should do first.\n   → NC: 'which one they should do first' = object of 'known'\n\n5. What we do today determines our future.\n   → NC: 'What we do today' = subject (bersifat singular → 'determines')",
+        id: "adv-g1-tr1-1",
+        type: "short-answer",
+        section: "part1",
+        question: "Translate to English: Yang sudah berumur 17 tahun wajib memiliki KTP.",
+        sampleAnswer: "Whoever is already 17 years old must have an ID card.",
       },
-
-      // ── Part 2 Translation — NC (Adverb) ────────────────────────────────────
       {
-        id: "adv-g1-trans2",
-        type: "task",
-        section: "final",
-        question:
-          "PART 2 — Terjemahkan kalimat berikut ke dalam bahasa Inggris menggunakan Noun Clause yang tepat!\n\n1. Kita harus paham kapan kita harus diam.\n2. Kepribadian kita ditentukan oleh bagaimana kita dulu dididik.\n3. Menjadi bahagia tidak dijamin oleh berapa banyak uang yang kita miliki.\n4. Kapan dan di mana kita akan pergi masih direncanakan.\n5. Para pendaki dapat dengan cepat menentukan mana langkah yang harus mereka ambil ketika tersesat.",
-        sampleAnswer:
-          "1. We must understand when we should be silent.\n   → NC: 'when we should be silent' = object of 'understand'\n   (Abridgement: We must understand when to be silent.)\n\n2. Our personality is determined by how we were raised/educated.\n   → NC: 'how we were raised' = object of preposition 'by'\n\n3. Being happy is not guaranteed by how much money we have.\n   → NC: 'how much money we have' = object of preposition 'by'\n   Alt: How much money we have does not guarantee happiness.\n\n4. When and where we will go is still being planned.\n   → Two NC joined: 'When and where we will go' = compound NC as subject\n   (singular → 'is still being planned')\n\n5. Hikers can quickly determine which steps they should take when they get lost.\n   → NC: 'which steps they should take when they get lost' = object of 'determine'",
+        id: "adv-g1-tr1-2",
+        type: "short-answer",
+        section: "part1",
+        question: "Translate to English: Kita tidak tahu siapa lagi yang bisa kita percaya di negara ini.",
+        sampleAnswer: "We don't know who else we can trust in this country.",
+      },
+      {
+        id: "adv-g1-tr1-3",
+        type: "short-answer",
+        section: "part1",
+        question: "Translate to English: Rakyat sedang melihat apakah semua program yang disampaikan oleh kandidat terpilih akan benar-benar direalisasikan dengan baik.",
+        sampleAnswer: "The people are watching whether all the programs presented by the elected candidate will truly be realized well.",
+      },
+      {
+        id: "adv-g1-tr1-4",
+        type: "short-answer",
+        section: "part1",
+        question: "Translate to English: Beberapa mahasiswa telah mengetahui mana yang harus mereka kerjakan terlebih dulu.",
+        sampleAnswer: "Some students have already known which one they should work on first.",
+      },
+      {
+        id: "adv-g1-tr1-5",
+        type: "short-answer",
+        section: "part1",
+        question: "Translate to English: Apa yang kita lakukan hari ini menentukan masa depan kita nanti.",
+        sampleAnswer: "What we do today determines our future.",
+      },
+      {
+        id: "adv-g1-tr2-1",
+        type: "short-answer",
+        section: "part2",
+        question: "Translate to English: Kita harus paham kapan kita harus diam.",
+        sampleAnswer: "We must understand when we should keep silent.",
+      },
+      {
+        id: "adv-g1-tr2-2",
+        type: "short-answer",
+        section: "part2",
+        question: "Translate to English: Kepribadian kita ditentukan oleh bagaimana kita dulu dididik.",
+        sampleAnswer: "Our personality is determined by how we were raised.",
+      },
+      {
+        id: "adv-g1-tr2-3",
+        type: "short-answer",
+        section: "part2",
+        question: "Translate to English: Menjadi bahagia tidak dijamin oleh berapa banyak uang yang kita miliki.",
+        sampleAnswer: "Being happy is not guaranteed by how much money we have.",
+      },
+      {
+        id: "adv-g1-tr2-4",
+        type: "short-answer",
+        section: "part2",
+        question: "Translate to English: Kapan dan di mana kita akan pergi masih direncanakan.",
+        sampleAnswer: "When and where we will go is still being planned.",
+      },
+      {
+        id: "adv-g1-tr2-5",
+        type: "short-answer",
+        section: "part2",
+        question: "Translate to English: Para pendaki dapat dengan cepat menentukan mana langkah yang harus mereka ambil ketika tersesat.",
+        sampleAnswer: "The hikers can quickly determine which step they should take when lost.",
       },
     ],
   },

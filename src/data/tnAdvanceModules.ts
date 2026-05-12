@@ -2,9 +2,7 @@ import type { ModuleLesson } from "@/types/module";
 import { tnAdvanceSpeakingLessons } from "@/data/speaking/tnAdvanceSpeaking";
 import { advanceGrammarLessons } from "@/data/grammar/tnAdvanceGrammar";
 import { advanceWritingLessons } from "@/data/writing/tnAdvanceWriting";
-
-
-const advanceReadingLessons: ModuleLesson[] = [];
+import { advanceReadingLessons } from "@/data/reading/tnAdvanceReading";
 
 export interface AdvanceTrackInfo {
   track: ModuleLesson["track"];
