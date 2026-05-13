@@ -352,6 +352,25 @@ export const advanceWritingLessons: ModuleLesson[] = [
           "    BUT engineers believe THAT they will be able to solve them soon.",
         ],
       },
+      {
+        title: "5. Noun Clause Connector/Subjects",
+        points: [
+          "NC Connector/Subject berfungsi sebagai SUBJECT dalam noun clause sekaligus penghubung.",
+          "Connector ini: who · whoever · what · whatever · which · whichever",
+          "",
+          "📌 NC as OBJECT of verb:",
+          "   Pola: S  V  [NC Connector/Subject  V]",
+          "   Contoh: I know  [what  happened].",
+          "",
+          "📌 NC as SUBJECT:",
+          "   Pola: [NC Connector/Subject  V]  V",
+          "   Contoh: [What  happened]  was great.",
+          "",
+          "⚠️  Ingat: setelah NC Connector/Subject HARUS ada VERB di dalam noun clause.",
+          "   ❌ You should find out which the best physics department.",
+          "   ✅ You should find out which IS the best physics department.",
+        ],
+      },
     ],
     exercises: [
       {
@@ -459,6 +478,117 @@ export const advanceWritingLessons: ModuleLesson[] = [
         correctAnswer: "Compound-Complex",
         reason:
           "Terdapat FANBOYS 'but' DAN subordinators 'before' dan 'that' — gabungan Compound dan Complex. Ini Compound-Complex Sentence.",
+      },
+      // ── Exercise 10: NC Connector/Subject — Correct (C) or Incorrect (I) ──────
+      {
+        id: "adv-w2-ex10-1",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"The game show contestant was able to respond to whatever was asked.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "C — Correct",
+        reason:
+          "NC Connector/Subject 'whatever' diikuti verb 'was asked' → NC sebagai object of preposition 'to'. Struktur benar.",
+      },
+      {
+        id: "adv-w2-ex10-2",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"You should find out which the best physics department.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "I — Incorrect",
+        reason:
+          "NC Connector/Subject 'which' harus diikuti verb dalam noun clause. Tidak ada verb setelah 'which'. Koreksi: '...find out which IS the best physics department.'",
+      },
+      {
+        id: "adv-w2-ex10-3",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"The employee was unhappy about what was added to his job description.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "C — Correct",
+        reason:
+          "NC Connector/Subject 'what' diikuti verb 'was added' → NC sebagai object of preposition 'about'. Struktur benar.",
+      },
+      {
+        id: "adv-w2-ex10-4",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"Whoever wants to take the desert tour during spring break signing up at the office.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "I — Incorrect",
+        reason:
+          "'Signing up' adalah Ving tanpa auxiliary — bukan main verb. NC Subject 'Whoever wants...' tidak memiliki main verb. Koreksi: '...should sign up at the office.'",
+      },
+      {
+        id: "adv-w2-ex10-5",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"The motorist was unable to discover who he had struck his car.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "I — Incorrect",
+        reason:
+          "Struktur NC salah: 'who he had struck his car' ambigu/janggal. Koreksi: '...discover whose car he had struck.' (jika NC sebagai object dari 'struck')",
+      },
+      {
+        id: "adv-w2-ex10-6",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"The voters should elect whichever of the candidates seems best to them.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "C — Correct",
+        reason:
+          "NC Connector/Subject 'whichever' diikuti prepositional phrase 'of the candidates' lalu verb 'seems' → NC sebagai object of 'elect'. Struktur benar.",
+      },
+      {
+        id: "adv-w2-ex10-7",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"It was difficult to distinguish what was on sale and what was merely on display.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "C — Correct",
+        reason:
+          "Dua NC Connector/Subject: 'what was on sale' dan 'what was merely on display', keduanya sebagai object of 'distinguish'. Struktur benar.",
+      },
+      {
+        id: "adv-w2-ex10-8",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"You should buy whatever the cheapest and most durable.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "I — Incorrect",
+        reason:
+          "NC 'whatever the cheapest and most durable' tidak memiliki verb. Koreksi: '...whatever IS the cheapest and most durable.'",
+      },
+      {
+        id: "adv-w2-ex10-9",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"What was written in the letter angered him beyond belief.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "C — Correct",
+        reason:
+          "NC Connector/Subject 'What was written in the letter' berfungsi sebagai SUBJECT kalimat, diikuti main verb 'angered'. Struktur benar.",
+      },
+      {
+        id: "adv-w2-ex10-10",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "Exercise 10 — Correct (C) or Incorrect (I)?\n\n\"You can spend your time with whoever important to you.\"",
+        options: ["C — Correct", "I — Incorrect"],
+        correctAnswer: "I — Incorrect",
+        reason:
+          "NC 'whoever important to you' tidak memiliki verb. Koreksi: '...with whoever IS important to you.'",
       },
     ],
   },
