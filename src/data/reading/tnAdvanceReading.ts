@@ -849,21 +849,21 @@ export const advanceReadingLessons: ModuleLesson[] = [
 
       "(Peradaban kuno menghubungkan asal-usul tulisan kepada para dewa. Bagi orang Mesir kuno, dewa Thoth adalah pencipta tulisan dan, dalam beberapa cerita, juga pencipta bahasa. Orang Sumeria dan Asiria kuno juga percaya bahwa tulisan berasal dari dewa-dewa tertentu, begitu pula dengan suku Maya kuno. Dalam mitologi Tiongkok, penciptaan tulisan dikaitkan dengan seorang bijak kuno dan digunakan untuk berkomunikasi dengan para dewa. Jelas, tulisan sangat dihargai bahkan oleh masyarakat kuno.)",
 
-      "Humans began painting pictures on cave walls 25,000 years ago or more, but writing systems did not develop independently in at least three different parts of the world: Mesopotamia, China, and Mesoamerica.",
+      "Humans began painting pictures on cave walls 25,000 years ago or more, but writing systems did not develop until groups of people began settling in farming communities. Scholars say that writing systems developed independently in at least three different parts of the world: Mesopotamia, China, and Mesoamerica.",
 
-      "(Manusia mulai melukis gambar di dinding gua 25.000 tahun yang lalu atau lebih, tetapi sistem tulisan berkembang secara mandiri setidaknya di tiga bagian dunia yang berbeda: Mesopotamia, Tiongkok, dan Mesoamerika.)",
+      "(Manusia mulai melukis gambar di dinding gua 25.000 tahun yang lalu atau lebih, tetapi sistem tulisan tidak berkembang hingga kelompok-kelompok manusia mulai menetap di komunitas pertanian. Para sarjana mengatakan bahwa sistem tulisan berkembang secara mandiri setidaknya di tiga bagian dunia yang berbeda: Mesopotamia, Tiongkok, dan Mesoamerika.)",
 
-      "The oldest known writing system developed among the ancient Sumerians in Mesopotamia around 3000 B.C. Along with the rise of agricultural societies came the development of property ownership and the need to keep records of it. In early agricultural societies, property consisted largely of land, livestock such as cattle, and grain. Originally, clay tokens of various shapes were used to count these possessions. From this was found in excavations in Mesopotamia and dates from the time of the Sumerian culture. Scribes then began using reeds instead of tokens to mark the clay, developing a system of wedge like shapes to represent the tokens. This system of writing using wedge shapes is known as cuneiform. It was later adopted by other cultures and became the basis for other writing systems. Originating in a system that used pictures to represent sounds of language.",
+      "The oldest known writing system developed among the ancient Sumerians in Mesopotamia around 3000 B.C. Along with the rise of agricultural societies came the development of property ownership and the need to keep records of it. In early agricultural societies, property consisted largely of land, livestock such as cattle, and grain. Originally, clay tokens of various shapes were used to count these possessions. One of the earliest clay tablets of this type was found in excavations in Mesopotamia and dates from the time of the Sumerian culture. Scribes then began using reeds instead of tokens to mark the clay, developing a system of wedge like shapes to represent the tokens. This system of writing using wedge shapes is known as cuneiform. It was later adopted by other cultures and became the basis for other writing systems. Originating in a system that used pictures to represent objects, cuneiform writing eventually developed into systems that used symbols to represent the sounds of language.",
 
-      "(Sistem tulisan tertua yang diketahui berkembang di antara orang Sumeria kuno di Mesopotamia sekitar tahun 3000 SM. Seiring dengan berkembangnya masyarakat pertanian, muncul pula kepemilikan properti dan kebutuhan untuk mencatat hal tersebut. Dalam masyarakat pertanian awal, properti sebagian besar terdiri dari tanah, ternak seperti sapi, dan biji-bijian. Awalnya, token tanah liat berbagai bentuk digunakan untuk menghitung harta benda tersebut. Hal ini ditemukan dalam penggalian di Mesopotamia dan berasal dari masa peradaban Sumeria. Para juru tulis kemudian mulai menggunakan alang-alang sebagai pengganti token untuk menandai tanah liat, mengembangkan sistem bentuk seperti baji untuk mewakili token tersebut. Sistem penulisan menggunakan bentuk baji ini dikenal sebagai cuneiform. Sistem ini kemudian diadopsi oleh budaya lain dan menjadi dasar bagi sistem penulisan lainnya, berasal dari sistem yang menggunakan gambar untuk mewakili bunyi bahasa.)",
+      "(Sistem tulisan tertua yang diketahui berkembang di antara orang Sumeria kuno di Mesopotamia sekitar tahun 3000 SM. Seiring dengan berkembangnya masyarakat pertanian, muncul pula kepemilikan properti dan kebutuhan untuk mencatat hal tersebut. Dalam masyarakat pertanian awal, properti sebagian besar terdiri dari tanah, ternak seperti sapi, dan biji-bijian. Awalnya, token tanah liat berbagai bentuk digunakan untuk menghitung harta benda tersebut. Salah satu tablet tanah liat tertua jenis ini ditemukan dalam penggalian di Mesopotamia dan berasal dari masa peradaban Sumeria. Para juru tulis kemudian mulai menggunakan alang-alang sebagai pengganti token untuk menandai tanah liat, mengembangkan sistem bentuk seperti baji untuk mewakili token tersebut. Sistem penulisan menggunakan bentuk baji ini dikenal sebagai cuneiform. Sistem ini kemudian diadopsi oleh budaya lain dan menjadi dasar bagi sistem penulisan lainnya. Berasal dari sistem yang menggunakan gambar untuk mewakili benda-benda, tulisan cuneiform akhirnya berkembang menjadi sistem yang menggunakan simbol untuk mewakili bunyi bahasa.)",
 
       "The oldest form of Chinese writing dates from around 1500 B.C. It is called oracle bone script because it was carved on animal bones and shells that were used for predicting the future. At a later period, Chinese writing appeared on bronze vases and later still developed into a system that was used to record government affairs. The Chinese writing system was also the original basis for both the Japanese and Korean writing systems.",
 
       "(Bentuk tulisan Tiongkok tertua berasal dari sekitar tahun 1500 SM. Disebut oracle bone script karena diukir pada tulang hewan dan cangkang yang digunakan untuk meramalkan masa depan. Pada periode berikutnya, tulisan Tiongkok muncul pada vas perunggu dan kemudian berkembang menjadi sistem yang digunakan untuk mencatat urusan pemerintahan. Sistem tulisan Tiongkok juga menjadi dasar asli bagi sistem tulisan Jepang dan Korea.)",
 
-      "In Mesoamerica, a region that encompasses parts of Mexico and Central America, it is the ancient Mayans scholars believe that writing in that part of the world may have begun before the rise of the Mayan civilization. The Zapotec culture, centered on Oaxaca, Mexico, was already using writing around 400 B.C., or possibly earlier. The Olmec culture may have developed a writing system even earlier than that. Recent discoveries show that the Mayans may have begun writing around 2,300 years ago. They used a system of symbols that represented words and syllables to record information about the deeds of their rulers as well as information connected to their calendar and astronomy. Their system of writing survived until the time of the Spanish Conquest in the 1500s.",
+      "In Mesoamerica, a region that encompasses parts of Mexico and Central America, it is the ancient Mayans who are famous for the writing they inscribed on temple walls and other religious structures. However, scholars believe that writing in that part of the world may have begun before the rise of the Mayan civilization. The Zapotec culture, centered on Oaxaca, Mexico, was already using writing around 400 B.C., or possibly earlier. The Olmec culture may have developed a writing system even earlier than that. Recent discoveries show that the Mayans may have begun writing around 2,300 years ago. They used a system of symbols that represented words and syllables to record information about the deeds of their rulers as well as information connected to their calendar and astronomy. Their system of writing survived until the time of the Spanish Conquest in the 1500s.",
 
-      "(Di Mesoamerika, wilayah yang mencakup sebagian Meksiko dan Amerika Tengah, para sarjana percaya bahwa tulisan di bagian dunia itu mungkin telah dimulai sebelum munculnya peradaban Maya. Budaya Zapotec, yang berpusat di Oaxaca, Meksiko, sudah menggunakan tulisan sekitar tahun 400 SM, atau bahkan lebih awal. Budaya Olmec mungkin mengembangkan sistem tulisan bahkan lebih awal dari itu. Penemuan terbaru menunjukkan bahwa suku Maya mungkin telah mulai menulis sekitar 2.300 tahun yang lalu. Mereka menggunakan sistem simbol yang mewakili kata-kata dan suku kata untuk mencatat informasi tentang perbuatan para penguasa mereka serta informasi yang terkait dengan kalender dan astronomi. Sistem tulisan mereka bertahan hingga masa Penaklukan Spanyol pada tahun 1500-an.)",
+      "(Di Mesoamerika, wilayah yang mencakup sebagian Meksiko dan Amerika Tengah, orang Maya kuno terkenal dengan tulisan yang mereka ukir pada dinding kuil dan struktur keagamaan lainnya. Namun, para sarjana percaya bahwa tulisan di bagian dunia itu mungkin telah dimulai sebelum munculnya peradaban Maya. Budaya Zapotec, yang berpusat di Oaxaca, Meksiko, sudah menggunakan tulisan sekitar tahun 400 SM, atau bahkan lebih awal. Budaya Olmec mungkin mengembangkan sistem tulisan bahkan lebih awal dari itu. Penemuan terbaru menunjukkan bahwa suku Maya mungkin telah mulai menulis sekitar 2.300 tahun yang lalu. Mereka menggunakan sistem simbol yang mewakili kata-kata dan suku kata untuk mencatat informasi tentang perbuatan para penguasa mereka serta informasi yang terkait dengan kalender dan astronomi. Sistem tulisan mereka bertahan hingga masa Penaklukan Spanyol pada tahun 1500-an.)",
 
       "In ancient times, only specialized people such as scholars, priests, or government officials used writing. Today, close to three-quarters of the world's adult population can read and write, and literacy is considered a basic skill necessary to function in the modern world.",
 
@@ -1365,6 +1365,514 @@ export const advanceReadingLessons: ModuleLesson[] = [
         ],
         correctAnswer: "C. n., an object used to represent something else",
         reason: "token = benda yang digunakan untuk mewakili sesuatu.",
+      },
+    ],
+  },
+
+  // ── Day 5 · The Development of the Light Bulb ────────────────────────────────
+  {
+    id: "adv-reading-5",
+    track: "reading",
+    day: 5,
+    tutor: "Mrs. Aji",
+    title: "The Development of the Light Bulb",
+    subtitle: "Thomas Edison · Invention · Patents · Incandescent Light",
+    overview:
+      "Bacaan tentang sejarah penemuan bola lampu: dari Humphry Davy (1809) hingga Thomas Edison, peran paten, persaingan antar penemu, serta perjuangan hukum Edison untuk mempertahankan hak patennya.",
+    passage: [
+      "Thomas Edison is generally credited with the invention of the light bulb. In fact, he was just one inventor among many involved in the process of moving the concept of incandescent light from inspiration to marketable reality. What he actually invented in 1879 was a carbon filament that lasted for forty hours. In 1880, he improved his idea, producing a filament derived from bamboo that burned for 1,200 hours.",
+
+      "(Thomas Edison umumnya dianggap sebagai penemu bola lampu. Sebenarnya, ia hanyalah satu dari banyak penemu yang terlibat dalam proses membawa konsep cahaya pijar dari inspirasi ke kenyataan yang dapat dipasarkan. Yang sebenarnya ia temukan pada tahun 1879 adalah filamen karbon yang bertahan selama empat puluh jam. Pada tahun 1880, ia menyempurnakan idenya, menghasilkan filamen yang berasal dari bambu yang menyala selama 1.200 jam.)",
+
+      "The first person to successfully produce light with electricity was Humphry Davy, who connected a carbon filament to a battery in 1809. Other inventors worked on refinements of this idea. In 1835, James Lindsay unveiled an electric lamp, which cast enough light to read a book one and a half feet away. In 1854, Henrich Globel created the first actual light bulb — a glass bulb containing a filament that glowed when electrical current passed through it. However, it burned out too quickly to have any commercial value. Then, Hermann Sprengel developed the Sprengel Pump, a device that used mercury to create a vacuum. Reducing the oxygen in the bulb allowed the filament to glow longer before burning out.",
+
+      "(Orang pertama yang berhasil menghasilkan cahaya dengan listrik adalah Humphry Davy, yang menghubungkan filamen karbon ke baterai pada tahun 1809. Penemu-penemu lain mengerjakan penyempurnaan ide ini. Pada tahun 1835, James Lindsay memperkenalkan lampu listrik yang dapat menyinari cukup terang untuk membaca buku dari jarak satu setengah kaki. Pada tahun 1854, Henrich Globel menciptakan bola lampu pertama — bola kaca berisi filamen yang menyala ketika arus listrik melewatinya. Namun, ia terbakar terlalu cepat untuk memiliki nilai komersial. Kemudian, Hermann Sprengel mengembangkan Sprengel Pump, sebuah alat yang menggunakan merkuri untuk menciptakan vakum. Mengurangi oksigen dalam bola lampu memungkinkan filamen menyala lebih lama sebelum terbakar.)",
+
+      "In 1874, Henry Woodward and Matthew Evans filed a patent for a light specifically described as \"a shaped piece of carbon held between two electrodes enclosed in a glass vessel.\" Woodward and Evans attempted to raise the necessary money to improve and market their invention; however, as entrepreneurs, they had little success finding anyone to back them financially. Eventually they sold the rights to their patents to Thomas Edison.",
+
+      "(Pada tahun 1874, Henry Woodward dan Matthew Evans mengajukan paten untuk sebuah lampu yang secara khusus digambarkan sebagai 'sepotong karbon berbentuk yang dipegang di antara dua elektroda yang terbungkus dalam wadah kaca.' Woodward dan Evans mencoba mengumpulkan uang yang diperlukan untuk menyempurnakan dan memasarkan penemuan mereka; namun, sebagai pengusaha, mereka tidak berhasil menemukan siapa pun untuk mendukung mereka secara finansial. Akhirnya mereka menjual hak atas paten mereka kepada Thomas Edison.)",
+
+      "Edison had already been working on the same idea, but for him money was not a critical issue. He was no longer a solitary inventor working in his basement, but the head of a laboratory with the support of investors. He worked to refine the Woodward and Evans light because its filament burned out too quickly. Edison set about testing every material possible for use as a filament. \"Before I got through,\" Edison recalled, \"I tested no fewer than 6,000 vegetable growths, and ransacked the world for the most suitable filament material.\" He even considered using tungsten, which is the material currently used. Eventually, Edison tried a carbonized cotton thread filament clamped to platinum wires. When tested, it lasted forty hours. In 1880, he received a patent for this invention. By the end of the year, Edison had perfected a sixteen-watt bulb that lasted for 1,500 hours.",
+
+      "(Edison telah mengerjakan ide yang sama, tetapi baginya uang bukanlah masalah kritis. Ia tidak lagi menjadi penemu soliter yang bekerja di ruang bawah tanahnya, melainkan kepala laboratorium dengan dukungan investor. Ia berusaha menyempurnakan lampu Woodward dan Evans karena filamennya terbakar terlalu cepat. Edison mulai menguji setiap bahan yang mungkin untuk digunakan sebagai filamen. 'Sebelum saya selesai,' Edison mengingat, 'saya menguji tidak kurang dari 6.000 pertumbuhan sayuran, dan menggeledah dunia untuk mencari bahan filamen yang paling cocok.' Ia bahkan mempertimbangkan menggunakan tungsten, yang merupakan bahan yang saat ini digunakan. Akhirnya, Edison mencoba filamen benang kapas yang dikarbonasiasi dan diikat ke kawat platinum. Ketika diuji, filamen itu bertahan selama empat puluh jam. Pada tahun 1880, ia menerima paten untuk penemuan ini. Pada akhir tahun itu, Edison telah menyempurnakan bola lampu berkapasitas enam belas watt yang bertahan selama 1.500 jam.)",
+
+      "At the same time, Sir Joseph Swan was working on similar ideas in England. In 1860, he obtained a patent for a carbon filament incandescent lamp, and in 1878, another for an improved version of his light bulb. He presented it in a public lecture in 1879. In 1882, Swan sued Edison for patent infringement. As part of the settlement, Edison had to take Swan as a partner in his British electric works. Also, in 1877 and 1878, William Edward Sawyer and Albon Man were granted patents for electric lamps. Based on these patents, the U.S. Patent Office ruled in 1883 that Edison's patents were invalid. Edison fought to appeal that ruling, and in 1889, the court determined that his patents were indeed valid.",
+
+      "(Pada waktu yang sama, Sir Joseph Swan sedang mengerjakan ide serupa di Inggris. Pada tahun 1860, ia memperoleh paten untuk lampu pijar berfilamen karbon, dan pada tahun 1878, paten lain untuk versi yang disempurnakan dari bola lampunya. Ia mempresentasikannya dalam kuliah umum pada tahun 1879. Pada tahun 1882, Swan menggugat Edison atas pelanggaran paten. Sebagai bagian dari penyelesaian, Edison harus menjadikan Swan sebagai mitra di perusahaan listrik Britisnya. Selain itu, pada tahun 1877 dan 1878, William Edward Sawyer dan Albon Man diberikan paten untuk lampu listrik. Berdasarkan paten-paten ini, Kantor Paten AS memutuskan pada tahun 1883 bahwa paten Edison tidak sah. Edison berjuang untuk mengajukan banding atas keputusan itu, dan pada tahun 1889, pengadilan memutuskan bahwa paten-patennya memang sah.)",
+
+      "Edison is famous for having said, \"Genius is one percent inspiration and ninety-nine percent perspiration.\" It is an understandable statement coming from someone whose laboratory tested more than 6,000 filament possibilities. Nevertheless, one might also consider the adage, \"History is written by the winners.\" Edison may not have been the actual inventor of the light bulb, but he was the man who had the genius, the business sense, and the financial backing to invent the first one that was commercially viable.",
+
+      "(Edison terkenal karena pernah berkata, 'Kejeniusan adalah satu persen inspirasi dan sembilan puluh sembilan persen kerja keras.' Ini adalah pernyataan yang dapat dimengerti dari seseorang yang laboratoriumnya menguji lebih dari 6.000 kemungkinan filamen. Namun, mungkin seseorang juga bisa mempertimbangkan pepatah, 'Sejarah ditulis oleh para pemenang.' Edison mungkin bukan penemu sebenarnya dari bola lampu, tetapi ia adalah orang yang memiliki kejeniusan, kepekaan bisnis, dan dukungan finansial untuk menemukan yang pertama yang layak secara komersial.)",
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. 1 — Edison bukan satu-satunya penemu bola lampu; yang ia temukan tahun 1879 adalah filamen karbon (40 jam), lalu disempurnakan dengan filamen bambu (1.200 jam) di 1880.",
+          "Para. 2 — Sejarah awal: Humphry Davy (1809) → James Lindsay (1835) → Henrich Globel (1854, bola lampu pertama) → Sprengel Pump untuk memperpanjang nyala filamen.",
+          "Para. 3 — Woodward & Evans (1874) mengajukan paten tapi gagal cari investor; akhirnya menjual hak paten ke Edison.",
+          "Para. 4 — Edison: kepala laboratorium, bukan solo inventor. Menguji 6.000+ bahan, akhirnya gunakan filamen benang kapas yang dikarbonasiasi → paten 1880, bola lampu 1.500 jam.",
+          "Para. 5 — Joseph Swan (Inggris) bekerja paralel. 1882: Swan gugat Edison (patent infringement). 1883: paten Edison dinyatakan tidak sah. 1889: paten dinyatakan sah setelah banding.",
+          "Para. 6 — Edison: 'Genius is 1% inspiration, 99% perspiration.' Ia bukan penemu pertama, tapi orang yang punya bisnis sense dan finansial untuk membuat lampu layak dijual.",
+        ],
+      },
+      {
+        title: "Reading Strategy: Summary Completion & Sentence Endings",
+        points: [
+          "📌 Summary Completion = melengkapi ringkasan dengan kata dari word bank.",
+          "📌 Sentence Endings = memilih akhiran kalimat yang paling tepat dari daftar pilihan.",
+          "",
+          "⚡ Tips Summary Completion:",
+          "   • Perhatikan part of speech (noun/verb/adj) yang dibutuhkan setiap blank.",
+          "   • Word bank punya lebih banyak kata dari blank — ada kata yang tidak dipakai.",
+          "   • Cari konteks kalimat untuk menentukan kata yang tepat.",
+          "",
+          "⚡ Tips Sentence Endings:",
+          "   • Ada lebih banyak endings dari kalimat — tidak semua dipakai.",
+          "   • Cari di teks untuk memverifikasi endings yang benar.",
+          "   • Eliminasi endings yang tidak sesuai secara gramatikal atau maknawi.",
+        ],
+      },
+      {
+        title: "Key Vocabulary",
+        points: [
+          "back, clamp, critical, current, derive",
+          "device, entrepreneur, file, infringement, inspiration",
+          "invalid, inventor, investor, patent, ransack",
+          "refinement, ruling, specifically, suitable, unveil",
+        ],
+      },
+      {
+        title: "Vocabulary List",
+        points: [
+          "1.  back (v) — mendukung secara finansial | Sinonim: support, fund | Antonim: oppose",
+          "2.  clamp (v) — mengikat/menjepit dengan kuat | Sinonim: fasten, grip | Antonim: release",
+          "3.  critical (adj) — sangat penting | Sinonim: crucial, vital | Antonim: unimportant",
+          "4.  current (n) — aliran listrik, air, atau udara | Sinonim: flow, stream",
+          "5.  derive (v) — mendapat/berasal dari sesuatu | Sinonim: originate from, obtain | Antonim: give",
+          "6.  device (n) — alat/mesin | Sinonim: tool, instrument, apparatus",
+          "7.  entrepreneur (n) — pengusaha; orang yang memulai bisnis | Sinonim: businessperson",
+          "8.  file (v) — mengajukan/mendaftarkan secara resmi | Sinonim: submit, register",
+          "9.  infringement (n) — pelanggaran hak/aturan | Sinonim: violation, breach | Antonim: compliance",
+          "10. inspiration (n) — ide brilian; sumber kreativitas | Sinonim: idea, motivation | Antonim: perspiration",
+          "11. invalid (adj) — tidak sah/tidak berlaku secara hukum | Sinonim: void, null | Antonim: valid",
+          "12. inventor (n) — penemu; orang yang menciptakan sesuatu baru | Sinonim: creator, innovator",
+          "13. investor (n) — investor; orang yang menanamkan modal | Sinonim: backer, financier",
+          "14. patent (n) — paten; hak eksklusif atas penemuan yang diberikan pemerintah | Sinonim: license",
+          "15. ransack (v) — menggeledah/mencari dengan sangat teliti, sering dengan kasar | Sinonim: search thoroughly, scour",
+          "16. refinement (n) — penyempurnaan/peningkatan | Sinonim: improvement, enhancement | Antonim: deterioration",
+          "17. ruling (n) — keputusan hukum | Sinonim: decision, judgment, verdict",
+          "18. specifically (adv) — secara khusus; untuk alasan tertentu | Sinonim: particularly, exactly | Antonim: generally",
+          "19. suitable (adj) — cocok/sesuai | Sinonim: appropriate, fitting | Antonim: unsuitable",
+          "20. unveil (v) — memperkenalkan ke publik; mengungkap | Sinonim: reveal, present | Antonim: conceal",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Q1–Q5: Summary Completion ─────────────────────────────────────────
+      {
+        id: "adv-r5-ftg1",
+        type: "fill-the-gap",
+        question:
+          "Q1 — Complete the summary:\nIn the 1800s, many _______ experimented with using electrical current to produce light.",
+        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        correctAnswer: "inventors",
+        reason:
+          'Para. 2: "Other inventors worked on refinements of this idea." — Many inventors experimented with producing light.',
+      },
+      {
+        id: "adv-r5-ftg2",
+        type: "fill-the-gap",
+        question:
+          "Q2 — Complete the summary:\nIn the 1800s, inventors experimented with using electrical _______ to produce light.",
+        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        correctAnswer: "current",
+        reason:
+          'Para. 2: "a filament that glowed when electrical current passed through it." — Electrical current was key to producing light.',
+      },
+      {
+        id: "adv-r5-ftg3",
+        type: "fill-the-gap",
+        question:
+          "Q3 — Complete the summary:\nJames Lindsay _______ his version of an electric light in 1835.",
+        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        correctAnswer: "unveiled",
+        reason:
+          'Para. 2: "In 1835, James Lindsay unveiled an electric lamp, which cast enough light to read a book one and a half feet away."',
+      },
+      {
+        id: "adv-r5-ftg4",
+        type: "fill-the-gap",
+        question:
+          "Q4 — Complete the summary:\nHenrich Globel's _______, unfortunately, did not have commercial value because it burned out very quickly.",
+        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        correctAnswer: "device",
+        reason:
+          'Para. 2: Globel\'s light bulb was a "device" — a glass bulb — that burned out too quickly to have commercial value.',
+      },
+      {
+        id: "adv-r5-ftg5",
+        type: "fill-the-gap",
+        question:
+          "Q5 — Complete the summary:\nThe Woodward and Evans lightbulb needed _______ because it burned out very quickly.",
+        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        correctAnswer: "refinement",
+        reason:
+          'Para. 4: "Edison worked to refine the Woodward and Evans light because its filament burned out too quickly." — It needed refinement/improvement.',
+      },
+      // ── Q6–Q9: Sentence Endings ───────────────────────────────────────────
+      {
+        id: "adv-r5-q6",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Q6 — Choose the correct ending:\nEdison did not invent the light bulb in 1879; he invented ___",
+        options: [
+          "A. a cotton thread filament that he clamped to wires.",
+          "B. a filament derived from bamboo.",
+          "C. a tungsten filament like those used today.",
+          "D. a long-lasting light bulb filament.",
+          "E. a filament that burned out very quickly.",
+          "F. the most suitable material for a light bulb filament.",
+        ],
+        correctAnswer: "D. a long-lasting light bulb filament.",
+        reason:
+          'Para. 1: "What he actually invented in 1879 was a carbon filament that lasted for forty hours." — He invented a long-lasting filament, not the light bulb itself.',
+      },
+      {
+        id: "adv-r5-q7",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Q7 — Choose the correct ending:\nEdison ransacked the world searching for ___",
+        options: [
+          "A. a cotton thread filament that he clamped to wires.",
+          "B. a filament derived from bamboo.",
+          "C. a tungsten filament like those used today.",
+          "D. a long-lasting light bulb filament.",
+          "E. a filament that burned out very quickly.",
+          "F. the most suitable material for a light bulb filament.",
+        ],
+        correctAnswer: "F. the most suitable material for a light bulb filament.",
+        reason:
+          'Para. 4: "ransacked the world for the most suitable filament material."',
+      },
+      {
+        id: "adv-r5-q8",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Q8 — Choose the correct ending:\nEdison's first patented light bulb consisted of ___",
+        options: [
+          "A. a cotton thread filament that he clamped to wires.",
+          "B. a filament derived from bamboo.",
+          "C. a tungsten filament like those used today.",
+          "D. a long-lasting light bulb filament.",
+          "E. a filament that burned out very quickly.",
+          "F. the most suitable material for a light bulb filament.",
+        ],
+        correctAnswer: "A. a cotton thread filament that he clamped to wires.",
+        reason:
+          'Para. 4: "Edison tried a carbonized cotton thread filament clamped to platinum wires... In 1880, he received a patent for this invention."',
+      },
+      {
+        id: "adv-r5-q9",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Q9 — Choose the correct ending:\nEdison later refined his idea with the development of ___",
+        options: [
+          "A. a cotton thread filament that he clamped to wires.",
+          "B. a filament derived from bamboo.",
+          "C. a tungsten filament like those used today.",
+          "D. a long-lasting light bulb filament.",
+          "E. a filament that burned out very quickly.",
+          "F. the most suitable material for a light bulb filament.",
+        ],
+        correctAnswer: "B. a filament derived from bamboo.",
+        reason:
+          'Para. 1: "In 1880, he improved his idea, producing a filament derived from bamboo that burned for 1,200 hours."',
+      },
+      // ── Vocabulary Matching (Q10–Q29) ─────────────────────────────────────
+      {
+        id: "adv-r5-vocab1",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: back",
+        options: [
+          "A. v., to officially record something",
+          "B. n., a machine or tool",
+          "C. n., a legal decision",
+          "D. v., to support, esp. financially",
+        ],
+        correctAnswer: "D. v., to support, esp. financially",
+        reason: "back = mendukung secara finansial.",
+      },
+      {
+        id: "adv-r5-vocab2",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: clamp",
+        options: [
+          "A. v., to get something from something else, originate",
+          "B. v., to make public, uncover",
+          "C. v., to hold tightly",
+          "D. n., improvement",
+        ],
+        correctAnswer: "C. v., to hold tightly",
+        reason: "clamp = menjepit/mengikat dengan kuat.",
+      },
+      {
+        id: "adv-r5-vocab3",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: critical",
+        options: [
+          "A. adj., appropriate, acceptable for something",
+          "B. adj., not legal or correct",
+          "C. n., a sudden good idea",
+          "D. adj., very important",
+        ],
+        correctAnswer: "D. adj., very important",
+        reason: "critical = sangat penting/kritis.",
+      },
+      {
+        id: "adv-r5-vocab4",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: current",
+        options: [
+          "A. n., a person who puts money into a business",
+          "B. n., a flow of electricity, water, or air",
+          "C. n., a right to an invention granted by the government",
+          "D. n., a legal decision",
+        ],
+        correctAnswer: "B. n., a flow of electricity, water, or air",
+        reason: "current = aliran listrik, air, atau udara.",
+      },
+      {
+        id: "adv-r5-vocab5",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: derive",
+        options: [
+          "A. v., to hold tightly",
+          "B. v., to search thoroughly, often violently or carelessly",
+          "C. v., to officially record something",
+          "D. v., to get something from something else, originate",
+        ],
+        correctAnswer: "D. v., to get something from something else, originate",
+        reason: "derive = mendapat atau berasal dari sesuatu.",
+      },
+      {
+        id: "adv-r5-vocab6",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: device",
+        options: [
+          "A. n., an action that breaks a rule or law",
+          "B. n., somebody who starts a business",
+          "C. n., a machine or tool",
+          "D. n., improvement",
+        ],
+        correctAnswer: "C. n., a machine or tool",
+        reason: "device = alat/mesin.",
+      },
+      {
+        id: "adv-r5-vocab7",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: entrepreneur",
+        options: [
+          "A. n., a person who puts money into a business",
+          "B. n., somebody who starts a business",
+          "C. n., a person who creates new things",
+          "D. n., a machine or tool",
+        ],
+        correctAnswer: "B. n., somebody who starts a business",
+        reason: "entrepreneur = pengusaha; orang yang memulai bisnis.",
+      },
+      {
+        id: "adv-r5-vocab8",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: file",
+        options: [
+          "A. v., to support, esp. financially",
+          "B. v., to make public, uncover",
+          "C. v., to search thoroughly, often violently or carelessly",
+          "D. v., to officially record something",
+        ],
+        correctAnswer: "D. v., to officially record something",
+        reason: "file = mengajukan/mendaftarkan secara resmi.",
+      },
+      {
+        id: "adv-r5-vocab9",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: infringement",
+        options: [
+          "A. n., an action that breaks a rule or law",
+          "B. n., a legal decision",
+          "C. n., improvement",
+          "D. n., a sudden good idea",
+        ],
+        correctAnswer: "A. n., an action that breaks a rule or law",
+        reason: "infringement = pelanggaran hak/aturan.",
+      },
+      {
+        id: "adv-r5-vocab10",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: inspiration",
+        options: [
+          "A. n., a machine or tool",
+          "B. n., a flow of electricity, water, or air",
+          "C. n., a sudden good idea; a role model for creativity",
+          "D. n., a right to an invention granted by the government",
+        ],
+        correctAnswer: "C. n., a sudden good idea; a role model for creativity",
+        reason: "inspiration = ide brilian; sumber kreativitas.",
+      },
+      {
+        id: "adv-r5-vocab11",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: invalid",
+        options: [
+          "A. adj., very important",
+          "B. adj., appropriate, acceptable for something",
+          "C. adj., not legal or correct",
+          "D. adv., exactly; for a particular reason",
+        ],
+        correctAnswer: "C. adj., not legal or correct",
+        reason: "invalid = tidak sah/tidak berlaku secara hukum.",
+      },
+      {
+        id: "adv-r5-vocab12",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: inventor",
+        options: [
+          "A. n., a person who puts money into a business",
+          "B. n., a person who creates new things",
+          "C. n., somebody who starts a business",
+          "D. n., improvement",
+        ],
+        correctAnswer: "B. n., a person who creates new things",
+        reason: "inventor = penemu; orang yang menciptakan sesuatu baru.",
+      },
+      {
+        id: "adv-r5-vocab13",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: investor",
+        options: [
+          "A. n., a person who creates new things",
+          "B. n., somebody who starts a business",
+          "C. n., a person who puts money into a business",
+          "D. n., a legal decision",
+        ],
+        correctAnswer: "C. n., a person who puts money into a business",
+        reason: "investor = orang yang menanamkan modal/investasi.",
+      },
+      {
+        id: "adv-r5-vocab14",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: patent",
+        options: [
+          "A. n., an action that breaks a rule or law",
+          "B. n., a right to an invention granted by the government",
+          "C. n., improvement",
+          "D. n., a machine or tool",
+        ],
+        correctAnswer: "B. n., a right to an invention granted by the government",
+        reason: "patent = paten; hak eksklusif atas penemuan dari pemerintah.",
+      },
+      {
+        id: "adv-r5-vocab15",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: ransack",
+        options: [
+          "A. v., to hold tightly",
+          "B. v., to get something from something else, originate",
+          "C. v., to officially record something",
+          "D. v., to search thoroughly, often violently or carelessly",
+        ],
+        correctAnswer: "D. v., to search thoroughly, often violently or carelessly",
+        reason: "ransack = menggeledah/mencari dengan sangat teliti, sering dengan kasar.",
+      },
+      {
+        id: "adv-r5-vocab16",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: refinement",
+        options: [
+          "A. n., a legal decision",
+          "B. n., an action that breaks a rule or law",
+          "C. n., improvement",
+          "D. n., a sudden good idea",
+        ],
+        correctAnswer: "C. n., improvement",
+        reason: "refinement = penyempurnaan/peningkatan.",
+      },
+      {
+        id: "adv-r5-vocab17",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: ruling",
+        options: [
+          "A. n., improvement",
+          "B. n., a legal decision",
+          "C. n., an action that breaks a rule or law",
+          "D. n., a machine or tool",
+        ],
+        correctAnswer: "B. n., a legal decision",
+        reason: "ruling = keputusan hukum/pengadilan.",
+      },
+      {
+        id: "adv-r5-vocab18",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: specifically",
+        options: [
+          "A. adj., not legal or correct",
+          "B. adj., very important",
+          "C. adv., exactly; for a particular reason",
+          "D. adj., appropriate, acceptable for something",
+        ],
+        correctAnswer: "C. adv., exactly; for a particular reason",
+        reason: "specifically = secara khusus; untuk alasan tertentu.",
+      },
+      {
+        id: "adv-r5-vocab19",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: suitable",
+        options: [
+          "A. adj., not legal or correct",
+          "B. adj., very important",
+          "C. adv., exactly; for a particular reason",
+          "D. adj., appropriate, acceptable for something",
+        ],
+        correctAnswer: "D. adj., appropriate, acceptable for something",
+        reason: "suitable = cocok/sesuai untuk sesuatu.",
+      },
+      {
+        id: "adv-r5-vocab20",
+        type: "multiple-choice",
+        section: "final",
+        question: "Vocabulary — Choose the correct definition for: unveil",
+        options: [
+          "A. v., to officially record something",
+          "B. v., to hold tightly",
+          "C. v., to get something from something else, originate",
+          "D. v., to make public, uncover",
+        ],
+        correctAnswer: "D. v., to make public, uncover",
+        reason: "unveil = memperkenalkan ke publik; mengungkap.",
       },
     ],
   },

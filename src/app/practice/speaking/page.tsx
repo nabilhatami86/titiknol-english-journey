@@ -6,7 +6,7 @@ import {
   ArrowLeft, PenLine, Sparkles, Loader2, AlertCircle,
   Trophy, History, X, Star, Target, Layers, BookOpen,
   CheckCircle2, Lightbulb, Clock, ChevronDown, ChevronUp,
-  GitBranch, CircleDot,
+  GitBranch, CircleDot, FileWarning, WifiOff, KeyRound, Gauge,
 } from 'lucide-react';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -208,12 +208,14 @@ const PROMPT_IDEAS = [
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 type Tab = 'feedback' | 'analysis' | 'corrected' | 'rewrite';
+type ErrorType = 'too_long' | 'quota' | 'no_key' | 'network' | 'general' | null;
 
 export default function WritingPage() {
   const [text, setText] = useState('');
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [errorType, setErrorType] = useState<ErrorType>(null);
   const [activeTab, setActiveTab] = useState<Tab>('feedback');
   const [showHistory, setShowHistory] = useState(false);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
@@ -223,8 +225,9 @@ export default function WritingPage() {
   const promptIdea = useRef(PROMPT_IDEAS[Math.floor(Math.random() * PROMPT_IDEAS.length)]).current;
 
   async function checkWriting() {
-    if (wordCount < 5) { setError('Please write at least 5 words.'); return; }
+    if (wordCount < 5) { setError('Please write at least 5 words.'); setErrorType('general'); return; }
     setError('');
+    setErrorType(null);
     setLoading(true);
     setFeedback(null);
 
@@ -238,10 +241,16 @@ export default function WritingPage() {
 
       if (!res.ok) {
         if (data.error === 'no_api_key') {
-          setError('AI service not configured. Add GEMINI_API_KEY to your .env.local file to enable this feature.');
+          setErrorType('no_key');
+          setError('GROQ_API_KEY atau GEMINI_API_KEY belum diisi di .env.local');
         } else if (data.error === 'quota_exceeded' || res.status === 429) {
-          setError('AI quota exceeded. Please wait a moment and try again.');
+          setErrorType('quota');
+          setError('Quota AI habis. Tunggu sebentar lalu coba lagi.');
+        } else if (data.error === 'parse_error') {
+          setErrorType('too_long');
+          setError('Tulisanmu terlalu panjang untuk dianalisis sekaligus. Coba potong jadi lebih pendek.');
         } else {
+          setErrorType('general');
           setError(data.message ?? 'Something went wrong. Please try again.');
         }
         return;
@@ -256,7 +265,8 @@ export default function WritingPage() {
         feedback: data,
       });
     } catch {
-      setError('Network error. Check your connection and try again.');
+      setErrorType('network');
+      setError('Tidak ada koneksi internet. Cek koneksimu dan coba lagi.');
     } finally {
       setLoading(false);
     }
@@ -278,6 +288,7 @@ export default function WritingPage() {
     setText('');
     setFeedback(null);
     setError('');
+    setErrorType(null);
     textareaRef.current?.focus();
   }
 
@@ -374,8 +385,77 @@ export default function WritingPage() {
               </div>
             </div>
 
-            {/* Error banner */}
-            {error && (
+            {/* Error banners */}
+            {error && errorType === 'too_long' && (
+              <div className="border border-orange-300/60 bg-orange-50 dark:bg-orange-950/30 rounded-2xl p-4 space-y-3">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/40 flex items-center justify-center shrink-0">
+                    <FileWarning className="w-4 h-4 text-orange-500" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-orange-700 dark:text-orange-300">Teks Terlalu Panjang</p>
+                    <p className="text-xs text-orange-600 dark:text-orange-400">Response AI kepotong karena token habis</p>
+                  </div>
+                </div>
+                <div className="bg-orange-100/60 dark:bg-orange-900/20 rounded-xl px-3 py-2.5 space-y-1.5">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-orange-700 dark:text-orange-300 font-semibold flex items-center gap-1.5">
+                      <Gauge className="w-3.5 h-3.5" /> Panjang tulisanmu sekarang
+                    </span>
+                    <span className={`font-bold ${wordCount > 150 ? 'text-red-500' : 'text-orange-500'}`}>
+                      {wordCount} kata
+                    </span>
+                  </div>
+                  <div className="h-2 bg-orange-200 dark:bg-orange-800/40 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full rounded-full transition-all ${wordCount > 150 ? 'bg-red-500' : 'bg-orange-500'}`}
+                      style={{ width: `${Math.min((wordCount / 150) * 100, 100)}%` }}
+                    />
+                  </div>
+                  <p className="text-[11px] text-orange-600 dark:text-orange-400">
+                    Rekomendasi: <strong>maksimal 150 kata</strong> untuk analisis lengkap
+                  </p>
+                </div>
+                <p className="text-xs text-orange-600 dark:text-orange-400">
+                  Potong tulisanmu jadi lebih pendek, lalu coba lagi.
+                </p>
+              </div>
+            )}
+
+            {error && errorType === 'quota' && (
+              <div className="flex items-start gap-2.5 bg-yellow-50 dark:bg-yellow-950/30 border border-yellow-300/60 rounded-xl px-4 py-3">
+                <AlertCircle className="w-4 h-4 text-yellow-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-sm font-semibold text-yellow-700 dark:text-yellow-300">Quota AI habis</p>
+                  <p className="text-xs text-yellow-600 dark:text-yellow-400 mt-0.5">{error} Groq gratis: 30 request/menit, 14.400/hari.</p>
+                </div>
+              </div>
+            )}
+
+            {error && errorType === 'no_key' && (
+              <div className="flex items-start gap-2.5 bg-purple-50 dark:bg-purple-950/30 border border-purple-300/60 rounded-xl px-4 py-3">
+                <KeyRound className="w-4 h-4 text-purple-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-sm font-semibold text-purple-700 dark:text-purple-300">API Key belum diisi</p>
+                  <p className="text-xs text-purple-600 dark:text-purple-400 mt-0.5">
+                    Tambahkan <code className="bg-purple-100 dark:bg-purple-900/40 px-1 rounded">GROQ_API_KEY</code> di file{' '}
+                    <code className="bg-purple-100 dark:bg-purple-900/40 px-1 rounded">.env.local</code>. Daftar gratis di console.groq.com
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {error && errorType === 'network' && (
+              <div className="flex items-start gap-2.5 bg-gray-50 dark:bg-gray-900/50 border border-gray-300/60 rounded-xl px-4 py-3">
+                <WifiOff className="w-4 h-4 text-gray-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-sm font-semibold text-(--text)">Tidak ada koneksi</p>
+                  <p className="text-xs text-(--text-muted) mt-0.5">Cek internet kamu lalu coba lagi.</p>
+                </div>
+              </div>
+            )}
+
+            {error && errorType === 'general' && (
               <div className="flex items-start gap-2.5 bg-red-50 dark:bg-red-950/30 border border-red-300/50 rounded-xl px-4 py-3">
                 <AlertCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
                 <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
