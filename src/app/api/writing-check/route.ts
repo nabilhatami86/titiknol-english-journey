@@ -126,7 +126,7 @@ async function callGroq(text: string, apiKey: string) {
       model: 'llama-3.3-70b-versatile',
       messages: [{ role: 'user', content: PROMPT(text) }],
       temperature: 0.3,
-      max_tokens: 2048,
+      max_tokens: 8192,
     }),
   });
 
@@ -150,7 +150,7 @@ async function callGemini(text: string, apiKey: string) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ parts: [{ text: PROMPT(text) }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 2048 },
+        generationConfig: { temperature: 0.3, maxOutputTokens: 8192 },
       }),
     }
   );
@@ -196,7 +196,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'parse_error', message: 'Could not parse AI response.' }, { status: 500 });
     }
 
-    return NextResponse.json(JSON.parse(jsonMatch[0]));
+    try {
+      return NextResponse.json(JSON.parse(jsonMatch[0]));
+    } catch {
+      // Response got cut off — try to shorten the text and retry with fewer sentences analysed
+      return NextResponse.json(
+        { error: 'parse_error', message: 'AI response was too long and got cut off. Try with a shorter text (under 150 words).' },
+        { status: 500 }
+      );
+    }
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     if (msg === 'quota_exceeded') {
