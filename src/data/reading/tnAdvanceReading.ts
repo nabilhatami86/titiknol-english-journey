@@ -1388,11 +1388,11 @@ export const advanceReadingLessons: ModuleLesson[] = [
 
       "(Orang pertama yang berhasil menghasilkan cahaya dengan listrik adalah Humphry Davy, yang menghubungkan filamen karbon ke baterai pada tahun 1809. Penemu-penemu lain mengerjakan penyempurnaan ide ini. Pada tahun 1835, James Lindsay memperkenalkan lampu listrik yang dapat menyinari cukup terang untuk membaca buku dari jarak satu setengah kaki. Pada tahun 1854, Henrich Globel menciptakan bola lampu pertama — bola kaca berisi filamen yang menyala ketika arus listrik melewatinya. Namun, ia terbakar terlalu cepat untuk memiliki nilai komersial. Kemudian, Hermann Sprengel mengembangkan Sprengel Pump, sebuah alat yang menggunakan merkuri untuk menciptakan vakum. Mengurangi oksigen dalam bola lampu memungkinkan filamen menyala lebih lama sebelum terbakar.)",
 
-      "In 1874, Henry Woodward and Matthew Evans filed a patent for a light specifically described as \"a shaped piece of carbon held between two electrodes enclosed in a glass vessel.\" Woodward and Evans attempted to raise the necessary money to improve and market their invention; however, as entrepreneurs, they had little success finding anyone to back them financially. Eventually they sold the rights to their patents to Thomas Edison.",
+      'In 1874, Henry Woodward and Matthew Evans filed a patent for a light specifically described as "a shaped piece of carbon held between two electrodes enclosed in a glass vessel." Woodward and Evans attempted to raise the necessary money to improve and market their invention; however, as entrepreneurs, they had little success finding anyone to back them financially. Eventually they sold the rights to their patents to Thomas Edison.',
 
       "(Pada tahun 1874, Henry Woodward dan Matthew Evans mengajukan paten untuk sebuah lampu yang secara khusus digambarkan sebagai 'sepotong karbon berbentuk yang dipegang di antara dua elektroda yang terbungkus dalam wadah kaca.' Woodward dan Evans mencoba mengumpulkan uang yang diperlukan untuk menyempurnakan dan memasarkan penemuan mereka; namun, sebagai pengusaha, mereka tidak berhasil menemukan siapa pun untuk mendukung mereka secara finansial. Akhirnya mereka menjual hak atas paten mereka kepada Thomas Edison.)",
 
-      "Edison had already been working on the same idea, but for him money was not a critical issue. He was no longer a solitary inventor working in his basement, but the head of a laboratory with the support of investors. He worked to refine the Woodward and Evans light because its filament burned out too quickly. Edison set about testing every material possible for use as a filament. \"Before I got through,\" Edison recalled, \"I tested no fewer than 6,000 vegetable growths, and ransacked the world for the most suitable filament material.\" He even considered using tungsten, which is the material currently used. Eventually, Edison tried a carbonized cotton thread filament clamped to platinum wires. When tested, it lasted forty hours. In 1880, he received a patent for this invention. By the end of the year, Edison had perfected a sixteen-watt bulb that lasted for 1,500 hours.",
+      'Edison had already been working on the same idea, but for him money was not a critical issue. He was no longer a solitary inventor working in his basement, but the head of a laboratory with the support of investors. He worked to refine the Woodward and Evans light because its filament burned out too quickly. Edison set about testing every material possible for use as a filament. "Before I got through," Edison recalled, "I tested no fewer than 6,000 vegetable growths, and ransacked the world for the most suitable filament material." He even considered using tungsten, which is the material currently used. Eventually, Edison tried a carbonized cotton thread filament clamped to platinum wires. When tested, it lasted forty hours. In 1880, he received a patent for this invention. By the end of the year, Edison had perfected a sixteen-watt bulb that lasted for 1,500 hours.',
 
       "(Edison telah mengerjakan ide yang sama, tetapi baginya uang bukanlah masalah kritis. Ia tidak lagi menjadi penemu soliter yang bekerja di ruang bawah tanahnya, melainkan kepala laboratorium dengan dukungan investor. Ia berusaha menyempurnakan lampu Woodward dan Evans karena filamennya terbakar terlalu cepat. Edison mulai menguji setiap bahan yang mungkin untuk digunakan sebagai filamen. 'Sebelum saya selesai,' Edison mengingat, 'saya menguji tidak kurang dari 6.000 pertumbuhan sayuran, dan menggeledah dunia untuk mencari bahan filamen yang paling cocok.' Ia bahkan mempertimbangkan menggunakan tungsten, yang merupakan bahan yang saat ini digunakan. Akhirnya, Edison mencoba filamen benang kapas yang dikarbonasiasi dan diikat ke kawat platinum. Ketika diuji, filamen itu bertahan selama empat puluh jam. Pada tahun 1880, ia menerima paten untuk penemuan ini. Pada akhir tahun itu, Edison telah menyempurnakan bola lampu berkapasitas enam belas watt yang bertahan selama 1.500 jam.)",
 
@@ -1400,7 +1400,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
 
       "(Pada waktu yang sama, Sir Joseph Swan sedang mengerjakan ide serupa di Inggris. Pada tahun 1860, ia memperoleh paten untuk lampu pijar berfilamen karbon, dan pada tahun 1878, paten lain untuk versi yang disempurnakan dari bola lampunya. Ia mempresentasikannya dalam kuliah umum pada tahun 1879. Pada tahun 1882, Swan menggugat Edison atas pelanggaran paten. Sebagai bagian dari penyelesaian, Edison harus menjadikan Swan sebagai mitra di perusahaan listrik Britisnya. Selain itu, pada tahun 1877 dan 1878, William Edward Sawyer dan Albon Man diberikan paten untuk lampu listrik. Berdasarkan paten-paten ini, Kantor Paten AS memutuskan pada tahun 1883 bahwa paten Edison tidak sah. Edison berjuang untuk mengajukan banding atas keputusan itu, dan pada tahun 1889, pengadilan memutuskan bahwa paten-patennya memang sah.)",
 
-      "Edison is famous for having said, \"Genius is one percent inspiration and ninety-nine percent perspiration.\" It is an understandable statement coming from someone whose laboratory tested more than 6,000 filament possibilities. Nevertheless, one might also consider the adage, \"History is written by the winners.\" Edison may not have been the actual inventor of the light bulb, but he was the man who had the genius, the business sense, and the financial backing to invent the first one that was commercially viable.",
+      'Edison is famous for having said, "Genius is one percent inspiration and ninety-nine percent perspiration." It is an understandable statement coming from someone whose laboratory tested more than 6,000 filament possibilities. Nevertheless, one might also consider the adage, "History is written by the winners." Edison may not have been the actual inventor of the light bulb, but he was the man who had the genius, the business sense, and the financial backing to invent the first one that was commercially viable.',
 
       "(Edison terkenal karena pernah berkata, 'Kejeniusan adalah satu persen inspirasi dan sembilan puluh sembilan persen kerja keras.' Ini adalah pernyataan yang dapat dimengerti dari seseorang yang laboratoriumnya menguji lebih dari 6.000 kemungkinan filamen. Namun, mungkin seseorang juga bisa mempertimbangkan pepatah, 'Sejarah ditulis oleh para pemenang.' Edison mungkin bukan penemu sebenarnya dari bola lampu, tetapi ia adalah orang yang memiliki kejeniusan, kepekaan bisnis, dan dukungan finansial untuk menemukan yang pertama yang layak secara komersial.)",
     ],
@@ -1475,7 +1475,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         type: "fill-the-gap",
         question:
           "Q1 — Complete the summary:\nIn the 1800s, many _______ experimented with using electrical current to produce light.",
-        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        options: [
+          "backers",
+          "clamped",
+          "current",
+          "device",
+          "filed",
+          "inventors",
+          "refinement",
+          "unveiled",
+        ],
         correctAnswer: "inventors",
         reason:
           'Para. 2: "Other inventors worked on refinements of this idea." — Many inventors experimented with producing light.',
@@ -1485,7 +1494,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         type: "fill-the-gap",
         question:
           "Q2 — Complete the summary:\nIn the 1800s, inventors experimented with using electrical _______ to produce light.",
-        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        options: [
+          "backers",
+          "clamped",
+          "current",
+          "device",
+          "filed",
+          "inventors",
+          "refinement",
+          "unveiled",
+        ],
         correctAnswer: "current",
         reason:
           'Para. 2: "a filament that glowed when electrical current passed through it." — Electrical current was key to producing light.',
@@ -1495,7 +1513,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         type: "fill-the-gap",
         question:
           "Q3 — Complete the summary:\nJames Lindsay _______ his version of an electric light in 1835.",
-        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        options: [
+          "backers",
+          "clamped",
+          "current",
+          "device",
+          "filed",
+          "inventors",
+          "refinement",
+          "unveiled",
+        ],
         correctAnswer: "unveiled",
         reason:
           'Para. 2: "In 1835, James Lindsay unveiled an electric lamp, which cast enough light to read a book one and a half feet away."',
@@ -1505,7 +1532,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         type: "fill-the-gap",
         question:
           "Q4 — Complete the summary:\nHenrich Globel's _______, unfortunately, did not have commercial value because it burned out very quickly.",
-        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        options: [
+          "backers",
+          "clamped",
+          "current",
+          "device",
+          "filed",
+          "inventors",
+          "refinement",
+          "unveiled",
+        ],
         correctAnswer: "device",
         reason:
           'Para. 2: Globel\'s light bulb was a "device" — a glass bulb — that burned out too quickly to have commercial value.',
@@ -1515,7 +1551,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         type: "fill-the-gap",
         question:
           "Q5 — Complete the summary:\nThe Woodward and Evans lightbulb needed _______ because it burned out very quickly.",
-        options: ["backers", "clamped", "current", "device", "filed", "inventors", "refinement", "unveiled"],
+        options: [
+          "backers",
+          "clamped",
+          "current",
+          "device",
+          "filed",
+          "inventors",
+          "refinement",
+          "unveiled",
+        ],
         correctAnswer: "refinement",
         reason:
           'Para. 4: "Edison worked to refine the Woodward and Evans light because its filament burned out too quickly." — It needed refinement/improvement.',
@@ -1553,7 +1598,8 @@ export const advanceReadingLessons: ModuleLesson[] = [
           "E. a filament that burned out very quickly.",
           "F. the most suitable material for a light bulb filament.",
         ],
-        correctAnswer: "F. the most suitable material for a light bulb filament.",
+        correctAnswer:
+          "F. the most suitable material for a light bulb filament.",
         reason:
           'Para. 4: "ransacked the world for the most suitable filament material."',
       },
@@ -1682,7 +1728,8 @@ export const advanceReadingLessons: ModuleLesson[] = [
         id: "adv-r5-vocab7",
         type: "multiple-choice",
         section: "final",
-        question: "Vocabulary — Choose the correct definition for: entrepreneur",
+        question:
+          "Vocabulary — Choose the correct definition for: entrepreneur",
         options: [
           "A. n., a person who puts money into a business",
           "B. n., somebody who starts a business",
@@ -1710,7 +1757,8 @@ export const advanceReadingLessons: ModuleLesson[] = [
         id: "adv-r5-vocab9",
         type: "multiple-choice",
         section: "final",
-        question: "Vocabulary — Choose the correct definition for: infringement",
+        question:
+          "Vocabulary — Choose the correct definition for: infringement",
         options: [
           "A. n., an action that breaks a rule or law",
           "B. n., a legal decision",
@@ -1787,7 +1835,8 @@ export const advanceReadingLessons: ModuleLesson[] = [
           "C. n., improvement",
           "D. n., a machine or tool",
         ],
-        correctAnswer: "B. n., a right to an invention granted by the government",
+        correctAnswer:
+          "B. n., a right to an invention granted by the government",
         reason: "patent = paten; hak eksklusif atas penemuan dari pemerintah.",
       },
       {
@@ -1801,8 +1850,10 @@ export const advanceReadingLessons: ModuleLesson[] = [
           "C. v., to officially record something",
           "D. v., to search thoroughly, often violently or carelessly",
         ],
-        correctAnswer: "D. v., to search thoroughly, often violently or carelessly",
-        reason: "ransack = menggeledah/mencari dengan sangat teliti, sering dengan kasar.",
+        correctAnswer:
+          "D. v., to search thoroughly, often violently or carelessly",
+        reason:
+          "ransack = menggeledah/mencari dengan sangat teliti, sering dengan kasar.",
       },
       {
         id: "adv-r5-vocab16",
@@ -1836,7 +1887,8 @@ export const advanceReadingLessons: ModuleLesson[] = [
         id: "adv-r5-vocab18",
         type: "multiple-choice",
         section: "final",
-        question: "Vocabulary — Choose the correct definition for: specifically",
+        question:
+          "Vocabulary — Choose the correct definition for: specifically",
         options: [
           "A. adj., not legal or correct",
           "B. adj., very important",
@@ -1874,6 +1926,145 @@ export const advanceReadingLessons: ModuleLesson[] = [
         correctAnswer: "D. v., to make public, uncover",
         reason: "unveil = memperkenalkan ke publik; mengungkap.",
       },
+    ],
+  },
+
+  // ── Day 6 · The Story of the Skyscraper ───────────────────────────
+  {
+    id: "adv-reading-6",
+    track: "reading",
+    day: 6,
+    tutor: "Mrs. Aji",
+    title: "The Story of the Skyscraper",
+    subtitle:
+      "Architecture · Urban Civilisation · Chicago & New York · Iron & Steel",
+    overview:
+      "Bacaan tentang sejarah pencakar langit: dari Chicago pasca kebakaran 1871 hingga Manhattan modern, peran Revolusi Industri dalam arsitektur besi-baja, William Jenney sebagai bapak metal-frame building, dan bagaimana pencakar langit menjadi simbol peradaban urban Amerika.",
+    passage: [
+      "America has given a lot of things to the world, but in terms of urban lifestyle, none is as significant and as visible as the skyscraper. Tall buildings, their tips sometimes hidden in the clouds, skyscrapers have become the symbol of modern urban civilisation, and today they are found worldwide. But until the mid 20th century, they were very much a distinctive feature of the American city.",
+
+      "(Amerika telah memberikan banyak hal kepada dunia, tetapi dalam hal gaya hidup perkotaan, tidak ada yang sesignifikan dan seterlihat seperti pencakar langit. Gedung-gedung tinggi, dengan ujungnya yang kadang tersembunyi di awan, pencakar langit telah menjadi simbol peradaban urban modern, dan hari ini mereka ditemukan di seluruh dunia. Namun hingga pertengahan abad ke-20, mereka sangat merupakan ciri khas kota Amerika.)",
+
+      "If you ask a person to describe an American city, the chances are that he will mention the word skyscraper. Tall buildings, their tips sometimes hidden in the clouds, have become the symbol of the American metropolis, a symbol of twenty-first century urban civilisation. American cities have not always had skyscrapers, but it is now almost a century and a half since the first skyscrapers began to distinguish their skylines.",
+
+      "(Jika Anda meminta seseorang untuk mendeskripsikan sebuah kota Amerika, kemungkinan besar ia akan menyebut kata pencakar langit. Gedung-gedung tinggi, dengan ujungnya yang kadang tersembunyi di awan, telah menjadi simbol metropolis Amerika, simbol peradaban urban abad ke-21. Kota-kota Amerika tidak selalu memiliki pencakar langit, tetapi sekarang hampir satu setengah abad sejak pencakar langit pertama mulai membedakan cakrawala mereka.)",
+
+      "For millions of people coming to America from Europe, the first proof that they had reached a new world was the moment when they first caught sight of the skyline of Manhattan. Surrealistic, superhuman, the skyline was like nothing they had ever seen in the old world — a concentration of tall buildings, their tops scraping the sky, hundreds of feet above the ground. These were New York's famous skyscrapers! This was America!",
+
+      "(Bagi jutaan orang yang datang ke Amerika dari Eropa, bukti pertama bahwa mereka telah mencapai dunia baru adalah saat mereka pertama kali melihat cakrawala Manhattan. Surrealistis, superhumanis, cakrawala itu seperti tidak ada yang pernah mereka lihat di dunia lama — sebuah konsentrasi gedung-gedung tinggi, ujung-ujungnya menggaruk langit, ratusan kaki di atas tanah. Inilah pencakar langit terkenal New York! Inilah Amerika!)",
+
+      "The first skyscrapers, however, did not develop in New York, but in Chicago, in the late nineteenth century. Chicago at that time was the boom town of the United States — New York was just the front door. Chicago was at the centre of the new American adventure, and the new adventure was the West. Chicago was the point at which the West began.",
+
+      "(Pencakar langit pertama, bagaimanapun, tidak berkembang di New York, tetapi di Chicago, pada akhir abad kesembilan belas. Chicago pada saat itu adalah kota boom Amerika Serikat — New York hanyalah pintu depan. Chicago berada di pusat petualangan Amerika baru, dan petualangan baru itu adalah Barat. Chicago adalah titik di mana Barat dimulai.)",
+
+      "In the year 1871, a large part of booming Chicago was destroyed as a major fire engulfed much of the downtown area. The fire, however, was a great stimulus to architects: not only did it show them the need to design modern buildings that would not be liable to burn very rapidly, but it also gave them plenty of opportunities to put their new theories into practice.",
+
+      "(Pada tahun 1871, sebagian besar Chicago yang sedang berkembang pesat dihancurkan oleh kebakaran besar yang melahap sebagian besar area pusat kota. Kebakaran itu, bagaimanapun, menjadi stimulus besar bagi para arsitek: tidak hanya menunjukkan perlunya merancang bangunan modern yang tidak mudah terbakar dengan cepat, tetapi juga memberi mereka banyak kesempatan untuk menerapkan teori-teori baru mereka dalam praktik.)",
+
+      "By the late 1800's architects and engineers had made great steps forwards. Until the nineteenth century, the height of buildings had been limited to a maximum of about ten stories as a result of the building materials used — wood, brick or stone. With the exception of churches and cathedrals, few earlier buildings went higher than this, because they could not do so. And even the great churches of mediaeval Europe had to respect basic mechanical constraints. The walls needed to be terribly thick at the bottom, and often supported by complicated systems of buttresses and flying buttresses, to stop them falling down.",
+
+      "(Pada akhir 1800-an, para arsitek dan insinyur telah membuat kemajuan besar. Hingga abad kesembilan belas, ketinggian bangunan dibatasi maksimum sekitar sepuluh lantai akibat bahan bangunan yang digunakan — kayu, bata, atau batu. Dengan pengecualian gereja dan katedral, sedikit bangunan sebelumnya yang lebih tinggi dari ini, karena mereka tidak bisa melakukannya. Dan bahkan gereja-gereja besar Eropa Abad Pertengahan harus menghormati kendala mekanis dasar. Dinding-dindingnya harus sangat tebal di bagian bawah, dan sering didukung oleh sistem buttress dan flying buttress yang rumit, untuk mencegah mereka roboh.)",
+
+      "In the nineteenth century, the Industrial Revolution resulted in the development of new techniques, notably the use of iron. This allowed the building of much bigger buildings, in particular railway stations, the 'cathedrals of the Industrial Revolution', and exhibition buildings. Opened in 1889, the nineteenth century's most famous iron and steel structure reached unheard-of new heights. The Eiffel Tower, 1010 feet high, pointed the way to the future: upwards!",
+
+      "(Pada abad kesembilan belas, Revolusi Industri menghasilkan perkembangan teknik-teknik baru, terutama penggunaan besi. Hal ini memungkinkan pembangunan gedung-gedung yang jauh lebih besar, khususnya stasiun kereta api, 'katedral Revolusi Industri', dan gedung-gedung pameran. Dibuka pada tahun 1889, struktur besi dan baja paling terkenal abad kesembilan belas mencapai ketinggian baru yang belum pernah ada sebelumnya. Menara Eiffel, setinggi 1.010 kaki, menunjukkan jalan menuju masa depan: ke atas!)",
+
+      "Yet plain iron and steel structures had their limitations. They were not really suitable for the design of human habitations or offices — and in the event of fire, they could collapse very rapidly.",
+
+      "(Namun struktur besi dan baja biasa memiliki keterbatasan. Mereka tidak benar-benar cocok untuk desain hunian manusia atau kantor — dan jika terjadi kebakaran, mereka bisa runtuh dengan sangat cepat.)",
+
+      "It was in fact the combination of the old and the new that allowed the development of the skyscraper: the combination of metal frames and masonry cladding. The metal frame allowed much greater strength and height, without the enormous mass and weight of stone-built structures; the masonry cladding allowed traditional features, such as rooms and partitions, to be included in the design with relatively few problems.",
+
+      "(Sebenarnya kombinasi antara yang lama dan yang baru itulah yang memungkinkan perkembangan pencakar langit: kombinasi rangka logam dan cladding bata. Rangka logam memungkinkan kekuatan dan ketinggian yang jauh lebih besar, tanpa massa dan berat struktur yang dibangun dari batu; cladding bata memungkinkan fitur-fitur tradisional, seperti ruangan dan partisi, untuk disertakan dalam desain dengan relatif sedikit masalah.)",
+
+      "The man generally considered as the father of this new technique was the Chicago architect William Jenney.",
+
+      "(Orang yang umumnya dianggap sebagai bapak teknik baru ini adalah arsitek Chicago, William Jenney.)",
+
+      "Though Jenney was the father of the metal-frame building, his own buildings in Chicago did not go any higher than contemporary brick or stone buildings already going up in Chicago, New York, and elsewhere. Jenney's 'Home Insurance Building' in Chicago was only ten stories high, and stylistically similar to other buildings which did not use a metal frame.",
+
+      "(Meskipun Jenney adalah bapak bangunan rangka logam, bangunannya sendiri di Chicago tidak lebih tinggi dari bangunan bata atau batu kontemporer yang sudah berdiri di Chicago, New York, dan tempat lain. 'Home Insurance Building' milik Jenney di Chicago hanya setinggi sepuluh lantai, dan secara stilistik mirip dengan bangunan lain yang tidak menggunakan rangka logam.)",
+
+      "It was left to Jenney's successors, notably Lewis Sullivan and David Burnham, working in Chicago and New York, to go further. Burnham's 'Flat-iron Building' in New York, erected in 1902, reached new heights for an office building, with 20 stories; and at 290 feet (about 90 metres), it is known as New York's first skyscraper.",
+
+      "(Diserahkan kepada penerus Jenney, terutama Lewis Sullivan dan David Burnham, yang bekerja di Chicago dan New York, untuk melanjutkannya lebih jauh. 'Flat-iron Building' milik Burnham di New York, dibangun pada tahun 1902, mencapai ketinggian baru untuk sebuah gedung kantor, dengan 20 lantai; dan setinggi 290 kaki (sekitar 90 meter), dikenal sebagai pencakar langit pertama New York.)",
+
+      "The reasons for building skyscrapers were clear, particularly in a city like New York, whose downtown district, Manhattan, could not expand very easily on a horizontal plane, limited as it was by the Hudson and East rivers. Apart from upwards, there were not many directions in which Manhattan could grow. And once the building techniques had been mastered, vertical expansion became the most desirable solution for the city's businessmen.",
+
+      "(Alasan untuk membangun pencakar langit sudah jelas, terutama di kota seperti New York, yang distrik pusatnya, Manhattan, tidak bisa berkembang dengan mudah dalam bidang horizontal, karena dibatasi oleh Sungai Hudson dan East. Selain ke atas, tidak banyak arah di mana Manhattan bisa berkembang. Dan setelah teknik konstruksi dikuasai, ekspansi vertikal menjadi solusi paling diinginkan bagi para pebisnis kota.)",
+
+      "Since those early days, and in particular since the Second World War, skyscrapers have mushroomed in all the world's big cities; and they keep getting higher and higher. Before the First World War, New York's 'Woolworth Building' had reached 792 feet (241 metres); and by the Second World War, the Empire State Building — for many years the world's tallest — had actually passed the Eiffel Tower. In the 1970s, the enormous twin towers of the World Trade Center, 107 stories high, went even further. But did they go too far? As bold icons of modern America, they became the target of terrorism when radical Islamic terrorists used passenger jets to destroy them, in the terrible events of 9/11 - the 11th of September 2001.",
+
+      "(Sejak hari-hari awal itu, dan khususnya sejak Perang Dunia Kedua, pencakar langit telah bermunculan di semua kota besar di dunia; dan mereka terus bertambah tinggi. Sebelum Perang Dunia Pertama, 'Woolworth Building' New York telah mencapai 792 kaki (241 meter); dan pada Perang Dunia Kedua, Empire State Building — selama bertahun-tahun tertinggi di dunia — bahkan telah melampaui Menara Eiffel. Pada tahun 1970-an, menara kembar yang luar biasa dari World Trade Center, setinggi 107 lantai, bahkan pergi lebih jauh. Tetapi apakah mereka terlalu jauh? Sebagai ikon berani Amerika modern, mereka menjadi sasaran terorisme ketika teroris Islam radikal menggunakan pesawat penumpang untuk menghancurkan mereka, dalam peristiwa mengerikan 9/11 - 11 September 2001.)",
+
+      "Architectural dreamers of a hundred years ago or more imagined cities in the sky, giant buildings where people lived thousands of feet above the ground, above the clouds, above the pollution. Today, although some people believe that modern skyscrapers are too high, they now characterise cities all over the world; and they keep getting higher. Fires in a few tall buildings, for instance in Dubai, have led to further questions being asked; but in spite of the occasional disaster, skyscrapers are here to stay — at least for offices and city hotels. Symbols of our civilisation, they are not likely to be replaced.",
+
+      "(Pemimpi arsitektur seratus tahun lalu atau lebih membayangkan kota-kota di langit, bangunan-bangunan raksasa di mana orang-orang tinggal ribuan kaki di atas tanah, di atas awan, di atas polusi. Hari ini, meskipun beberapa orang percaya bahwa pencakar langit modern terlalu tinggi, mereka kini mencirikan kota-kota di seluruh dunia; dan mereka terus bertambah tinggi. Kebakaran di beberapa gedung tinggi, misalnya di Dubai, telah menimbulkan pertanyaan lebih lanjut; tetapi meskipun ada bencana sesekali, pencakar langit ada di sini untuk bertahan — setidaknya untuk kantor dan hotel kota. Simbol peradaban kita, mereka tidak mungkin digantikan.)",
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. 1–2 — Pencakar langit = simbol paling signifikan Amerika untuk dunia; sangat khas kota Amerika hingga pertengahan abad ke-20.",
+          "Para. 3–4 — Kesan pertama orang Eropa melihat Manhattan; pencakar langit pertama berkembang di Chicago, bukan New York — Chicago adalah pusat petualangan Amerika baru.",
+          "Para. 5 — Kebakaran besar Chicago 1871 justru menjadi stimulus para arsitek untuk merancang bangunan modern yang tahan api.",
+          "Para. 6 — Sebelum abad 19: bangunan max. ~10 lantai karena material kayu/bata/batu; gereja Eropa butuh buttress & flying buttress yang tebal.",
+          "Para. 7 — Revolusi Industri → teknik besi baru; Menara Eiffel (1889, 1.010 kaki) = simbol era baru arsitektur baja.",
+          "Para. 8–9 — Keterbatasan besi/baja murni diatasi dengan kombinasi: metal frame (kekuatan & ketinggian) + masonry cladding (partisi & fitur tradisional).",
+          "Para. 10–11 — William Jenney = bapak metal-frame building; 'Home Insurance Building' hanya 10 lantai tapi revolusioner secara teknik.",
+          "Para. 12–13 — Sullivan & Burnham melanjutkan; Flat-iron Building Burnham (1902, 290 kaki) = pencakar langit pertama NY; Manhattan tidak bisa meluas horizontal → ekspansi vertikal satu-satunya solusi.",
+          "Para. 14 — Pasca WW2: pencakar langit bermunculan global; WTC twin towers (107 lantai) dihancurkan teroris pada 9/11/2001.",
+          "Para. 15 — Meski ada kontroversi & bencana sesekali, pencakar langit = simbol peradaban modern yang ada untuk bertahan.",
+        ],
+      },
+      {
+        title: "Reading Strategy: Vocabulary in Context",
+        points: [
+          "📌 Vocabulary in Context = memahami arti kata dari konteks kalimat di sekitarnya.",
+          "📌 Teks ini banyak menggunakan istilah teknis arsitektur: buttresses, cladding, masonry, partitions, stress.",
+          "",
+          "⚡ Tips Vocabulary Matching:",
+          "   • Baca kalimat di mana kata muncul untuk mendapat konteks.",
+          "   • Perhatikan part of speech (n./v./adj./adv.) untuk menyaring pilihan.",
+          "   • Eliminasi definisi yang tidak masuk akal secara konteks.",
+          "",
+          "⚡ Contoh konteks dalam teks:",
+          "   '...systems of buttresses and flying buttresses, to stop them falling down' → penopang struktural",
+          "   'masonry cladding... rooms and partitions' → material & pembatas ruang",
+          "   'skyscrapers have mushroomed in all the world's big cities' → berkembang/muncul pesat",
+          "   'in the event of fire, they could collapse very rapidly' → jika terjadi kebakaran",
+        ],
+      },
+      {
+        title: "Key Vocabulary",
+        points: [
+          "metropolis, catch sight of, skyline, stories, constraints",
+          "buttresses and flying buttresses, in the event of, masonry, cladding",
+          "partitions, stress, downtown, to mushroom, giant",
+        ],
+      },
+      {
+        title: "Vocabulary List",
+        points: [
+          "1.  metropolis (n) — kota metropolitan/kota raya | Sinonim: city, urban center | Antonim: village",
+          "2.  catch sight of (v) — mulai melihat; mendapat pandangan pertama | Sinonim: spot, glimpse | Antonim: miss, overlook",
+          "3.  skyline (n) — garis cakrawala kota; siluet bangunan terhadap langit | Sinonim: cityscape, horizon",
+          "4.  stories (n) — lantai/tingkat bangunan | Sinonim: floors, levels",
+          "5.  constraints (n) — kendala/batasan | Sinonim: limitations, restrictions | Antonim: freedom, flexibility",
+          "6.  buttresses and flying buttresses (n) — penyangga arsitektur penopang gedung tinggi, khususnya gaya Gothic | Sinonim: supports, braces",
+          "7.  in the event of (prep.) — jika terjadi/seandainya | Sinonim: in case of, if",
+          "8.  masonry (n) — pekerjaan bata; material batu, bata, atau beton | Sinonim: stonework, brickwork",
+          "9.  cladding (n) — lapisan luar/eksterior bangunan | Sinonim: exterior covering, facing",
+          "10. partitions (n) — dinding pemisah non-struktural (tidak menanggung beban) | Sinonim: dividers, non-load-bearing walls",
+          "11. stress (n) — tekanan/gaya dalam konteks arsitektur & teknik | Sinonim: force, load, pressure",
+          "12. downtown (adj/n) — pusat kota; bagian tengah kota | Sinonim: city center, central district | Antonim: suburb, outskirts",
+          "13. to mushroom (v) — berkembang/bermunculan dengan cepat di banyak tempat | Sinonim: proliferate, spread, multiply | Antonim: shrink, decline",
+          "14. giant (adj) — raksasa/sangat besar | Sinonim: enormous, huge, colossal | Antonim: tiny, small, miniature",
+        ],
+      },
+    ],
+    exercises: [
+      // exercises coming soon
     ],
   },
 ];

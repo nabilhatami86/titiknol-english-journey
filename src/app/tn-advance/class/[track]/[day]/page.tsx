@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import { getTnAdvanceLesson, getTnAdvanceLessonsByTrack, tnAdvanceLessons } from '@/data/tnAdvanceModules';
 import ModuleLessonClient from '@/app/tn-basic-cource/[track]/[day]/ModuleLessonClient';
 
+export const dynamicParams = true;
+
 interface PageProps {
   params: Promise<{ track: string; day: string }>;
 }
