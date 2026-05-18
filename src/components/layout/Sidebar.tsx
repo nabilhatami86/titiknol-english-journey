@@ -64,6 +64,7 @@ const navSections: { title: string; items: NavItem[] }[] = [
       { href: "/practice", label: "Practice", icon: GraduationCap },
       { href: "/practice/conversations", label: "Daily Conversations", icon: MessageCircle },
       { href: "/practice/speaking", label: "AI Writing Practice", icon: PenLine },
+      { href: "/practice/vocab-trainer", label: "Vocab Trainer", icon: BookMarked },
       { href: "/tn-basic-cource", label: "TN Basic Course", icon: BookText },
       { href: "/tn-intermediate", label: "TN Intermediate", icon: GraduationCap },
       { href: "/tn-intermediate/vocab", label: "Vocab Bank (Int.)", icon: Library },
