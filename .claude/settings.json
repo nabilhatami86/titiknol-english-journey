@@ -3,6 +3,9 @@
     "allow": [
       "Bash(head -2022 \"c:/Users/muham/Desktop/vocab-for-train/src/data/reading/tnAdvanceReading.ts\")",
       "Bash(cp /tmp/tnAdvanceReading_fixed.ts \"c:/Users/muham/Desktop/vocab-for-train/src/data/reading/tnAdvanceReading.ts\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\muham\\Desktop\\vocab-for-train"
     ]
   }
 }

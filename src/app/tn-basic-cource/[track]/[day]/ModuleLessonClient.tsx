@@ -1167,13 +1167,69 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
                       );
                     }
 
-                    // Vocabulary card — section title contains "vocabulary" and point matches "word (pos) — meaning [| example]"
+                    // Vocabulary card — section title contains "vocabulary"
                     if (/vocabulary/i.test(section.title)) {
-                      const vocabMatch = point.match(/^(.+?)\s*\(([^)]+)\)\s*[—–-]\s*(.+?)(?:\s*\|\s*(.+))?$/);
-                      if (vocabMatch) {
-                        const [, vocabWord, pos, meaning, example] = vocabMatch;
-                        const vocabKey = `vocab-${section.title}-${pIdx}`;
-                        const isVocabOpen = revealedAnswers.has(vocabKey);
+                      const vocabKey = `vocab-${section.title}-${pIdx}`;
+                      const isVocabOpen = revealedAnswers.has(vocabKey);
+                      const toggleVocab = () => setRevealedAnswers((prev) => {
+                        const next = new Set(prev);
+                        if (next.has(vocabKey)) next.delete(vocabKey); else next.add(vocabKey);
+                        return next;
+                      });
+
+                      // New format: "N. word (pos) | tenses — meaning | translation\n    Clause: '...' / '...'"
+                      const newFmt = point.match(/^(?:\d+\.\s+)?(.+?)\s*\(([^)]+)\)\s*\|\s*([^—\n]+)\s*[—–-]\s*([^\n]+)(?:\n\s*Clause:\s*([\s\S]+))?$/);
+                      if (newFmt) {
+                        const [, vocabWord, pos, tenses, meaningFull, clauseText] = newFmt;
+                        const [meaning, translation] = meaningFull.split(/\s*\|\s*/);
+                        const clauses = clauseText?.match(/'([^']+)'/g)?.map(c => c.replace(/^'|'$/g, ''));
+                        return (
+                          <div key={vocabKey} className={cn(
+                            'rounded-lg border transition-all overflow-hidden',
+                            isVocabOpen
+                              ? 'border-blue-300 dark:border-blue-700 bg-blue-50/50 dark:bg-blue-950/20'
+                              : 'border-(--border) bg-(--bg-secondary)',
+                          )}>
+                            <div className="flex items-start gap-3 px-3 py-2">
+                              <button
+                                type="button"
+                                onClick={() => translateWord(vocabWord.trim())}
+                                className="shrink-0 w-6 h-6 mt-0.5 rounded-md flex items-center justify-center text-(--text-muted) hover:text-primary hover:bg-primary/10 transition-colors"
+                                title="Terjemahkan"
+                              >
+                                <Volume2 className="w-3 h-3" />
+                              </button>
+                              <div className="flex-1 min-w-0">
+                                <div className="flex items-baseline gap-2 flex-wrap">
+                                  <span className="font-bold text-sm text-primary">{vocabWord.trim()}</span>
+                                  <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-primary/10 text-primary uppercase tracking-wide">{pos}</span>
+                                  <span className="text-[10px] text-(--text-muted)">{tenses.trim()}</span>
+                                </div>
+                                <div className="text-sm text-(--text) font-medium mt-0.5">
+                                  — {meaning.trim()}{translation && <span className="text-(--text-muted) font-normal"> | {translation.trim()}</span>}
+                                </div>
+                              </div>
+                              {clauses && clauses.length > 0 && (
+                                <button type="button" onClick={toggleVocab} className="shrink-0 text-[10px] text-(--text-muted) hover:text-primary transition-colors mt-1">
+                                  {isVocabOpen ? '▲' : '▼'}
+                                </button>
+                              )}
+                            </div>
+                            {isVocabOpen && clauses && (
+                              <div className="px-3 pb-2.5 border-t border-(--border)/50 pt-2 space-y-1.5">
+                                {clauses.map((clause, cIdx) => (
+                                  <p key={cIdx} className="text-xs text-(--text-secondary) italic leading-relaxed">"{clause}"</p>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      }
+
+                      // Old format: "word (pos) — meaning [| example]"
+                      const oldFmt = point.match(/^(?:\d+\.\s+)?(.+?)\s*\(([^)]+)\)\s*[—–-]\s*(.+?)(?:\s*\|\s*(.+))?$/);
+                      if (oldFmt) {
+                        const [, vocabWord, pos, meaning, example] = oldFmt;
                         const exampleClean = example?.replace(/^['"]|['"]$/g, '');
                         return (
                           <div key={vocabKey} className={cn(
@@ -1197,16 +1253,7 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
                                 <span className="text-sm text-(--text) font-medium">— {meaning.trim()}</span>
                               </div>
                               {exampleClean && (
-                                <button
-                                  type="button"
-                                  onClick={() => setRevealedAnswers((prev) => {
-                                    const next = new Set(prev);
-                                    if (next.has(vocabKey)) next.delete(vocabKey);
-                                    else next.add(vocabKey);
-                                    return next;
-                                  })}
-                                  className="shrink-0 text-[10px] text-(--text-muted) hover:text-primary transition-colors"
-                                >
+                                <button type="button" onClick={toggleVocab} className="shrink-0 text-[10px] text-(--text-muted) hover:text-primary transition-colors">
                                   {isVocabOpen ? '▲' : '▼'}
                                 </button>
                               )}

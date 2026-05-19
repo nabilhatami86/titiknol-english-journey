@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { GraduationCap, Brain, PenLine, RotateCcw, BookCheck, FileText, ClipboardList, BookOpen, Shuffle, MessageCircle } from 'lucide-react';
+import { GraduationCap, Brain, PenLine, RotateCcw, BookCheck, FileText, ClipboardList, BookOpen, Shuffle, MessageCircle, Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Practice',
@@ -23,6 +23,22 @@ const modes = [
     icon: Shuffle,
     color: 'bg-primary/10 text-primary',
     badge: '88 bank soal',
+  },
+  {
+    href: '/practice/grammar-contoh',
+    title: 'Buat Contoh Kalimat + AI Review',
+    description: 'Pilih topik grammar → tulis kalimat contoh → AI langsung review: benar/salah, koreksi, breakdown grammar, dan tips perbaikan.',
+    icon: Sparkles,
+    color: 'bg-rose-500/10 text-rose-600',
+    badge: 'AI Feedback',
+  },
+  {
+    href: '/practice/grammar-latihan',
+    title: 'Practice Grammar — Basic · Inter · Advance',
+    description: 'Latihan soal langsung dari materi grammar tiap level: Basic, Intermediate, dan Advance. Pilih level → pilih lesson → kerjakan soal.',
+    icon: GraduationCap,
+    color: 'bg-purple-500/10 text-purple-600',
+    badge: '3 level',
   },
   {
     href: '/practice/grammar-quiz',

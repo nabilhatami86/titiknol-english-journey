@@ -2067,4 +2067,251 @@ export const advanceReadingLessons: ModuleLesson[] = [
       // exercises coming soon
     ],
   },
+
+  // ── Day 7 · How Drugs Are Studied ────────────────────────────────────────────
+  {
+    id: "adv-reading-7",
+    track: "reading",
+    day: 7,
+    tutor: "Mrs. Aji",
+    title: "How Drugs Are Studied",
+    subtitle: "Drug Development · Clinical Trials · Phases I–IV · Chemistry",
+    overview:
+      "Teks ini membahas proses panjang pengembangan obat, mulai dari tahap teoritis hingga masuk ke rak apotek. Meliputi uji laboratorium, uji hewan, hingga empat fase uji klinis pada manusia.",
+    passage: [
+      "It takes years, and sometimes decades, for a drug to move from the theoretical stage to the pharmacy shelf. Of the thousands of drugs under investigation at any one time, only a small fraction will produce the desired result without unacceptable side effects.",
+
+      "(Dibutuhkan bertahun-tahun, bahkan terkadang berpuluh-puluh tahun, bagi sebuah obat untuk bergerak dari tahap teoritis ke rak apotek. Dari ribuan obat yang sedang dalam tahap penelitian pada satu waktu, hanya sebagian kecil yang akan menghasilkan efek yang diinginkan tanpa efek samping yang tidak dapat diterima.)",
+
+      "First, scientists target a step in the disease process where they believe a drug can have an effect. Then they manufacture compounds or take them from organisms such as viruses and fungi and test them in laboratory cultures. Once scientists isolate a chemical that produces a desirable effect, they analyze its structure and alter it as necessary to enhance the outcome.",
+
+      "(Pertama, para ilmuwan menargetkan suatu tahap dalam proses penyakit di mana mereka percaya bahwa obat dapat memberikan efek. Kemudian mereka memproduksi senyawa atau mengambilnya dari organisme seperti virus dan jamur, lalu mengujinya dalam biakan laboratorium. Setelah ilmuwan mengisolasi bahan kimia yang menghasilkan efek yang diinginkan, mereka menganalisis strukturnya dan mengubahnya seperlunya untuk meningkatkan hasilnya.)",
+
+      "The next step involves testing the drug in animals. Scientists look at how much drug is absorbed into the bloodstream, how it distributes to different organs, how quickly it is excreted or leaves the body, and whether it has any toxic effects or by-products. Researchers usually test at least two animal species because the same drug may affect species differently.",
+
+      "(Langkah selanjutnya melibatkan pengujian obat pada hewan. Para ilmuwan melihat seberapa banyak obat yang diserap ke dalam aliran darah, bagaimana obat terdistribusi ke berbagai organ, seberapa cepat obat dikeluarkan atau meninggalkan tubuh, dan apakah obat memiliki efek beracun atau produk sampingan. Para peneliti biasanya menguji setidaknya dua spesies hewan karena obat yang sama dapat mempengaruhi spesies secara berbeda.)",
+
+      "If a chemical passes laboratory and animal testing and is deemed appropriate to analyze in human volunteers, it is ready for clinical trials. Researchers follow a protocol that describes who may participate in the study, tests and procedures to follow, the length of the study, and outcomes to be measured. Drug trials may focus on treating a disease, preventing a disease from occurring or recurring, or enhancing the quality of life for people living with incurable chronic conditions.",
+
+      "(Jika sebuah bahan kimia lulus pengujian laboratorium dan hewan serta dianggap layak untuk dianalisis pada relawan manusia, maka obat tersebut siap untuk uji klinis. Para peneliti mengikuti protokol yang menggambarkan siapa yang boleh berpartisipasi dalam penelitian, tes dan prosedur yang harus diikuti, durasi penelitian, dan hasil yang akan diukur. Uji coba obat dapat berfokus pada pengobatan penyakit, pencegahan penyakit dari kejadian atau kekambuhan, atau peningkatan kualitas hidup bagi orang yang hidup dengan kondisi kronis yang tidak dapat disembuhkan.)",
+
+      "There are four phases of clinical trials; the first three phases study whether the drug is effective and can be safely administered to patients, and the fourth phase evaluates long-term safety and use once a drug is on the market.",
+
+      "(Ada empat fase uji klinis; tiga fase pertama mempelajari apakah obat efektif dan dapat diberikan dengan aman kepada pasien, dan fase keempat mengevaluasi keamanan jangka panjang dan penggunaan setelah obat ada di pasaran.)",
+
+      "Phase I clinical trials test a drug in small groups of healthy volunteers (fewer than 100) to ascertain its safety and the appropriate dose range. These studies last for six months to one year.",
+
+      "(Uji klinis Fase I menguji obat pada kelompok kecil relawan sehat (kurang dari 100 orang) untuk memastikan keamanannya dan kisaran dosis yang tepat. Penelitian ini berlangsung selama enam bulan hingga satu tahun.)",
+
+      "Phase II clinical trials test several hundred volunteers to determine how effectively the drug combats the disease being studied. These trials continue to evaluate safety, side effects, and optimal dose. Phase II studies also last for six months to one year.",
+
+      "(Uji klinis Fase II menguji beberapa ratus relawan untuk menentukan seberapa efektif obat tersebut dalam melawan penyakit yang diteliti. Uji coba ini terus mengevaluasi keamanan, efek samping, dan dosis optimal. Penelitian Fase II juga berlangsung selama enam bulan hingga satu tahun.)",
+
+      "Phase III trials test thousands of volunteers for several years, with researchers closely monitoring study participants at regular intervals. These studies typically compare the drug under investigation with a control: either a drug known to cure or alleviate a specific disease or, if one does not exist, a substance that has no medicinal effects, known as a placebo. Phase III trials are typically blind studies (participants do not know which drug they are receiving) or double-blind studies (neither participants nor researchers know which drug an individual is receiving until the trial is completed).",
+
+      "(Uji Fase III menguji ribuan relawan selama beberapa tahun, dengan para peneliti memantau peserta penelitian secara ketat pada interval yang teratur. Penelitian ini biasanya membandingkan obat yang sedang diteliti dengan kontrol: baik obat yang diketahui dapat menyembuhkan atau meringankan penyakit tertentu, atau jika tidak ada, suatu zat yang tidak memiliki efek obat yang dikenal sebagai plasebo. Uji Fase III biasanya merupakan studi buta — peserta tidak tahu obat mana yang mereka terima — atau studi buta ganda, di mana baik peserta maupun peneliti tidak tahu obat mana yang diterima individu hingga uji coba selesai.)",
+
+      "Once a drug passes the first three phases and is found to be safe and effective, drug companies may apply for the right to market the product. After a drug is approved and on the market, Phase IV trials may investigate longer-term effects, effects in different groups of patients such as the elderly, or use of the medication for a different condition such as using a cancer drug to treat AIDS.",
+
+      "(Setelah obat melewati tiga fase pertama dan dinyatakan aman dan efektif, perusahaan farmasi dapat mengajukan permohonan hak untuk memasarkan produk tersebut. Setelah obat disetujui dan ada di pasaran, Uji Fase IV dapat menyelidiki efek jangka panjang, efek pada kelompok pasien yang berbeda seperti lansia, atau penggunaan obat untuk kondisi yang berbeda, seperti penggunaan obat kanker untuk mengobati AIDS.)",
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. A — Pengantar: proses pengembangan obat membutuhkan waktu bertahun-tahun; hanya sebagian kecil obat yang berhasil tanpa efek samping.",
+          "Para. B — Para ilmuwan menargetkan tahap penyakit, memproduksi senyawa dari organisme, mengujinya dalam biakan laboratorium, lalu menganalisis & menyempurnakan struktur kimia.",
+          "Para. C — Pengujian obat pada hewan: melihat absorpsi, distribusi ke organ, kecepatan ekskresi, dan efek toksik. Minimal dua spesies diuji karena efek bisa berbeda.",
+          "Para. D — Jika lulus uji lab & hewan → uji klinis manusia. Peneliti mengikuti protokol (siapa peserta, prosedur, durasi, hasil). Tujuan: mengobati, mencegah kekambuhan, atau meningkatkan kualitas hidup.",
+          "Para. E — Empat fase uji klinis: tiga fase pertama mengevaluasi efektivitas & keamanan pemberian ke pasien; fase keempat mengevaluasi keamanan jangka panjang setelah obat di pasaran.",
+          "Para. F — Fase I: kelompok kecil (<100) relawan sehat, memastikan keamanan & kisaran dosis. Berlangsung 6 bulan–1 tahun.",
+          "Para. G — Fase II: beberapa ratus relawan, menentukan efektivitas melawan penyakit, evaluasi efek samping & dosis optimal. Berlangsung 6 bulan–1 tahun.",
+          "Para. H — Fase III: ribuan relawan selama beberapa tahun. Dibandingkan dengan kontrol (obat nyata atau plasebo). Blind/double-blind study.",
+          "Para. I — Setelah 3 fase: perusahaan ajukan izin pemasaran. Fase IV menyelidiki efek jangka panjang, kelompok pasien berbeda (lansia), atau kondisi baru.",
+        ],
+      },
+      {
+        title: "Reading Strategy: Paragraph Information Matching",
+        points: [
+          "📌 Paragraph information matching = menentukan paragraf mana yang membahas informasi tertentu.",
+          "",
+          "⚡ Langkah-langkah:",
+          "   1. Baca pertanyaan dan identifikasi kata kunci utama.",
+          "   2. Scan setiap paragraf untuk menemukan kata kunci atau parafrasenya.",
+          "   3. Pastikan SELURUH informasi dalam pertanyaan ada di satu paragraf.",
+          "   4. Setiap huruf paragraf hanya digunakan sekali.",
+          "",
+          "⚡ Tips:",
+          "   → Perhatikan sinonim dan parafrase — soal jarang menggunakan kata yang persis sama dengan teks.",
+          "   → Untuk multiple choice, baca semua pilihan sebelum memilih.",
+          "   → Kata kunci dalam soal seringkali merupakan parafrase dari teks aslinya.",
+        ],
+      },
+      {
+        title: "Vocabulary: How Drugs Are Studied",
+        points: [
+          "absorb, alleviate, ascertain, chronic, combat",
+          "culture, deem, desirable, enhance, fraction",
+          "interval, investigation, manufacture, monitor, outcome",
+          "recur, substance, target, theoretical, toxic",
+        ],
+      },
+      {
+        title: "Grammar in the Passage",
+        points: [
+          "── TENSES & VOICE ──",
+          "",
+          "Simple Present → mendeskripsikan proses pengembangan obat sebagai prosedur umum (general truth):",
+          "   'It takes years for a drug to move from the theoretical stage to the pharmacy shelf.'",
+          "   'Scientists target a step in the disease process... then they manufacture compounds.'",
+          "",
+          "Passive Voice (is/are + V3) → subjek = obat/kimia (bukan orang yang melakukan):",
+          "   'how much drug is absorbed into the bloodstream'",
+          "   'a chemical is deemed appropriate to analyze in human volunteers'",
+          "   'until the trial is completed'",
+          "   'once a drug is found to be safe and effective'",
+          "",
+          "── NOUN CLAUSES (Indirect Questions) ──",
+          "",
+          "how + S + V → melaporkan apa yang diamati ilmuwan (Para. C):",
+          "   'how much drug is absorbed' · 'how it distributes to different organs' · 'how quickly it is excreted'",
+          "whether + S + V → indirect yes/no question:",
+          "   'whether it has any toxic effects or by-products'",
+          "who / which + S + V → indirect WH-question:",
+          "   'who may participate in the study'",
+          "   'which drug they are receiving' · 'which drug an individual is receiving'",
+          "",
+          "── ADJECTIVE CLAUSES ──",
+          "",
+          "Full — that-clause (defining):",
+          "   'a chemical that produces a desirable effect'",
+          "   'a substance that has no medicinal effects, known as a placebo'",
+          "Full — where-clause:",
+          "   'a step in the disease process where they believe a drug can have an effect'",
+          "Reduced → Past Participle (V3): [that is] + V3 dihilangkan:",
+          "   'a drug known to cure or alleviate' ← 'a drug that is known to cure'",
+          "Reduced → Prepositional Phrase: [that are] + prep dihilangkan:",
+          "   'drugs under investigation' ← 'drugs that are under investigation'",
+          "",
+          "── ADVERB CLAUSES ──",
+          "",
+          "Conditional — If:",
+          "   'If a chemical passes laboratory and animal testing... it is ready for clinical trials.'",
+          "Time — Once (ketika / begitu):",
+          "   'Once scientists isolate a chemical that produces a desirable effect, they analyze its structure.'",
+          "   'Once a drug passes the first three phases and is found to be safe and effective...'",
+          "Time — After:",
+          "   'After a drug is approved and on the market, Phase IV trials may investigate longer-term effects.'",
+          "Time — until:",
+          "   'neither participants nor researchers know which drug an individual is receiving until the trial is completed.'",
+          "",
+          "── REDUCED ADVERB CLAUSES ──",
+          "",
+          "Once + V3 (passive reduction) → subjek klausa = subjek kalimat utama, be-verb dihilangkan:",
+          "   'Once deemed appropriate...' ← 'Once it is deemed appropriate...'",
+          "   'Once found to be safe...' ← 'Once it is found to be safe...'",
+          "Past Participle Phrase sebagai kondisi/syarat:",
+          "   'If passed and deemed safe' ← 'If it has passed... and been deemed safe...'",
+        ],
+      },
+      {
+        title: "Vocabulary List",
+        points: [
+          "1.  absorb (v.) | absorbs · absorbed · absorbing — to take in | menyerap\n    Clause: 'The body absorbs the drug through the bloodstream.' / 'How much drug is absorbed into the bloodstream determines its effectiveness.'",
+          "2.  alleviate (v.) | alleviates · alleviated · alleviating — to lessen, ease | meringankan\n    Clause: 'This medicine alleviates pain within 30 minutes.' / 'A drug known to alleviate a specific disease was approved.'",
+          "3.  ascertain (v.) | ascertains · ascertained · ascertaining — to determine; find out | memastikan\n    Clause: 'Researchers ascertain the correct dose in Phase I.' / 'Tests were conducted to ascertain its safety and the appropriate dose range.'",
+          "4.  chronic (adj.) | more chronic · most chronic — long-lasting | kronis, berlangsung lama\n    Clause: 'Diabetes is a chronic condition that requires daily medication.' / 'Drugs that combat incurable chronic conditions are in high demand.'",
+          "5.  combat (v.) | combats · combated · combating — to fight against | melawan\n    Clause: 'Scientists are combating resistant bacteria with new compounds.' / 'Researchers studied how effectively the drug combats the disease.'",
+          "6.  culture (n.) | cultures — the growing of organic materials in a laboratory setting | biakan laboratorium\n    Clause: 'The lab prepared several cultures before testing the drug.' / 'Scientists first test them in laboratory cultures before animal trials.'",
+          "7.  deem (v.) | deems · deemed · deeming — to believe; judge | menganggap, menilai\n    Clause: 'The committee deemed the results inconclusive.' / 'Once deemed appropriate, the compound was analyzed in human volunteers.'",
+          "8.  desirable (adj.) | more desirable · most desirable — wanted; worth having | diinginkan, layak dimiliki\n    Clause: 'A quick recovery is the most desirable outcome for any treatment.' / 'Scientists look for a chemical that produces a desirable effect on the disease.'",
+          "9.  enhance (v.) | enhances · enhanced · enhancing — to improve | meningkatkan\n    Clause: 'The new formula enhances drug absorption.' / 'The compound was altered to enhance the outcome of the trial.'",
+          "10. fraction (n.) | fractions — a small part | sebagian kecil\n    Clause: 'Only a fraction of tested drugs ever reach clinical trials.' / 'A small fraction of the compounds will produce the desired result.'",
+          "11. interval (n.) | intervals — the period between two times or events | jeda, rentang waktu\n    Clause: 'Patients were checked at regular intervals throughout the study.' / 'Monitoring participants at short intervals helps detect early side effects.'",
+          "12. investigation (n.) | investigations — a study | penyelidikan, penelitian\n    Clause: 'The investigation into the drug's long-term effects is ongoing.' / 'There are thousands of drugs currently under investigation worldwide.'",
+          "13. manufacture (v.) | manufactures · manufactured · manufacturing — to produce | memproduksi\n    Clause: 'The lab manufactures new compounds every month.' / 'Scientists manufacture compounds from natural organisms in the early stage.'",
+          "14. monitor (v.) | monitors · monitored · monitoring — to watch; observe | memantau\n    Clause: 'Doctors monitored the patients for adverse reactions.' / 'Closely monitoring study participants ensures their safety during trials.'",
+          "15. outcome (n.) | outcomes — result | hasil\n    Clause: 'The outcome of the trial was better than expected.' / 'Researchers defined the outcomes to be measured before the study began.'",
+          "16. recur (v.) | recurs · recurred · recurring — to happen or occur again | terulang kembali\n    Clause: 'The symptoms recurred after the patient stopped taking the medication.' / 'The drug is designed to prevent a disease from occurring or recurring.'",
+          "17. substance (n.) | substances — material | zat, bahan\n    Clause: 'The substance was found to be toxic at high doses.' / 'A placebo is a substance that has no medicinal effects but is used in trials.'",
+          "18. target (v.) | targets · targeted · targeting — to focus on | menargetkan\n    Clause: 'The new therapy targets cancer cells directly.' / 'Scientists target a specific step in the disease process to stop its progression.'",
+          "19. theoretical (adj.) | more theoretical · most theoretical — abstract; based on theory | teoritis\n    Clause: 'The idea was still theoretical until lab results proved it.' / 'A drug must move from the theoretical stage to clinical testing before reaching the pharmacy.'",
+          "20. toxic (adj.) | more toxic · most toxic — poisonous | beracun\n    Clause: 'The compound proved too toxic for human use.' / 'Phase I trials determine whether it has any toxic effects or harmful by-products.'",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Questions 1–4: Paragraph Matching ────────────────────────────────────
+      {
+        id: "adv-r7-q1",
+        type: "multiple-choice",
+        question:
+          "Questions 1–4: The reading passage contains nine paragraphs (A–I). Which paragraph discusses the following information?\n\n1. Drug tests that involve growing biological material in a laboratory.",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "B",
+        reason:
+          "Paragraph B: 'scientists…test them in laboratory cultures' — 'culture' = growing of organic material in a laboratory. Jawaban: B.",
+      },
+      {
+        id: "adv-r7-q2",
+        type: "multiple-choice",
+        question: "2. Investigations of the effects of drugs on animals.",
+        options: ["B", "C", "D", "E"],
+        correctAnswer: "C",
+        reason:
+          "Paragraph C: 'The next step involves testing the drug in animals. Scientists look at how much drug is absorbed…toxic effects or by-products.' Jawaban: C.",
+      },
+      {
+        id: "adv-r7-q3",
+        type: "multiple-choice",
+        question:
+          "3. Studies to determine how safe a drug is and how much a patient should take.",
+        options: ["E", "F", "G", "H"],
+        correctAnswer: "F",
+        reason:
+          "Paragraph F: 'Phase I clinical trials test a drug in small groups of healthy volunteers…to ascertain its safety and the appropriate dose range.' Jawaban: F.",
+      },
+      {
+        id: "adv-r7-q4",
+        type: "multiple-choice",
+        question: "4. Studies to monitor how well a drug fights a disease.",
+        options: ["E", "F", "G", "H"],
+        correctAnswer: "G",
+        reason:
+          "Paragraph G: 'Phase II clinical trials test several hundred volunteers to determine how effectively the drug combats the disease being studied.' Jawaban: G.",
+      },
+      // ── Questions 5–7: Multiple Choice ───────────────────────────────────────
+      {
+        id: "adv-r7-q5",
+        type: "multiple-choice",
+        question:
+          "Questions 5–7: Choose the correct letter A, B, C, or D.\n\n5. Drug tests on animals look at\n(A) how the drug is absorbed by the body.\n(B) how effective the drug is for chronic conditions.\n(C) how well the drug prevents a disease from recurring.\n(D) how quickly the drug alleviates the disease.",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "A",
+        reason:
+          "Paragraph C: 'Scientists look at how much drug is absorbed into the bloodstream, how quickly it is distributed to different organs, how quickly it is excreted or leaves the body.' → (A) how the drug is absorbed by the body.",
+      },
+      {
+        id: "adv-r7-q6",
+        type: "multiple-choice",
+        question:
+          "6. During Phase II clinical trials, study participants are monitored for\n(A) chronic conditions.\n(B) toxic doses.\n(C) speed of cure.\n(D) possible side effects.",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "D",
+        reason:
+          "Paragraph G: 'These trials continue to evaluate safety, side effects, and optimal dose.' → (D) possible side effects.",
+      },
+      {
+        id: "adv-r7-q7",
+        type: "multiple-choice",
+        question:
+          "7. After a drug is deemed safe and effective, a drug company may do further tests to ascertain\n(A) the best way to market it.\n(B) possible effects over time.\n(C) how it compares with other drugs.\n(D) the best group of people to use it.",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "B",
+        reason:
+          "Paragraph I: 'Phase IV trials may investigate longer-term effects, effects in different groups of patients such as the elderly, or use of the medication for a different condition.' → (B) possible effects over time.",
+      },
+      // ── Vocabulary Matching (20 items) ────────────────────────────────────────
+    ],
+  },
 ];
