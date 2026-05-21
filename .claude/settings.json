@@ -11,10 +11,17 @@
       "PowerShell(pip install pdfplumber -q 2>&1)",
       "PowerShell(tail -3)",
       "PowerShell(pip install pdfplumber -q)",
-      "PowerShell(python -c \"import pdfplumber; print\\('ok'\\)\")"
+      "PowerShell(python -c \"import pdfplumber; print\\('ok'\\)\")",
+      "Read(//c/Users/muham/Desktop/**)",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; python \"C:\\\\Users\\\\muham\\\\Desktop\\\\parse_questions.py\" 2>&1)",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; python \"C:\\\\Users\\\\muham\\\\Desktop\\\\parse_answers.py\" 2>&1)",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; python \"C:\\\\Users\\\\muham\\\\Desktop\\\\generate_ts.py\" 2>&1)",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; python \"C:\\\\Users\\\\muham\\\\Desktop\\\\generate_ts_v2.py\" 2>&1)",
+      "PowerShell($env:PYTHONIOENCODING = \"utf-8\"; python \"C:\\\\Users\\\\muham\\\\Desktop\\\\generate_ts_v3.py\" 2>&1)"
     ],
     "additionalDirectories": [
-      "c:\\Users\\muham\\Desktop\\vocab-for-train"
+      "c:\\Users\\muham\\Desktop\\vocab-for-train",
+      "C:\\Users\\muham\\Desktop"
     ]
   }
 }

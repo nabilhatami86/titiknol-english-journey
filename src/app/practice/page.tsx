@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {
   GraduationCap, Brain, PenLine, RotateCcw, BookCheck,
   FileText, ClipboardList, BookOpen, Shuffle, MessageCircle,
-  Sparkles, ChevronRight,
+  Sparkles, ChevronRight, ListChecks,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -56,6 +56,14 @@ const vocabItems: PracticeItem[] = [
 ];
 
 const grammarItems: PracticeItem[] = [
+  {
+    href: '/practice/structure-1000',
+    title: 'Structure 1000 Soal',
+    description: '700 soal TOEFL Structure pilihan ganda dari buku "1000 Soal Grammar". Ada level All, Basic, Intermediate, dan Advance.',
+    icon: ListChecks,
+    color: 'bg-orange-500/10 text-orange-600',
+    badge: '700 soal',
+  },
   {
     href: '/practice/grammar-contoh',
     title: 'Buat Contoh + AI Review',
