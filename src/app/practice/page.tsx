@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {
   GraduationCap, Brain, PenLine, RotateCcw, BookCheck,
   FileText, ClipboardList, BookOpen, Shuffle, MessageCircle,
-  Sparkles, ChevronRight, ListChecks,
+  Sparkles, ChevronRight, ListChecks, BarChart2,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -105,6 +105,14 @@ const writingItems: PracticeItem[] = [
     icon: FileText,
     color: 'bg-blue-500/10 text-blue-600',
     badge: 'AI Review',
+  },
+  {
+    href: '/practice/ielts-writing',
+    title: 'IELTS Writing Practice',
+    description: 'Latihan Task 1 (deskripsi grafik) & Task 2 (essay). AI beri band score 0–9 berdasarkan 4 kriteria resmi IELTS: Task Achievement, Coherence, Lexical, Grammar.',
+    icon: BarChart2,
+    color: 'bg-violet-500/10 text-violet-600',
+    badge: 'Band Score',
   },
 ];
 

@@ -61,10 +61,23 @@ function extractQuizItems(lesson: ModuleLesson): QuizItem[] {
     }));
 }
 
+function groupLessonsByDay(lessons: ModuleLesson[]): { day: number; lessons: ModuleLesson[] }[] {
+  const map: Record<number, ModuleLesson[]> = {};
+  for (const l of lessons) {
+    if (!map[l.day]) map[l.day] = [];
+    map[l.day].push(l);
+  }
+  return Object.keys(map)
+    .map(Number)
+    .sort((a, b) => a - b)
+    .map((day) => ({ day, lessons: map[day] }));
+}
+
 // ── Main Component ─────────────────────────────────────────────────────────
 
 export default function GrammarLatihanPage() {
   const [selectedLevel, setSelectedLevel] = useState<Level | null>(null);
+  const [selectedLessonGroup, setSelectedLessonGroup] = useState<ModuleLesson[] | null>(null);
   const [selectedLesson, setSelectedLesson] = useState<ModuleLesson | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -109,6 +122,14 @@ export default function GrammarLatihanPage() {
   };
 
   const handleBackToLessons = () => {
+    setSelectedLessonGroup(null);
+    setSelectedLesson(null);
+    setAnswers({});
+    setIsSubmitted(false);
+    setShowDetails(false);
+  };
+
+  const handleBackToSetSelector = () => {
     setSelectedLesson(null);
     setAnswers({});
     setIsSubmitted(false);
@@ -117,6 +138,7 @@ export default function GrammarLatihanPage() {
 
   const handleBackToLevels = () => {
     setSelectedLevel(null);
+    setSelectedLessonGroup(null);
     setSelectedLesson(null);
     setAnswers({});
     setIsSubmitted(false);
@@ -126,10 +148,12 @@ export default function GrammarLatihanPage() {
   // ── RESULTS VIEW ──────────────────────────────────────────────────────────
   if (isSubmitted && selectedLevel) {
     const cfg = levelConfig[selectedLevel];
+    const backFn = selectedLessonGroup ? handleBackToSetSelector : handleBackToLessons;
+    const backLabel = selectedLessonGroup ? 'Pilih Set Lain' : 'Pilih Lesson Lain';
     return (
       <div className="p-4 lg:p-6 max-w-3xl mx-auto space-y-6 animate-fade-in">
-        <button onClick={handleBackToLessons} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-          <ArrowLeft className="w-4 h-4" /> Pilih Lesson Lain
+        <button onClick={backFn} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+          <ArrowLeft className="w-4 h-4" /> {backLabel}
         </button>
 
         <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-8 text-center">
@@ -170,8 +194,8 @@ export default function GrammarLatihanPage() {
             <button onClick={handleRestart} className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-white rounded-lg font-medium text-sm hover:bg-primary-dark transition-colors">
               <RotateCcw className="w-4 h-4" /> Coba Lagi
             </button>
-            <button onClick={handleBackToLessons} className="inline-flex items-center gap-2 px-5 py-2.5 border border-(--border) text-(--text-secondary) rounded-lg font-medium text-sm hover:bg-(--hover) transition-colors">
-              Lesson Lain
+            <button onClick={backFn} className="inline-flex items-center gap-2 px-5 py-2.5 border border-(--border) text-(--text-secondary) rounded-lg font-medium text-sm hover:bg-(--hover) transition-colors">
+              {backLabel}
             </button>
             <button onClick={handleBackToLevels} className="inline-flex items-center gap-2 px-5 py-2.5 border border-(--border) text-(--text-secondary) rounded-lg font-medium text-sm hover:bg-(--hover) transition-colors">
               Ganti Level
@@ -231,11 +255,13 @@ export default function GrammarLatihanPage() {
   // ── QUIZ VIEW ─────────────────────────────────────────────────────────────
   if (selectedLesson && selectedLevel) {
     const cfg = levelConfig[selectedLevel];
+    const backFn = selectedLessonGroup ? handleBackToSetSelector : handleBackToLessons;
+    const backLabel = selectedLessonGroup ? 'Pilih Set Lain' : 'Pilih Lesson Lain';
     return (
       <div className="p-4 lg:p-6 max-w-3xl mx-auto space-y-6 animate-fade-in">
         <div className="flex items-center justify-between">
-          <button onClick={handleBackToLessons} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-            <ArrowLeft className="w-4 h-4" /> Pilih Lesson Lain
+          <button onClick={backFn} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+            <ArrowLeft className="w-4 h-4" /> {backLabel}
           </button>
           <span className="text-sm text-(--text-secondary) font-medium">{answeredCount} / {totalCount} dijawab</span>
         </div>
@@ -311,9 +337,62 @@ export default function GrammarLatihanPage() {
     );
   }
 
+  // ── SET SELECTOR VIEW ─────────────────────────────────────────────────────
+  if (selectedLessonGroup && selectedLevel) {
+    const cfg = levelConfig[selectedLevel];
+    return (
+      <div className="p-4 lg:p-6 max-w-3xl mx-auto space-y-6 animate-fade-in">
+        <button onClick={handleBackToLessons} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+          <ArrowLeft className="w-4 h-4" /> Pilih Lesson Lain
+        </button>
+
+        <div>
+          <span className={cn('text-xs font-semibold px-2.5 py-1 rounded-full', cfg.badge)}>{cfg.label}</span>
+          <h1 className="text-xl font-bold text-(--text) mt-2">
+            Day {selectedLessonGroup[0].day} — Pilih Set Latihan
+          </h1>
+          <p className="text-sm text-(--text-secondary) mt-1">
+            Ada {selectedLessonGroup.length} set latihan. Pilih salah satu untuk mulai.
+          </p>
+        </div>
+
+        <div className="space-y-2">
+          {selectedLessonGroup.map((lesson, idx) => {
+            const count = lesson.exercises.filter((ex) => ex.type === 'multiple-choice').length;
+            const letter = String.fromCharCode(65 + idx);
+            return (
+              <button key={lesson.id} onClick={() => setSelectedLesson(lesson)}
+                className="w-full text-left bg-(--bg-card) border border-(--border) rounded-xl px-4 py-3.5 hover:border-primary/40 hover:shadow-sm transition-all group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className={cn('w-9 h-9 rounded-lg flex items-center justify-center shrink-0 text-sm font-bold border', cfg.border, cfg.color)}>
+                    {letter}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-(--text) text-sm group-hover:text-primary transition-colors truncate">
+                      {lesson.title}
+                    </p>
+                    {lesson.subtitle && (
+                      <p className="text-xs text-(--text-muted) truncate mt-0.5">{lesson.subtitle}</p>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <BookOpen className="w-3.5 h-3.5 text-(--text-muted)" />
+                    <span className="text-xs text-(--text-muted)">{count} soal</span>
+                  </div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+
   // ── LESSON LIST VIEW ──────────────────────────────────────────────────────
   if (selectedLevel) {
     const cfg = levelConfig[selectedLevel];
+    const dayGroups = groupLessonsByDay(cfg.lessons);
     return (
       <div className="p-4 lg:p-6 max-w-3xl mx-auto space-y-6 animate-fade-in">
         <button onClick={handleBackToLevels} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
@@ -327,25 +406,57 @@ export default function GrammarLatihanPage() {
         </div>
 
         <div className="space-y-2">
-          {cfg.lessons.map((lesson) => {
-            const count = lesson.exercises.filter((ex) => ex.type === 'multiple-choice').length;
+          {dayGroups.map(({ day, lessons }) => {
+            if (lessons.length === 1) {
+              const lesson = lessons[0];
+              const count = lesson.exercises.filter((ex) => ex.type === 'multiple-choice').length;
+              return (
+                <button key={lesson.id} onClick={() => setSelectedLesson(lesson)}
+                  className="w-full text-left bg-(--bg-card) border border-(--border) rounded-xl px-4 py-3.5 hover:border-primary/40 hover:shadow-sm transition-all group"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className={cn('w-9 h-9 rounded-lg flex items-center justify-center shrink-0 text-sm font-bold border', cfg.border, cfg.color)}>
+                      {day}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-semibold text-(--text) text-sm group-hover:text-primary transition-colors truncate">{lesson.title}</p>
+                      {lesson.subtitle && (
+                        <p className="text-xs text-(--text-muted) truncate mt-0.5">{lesson.subtitle}</p>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <BookOpen className="w-3.5 h-3.5 text-(--text-muted)" />
+                      <span className="text-xs text-(--text-muted)">{count} soal</span>
+                    </div>
+                  </div>
+                </button>
+              );
+            }
+
+            // Multiple lessons for this day → group card
+            const groupTotal = lessons.reduce(
+              (acc, l) => acc + l.exercises.filter((ex) => ex.type === 'multiple-choice').length,
+              0,
+            );
             return (
-              <button key={lesson.id} onClick={() => setSelectedLesson(lesson)}
+              <button key={`day-${day}`} onClick={() => setSelectedLessonGroup(lessons)}
                 className="w-full text-left bg-(--bg-card) border border-(--border) rounded-xl px-4 py-3.5 hover:border-primary/40 hover:shadow-sm transition-all group"
               >
                 <div className="flex items-center gap-3">
                   <div className={cn('w-9 h-9 rounded-lg flex items-center justify-center shrink-0 text-sm font-bold border', cfg.border, cfg.color)}>
-                    {lesson.day}
+                    {day}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-(--text) text-sm group-hover:text-primary transition-colors truncate">{lesson.title}</p>
-                    {lesson.subtitle && (
-                      <p className="text-xs text-(--text-muted) truncate mt-0.5">{lesson.subtitle}</p>
-                    )}
+                    <p className="font-semibold text-(--text) text-sm group-hover:text-primary transition-colors">
+                      Day {day} — {lessons.length} Set Latihan
+                    </p>
+                    <p className="text-xs text-(--text-muted) truncate mt-0.5">
+                      {lessons.map((l) => l.title).join(' · ')}
+                    </p>
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">
                     <BookOpen className="w-3.5 h-3.5 text-(--text-muted)" />
-                    <span className="text-xs text-(--text-muted)">{count} soal</span>
+                    <span className="text-xs text-(--text-muted)">{groupTotal} soal</span>
                   </div>
                 </div>
               </button>

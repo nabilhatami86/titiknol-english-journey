@@ -21,7 +21,8 @@
     ],
     "additionalDirectories": [
       "c:\\Users\\muham\\Desktop\\vocab-for-train",
-      "C:\\Users\\muham\\Desktop"
+      "C:\\Users\\muham\\Desktop",
+      "c:\\Users\\muham\\Desktop\\vocab-for-train\\src\\app\\api"
     ]
   }
 }

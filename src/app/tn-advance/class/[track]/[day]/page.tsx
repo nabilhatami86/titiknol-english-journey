@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getTnAdvanceLesson, getTnAdvanceLessonsByTrack, tnAdvanceLessons } from '@/data/tnAdvanceModules';
+import { getTnAdvanceLesson, getTnAdvanceLessonById, getTnAdvanceLessonsByTrack, tnAdvanceLessons } from '@/data/tnAdvanceModules';
 import ModuleLessonClient from '@/app/tn-basic-cource/[track]/[day]/ModuleLessonClient';
 
 export const dynamicParams = true;
 
 interface PageProps {
   params: Promise<{ track: string; day: string }>;
+  searchParams: Promise<{ lessonId?: string }>;
 }
 
 const ADVANCE_TRACKS = ['reading', 'speaking', 'grammar', 'writing'] as const;
@@ -31,11 +32,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function TnAdvanceLessonPage({ params }: PageProps) {
+export default async function TnAdvanceLessonPage({ params, searchParams }: PageProps) {
   const { track, day } = await params;
+  const { lessonId } = await searchParams;
   if (!isAdvanceTrack(track)) notFound();
 
-  const lesson = getTnAdvanceLesson(track, Number(day));
+  const lesson = lessonId
+    ? getTnAdvanceLessonById(lessonId)
+    : getTnAdvanceLesson(track, Number(day));
   if (!lesson) notFound();
 
   const trackLessons = getTnAdvanceLessonsByTrack(track);

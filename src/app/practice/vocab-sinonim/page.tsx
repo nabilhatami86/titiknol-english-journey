@@ -171,12 +171,12 @@ function buildStageQuestions(level: CefrLevel, stageIdx: number): Question[] {
       return {
         id: `${level}-s${stageIdx}-q${i}`,
         type: 'synonym-find',
-        prompt: `Kata mana yang paling mirip artinya dengan:`,
+        prompt: `Which word is closest in meaning to:`,
         targetWord: word.word,
         partOfSpeech: word.partOfSpeech,
         options: shuffleArray([correctSynonym, ...distractors]),
         correctAnswer: correctSynonym,
-        hint: word.meaning.id,
+        hint: word.meaning.en,
       };
     }
 
@@ -184,8 +184,8 @@ function buildStageQuestions(level: CefrLevel, stageIdx: number): Question[] {
       return {
         id: `${level}-s${stageIdx}-q${i}`,
         type: 'meaning-match',
-        prompt: `Pilih kata yang artinya:`,
-        targetWord: `"${word.meaning.id}"`,
+        prompt: `Choose the word that means:`,
+        targetWord: `"${word.meaning.en}"`,
         partOfSpeech: word.partOfSpeech,
         options: shuffleArray([word.word, ...distractors]),
         correctAnswer: word.word,
@@ -199,12 +199,12 @@ function buildStageQuestions(level: CefrLevel, stageIdx: number): Question[] {
     return {
       id: `${level}-s${stageIdx}-q${i}`,
       type: 'odd-one-out',
-      prompt: `Dari kata-kata berikut yang berhubungan dengan "${word.word}", mana yang TIDAK mirip artinya?`,
+      prompt: `Of the words related to "${word.word}", which one does NOT share the same meaning?`,
       targetWord: word.word,
       partOfSpeech: word.partOfSpeech,
       options: shuffleArray([...synonymOptions, oddOne]),
       correctAnswer: oddOne,
-      hint: word.meaning.id,
+      hint: word.meaning.en,
     };
   });
 }
@@ -694,8 +694,8 @@ export default function VocabSinonimPage() {
               <Lightbulb className={cn('w-4 h-4 mt-0.5 shrink-0', selected === q.correctAnswer ? 'text-green-500' : 'text-amber-500')} />
               <div className="text-xs leading-relaxed">
                 {selected === q.correctAnswer
-                  ? <span className="text-green-700 dark:text-green-300 font-medium">Benar! "{q.correctAnswer}" {q.type === 'synonym-find' ? `adalah sinonim dari "${q.targetWord}"` : q.type === 'meaning-match' ? `artinya "${q.hint}"` : `bukan sinonim dari "${q.targetWord}"`}.</span>
-                  : <span className="text-amber-800 dark:text-amber-300">Jawaban yang benar adalah <strong>"{q.correctAnswer}"</strong>. {q.type === 'odd-one-out' ? `Kata "${selected}" sebenarnya sinonim dari "${q.targetWord}".` : `"${q.correctAnswer}" artinya: ${q.hint}.`}</span>
+                  ? <span className="text-green-700 dark:text-green-300 font-medium">Correct! "{q.correctAnswer}" {q.type === 'synonym-find' ? `is a synonym of "${q.targetWord}"` : q.type === 'meaning-match' ? `means "${q.hint}"` : `is not a synonym of "${q.targetWord}"`}.</span>
+                  : <span className="text-amber-800 dark:text-amber-300">The correct answer is <strong>"{q.correctAnswer}"</strong>. {q.type === 'odd-one-out' ? `"${selected}" is actually a synonym of "${q.targetWord}".` : `"${q.correctAnswer}" means: ${q.hint}.`}</span>
                 }
               </div>
             </div>

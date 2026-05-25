@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import {
   ArrowLeft, PenLine, Sparkles, Loader2, AlertCircle,
@@ -222,7 +222,10 @@ export default function WritingPage() {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const wordCount = text.trim() ? text.trim().split(/\s+/).length : 0;
-  const promptIdea = useRef(PROMPT_IDEAS[Math.floor(Math.random() * PROMPT_IDEAS.length)]).current;
+  const [promptIdea, setPromptIdea] = useState('');
+  useEffect(() => {
+    setPromptIdea(PROMPT_IDEAS[Math.floor(Math.random() * PROMPT_IDEAS.length)]);
+  }, []);
 
   async function checkWriting() {
     if (wordCount < 5) { setError('Please write at least 5 words.'); setErrorType('general'); return; }

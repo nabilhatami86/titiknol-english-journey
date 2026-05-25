@@ -2344,23 +2344,23 @@ export const advanceReadingLessons: ModuleLesson[] = [
 
       "\"It gets approximately the same amount of heat that we get from our own star,\" says the SETI Institute's Susan Thompson, part of the team that unveiled these new planets on Monday. But \"there's a lot we don't know about this planet. It's hard to say whether it's really an Earth twin—we need to know more about its atmosphere, whether there's water on the planet.\"",
 
-      "(\"Planet ini mendapat jumlah panas yang kira-kira sama dengan yang kita terima dari bintang kita sendiri,\" kata Susan Thompson dari SETI Institute, bagian dari tim yang mengumumkan planet-planet baru ini pada Senin. Tapi \"ada banyak hal yang belum kita ketahui tentang planet ini. Sulit untuk mengatakan apakah ia benar-benar kembaran Bumi — kita perlu mengetahui lebih banyak tentang atmosfernya, apakah ada air di planet tersebut.\")",
+      '("Planet ini mendapat jumlah panas yang kira-kira sama dengan yang kita terima dari bintang kita sendiri," kata Susan Thompson dari SETI Institute, bagian dari tim yang mengumumkan planet-planet baru ini pada Senin. Tapi "ada banyak hal yang belum kita ketahui tentang planet ini. Sulit untuk mengatakan apakah ia benar-benar kembaran Bumi — kita perlu mengetahui lebih banyak tentang atmosfernya, apakah ada air di planet tersebut.")',
 
       "Spotted by NASA's Kepler space telescope, KOI 7711.01 is just one intriguing nugget in the team's catalogue, which is the final compilation of four years of Kepler observations. Over that time, the telescope shook out 4,034 possible planets from a small patch of sky, 2,335 of which have been confirmed.",
 
       "(Diidentifikasi oleh teleskop luar angkasa Kepler NASA, KOI 7711.01 hanyalah satu temuan menarik dalam katalog tim ini, yang merupakan kompilasi akhir dari empat tahun pengamatan Kepler. Selama waktu itu, teleskop ini menyaring 4.034 kemungkinan planet dari area kecil langit, 2.335 di antaranya telah dikonfirmasi.)",
 
-      "\"Most of the planets found by Kepler are smaller than Neptune, and Kepler really, truly has opened up our eyes to the existence of these small, terrestrial-size worlds,\" Thompson says.",
+      '"Most of the planets found by Kepler are smaller than Neptune, and Kepler really, truly has opened up our eyes to the existence of these small, terrestrial-size worlds," Thompson says.',
 
-      "(\"Sebagian besar planet yang ditemukan oleh Kepler lebih kecil dari Neptunus, dan Kepler benar-benar telah membuka mata kita terhadap keberadaan dunia-dunia kecil berukuran terestrial ini,\" kata Thompson.)",
+      '("Sebagian besar planet yang ditemukan oleh Kepler lebih kecil dari Neptunus, dan Kepler benar-benar telah membuka mata kita terhadap keberadaan dunia-dunia kecil berukuran terestrial ini," kata Thompson.)',
 
       "More importantly, the catalogue contains enough information for scientists to begin practicing exoplanetary demography—or putting together a census of various otherworldly populations rather than focusing on individual curiosities.",
 
       "(Yang lebih penting lagi, katalog ini mengandung cukup informasi bagi para ilmuwan untuk mulai mempraktikkan demografi eksoplanet — atau menyusun sensus berbagai populasi dunia lain daripada berfokus pada keunikan individual.)",
 
-      "\"We are turning attention away from finding new individual systems toward trying to understand the demographics of these worlds that are most similar to our planet Earth,\" Thompson says.",
+      '"We are turning attention away from finding new individual systems toward trying to understand the demographics of these worlds that are most similar to our planet Earth," Thompson says.',
 
-      "(\"Kami mengalihkan perhatian dari menemukan sistem-sistem individual baru menuju mencoba memahami demografis dunia-dunia yang paling mirip dengan planet Bumi kita,\" kata Thompson.)",
+      '("Kami mengalihkan perhatian dari menemukan sistem-sistem individual baru menuju mencoba memahami demografis dunia-dunia yang paling mirip dengan planet Bumi kita," kata Thompson.)',
 
       "Kepler blasted off in 2009 and settled into orbit around the sun. It then spent four years staring at 200,000 stars studding a small patch of sky near the constellations Cygnus and Lyra. Its mission: To figure out how common planets like Earth are in the Milky Way galaxy.",
 
@@ -2378,9 +2378,9 @@ export const advanceReadingLessons: ModuleLesson[] = [
 
       "(Dari 4.034 dunia kemungkinan, hampir 50 kemungkinan berbatu dan berdekatan dengan bintangnya dalam orbit yang ramah kehidupan (lebih dari 30 di antaranya telah dikonfirmasi sebagai nyata, sejauh ini).)",
 
-      "\"This number could have been very, very small, and I for one am ecstatic that we found 50 potentially habitable worlds orbiting nearby stars,\" says Caltech's Courtney Dressing.",
+      '"This number could have been very, very small, and I for one am ecstatic that we found 50 potentially habitable worlds orbiting nearby stars," says Caltech\'s Courtney Dressing.',
 
-      "(\"Angka ini bisa saja sangat, sangat kecil, dan saya pribadi sangat gembira bahwa kami menemukan 50 dunia yang berpotensi layak huni yang mengorbit bintang-bintang terdekat,\" kata Courtney Dressing dari Caltech.)",
+      '("Angka ini bisa saja sangat, sangat kecil, dan saya pribadi sangat gembira bahwa kami menemukan 50 dunia yang berpotensi layak huni yang mengorbit bintang-bintang terdekat," kata Courtney Dressing dari Caltech.)',
 
       "That number might not sound exceptionally large, but consider this: Kepler stared at a tiny patch of the cosmos, a field of stars covering 1/400th of the entire sky. The spacecraft could only spot planets whose orbits put them between Earth and their stars—for a planetary system like ours, there's only a 1 in 200 chance of that orientation occurring, Dressing says.",
 
@@ -2390,9 +2390,9 @@ export const advanceReadingLessons: ModuleLesson[] = [
 
       "(Selama setahun ke depan atau lebih, para ilmuwan akan menghitung angka-angka dan mengekstrapolasi dari populasi 50 dunia berbatu untuk menghasilkan sensus galaksi yang mirip Bumi. Meski belum memiliki jawaban akhir, kemungkinan hasilnya adalah bahwa ada miliaran Bumi di galaksi kita.)",
 
-      "\"Are there places we could live in the galaxy besides this place that we call home?\" Thompson asks.",
+      '"Are there places we could live in the galaxy besides this place that we call home?" Thompson asks.',
 
-      "(\"Apakah ada tempat-tempat di galaksi ini yang bisa kita tinggali selain tempat yang kita sebut rumah ini?\" tanya Thompson.)",
+      '("Apakah ada tempat-tempat di galaksi ini yang bisa kita tinggali selain tempat yang kita sebut rumah ini?" tanya Thompson.)',
 
       "It's remarkable that scientists can pose that question against a backdrop of billions of planets. After all, we learned there were worlds outside the solar system a mere 25 years ago. Now, the more we look, the more obvious it is that our galaxy is stuffed with planets that could be very familiar—making it even more likely that we are not alone.",
 
@@ -2539,15 +2539,18 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "middle",
         question: "KOI 7711.01 is exactly the same size as Earth.",
         correctAnswer: "False",
-        reason: "The passage states KOI 7711.01 is 'just 30 percent larger than our own fragile oasis' — it is bigger than Earth, not the same size.",
+        reason:
+          "The passage states KOI 7711.01 is 'just 30 percent larger than our own fragile oasis' — it is bigger than Earth, not the same size.",
       },
       {
         id: "adv-r8-tf2",
         type: "true-false-not-given",
         section: "middle",
-        question: "KOI 7711.01 orbits a sun-like star that is 1,700 light-years from Earth.",
+        question:
+          "KOI 7711.01 orbits a sun-like star that is 1,700 light-years from Earth.",
         correctAnswer: "True",
-        reason: "The passage directly states 'it orbits a star like the sun that's 1,700 light-years away.'",
+        reason:
+          "The passage directly states 'it orbits a star like the sun that's 1,700 light-years away.'",
       },
       {
         id: "adv-r8-tf3",
@@ -2555,23 +2558,28 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "middle",
         question: "Susan Thompson works at NASA's Astrophysics Division.",
         correctAnswer: "False",
-        reason: "The passage says she is 'the SETI Institute's Susan Thompson', not NASA's Astrophysics Division.",
+        reason:
+          "The passage says she is 'the SETI Institute's Susan Thompson', not NASA's Astrophysics Division.",
       },
       {
         id: "adv-r8-tf4",
         type: "true-false-not-given",
         section: "middle",
-        question: "Scientists have confirmed that there is liquid water on KOI 7711.01.",
+        question:
+          "Scientists have confirmed that there is liquid water on KOI 7711.01.",
         correctAnswer: "False",
-        reason: "Thompson explicitly says 'we need to know more about its atmosphere, whether there's water on the planet' — water has not been confirmed.",
+        reason:
+          "Thompson explicitly says 'we need to know more about its atmosphere, whether there's water on the planet' — water has not been confirmed.",
       },
       {
         id: "adv-r8-tf5",
         type: "true-false-not-given",
         section: "middle",
-        question: "Kepler monitored 200,000 stars in the direction of the constellations Cygnus and Lyra.",
+        question:
+          "Kepler monitored 200,000 stars in the direction of the constellations Cygnus and Lyra.",
         correctAnswer: "True",
-        reason: "The passage states 'It then spent four years staring at 200,000 stars studding a small patch of sky near the constellations Cygnus and Lyra.'",
+        reason:
+          "The passage states 'It then spent four years staring at 200,000 stars studding a small patch of sky near the constellations Cygnus and Lyra.'",
       },
       {
         id: "adv-r8-tf6",
@@ -2579,43 +2587,46 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "middle",
         question: "Courtney Dressing is a scientist at NASA.",
         correctAnswer: "False",
-        reason: "The passage identifies her as 'Caltech's Courtney Dressing', not NASA.",
+        reason:
+          "The passage identifies her as 'Caltech's Courtney Dressing', not NASA.",
       },
       {
         id: "adv-r8-tf7",
         type: "true-false-not-given",
         section: "middle",
-        question: "For a planetary system like ours, there is only a 1 in 200 chance of a planet being detected by Kepler.",
+        question:
+          "For a planetary system like ours, there is only a 1 in 200 chance of a planet being detected by Kepler.",
         correctAnswer: "True",
-        reason: "The passage states 'for a planetary system like ours, there's only a 1 in 200 chance of that orientation occurring.'",
+        reason:
+          "The passage states 'for a planetary system like ours, there's only a 1 in 200 chance of that orientation occurring.'",
       },
       {
         id: "adv-r8-mc1",
         type: "multiple-choice",
         section: "final",
-        question: "How many new possible planets did NASA add to its catalogue, as described in the passage?",
-        options: [
-          "A. 4,034",
-          "B. 219",
-          "C. 2,335",
-          "D. 50",
-        ],
+        question:
+          "How many new possible planets did NASA add to its catalogue, as described in the passage?",
+        options: ["A. 4,034", "B. 219", "C. 2,335", "D. 50"],
         correctAnswer: "B. 219",
-        reason: "The passage states 'NASA just added 219 possible planets to its growing catalogue.'",
+        reason:
+          "The passage states 'NASA just added 219 possible planets to its growing catalogue.'",
       },
       {
         id: "adv-r8-mc2",
         type: "multiple-choice",
         section: "final",
-        question: "What is significant about KOI 7711.01 according to the passage?",
+        question:
+          "What is significant about KOI 7711.01 according to the passage?",
         options: [
           "A. It is confirmed to have liquid water on its surface",
           "B. It is the only rocky planet found by Kepler",
           "C. It could be the most Earth-like planet discovered so far",
           "D. It is exactly the same size as Earth",
         ],
-        correctAnswer: "C. It could be the most Earth-like planet discovered so far",
-        reason: "The passage describes KOI 7711.01 as 'a possible planet that could be the most similar to Earth yet spied.'",
+        correctAnswer:
+          "C. It could be the most Earth-like planet discovered so far",
+        reason:
+          "The passage describes KOI 7711.01 as 'a possible planet that could be the most similar to Earth yet spied.'",
       },
       {
         id: "adv-r8-mc3",
@@ -2628,36 +2639,614 @@ export const advanceReadingLessons: ModuleLesson[] = [
           "C. Photographing planets directly using powerful cameras",
           "D. Scanning for radio signals from nearby star systems",
         ],
-        correctAnswer: "B. Detecting brief drops in a star's brightness as planets pass in front of it",
-        reason: "The passage explains 'the spacecraft watched for brief blips in brightness caused by planets crossing between their stars and Earth.'",
+        correctAnswer:
+          "B. Detecting brief drops in a star's brightness as planets pass in front of it",
+        reason:
+          "The passage explains 'the spacecraft watched for brief blips in brightness caused by planets crossing between their stars and Earth.'",
       },
       {
         id: "adv-r8-mc4",
         type: "multiple-choice",
         section: "final",
-        question: "According to the passage, what fraction of the entire sky did Kepler observe?",
-        options: [
-          "A. 1/200th",
-          "B. 1/100th",
-          "C. 1/400th",
-          "D. 1/50th",
-        ],
+        question:
+          "According to the passage, what fraction of the entire sky did Kepler observe?",
+        options: ["A. 1/200th", "B. 1/100th", "C. 1/400th", "D. 1/50th"],
         correctAnswer: "C. 1/400th",
-        reason: "The passage states 'Kepler stared at a tiny patch of the cosmos, a field of stars covering 1/400th of the entire sky.'",
+        reason:
+          "The passage states 'Kepler stared at a tiny patch of the cosmos, a field of stars covering 1/400th of the entire sky.'",
       },
       {
         id: "adv-r8-mc5",
         type: "multiple-choice",
         section: "final",
-        question: "What is 'exoplanetary demography' as described in the passage?",
+        question:
+          "What is 'exoplanetary demography' as described in the passage?",
         options: [
           "A. The study of how planets form around distant stars",
           "B. Putting together a census of various otherworldly populations rather than focusing on individual planets",
           "C. Measuring the distance between planets in different solar systems",
           "D. Comparing the size of exoplanets with planets in our solar system",
         ],
-        correctAnswer: "B. Putting together a census of various otherworldly populations rather than focusing on individual planets",
-        reason: "The passage defines it as 'putting together a census of various otherworldly populations rather than focusing on individual curiosities.'",
+        correctAnswer:
+          "B. Putting together a census of various otherworldly populations rather than focusing on individual planets",
+        reason:
+          "The passage defines it as 'putting together a census of various otherworldly populations rather than focusing on individual curiosities.'",
+      },
+    ],
+  },
+
+  // ── Day 9 · Learning Vacations ────────────────────────────────────────
+  {
+    id: "adv-reading-9",
+    track: "reading",
+    day: 9,
+    tutor: "Mrs. Aji",
+    title: "Learning Vacations",
+    subtitle: "UNIT 6: Tourism · Vocabulary Matching · True/False/Not Given",
+    overview:
+      "Teks ini membahas fenomena 'learning vacations' — liburan dengan tujuan belajar sesuatu yang baru. Meliputi berbagai jenis program: memasak, seni, arkeologi, hingga kuliah di residential college. Latihan mencakup word-definition matching, multiple choice, dan True/False/Not Given.",
+    passage: [
+      "A couple spends a week in Thailand learning to cook in the local style. A group flies to Turkey to join an ongoing archeological dig for the summer. A history professor leads a tour of historical sites of Europe.",
+
+      "(Sepasang suami istri menghabiskan seminggu di Thailand belajar memasak dengan gaya setempat. Sekelompok orang terbang ke Turki untuk bergabung dengan penggalian arkeologi yang sedang berlangsung selama musim panas. Seorang profesor sejarah memimpin tur ke situs-situs bersejarah di Eropa.)",
+
+      "The participants in these trips are all enjoying a different kind of travel: learning vacations. Rather than spending their vacations relaxing on a beach or taking a bus tour of ten cities in eight days, they have opted to enjoy their time off by learning something new. From attending summer camps for adults to studying botany in the rain forest, people everywhere are experiencing the value of a vacation with a purpose. According to surveys, close to one-third of travelers each year choose learning programs over other types of vacations, and their numbers are growing.",
+
+      "(Para peserta dalam perjalanan ini semuanya menikmati jenis perjalanan yang berbeda: learning vacations. Daripada menghabiskan liburan mereka bersantai di pantai atau mengikuti tur bus ke sepuluh kota dalam delapan hari, mereka memilih untuk menikmati waktu luang mereka dengan mempelajari sesuatu yang baru. Mulai dari menghadiri kamp musim panas untuk orang dewasa hingga mempelajari botani di hutan hujan, orang-orang di mana-mana merasakan nilai liburan yang bertujuan. Menurut survei, hampir sepertiga wisatawan setiap tahun memilih program pembelajaran daripada jenis liburan lainnya, dan jumlah mereka terus bertumbuh.)",
+
+      "In the past, these types of vacations were generally considered to be for young people still in school. A student of French might spend the summer studying that language in Paris. A marine biology major could learn to scuba dive and spend a few months at sea assisting researchers. Now, it has become common for adults, too, to spend their vacation time in educational endeavors, and various types of travel programs have grown up around this interest.",
+
+      "(Di masa lalu, jenis liburan ini umumnya dianggap untuk anak muda yang masih sekolah. Seorang pelajar bahasa Prancis mungkin menghabiskan musim panas belajar bahasa tersebut di Paris. Seorang mahasiswa biologi kelautan bisa belajar menyelam dan menghabiskan beberapa bulan di laut membantu para peneliti. Sekarang, sudah umum bagi orang dewasa juga untuk menghabiskan waktu liburan mereka dalam usaha pendidikan, dan berbagai jenis program perjalanan telah berkembang di sekitar minat ini.)",
+
+      "Art schools and writing programs sponsor trips to interesting parts of the world. Trip participants hone their creative skills under the supervision of professional artists and writers while at the same time enjoying, for example, the warm breezes of the Caribbean islands or the colorful villages of Spain. Cooking is a popular hobby, and tour companies have developed trips that focus on the cuisine of different regions of the world. Travelers may learn all about how traditional meals are prepared and what ingredients are used. Or, for those who want to improve their abilities in the kitchen, they may actually receive hands-on lessons, acquiring new skills that they can take home with them. Travelers to Britain can enroll in courses at any of the twenty-plus adult residential colleges around the country. The courses at these schools generally last just a few days and range in content from activities such as photography and dancing to more serious subjects such as history, philosophy, and literature.",
+
+      "(Sekolah seni dan program menulis mensponsori perjalanan ke bagian-bagian dunia yang menarik. Peserta perjalanan mengasah keterampilan kreatif mereka di bawah pengawasan seniman dan penulis profesional sambil pada saat yang sama menikmati, misalnya, angin sepoi-sepoi hangat kepulauan Karibia atau desa-desa yang penuh warna di Spanyol. Memasak adalah hobi yang populer, dan perusahaan tur telah mengembangkan perjalanan yang berfokus pada masakan dari berbagai wilayah dunia. Wisatawan dapat mempelajari semua tentang bagaimana makanan tradisional disiapkan dan bahan-bahan apa yang digunakan. Atau, bagi mereka yang ingin meningkatkan kemampuan memasak, mereka bahkan bisa mendapatkan pelajaran langsung, mendapatkan keterampilan baru yang bisa mereka bawa pulang. Wisatawan ke Inggris dapat mendaftar kursus di salah satu dari lebih dari dua puluh perguruan tinggi residensial dewasa di seluruh negeri. Kursus-kursus di sekolah-sekolah ini umumnya berlangsung hanya beberapa hari dan mencakup konten mulai dari aktivitas seperti fotografi dan tari hingga subjek yang lebih serius seperti sejarah, filsafat, dan sastra.)",
+
+      "These are just a few examples of the many types of learning vacations that people enjoy every year. In addition to gaining knowledge and skills, another advantage of these types of vacations is that they can be more economical than traditional vacations. Camping out near an archeological site or sleeping in a college dormitory or youth hostel certainly costs less than staying at a luxury hotel or vacation resort. And the fact that many of these trips can be organized by the travelers themselves without the services of a tour company or travel agency makes them even more economical. Of course, it all depends on the type of trip one chooses, and some companies offer learning vacations to exotic locales with expert professionals that are quite costly. With the broad range of possibilities available, there are options to suit all tastes and budgets.",
+
+      "(Ini hanyalah beberapa contoh dari banyak jenis learning vacations yang dinikmati orang setiap tahun. Selain mendapatkan pengetahuan dan keterampilan, keuntungan lain dari jenis liburan ini adalah bahwa mereka bisa lebih hemat daripada liburan tradisional. Berkemah di dekat situs arkeologi atau tidur di asrama perguruan tinggi atau hostel pemuda tentu lebih murah daripada menginap di hotel mewah atau resor liburan. Dan fakta bahwa banyak dari perjalanan ini dapat diorganisir sendiri oleh wisatawan tanpa layanan perusahaan tur atau agen perjalanan membuat mereka bahkan lebih hemat. Tentu saja, semuanya tergantung pada jenis perjalanan yang dipilih, dan beberapa perusahaan menawarkan learning vacations ke lokasi eksotis dengan profesional ahli yang cukup mahal. Dengan berbagai kemungkinan yang tersedia, ada pilihan yang sesuai untuk semua selera dan anggaran.)",
+    ],
+    materialSections: [
+      {
+        title: "Vocabulary — Learning Vacations (20 words)",
+        points: [
+          "1.  acquire (v.) | v., to learn something or get something — mendapatkan, memperoleh",
+          "2.  breeze (n.) | n., light wind — angin sepoi-sepoi",
+          "3.  broad (adj.) | adj., wide or large — luas, besar",
+          "4.  budget (n.) | n., a plan for spending money — anggaran",
+          "5.  colorful (adj.) | adj., interesting and unusual — penuh warna, menarik",
+          "6.  content (n.) | n., subject matter — isi, konten",
+          "7.  costly (adj.) | adj., expensive — mahal",
+          "8.  cuisine (n.) | n., style of cooking — masakan, gaya memasak",
+          "9.  economical (adj.) | adj., inexpensive — hemat, ekonomis",
+          "10. endeavor (n.) | n., activity with a specific purpose, effort — usaha, upaya",
+          "11. enroll (v.) | v., to sign up for a class — mendaftar, mendaftarkan diri",
+          "12. hone (v.) | v., to sharpen, improve — mengasah, menyempurnakan",
+          "13. ingredient (n.) | n., an item in a recipe — bahan, bahan masakan",
+          "14. ongoing (adj.) | adj., continuing — berkelanjutan, sedang berlangsung",
+          "15. residential (adj.) | adj., with living accommodations, related to housing — residensial, berkaitan dengan tempat tinggal",
+          "16. resort (n.) | n., a vacation place — resor, tempat liburan",
+          "17. sponsor (v.) | v., to organize and be responsible for — mensponsori, mengorganisir",
+          "18. supervision (n.) | n., direction, assistance — pengawasan, bimbingan",
+          "19. survey (n.) | n., a study of opinions in a sample of the population — survei",
+          "20. taste (n.) | n., preference — selera, preferensi",
+        ],
+      },
+      {
+        title: "Reading Strategy: Multiple Choice & T/F/NG",
+        points: [
+          "📌 Questions 1–3: Choose THREE answers from A–F.",
+          "   → Cari kata kunci dari setiap opsi di dalam teks.",
+          "   → Perhatikan parafrase — opsi jarang menggunakan kata yang sama persis.",
+          "   → Opsi yang 'hampir benar' tapi detail berbeda = salah.",
+          "",
+          "📌 Questions 4–7: True / False / Not Given.",
+          "   TRUE      = pernyataan sesuai dengan informasi di teks.",
+          "   FALSE     = pernyataan bertentangan dengan informasi di teks.",
+          "   NOT GIVEN = informasi tidak ada di teks (tidak bisa disimpulkan).",
+          "",
+          "⚡ Tips T/F/NG:",
+          "   → TRUE  : ada bukti langsung di teks yang mendukung.",
+          "   → FALSE : ada bukti langsung di teks yang menyangkal.",
+          "   → NOT GIVEN: tidak ada informasi — jangan menebak dari pengetahuan umum.",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Questions 1–3: Choose THREE ──────────────────────────────────
+      {
+        id: "adv-r9-mc1",
+        type: "multiple-choice",
+        section: "quiz",
+        question:
+          "[Q1–3] Which of the following types of learning vacations are mentioned in the passage? Choose THREE. — Which is the FIRST correct answer?",
+        options: [
+          "A. Honing cooking skills",
+          "B. Working on artistic endeavors",
+          "C. Enrolling in an archeology course",
+          "D. Studying the Spanish language",
+          "E. Taking classes at a residential college",
+          "F. Acquiring knowledge about Thailand's history",
+        ],
+        correctAnswer: "A. Honing cooking skills",
+        reason:
+          "A is correct: 'A couple spends a week in Thailand learning to cook in the local style' and 'Cooking is a popular hobby... acquiring new skills.' C is wrong — joining an archeological dig ≠ enrolling in a course. D is wrong — French, not Spanish, is mentioned. F is wrong — the Thailand trip is about cooking, not history.",
+      },
+      {
+        id: "adv-r9-mc2",
+        type: "multiple-choice",
+        section: "quiz",
+        question:
+          "[Q1–3] Which of the following types of learning vacations are mentioned in the passage? Choose THREE. — Which is the SECOND correct answer?",
+        options: [
+          "A. Honing cooking skills",
+          "B. Working on artistic endeavors",
+          "C. Enrolling in an archeology course",
+          "D. Studying the Spanish language",
+          "E. Taking classes at a residential college",
+          "F. Acquiring knowledge about Thailand's history",
+        ],
+        correctAnswer: "B. Working on artistic endeavors",
+        reason:
+          "B is correct: 'Art schools and writing programs sponsor trips... Trip participants hone their creative skills under the supervision of professional artists and writers.'",
+      },
+      {
+        id: "adv-r9-mc3",
+        type: "multiple-choice",
+        section: "quiz",
+        question:
+          "[Q1–3] Which of the following types of learning vacations are mentioned in the passage? Choose THREE. — Which is the THIRD correct answer?",
+        options: [
+          "A. Honing cooking skills",
+          "B. Working on artistic endeavors",
+          "C. Enrolling in an archeology course",
+          "D. Studying the Spanish language",
+          "E. Taking classes at a residential college",
+          "F. Acquiring knowledge about Thailand's history",
+        ],
+        correctAnswer: "E. Taking classes at a residential college",
+        reason:
+          "E is correct: 'Travelers to Britain can enroll in courses at any of the twenty-plus adult residential colleges around the country.'",
+      },
+      // ── Questions 4–7: True / False / Not Given ───────────────────────
+      {
+        id: "adv-r9-tfng4",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "[Q4] Most participants in learning vacations are young people. — TRUE / FALSE / NOT GIVEN?",
+        options: ["A. TRUE", "B. FALSE", "C. NOT GIVEN"],
+        correctAnswer: "B. FALSE",
+        reason:
+          "FALSE. The passage says 'In the past, these types of vacations were generally considered to be for young people... Now, it has become common for adults, too.' This directly contradicts the statement.",
+      },
+      {
+        id: "adv-r9-tfng5",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "[Q5] Surveys show that around 30 percent of travelers take learning vacations. — TRUE / FALSE / NOT GIVEN?",
+        options: ["A. TRUE", "B. FALSE", "C. NOT GIVEN"],
+        correctAnswer: "A. TRUE",
+        reason:
+          "TRUE. The passage states 'According to surveys, close to one-third of travelers each year choose learning programs.' One-third ≈ 33%, which is close to 30 percent.",
+      },
+      {
+        id: "adv-r9-tfng6",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "[Q6] It is common for colleges to sponsor learning vacations. — TRUE / FALSE / NOT GIVEN?",
+        options: ["A. TRUE", "B. FALSE", "C. NOT GIVEN"],
+        correctAnswer: "C. NOT GIVEN",
+        reason:
+          "NOT GIVEN. The passage says 'Art schools and writing programs sponsor trips' — not colleges. Colleges host courses but the passage does not say colleges sponsor learning vacations.",
+      },
+      {
+        id: "adv-r9-tfng7",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "[Q7] Learning vacations are generally less costly than resort vacations. — TRUE / FALSE / NOT GIVEN?",
+        options: ["A. TRUE", "B. FALSE", "C. NOT GIVEN"],
+        correctAnswer: "A. TRUE",
+        reason:
+          "TRUE. The passage states 'Camping out near an archeological site... certainly costs less than staying at a luxury hotel or vacation resort.'",
+      },
+    ],
+  },
+
+  // ── Day 10 · Uses of Leisure Time ────────────────────────────────────
+  {
+    id: "adv-reading-10",
+    track: "reading",
+    day: 10,
+    tutor: "Mrs. Aji",
+    title: "Uses of Leisure Time",
+    subtitle: "Paragraph Matching · Multiple Choice · Vocabulary (20 words)",
+    overview:
+      "Teks ini membahas bagaimana manusia modern menggunakan waktu luang dan dampaknya terhadap kesehatan fisik dan mental. Lima paragraf (A-E) membahas pentingnya alam, kebiasaan pasif, dampak pada anak-anak, dan perbandingan liburan antar negara.",
+    passage: [
+      "A\nAlthough it may seem that people are working more, studies show that we have more leisure time than ever before. Yet researchers are reporting higher levels of both stress and obesity. These reports appear to be a sign that we are not using our leisure time to our best advantage.",
+
+      "(A)\n(Meskipun tampaknya orang-orang bekerja lebih banyak, penelitian menunjukkan bahwa kita memiliki lebih banyak waktu luang dari sebelumnya. Namun para peneliti melaporkan tingkat stres dan obesitas yang lebih tinggi. Laporan-laporan ini tampaknya menjadi tanda bahwa kita tidak memanfaatkan waktu luang kita sebaik mungkin.)",
+
+      "B\nHealth experts agree that the best way to restore body and mind is to spend time in nature pursuing a comfortable level of physical exercise. Spending time in natural surroundings is especially crucial now because, for the first time, a majority of the world's population live in cities. Recent studies show that intellectual function weakens as a result of the energy expended simply sorting out the overwhelming stimuli of city life. Tests demonstrate that people suffer decreases in attention span, memory, and problem-solving ability after taking a short walk on a busy city street or merely seeing pictures of city life. Tests also show that time spent in the city results in a decreased ability to concentrate and to control emotions and impulses. On the other hand, spending time in the country produces the opposite effects.",
+
+      "(B)\n(Para ahli kesehatan sepakat bahwa cara terbaik untuk memulihkan tubuh dan pikiran adalah menghabiskan waktu di alam sambil melakukan olahraga fisik pada tingkat yang nyaman. Menghabiskan waktu di lingkungan alam sangat penting sekarang karena, untuk pertama kalinya, mayoritas penduduk dunia tinggal di kota. Penelitian terbaru menunjukkan bahwa fungsi intelektual melemah akibat energi yang dikeluarkan hanya untuk menyaring rangsangan kehidupan kota yang sangat besar. Tes menunjukkan bahwa orang mengalami penurunan rentang perhatian, memori, dan kemampuan memecahkan masalah setelah berjalan-jalan di jalan kota yang sibuk atau hanya melihat gambar kehidupan kota. Tes juga menunjukkan bahwa waktu yang dihabiskan di kota mengakibatkan penurunan kemampuan berkonsentrasi dan mengendalikan emosi serta impuls. Di sisi lain, menghabiskan waktu di pedesaan menghasilkan efek sebaliknya.)",
+
+      "C\nUnfortunately, as society becomes more centered on city life, we have to rejuvenate ourselves in nature deliberately rather than as a matter of course. Yet research shows that we are not spending our leisure time rejuvenating ourselves. Around the world, the most popular way to spend free time is watching television. This, the most passive of pastimes, is how Americans spend more than half their leisure time. Globally, the next most popular is using the Internet, also passive, and it ranks as the most favored among the billions in China. The third is shopping, which may be slightly more active but is still as far from nature as possible. Modern shopping malls remove shoppers from everything natural, leaving them to experience the outdoors only between the paved parking lot and the mall doors.",
+
+      "(C)\n(Sayangnya, ketika masyarakat semakin berpusat pada kehidupan kota, kita harus meremajakan diri di alam secara sengaja daripada sebagai hal yang biasa. Namun penelitian menunjukkan bahwa kita tidak menghabiskan waktu luang kita untuk meremajakan diri. Di seluruh dunia, cara paling populer untuk menghabiskan waktu luang adalah menonton televisi. Ini, yang merupakan hobi paling pasif, adalah cara orang Amerika menghabiskan lebih dari separuh waktu luang mereka. Secara global, yang paling populer berikutnya adalah menggunakan Internet, juga pasif, dan ini menempati peringkat paling disukai di antara miliaran orang di Tiongkok. Yang ketiga adalah belanja, yang mungkin sedikit lebih aktif tetapi masih jauh dari alam. Mal belanja modern memindahkan pembeli dari segala sesuatu yang alami, membiarkan mereka hanya merasakan udara luar di antara tempat parkir beraspal dan pintu mal.)",
+
+      "D\nChildren are most negatively affected by city life. Parents are reluctant to let children play freely in the city, fearing for their health and safety, and nature is something many children in the city may never have a chance to experience. Childhood obesity and depression are reaching epidemic levels. Authorities have begun to acknowledge the problem, and innovative programs that give children an opportunity to spend time in nature are being introduced in countries around the world.",
+
+      "(D)\n(Anak-anak paling banyak terkena dampak negatif kehidupan kota. Orang tua enggan membiarkan anak-anak bermain bebas di kota karena khawatir akan kesehatan dan keselamatan mereka, dan alam adalah sesuatu yang mungkin tidak pernah dialami banyak anak di kota. Obesitas dan depresi pada masa kanak-kanak mencapai tingkat epidemi. Para otoritas telah mulai mengakui masalah ini, dan program-program inovatif yang memberi anak-anak kesempatan untuk menghabiskan waktu di alam sedang diperkenalkan di negara-negara di seluruh dunia.)",
+
+      "E\nVacations are the most obvious chunk of leisure time. The countries with the most vacation time are Italy, with an average of forty-two days a year, and France, with thirty-seven. The industrious Americans have the least: thirteen days. Yet the country most satisfied with their vacations are not the Italians but the British. The British usually divide up their vacation time, taking it in pieces throughout the year rather than all at once. Of all nationalities, the British spend the most time vacationing outdoors in their national-trust parks, where they engage in a comfortable level of physical activity. The British report the greatest satisfaction with their leisure time. Perhaps the rest of the world would do well to follow their lead.",
+
+      "(E)\n(Liburan adalah bagian waktu luang yang paling jelas. Negara-negara dengan waktu liburan terbanyak adalah Italia, dengan rata-rata empat puluh dua hari per tahun, dan Prancis, dengan tiga puluh tujuh hari. Orang Amerika yang rajin memiliki yang paling sedikit: tiga belas hari. Namun negara yang paling puas dengan liburan mereka bukan orang Italia melainkan orang Inggris. Orang Inggris biasanya membagi waktu liburan mereka, mengambilnya sepanjang tahun daripada sekaligus. Dari semua kebangsaan, orang Inggris menghabiskan waktu paling banyak untuk berlibur di luar ruangan di taman kepercayaan nasional mereka, di mana mereka melakukan aktivitas fisik pada tingkat yang nyaman. Orang Inggris melaporkan kepuasan terbesar dengan waktu luang mereka. Mungkin seluruh dunia sebaiknya mengikuti contoh mereka.)",
+    ],
+    materialSections: [
+      {
+        title: "Vocabulary — Uses of Leisure Time (20 words)",
+        points: [
+          "1.  acknowledge (v.) | v., to admit, accept as true — mengakui, menerima sebagai benar",
+          "2.  authority (n.) | n., person with power or special knowledge — otoritas, pihak berwenang",
+          "3.  chunk (n.) | n., a large piece — bagian besar, potongan besar",
+          "4.  crucial (adj.) | adj., very important — sangat penting, krusial",
+          "5.  deliberately (adv.) | adv., intentionally, on purpose — dengan sengaja",
+          "6.  depression (n.) | n., constant sadness — depresi, kesedihan berkepanjangan",
+          "7.  emotion (n.) | n., a strong feeling such as anger or love — emosi, perasaan kuat",
+          "8.  engage (v.) | v., to participate in something — berpartisipasi, terlibat dalam",
+          "9.  industrious (adj.) | adj., hardworking — rajin, pekerja keras",
+          "10. intellectual (adj.) | adj., related to thinking — intelektual, berhubungan dengan pikiran",
+          "11. merely (adv.) | adv., only — hanya, semata-mata",
+          "12. obesity (n.) | n., the condition of being very overweight — obesitas, kegemukan berlebih",
+          "13. obvious (adj.) | adj., easy to see, clear — jelas, mudah terlihat",
+          "14. overwhelming (adj.) | adj., overpowering; very large — sangat besar, membanjiri",
+          "15. passive (adj.) | adj., not active — pasif, tidak aktif",
+          "16. pastime (n.) | n., a free-time activity — hobi, kegiatan waktu luang",
+          "17. physical (adj.) | adj., related to the body — fisik, berhubungan dengan tubuh",
+          "18. rejuvenate (v.) | v., to refresh, restore — meremajakan, memulihkan",
+          "19. reluctant (adj.) | adj., not wanting to do something; unwilling — enggan, tidak mau",
+          "20. suffer (v.) | v., to experience something difficult or painful — menderita, mengalami kesulitan",
+        ],
+      },
+      {
+        title: "Reading Strategy: Paragraph Matching & Multiple Choice",
+        points: [
+          "📌 Questions 1–3: Paragraph Matching (A–E).",
+          "   → Baca pertanyaan dan temukan kata kunci utama.",
+          "   → Scan setiap paragraf untuk menemukan topik yang cocok.",
+          "   → Pastikan SELURUH isi pertanyaan dibahas di paragraf itu.",
+          "   → Satu huruf paragraf bisa dipakai lebih dari sekali.",
+          "",
+          "📌 Questions 4–6: Multiple Choice (A/B/C/D).",
+          "   → Baca pertanyaan dahulu, lalu cari bagian teks yang relevan.",
+          "   → Perhatikan parafrase — jawaban jarang menggunakan kata yang sama.",
+          "   → Eliminasi opsi yang bertentangan atau tidak ada di teks.",
+          "",
+          "Ringkasan paragraf:",
+          "   A — Intro: lebih banyak waktu luang tapi stres & obesitas meningkat.",
+          "   B — Alam penting untuk kesehatan fisik & mental; kota melemahkan intelek.",
+          "   C — Cara paling populer mengisi waktu luang: TV, internet, belanja (pasif).",
+          "   D — Anak-anak paling terdampak; obesitas & depresi anak meningkat.",
+          "   E — Liburan: Italia & Prancis terlama; British paling puas karena outdoor.",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Questions 1–3: Paragraph Matching ────────────────────────────
+      {
+        id: "adv-r10-pm1",
+        type: "multiple-choice",
+        section: "quiz",
+        question:
+          "[Q1] Which paragraph discusses: The most popular pastimes in different countries around the world?",
+        options: [
+          "A. Paragraph A",
+          "B. Paragraph B",
+          "C. Paragraph C",
+          "D. Paragraph D",
+          "E. Paragraph E",
+        ],
+        correctAnswer: "C. Paragraph C",
+        reason:
+          "Paragraph C discusses the most popular pastimes globally: watching TV (Americans), using the Internet (most favored in China), and shopping — all passive activities.",
+      },
+      {
+        id: "adv-r10-pm2",
+        type: "multiple-choice",
+        section: "quiz",
+        question:
+          "[Q2] Which paragraph discusses: Why it is crucial to spend time in nature?",
+        options: [
+          "A. Paragraph A",
+          "B. Paragraph B",
+          "C. Paragraph C",
+          "D. Paragraph D",
+          "E. Paragraph E",
+        ],
+        correctAnswer: "B. Paragraph B",
+        reason:
+          "Paragraph B explains that spending time in nature is crucial because city life weakens intellectual function, reduces attention span, memory, problem-solving ability, and emotional control.",
+      },
+      {
+        id: "adv-r10-pm3",
+        type: "multiple-choice",
+        section: "quiz",
+        question:
+          "[Q3] Which paragraph discusses: In which country people spend the largest chunk of vacation time engaged in outdoor activities?",
+        options: [
+          "A. Paragraph A",
+          "B. Paragraph B",
+          "C. Paragraph C",
+          "D. Paragraph D",
+          "E. Paragraph E",
+        ],
+        correctAnswer: "E. Paragraph E",
+        reason:
+          "Paragraph E states that the British spend the most time vacationing outdoors in their national-trust parks, engaging in physical activity — and report the greatest satisfaction.",
+      },
+      // ── Questions 4–6: Multiple Choice ───────────────────────────────
+      {
+        id: "adv-r10-mc4",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "[Q4] We can best rejuvenate ourselves by spending time engaged in ___",
+        options: [
+          "A. physical activities",
+          "B. passive activities",
+          "C. activities with children",
+          "D. activities in the city",
+        ],
+        correctAnswer: "A. physical activities",
+        reason:
+          "Paragraph B: 'Health experts agree that the best way to restore body and mind is to spend time in nature pursuing a comfortable level of physical exercise.'",
+      },
+      {
+        id: "adv-r10-mc5",
+        type: "multiple-choice",
+        section: "final",
+        question: "[Q5] When children do not spend time in nature, they ___",
+        options: [
+          "A. fear for their health and safety",
+          "B. suffer from obesity and depression",
+          "C. are reluctant to spend time with their parents",
+          "D. have more time to develop their intellectual functioning",
+        ],
+        correctAnswer: "B. suffer from obesity and depression",
+        reason:
+          "Paragraph D: 'Childhood obesity and depression are reaching epidemic levels.' The passage attributes this to children in the city not having a chance to experience nature.",
+      },
+      {
+        id: "adv-r10-mc6",
+        type: "multiple-choice",
+        section: "final",
+        question:
+          "[Q6] The overwhelming character of city life affects our ___",
+        options: [
+          "A. interest in nature",
+          "B. choice of pastimes",
+          "C. relationships with children",
+          "D. emotions and intellectual function",
+        ],
+        correctAnswer: "D. emotions and intellectual function",
+        reason:
+          "Paragraph B: 'Tests demonstrate that people suffer decreases in attention span, memory, and problem-solving ability... decreased ability to concentrate and to control emotions and impulses.'",
+      },
+    ],
+  },
+  {
+    id: "adv-reading-11",
+    track: "reading",
+    day: 11,
+    title: "Social Networking",
+    subtitle:
+      "Paragraph Matching & Summary Completion — online social networks",
+    tutor: "Mrs. Aji",
+    overview:
+      "Teks ini membahas fenomena jejaring sosial online: asal-usul dan pertumbuhannya, statistik penggunaan global per negara, manfaat positif bagi individu dan bisnis, serta dampak negatif terutama bagi remaja. Latihan mencakup paragraph matching dan summary completion dari word bank.",
+    passage: [
+      "During the first decade of the twenty-first century, the phenomenon of social networking on the Internet exploded across the globe. Online social networking sites are websites that allow people to post personal information about themselves and to connect with people who have similar interests. It is a way of forming community, but a community that exists online rather than in physical space. Facebook, MySpace, LinkedIn, and Twitter are examples of some of the most commonly used social networking sites.",
+
+      "(Selama dekade pertama abad ke-21, fenomena jejaring sosial di Internet meledak di seluruh dunia. Situs jejaring sosial online adalah situs web yang memungkinkan orang memposting informasi pribadi tentang diri mereka sendiri dan terhubung dengan orang-orang yang memiliki minat serupa. Ini adalah cara membentuk komunitas, tetapi komunitas yang ada secara online alih-alih di ruang fisik. Facebook, MySpace, LinkedIn, dan Twitter adalah contoh beberapa situs jejaring sosial yang paling umum digunakan.)",
+
+      "Recent statistics show that 75 per cent of Internet users around the world use social networking sites to some extent and that 22 per cent of all time spent online is spent on these sites. Of all the countries in the world, Italy is apparently the place where social networking is most popular. Italians spend an average of six and a half hours per month per person on social networking sites, followed by Australians, with an average time of just over six hours a month. In comparison, the Japanese are much less interested in social networking, spending an average of just two and a half hours per person per month on these sites. The global average is close to five and a half hours per month. The social networking trend has increased among people of all ages.",
+
+      "(Statistik terbaru menunjukkan bahwa 75 persen pengguna Internet di seluruh dunia menggunakan situs jejaring sosial sampai batas tertentu dan bahwa 22 persen dari semua waktu yang dihabiskan secara online dihabiskan di situs-situs ini. Dari semua negara di dunia, Italia tampaknya menjadi tempat di mana jejaring sosial paling populer. Orang Italia menghabiskan rata-rata enam setengah jam per bulan per orang di situs jejaring sosial, diikuti oleh Australia dengan rata-rata waktu lebih dari enam jam sebulan. Sebagai perbandingan, orang Jepang jauh kurang tertarik pada jejaring sosial, menghabiskan rata-rata hanya dua setengah jam per orang per bulan di situs-situs ini. Rata-rata global mendekati lima setengah jam per bulan. Tren jejaring sosial telah meningkat di kalangan orang dari segala usia.)",
+
+      "The phenomenon of social networking sites may present unanticipated consequences for people's lives in the future. The immense popularity of these sites is evidence that they contribute to users' lives in positive ways, but there are drawbacks as well. Social networking sites allow people to broaden their social reach both personally and professionally. These sites allow users to stay in contact with friends and relatives and reconnect with old friends from the past. The sites also provide opportunities for people to connect with strangers in far-distant places who share similar interests or to seek support when undergoing difficulties such as a grave illness. In the business world, people use social networking sites to carry out business, pursue employment opportunities, or seek new business clients. Students of all ages discuss homework assignments and future educational and career plans. Social networking sites eradicate the limits imposed by the physical world and make it possible to communicate and exchange information with people everywhere.",
+
+      "(Fenomena situs jejaring sosial mungkin menimbulkan konsekuensi yang tidak terduga bagi kehidupan orang di masa depan. Popularitas yang luar biasa dari situs-situs ini adalah bukti bahwa mereka berkontribusi pada kehidupan pengguna dengan cara yang positif, tetapi ada juga kekurangannya. Situs jejaring sosial memungkinkan orang memperluas jangkauan sosial mereka secara pribadi maupun profesional. Situs-situs ini memungkinkan pengguna untuk tetap berhubungan dengan teman dan keluarga serta menjalin kembali hubungan dengan teman lama. Situs-situs ini juga memberikan kesempatan bagi orang untuk terhubung dengan orang asing di tempat-tempat yang jauh yang memiliki minat serupa atau mencari dukungan saat menjalani kesulitan seperti penyakit serius. Di dunia bisnis, orang menggunakan situs jejaring sosial untuk menjalankan bisnis, mengejar peluang kerja, atau mencari klien bisnis baru. Siswa dari segala usia mendiskusikan tugas pekerjaan rumah dan rencana pendidikan serta karier masa depan. Situs jejaring sosial memberantas batasan yang diberlakukan oleh dunia fisik dan memungkinkan untuk berkomunikasi dan bertukar informasi dengan orang-orang di mana saja.)",
+
+      "On the other hand, concerns are growing about online social networking. As people spend more time interacting with each other online, they spend less time in face-to-face communication. Social networking can actually lead to separation as families and neighbours spend less time together while they are busy using the Internet. There are also potential risks. Social networking involves making personal information available online, which means that, unless the user is careful, anyone can have access to that information. Adolescents may be particularly susceptible to this danger. It is also impossible to know anyone's true identity online. Acquaintances found on the Internet may not be who people think they are. The effects that social networking will have on our social relationships and sense of safety remain to be seen as the future unfolds.",
+
+      "(Di sisi lain, kekhawatiran tentang jejaring sosial online semakin berkembang. Semakin banyak waktu yang dihabiskan orang untuk berinteraksi satu sama lain secara online, semakin sedikit waktu yang mereka habiskan dalam komunikasi tatap muka. Jejaring sosial sebenarnya dapat menyebabkan pemisahan karena keluarga dan tetangga menghabiskan lebih sedikit waktu bersama saat mereka sibuk menggunakan Internet. Ada juga risiko yang potensial. Jejaring sosial melibatkan penyediaan informasi pribadi secara online, yang berarti bahwa kecuali pengguna berhati-hati, siapa pun dapat mengakses informasi tersebut. Remaja mungkin sangat rentan terhadap bahaya ini. Juga tidak mungkin mengetahui identitas asli seseorang secara online. Kenalan yang ditemukan di Internet mungkin bukan siapa yang orang-orang pikirkan. Efek yang akan ditimbulkan jejaring sosial pada hubungan sosial dan rasa keamanan kita masih harus dilihat seiring masa depan yang terus berkembang.)",
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. A — Jejaring sosial meledak di dekade pertama abad 21; Facebook, MySpace, LinkedIn, Twitter menghubungkan orang dengan minat serupa secara online.",
+          "Para. B — Statistik: 75% pengguna internet pakai jejaring sosial; 22% waktu online untuk situs ini; Italia 6,5 jam/bulan, Australia >6 jam, Jepang 2,5 jam, global rata-rata 5,5 jam/bulan.",
+          "Para. C — Manfaat positif: menjaga kontak sosial & profesional, mencari dukungan, menjalankan bisnis, mengejar peluang kerja, bertukar informasi tanpa batas fisik.",
+          "Para. D — Sisi negatif: makin banyak waktu online → makin sedikit komunikasi tatap muka; jejaring sosial bisa memisahkan keluarga; informasi pribadi online bisa diakses siapa saja; remaja sangat rentan; identitas kenalan online tidak bisa dipastikan.",
+        ],
+      },
+      {
+        title: "Reading Strategy: Paragraph Matching & Summary Completion",
+        points: [
+          "📌 Paragraph Matching = tentukan paragraf mana yang berisi informasi dari pernyataan.",
+          "   → Cari kata kunci dari pernyataan → temukan di paragraf mana kata kunci tersebut muncul.",
+          "   → Jawaban bisa dari paragraf mana saja; satu paragraf bisa dipakai lebih dari sekali.",
+          "",
+          "📌 Summary Completion = lengkapi ringkasan dengan kata dari word bank.",
+          "   → Baca ringkasan dulu, perhatikan konteks kalimat sebelum & sesudah blank.",
+          "   → Cocokkan kata dari word bank dengan makna yang tepat sesuai konteks.",
+          "   → Pastikan kata yang dipilih secara tata bahasa sesuai (noun/verb/adj).",
+          "",
+          "⚡ Word Bank: exploded · immense · acquaintances · pursue · interact",
+        ],
+      },
+      {
+        title: "Vocabulary — Social Networking (20 words)",
+        points: [
+          "1.  acquaintance (n.) — a person one knows slightly, but not a close friend — kenalan",
+          "2.  adolescent (n./adj.) — a young person developing from a child into an adult — remaja",
+          "3.  apparently (adv.) — as far as one knows or can see; seemingly — tampaknya, sepertinya",
+          "4.  carry out (v.) — to complete or perform a task or activity — melaksanakan, menjalankan",
+          "5.  community (n.) — a group of people sharing common interests or location — komunitas, masyarakat",
+          "6.  consequence (n.) — a result or effect of an action or condition — konsekuensi, akibat",
+          "7.  contact (n./v.) — communication or relationship with someone — kontak, hubungan",
+          "8.  eradicate (v.) — to completely destroy or eliminate something — memberantas, menghapus",
+          "9.  exchange (n./v.) — an act of giving one thing and receiving another in return — pertukaran, bertukar",
+          "10. explode (v.) — to increase suddenly and rapidly in number or intensity — meledak, meningkat pesat",
+          "11. immense (adj.) — extremely large or great, especially in scale or degree — sangat besar, luar biasa",
+          "12. impose (v.) — to force something to be accepted or put in place — memaksakan, mengenakan",
+          "13. interact (v.) — to communicate or react with each other — berinteraksi, berkomunikasi",
+          "14. post (v./n.) — to publish something online; content shared online — memposting, unggahan",
+          "15. pursue (v.) — to follow or work toward a goal or interest — mengejar, mengikuti",
+          "16. statistics (n.) — numerical data collected and analyzed for information — statistik, data numerik",
+          "17. susceptible (adj.) — likely to be influenced or harmed by a particular thing — rentan, mudah terpengaruh",
+          "18. trend (n.) — a general direction in which something is developing or changing — tren, kecenderungan",
+          "19. undergo (v.) — to experience or be subjected to something — mengalami, menjalani",
+          "20. unfold (v.) — to develop or be revealed gradually — berkembang, terungkap",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Questions 1–4: Paragraph Matching ────────────────────────────
+      {
+        id: "adv-r11-pm1",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "[Q1] The different reasons people pursue contacts on social networking sites",
+        options: [
+          "A. Paragraph A",
+          "B. Paragraph B",
+          "C. Paragraph C",
+          "D. Paragraph D",
+        ],
+        correctAnswer: "C. Paragraph C",
+        reason:
+          "Paragraph C lists multiple reasons: staying in contact with friends and relatives, reconnecting with old friends, seeking support during difficulties, carrying out business, pursuing employment, and discussing educational plans.",
+      },
+      {
+        id: "adv-r11-pm2",
+        type: "multiple-choice",
+        section: "part1",
+        question: "[Q2] Possible negative consequences of social networking",
+        options: [
+          "A. Paragraph A",
+          "B. Paragraph B",
+          "C. Paragraph C",
+          "D. Paragraph D",
+        ],
+        correctAnswer: "D. Paragraph D",
+        reason:
+          "Paragraph D: 'Social networking can actually lead to separation... There are also potential risks... Adolescents may be particularly susceptible to this danger... Acquaintances found on the Internet may not be who people think they are.'",
+      },
+      {
+        id: "adv-r11-pm3",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "[Q3] The amount of time people spend interacting on social networking sites",
+        options: [
+          "A. Paragraph A",
+          "B. Paragraph B",
+          "C. Paragraph C",
+          "D. Paragraph D",
+        ],
+        correctAnswer: "B. Paragraph B",
+        reason:
+          "Paragraph B: Italy 6.5 hours/month, Australia just over 6 hours/month, Japan 2.5 hours/month, global average close to 5.5 hours/month.",
+      },
+      {
+        id: "adv-r11-pm4",
+        type: "multiple-choice",
+        section: "part1",
+        question: "[Q4] When the social networking trend became big",
+        options: [
+          "A. Paragraph A",
+          "B. Paragraph B",
+          "C. Paragraph C",
+          "D. Paragraph D",
+        ],
+        correctAnswer: "A. Paragraph A",
+        reason:
+          "Paragraph A: 'During the first decade of the twenty-first century, the phenomenon of social networking on the Internet exploded across the globe.'",
+      },
+      // ── Questions 5–9: Summary Completion ────────────────────────────
+      // Word Bank: acquaintances · exchanged · exploded · immense · interact · pursue · statistics · susceptible · undergo
+      {
+        id: "adv-r11-sc5",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "[Q5] Recently, the popularity of social networking sites has _____.",
+        options: ["A. immense", "B. interact", "C. exploded", "D. pursue"],
+        correctAnswer: "C. exploded",
+        reason:
+          "Paragraph A: 'the phenomenon of social networking on the Internet exploded across the globe.' The summary paraphrases this with 'has exploded.'",
+      },
+      {
+        id: "adv-r11-sc6",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "[Q6] There are _____ advantages to these sites.",
+        options: [
+          "A. exploded",
+          "B. statistics",
+          "C. susceptible",
+          "D. immense",
+        ],
+        correctAnswer: "D. immense",
+        reason:
+          "Paragraph C: 'The immense popularity of these sites is evidence that they contribute to users' lives in positive ways.' → 'immense advantages.'",
+      },
+      {
+        id: "adv-r11-sc7",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "[Q7] People use these sites to post information about themselves, seek new _____.",
+        options: [
+          "A. acquaintances",
+          "B. interact",
+          "C. undergo",
+          "D. statistics",
+        ],
+        correctAnswer: "A. acquaintances",
+        reason:
+          "Paragraph C: 'These sites allow users to stay in contact with friends and relatives and reconnect with old friends' — social networking is used to seek and maintain acquaintances.",
+      },
+      {
+        id: "adv-r11-sc8",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "[Q8] People _____ professional opportunities.",
+        options: ["A. undergo", "B. pursue", "C. exchanged", "D. susceptible"],
+        correctAnswer: "B. pursue",
+        reason:
+          "Paragraph C: 'people use social networking sites to carry out business, pursue employment opportunities, or seek new business clients.'",
+      },
+      {
+        id: "adv-r11-sc9",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "[Q9] Social networking online may mean that people _____ less with the people around them.",
+        options: ["A. undergo", "B. susceptible", "C. interact", "D. exploded"],
+        correctAnswer: "C. interact",
+        reason:
+          "Paragraph D: 'As people spend more time interacting with each other online, they spend less time in face-to-face communication.'",
       },
     ],
   },

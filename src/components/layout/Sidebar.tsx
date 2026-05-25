@@ -23,11 +23,18 @@ import {
   Volume2,
   Library,
   PenLine,
+  BarChart2,
+  FileText,
+  ChevronDown,
+  ChevronRight,
+  Youtube,
+  Radio,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useVocabStore } from "@/store/useVocabStore";
 import { categories } from "@/data/vocabulary";
 import Image from "next/image";
+import { useState } from "react";
 
 const iconMap: Record<string, React.ElementType> = {
   BookOpen,
@@ -39,7 +46,10 @@ const iconMap: Record<string, React.ElementType> = {
   Briefcase,
 };
 
-type NavItem = { href: string; label: string; icon: React.ElementType };
+type NavChild = { href: string; label: string; icon: React.ElementType };
+type NavItem =
+  | { href: string; label: string; icon: React.ElementType; children?: never; groupKey?: never }
+  | { href?: never; label: string; icon: React.ElementType; children: NavChild[]; groupKey: string };
 
 const navSections: { title: string; items: NavItem[] }[] = [
   {
@@ -63,12 +73,44 @@ const navSections: { title: string; items: NavItem[] }[] = [
     items: [
       { href: "/practice", label: "Practice", icon: GraduationCap },
       { href: "/practice/conversations", label: "Daily Conversations", icon: MessageCircle },
-      { href: "/practice/speaking", label: "AI Writing Practice", icon: PenLine },
-      { href: "/practice/vocab-trainer", label: "Vocab Trainer", icon: BookMarked },
-      { href: "/tn-basic-cource", label: "TN Basic Course", icon: BookText },
-      { href: "/tn-intermediate", label: "TN Intermediate", icon: GraduationCap },
-      { href: "/tn-intermediate/vocab", label: "Vocab Bank (Int.)", icon: Library },
-      { href: "/tn-advance", label: "TN Advance", icon: Layers },
+      {
+        groupKey: "writing",
+        label: "Writing Practice",
+        icon: FileText,
+        children: [
+          { href: "/practice/speaking", label: "AI Writing Practice", icon: PenLine },
+          { href: "/practice/latihan-surat", label: "Latihan Surat", icon: FileText },
+          { href: "/practice/ielts-writing", label: "IELTS Writing", icon: BarChart2 },
+        ],
+      },
+      {
+        groupKey: "vocab",
+        label: "Vocab Practice",
+        icon: BookOpen,
+        children: [
+          { href: "/practice/vocab-trainer", label: "Vocab Trainer", icon: BookMarked },
+          { href: "/tn-intermediate/vocab", label: "Vocab Bank (Int.)", icon: Library },
+        ],
+      },
+      {
+        groupKey: "tn",
+        label: "TN Course",
+        icon: GraduationCap,
+        children: [
+          { href: "/tn-basic-cource", label: "TN Basic", icon: BookText },
+          { href: "/tn-intermediate", label: "TN Intermediate", icon: GraduationCap },
+          { href: "/tn-advance", label: "TN Advance", icon: Layers },
+        ],
+      },
+      {
+        groupKey: "listening",
+        label: "Listening Practice",
+        icon: Volume2,
+        children: [
+          { href: "/practice/ielts-listening", label: "IELTS / TOEFL (YouTube)", icon: Youtube },
+          { href: "/practice/general-listening", label: "General Listening (BBC)", icon: Radio },
+        ],
+      },
     ],
   },
   {
@@ -80,19 +122,39 @@ const navSections: { title: string; items: NavItem[] }[] = [
   },
 ];
 
+const GROUP_PATHS: Record<string, string[]> = {
+  writing: ["/practice/speaking", "/practice/latihan-surat", "/practice/ielts-writing"],
+  vocab: ["/practice/vocab-trainer", "/tn-intermediate/vocab"],
+  tn: ["/tn-basic-cource", "/tn-intermediate", "/tn-advance"],
+  listening: ["/practice/ielts-listening", "/practice/general-listening"],
+};
+
 export function Sidebar() {
   const pathname = usePathname();
   const sidebarOpen = useVocabStore((s) => s.sidebarOpen);
   const setSidebarOpen = useVocabStore((s) => s.setSidebarOpen);
+
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>(() => {
+    const initial: Record<string, boolean> = {};
+    for (const [key, paths] of Object.entries(GROUP_PATHS)) {
+      initial[key] = paths.some((p) => pathname.startsWith(p));
+    }
+    return initial;
+  });
+
+  const toggleGroup = (key: string) =>
+    setOpenGroups((prev) => ({ ...prev, [key]: !prev[key] }));
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
+  const isGroupActive = (key: string) =>
+    (GROUP_PATHS[key] ?? []).some((p) => pathname.startsWith(p));
+
   return (
     <>
-      {/* Overlay for mobile */}
       {sidebarOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
@@ -146,6 +208,56 @@ export function Sidebar() {
               <div className="space-y-0.5">
                 {section.items.map((item) => {
                   const Icon = item.icon;
+
+                  if (item.children) {
+                    const isOpen = openGroups[item.groupKey] ?? false;
+                    const active = isGroupActive(item.groupKey);
+                    return (
+                      <div key={item.label}>
+                        <button
+                          onClick={() => toggleGroup(item.groupKey)}
+                          className={cn(
+                            "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                            active
+                              ? "bg-primary/10 text-primary"
+                              : "text-(--text-secondary) hover:bg-(--hover) hover:text-(--text)",
+                          )}
+                        >
+                          <Icon className="w-5 h-5 shrink-0" />
+                          <span className="flex-1 text-left">{item.label}</span>
+                          {isOpen
+                            ? <ChevronDown className="w-4 h-4 shrink-0" />
+                            : <ChevronRight className="w-4 h-4 shrink-0" />
+                          }
+                        </button>
+
+                        {isOpen && (
+                          <div className="ml-4 mt-0.5 pl-4 border-l-2 border-(--border) space-y-0.5">
+                            {item.children.map((child) => {
+                              const ChildIcon = child.icon;
+                              return (
+                                <Link
+                                  key={child.href}
+                                  href={child.href}
+                                  onClick={() => setSidebarOpen(false)}
+                                  className={cn(
+                                    "flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
+                                    isActive(child.href)
+                                      ? "bg-primary text-white"
+                                      : "text-(--text-secondary) hover:bg-(--hover) hover:text-(--text)",
+                                  )}
+                                >
+                                  <ChildIcon className="w-4 h-4 shrink-0" />
+                                  {child.label}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  }
+
                   return (
                     <Link
                       key={item.href}

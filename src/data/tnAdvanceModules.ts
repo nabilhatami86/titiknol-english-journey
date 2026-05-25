@@ -48,6 +48,9 @@ export const getTnAdvanceLessonsByTrack = (track: string) =>
 export const getTnAdvanceLesson = (track: string, day: number) =>
   allAdvanceLessons.find((l) => l.track === track && l.day === day) ?? null;
 
+export const getTnAdvanceLessonById = (id: string) =>
+  allAdvanceLessons.find((l) => l.id === id) ?? null;
+
 // legacy — grammar only, kept for compatibility
 export const getTnAdvanceLessonsByDay = () =>
   [...advanceGrammarLessons].sort((a, b) => a.day - b.day);
