@@ -1609,52 +1609,161 @@ export const grammarTopics: GrammarTopic[] = [
     id: "adverbial-clause",
     title: "Adverbial Clause — Klausa Keterangan",
     icon: Navigation,
-    shortDefinition: "Klausa yang berfungsi sebagai adverb — 8 jenis berdasarkan makna, plus Abridgement & Reducing.",
+    shortDefinition: "Sub clause yang berfungsi sebagai adverb — 8 jenis (Time, Place, Contrast, Reason, Result, Purpose, Condition, Manner), plus Abridgement & Reducing.",
     sections: [
       {
         letter: "A",
         title: "Pengertian & Posisi",
         blocks: [
-          { type: "text", value: "Adverbial Clause (AVC) adalah klausa yang berfungsi sebagai ADVERB. Conjunction AVC selalu diikuti SUBJECT + VERB." },
-          { type: "bullets", title: "Posisi AVC:", items: [
-            "Di awal kalimat (+ koma): WHEN I arrived, everyone was sleeping.",
-            "Di akhir kalimat (tanpa koma): Everyone was sleeping WHEN I arrived.",
+          { type: "text", value: "Adverbial Clause (AVC) adalah sub clause yang berfungsi sebagai ADVERB. Conjunction AVC selalu diikuti SUBJECT + VERB." },
+          { type: "table", headers: ["Posisi", "Pola", "Contoh"], rows: [
+            ["INITIAL (Awal)", "CONJ + S + V, S V  (+ koma)", "When the telephone rang, she was ironing."],
+            ["MIDDLE (Tengah)", "S, CONJ + S + V, V  (koma dua sisi)", "My friend, when I was walking in the park, waved at me."],
+            ["FINAL (Akhir)", "S V CONJ + S + V  (tanpa koma)", "I haven't seen him since he left this morning."],
           ]},
         ],
       },
       {
         letter: "B",
-        title: "8 Jenis AVC",
+        title: "8 Jenis AVC — Ringkasan",
         blocks: [
           { type: "table", headers: ["Jenis", "Conjunction Utama", "Contoh"], rows: [
-            ["Time", "when, after, before, while, as soon as, until, since", "I will call you as soon as I arrive."],
-            ["Place", "where, wherever, anywhere that, everywhere that", "She lives where her parents used to live."],
-            ["Contrast", "although, even though, while, whereas", "Although she's tired, she keeps working."],
-            ["Reason/Cause", "because, since, as, now that", "I made mistakes because I was tired."],
-            ["Result/Effect", "so + adj/adv + that, such + N + that", "He spoke so fast that nobody understood."],
-            ["Purpose", "so that, in order that, lest", "We left early so that we wouldn't be late."],
-            ["Condition", "if, unless, even if, provided that, in case", "If I go out, I'll buy a newspaper."],
-            ["Manner", "as if, as though, as, like", "She acted as though she had never met him."],
+            ["Time", "when, while, after, before, since, until, as soon as, once, whenever", "I will call you as soon as I arrive."],
+            ["Place", "where(ver), anywhere (that), everywhere (that), nowhere (that)", "She lives where her parents used to live."],
+            ["Contrast", "although, even though, though, while, whereas, regardless of the fact that", "Although she's tired, she keeps working."],
+            ["Reason/Cause", "because, since, as, now that, inasmuch as, in that", "I made mistakes because I was tired."],
+            ["Result", "so + adj/adv + that, such + a/an + adj + N + that, so that", "He spoke so fast that nobody understood."],
+            ["Purpose", "so that, in order that, for fear that, lest", "We left early so that we wouldn't be late."],
+            ["Condition", "if, unless, even if, provided (that), in case, only if", "If I go out, I'll buy a newspaper."],
+            ["Manner", "as if, as though, as, like (informal)", "She acted as though she had never met him."],
           ]},
         ],
       },
       {
         letter: "C",
-        title: "Abridgement & Reducing",
+        title: "AVC of Time — Pola Tense",
         blocks: [
-          { type: "text", value: "Berlaku untuk AVC of: time, contrast, reason, manner. Syarat: subject main clause = subject sub clause + tidak ada modal setelah conjunction." },
+          { type: "bullets", title: "Conjunctions:", items: [
+            "before (sebelum) | after (setelah) | when / while (ketika) | since (sejak)",
+            "until (sampai) | as soon as / once (setelah) | whenever (kapanpun) | as long as (selama)",
+          ]},
+          { type: "bullets", title: "A) NON K2K — 1 Kejadian Berlangsung (conj: since)", items: [
+            "Contoh: Mr. Joko has taught in Pare since he was a student in TN.",
+          ]},
+          { type: "bullets", title: "B) K2K — 2 Kejadian (conj: when, while, as, after, before, as soon as, once):", items: [
+            "① BERPOTONGAN — K1 belum selesai ketika K2 terjadi:",
+            "   • Berdurasi (K1 = PF/PFC, K2 = S): When I had studied for an hour, the lights were off.",
+            "   • Tanpa durasi (K1 = C, K2 = S): When I was watching TV, the telephone rang.",
+            "② BERURUTAN — K1 sudah selesai ketika K2 terjadi:",
+            "   • Tanpa jeda (K1 = S, K2 = S): After he left school, he started working in a bank.",
+            "   • Berjeda (K1 = PF, K2 = S): When I had finished breakfast, I went out.",
+            "③ BERSAMAAN — K1 dan K2 terjadi bersamaan (K1 = C, K2 = C):",
+            "   I am listening to the radio while I am having breakfast.",
+          ]},
+        ],
+      },
+      {
+        letter: "D",
+        title: "AVC of Place & Contrast",
+        blocks: [
+          { type: "bullets", title: "PLACE — Conjunctions:", items: [
+            "where(ver) = dimana(pun) | anywhere (that) = dimana saja",
+            "everywhere (that) = kemanapun | nowhere (that) = dimanapun tidak",
+            "every place (that) = kemana saja | no place (that) = dimanapun tidak",
+          ]},
+          { type: "bullets", title: "PLACE — Contoh:", items: [
+            "She lives where her parents used to live.",
+            "I will sit anywhere (that) you choose.",
+            "He goes everywhere (that) she goes.",
+          ]},
+          { type: "bullets", title: "CONTRAST — Conjunctions:", items: [
+            "though (less formal) | although | even though",
+            "while / whereas = meskipun, sedangkan, padahal",
+            "regardless of the fact that | granted (that) | conceded (that)",
+            "in spite of the fact that | despite the fact that | notwithstanding the fact that",
+          ]},
+          { type: "bullets", title: "CONTRAST — Contoh:", items: [
+            "Although she doesn't enjoy her job, she works hard.",
+            "They didn't hurry even though they were late.",
+            "Notwithstanding the fact that the weather was bad, the ship arrived on time.",
+            "In spite of the bad weather, we went out for a walk.",
+          ]},
+        ],
+      },
+      {
+        letter: "E",
+        title: "AVC of Reason & Result",
+        blocks: [
+          { type: "bullets", title: "REASON/CAUSE — Conjunctions:", items: [
+            "because = karena | since = karena | inasmuch as = karena",
+            "in that = karena | now that = karena sekarang",
+          ]},
+          { type: "bullets", title: "REASON — Contoh:", items: [
+            "I made mistakes because I was tired.",
+            "Now that it's holiday, I go to Bali.",
+            "He went to bed early inasmuch as he was tired.",
+          ]},
+          { type: "bullets", title: "RESULT — Pola Rumus:", items: [
+            "① So + adj/adv + that → He spoke so fast that nobody could understand.",
+            "② So + many/few + plural noun + that → There were so many people that we could not find our seats.",
+            "③ So + much/little + uncountable noun + that → There was so much dust that we couldn't see.",
+            "④ Such + a/an + adj + N(sing) + that → It was such a hot day that we stayed indoors.",
+            "⑤ Such + adj + N(plural/uncountable) → It was such heavy rain that we stayed at home.",
+            "⑥ So that (purpose & result) → She studied last night so that she could get a high score.",
+          ]},
+        ],
+      },
+      {
+        letter: "F",
+        title: "AVC of Purpose & Condition",
+        blocks: [
+          { type: "bullets", title: "PURPOSE — Conjunctions:", items: [
+            "(+) Agar/Supaya: in order that, so that",
+            "(-) Agar tidak: for fear that, lest (formal)",
+            "⚠ 'lest' dan 'for fear that' tidak perlu 'not' — maknanya sudah negatif.",
+          ]},
+          { type: "bullets", title: "PURPOSE — Contoh:", items: [
+            "He checked all figures in order that the report might be accurate.",
+            "Rico stayed up late for fear that the robber could steal his property.",
+            "They kept watch all night lest robbers should come.",
+          ]},
+          { type: "bullets", title: "CONDITION — Conjunctions:", items: [
+            "if | if only | imagine (that) | even if | in case | supposes (that)",
+            "unless = jika ... tidak | provided (that) = asalkan",
+          ]},
+          { type: "table", headers: ["Type", "Rumus", "Makna", "Contoh"], rows: [
+            ["Type 1", "If + S.pres, S.pres/will + V1", "Real — 90% terjadi (harapan)", "If you don't study, you won't pass."],
+            ["Type 2", "If + S.past, would/could + V1", "Unreal — 1% (berandai/hayalan)", "If I had much money, I would travel a lot."],
+            ["Type 3", "If + had + V3, would + have + V3", "Unreal — 0% (penyesalan)", "If I had studied hard, I would have passed."],
+          ]},
+        ],
+      },
+      {
+        letter: "G",
+        title: "AVC of Manner & Abridgement",
+        blocks: [
+          { type: "bullets", title: "MANNER — Conjunctions:", items: [
+            "as though = seolah-olah | as if = seolah-olah",
+            "as = seperti | like (informal) = seperti",
+          ]},
+          { type: "bullets", title: "MANNER — Contoh:", items: [
+            "He spoke as though he had known all about our plan.",
+            "Nobody loves you like I do.",
+            "Please arrange the chairs as the manager instructed.",
+          ]},
+          { type: "text", value: "ABRIDGEMENT & REDUCING — Berlaku untuk AVC of: time, contrast, reason, manner. Syarat: subject main clause = subject sub clause + tidak ada modal setelah conjunction." },
           { type: "table", headers: ["Tipe", "Rumus", "Contoh"], rows: [
             ["Abridgement Active", "Conj + V-ing", "When doing the housework, John turns on the radio."],
             ["Abridgement Passive", "Conj + V3", "When invited to my party, he brought a teddy bear."],
-            ["Abridgement Non-Verbal", "Conj + ANA (adj/noun/adv)", "Although sick, Yola goes to school."],
+            ["Abridgement Non-Verbal", "Conj + adj/noun/adv", "Although sick, Yola goes to school."],
             ["Reducing Active", "V-ing (tanpa conj)", "Doing the housework, John turns on the radio."],
             ["Reducing Passive", "V3 (tanpa conj)", "Invited to my party, he brought a teddy bear."],
           ]},
         ],
       },
       {
-        letter: "D",
-        title: "AVC of Condition — Conditional Inversion",
+        letter: "H",
+        title: "AVC of Condition — Inversion",
         blocks: [
           { type: "text", value: "AVC of Condition (Type 1, 2, 3) bisa dipersingkat dengan inversion — hapus 'if', pindahkan auxiliary ke depan:" },
           { type: "table", headers: ["Type", "Normal", "Inversion"], rows: [
