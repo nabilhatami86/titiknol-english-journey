@@ -87,6 +87,7 @@ interface WritingFeedback {
   vocabulary: { score: number; feedback: string; suggestions: string[]; wordEnhancements: WordEnhancement[] };
   coherence:  { score: number; feedback: string };
   style:      { score: number; feedback: string };
+  adverbialClause?: AdverbialClauseAnalysis;
   level:      { estimated: string; feedback: string };
   overallScore: number;
   correctedVersion: string;
@@ -98,6 +99,23 @@ interface HistoryEntry {
   date: string;
   text: string;
   feedback: WritingFeedback;
+}
+
+interface AdverbialClauseItem {
+  text: string;
+  connector: string;
+  clauseFunction: string;
+  isCorrect: boolean;
+  issue: string;
+  tip: string;
+}
+
+interface AdverbialClauseAnalysis {
+  found: boolean;
+  count: number;
+  summary: string;
+  clauses: AdverbialClauseItem[];
+  suggestions: string[];
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -296,7 +314,7 @@ export default function WritingPage() {
   }
 
   return (
-    <div className="min-h-screen p-4 lg:p-6">
+    <div className="min-h-screen p-4 lg:p-6 overflow-x-hidden">
 
       {/* ── Header ── */}
       <div className="flex items-center justify-between mb-6 max-w-7xl mx-auto">
@@ -541,7 +559,7 @@ export default function WritingPage() {
               </div>
 
               {/* Tab switcher */}
-              <div className="flex gap-1 bg-(--bg-secondary) rounded-xl p-1">
+              <div className="grid grid-cols-2 sm:flex gap-1 bg-(--bg-secondary) rounded-xl p-1">
                 {(['feedback', 'analysis', 'corrected', 'rewrite'] as Tab[]).map((tab) => (
                   <button
                     key={tab}
@@ -602,7 +620,7 @@ export default function WritingPage() {
                                 <span className="text-[11px] bg-(--bg-secondary) border border-(--border) text-(--text-muted) px-2 py-0.5 rounded-full">
                                   {w.wordClass}
                                 </span>
-                                <span className="text-xs text-(--text-muted)">— {w.meaning}</span>
+                                <span className="text-xs text-(--text-muted) min-w-0 break-words">— {w.meaning}</span>
                               </div>
                               <p className="text-[11px] text-(--text-muted) italic">
                                 Biasa dipakai: {w.typicalUsage}
@@ -613,7 +631,7 @@ export default function WritingPage() {
                                 <span className="bg-primary text-white text-xs font-bold px-2.5 py-0.5 rounded-full">
                                   {w.bestAlternative}
                                 </span>
-                                <span className="text-[11px] text-(--text-muted)">— {w.bestAlternativeReason}</span>
+                                <span className="text-[11px] text-(--text-muted) min-w-0 break-words">— {w.bestAlternativeReason}</span>
                               </div>
                             </div>
 
@@ -686,6 +704,73 @@ export default function WritingPage() {
                         <GitBranch className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                         <p className="text-sm text-(--text-secondary) leading-relaxed">{feedback.sentenceAnalysis.summary}</p>
                       </div>
+
+                      {/* ── Adverbial Clause Analysis ── */}
+                      {feedback.adverbialClause && (
+                        <div className="border border-(--border) rounded-2xl overflow-hidden bg-(--bg-card)">
+                          <div className="px-4 py-3 bg-(--bg-secondary)/40 border-b border-(--border) flex items-center justify-between">
+                            <div className="flex items-center gap-2">
+                              <GitBranch className="w-4 h-4 text-emerald-500 shrink-0" />
+                              <span className="text-sm font-bold text-(--text)">Adverbial Clause</span>
+                            </div>
+                            {feedback.adverbialClause.found ? (
+                              <span className="text-xs bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2.5 py-1 rounded-full font-semibold">
+                                {feedback.adverbialClause.count} found
+                              </span>
+                            ) : (
+                              <span className="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 px-2.5 py-1 rounded-full font-semibold">
+                                Not used
+                              </span>
+                            )}
+                          </div>
+                          <div className="p-4 space-y-3">
+                            <p className="text-sm text-(--text-secondary) leading-relaxed">{feedback.adverbialClause.summary}</p>
+
+                            {feedback.adverbialClause.clauses.length > 0 && (
+                              <div className="space-y-2">
+                                {feedback.adverbialClause.clauses.map((cl, ci) => (
+                                  <div key={ci} className={`rounded-xl border p-3 space-y-1.5 text-xs ${cl.isCorrect ? 'border-emerald-200 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-900/10' : 'border-red-200 dark:border-red-800 bg-red-50/50 dark:bg-red-900/10'}`}>
+                                    <div className="flex flex-wrap items-center gap-1.5">
+                                      <span className="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded-full font-bold font-mono text-[11px]">
+                                        {cl.connector}
+                                      </span>
+                                      <span className="bg-primary/10 text-primary px-2 py-0.5 rounded-full text-[11px] font-semibold">
+                                        {cl.clauseFunction}
+                                      </span>
+                                      {cl.isCorrect ? (
+                                        <span className="text-emerald-600 dark:text-emerald-400 flex items-center gap-0.5 font-semibold text-[11px]">
+                                          <CheckCircle2 className="w-3 h-3" /> Correct
+                                        </span>
+                                      ) : (
+                                        <span className="text-red-500 flex items-center gap-0.5 font-semibold text-[11px]">
+                                          ✕ Incorrect
+                                        </span>
+                                      )}
+                                    </div>
+                                    <p className="text-(--text) italic">&ldquo;{cl.text}&rdquo;</p>
+                                    {cl.issue && <p className="text-red-600 dark:text-red-400 leading-snug">{cl.issue}</p>}
+                                    <p className="text-(--text-secondary) leading-snug flex items-start gap-1">
+                                      <Lightbulb className="w-3 h-3 shrink-0 text-yellow-500 mt-0.5" /> {cl.tip}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+
+                            {feedback.adverbialClause.suggestions.length > 0 && (
+                              <div className="space-y-1.5 pt-1 border-t border-(--border)">
+                                <p className="text-xs font-semibold text-(--text-muted) uppercase tracking-wider">Suggestions</p>
+                                {feedback.adverbialClause.suggestions.map((s, i) => (
+                                  <div key={i} className="flex items-start gap-2 text-xs text-(--text-secondary)">
+                                    <span className="shrink-0 text-primary font-bold mt-0.5">→</span>
+                                    <span>{s}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
 
                       {/* Per-sentence cards */}
                       {feedback.sentenceAnalysis.sentences.map((s, idx) => (
@@ -773,7 +858,7 @@ export default function WritingPage() {
                                         )}
                                       </div>
                                       <p className="text-(--text) italic text-[11px]">&ldquo;{cl.text}&rdquo;</p>
-                                      <div className="grid grid-cols-2 gap-x-3 gap-y-0.5 text-[11px] text-(--text-muted)">
+                                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-0.5 text-[11px] text-(--text-muted)">
                                         {cl.subject && <span><b className="text-(--text-secondary)">S:</b> {cl.subject}</span>}
                                         {cl.predicate && <span><b className="text-(--text-secondary)">P:</b> {cl.predicate}</span>}
                                         {cl.object && <span><b className="text-(--text-secondary)">O:</b> {cl.object}</span>}

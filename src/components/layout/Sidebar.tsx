@@ -30,6 +30,7 @@ import {
   Youtube,
   Radio,
   Globe,
+  BookOpenText,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useVocabStore } from "@/store/useVocabStore";
@@ -113,6 +114,7 @@ const navSections: { title: string; items: NavItem[] }[] = [
           { href: "/practice/general-listening", label: "General Listening (BBC)", icon: Radio },
         ],
       },
+      { href: "/practice/toefl-reading", label: "TOEFL Reading", icon: FileText },
       { href: "/practice/ielts-resources", label: "IELTS Resources", icon: Globe },
       { href: "/practice/toefl", label: "TOEFL Practice", icon: GraduationCap },
     ],
@@ -131,6 +133,7 @@ const GROUP_PATHS: Record<string, string[]> = {
   vocab: ["/practice/vocab-trainer", "/tn-intermediate/vocab"],
   tn: ["/tn-basic-cource", "/tn-intermediate", "/tn-advance"],
   listening: ["/practice/ielts-listening", "/practice/ielts-tests", "/practice/general-listening"],
+  reading: ["/practice/toefl-reading"],
 };
 
 export function Sidebar() {

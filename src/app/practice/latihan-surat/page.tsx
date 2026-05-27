@@ -4,10 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import {
   ArrowLeft, Send, RotateCcw, CheckCircle2, XCircle,
-  AlertCircle, Lightbulb, ChevronDown, ChevronUp,
-  FileText, BookOpen, Sparkles,
+  AlertCircle, Lightbulb, FileText, BookOpen, Sparkles,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { ControlledCollapsibleCard } from '@/components/ui/CollapsibleCard';
+import { CorrectionList, VocabList, FlaggedPhraseList, ScoreBadge } from '@/components/ui/FeedbackBlocks';
 
 // ── Types ──────────────────────────────────────────────────────────
 
@@ -55,7 +56,7 @@ const TASKS: Record<LetterType, { id: string; title: string; scenario: string; t
       id: 'inf-1',
       title: 'Cerita Liburan',
       scenario: 'Tulis surat kepada teman baikmu tentang liburanmu yang berkesan baru-baru ini. Ceritakan apa yang kamu lakukan, tempat apa yang dikunjungi, dan kenangan terbaik yang kamu alami.',
-      tips: ['Gunakan greeting akrab (Dear / Hi / Dearest)', 'Boleh pakai kontraksi (I\'m, don\'t, I\'ve)', 'Tulis minimal 3 paragraf isi', 'Akhiri dengan penutup yang hangat (Sincerely yours, With love,)'],
+      tips: ["Gunakan greeting akrab (Dear / Hi / Dearest)", "Boleh pakai kontraksi (I'm, don't, I've)", 'Tulis minimal 3 paragraf isi', 'Akhiri dengan penutup yang hangat (Sincerely yours, With love,)'],
     },
     {
       id: 'inf-2',
@@ -107,15 +108,14 @@ const TASKS: Record<LetterType, { id: string; title: string; scenario: string; t
 // ── Score helpers ──────────────────────────────────────────────────
 
 function scoreColor(s: number) {
-  if (s >= 80) return 'text-green-600 dark:text-green-400';
-  if (s >= 60) return 'text-amber-600 dark:text-amber-400';
-  return 'text-red-500 dark:text-red-400';
+  if (s >= 80) return 'text-primary';
+  if (s >= 60) return 'text-(--text)';
+  return 'text-(--text-muted)';
 }
 
 function scoreBg(s: number) {
-  if (s >= 80) return 'bg-green-50 dark:bg-green-950/30 border-green-300 dark:border-green-800';
-  if (s >= 60) return 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800';
-  return 'bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-800';
+  if (s >= 80) return 'bg-primary/5 border-primary/25';
+  return 'bg-(--bg-secondary) border-(--border)';
 }
 
 // ── Page ───────────────────────────────────────────────────────────
@@ -128,10 +128,10 @@ export default function LatihanSuratPage() {
   const [result, setResult] = useState<FeedbackResult | null>(null);
   const [error, setError] = useState('');
 
-  const [showCorrection, setShowCorrection] = useState(false);
   const [showGrammar, setShowGrammar] = useState(false);
   const [showTone, setShowTone] = useState(false);
   const [showVocab, setShowVocab] = useState(false);
+  const [showCorrection, setShowCorrection] = useState(false);
 
   const wordCount = letter.trim() ? letter.trim().split(/\s+/).length : 0;
 
@@ -140,10 +140,10 @@ export default function LatihanSuratPage() {
     setLoading(true);
     setResult(null);
     setError('');
-    setShowCorrection(false);
     setShowGrammar(false);
     setShowTone(false);
     setShowVocab(false);
+    setShowCorrection(false);
 
     try {
       const res = await fetch('/api/letter-review', {
@@ -162,11 +162,7 @@ export default function LatihanSuratPage() {
     }
   };
 
-  const handleReset = () => {
-    setLetter('');
-    setResult(null);
-    setError('');
-  };
+  const handleReset = () => { setLetter(''); setResult(null); setError(''); };
 
   // ── TYPE SELECTOR ─────────────────────────────────────────────────
   if (!letterType) {
@@ -180,54 +176,30 @@ export default function LatihanSuratPage() {
             <FileText className="w-5 h-5 text-primary" /> Latihan Menulis Surat
           </h1>
           <p className="text-sm text-(--text-secondary) mt-1">
-            Pilih jenis surat yang ingin kamu latih, lalu tulis suratmu — AI akan mengoreksi struktur, grammar, tone, dan vocab.
+            Pilih jenis surat, tulis suratmu — AI akan mengoreksi struktur, grammar, tone, dan vocab.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
-          {/* Informal */}
-          <button onClick={() => setLetterType('informal')}
-            className="text-left bg-(--bg-card) border-2 border-teal-400 dark:border-teal-600 rounded-2xl p-5 hover:shadow-md transition-all group"
-          >
-            <div className="w-12 h-12 rounded-xl bg-teal-100 dark:bg-teal-950 text-teal-600 dark:text-teal-400 flex items-center justify-center mb-4">
-              <BookOpen className="w-6 h-6" />
-            </div>
-            <h2 className="text-lg font-bold text-teal-600 dark:text-teal-400">Informal Letter</h2>
-            <p className="text-sm text-(--text-secondary) mt-1 leading-relaxed">
-              Surat kepada teman atau keluarga. Bahasa kasual, greeting akrab, boleh kontraksi & P.S.
-            </p>
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {['Dear Name,', 'Sincerely yours,', 'P.S. ...', 'Kontraksi OK'].map(t => (
-                <span key={t} className="text-[10px] px-2 py-0.5 rounded-full bg-teal-50 dark:bg-teal-950/50 text-teal-600 dark:text-teal-400 border border-teal-200 dark:border-teal-800">{t}</span>
-              ))}
-            </div>
-          </button>
-
-          {/* Formal */}
-          <button onClick={() => setLetterType('formal')}
-            className="text-left bg-(--bg-card) border-2 border-blue-400 dark:border-blue-600 rounded-2xl p-5 hover:shadow-md transition-all group"
-          >
-            <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4">
-              <FileText className="w-6 h-6" />
-            </div>
-            <h2 className="text-lg font-bold text-blue-600 dark:text-blue-400">Formal Letter</h2>
-            <p className="text-sm text-(--text-secondary) mt-1 leading-relaxed">
-              Surat untuk keperluan resmi/profesional. Bahasa formal, ada subject line, tidak ada kontraksi.
-            </p>
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {['Dear Sir/Madam,', 'Subject:', 'Sincerely,', 'No P.S.'].map(t => (
-                <span key={t} className="text-[10px] px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800">{t}</span>
-              ))}
-            </div>
-          </button>
+          <TypeCard
+            icon={<BookOpen className="w-6 h-6" />}
+            title="Informal Letter"
+            desc="Surat kepada teman atau keluarga. Bahasa kasual, greeting akrab, boleh kontraksi & P.S."
+            tags={['Dear Name,', 'Sincerely yours,', 'P.S. ...', 'Kontraksi OK']}
+            highlight
+            onClick={() => setLetterType('informal')}
+          />
+          <TypeCard
+            icon={<FileText className="w-6 h-6" />}
+            title="Formal Letter"
+            desc="Surat untuk keperluan resmi/profesional. Bahasa formal, ada subject line, tidak ada kontraksi."
+            tags={['Dear Sir/Madam,', 'Subject:', 'Sincerely,', 'No P.S.']}
+            onClick={() => setLetterType('formal')}
+          />
         </div>
       </div>
     );
   }
-
-  const typeColor = letterType === 'informal' ? 'text-teal-600 dark:text-teal-400' : 'text-blue-600 dark:text-blue-400';
-  const typeBadge = letterType === 'informal' ? 'bg-teal-100 text-teal-700 dark:bg-teal-950 dark:text-teal-300' : 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300';
-  const typeBorder = letterType === 'informal' ? 'border-teal-400' : 'border-blue-400';
 
   // ── TASK SELECTOR ─────────────────────────────────────────────────
   if (!selectedTask) {
@@ -237,7 +209,7 @@ export default function LatihanSuratPage() {
           <ArrowLeft className="w-4 h-4" /> Ganti Jenis Surat
         </button>
         <div>
-          <span className={cn('text-xs font-semibold px-2.5 py-1 rounded-full', typeBadge)}>
+          <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary">
             {letterType === 'informal' ? 'Informal Letter' : 'Formal Letter'}
           </span>
           <h1 className="text-xl font-bold text-(--text) mt-2">Pilih Topik</h1>
@@ -246,9 +218,9 @@ export default function LatihanSuratPage() {
         <div className="space-y-3">
           {TASKS[letterType].map(task => (
             <button key={task.id} onClick={() => setSelectedTask(task)}
-              className={cn('w-full text-left bg-(--bg-card) border-2 rounded-xl p-4 hover:shadow-sm transition-all group', typeBorder)}
+              className="w-full text-left bg-(--bg-card) border-2 border-primary/30 rounded-xl p-4 hover:shadow-sm hover:border-primary/60 transition-all group"
             >
-              <h3 className={cn('font-semibold text-sm group-hover:underline', typeColor)}>{task.title}</h3>
+              <h3 className="font-semibold text-sm text-primary group-hover:underline">{task.title}</h3>
               <p className="text-sm text-(--text-secondary) mt-1 leading-relaxed">{task.scenario}</p>
             </button>
           ))}
@@ -265,13 +237,13 @@ export default function LatihanSuratPage() {
         <button onClick={() => { setSelectedTask(null); handleReset(); }} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
           <ArrowLeft className="w-4 h-4" /> Ganti Topik
         </button>
-        <span className={cn('text-xs font-semibold px-2.5 py-1 rounded-full', typeBadge)}>
+        <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary/10 text-primary">
           {letterType === 'informal' ? 'Informal' : 'Formal'} Letter
         </span>
       </div>
 
       {/* Task card */}
-      <div className={cn('rounded-xl border-l-4 p-4 bg-(--bg-card) border border-(--border)', typeBorder.replace('border-', 'border-l-'))}>
+      <div className="rounded-xl border-l-4 border-l-primary p-4 bg-(--bg-card) border border-(--border)">
         <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">{selectedTask.title}</p>
         <p className="text-sm text-(--text) leading-relaxed">{selectedTask.scenario}</p>
         <div className="mt-3 space-y-1">
@@ -283,7 +255,7 @@ export default function LatihanSuratPage() {
         </div>
       </div>
 
-      {/* Result — shown ABOVE the editor after submit */}
+      {/* Result */}
       {result && (
         <div className="space-y-4 animate-fade-in">
           {/* Overall score */}
@@ -295,13 +267,13 @@ export default function LatihanSuratPage() {
                   {result.overallScore}<span className="text-lg font-semibold text-(--text-muted)">/100</span>
                 </p>
               </div>
-              <div className="flex gap-3 flex-wrap">
-                {[
+              <div className="flex gap-4 flex-wrap">
+                {([
                   { label: 'Struktur', score: result.structure.score },
                   { label: 'Grammar', score: result.grammar.score },
                   { label: 'Tone', score: result.tone.score },
                   { label: 'Vocab', score: result.vocabulary.score },
-                ].map(({ label, score }) => (
+                ] as const).map(({ label, score }) => (
                   <div key={label} className="text-center">
                     <p className={cn('text-xl font-bold', scoreColor(score))}>{score}</p>
                     <p className="text-[10px] text-(--text-muted) font-semibold uppercase">{label}</p>
@@ -312,30 +284,24 @@ export default function LatihanSuratPage() {
             <p className="text-sm text-(--text) leading-relaxed mt-3">{result.generalFeedback}</p>
           </div>
 
-          {/* Structure check */}
+          {/* Structure — always expanded (no toggle) */}
           <div className="bg-(--bg-card) border border-(--border) rounded-xl overflow-hidden">
-            <button onClick={() => setShowGrammar(false)}
-              className="w-full flex items-center justify-between px-4 py-3 bg-(--bg-secondary)/50"
-            >
-              <span className="text-sm font-semibold text-(--text) flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-primary" />
-                Kelengkapan Struktur
-                <span className={cn('text-xs font-bold ml-1', scoreColor(result.structure.score))}>{result.structure.score}/100</span>
-              </span>
-            </button>
+            <div className="flex items-center gap-2 px-4 py-3 bg-(--bg-secondary)/50">
+              <CheckCircle2 className="w-4 h-4 text-primary" />
+              <span className="text-sm font-semibold text-(--text)">Kelengkapan Struktur</span>
+              <ScoreBadge score={result.structure.score} />
+            </div>
             <div className="px-4 py-3 border-t border-(--border) space-y-2">
               <p className="text-xs text-(--text-secondary) leading-relaxed">{result.structure.feedback}</p>
               <div className="grid sm:grid-cols-2 gap-1.5 mt-2">
                 {result.structure.components.map((c, i) => (
-                  <div key={i} className={cn('flex items-start gap-2 px-3 py-2 rounded-lg text-xs',
-                    c.present ? 'bg-green-50 dark:bg-green-950/30' : 'bg-red-50 dark:bg-red-950/30',
-                  )}>
+                  <div key={i} className={cn('flex items-start gap-2 px-3 py-2 rounded-lg text-xs', c.present ? 'bg-primary/5' : 'bg-(--bg-secondary)')}>
                     {c.present
-                      ? <CheckCircle2 className="w-3.5 h-3.5 text-green-500 shrink-0 mt-0.5" />
-                      : <XCircle className="w-3.5 h-3.5 text-red-500 shrink-0 mt-0.5" />
+                      ? <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                      : <XCircle className="w-3.5 h-3.5 text-(--text-muted) shrink-0 mt-0.5" />
                     }
                     <div>
-                      <span className={cn('font-semibold', c.present ? 'text-green-700 dark:text-green-300' : 'text-red-600 dark:text-red-400')}>{c.name}</span>
+                      <span className={cn('font-semibold', c.present ? 'text-primary' : 'text-(--text-muted)')}>{c.name}</span>
                       {c.note && <p className="text-[10px] text-(--text-muted) mt-0.5">{c.note}</p>}
                     </div>
                   </div>
@@ -346,112 +312,61 @@ export default function LatihanSuratPage() {
 
           {/* Grammar */}
           {result.grammar.corrections.length > 0 && (
-            <div className="bg-(--bg-card) border border-(--border) rounded-xl overflow-hidden">
-              <button onClick={() => setShowGrammar(!showGrammar)}
-                className="w-full flex items-center justify-between px-4 py-3 hover:bg-(--hover) transition-colors"
-              >
-                <span className="text-sm font-semibold text-(--text) flex items-center gap-2">
-                  <AlertCircle className="w-4 h-4 text-amber-500" />
-                  Koreksi Grammar
-                  <span className={cn('text-xs font-bold ml-1', scoreColor(result.grammar.score))}>{result.grammar.score}/100</span>
-                  <span className="text-xs text-(--text-muted)">({result.grammar.corrections.length} koreksi)</span>
-                </span>
-                {showGrammar ? <ChevronUp className="w-4 h-4 text-(--text-muted)" /> : <ChevronDown className="w-4 h-4 text-(--text-muted)" />}
-              </button>
-              {showGrammar && (
-                <div className="border-t border-(--border) px-4 py-3 space-y-3">
-                  <p className="text-xs text-(--text-secondary)">{result.grammar.feedback}</p>
-                  {result.grammar.corrections.map((c, i) => (
-                    <div key={i} className="rounded-lg bg-(--bg-secondary) p-3 space-y-1 text-xs">
-                      <p className="text-red-500 line-through">"{c.original}"</p>
-                      <p className="text-green-600 dark:text-green-400 font-semibold">→ "{c.corrected}"</p>
-                      <p className="text-(--text-muted)">{c.explanation}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            <ControlledCollapsibleCard
+              open={showGrammar}
+              onToggle={() => setShowGrammar(v => !v)}
+              icon={<AlertCircle className="w-4 h-4 text-primary" />}
+              title="Koreksi Grammar"
+              badge={<><ScoreBadge score={result.grammar.score} /><span className="text-xs text-(--text-muted)">({result.grammar.corrections.length})</span></>}
+            >
+              <CorrectionList items={result.grammar.corrections} feedback={result.grammar.feedback} />
+            </ControlledCollapsibleCard>
           )}
 
           {/* Tone */}
-          <div className="bg-(--bg-card) border border-(--border) rounded-xl overflow-hidden">
-            <button onClick={() => setShowTone(!showTone)}
-              className="w-full flex items-center justify-between px-4 py-3 hover:bg-(--hover) transition-colors"
-            >
-              <span className="text-sm font-semibold text-(--text) flex items-center gap-2">
-                {result.tone.isAppropriate
-                  ? <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  : <XCircle className="w-4 h-4 text-red-500" />
-                }
-                Tone &amp; Gaya Bahasa
-                <span className={cn('text-xs font-bold ml-1', scoreColor(result.tone.score))}>{result.tone.score}/100</span>
-              </span>
-              {showTone ? <ChevronUp className="w-4 h-4 text-(--text-muted)" /> : <ChevronDown className="w-4 h-4 text-(--text-muted)" />}
-            </button>
-            {showTone && (
-              <div className="border-t border-(--border) px-4 py-3 space-y-3">
-                <p className="text-xs text-(--text-secondary)">{result.tone.feedback}</p>
-                {result.tone.flaggedPhrases.map((f, i) => (
-                  <div key={i} className="rounded-lg bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-3 text-xs space-y-1">
-                    <p className="font-semibold text-amber-700 dark:text-amber-300">"{f.phrase}"</p>
-                    <p className="text-(--text)">→ Lebih baik: <span className="font-semibold text-green-600 dark:text-green-400">"{f.suggestion}"</span></p>
-                    <p className="text-(--text-muted)">{f.reason}</p>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+          <ControlledCollapsibleCard
+            open={showTone}
+            onToggle={() => setShowTone(v => !v)}
+            icon={result.tone.isAppropriate
+              ? <CheckCircle2 className="w-4 h-4 text-primary" />
+              : <XCircle className="w-4 h-4 text-(--text-muted)" />
+            }
+            title="Tone & Gaya Bahasa"
+            badge={<ScoreBadge score={result.tone.score} />}
+          >
+            {result.tone.flaggedPhrases.length > 0
+              ? <FlaggedPhraseList items={result.tone.flaggedPhrases} feedback={result.tone.feedback} />
+              : <p className="text-xs text-(--text-secondary)">{result.tone.feedback}</p>
+            }
+          </ControlledCollapsibleCard>
 
           {/* Vocabulary */}
           {result.vocabulary.enhancements.length > 0 && (
-            <div className="bg-(--bg-card) border border-(--border) rounded-xl overflow-hidden">
-              <button onClick={() => setShowVocab(!showVocab)}
-                className="w-full flex items-center justify-between px-4 py-3 hover:bg-(--hover) transition-colors"
-              >
-                <span className="text-sm font-semibold text-(--text) flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-purple-500" />
-                  Peningkatan Kosakata
-                  <span className={cn('text-xs font-bold ml-1', scoreColor(result.vocabulary.score))}>{result.vocabulary.score}/100</span>
-                </span>
-                {showVocab ? <ChevronUp className="w-4 h-4 text-(--text-muted)" /> : <ChevronDown className="w-4 h-4 text-(--text-muted)" />}
-              </button>
-              {showVocab && (
-                <div className="border-t border-(--border) px-4 py-3 space-y-3">
-                  <p className="text-xs text-(--text-secondary)">{result.vocabulary.feedback}</p>
-                  {result.vocabulary.enhancements.map((e, i) => (
-                    <div key={i} className="flex items-start gap-2 text-xs rounded-lg bg-(--bg-secondary) px-3 py-2">
-                      <span className="text-(--text-muted) shrink-0">"{e.used}"</span>
-                      <span className="text-(--text-muted)">→</span>
-                      <span className="font-semibold text-purple-600 dark:text-purple-400">"{e.better}"</span>
-                      <span className="text-(--text-muted) flex-1">{e.reason}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            <ControlledCollapsibleCard
+              open={showVocab}
+              onToggle={() => setShowVocab(v => !v)}
+              icon={<Sparkles className="w-4 h-4 text-primary" />}
+              title="Peningkatan Kosakata"
+              badge={<ScoreBadge score={result.vocabulary.score} />}
+            >
+              <VocabList items={result.vocabulary.enhancements} feedback={result.vocabulary.feedback} />
+            </ControlledCollapsibleCard>
           )}
 
           {/* Corrected letter */}
-          <div className="bg-(--bg-card) border border-(--border) rounded-xl overflow-hidden">
-            <button onClick={() => setShowCorrection(!showCorrection)}
-              className="w-full flex items-center justify-between px-4 py-3 hover:bg-(--hover) transition-colors"
-            >
-              <span className="text-sm font-semibold text-(--text) flex items-center gap-2">
-                <FileText className="w-4 h-4 text-primary" /> Versi Terkoreksi
-              </span>
-              {showCorrection ? <ChevronUp className="w-4 h-4 text-(--text-muted)" /> : <ChevronDown className="w-4 h-4 text-(--text-muted)" />}
-            </button>
-            {showCorrection && (
-              <div className="border-t border-(--border) px-4 py-4">
-                <pre className="text-sm text-(--text) font-sans leading-relaxed whitespace-pre-wrap">{result.correctedLetter}</pre>
-              </div>
-            )}
-          </div>
+          <ControlledCollapsibleCard
+            open={showCorrection}
+            onToggle={() => setShowCorrection(v => !v)}
+            icon={<FileText className="w-4 h-4 text-primary" />}
+            title="Versi Terkoreksi"
+          >
+            <pre className="text-sm text-(--text) font-sans leading-relaxed whitespace-pre-wrap">{result.correctedLetter}</pre>
+          </ControlledCollapsibleCard>
 
           {/* Tip */}
-          <div className="flex items-start gap-2 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl px-4 py-3">
-            <Lightbulb className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
-            <p className="text-xs text-amber-800 dark:text-amber-300 leading-relaxed">
+          <div className="flex items-start gap-2 bg-primary/5 border border-primary/15 rounded-xl px-4 py-3">
+            <Lightbulb className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+            <p className="text-xs text-(--text-secondary) leading-relaxed">
               Baca versi terkoreksi, pelajari perbedaannya, lalu coba tulis ulang surat tanpa melihat hasilnya!
             </p>
           </div>
@@ -463,8 +378,8 @@ export default function LatihanSuratPage() {
         <div className="flex items-center justify-between">
           <label className="text-sm font-semibold text-(--text)">Tulisanmu</label>
           <div className="flex items-center gap-3">
-            <span className={cn('text-xs', wordCount < 20 ? 'text-red-500' : 'text-(--text-muted)')}>
-              {wordCount} kata {wordCount < 20 && '(min. 20)'}
+            <span className={cn('text-xs', wordCount < 20 ? 'text-primary/60' : 'text-(--text-muted)')}>
+              {wordCount} kata{wordCount < 20 && ' (min. 20)'}
             </span>
             {result && (
               <button onClick={handleReset} className="text-xs text-(--text-muted) hover:text-primary transition-colors flex items-center gap-1">
@@ -487,9 +402,9 @@ export default function LatihanSuratPage() {
 
       {/* Error */}
       {error && (
-        <div className="flex items-start gap-2 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-xl px-4 py-3">
-          <AlertCircle className="w-4 h-4 text-red-500 mt-0.5 shrink-0" />
-          <p className="text-sm text-red-700 dark:text-red-300">{error}</p>
+        <div className="flex items-start gap-2 bg-primary/5 border border-primary/20 rounded-xl px-4 py-3">
+          <AlertCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+          <p className="text-sm text-(--text-secondary)">{error}</p>
         </div>
       )}
 
@@ -501,7 +416,7 @@ export default function LatihanSuratPage() {
           'w-full py-3.5 rounded-xl font-semibold text-sm transition-all shadow-sm flex items-center justify-center gap-2',
           loading || wordCount < 20
             ? 'bg-(--bg-secondary) text-(--text-muted) cursor-not-allowed'
-            : 'bg-primary text-white hover:bg-primary-dark',
+            : 'bg-primary text-white hover:opacity-90 active:scale-[0.98]',
         )}
       >
         {loading
@@ -510,5 +425,41 @@ export default function LatihanSuratPage() {
         }
       </button>
     </div>
+  );
+}
+
+// ── Local sub-components (only used on this page) ──────────────────
+
+function TypeCard({
+  icon, title, desc, tags, highlight, onClick,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+  tags: string[];
+  highlight?: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        'text-left bg-(--bg-card) border-2 rounded-2xl p-5 hover:shadow-md transition-all group',
+        highlight ? 'border-primary/30 hover:border-primary/60' : 'border-primary/15 hover:border-primary/40',
+      )}
+    >
+      <div className={cn('w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-primary', highlight ? 'bg-primary/10' : 'bg-primary/6')}>
+        {icon}
+      </div>
+      <h2 className={cn('text-lg font-bold', highlight ? 'text-primary' : 'text-(--text)')}>{title}</h2>
+      <p className="text-sm text-(--text-secondary) mt-1 leading-relaxed">{desc}</p>
+      <div className="mt-3 flex flex-wrap gap-1.5">
+        {tags.map(t => (
+          <span key={t} className={cn('text-[10px] px-2 py-0.5 rounded-full border', highlight ? 'bg-primary/8 text-primary border-primary/15' : 'bg-(--bg-secondary) text-(--text-muted) border-(--border)')}>
+            {t}
+          </span>
+        ))}
+      </div>
+    </button>
   );
 }

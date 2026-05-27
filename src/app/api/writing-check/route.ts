@@ -104,6 +104,22 @@ JSON structure (fill every field carefully):
     "score": <integer 0-100>,
     "feedback": "<one or two sentences about writing style>"
   },
+  "adverbialClause": {
+    "found": <true|false — whether any adverbial clauses exist in the text>,
+    "count": <integer — how many adverbial clauses found>,
+    "summary": "<1-2 sentences about the student's adverbial clause usage overall>",
+    "clauses": [
+      {
+        "text": "<the full adverbial clause>",
+        "connector": "<subordinating conjunction used: when/because/if/although/since/while/after/before/unless/until/as/so that/even though/wherever/etc.>",
+        "clauseFunction": "<Time | Cause/Reason | Condition | Contrast/Concession | Purpose | Result | Place | Manner>",
+        "isCorrect": <true|false>,
+        "issue": "<grammatical issue if not correct, empty string if correct>",
+        "tip": "<specific tip to improve this clause or note about what's done well>"
+      }
+    ],
+    "suggestions": ["<suggestion for using more varied adverbial connectors>", "<suggestion for adverbial clause types not yet used>"]
+  },
   "level": {
     "estimated": "<A1|A2|B1|B2|C1|C2>",
     "feedback": "<one sentence explaining the level estimate>"
