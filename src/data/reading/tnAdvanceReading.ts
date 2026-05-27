@@ -8,7 +8,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-1",
     track: "reading",
     day: 1,
-    tutor: "Mrs. Aji",
+    tutor: "M",
     title: "Brand Loyalty",
     subtitle:
       "Understanding consumer behavior, psychological attachment, and global branding trends",
@@ -1374,7 +1374,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-5",
     track: "reading",
     day: 5,
-    tutor: "Mrs. Aji",
+    tutor: "Mrs. Afrizal",
     title: "The Development of the Light Bulb",
     subtitle: "Thomas Edison · Invention · Patents · Incandescent Light",
     overview:
@@ -1934,7 +1934,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-6",
     track: "reading",
     day: 6,
-    tutor: "Mrs. Aji",
+    tutor: "M",
     title: "The Story of the Skyscraper",
     subtitle:
       "Architecture · Urban Civilisation · Chicago & New York · Iron & Steel",
@@ -2073,7 +2073,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-7",
     track: "reading",
     day: 7,
-    tutor: "Mrs. Aji",
+    tutor: "M",
     title: "How Drugs Are Studied",
     subtitle: "Drug Development · Clinical Trials · Phases I–IV · Chemistry",
     overview:
@@ -2320,7 +2320,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-8",
     track: "reading",
     day: 8,
-    tutor: "Mrs. Aji",
+    tutor: "M",
     title: "NASA Finds 219 Possible Planets, Including 10 'Earths'",
     subtitle: "Space Science · Kepler Telescope · Exoplanets · Astrobiology",
     overview:
@@ -2680,7 +2680,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-9",
     track: "reading",
     day: 9,
-    tutor: "Mrs. Aji",
+    tutor: "M",
     title: "Learning Vacations",
     subtitle: "UNIT 6: Tourism · Vocabulary Matching · True/False/Not Given",
     overview:
@@ -2861,7 +2861,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-10",
     track: "reading",
     day: 10,
-    tutor: "Mrs. Aji",
+    tutor: "M",
     title: "Uses of Leisure Time",
     subtitle: "Paragraph Matching · Multiple Choice · Vocabulary (20 words)",
     overview:
@@ -3046,7 +3046,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     title: "Social Networking",
     subtitle:
       "Paragraph Matching & Summary Completion — online social networks",
-    tutor: "Mrs. Aji",
+    tutor: "M",
     overview:
       "Teks ini membahas fenomena jejaring sosial online: asal-usul dan pertumbuhannya, statistik penggunaan global per negara, manfaat positif bagi individu dan bisnis, serta dampak negatif terutama bagi remaja. Latihan mencakup paragraph matching dan summary completion dari word bank.",
     passage: [
@@ -3198,8 +3198,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
         id: "adv-r11-sc6",
         type: "multiple-choice",
         section: "part2",
-        question:
-          "[Q6] There are _____ advantages to these sites.",
+        question: "[Q6] There are _____ advantages to these sites.",
         options: [
           "A. exploded",
           "B. statistics",
@@ -3230,8 +3229,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
         id: "adv-r11-sc8",
         type: "multiple-choice",
         section: "part2",
-        question:
-          "[Q8] People _____ professional opportunities.",
+        question: "[Q8] People _____ professional opportunities.",
         options: ["A. undergo", "B. pursue", "C. exchanged", "D. susceptible"],
         correctAnswer: "B. pursue",
         reason:
@@ -3247,6 +3245,357 @@ export const advanceReadingLessons: ModuleLesson[] = [
         correctAnswer: "C. interact",
         reason:
           "Paragraph D: 'As people spend more time interacting with each other online, they spend less time in face-to-face communication.'",
+      },
+    ],
+  },
+  {
+    id: "adv-reading-12",
+    track: "reading",
+    day: 12,
+    title: "Teen Court in Texas",
+    subtitle: "Reading Passage — juvenile justice and peer trials",
+    tutor: "Mrs. Aji",
+    overview:
+      "Teks ini membahas sistem 'Teen Court' di Odessa, Texas, di mana remaja diadili oleh sesama remaja mereka. Dimulai dari akar historis prinsip 'juri dari sesama' yang berasal dari Magna Carta 1215, teks menjelaskan bagaimana sistem ini berkembang di AS dan mengapa tingkat residivisme sangat rendah (di bawah 5%). Latihan mencakup True/False/Not Given, pilihan ganda, dan vocabulary matching.",
+    passage: [
+      `In the small city of Odessa, western Texas, local judicial authorities have reinterpreted the old legal principle that offenders should be tried by a jury of their peers. Odessa's "Teen Court" is one of over a thousand such courts in the USA, where teens themselves are responsible for trying and sentencing teenage offenders. And the results are very encouraging.`,
+      `(Di kota kecil Odessa, Texas barat, otoritas peradilan setempat telah menafsirkan ulang prinsip hukum lama bahwa para pelanggar harus diadili oleh juri dari kalangan sesama mereka. "Teen Court" Odessa adalah salah satu dari lebih dari seribu pengadilan semacam itu di AS, di mana para remaja sendiri bertanggung jawab untuk mengadili dan menjatuhkan hukuman bagi pelanggar remaja. Dan hasilnya sangat menggembirakan.)`,
+      `In the year 1215, the Norman barons of England drew up an ultimatum that they presented to King John and forced him to sign. Among other things, the document, called Magna Carta, the great charter, formally recognized basic human rights, and re-established one of the fundamental principles of English law — that a man should be judged by his peers, or equals. Trial by a jury has been a key feature of English law ever since.`,
+      `(Pada tahun 1215, para baron Norman di Inggris menyusun ultimatum yang mereka serahkan kepada Raja John dan memaksanya untuk menandatanganinya. Dokumen yang disebut Magna Carta, piagam agung, secara resmi mengakui hak asasi manusia dasar dan menetapkan kembali salah satu prinsip fundamental hukum Inggris — bahwa seseorang harus diadili oleh sesama atau orang-orang yang setara. Pengadilan dengan juri telah menjadi fitur utama hukum Inggris sejak saat itu.)`,
+      `When Thomas Jefferson and others drew up the American Declaration of Independence in 1776, one of the complaints that they made was that the King of England had deprived Americans of their right to trial by jury. Twelve years later, this right was enshrined in Article III of the new Constitution of the United States, where it has remained ever since. But what is a jury of equals? Is a teenager, faced with a jury composed of people his parents' age, being judged by his peers? Most teens would answer "no".`,
+      `(Ketika Thomas Jefferson dan yang lainnya menyusun Deklarasi Kemerdekaan Amerika pada tahun 1776, salah satu keluhan yang mereka sampaikan adalah bahwa Raja Inggris telah merampas hak warga Amerika atas pengadilan dengan juri. Dua belas tahun kemudian, hak ini diabadikan dalam Pasal III Konstitusi baru Amerika Serikat. Namun apa itu juri yang setara? Apakah seorang remaja, yang dihadapkan dengan juri yang terdiri dari orang-orang seusia orang tuanya, diadili oleh sesama? Kebanyakan remaja akan menjawab "tidak".)`,
+      `The idea of "teen courts" has been around in the USA for many years. It was in the 1980s in Odessa that the Teen Court was first suggested. Realizing that many teenage offenders were alienated by a justice system organized and controlled by people of a different generation, the court in Odessa decided to let offenders opt to be tried by other teenagers.`,
+      `(Ide "teen courts" telah ada di AS selama bertahun-tahun. Pada tahun 1980-an di Odessa, Teen Court pertama kali disarankan. Menyadari bahwa banyak pelanggar remaja merasa terasing dari sistem keadilan yang diorganisir dan dikendalikan oleh orang-orang dari generasi yang berbeda, pengadilan di Odessa memutuskan untuk membiarkan para pelanggar memilih untuk diadili oleh remaja lain.)`,
+      `Many thousands of teens have since been tried by their peers in Odessa, and almost all agree that it was the right thing to do. Statistics confirm this, as rates of recidivism among teens tried in different Teen Courts are under 5% (compared to up to 50% with normal courts). Odessa's Teen Court is one of many now operating in the state of Texas, which in 1990 became the first American state to establish a state-wide organization to develop teen courts. Until the 1990s, the number of new courts increased slowly; but since the millennium, hundreds more cities all across the USA have seen that the system works, and have introduced it in their own community. In 2007, the idea crossed the Atlantic, with the opening of the first teen court in England, in Preston, Lancashire.`,
+      `(Ribuan remaja telah diadili oleh sesama mereka di Odessa sejak saat itu. Statistik mengkonfirmasi ini, karena tingkat residivisme di antara remaja yang diadili di berbagai Teen Court berada di bawah 5% (dibandingkan hingga 50% dengan pengadilan biasa). Texas pada tahun 1990 menjadi negara bagian Amerika pertama yang mendirikan organisasi di seluruh negara bagian untuk teen court. Sejak milenium, ratusan kota lagi di seluruh AS telah memperkenalkannya. Pada tahun 2007, ide ini menyeberangi Atlantik — teen court pertama di Inggris dibuka di Preston, Lancashire.)`,
+      `Teen courts operate in just the same way as a real court, the major difference being that the only professional in the process is the judge. Run by volunteers, the court sits every Tuesday evening under the control of a local judge, also a volunteer; proceedings are conducted as in a real court, with teenagers taking the roles of prosecution and defense: a panel of teens sits as jury, and it is they who propose the sentence they consider to be appropriate.`,
+      `(Teen court beroperasi dengan cara yang sama seperti pengadilan sungguhan, perbedaan utamanya adalah satu-satunya profesional dalam proses ini adalah hakim. Dijalankan oleh relawan, pengadilan bersidang setiap Selasa malam; remaja berperan sebagai jaksa penuntut dan pembela: sekelompok remaja duduk sebagai juri, dan merekalah yang mengusulkan hukuman yang mereka anggap sesuai.)`,
+      `While there is no possibility of an Odessa teen jury fining an offender or sending him or her to prison, there is a range of punishments available, including community service, driving classes, counseling and also jury service in the Teen Court. The range of sentences available reflects the type of offenses referred to the court, minor misdeeds such as traffic violations (including speeding), fighting, vandalism and intoxication. Furthermore, the Court only has the right to judge other teens who have (a) decided to plead guilty, and (b) agreed to be tried by their peers.`,
+      `(Tidak ada kemungkinan juri remaja Odessa mendenda atau mengirim pelanggar ke penjara, tetapi tersedia berbagai hukuman termasuk layanan komunitas, kelas mengemudi, konseling, dan layanan juri di Teen Court. Pengadilan hanya menangani pelanggaran ringan seperti pelanggaran lalu lintas, perkelahian, vandalisme, dan mabuk — dan hanya untuk remaja yang (a) mengaku bersalah dan (b) setuju diadili oleh sesama.)`,
+      `Teens who opt for trial by the Teen Court, thinking that it will be a soft option, are generally surprised. A Los Angeles teen jury recently sentenced 14-year-old Michael C. to 600 hours of community service for stealing a car stereo. Judge Jamie Corral, presiding, reduced the sentence to 200 hours, but Michael still had to spend a lot of his free time for six months doing community service as a gardener at Abraham Lincoln High School. "I didn't expect them to be so hard on me, but I deserved it," he said afterwards.`,
+      `(Remaja yang memilih Teen Court, berpikir itu akan menjadi pilihan yang mudah, umumnya terkejut. Juri remaja LA menghukum Michael C. (14 tahun) dengan 600 jam layanan komunitas karena mencuri radio mobil. Hakim Jamie Corral mengurangi hukuman menjadi 200 jam, tetapi Michael masih harus menghabiskan enam bulan sebagai tukang kebun di Abraham Lincoln High School. "Saya tidak menyangka mereka akan sekeras itu, tapi saya pantas mendapatkannya," katanya.)`,
+      `In 2022, there are well over 1,000 teen courts in operation across the United States, and the number is increasing month by month. Teens, judges and community leaders all agree that the system is good, and especially good at stopping young offenders going any further down the road to a life of crime. Evidence shows that young offenders are much more receptive to warnings and reprimands and punishments delivered by their peers, than to those delivered by "the authorities". Finally, in Odessa, teenage offenders have now contributed over 100,000 hours of community service to the city since the Teen Court was first set up. "We have found that the kids that are active in the Teen Court Program have less of a desire to drop out of school. They've found a purpose in their lives," says Tammy Hawkins, the project's coordinator.`,
+      `(Pada tahun 2022, ada lebih dari 1.000 teen court yang beroperasi di seluruh AS. Bukti menunjukkan bahwa pelanggar muda jauh lebih terbuka terhadap peringatan dan hukuman dari sesama daripada dari otoritas. Di Odessa, pelanggar remaja telah menyumbangkan lebih dari 100.000 jam layanan komunitas. "Kami menemukan bahwa anak-anak yang aktif dalam Program Teen Court memiliki keinginan yang lebih kecil untuk putus sekolah. Mereka telah menemukan tujuan dalam kehidupan mereka," kata Tammy Hawkins, koordinator proyek.)`,
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. A — Odessa, Texas: Teen Court = pengadilan di mana sesama remaja mengadili pelanggar muda; >1.000 di seluruh AS.",
+          "Para. B — Magna Carta (1215): Raja John dipaksa mengakui hak diadili oleh sesama (peers); prinsip fundamental hukum Inggris.",
+          "Para. C — Deklarasi Kemerdekaan AS (1776) → hak pengadilan juri diabadikan di Pasal III Konstitusi (12 tahun kemudian = 1788).",
+          "Para. D — Teen Court muncul di Odessa tahun 1980-an; pelanggar remaja merasa terasing dari sistem hukum yang dikendalikan orang dewasa.",
+          "Para. E — Statistik kunci: residivisme <5% di Teen Court vs hingga 50% di pengadilan biasa; Texas = negara bagian pertama (1990); Inggris pertama di Preston, Lancashire (2007).",
+          "Para. F — Cara kerja: hakim satu-satunya profesional; bersidang Selasa malam; remaja = jaksa, pembela, dan juri.",
+          "Para. G — Hukuman tersedia: layanan komunitas, kelas mengemudi, konseling; hanya pelanggaran ringan; harus mengaku bersalah.",
+          "Para. H — Contoh Michael C. (14 th): juri beri 600 jam → hakim kurangi jadi 200 jam (mencuri radio mobil).",
+          "Para. I — 2022: >1.000 teen court; pelanggar muda lebih receptive terhadap hukuman dari sesama; 100.000+ jam layanan di Odessa.",
+        ],
+      },
+
+      {
+        title: "Vocabulary — America's Teenage Courts (20 words)",
+        points: [
+          "offender (n.) — minor criminal, someone who is guilty of a crime — pelanggar",
+          "try (v.) — to judge (in a court of law) — mengadili",
+          "peer (n.) — person of similar situation, age, or standing — sesama, orang yang setara",
+          "deprive of (v.) — take away something from someone — mencabut, merampas",
+          "enshrine (v.) — formally include or protect in a law or document — mengabadikan secara resmi",
+          "alienate (v.) — marginalize; make someone feel isolated — mengasingkan, membuat terasing",
+          "recidivism (n.) — reoffending; committing the same crime again — residivisme",
+          "process (n.) — system; a series of steps or procedures — proses, sistem",
+          "prosecution (n.) — lawyers who accuse someone in court — jaksa penuntut",
+          "fine (n.) — financial punishment imposed by a court — denda",
+          "guilty (adj.) — opposite of innocent; having committed a crime — bersalah",
+          "judged (v.) — decided about after careful consideration — diadili, dinilai",
+          "forced (v.) — made to do something difficult, unpleasant, or unusual — dipaksa",
+          "jury (n.) — a group of people who decide guilty or not guilty in court — juri",
+          "defense / defence (n.) — the act of protecting someone from attack or accusation — pembelaan",
+          "violations (n.) — actions that break a law, agreement, or principle — pelanggaran",
+          "appropriate (adj.) — correct or suitable for a particular situation or purpose — sesuai, tepat",
+          "receptive (adj.) — willing to consider new ideas or listen to others' opinions — terbuka, mau menerima",
+          "punishment (n.) — something done in order to punish someone — hukuman",
+          "safer (adj.) — not in danger of being harmed, lost, or stolen — lebih aman",
+        ],
+      },
+    ],
+    exercises: [],
+  },
+
+  // ── Day 13 · Environmental Impacts of Logging ─────────────────────────
+  {
+    id: "adv-reading-13",
+    track: "reading",
+    day: 13,
+    tutor: "Mrs. Aji",
+    title: "Environmental Impacts of Logging",
+    subtitle:
+      "Unit 1: The Natural World — habitat loss, soil erosion, aquatic damage, and climate change",
+    overview:
+      "Teks akademik tentang dampak lingkungan industri penebangan hutan (logging): hilangnya habitat, kerusakan integritas tanah, kerusakan ekosistem perairan, polusi udara, hingga kontribusi besar terhadap perubahan iklim global. Latihan mencakup vocabulary matching dan paragraph matching.",
+    passage: [
+      `From shipping crates to paper bags, the logging industry supplies the raw materials for an array of products. However, this is not without untold harm to the environment. The damage includes habitat loss, pollution, and climate change, with the effects spanning the globe from the rain forests of Central Africa, Southeast Asia, and South America to the northern forests of Canada and Scandinavia. The effects of logging extend beyond just the felling of a swath of trees. Nutrients, water, and shelter for plants, animals, and microorganisms throughout the ecosystem are also lost; many life forms—both terrestrial and aquatic—are becoming endangered as forests vanish.`,
+      `(Dari peti pengiriman hingga kantong kertas, industri penebangan hutan menyuplai bahan baku untuk berbagai produk. Namun, hal ini tidak tanpa kerugian besar bagi lingkungan. Kerusakan tersebut mencakup hilangnya habitat, polusi, dan perubahan iklim, dengan dampak yang meluas ke seluruh penjuru dunia, dari hutan hujan Afrika Tengah, Asia Tenggara, dan Amerika Selatan hingga hutan utara Kanada dan Skandinavia. Dampak penebangan hutan melampaui sekadar penebangan sebidang pohon. Nutrisi, air, dan tempat berlindung bagi tumbuhan, hewan, dan mikroorganisme di seluruh ekosistem juga hilang; banyak bentuk kehidupan—baik yang hidup di darat maupun di air—menjadi terancam punah seiring menghilangnya hutan.)`,
+      `Trees protect the soil beneath them; thus, tree loss can affect soil integrity. For example, the rain forest floor, home to myriad plant life as well as insects, worms, reptiles and amphibians, and small mammals, relies on a dense canopy of branches and leaves to keep it healthy and intact. The canopy prevents surface runoff by intercepting heavy rainfall so that water can drip down slowly onto the porous earth. Tree roots also stabilize the soil and help prevent erosion. In return, a healthy soil encourages root development and microbial activity, which contribute to tree growth and well-being. A major factor in logging-related soil damage comes from road building, with trucks and other heavy equipment compressing the spongy soil, creating furrows where water collects, and disrupting the underground water flow. Eventually, the topsoil wears away, leaving behind an infertile layer of rocks and hard clay.`,
+      `(Pohon-pohon melindungi tanah di bawahnya; dengan demikian, hilangnya pohon dapat memengaruhi integritas tanah. Sebagai contoh, lantai hutan hujan, yang merupakan rumah bagi beragam kehidupan tumbuhan serta serangga, cacing, reptil dan amfibi, serta mamalia kecil, bergantung pada kanopi ranting dan daun yang rapat untuk menjaganya tetap sehat dan utuh. Kanopi mencegah aliran permukaan dengan menangkap curah hujan lebat sehingga air dapat menetes perlahan ke tanah yang berpori. Akar pohon juga menstabilkan tanah dan membantu mencegah erosi. Faktor utama dalam kerusakan tanah akibat penebangan berasal dari pembangunan jalan, dengan truk dan peralatan berat lainnya yang menekan tanah yang berpori, membuat parit tempat air menggenang, dan mengganggu aliran air bawah tanah. Akhirnya, lapisan tanah atas terkikis, meninggalkan lapisan batuan dan tanah liat keras yang tidak subur.)`,
+      `Logging can also damage aquatic habitats. Vegetation along rivers and stream banks helps maintain steady water flow by blocking the erosion of soil and other residue, and tree shade inhibits the growth of algae. Removing trees obliterates these benefits. When the soil flows into waterways, the organic matter within it consumes more oxygen, which can lead to oxygen depletion in the water, killing fish and other aquatic life.`,
+      `(Penebangan hutan juga dapat merusak habitat perairan. Vegetasi di sepanjang tepian sungai membantu menjaga aliran air yang stabil dengan menghalangi erosi tanah dan residu lainnya, dan naungan pohon menghambat pertumbuhan alga. Menebang pohon menghilangkan manfaat-manfaat ini. Ketika tanah mengalir ke saluran air, materi organik di dalamnya mengonsumsi lebih banyak oksigen, yang dapat menyebabkan kekurangan oksigen dalam air, membunuh ikan dan kehidupan perairan lainnya.)`,
+      `Trees provide a natural defense against air pollution: they remove carbon dioxide from the atmosphere while they emit oxygen, and their leaves filter pollutants from the air. Cutting down trees keeps pollutants airborne, where they can mix with water vapor and form acid rain. Water quality in nearby streams and rivers also deteriorates as tree loss contributes to increased sedimentation.`,
+      `(Pohon-pohon menyediakan pertahanan alami terhadap polusi udara: mereka menyerap karbon dioksida dari atmosfer sambil memancarkan oksigen, dan daun-daun mereka menyaring polutan dari udara. Penebangan pohon membuat polutan tetap melayang di udara, di mana mereka dapat bercampur dengan uap air dan membentuk hujan asam. Kualitas air di sungai dan aliran di dekatnya juga memburuk karena hilangnya pohon berkontribusi pada peningkatan sedimentasi.)`,
+      `In a healthy forest ecosystem, trees draw moisture from the soil and release it into the atmosphere while they provide shade to lessen evaporation. Thus, deforestation impacts rainfall patterns, leading to flooding as well as drought and forest fires. Deforestation is responsible for about one-fifth of carbon dioxide emissions worldwide, making it a major contributor to climate change—in particular, global warming. In the Amazon basin alone, deforestation is responsible for millions of tons of carbon dioxide being released into the atmosphere annually. Some logging companies burn large tracts of forest just to facilitate access to one area—a practice that discharges even more carbon dioxide.`,
+      `(Dalam ekosistem hutan yang sehat, pohon-pohon menyerap kelembapan dari tanah dan melepaskannya ke atmosfer sambil memberikan keteduhan untuk mengurangi penguapan. Dengan demikian, deforestasi memengaruhi pola curah hujan, yang menyebabkan banjir serta kekeringan dan kebakaran hutan. Deforestasi bertanggung jawab atas sekitar seperlima emisi karbon dioksida di seluruh dunia, menjadikannya kontributor utama perubahan iklim—khususnya pemanasan global. Di cekungan Amazon saja, deforestasi bertanggung jawab atas jutaan ton karbon dioksida yang dilepaskan ke atmosfer setiap tahunnya. Beberapa perusahaan penebangan membakar areal hutan yang luas hanya untuk memudahkan akses ke satu area—praktik yang membuang bahkan lebih banyak karbon dioksida.)`,
+      `Forests, especially the tropical rain forests, are a vital natural resource with extensive biodiversity and irreplaceable wildlife habitats. More responsible logging practices would help ensure that they are protected for future generations.`,
+      `(Hutan, terutama hutan hujan tropis, merupakan sumber daya alam yang vital dengan keanekaragaman hayati yang luas dan habitat satwa liar yang tak tergantikan. Praktik penebangan yang lebih bertanggung jawab akan membantu memastikan bahwa hutan-hutan ini terlindungi untuk generasi mendatang.)`,
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. A — Industri logging menyuplai bahan baku berbagai produk, namun menyebabkan kerusakan lingkungan global: hilangnya habitat, polusi, perubahan iklim, dan kepunahan spesies darat maupun air.",
+          "Para. B — Pohon melindungi tanah; kanopi mencegah aliran permukaan; akar mencegah erosi. Pembangunan jalan untuk logging merusak tanah, mengganggu aliran air bawah tanah, dan mengikis lapisan tanah subur.",
+          "Para. C — Logging merusak habitat perairan: vegetasi tepi sungai menjaga aliran air dan mencegah pertumbuhan alga. Hilangnya pohon menyebabkan tanah masuk ke aliran air, menguras oksigen, dan membunuh ikan.",
+          "Para. D — Pohon menyerap CO₂ dan menyaring polutan udara. Penebangan pohon membuat polutan melayang di udara, bercampur dengan uap air, membentuk hujan asam, dan meningkatkan sedimentasi sungai.",
+          "Para. E — Pohon menjaga pola curah hujan. Deforestasi menyebabkan banjir, kekeringan, dan kebakaran hutan. Bertanggung jawab atas ≈1/5 emisi CO₂ global; di Amazon saja jutaan ton CO₂ dilepaskan tiap tahun.",
+          "Para. F — Hutan tropis adalah sumber daya vital dengan keanekaragaman hayati tinggi. Diperlukan praktik penebangan yang lebih bertanggung jawab untuk generasi mendatang.",
+        ],
+      },
+      {
+        title: "Key Vocabulary — 20 Words",
+        points: [
+          "aquatic (adj.) — living in the water — hidup di air",
+          "array (n.) — a large number, a collection — kumpulan besar, ragam",
+          "defense (n.) — protection — perlindungan",
+          "deforestation (n.) — the removal of trees from a large area — penggundulan hutan",
+          "environment (n.) — the natural world — lingkungan alam",
+          "erosion (n.) — loss of soil from action of water or wind — erosi tanah",
+          "extend (v.) — to reach past, get bigger — meluas, menjangkau",
+          "fell (v.) — to cut down — menebang",
+          "habitat (n.) — the natural area where a plant or animal lives — habitat",
+          "impact (n.) — a strong effect — dampak besar",
+          "inhibit (v.) — to prevent, slow down — menghambat",
+          "intercept (v.) — to catch — menangkap, memotong",
+          "logging (n.) — the cutting down of trees for commercial purposes — penebangan hutan",
+          "myriad (adj.) — very numerous — sangat banyak",
+          "nutrient (n.) — food; substance that provides nourishment — nutrisi",
+          "pollution (n.) — damage to air, water, etc. — polusi",
+          "stabilize (v.) — to keep from changing, maintain — menstabilkan",
+          "terrestrial (adj.) — living on the land — hidup di darat",
+          "vanish (v.) — to disappear — menghilang",
+          "vegetation (n.) — plants — vegetasi, tumbuhan",
+        ],
+      },
+      {
+        title: "Reading Strategy: Paragraph Matching",
+        points: [
+          "📌 Paragraph Matching = mencocokkan pernyataan/informasi dengan paragraf yang membahasnya.",
+          "",
+          "⚡ Strategi:",
+          "   1. Baca pertanyaan terlebih dahulu untuk mengetahui informasi apa yang dicari.",
+          "   2. Cari kata kunci dalam pertanyaan (e.g., 'weather', 'soil erosion', 'air pollution', 'fish').",
+          "   3. Scan setiap paragraf untuk menemukan kata kunci atau ide yang sesuai.",
+          "   4. Satu paragraf bisa menjadi jawaban untuk lebih dari satu pertanyaan.",
+          "",
+          "📌 Contoh dari teks:",
+          "   Q: 'How trees inhibit soil erosion' → Cari 'erosion', 'roots', 'stabilize' → Para. B",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Part 1: Vocabulary Matching (Q1–Q10) ─────────────────────────
+      {
+        id: "adv-r13-q1",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q1 — What does 'aquatic' mean?",
+        options: [
+          "A. living on the land",
+          "B. living in the water",
+          "C. very numerous",
+          "D. to disappear",
+        ],
+        correctAnswer: "B. living in the water",
+        reason:
+          "Aquatic (adj.) = living in or relating to water. Para. A: 'many life forms—both terrestrial and aquatic—are becoming endangered.'",
+      },
+      {
+        id: "adv-r13-q2",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q2 — What does 'terrestrial' mean?",
+        options: [
+          "A. living in the water",
+          "B. living on the land",
+          "C. a large number",
+          "D. protection",
+        ],
+        correctAnswer: "B. living on the land",
+        reason:
+          "Terrestrial (adj.) = living or occurring on land. Lawan kata dari aquatic. Para. A: 'both terrestrial and aquatic.'",
+      },
+      {
+        id: "adv-r13-q3",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q3 — What does 'erosion' mean?",
+        options: [
+          "A. damage to air or water",
+          "B. the cutting down of trees",
+          "C. loss of soil from action of water or wind",
+          "D. a strong effect",
+        ],
+        correctAnswer: "C. loss of soil from action of water or wind",
+        reason:
+          "Erosion (n.) = proses pengikisan tanah oleh air, angin, atau agen alam lainnya. Para. B: 'Tree roots also stabilize the soil and help prevent erosion.'",
+      },
+      {
+        id: "adv-r13-q4",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q4 — What does 'inhibit' mean?",
+        options: [
+          "A. to catch",
+          "B. to cut down",
+          "C. to prevent, slow down",
+          "D. to keep from changing",
+        ],
+        correctAnswer: "C. to prevent, slow down",
+        reason:
+          "Inhibit (v.) = to hinder or prevent. Para. C: 'tree shade inhibits the growth of algae.'",
+      },
+      {
+        id: "adv-r13-q5",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q5 — What does 'myriad' mean?",
+        options: [
+          "A. a strong effect",
+          "B. very numerous",
+          "C. irreplaceable",
+          "D. living in the water",
+        ],
+        correctAnswer: "B. very numerous",
+        reason:
+          "Myriad (adj.) = countless, very numerous. Para. B: 'home to myriad plant life as well as insects, worms...'",
+      },
+      {
+        id: "adv-r13-q6",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q6 — What does 'fell' mean?",
+        options: [
+          "A. to prevent",
+          "B. to extend",
+          "C. to stabilize",
+          "D. to cut down",
+        ],
+        correctAnswer: "D. to cut down",
+        reason:
+          "Fell (v.) = to cut down a tree. Para. A: 'beyond just the felling of a swath of trees.'",
+      },
+      {
+        id: "adv-r13-q7",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q7 — What does 'deforestation' mean?",
+        options: [
+          "A. damage to air, water, etc.",
+          "B. the natural area where a plant or animal lives",
+          "C. the removal of trees from a large area",
+          "D. loss of soil from action of water or wind",
+        ],
+        correctAnswer: "C. the removal of trees from a large area",
+        reason:
+          "Deforestation (n.) = penggundulan hutan dalam skala besar. Para. E: 'deforestation impacts rainfall patterns, leading to flooding...'",
+      },
+      {
+        id: "adv-r13-q8",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q8 — What does 'intercept' mean?",
+        options: [
+          "A. to stabilize",
+          "B. to catch",
+          "C. to disappear",
+          "D. to extend",
+        ],
+        correctAnswer: "B. to catch",
+        reason:
+          "Intercept (v.) = to stop and catch. Para. B: 'The canopy prevents surface runoff by intercepting heavy rainfall.'",
+      },
+      {
+        id: "adv-r13-q9",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q9 — What does 'stabilize' mean?",
+        options: [
+          "A. to cut down",
+          "B. to prevent",
+          "C. to keep from changing, maintain",
+          "D. to reach past, get bigger",
+        ],
+        correctAnswer: "C. to keep from changing, maintain",
+        reason:
+          "Stabilize (v.) = to make or become stable. Para. B: 'Tree roots also stabilize the soil and help prevent erosion.'",
+      },
+      {
+        id: "adv-r13-q10",
+        type: "multiple-choice",
+        section: "part1",
+        question: "Q10 — What does 'vanish' mean?",
+        options: [
+          "A. to extend",
+          "B. to catch",
+          "C. to keep from changing",
+          "D. to disappear",
+        ],
+        correctAnswer: "D. to disappear",
+        reason:
+          "Vanish (v.) = to disappear suddenly and completely. Para. A: 'many life forms...are becoming endangered as forests vanish.'",
+      },
+      // ── Part 2: Paragraph Matching (Q11–Q14) ─────────────────────────
+      {
+        id: "adv-r13-q11",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Q11 — Paragraph Matching\n\nWhich paragraph discusses the following information?\n\n'The impact of logging on the weather'",
+        options: ["A", "B", "C", "D", "E", "F"],
+        correctAnswer: "E",
+        reason:
+          "Para. E: 'deforestation impacts rainfall patterns, leading to flooding as well as drought and forest fires.' Paragraf ini membahas bagaimana deforestasi memengaruhi pola cuaca.",
+      },
+      {
+        id: "adv-r13-q12",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Q12 — Paragraph Matching\n\nWhich paragraph discusses the following information?\n\n'How trees inhibit soil erosion'",
+        options: ["A", "B", "C", "D", "E", "F"],
+        correctAnswer: "B",
+        reason:
+          "Para. B: 'Tree roots also stabilize the soil and help prevent erosion.' Paragraf ini membahas bagaimana pohon melindungi tanah dari erosi.",
+      },
+      {
+        id: "adv-r13-q13",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Q13 — Paragraph Matching\n\nWhich paragraph discusses the following information?\n\n'How deforestation contributes to air pollution'",
+        options: ["A", "B", "C", "D", "E", "F"],
+        correctAnswer: "D",
+        reason:
+          "Para. D: 'Cutting down trees keeps pollutants airborne, where they can mix with water vapor and form acid rain.' Paragraf ini membahas peran pohon dalam menyaring polusi udara.",
+      },
+      {
+        id: "adv-r13-q14",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Q14 — Paragraph Matching\n\nWhich paragraph discusses the following information?\n\n'The impact of erosion on fish'",
+        options: ["A", "B", "C", "D", "E", "F"],
+        correctAnswer: "C",
+        reason:
+          "Para. C: 'When the soil flows into waterways...oxygen depletion in the water, killing fish and other aquatic life.' Paragraf ini membahas dampak erosi terhadap ikan.",
       },
     ],
   },
