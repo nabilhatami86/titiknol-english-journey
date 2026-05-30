@@ -61,7 +61,10 @@ Evaluate against the criteria and return ONLY a raw JSON object — no markdown,
     {
       "label": "<e.g. 'Sentence 1 (MI)' or 'Sentence 2 (WHY)' or 'Sentence 1 (Paraphrase)'>",
       "status": "<'met' | 'missing' | 'incorrect'>",
-      "note": "<1 sentence: what the student did or what is missing>"
+      "note": "<1 sentence: what the student wrote or attempted>",
+      "why": "<only when status is 'missing' or 'incorrect': 1 sentence explaining specifically WHY it fails — quote the exact weak phrase from the student's text>",
+      "howToFix": "<only when status is 'missing' or 'incorrect': take the student's ACTUAL sentence and correct it minimally — keep their words and structure as much as possible, only fix what is wrong. Do NOT write a completely new sentence. Show the corrected version of what they wrote.>",
+      "tutorNote": "<only when status is 'missing' or 'incorrect': 1–2 sentences in BAHASA INDONESIA written like a tutor talking directly to the student — explain what they wrote, why it's off-track, and what direction they should go. Sound natural and encouraging, like a teacher guiding a student. E.g. 'Kamu sudah mencoba paraphrase, tapi kalimat ini terlalu melenceng dari topik utamanya. Yang seharusnya kamu bahas di sini adalah bagaimana globalisasi memengaruhi masyarakat, bukan hanya teknologi internet secara umum.'>"
     }
   ],
   "strengths": ["<strength 1>", "<strength 2>"],

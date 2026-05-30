@@ -23,7 +23,10 @@
       "WebFetch(domain:mini-ielts.com)",
       "WebFetch(domain:practicepteonline.com)",
       "Bash(curl -s \"http://mini-ielts.com/listening\")",
-      "Bash(curl -s \"http://mini-ielts.com/1509/listening/water-hyacinth\")"
+      "Bash(curl -s \"http://mini-ielts.com/1509/listening/water-hyacinth\")",
+      "PowerShell(cd \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\" && npx tsc --noEmit --project tsconfig.json 2>&1 | Where-Object { $_ -notmatch '\\\\.next' } | Select-Object -First 20)",
+      "PowerShell(cd \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\" && npx tsc --noEmit 2>&1 | Where-Object { $_ -notmatch '\\\\.next' })",
+      "PowerShell(cd \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\" && npx tsc --noEmit 2>&1 | Where-Object { $_ -notmatch '\\\\.next' } | Select-Object -First 20)"
     ],
     "additionalDirectories": [
       "c:\\Users\\muham\\Desktop\\vocab-for-train",
