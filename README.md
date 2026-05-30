@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TitikNol Journey — English Learning Platform
 
-## Getting Started
+Platform belajar bahasa Inggris lengkap berbasis Next.js dengan AI-powered feedback.
 
-First, run the development server:
+## Fitur Utama
+
+### Course Terstruktur
+- **TN Basic** — course pemula: grammar, reading, listening, speaking
+- **TN Intermediate** — course menengah: grammar, reading, listening, speaking, writing
+- **TN Advance** — course lanjutan: grammar, reading, listening, speaking, writing
+
+### Practice
+- **AI Writing Check** — analisis grammar, vocab, coherence, sentence structure dengan Groq AI; riwayat tersimpan di localStorage
+- **Guided Essay Writing** — tulis essay step by step (Intro → Body 1 → Body 2 → Conclusion) dengan AI review per section; feedback mencakup structure breakdown, grammar corrections, vocab suggestions, dan pro tips; cache localStorage agar progress tidak hilang saat reload
+- **Latihan Surat** — formal & informal letter dengan AI feedback
+- **IELTS Writing** — Task 1 & Task 2 dengan AI scoring dan feedback
+- **IELTS Reading** — 3 latihan Academic Reading buatan sendiri; masing-masing 3 passages × 40 soal; tipe soal: True/False/Not Given, Yes/No/Not Given, short answer, sentence completion
+- **IELTS Listening** — listening practice dengan audio
+- **General Listening** — BBC listening practice
+- **TOEFL Practice** — reading & practice soal
+- **Translate** — terjemahan instan
+
+### Referensi
+- **Vocabulary** — kamus vocab dengan kategori, sinonim, contoh kalimat, dan quiz
+- **Grammar Guide** — materi grammar lengkap dengan latihan dan penjelasan
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router, Turbopack)
+- **Styling**: Tailwind CSS v4
+- **AI**: Groq `llama-3.3-70b-versatile` — primary key + backup key fallback otomatis
+- **State**: Zustand + localStorage
+- **Language**: TypeScript
+
+## Setup
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Buat file `.env.local` dan isi API key:
+   ```env
+   GROQ_API_KEY=your_primary_groq_key
+   GROQ_API_KEY_BACKUP=your_backup_groq_key
+   ```
+
+3. Jalankan dev server:
+   ```bash
+   npm run dev
+   ```
+
+4. Buka [http://localhost:3000](http://localhost:3000)
+
+## Build
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Struktur AI Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Route | Fungsi |
+|---|---|
+| `/api/writing-check` | AI Writing Check — analisis teks bebas |
+| `/api/grammar-review` | Grammar correction detail |
+| `/api/essay-review` | Review per section essay (Intro / Body / Conclusion) |
+| `/api/letter-review` | Review surat formal & informal |
+| `/api/ielts-writing` | Scoring IELTS Writing Task 1 & 2 |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Semua route menggunakan `src/lib/callAI.ts` dengan fallback otomatis dari `GROQ_API_KEY` ke `GROQ_API_KEY_BACKUP`.

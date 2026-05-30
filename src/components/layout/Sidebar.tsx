@@ -80,7 +80,8 @@ const navSections: { title: string; items: NavItem[] }[] = [
         label: "Writing Practice",
         icon: FileText,
         children: [
-          { href: "/practice/speaking", label: "AI Writing Practice", icon: PenLine },
+          { href: "/practice/writing", label: "AI Writing Practice", icon: PenLine },
+          { href: "/practice/essay-writing", label: "Guided Essay Writing", icon: BookOpenText },
           { href: "/practice/latihan-surat", label: "Latihan Surat", icon: FileText },
           { href: "/practice/ielts-writing", label: "IELTS Writing", icon: BarChart2 },
         ],
@@ -129,7 +130,7 @@ const navSections: { title: string; items: NavItem[] }[] = [
 ];
 
 const GROUP_PATHS: Record<string, string[]> = {
-  writing: ["/practice/speaking", "/practice/latihan-surat", "/practice/ielts-writing"],
+  writing: ["/practice/writing", "/practice/essay-writing", "/practice/latihan-surat", "/practice/ielts-writing"],
   vocab: ["/practice/vocab-trainer", "/tn-intermediate/vocab"],
   tn: ["/tn-basic-cource", "/tn-intermediate", "/tn-advance"],
   listening: ["/practice/ielts-listening", "/practice/ielts-tests", "/practice/general-listening"],

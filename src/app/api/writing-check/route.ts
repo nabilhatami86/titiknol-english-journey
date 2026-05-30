@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { callAI } from '@/lib/callAI';
 
 const PROMPT = (text: string) => `You are an expert English teacher and IELTS examiner. Analyze the student's English text below and return ONLY a raw JSON object — no markdown, no code fences, no explanation outside the JSON.
 
@@ -129,58 +130,6 @@ JSON structure (fill every field carefully):
   "rewriteSuggestion": "<polished native-level rewrite of the same content>"
 }`;
 
-// ─── Groq (LLaMA 3.3 70B) ────────────────────────────────────────────────────
-
-async function callGroq(text: string, apiKey: string) {
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
-      messages: [{ role: 'user', content: PROMPT(text) }],
-      temperature: 0.3,
-      max_tokens: 8192,
-    }),
-  });
-
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    if (res.status === 429) throw new Error('quota_exceeded');
-    throw new Error(err?.error?.message ?? `Groq error ${res.status}`);
-  }
-
-  const data = await res.json();
-  return data?.choices?.[0]?.message?.content ?? '';
-}
-
-// ─── Gemini ───────────────────────────────────────────────────────────────────
-
-async function callGemini(text: string, apiKey: string) {
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: PROMPT(text) }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 8192 },
-      }),
-    }
-  );
-
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    if (res.status === 429) throw new Error('quota_exceeded');
-    throw new Error(err?.error?.message ?? `Gemini error ${res.status}`);
-  }
-
-  const data = await res.json();
-  return data?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
-}
-
 // ─── Route Handler ────────────────────────────────────────────────────────────
 
 export async function POST(req: NextRequest) {
@@ -191,31 +140,15 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'too_short', message: 'Write at least 5 words.' }, { status: 400 });
   }
 
-  const groqKey   = process.env.GROQ_API_KEY;
-  const geminiKey = process.env.GEMINI_API_KEY;
-
-  if (!groqKey && !geminiKey) {
-    return NextResponse.json(
-      { error: 'no_api_key', message: 'No AI key configured. Add GROQ_API_KEY or GEMINI_API_KEY to .env.local' },
-      { status: 503 }
-    );
-  }
-
   try {
-    // Prefer Groq (faster, no billing required); fall back to Gemini
-    const raw = groqKey
-      ? await callGroq(text, groqKey)
-      : await callGemini(text, geminiKey!);
-
+    const raw = await callAI(PROMPT(text), 8192);
     const jsonMatch = raw.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
       return NextResponse.json({ error: 'parse_error', message: 'Could not parse AI response.' }, { status: 500 });
     }
-
     try {
       return NextResponse.json(JSON.parse(jsonMatch[0]));
     } catch {
-      // Response got cut off — try to shorten the text and retry with fewer sentences analysed
       return NextResponse.json(
         { error: 'parse_error', message: 'AI response was too long and got cut off. Try with a shorter text (under 150 words).' },
         { status: 500 }
@@ -223,12 +156,8 @@ export async function POST(req: NextRequest) {
     }
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    if (msg === 'quota_exceeded') {
-      return NextResponse.json(
-        { error: 'quota_exceeded', message: 'AI quota exceeded. Please wait a moment and try again.' },
-        { status: 429 }
-      );
-    }
+    if (msg === 'no_api_key') return NextResponse.json({ error: 'no_api_key', message: 'No AI key configured. Add GROQ_API_KEY to .env.local' }, { status: 503 });
+    if (msg === 'quota_exceeded') return NextResponse.json({ error: 'quota_exceeded', message: 'AI quota exceeded. Please wait a moment and try again.' }, { status: 429 });
     return NextResponse.json({ error: 'server_error', message: msg }, { status: 500 });
   }
 }

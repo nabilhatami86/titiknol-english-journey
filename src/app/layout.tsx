@@ -17,12 +17,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'VocabMaster - Learn English Vocabulary',
-    template: '%s | VocabMaster',
+    default: 'TitikNol Journey - English Learning Platform',
+    template: '%s | TitikNol Journey',
   },
   description:
-    'Master English vocabulary with interactive lessons, quizzes, and daily practice. Perfect for beginners and intermediate learners.',
-  keywords: ['english vocabulary', 'learn english', 'vocabulary practice', 'english words'],
+    'Platform belajar bahasa Inggris lengkap — vocab, grammar, IELTS writing & listening, speaking practice, dan TN Basic / Intermediate / Advance course.',
+  keywords: [
+    'belajar bahasa inggris',
+    'titiknol journey',
+    'ielts preparation',
+    'english grammar',
+    'vocabulary practice',
+    'english course',
+    'toefl practice',
+  ],
+  icons: {
+    icon: '/download.jpg',
+    shortcut: '/download.jpg',
+    apple: '/download.jpg',
+  },
 };
 
 export default function RootLayout({

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { callAI } from '@/lib/callAI';
 
 export type TaskType = 'task1' | 'task2';
 
@@ -147,47 +148,6 @@ Important for improvement steps:
 - Steps must directly address what was wrong in THIS specific essay
 - Target band is always current band + 0.5 (max 9.0)`;
 
-async function callGroq(taskType: TaskType, prompt: string, essay: string, apiKey: string) {
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
-    body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
-      messages: [{ role: 'user', content: buildPrompt(taskType, prompt, essay) }],
-      temperature: 0.2,
-      max_tokens: 5000,
-    }),
-  });
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    if (res.status === 429) throw new Error('quota_exceeded');
-    throw new Error(err?.error?.message ?? `Groq error ${res.status}`);
-  }
-  const data = await res.json();
-  return data?.choices?.[0]?.message?.content ?? '';
-}
-
-async function callGemini(taskType: TaskType, prompt: string, essay: string, apiKey: string) {
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: buildPrompt(taskType, prompt, essay) }] }],
-        generationConfig: { temperature: 0.2, maxOutputTokens: 4000 },
-      }),
-    }
-  );
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    if (res.status === 429) throw new Error('quota_exceeded');
-    throw new Error(err?.error?.message ?? `Gemini error ${res.status}`);
-  }
-  const data = await res.json();
-  return data?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
-}
-
 export async function POST(req: NextRequest) {
   const body = await req.json();
   const essay: string = (body?.essay ?? '').trim();
@@ -202,29 +162,17 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const groqKey = process.env.GROQ_API_KEY;
-  const geminiKey = process.env.GEMINI_API_KEY;
-
-  if (!groqKey && !geminiKey) {
-    return NextResponse.json({ error: 'no_api_key', message: 'Tidak ada API key dikonfigurasi.' }, { status: 503 });
-  }
-
   try {
-    const raw = groqKey
-      ? await callGroq(taskType, prompt, essay, groqKey)
-      : await callGemini(taskType, prompt, essay, geminiKey!);
-
+    const raw = await callAI(buildPrompt(taskType, prompt, essay), 5000);
     const jsonMatch = raw.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
       return NextResponse.json({ error: 'parse_error', message: 'Gagal membaca respons AI.' }, { status: 500 });
     }
-
     return NextResponse.json(JSON.parse(jsonMatch[0]));
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    if (msg === 'quota_exceeded') {
-      return NextResponse.json({ error: 'quota_exceeded', message: 'Kuota AI habis, coba lagi sebentar.' }, { status: 429 });
-    }
+    if (msg === 'no_api_key') return NextResponse.json({ error: 'no_api_key', message: 'Tidak ada API key dikonfigurasi.' }, { status: 503 });
+    if (msg === 'quota_exceeded') return NextResponse.json({ error: 'quota_exceeded', message: 'Kuota AI habis, coba lagi sebentar.' }, { status: 429 });
     return NextResponse.json({ error: 'server_error', message: msg }, { status: 500 });
   }
 }
