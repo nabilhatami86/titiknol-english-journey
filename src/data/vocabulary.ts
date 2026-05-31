@@ -1324,25 +1324,6 @@ export const vocabulary: VocabWord[] = [
     pronunciation: { text: "KWEER-ee", ipa: "/ˈkwɪə.ri/" },
     difficulty: "intermediate",
   },
-  {
-    id: "v32",
-    word: "Improve",
-    slug: "improve",
-    partOfSpeech: "verb",
-    categories: ["verbs", "daily"],
-    meaning: {
-      en: "To make or become better",
-      id: "Meningkatkan / Memperbaiki",
-    },
-    examples: [
-      "I want to improve my English skills.",
-      "Regular exercise will improve your health.",
-    ],
-    synonyms: ["enhance", "better", "refine"],
-    antonyms: ["worsen", "deteriorate"],
-    pronunciation: { text: "im-PROOV", ipa: "/ɪmˈpruːv/" },
-    difficulty: "basic",
-  },
 
   // ──────────────────────────────────────────────────────────────
   //  ADJECTIVES  (30 words)
@@ -1842,25 +1823,6 @@ export const vocabulary: VocabWord[] = [
     synonyms: ["detailed", "comprehensive", "meticulous", "exhaustive"],
     antonyms: ["superficial", "careless", "cursory"],
     pronunciation: { text: "THUR-oh", ipa: "/ˈθʌr.ə/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adj26",
-    word: "Reliable",
-    slug: "reliable",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "daily", "work-tech"],
-    meaning: {
-      en: "Consistently good in quality or performance; able to be trusted",
-      id: "Dapat diandalkan",
-    },
-    examples: [
-      "He is a very reliable employee.",
-      "We need a reliable internet connection.",
-    ],
-    synonyms: ["dependable", "trustworthy", "consistent"],
-    antonyms: ["unreliable", "untrustworthy"],
-    pronunciation: { text: "ri-LY-uh-bul", ipa: "/rɪˈlaɪ.ə.bəl/" },
     difficulty: "intermediate",
   },
 
@@ -3065,7 +3027,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["hand in homework", "turn in work"],
     antonyms: [],
-    pronunciation: { text: "sub-MIT thee uh-SIGN-ment", ipa: "/səbˈmɪt ði əˈsaɪn.mənt/" },
+    pronunciation: {
+      text: "sub-MIT thee uh-SIGN-ment",
+      ipa: "/səbˈmɪt ði əˈsaɪn.mənt/",
+    },
     difficulty: "basic",
   },
   {
@@ -3105,7 +3070,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["request permission"],
     antonyms: [],
-    pronunciation: { text: "ask for per-MI-shun", ipa: "/æsk fɔːr pərˈmɪʃ.ən/" },
+    pronunciation: {
+      text: "ask for per-MI-shun",
+      ipa: "/æsk fɔːr pərˈmɪʃ.ən/",
+    },
     difficulty: "basic",
   },
   {
@@ -3385,7 +3353,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["say it again", "repeat please"],
     antonyms: [],
-    pronunciation: { text: "kud yoo ri-PEET that", ipa: "/kʊd juː rɪˈpiːt ðæt/" },
+    pronunciation: {
+      text: "kud yoo ri-PEET that",
+      ipa: "/kʊd juː rɪˈpiːt ðæt/",
+    },
     difficulty: "basic",
   },
   {
@@ -3405,7 +3376,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["stop for tonight", "go to bed"],
     antonyms: [],
-    pronunciation: { text: "lets kawl it uh nite", ipa: "/lets kɔːl ɪt ə naɪt/" },
+    pronunciation: {
+      text: "lets kawl it uh nite",
+      ipa: "/lets kɔːl ɪt ə naɪt/",
+    },
     difficulty: "basic",
   },
   // ──────────────────────────────────────────────────────────────
@@ -3451,7 +3425,10 @@ export const vocabulary: VocabWord[] = [
     slug: "raise-your-hand",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To lift your hand to ask or answer a question", id: "Angkat tangan" },
+    meaning: {
+      en: "To lift your hand to ask or answer a question",
+      id: "Angkat tangan",
+    },
     examples: [
       "Raise your hand if you know the answer.",
       "Please raise your hand before speaking.",
@@ -3468,7 +3445,10 @@ export const vocabulary: VocabWord[] = [
     slug: "may-i-go-to-the-restroom",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Politely asking permission to use the bathroom", id: "Boleh saya ke toilet?" },
+    meaning: {
+      en: "Politely asking permission to use the bathroom",
+      id: "Boleh saya ke toilet?",
+    },
     examples: [
       "Excuse me, may I go to the restroom?",
       "May I go to the restroom, please?",
@@ -3476,7 +3456,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["can I use the bathroom?"],
     antonyms: [],
-    pronunciation: { text: "may ai goh tu thee REST-room", ipa: "/meɪ aɪ ɡoʊ tuː ðə ˈrest.ruːm/" },
+    pronunciation: {
+      text: "may ai goh tu thee REST-room",
+      ipa: "/meɪ aɪ ɡoʊ tuː ðə ˈrest.ruːm/",
+    },
     difficulty: "basic",
   },
   {
@@ -3485,7 +3468,10 @@ export const vocabulary: VocabWord[] = [
     slug: "i-dont-understand",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Expressing that something is not clear", id: "Saya tidak mengerti" },
+    meaning: {
+      en: "Expressing that something is not clear",
+      id: "Saya tidak mengerti",
+    },
     examples: [
       "Sorry, I don't understand this question.",
       "I don't understand, can you explain again?",
@@ -3493,7 +3479,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["I don't get it", "I'm confused"],
     antonyms: ["I understand", "I got it"],
-    pronunciation: { text: "ai dohnt un-der-STAND", ipa: "/aɪ doʊnt ˌʌn.dɚˈstænd/" },
+    pronunciation: {
+      text: "ai dohnt un-der-STAND",
+      ipa: "/aɪ doʊnt ˌʌn.dɚˈstænd/",
+    },
     difficulty: "basic",
   },
   {
@@ -3502,7 +3491,10 @@ export const vocabulary: VocabWord[] = [
     slug: "can-you-repeat-that",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking someone to say something again", id: "Bisa diulang?" },
+    meaning: {
+      en: "Asking someone to say something again",
+      id: "Bisa diulang?",
+    },
     examples: [
       "Sorry, can you repeat that? I didn't hear you.",
       "Can you repeat that more slowly?",
@@ -3510,7 +3502,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["say that again", "pardon?", "come again?"],
     antonyms: [],
-    pronunciation: { text: "kan yoo ree-PEET that", ipa: "/kæn juː rɪˈpiːt ðæt/" },
+    pronunciation: {
+      text: "kan yoo ree-PEET that",
+      ipa: "/kæn juː rɪˈpiːt ðæt/",
+    },
     difficulty: "basic",
   },
   {
@@ -3519,7 +3514,10 @@ export const vocabulary: VocabWord[] = [
     slug: "work-in-pairs",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To work together with one partner", id: "Kerja berdua / Berpasangan" },
+    meaning: {
+      en: "To work together with one partner",
+      id: "Kerja berdua / Berpasangan",
+    },
     examples: [
       "For this activity, work in pairs.",
       "Let's work in pairs for the speaking practice.",
@@ -3553,7 +3551,10 @@ export const vocabulary: VocabWord[] = [
     slug: "how-do-you-spell-it",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking someone to spell a word letter by letter", id: "Bagaimana mengejanya?" },
+    meaning: {
+      en: "Asking someone to spell a word letter by letter",
+      id: "Bagaimana mengejanya?",
+    },
     examples: [
       "How do you spell your name?",
       "How do you spell 'environment'?",
@@ -3561,7 +3562,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["can you spell that?"],
     antonyms: [],
-    pronunciation: { text: "how doo yoo spel it", ipa: "/haʊ duː juː spɛl ɪt/" },
+    pronunciation: {
+      text: "how doo yoo spel it",
+      ipa: "/haʊ duː juː spɛl ɪt/",
+    },
     difficulty: "basic",
   },
   {
@@ -3570,7 +3574,10 @@ export const vocabulary: VocabWord[] = [
     slug: "whos-absent-today",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking who is not present in class", id: "Siapa yang tidak hadir hari ini?" },
+    meaning: {
+      en: "Asking who is not present in class",
+      id: "Siapa yang tidak hadir hari ini?",
+    },
     examples: [
       "Who's absent today? Anyone missing?",
       "The teacher asked, 'Who's absent today?'",
@@ -3578,7 +3585,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["who's missing today?"],
     antonyms: ["everyone is present"],
-    pronunciation: { text: "hooz AB-sunt tuh-DAY", ipa: "/huːz ˈæb.sənt təˈdeɪ/" },
+    pronunciation: {
+      text: "hooz AB-sunt tuh-DAY",
+      ipa: "/huːz ˈæb.sənt təˈdeɪ/",
+    },
     difficulty: "basic",
   },
   {
@@ -3587,7 +3597,10 @@ export const vocabulary: VocabWord[] = [
     slug: "the-deadline-is-tomorrow",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "The last day to submit something is tomorrow", id: "Batas waktunya besok" },
+    meaning: {
+      en: "The last day to submit something is tomorrow",
+      id: "Batas waktunya besok",
+    },
     examples: [
       "Hurry up, the deadline is tomorrow!",
       "The deadline is tomorrow, have you finished?",
@@ -3595,7 +3608,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["due tomorrow", "must be done by tomorrow"],
     antonyms: [],
-    pronunciation: { text: "thee DED-line iz tuh-MAH-roh", ipa: "/ðə ˈdɛd.laɪn ɪz təˈmɒr.oʊ/" },
+    pronunciation: {
+      text: "thee DED-line iz tuh-MAH-roh",
+      ipa: "/ðə ˈdɛd.laɪn ɪz təˈmɒr.oʊ/",
+    },
     difficulty: "basic",
   },
   {
@@ -3604,7 +3620,10 @@ export const vocabulary: VocabWord[] = [
     slug: "lets-have-a-group-discussion",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To discuss together in a group", id: "Ayo diskusi kelompok" },
+    meaning: {
+      en: "To discuss together in a group",
+      id: "Ayo diskusi kelompok",
+    },
     examples: [
       "Let's have a group discussion about this topic.",
       "The teacher told us to have a group discussion.",
@@ -3612,7 +3631,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["discuss together", "have a meeting"],
     antonyms: [],
-    pronunciation: { text: "lets hav uh groop dis-KUH-shun", ipa: "/lets hæv ə ɡruːp dɪˈskʌʃ.ən/" },
+    pronunciation: {
+      text: "lets hav uh groop dis-KUH-shun",
+      ipa: "/lets hæv ə ɡruːp dɪˈskʌʃ.ən/",
+    },
     difficulty: "basic",
   },
 
@@ -3625,7 +3647,10 @@ export const vocabulary: VocabWord[] = [
     slug: "whose-turn-is-it",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking who should do something next", id: "Giliran siapa?" },
+    meaning: {
+      en: "Asking who should do something next",
+      id: "Giliran siapa?",
+    },
     examples: [
       "Whose turn is it to clean the room?",
       "Whose turn is it to take out the trash?",
@@ -3642,7 +3667,10 @@ export const vocabulary: VocabWord[] = [
     slug: "can-i-borrow",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking to use something temporarily", id: "Boleh pinjam ___?" },
+    meaning: {
+      en: "Asking to use something temporarily",
+      id: "Boleh pinjam ___?",
+    },
     examples: [
       "Can I borrow your charger?",
       "Can I borrow some money? I'll pay you back.",
@@ -3727,7 +3755,10 @@ export const vocabulary: VocabWord[] = [
     slug: "set-the-alarm",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To set a wake-up alarm on your phone/clock", id: "Pasang alarm" },
+    meaning: {
+      en: "To set a wake-up alarm on your phone/clock",
+      id: "Pasang alarm",
+    },
     examples: [
       "Don't forget to set the alarm for 5 a.m.",
       "I already set the alarm, don't worry.",
@@ -3778,7 +3809,10 @@ export const vocabulary: VocabWord[] = [
     slug: "i-overslept",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Slept longer than intended and woke up late", id: "Ketiduran / Kesiangan" },
+    meaning: {
+      en: "Slept longer than intended and woke up late",
+      id: "Ketiduran / Kesiangan",
+    },
     examples: [
       "Sorry I'm late, I overslept.",
       "I overslept and missed the morning class.",
@@ -3850,7 +3884,10 @@ export const vocabulary: VocabWord[] = [
     slug: "can-i-get-the-bill",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking for the check/total payment", id: "Minta bonnya / Mau bayar" },
+    meaning: {
+      en: "Asking for the check/total payment",
+      id: "Minta bonnya / Mau bayar",
+    },
     examples: [
       "Excuse me, can I get the bill?",
       "Can I get the bill, please? We're in a hurry.",
@@ -3867,7 +3904,10 @@ export const vocabulary: VocabWord[] = [
     slug: "is-there-any-left",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking if something is still available", id: "Masih ada ___ nggak?" },
+    meaning: {
+      en: "Asking if something is still available",
+      id: "Masih ada ___ nggak?",
+    },
     examples: [
       "Is there any fried chicken left?",
       "Is there any hot water left?",
@@ -3875,7 +3915,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["do you still have", "is ___ available?"],
     antonyms: ["it's sold out", "it's finished"],
-    pronunciation: { text: "iz ther EH-nee ___ left", ipa: "/ɪz ðɛr ˈɛn.i ___ lɛft/" },
+    pronunciation: {
+      text: "iz ther EH-nee ___ left",
+      ipa: "/ɪz ðɛr ˈɛn.i ___ lɛft/",
+    },
     difficulty: "basic",
   },
   {
@@ -3884,7 +3927,10 @@ export const vocabulary: VocabWord[] = [
     slug: "keep-the-change",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Telling someone they don't need to give back extra money", id: "Kembaliannya ambil aja / Nggak usah kembalian" },
+    meaning: {
+      en: "Telling someone they don't need to give back extra money",
+      id: "Kembaliannya ambil aja / Nggak usah kembalian",
+    },
     examples: [
       "Here's 50,000. Keep the change.",
       "Keep the change, it's fine.",
@@ -3901,7 +3947,10 @@ export const vocabulary: VocabWord[] = [
     slug: "its-on-me",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "I will pay for it (treating someone)", id: "Aku yang traktir / Aku yang bayar" },
+    meaning: {
+      en: "I will pay for it (treating someone)",
+      id: "Aku yang traktir / Aku yang bayar",
+    },
     examples: [
       "Don't worry about the bill, it's on me.",
       "Lunch is on me today!",
@@ -3918,7 +3967,10 @@ export const vocabulary: VocabWord[] = [
     slug: "lets-split-the-bill",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To divide the payment equally", id: "Patungan / Bayar sendiri-sendiri" },
+    meaning: {
+      en: "To divide the payment equally",
+      id: "Patungan / Bayar sendiri-sendiri",
+    },
     examples: [
       "Let's split the bill, it's fair.",
       "Should we split the bill or pay separately?",
@@ -3952,7 +4004,10 @@ export const vocabulary: VocabWord[] = [
     slug: "make-it-spicy",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Requesting food to be made with chili/spice", id: "Bikin pedas ya" },
+    meaning: {
+      en: "Requesting food to be made with chili/spice",
+      id: "Bikin pedas ya",
+    },
     examples: [
       "I want fried noodles, make it spicy please!",
       "Can you make it extra spicy?",
@@ -3969,7 +4024,10 @@ export const vocabulary: VocabWord[] = [
     slug: "for-here-or-to-go",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking if someone wants to eat at the place or take it away", id: "Makan di sini atau dibungkus?" },
+    meaning: {
+      en: "Asking if someone wants to eat at the place or take it away",
+      id: "Makan di sini atau dibungkus?",
+    },
     examples: [
       "For here or to go?",
       "I'll have it to go, please.",
@@ -3977,7 +4035,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["dine in or takeaway?", "eat here or take it home?"],
     antonyms: [],
-    pronunciation: { text: "for heer or tuh goh", ipa: "/fɔːr hɪr ɔːr tuː ɡoʊ/" },
+    pronunciation: {
+      text: "for heer or tuh goh",
+      ipa: "/fɔːr hɪr ɔːr tuː ɡoʊ/",
+    },
     difficulty: "basic",
   },
 
@@ -3990,7 +4051,10 @@ export const vocabulary: VocabWord[] = [
     slug: "whats-up",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Informal greeting / asking what's happening", id: "Apa kabar? / Lagi ngapain?" },
+    meaning: {
+      en: "Informal greeting / asking what's happening",
+      id: "Apa kabar? / Lagi ngapain?",
+    },
     examples: [
       "Hey, what's up? Long time no see!",
       "What's up, bro? You look tired.",
@@ -4007,7 +4071,10 @@ export const vocabulary: VocabWord[] = [
     slug: "no-way",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Expressing disbelief or strong refusal", id: "Masa?! / Nggak mungkin! / Serius?!" },
+    meaning: {
+      en: "Expressing disbelief or strong refusal",
+      id: "Masa?! / Nggak mungkin! / Serius?!",
+    },
     examples: [
       "She got a perfect score? No way!",
       "No way, I don't believe it!",
@@ -4024,7 +4091,10 @@ export const vocabulary: VocabWord[] = [
     slug: "just-kidding",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Said after joking to clarify it wasn't serious", id: "Cuma bercanda" },
+    meaning: {
+      en: "Said after joking to clarify it wasn't serious",
+      id: "Cuma bercanda",
+    },
     examples: [
       "Your hair looks terrible... just kidding, it looks great!",
       "I failed the exam... just kidding, I got an A!",
@@ -4041,7 +4111,10 @@ export const vocabulary: VocabWord[] = [
     slug: "im-just-messing-with-you",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "I'm joking around / teasing you", id: "Aku cuma becandain kamu" },
+    meaning: {
+      en: "I'm joking around / teasing you",
+      id: "Aku cuma becandain kamu",
+    },
     examples: [
       "Relax, I'm just messing with you!",
       "I'm just messing with you, don't take it seriously.",
@@ -4049,7 +4122,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["pulling your leg", "just kidding", "teasing you"],
     antonyms: ["I'm being serious"],
-    pronunciation: { text: "aim just MES-ing with yoo", ipa: "/aɪm dʒʌst ˈmɛs.ɪŋ wɪð juː/" },
+    pronunciation: {
+      text: "aim just MES-ing with yoo",
+      ipa: "/aɪm dʒʌst ˈmɛs.ɪŋ wɪð juː/",
+    },
     difficulty: "basic",
   },
   {
@@ -4075,7 +4151,10 @@ export const vocabulary: VocabWord[] = [
     slug: "are-you-serious",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking if someone really means what they said", id: "Serius? / Beneran?" },
+    meaning: {
+      en: "Asking if someone really means what they said",
+      id: "Serius? / Beneran?",
+    },
     examples: [
       "Are you serious? That actually happened?",
       "You're going to quit school? Are you serious?",
@@ -4109,7 +4188,10 @@ export const vocabulary: VocabWord[] = [
     slug: "lets-hang-out",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Let's spend time together / socialize", id: "Ayo nongkrong / Main yuk" },
+    meaning: {
+      en: "Let's spend time together / socialize",
+      id: "Ayo nongkrong / Main yuk",
+    },
     examples: [
       "Let's hang out after class.",
       "We should hang out this weekend.",
@@ -4121,29 +4203,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "basic",
   },
   {
-    id: "d42",
-    word: "I'm running late",
-    slug: "im-running-late",
-    partOfSpeech: "phrase",
-    categories: ["phrases", "daily"],
-    meaning: { en: "Going to be late / behind schedule", id: "Aku telat / Aku terlambat" },
-    examples: [
-      "Sorry, I'm running late. Start without me.",
-      "I'm running late because of the traffic.",
-      "I'm always running late in the morning.",
-    ],
-    synonyms: ["I'm behind schedule", "I'll be late"],
-    antonyms: ["I'm on time", "I'm early"],
-    pronunciation: { text: "aim RUN-ing layt", ipa: "/aɪm ˈrʌn.ɪŋ leɪt/" },
-    difficulty: "basic",
-  },
-  {
     id: "d43",
     word: "My bad",
     slug: "my-bad",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Informal way of admitting a mistake", id: "Salah gue / Maaf, salah aku" },
+    meaning: {
+      en: "Informal way of admitting a mistake",
+      id: "Salah gue / Maaf, salah aku",
+    },
     examples: [
       "Oh, my bad! I didn't mean to step on your foot.",
       "My bad, I forgot to save the file.",
@@ -4160,7 +4228,10 @@ export const vocabulary: VocabWord[] = [
     slug: "never-mind",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Forget about it / It's not important", id: "Lupakan / Nggak jadi / Sudahlah" },
+    meaning: {
+      en: "Forget about it / It's not important",
+      id: "Lupakan / Nggak jadi / Sudahlah",
+    },
     examples: [
       "Never mind, it's not important.",
       "What did you say? — Never mind, forget it.",
@@ -4177,7 +4248,10 @@ export const vocabulary: VocabWord[] = [
     slug: "i-have-no-idea",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "I don't know at all", id: "Nggak tau sama sekali / Nggak ada ide" },
+    meaning: {
+      en: "I don't know at all",
+      id: "Nggak tau sama sekali / Nggak ada ide",
+    },
     examples: [
       "I have no idea where my keys are.",
       "What's the answer? — I have no idea.",
@@ -4185,7 +4259,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["no clue", "beats me", "I don't know"],
     antonyms: ["I know", "I have an idea"],
-    pronunciation: { text: "ai hav noh ai-DEE-uh", ipa: "/aɪ hæv noʊ aɪˈdiː.ə/" },
+    pronunciation: {
+      text: "ai hav noh ai-DEE-uh",
+      ipa: "/aɪ hæv noʊ aɪˈdiː.ə/",
+    },
     difficulty: "basic",
   },
   {
@@ -4194,7 +4271,10 @@ export const vocabulary: VocabWord[] = [
     slug: "that-makes-sense",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "That is logical / understandable", id: "Oh iya ya / Masuk akal" },
+    meaning: {
+      en: "That is logical / understandable",
+      id: "Oh iya ya / Masuk akal",
+    },
     examples: [
       "Oh, that makes sense now!",
       "Your explanation makes sense, thanks.",
@@ -4211,7 +4291,10 @@ export const vocabulary: VocabWord[] = [
     slug: "im-down",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "I agree / I'm willing to do it (informal)", id: "Aku mau / Oke gas / Siap" },
+    meaning: {
+      en: "I agree / I'm willing to do it (informal)",
+      id: "Aku mau / Oke gas / Siap",
+    },
     examples: [
       "Wanna go eat? — Yeah, I'm down!",
       "Movie tonight? — I'm totally down.",
@@ -4228,7 +4311,10 @@ export const vocabulary: VocabWord[] = [
     slug: "ill-pass",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Politely declining an offer (informal)", id: "Nggak deh / Aku skip aja" },
+    meaning: {
+      en: "Politely declining an offer (informal)",
+      id: "Nggak deh / Aku skip aja",
+    },
     examples: [
       "Want to go jogging at 5 a.m.? — I'll pass.",
       "I'll pass on the spicy one, thanks.",
@@ -4245,7 +4331,10 @@ export const vocabulary: VocabWord[] = [
     slug: "what-a-mess",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Expressing that a situation or place is very disorganized", id: "Berantakan banget! / Kacau!" },
+    meaning: {
+      en: "Expressing that a situation or place is very disorganized",
+      id: "Berantakan banget! / Kacau!",
+    },
     examples: [
       "Look at your room, what a mess!",
       "The kitchen is such a mess after cooking.",
@@ -4262,7 +4351,10 @@ export const vocabulary: VocabWord[] = [
     slug: "by-the-way",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Used to introduce a new topic or add something", id: "Ngomong-ngomong / BTW" },
+    meaning: {
+      en: "Used to introduce a new topic or add something",
+      id: "Ngomong-ngomong / BTW",
+    },
     examples: [
       "By the way, have you eaten yet?",
       "By the way, the exam is next week.",
@@ -4279,7 +4371,10 @@ export const vocabulary: VocabWord[] = [
     slug: "long-time-no-see",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Haven't met or seen someone for a while", id: "Lama nggak ketemu!" },
+    meaning: {
+      en: "Haven't met or seen someone for a while",
+      id: "Lama nggak ketemu!",
+    },
     examples: [
       "Hey! Long time no see! How are you?",
       "Long time no see, where have you been?",
@@ -4296,7 +4391,10 @@ export const vocabulary: VocabWord[] = [
     slug: "take-it-easy",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Relax / Don't stress / Goodbye (casual)", id: "Santai aja / Tenang / Sampai jumpa" },
+    meaning: {
+      en: "Relax / Don't stress / Goodbye (casual)",
+      id: "Santai aja / Tenang / Sampai jumpa",
+    },
     examples: [
       "Don't worry too much, take it easy.",
       "Alright, see you later. Take it easy!",
@@ -4313,7 +4411,10 @@ export const vocabulary: VocabWord[] = [
     slug: "guess-what",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Used to start sharing exciting news", id: "Tau nggak! / Coba tebak!" },
+    meaning: {
+      en: "Used to start sharing exciting news",
+      id: "Tau nggak! / Coba tebak!",
+    },
     examples: [
       "Guess what! I passed the exam!",
       "Guess what happened to me today!",
@@ -4330,7 +4431,10 @@ export const vocabulary: VocabWord[] = [
     slug: "it-depends",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "The answer varies based on the situation", id: "Tergantung" },
+    meaning: {
+      en: "The answer varies based on the situation",
+      id: "Tergantung",
+    },
     examples: [
       "Are you coming tonight? — It depends on my schedule.",
       "Is it hard? — It depends on how much you study.",
@@ -4347,7 +4451,10 @@ export const vocabulary: VocabWord[] = [
     slug: "im-broke",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Having no money (informal)", id: "Lagi bokek / Nggak punya uang" },
+    meaning: {
+      en: "Having no money (informal)",
+      id: "Lagi bokek / Nggak punya uang",
+    },
     examples: [
       "I can't go out tonight, I'm broke.",
       "I'm broke until payday.",
@@ -4385,7 +4492,10 @@ export const vocabulary: VocabWord[] = [
     slug: "i-cant-wait",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Very excited about something coming soon", id: "Nggak sabar!" },
+    meaning: {
+      en: "Very excited about something coming soon",
+      id: "Nggak sabar!",
+    },
     examples: [
       "I can't wait for the holiday!",
       "I can't wait to see you!",
@@ -4402,7 +4512,10 @@ export const vocabulary: VocabWord[] = [
     slug: "im-fed-up",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Very annoyed or tired of something", id: "Udah muak / Bosan banget / Kesel" },
+    meaning: {
+      en: "Very annoyed or tired of something",
+      id: "Udah muak / Bosan banget / Kesel",
+    },
     examples: [
       "I'm fed up with this slow internet!",
       "I'm fed up with doing the same thing every day.",
@@ -4419,7 +4532,10 @@ export const vocabulary: VocabWord[] = [
     slug: "cheer-up",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Encouraging someone to feel happier", id: "Semangat! / Jangan sedih!" },
+    meaning: {
+      en: "Encouraging someone to feel happier",
+      id: "Semangat! / Jangan sedih!",
+    },
     examples: [
       "Cheer up! Everything will be fine.",
       "Come on, cheer up! Let's get ice cream.",
@@ -4436,7 +4552,10 @@ export const vocabulary: VocabWord[] = [
     slug: "im-so-proud-of-you",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Expressing pride in someone's achievement", id: "Aku bangga sama kamu" },
+    meaning: {
+      en: "Expressing pride in someone's achievement",
+      id: "Aku bangga sama kamu",
+    },
     examples: [
       "You passed the exam! I'm so proud of you!",
       "I'm so proud of you for not giving up.",
@@ -4444,7 +4563,10 @@ export const vocabulary: VocabWord[] = [
     ],
     synonyms: ["well done", "good job", "amazing work"],
     antonyms: [],
-    pronunciation: { text: "aim soh prowd uv yoo", ipa: "/aɪm soʊ praʊd ʌv juː/" },
+    pronunciation: {
+      text: "aim soh prowd uv yoo",
+      ipa: "/aɪm soʊ praʊd ʌv juː/",
+    },
     difficulty: "basic",
   },
   {
@@ -4453,7 +4575,10 @@ export const vocabulary: VocabWord[] = [
     slug: "thats-so-annoying",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Expressing irritation", id: "Nyebelin banget / Bikin kesel" },
+    meaning: {
+      en: "Expressing irritation",
+      id: "Nyebelin banget / Bikin kesel",
+    },
     examples: [
       "The mosquitoes are so annoying at night!",
       "That noise is so annoying, I can't focus.",
@@ -4491,7 +4616,10 @@ export const vocabulary: VocabWord[] = [
     slug: "grab",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To take or get something quickly", id: "Ambil / Mengambil (cepat)" },
+    meaning: {
+      en: "To take or get something quickly",
+      id: "Ambil / Mengambil (cepat)",
+    },
     examples: [
       "Let me grab my jacket first.",
       "Can you grab me a drink?",
@@ -4508,7 +4636,10 @@ export const vocabulary: VocabWord[] = [
     slug: "rush",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To move or do something very quickly", id: "Buru-buru / Ngebut" },
+    meaning: {
+      en: "To move or do something very quickly",
+      id: "Buru-buru / Ngebut",
+    },
     examples: [
       "I had to rush to class because I woke up late.",
       "Don't rush, we still have time.",
@@ -4525,7 +4656,10 @@ export const vocabulary: VocabWord[] = [
     slug: "skip",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To not do or not attend something", id: "Bolos / Melewati" },
+    meaning: {
+      en: "To not do or not attend something",
+      id: "Bolos / Melewati",
+    },
     examples: [
       "I want to skip class today, I'm too tired.",
       "Don't skip breakfast, it's important.",
@@ -4542,7 +4676,10 @@ export const vocabulary: VocabWord[] = [
     slug: "lend",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To give something temporarily to someone", id: "Meminjamkan" },
+    meaning: {
+      en: "To give something temporarily to someone",
+      id: "Meminjamkan",
+    },
     examples: [
       "Can you lend me your pen?",
       "I lent her my charger yesterday.",
@@ -4559,7 +4696,10 @@ export const vocabulary: VocabWord[] = [
     slug: "borrow",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To take something temporarily from someone", id: "Meminjam" },
+    meaning: {
+      en: "To take something temporarily from someone",
+      id: "Meminjam",
+    },
     examples: [
       "Can I borrow your laptop for an hour?",
       "I borrowed this book from the library.",
@@ -4576,7 +4716,10 @@ export const vocabulary: VocabWord[] = [
     slug: "complain",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To express dissatisfaction or annoyance", id: "Mengeluh / Ngeluh / Protes" },
+    meaning: {
+      en: "To express dissatisfaction or annoyance",
+      id: "Mengeluh / Ngeluh / Protes",
+    },
     examples: [
       "Stop complaining and start working!",
       "He always complains about the food.",
@@ -4593,7 +4736,10 @@ export const vocabulary: VocabWord[] = [
     slug: "gossip",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To talk about other people's private lives", id: "Bergosip / Ngomongin orang" },
+    meaning: {
+      en: "To talk about other people's private lives",
+      id: "Bergosip / Ngomongin orang",
+    },
     examples: [
       "They love to gossip during break time.",
       "Don't gossip about others behind their back.",
@@ -4610,7 +4756,10 @@ export const vocabulary: VocabWord[] = [
     slug: "chill",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To relax / hang out casually (slang)", id: "Santai / Nongkrong" },
+    meaning: {
+      en: "To relax / hang out casually (slang)",
+      id: "Santai / Nongkrong",
+    },
     examples: [
       "Let's just chill at the dorm tonight.",
       "I'm just chilling, nothing to do.",
@@ -4627,7 +4776,10 @@ export const vocabulary: VocabWord[] = [
     slug: "treat",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To pay for someone's food/drink as a gift", id: "Mentraktir" },
+    meaning: {
+      en: "To pay for someone's food/drink as a gift",
+      id: "Mentraktir",
+    },
     examples: [
       "I'll treat you to lunch today!",
       "He treated everyone to ice cream.",
@@ -4644,7 +4796,10 @@ export const vocabulary: VocabWord[] = [
     slug: "oversleep",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To sleep longer than planned", id: "Ketiduran / Kesiangan" },
+    meaning: {
+      en: "To sleep longer than planned",
+      id: "Ketiduran / Kesiangan",
+    },
     examples: [
       "I overslept and missed the bus.",
       "Don't oversleep, we have an early class tomorrow.",
@@ -4682,7 +4837,10 @@ export const vocabulary: VocabWord[] = [
     slug: "broke-adj",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily"],
-    meaning: { en: "Having no money (informal)", id: "Bokek / Nggak punya uang" },
+    meaning: {
+      en: "Having no money (informal)",
+      id: "Bokek / Nggak punya uang",
+    },
     examples: [
       "I'm completely broke this month.",
       "I can't buy it, I'm broke.",
@@ -4699,7 +4857,10 @@ export const vocabulary: VocabWord[] = [
     slug: "awkward",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily"],
-    meaning: { en: "Causing embarrassment or discomfort", id: "Canggung / Aneh / Nggak enak" },
+    meaning: {
+      en: "Causing embarrassment or discomfort",
+      id: "Canggung / Aneh / Nggak enak",
+    },
     examples: [
       "The silence was so awkward.",
       "It's awkward when you forget someone's name.",
@@ -4767,7 +4928,10 @@ export const vocabulary: VocabWord[] = [
     slug: "generous",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily"],
-    meaning: { en: "Willing to give and share freely", id: "Murah hati / Dermawan" },
+    meaning: {
+      en: "Willing to give and share freely",
+      id: "Murah hati / Dermawan",
+    },
     examples: [
       "She's so generous, she always shares her food.",
       "That's very generous of you, thank you!",
@@ -4801,7 +4965,10 @@ export const vocabulary: VocabWord[] = [
     slug: "clueless",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily"],
-    meaning: { en: "Having no idea about something", id: "Nggak ngerti sama sekali / Bingung" },
+    meaning: {
+      en: "Having no idea about something",
+      id: "Nggak ngerti sama sekali / Bingung",
+    },
     examples: [
       "I'm completely clueless about math.",
       "He looked clueless during the presentation.",
@@ -4818,7 +4985,10 @@ export const vocabulary: VocabWord[] = [
     slug: "ridiculous",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily"],
-    meaning: { en: "Extremely silly, unreasonable, or absurd", id: "Konyol / Nggak masuk akal / Lebay" },
+    meaning: {
+      en: "Extremely silly, unreasonable, or absurd",
+      id: "Konyol / Nggak masuk akal / Lebay",
+    },
     examples: [
       "That's ridiculous, no one would believe that!",
       "The price is ridiculous, it's way too expensive.",
@@ -4962,7 +5132,10 @@ export const vocabulary: VocabWord[] = [
     slug: "buy",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To get something by paying money for it", id: "Beli / Membeli" },
+    meaning: {
+      en: "To get something by paying money for it",
+      id: "Beli / Membeli",
+    },
     examples: [
       "I want to buy a new shirt.",
       "Can you buy some milk on the way home?",
@@ -4979,7 +5152,10 @@ export const vocabulary: VocabWord[] = [
     slug: "wait",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To stay in one place until something happens", id: "Menunggu / Tunggu" },
+    meaning: {
+      en: "To stay in one place until something happens",
+      id: "Menunggu / Tunggu",
+    },
     examples: [
       "Wait for me outside.",
       "I've been waiting for an hour.",
@@ -4996,7 +5172,10 @@ export const vocabulary: VocabWord[] = [
     slug: "tell",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To give someone information by speaking", id: "Memberitahu / Bilang" },
+    meaning: {
+      en: "To give someone information by speaking",
+      id: "Memberitahu / Bilang",
+    },
     examples: [
       "Tell me what happened.",
       "Don't tell anyone about this.",
@@ -5102,7 +5281,10 @@ export const vocabulary: VocabWord[] = [
     slug: "i-dont-know",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Used when you don't have the answer", id: "Saya tidak tahu / Nggak tau" },
+    meaning: {
+      en: "Used when you don't have the answer",
+      id: "Saya tidak tahu / Nggak tau",
+    },
     examples: [
       "I don't know what to say.",
       "I don't know where she went.",
@@ -5119,7 +5301,10 @@ export const vocabulary: VocabWord[] = [
     slug: "im-sorry",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Used to apologize or express regret", id: "Maaf / Saya minta maaf" },
+    meaning: {
+      en: "Used to apologize or express regret",
+      id: "Maaf / Saya minta maaf",
+    },
     examples: [
       "I'm sorry I'm late.",
       "I'm sorry, I didn't mean that.",
@@ -5136,7 +5321,10 @@ export const vocabulary: VocabWord[] = [
     slug: "can-you-help-me",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking someone for assistance", id: "Bisa kamu bantu aku?" },
+    meaning: {
+      en: "Asking someone for assistance",
+      id: "Bisa kamu bantu aku?",
+    },
     examples: [
       "Can you help me with this?",
       "Can you help me find my keys?",
@@ -5153,7 +5341,10 @@ export const vocabulary: VocabWord[] = [
     slug: "im-on-my-way",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "I'm coming / I'm heading there now", id: "Saya lagi otw / Lagi di jalan" },
+    meaning: {
+      en: "I'm coming / I'm heading there now",
+      id: "Saya lagi otw / Lagi di jalan",
+    },
     examples: [
       "Don't worry, I'm on my way.",
       "I'm on my way, be there in 5.",
@@ -5170,7 +5361,10 @@ export const vocabulary: VocabWord[] = [
     slug: "what-do-you-mean",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Asking someone to explain what they said", id: "Maksudnya apa? / Gimana?" },
+    meaning: {
+      en: "Asking someone to explain what they said",
+      id: "Maksudnya apa? / Gimana?",
+    },
     examples: [
       "What do you mean by that?",
       "What do you mean, it's cancelled?",
@@ -5193,7 +5387,10 @@ export const vocabulary: VocabWord[] = [
     slug: "challenge",
     partOfSpeech: "noun",
     categories: ["nouns", "daily", "work-tech"],
-    meaning: { en: "A difficult task or situation that requires effort and determination", id: "Tantangan" },
+    meaning: {
+      en: "A difficult task or situation that requires effort and determination",
+      id: "Tantangan",
+    },
     examples: [
       "Learning a new language is a great challenge.",
       "She faced many challenges in her career.",
@@ -5210,7 +5407,10 @@ export const vocabulary: VocabWord[] = [
     slug: "progress",
     partOfSpeech: "noun",
     categories: ["nouns", "daily", "work-tech"],
-    meaning: { en: "Forward movement toward a goal; development or improvement over time", id: "Kemajuan / Perkembangan" },
+    meaning: {
+      en: "Forward movement toward a goal; development or improvement over time",
+      id: "Kemajuan / Perkembangan",
+    },
     examples: [
       "She made great progress in her English.",
       "We need to track the project's progress.",
@@ -5227,7 +5427,10 @@ export const vocabulary: VocabWord[] = [
     slug: "decision",
     partOfSpeech: "noun",
     categories: ["nouns", "daily", "work-tech"],
-    meaning: { en: "A choice made after thinking about something carefully", id: "Keputusan" },
+    meaning: {
+      en: "A choice made after thinking about something carefully",
+      id: "Keputusan",
+    },
     examples: [
       "It was a difficult decision to make.",
       "She made the right decision.",
@@ -5244,7 +5447,10 @@ export const vocabulary: VocabWord[] = [
     slug: "purpose",
     partOfSpeech: "noun",
     categories: ["nouns", "daily"],
-    meaning: { en: "The reason for which something is done or created; a goal", id: "Tujuan / Maksud" },
+    meaning: {
+      en: "The reason for which something is done or created; a goal",
+      id: "Tujuan / Maksud",
+    },
     examples: [
       "What is the purpose of this meeting?",
       "She found her purpose in teaching.",
@@ -5261,7 +5467,10 @@ export const vocabulary: VocabWord[] = [
     slug: "resource",
     partOfSpeech: "noun",
     categories: ["nouns", "work-tech", "daily"],
-    meaning: { en: "A supply of something useful; materials or assets available to help achieve a goal", id: "Sumber daya / Sumber" },
+    meaning: {
+      en: "A supply of something useful; materials or assets available to help achieve a goal",
+      id: "Sumber daya / Sumber",
+    },
     examples: [
       "Time is our most valuable resource.",
       "The library is a great learning resource.",
@@ -5280,7 +5489,10 @@ export const vocabulary: VocabWord[] = [
     slug: "suggest",
     partOfSpeech: "verb",
     categories: ["verbs", "daily", "work-tech"],
-    meaning: { en: "To put forward an idea or plan for someone to consider", id: "Menyarankan / Mengusulkan" },
+    meaning: {
+      en: "To put forward an idea or plan for someone to consider",
+      id: "Menyarankan / Mengusulkan",
+    },
     examples: [
       "Can I suggest a different approach?",
       "She suggested we take a break.",
@@ -5297,7 +5509,10 @@ export const vocabulary: VocabWord[] = [
     slug: "support",
     partOfSpeech: "verb",
     categories: ["verbs", "daily", "work-tech"],
-    meaning: { en: "To give help or assistance; to agree with and encourage someone or something", id: "Mendukung / Membantu" },
+    meaning: {
+      en: "To give help or assistance; to agree with and encourage someone or something",
+      id: "Mendukung / Membantu",
+    },
     examples: [
       "I will always support you.",
       "The team supported each other through tough times.",
@@ -5314,7 +5529,10 @@ export const vocabulary: VocabWord[] = [
     slug: "manage",
     partOfSpeech: "verb",
     categories: ["verbs", "daily", "work-tech"],
-    meaning: { en: "To be in charge of something; to succeed in dealing with a difficult situation", id: "Mengelola / Berhasil mengatasi" },
+    meaning: {
+      en: "To be in charge of something; to succeed in dealing with a difficult situation",
+      id: "Mengelola / Berhasil mengatasi",
+    },
     examples: [
       "She manages a team of ten people.",
       "How do you manage your time?",
@@ -5331,7 +5549,10 @@ export const vocabulary: VocabWord[] = [
     slug: "focus",
     partOfSpeech: "verb",
     categories: ["verbs", "daily", "work-tech"],
-    meaning: { en: "To concentrate attention or effort on something specific", id: "Fokus / Berkonsentrasi" },
+    meaning: {
+      en: "To concentrate attention or effort on something specific",
+      id: "Fokus / Berkonsentrasi",
+    },
     examples: [
       "Try to focus on one task at a time.",
       "She focused on studying for the exam.",
@@ -5348,7 +5569,10 @@ export const vocabulary: VocabWord[] = [
     slug: "attend",
     partOfSpeech: "verb",
     categories: ["verbs", "daily", "work-tech"],
-    meaning: { en: "To be present at an event or place", id: "Menghadiri / Hadir" },
+    meaning: {
+      en: "To be present at an event or place",
+      id: "Menghadiri / Hadir",
+    },
     examples: [
       "Did you attend the meeting yesterday?",
       "All students must attend the seminar.",
@@ -5367,7 +5591,10 @@ export const vocabulary: VocabWord[] = [
     slug: "specific",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily", "work-tech"],
-    meaning: { en: "Clearly defined or identified; precise and exact", id: "Spesifik / Tertentu" },
+    meaning: {
+      en: "Clearly defined or identified; precise and exact",
+      id: "Spesifik / Tertentu",
+    },
     examples: [
       "Can you give a specific example?",
       "The instructions were very specific.",
@@ -5384,7 +5611,10 @@ export const vocabulary: VocabWord[] = [
     slug: "available",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily", "work-tech"],
-    meaning: { en: "Able to be used or obtained; free and not otherwise occupied", id: "Tersedia / Bisa / Ada" },
+    meaning: {
+      en: "Able to be used or obtained; free and not otherwise occupied",
+      id: "Tersedia / Bisa / Ada",
+    },
     examples: [
       "Are you available this weekend?",
       "The product is available online.",
@@ -5401,7 +5631,10 @@ export const vocabulary: VocabWord[] = [
     slug: "confident",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily", "work-tech"],
-    meaning: { en: "Feeling or showing certainty about one's abilities or the truth of something", id: "Percaya diri / Yakin" },
+    meaning: {
+      en: "Feeling or showing certainty about one's abilities or the truth of something",
+      id: "Percaya diri / Yakin",
+    },
     examples: [
       "She felt confident before the presentation.",
       "Be confident in your answers.",
@@ -5418,7 +5651,10 @@ export const vocabulary: VocabWord[] = [
     slug: "creative",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily", "work-tech"],
-    meaning: { en: "Having the ability to think of new ideas; involving the use of imagination", id: "Kreatif" },
+    meaning: {
+      en: "Having the ability to think of new ideas; involving the use of imagination",
+      id: "Kreatif",
+    },
     examples: [
       "She is a very creative writer.",
       "We need a creative solution to this problem.",
@@ -5435,7 +5671,10 @@ export const vocabulary: VocabWord[] = [
     slug: "responsible",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily", "work-tech"],
-    meaning: { en: "Having an obligation to do something or having control over someone; reliable and trustworthy", id: "Bertanggung jawab / Dapat dipercaya" },
+    meaning: {
+      en: "Having an obligation to do something or having control over someone; reliable and trustworthy",
+      id: "Bertanggung jawab / Dapat dipercaya",
+    },
     examples: [
       "He is responsible for the whole project.",
       "Be responsible with your money.",
@@ -5454,7 +5693,10 @@ export const vocabulary: VocabWord[] = [
     slug: "exactly",
     partOfSpeech: "adverb",
     categories: ["adverbs", "daily"],
-    meaning: { en: "Used to emphasize the accuracy of a statement; precisely", id: "Persis / Tepat sekali" },
+    meaning: {
+      en: "Used to emphasize the accuracy of a statement; precisely",
+      id: "Persis / Tepat sekali",
+    },
     examples: [
       "That's exactly what I meant.",
       "I arrived at exactly 8 o'clock.",
@@ -5471,7 +5713,10 @@ export const vocabulary: VocabWord[] = [
     slug: "quickly",
     partOfSpeech: "adverb",
     categories: ["adverbs", "daily"],
-    meaning: { en: "At a fast speed; without delay", id: "Dengan cepat / Segera" },
+    meaning: {
+      en: "At a fast speed; without delay",
+      id: "Dengan cepat / Segera",
+    },
     examples: [
       "She finished the test quickly.",
       "Please respond quickly.",
@@ -5488,7 +5733,10 @@ export const vocabulary: VocabWord[] = [
     slug: "clearly",
     partOfSpeech: "adverb",
     categories: ["adverbs", "daily", "work-tech"],
-    meaning: { en: "In a way that is easy to understand or perceive; obviously", id: "Dengan jelas / Jelas sekali" },
+    meaning: {
+      en: "In a way that is easy to understand or perceive; obviously",
+      id: "Dengan jelas / Jelas sekali",
+    },
     examples: [
       "Please speak more clearly.",
       "She clearly explained the instructions.",
@@ -5505,7 +5753,10 @@ export const vocabulary: VocabWord[] = [
     slug: "carefully",
     partOfSpeech: "adverb",
     categories: ["adverbs", "daily"],
-    meaning: { en: "With great attention and caution; taking care to avoid mistakes", id: "Dengan hati-hati / Secara cermat" },
+    meaning: {
+      en: "With great attention and caution; taking care to avoid mistakes",
+      id: "Dengan hati-hati / Secara cermat",
+    },
     examples: [
       "Read the instructions carefully.",
       "She carefully planned every step.",
@@ -5524,7 +5775,10 @@ export const vocabulary: VocabWord[] = [
     slug: "figure-out",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To find the answer or solution to something by thinking about it", id: "Mencari tahu / Memecahkan / Ngerti akhirnya" },
+    meaning: {
+      en: "To find the answer or solution to something by thinking about it",
+      id: "Mencari tahu / Memecahkan / Ngerti akhirnya",
+    },
     examples: [
       "I can't figure out how to use this app.",
       "Let me figure out the best route.",
@@ -5541,7 +5795,10 @@ export const vocabulary: VocabWord[] = [
     slug: "give-it-a-shot",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To try something even if you're not sure you'll succeed", id: "Coba saja / Dicoba dulu" },
+    meaning: {
+      en: "To try something even if you're not sure you'll succeed",
+      id: "Coba saja / Dicoba dulu",
+    },
     examples: [
       "I've never tried surfing, but I'll give it a shot.",
       "Just give it a shot — you might love it!",
@@ -5558,7 +5815,10 @@ export const vocabulary: VocabWord[] = [
     slug: "point-out",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily", "work-tech"],
-    meaning: { en: "To indicate or draw attention to something; to mention something important", id: "Menunjukkan / Menyebutkan / Mengangkat poin" },
+    meaning: {
+      en: "To indicate or draw attention to something; to mention something important",
+      id: "Menunjukkan / Menyebutkan / Mengangkat poin",
+    },
     examples: [
       "She pointed out an error in the report.",
       "Let me point out a few key facts.",
@@ -5575,7 +5835,10 @@ export const vocabulary: VocabWord[] = [
     slug: "run-out-of-time",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily", "work-tech"],
-    meaning: { en: "To have no time left to do something", id: "Kehabisan waktu" },
+    meaning: {
+      en: "To have no time left to do something",
+      id: "Kehabisan waktu",
+    },
     examples: [
       "I ran out of time during the exam.",
       "We're running out of time — let's hurry.",
@@ -5592,7 +5855,10 @@ export const vocabulary: VocabWord[] = [
     slug: "look-forward-to",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To feel excited or happy about something that is going to happen", id: "Tidak sabar menantikan / Menunggu dengan antusias" },
+    meaning: {
+      en: "To feel excited or happy about something that is going to happen",
+      id: "Tidak sabar menantikan / Menunggu dengan antusias",
+    },
     examples: [
       "I look forward to meeting you.",
       "She's looking forward to the holiday.",
@@ -5608,46 +5874,15 @@ export const vocabulary: VocabWord[] = [
   //  NOUNS  (n38–n52)
   // ──────────────────────────────────────────────────────────────
   {
-    id: "n38",
-    word: "Consequence",
-    slug: "consequence",
-    partOfSpeech: "noun",
-    categories: ["nouns", "daily"],
-    meaning: { en: "A result or effect of an action or condition", id: "Konsekuensi / Akibat" },
-    examples: [
-      "Think about the consequences before you act.",
-      "One consequence of pollution is climate change.",
-      "He faced the consequences of his poor decisions.",
-    ],
-    synonyms: ["result", "outcome", "effect", "repercussion"],
-    antonyms: ["cause", "source"],
-    pronunciation: { text: "KON-suh-kwens", ipa: "/ˈkɒn.sɪ.kwəns/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "n39",
-    word: "Perspective",
-    slug: "perspective",
-    partOfSpeech: "noun",
-    categories: ["nouns", "daily", "work-tech"],
-    meaning: { en: "A particular way of thinking about or viewing something", id: "Sudut pandang / Perspektif" },
-    examples: [
-      "Try to see things from a different perspective.",
-      "His perspective on the issue was surprising.",
-      "She offered a fresh perspective on the problem.",
-    ],
-    synonyms: ["viewpoint", "standpoint", "outlook", "angle"],
-    antonyms: [],
-    pronunciation: { text: "per-SPEK-tiv", ipa: "/pəˈspek.tɪv/" },
-    difficulty: "intermediate",
-  },
-  {
     id: "n40",
     word: "Innovation",
     slug: "innovation",
     partOfSpeech: "noun",
     categories: ["nouns", "work-tech"],
-    meaning: { en: "A new idea, method, or product; the process of introducing something new", id: "Inovasi" },
+    meaning: {
+      en: "A new idea, method, or product; the process of introducing something new",
+      id: "Inovasi",
+    },
     examples: [
       "Technology drives innovation in every industry.",
       "The company is known for its constant innovation.",
@@ -5659,29 +5894,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "intermediate",
   },
   {
-    id: "n41",
-    word: "Achievement",
-    slug: "achievement",
-    partOfSpeech: "noun",
-    categories: ["nouns", "daily", "work-tech"],
-    meaning: { en: "Something accomplished successfully, especially by effort or skill", id: "Pencapaian / Prestasi" },
-    examples: [
-      "Graduating was her greatest achievement.",
-      "The team celebrated their achievement.",
-      "Hard work leads to great achievements.",
-    ],
-    synonyms: ["accomplishment", "attainment", "success", "feat"],
-    antonyms: ["failure", "defeat"],
-    pronunciation: { text: "uh-CHEEV-ment", ipa: "/əˈtʃiːv.mənt/" },
-    difficulty: "basic",
-  },
-  {
     id: "n42",
     word: "Awareness",
     slug: "awareness",
     partOfSpeech: "noun",
     categories: ["nouns", "daily"],
-    meaning: { en: "Knowledge or perception of a situation or fact", id: "Kesadaran / Kepedulian" },
+    meaning: {
+      en: "Knowledge or perception of a situation or fact",
+      id: "Kesadaran / Kepedulian",
+    },
     examples: [
       "We need to raise awareness about mental health.",
       "Her awareness of the danger saved lives.",
@@ -5698,7 +5919,10 @@ export const vocabulary: VocabWord[] = [
     slug: "contribution",
     partOfSpeech: "noun",
     categories: ["nouns", "work-tech", "daily"],
-    meaning: { en: "Something given or done to help achieve a result or support a cause", id: "Kontribusi / Sumbangan" },
+    meaning: {
+      en: "Something given or done to help achieve a result or support a cause",
+      id: "Kontribusi / Sumbangan",
+    },
     examples: [
       "Her contribution to the project was invaluable.",
       "Everyone should make a contribution to society.",
@@ -5715,7 +5939,10 @@ export const vocabulary: VocabWord[] = [
     slug: "circumstance",
     partOfSpeech: "noun",
     categories: ["nouns", "daily"],
-    meaning: { en: "A fact or condition connected with or relevant to an event or action", id: "Keadaan / Situasi / Kondisi" },
+    meaning: {
+      en: "A fact or condition connected with or relevant to an event or action",
+      id: "Keadaan / Situasi / Kondisi",
+    },
     examples: [
       "Under the circumstances, she made the right choice.",
       "Circumstances beyond our control delayed the project.",
@@ -5732,7 +5959,10 @@ export const vocabulary: VocabWord[] = [
     slug: "impact",
     partOfSpeech: "noun",
     categories: ["nouns", "daily", "work-tech"],
-    meaning: { en: "A strong effect or influence on something", id: "Dampak / Pengaruh" },
+    meaning: {
+      en: "A strong effect or influence on something",
+      id: "Dampak / Pengaruh",
+    },
     examples: [
       "Social media has a huge impact on teenagers.",
       "The earthquake had a devastating impact on the region.",
@@ -5749,7 +5979,10 @@ export const vocabulary: VocabWord[] = [
     slug: "authority",
     partOfSpeech: "noun",
     categories: ["nouns", "work-tech"],
-    meaning: { en: "The power or right to give orders, make decisions, and enforce obedience", id: "Otoritas / Wewenang / Kekuasaan" },
+    meaning: {
+      en: "The power or right to give orders, make decisions, and enforce obedience",
+      id: "Otoritas / Wewenang / Kekuasaan",
+    },
     examples: [
       "The police have the authority to arrest criminals.",
       "She spoke with great authority.",
@@ -5766,7 +5999,10 @@ export const vocabulary: VocabWord[] = [
     slug: "diversity",
     partOfSpeech: "noun",
     categories: ["nouns", "daily"],
-    meaning: { en: "A range of many different things or people; variety", id: "Keberagaman / Keanekaragaman" },
+    meaning: {
+      en: "A range of many different things or people; variety",
+      id: "Keberagaman / Keanekaragaman",
+    },
     examples: [
       "The city is known for its cultural diversity.",
       "Diversity in the workplace leads to better results.",
@@ -5783,7 +6019,10 @@ export const vocabulary: VocabWord[] = [
     slug: "conflict",
     partOfSpeech: "noun",
     categories: ["nouns", "daily"],
-    meaning: { en: "A serious disagreement or argument; a prolonged struggle or fight", id: "Konflik / Pertentangan" },
+    meaning: {
+      en: "A serious disagreement or argument; a prolonged struggle or fight",
+      id: "Konflik / Pertentangan",
+    },
     examples: [
       "The conflict between the two countries lasted years.",
       "There was a conflict of interest in the committee.",
@@ -5800,7 +6039,10 @@ export const vocabulary: VocabWord[] = [
     slug: "evidence",
     partOfSpeech: "noun",
     categories: ["nouns", "work-tech"],
-    meaning: { en: "Available facts or information indicating whether a belief or proposition is true", id: "Bukti / Fakta" },
+    meaning: {
+      en: "Available facts or information indicating whether a belief or proposition is true",
+      id: "Bukti / Fakta",
+    },
     examples: [
       "The police found evidence at the crime scene.",
       "There is strong evidence that smoking causes cancer.",
@@ -5817,7 +6059,10 @@ export const vocabulary: VocabWord[] = [
     slug: "tendency",
     partOfSpeech: "noun",
     categories: ["nouns", "daily"],
-    meaning: { en: "An inclination toward a particular characteristic or type of behavior", id: "Kecenderungan / Tendensi" },
+    meaning: {
+      en: "An inclination toward a particular characteristic or type of behavior",
+      id: "Kecenderungan / Tendensi",
+    },
     examples: [
       "She has a tendency to talk too fast when nervous.",
       "There is a tendency toward shorter attention spans.",
@@ -5834,7 +6079,10 @@ export const vocabulary: VocabWord[] = [
     slug: "generation",
     partOfSpeech: "noun",
     categories: ["nouns", "daily"],
-    meaning: { en: "All the people born and living at about the same time; a stage in family descent", id: "Generasi" },
+    meaning: {
+      en: "All the people born and living at about the same time; a stage in family descent",
+      id: "Generasi",
+    },
     examples: [
       "The younger generation prefers digital communication.",
       "Stories are passed down from generation to generation.",
@@ -5845,51 +6093,20 @@ export const vocabulary: VocabWord[] = [
     pronunciation: { text: "jen-uh-RAY-shun", ipa: "/ˌdʒen.əˈreɪ.ʃən/" },
     difficulty: "basic",
   },
-  {
-    id: "n52",
-    word: "Obstacle",
-    slug: "obstacle",
-    partOfSpeech: "noun",
-    categories: ["nouns", "daily", "work-tech"],
-    meaning: { en: "A thing that blocks one's way or prevents progress", id: "Hambatan / Rintangan" },
-    examples: [
-      "Poverty is a major obstacle to education.",
-      "She overcame every obstacle in her path.",
-      "Language barriers can be an obstacle to communication.",
-    ],
-    synonyms: ["barrier", "hurdle", "challenge", "hindrance"],
-    antonyms: ["aid", "advantage", "help"],
-    pronunciation: { text: "OB-stuh-kul", ipa: "/ˈɒb.stɪ.kəl/" },
-    difficulty: "intermediate",
-  },
 
   // ──────────────────────────────────────────────────────────────
   //  VERBS  (v38–v52)
   // ──────────────────────────────────────────────────────────────
-  {
-    id: "v38",
-    word: "Accomplish",
-    slug: "accomplish",
-    partOfSpeech: "verb",
-    categories: ["verbs", "daily"],
-    meaning: { en: "To achieve or complete successfully", id: "Mencapai / Menyelesaikan / Berhasil" },
-    examples: [
-      "She accomplished her goal in just one year.",
-      "What did you accomplish today?",
-      "It takes dedication to accomplish great things.",
-    ],
-    synonyms: ["achieve", "complete", "attain", "fulfill"],
-    antonyms: ["fail", "abandon"],
-    pronunciation: { text: "uh-KOM-plish", ipa: "/əˈkɒm.plɪʃ/" },
-    difficulty: "intermediate",
-  },
   {
     id: "v39",
     word: "Emphasize",
     slug: "emphasize",
     partOfSpeech: "verb",
     categories: ["verbs", "work-tech", "daily"],
-    meaning: { en: "To give special importance or value to something in speaking or writing", id: "Menekankan / Menonjolkan" },
+    meaning: {
+      en: "To give special importance or value to something in speaking or writing",
+      id: "Menekankan / Menonjolkan",
+    },
     examples: [
       "The teacher emphasized the importance of practice.",
       "I want to emphasize that safety comes first.",
@@ -5901,80 +6118,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "intermediate",
   },
   {
-    id: "v40",
-    word: "Establish",
-    slug: "establish",
-    partOfSpeech: "verb",
-    categories: ["verbs", "work-tech"],
-    meaning: { en: "To set up on a firm or permanent basis; to prove or demonstrate conclusively", id: "Mendirikan / Menetapkan / Membuktikan" },
-    examples: [
-      "They established a new company last year.",
-      "The study established a link between diet and health.",
-      "She established herself as an expert in the field.",
-    ],
-    synonyms: ["found", "create", "set up", "institute"],
-    antonyms: ["abolish", "dissolve", "destroy"],
-    pronunciation: { text: "ih-STAB-lish", ipa: "/ɪˈstæb.lɪʃ/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "v41",
-    word: "Evaluate",
-    slug: "evaluate",
-    partOfSpeech: "verb",
-    categories: ["verbs", "work-tech"],
-    meaning: { en: "To form an idea of the amount, number, or value of something; to assess", id: "Mengevaluasi / Menilai" },
-    examples: [
-      "We need to evaluate the risks before proceeding.",
-      "Teachers evaluate students through tests and projects.",
-      "She evaluated the proposal carefully.",
-    ],
-    synonyms: ["assess", "judge", "appraise", "measure"],
-    antonyms: [],
-    pronunciation: { text: "ih-VAL-yoo-ayt", ipa: "/ɪˈvæl.ju.eɪt/" },
-    difficulty: "advanced",
-  },
-  {
-    id: "v42",
-    word: "Implement",
-    slug: "implement",
-    partOfSpeech: "verb",
-    categories: ["verbs", "work-tech"],
-    meaning: { en: "To put a decision, plan, or agreement into effect", id: "Menerapkan / Melaksanakan" },
-    examples: [
-      "The company implemented a new policy this month.",
-      "It's time to implement the plan.",
-      "Schools are implementing digital learning programs.",
-    ],
-    synonyms: ["execute", "apply", "carry out", "enforce"],
-    antonyms: ["ignore", "neglect", "abandon"],
-    pronunciation: { text: "IM-pluh-ment", ipa: "/ˈɪm.plɪ.ment/" },
-    difficulty: "advanced",
-  },
-  {
-    id: "v43",
-    word: "Recognize",
-    slug: "recognize",
-    partOfSpeech: "verb",
-    categories: ["verbs", "daily"],
-    meaning: { en: "To identify someone or something from previous encounters; to acknowledge officially", id: "Mengenali / Mengakui / Menyadari" },
-    examples: [
-      "I didn't recognize him with his new haircut.",
-      "The government recognized the importance of education.",
-      "She was recognized for her outstanding work.",
-    ],
-    synonyms: ["identify", "acknowledge", "notice", "recall"],
-    antonyms: ["ignore", "overlook", "miss"],
-    pronunciation: { text: "REK-ug-nyz", ipa: "/ˈrek.əɡ.naɪz/" },
-    difficulty: "basic",
-  },
-  {
     id: "v44",
     word: "Strengthen",
     slug: "strengthen",
     partOfSpeech: "verb",
     categories: ["verbs", "daily", "work-tech"],
-    meaning: { en: "To make or become stronger", id: "Memperkuat / Menguatkan" },
+    meaning: {
+      en: "To make or become stronger",
+      id: "Memperkuat / Menguatkan",
+    },
     examples: [
       "Exercise helps strengthen your muscles.",
       "This policy will strengthen the economy.",
@@ -5986,46 +6138,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "intermediate",
   },
   {
-    id: "v45",
-    word: "Demonstrate",
-    slug: "demonstrate",
-    partOfSpeech: "verb",
-    categories: ["verbs", "work-tech", "daily"],
-    meaning: { en: "To clearly show the existence or truth of something by giving proof or evidence", id: "Mendemonstrasikan / Membuktikan / Menunjukkan" },
-    examples: [
-      "The experiment demonstrated that water conducts electricity.",
-      "She demonstrated how to use the software.",
-      "His success demonstrated what dedication can achieve.",
-    ],
-    synonyms: ["show", "prove", "illustrate", "display"],
-    antonyms: ["hide", "conceal", "disprove"],
-    pronunciation: { text: "DEM-un-strayt", ipa: "/ˈdem.ən.streɪt/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "v46",
-    word: "Adapt",
-    slug: "adapt",
-    partOfSpeech: "verb",
-    categories: ["verbs", "daily"],
-    meaning: { en: "To make suitable for a new use or purpose; to adjust to new conditions", id: "Beradaptasi / Menyesuaikan diri" },
-    examples: [
-      "Animals adapt to their environment over time.",
-      "She quickly adapted to her new school.",
-      "The company adapted its strategy to the market.",
-    ],
-    synonyms: ["adjust", "modify", "acclimatize", "conform"],
-    antonyms: ["resist", "refuse"],
-    pronunciation: { text: "uh-DAPT", ipa: "/əˈdæpt/" },
-    difficulty: "intermediate",
-  },
-  {
     id: "v47",
     word: "Justify",
     slug: "justify",
     partOfSpeech: "verb",
     categories: ["verbs", "daily", "work-tech"],
-    meaning: { en: "To show or prove to be right or reasonable", id: "Membenarkan / Memberikan alasan / Mengjustify" },
+    meaning: {
+      en: "To show or prove to be right or reasonable",
+      id: "Membenarkan / Memberikan alasan / Mengjustify",
+    },
     examples: [
       "Can you justify your decision?",
       "The results justify the investment.",
@@ -6042,7 +6163,10 @@ export const vocabulary: VocabWord[] = [
     slug: "influence",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To have an effect on the character, development, or behavior of someone or something", id: "Mempengaruhi" },
+    meaning: {
+      en: "To have an effect on the character, development, or behavior of someone or something",
+      id: "Mempengaruhi",
+    },
     examples: [
       "Parents greatly influence their children's values.",
       "Social media influences how we see ourselves.",
@@ -6054,29 +6178,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "basic",
   },
   {
-    id: "v49",
-    word: "Acquire",
-    slug: "acquire",
-    partOfSpeech: "verb",
-    categories: ["verbs", "work-tech", "daily"],
-    meaning: { en: "To obtain something by one's own efforts, abilities, or behavior", id: "Mendapatkan / Memperoleh / Menguasai" },
-    examples: [
-      "She acquired new skills through online courses.",
-      "The company acquired a smaller competitor.",
-      "Children acquire language naturally.",
-    ],
-    synonyms: ["obtain", "gain", "attain", "secure"],
-    antonyms: ["lose", "give up", "relinquish"],
-    pronunciation: { text: "uh-KWYR", ipa: "/əˈkwaɪər/" },
-    difficulty: "advanced",
-  },
-  {
     id: "v50",
     word: "Neglect",
     slug: "neglect",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To fail to care for properly; to not give enough attention to", id: "Mengabaikan / Menelantarkan" },
+    meaning: {
+      en: "To fail to care for properly; to not give enough attention to",
+      id: "Mengabaikan / Menelantarkan",
+    },
     examples: [
       "Don't neglect your health.",
       "She neglected her studies and failed the exam.",
@@ -6088,29 +6198,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "intermediate",
   },
   {
-    id: "v51",
-    word: "Collaborate",
-    slug: "collaborate",
-    partOfSpeech: "verb",
-    categories: ["verbs", "work-tech"],
-    meaning: { en: "To work jointly with others, especially on a project", id: "Berkolaborasi / Bekerja sama" },
-    examples: [
-      "The two companies collaborated on the project.",
-      "Students are encouraged to collaborate with peers.",
-      "Scientists from different countries collaborated on the research.",
-    ],
-    synonyms: ["cooperate", "work together", "partner", "team up"],
-    antonyms: ["compete", "oppose"],
-    pronunciation: { text: "kuh-LAB-uh-rayt", ipa: "/kəˈlæb.ə.reɪt/" },
-    difficulty: "advanced",
-  },
-  {
     id: "v52",
     word: "Persist",
     slug: "persist",
     partOfSpeech: "verb",
     categories: ["verbs", "daily"],
-    meaning: { en: "To continue firmly despite difficulty or opposition", id: "Bertahan / Terus berusaha / Pantang menyerah" },
+    meaning: {
+      en: "To continue firmly despite difficulty or opposition",
+      id: "Bertahan / Terus berusaha / Pantang menyerah",
+    },
     examples: [
       "She persisted despite many failures.",
       "If you persist, you will eventually succeed.",
@@ -6126,97 +6222,15 @@ export const vocabulary: VocabWord[] = [
   //  ADJECTIVES  (adj32–adj44)
   // ──────────────────────────────────────────────────────────────
   {
-    id: "adj32",
-    word: "Significant",
-    slug: "significant",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "work-tech", "daily"],
-    meaning: { en: "Important or large enough to have a notable effect", id: "Signifikan / Berarti / Penting" },
-    examples: [
-      "There has been a significant improvement in her grades.",
-      "The discovery had a significant impact on science.",
-      "A significant number of people attended the event.",
-    ],
-    synonyms: ["important", "notable", "considerable", "meaningful"],
-    antonyms: ["insignificant", "trivial", "minor"],
-    pronunciation: { text: "sig-NIF-ih-kunt", ipa: "/sɪɡˈnɪf.ɪ.kənt/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adj33",
-    word: "Consistent",
-    slug: "consistent",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "work-tech"],
-    meaning: { en: "Acting or done in the same way over time; not contradictory", id: "Konsisten / Stabil / Tetap" },
-    examples: [
-      "Her performance has been consistent all year.",
-      "Be consistent in your daily study habits.",
-      "The results were consistent with our expectations.",
-    ],
-    synonyms: ["steady", "regular", "constant", "reliable"],
-    antonyms: ["inconsistent", "erratic", "irregular"],
-    pronunciation: { text: "kun-SIS-tent", ipa: "/kənˈsɪs.tənt/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adj34",
-    word: "Adequate",
-    slug: "adequate",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "daily"],
-    meaning: { en: "Satisfactory or acceptable in quality or quantity", id: "Cukup / Memadai" },
-    examples: [
-      "Make sure you get adequate sleep every night.",
-      "The facilities were adequate for our needs.",
-      "His preparation was adequate but not outstanding.",
-    ],
-    synonyms: ["sufficient", "acceptable", "satisfactory", "enough"],
-    antonyms: ["inadequate", "insufficient", "lacking"],
-    pronunciation: { text: "AD-ih-kwit", ipa: "/ˈæd.ɪ.kwət/" },
-    difficulty: "advanced",
-  },
-  {
-    id: "adj35",
-    word: "Efficient",
-    slug: "efficient",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "work-tech"],
-    meaning: { en: "Achieving maximum productivity with minimum wasted effort or expense", id: "Efisien / Hemat / Tepat guna" },
-    examples: [
-      "Electric cars are more efficient than petrol cars.",
-      "She found a more efficient way to complete the task.",
-      "We need an efficient system to manage the data.",
-    ],
-    synonyms: ["productive", "effective", "streamlined", "economical"],
-    antonyms: ["inefficient", "wasteful", "slow"],
-    pronunciation: { text: "ih-FISH-ent", ipa: "/ɪˈfɪʃ.ənt/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adj36",
-    word: "Relevant",
-    slug: "relevant",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "work-tech", "daily"],
-    meaning: { en: "Closely connected or appropriate to what is being done or considered", id: "Relevan / Sesuai / Berkaitan" },
-    examples: [
-      "Please keep your comments relevant to the topic.",
-      "Is this information relevant to the case?",
-      "Learning relevant skills is important for your career.",
-    ],
-    synonyms: ["applicable", "pertinent", "related", "appropriate"],
-    antonyms: ["irrelevant", "unrelated", "inapplicable"],
-    pronunciation: { text: "REL-uh-vunt", ipa: "/ˈrel.ɪ.vənt/" },
-    difficulty: "intermediate",
-  },
-  {
     id: "adj37",
     word: "Sustainable",
     slug: "sustainable",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily"],
-    meaning: { en: "Able to be maintained at a certain rate or level; not damaging the environment", id: "Berkelanjutan / Ramah lingkungan" },
+    meaning: {
+      en: "Able to be maintained at a certain rate or level; not damaging the environment",
+      id: "Berkelanjutan / Ramah lingkungan",
+    },
     examples: [
       "We need sustainable energy sources.",
       "The company adopted sustainable business practices.",
@@ -6228,46 +6242,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "advanced",
   },
   {
-    id: "adj38",
-    word: "Diverse",
-    slug: "diverse",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "daily"],
-    meaning: { en: "Showing a great deal of variety; very different from each other", id: "Beragam / Berbeda-beda" },
-    examples: [
-      "Our team has diverse backgrounds and skills.",
-      "The city has a diverse population.",
-      "She has diverse interests including music, art, and science.",
-    ],
-    synonyms: ["varied", "mixed", "different", "multifaceted"],
-    antonyms: ["uniform", "homogeneous", "similar"],
-    pronunciation: { text: "dye-VERS", ipa: "/daɪˈvɜːs/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adj39",
-    word: "Inevitable",
-    slug: "inevitable",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "daily"],
-    meaning: { en: "Certain to happen and impossible to prevent", id: "Tak terhindarkan / Pasti terjadi" },
-    examples: [
-      "Change is inevitable.",
-      "Conflict seemed inevitable given the circumstances.",
-      "Death is an inevitable part of life.",
-    ],
-    synonyms: ["unavoidable", "certain", "inescapable", "destined"],
-    antonyms: ["avoidable", "preventable", "uncertain"],
-    pronunciation: { text: "in-EV-ih-tuh-bul", ipa: "/ɪnˈev.ɪ.tə.bəl/" },
-    difficulty: "advanced",
-  },
-  {
     id: "adj40",
     word: "Prominent",
     slug: "prominent",
     partOfSpeech: "adjective",
     categories: ["adjectives", "work-tech"],
-    meaning: { en: "Important or well known; standing out so as to be easily seen", id: "Terkemuka / Menonjol / Terkenal" },
+    meaning: {
+      en: "Important or well known; standing out so as to be easily seen",
+      id: "Terkemuka / Menonjol / Terkenal",
+    },
     examples: [
       "She is a prominent figure in the fashion industry.",
       "The logo was placed in a prominent position.",
@@ -6279,29 +6262,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "advanced",
   },
   {
-    id: "adj41",
-    word: "Crucial",
-    slug: "crucial",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "daily", "work-tech"],
-    meaning: { en: "Decisive or critical, especially in the success or failure of something", id: "Krusial / Sangat penting / Menentukan" },
-    examples: [
-      "Good communication is crucial in any relationship.",
-      "This is a crucial moment for the company.",
-      "Water is crucial for survival.",
-    ],
-    synonyms: ["critical", "vital", "essential", "pivotal"],
-    antonyms: ["unimportant", "trivial", "minor"],
-    pronunciation: { text: "KROO-shul", ipa: "/ˈkruː.ʃəl/" },
-    difficulty: "intermediate",
-  },
-  {
     id: "adj42",
     word: "Ambiguous",
     slug: "ambiguous",
     partOfSpeech: "adjective",
     categories: ["adjectives", "daily"],
-    meaning: { en: "Open to more than one interpretation; not clear or decided", id: "Ambigu / Tidak jelas / Bermakna ganda" },
+    meaning: {
+      en: "Open to more than one interpretation; not clear or decided",
+      id: "Ambigu / Tidak jelas / Bermakna ganda",
+    },
     examples: [
       "His answer was ambiguous and confusing.",
       "The instructions were ambiguous, so people made mistakes.",
@@ -6313,29 +6282,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "advanced",
   },
   {
-    id: "adj43",
-    word: "Vulnerable",
-    slug: "vulnerable",
-    partOfSpeech: "adjective",
-    categories: ["adjectives", "daily"],
-    meaning: { en: "Susceptible to physical or emotional attack or harm", id: "Rentan / Mudah terpengaruh / Lemah" },
-    examples: [
-      "Children are the most vulnerable members of society.",
-      "She felt vulnerable after the breakup.",
-      "The elderly are vulnerable to certain diseases.",
-    ],
-    synonyms: ["susceptible", "exposed", "weak", "defenseless"],
-    antonyms: ["protected", "strong", "resilient"],
-    pronunciation: { text: "VUL-ner-uh-bul", ipa: "/ˈvʌl.nər.ə.bəl/" },
-    difficulty: "advanced",
-  },
-  {
     id: "adj44",
     word: "Compelling",
     slug: "compelling",
     partOfSpeech: "adjective",
     categories: ["adjectives", "work-tech", "daily"],
-    meaning: { en: "Evoking strong interest, attention, or admiration; convincing", id: "Menarik / Meyakinkan / Menawan" },
+    meaning: {
+      en: "Evoking strong interest, attention, or admiration; convincing",
+      id: "Menarik / Meyakinkan / Menawan",
+    },
     examples: [
       "She gave a compelling argument for the new policy.",
       "The documentary was so compelling I watched it twice.",
@@ -6351,29 +6306,15 @@ export const vocabulary: VocabWord[] = [
   //  ADVERBS  (adv25–adv32)
   // ──────────────────────────────────────────────────────────────
   {
-    id: "adv25",
-    word: "Consequently",
-    slug: "consequently",
-    partOfSpeech: "adverb",
-    categories: ["adverbs", "daily"],
-    meaning: { en: "As a result; therefore", id: "Akibatnya / Oleh karena itu" },
-    examples: [
-      "She didn't study; consequently, she failed.",
-      "The road was icy; consequently, many accidents occurred.",
-      "He was late; consequently, he missed the meeting.",
-    ],
-    synonyms: ["therefore", "as a result", "hence", "thus"],
-    antonyms: [],
-    pronunciation: { text: "KON-suh-kwent-lee", ipa: "/ˈkɒn.sɪ.kwənt.li/" },
-    difficulty: "intermediate",
-  },
-  {
     id: "adv26",
     word: "Furthermore",
     slug: "furthermore",
     partOfSpeech: "adverb",
     categories: ["adverbs", "daily"],
-    meaning: { en: "In addition; besides; used to introduce a new and stronger point", id: "Selain itu / Lebih jauh lagi / Terlebih lagi" },
+    meaning: {
+      en: "In addition; besides; used to introduce a new and stronger point",
+      id: "Selain itu / Lebih jauh lagi / Terlebih lagi",
+    },
     examples: [
       "The project was expensive. Furthermore, it was poorly managed.",
       "She is talented. Furthermore, she works incredibly hard.",
@@ -6382,108 +6323,6 @@ export const vocabulary: VocabWord[] = [
     synonyms: ["moreover", "in addition", "additionally", "besides"],
     antonyms: [],
     pronunciation: { text: "FUR-ther-mor", ipa: "/ˈfɜː.ðə.mɔːr/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adv27",
-    word: "Nevertheless",
-    slug: "nevertheless",
-    partOfSpeech: "adverb",
-    categories: ["adverbs", "daily"],
-    meaning: { en: "In spite of that; notwithstanding; all the same", id: "Meskipun demikian / Walaupun begitu / Namun" },
-    examples: [
-      "It was raining. Nevertheless, they went for a walk.",
-      "The task was difficult. Nevertheless, she completed it.",
-      "He was tired; nevertheless, he kept going.",
-    ],
-    synonyms: ["however", "nonetheless", "still", "yet"],
-    antonyms: [],
-    pronunciation: { text: "nev-er-thuh-LES", ipa: "/ˌnev.ə.ðəˈles/" },
-    difficulty: "advanced",
-  },
-  {
-    id: "adv28",
-    word: "Significantly",
-    slug: "significantly",
-    partOfSpeech: "adverb",
-    categories: ["adverbs", "work-tech"],
-    meaning: { en: "In a way that is important or large enough to have a notable effect", id: "Secara signifikan / Jauh lebih / Sangat" },
-    examples: [
-      "Her scores improved significantly after tutoring.",
-      "The new law significantly reduced crime rates.",
-      "Prices have risen significantly this year.",
-    ],
-    synonyms: ["considerably", "notably", "substantially", "markedly"],
-    antonyms: ["slightly", "marginally", "barely"],
-    pronunciation: { text: "sig-NIF-ih-kant-lee", ipa: "/sɪɡˈnɪf.ɪ.kənt.li/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adv29",
-    word: "Ultimately",
-    slug: "ultimately",
-    partOfSpeech: "adverb",
-    categories: ["adverbs", "daily"],
-    meaning: { en: "In the end; finally; at the most basic level", id: "Pada akhirnya / Akhirnya" },
-    examples: [
-      "Ultimately, the decision is yours.",
-      "Hard work ultimately leads to success.",
-      "Ultimately, we are responsible for our own actions.",
-    ],
-    synonyms: ["finally", "in the end", "eventually", "at last"],
-    antonyms: ["initially", "at first"],
-    pronunciation: { text: "UL-tih-mit-lee", ipa: "/ˈʌl.tɪ.mɪt.li/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adv30",
-    word: "Apparently",
-    slug: "apparently",
-    partOfSpeech: "adverb",
-    categories: ["adverbs", "daily"],
-    meaning: { en: "As far as one knows or can see; seemingly", id: "Tampaknya / Kelihatannya / Sepertinya" },
-    examples: [
-      "Apparently, she didn't receive the email.",
-      "He was apparently unaware of the problem.",
-      "Apparently, the event was cancelled.",
-    ],
-    synonyms: ["seemingly", "evidently", "supposedly", "ostensibly"],
-    antonyms: [],
-    pronunciation: { text: "uh-PAIR-ent-lee", ipa: "/əˈpær.ənt.li/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adv31",
-    word: "Merely",
-    slug: "merely",
-    partOfSpeech: "adverb",
-    categories: ["adverbs", "daily"],
-    meaning: { en: "Only; just; nothing more than", id: "Hanya / Sekedar / Tidak lebih dari" },
-    examples: [
-      "I was merely trying to help.",
-      "It's merely a suggestion, not an order.",
-      "He merely smiled and said nothing.",
-    ],
-    synonyms: ["only", "just", "simply", "purely"],
-    antonyms: [],
-    pronunciation: { text: "MEER-lee", ipa: "/ˈmɪə.li/" },
-    difficulty: "intermediate",
-  },
-  {
-    id: "adv32",
-    word: "Thoroughly",
-    slug: "thoroughly",
-    partOfSpeech: "adverb",
-    categories: ["adverbs", "work-tech"],
-    meaning: { en: "In a thorough manner; completely and with great attention to detail", id: "Secara menyeluruh / Betul-betul / Dengan teliti" },
-    examples: [
-      "Please read the instructions thoroughly.",
-      "She thoroughly enjoyed the concert.",
-      "The room was thoroughly cleaned.",
-    ],
-    synonyms: ["completely", "fully", "entirely", "meticulously"],
-    antonyms: ["partially", "hastily", "carelessly"],
-    pronunciation: { text: "THUR-oh-lee", ipa: "/ˈθʌr.ə.li/" },
     difficulty: "intermediate",
   },
 
@@ -6496,7 +6335,10 @@ export const vocabulary: VocabWord[] = [
     slug: "in-the-long-run",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Over a long period of time; eventually", id: "Pada akhirnya / Dalam jangka panjang" },
+    meaning: {
+      en: "Over a long period of time; eventually",
+      id: "Pada akhirnya / Dalam jangka panjang",
+    },
     examples: [
       "In the long run, good habits pay off.",
       "It may be costly now, but it will save money in the long run.",
@@ -6513,7 +6355,10 @@ export const vocabulary: VocabWord[] = [
     slug: "on-the-other-hand",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "Used to introduce a contrasting or different point of view", id: "Di sisi lain / Sebaliknya" },
+    meaning: {
+      en: "Used to introduce a contrasting or different point of view",
+      id: "Di sisi lain / Sebaliknya",
+    },
     examples: [
       "I love coffee. On the other hand, it keeps me awake at night.",
       "Working abroad offers opportunities. On the other hand, it can be lonely.",
@@ -6525,29 +6370,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "basic",
   },
   {
-    id: "p63",
-    word: "Take into account",
-    slug: "take-into-account",
-    partOfSpeech: "phrase",
-    categories: ["phrases", "work-tech", "daily"],
-    meaning: { en: "To consider or include something when making a judgment or decision", id: "Mempertimbangkan / Memperhitungkan" },
-    examples: [
-      "We must take into account the cost of living.",
-      "Please take her experience into account when assigning tasks.",
-      "All factors must be taken into account.",
-    ],
-    synonyms: ["consider", "factor in", "account for", "bear in mind"],
-    antonyms: ["ignore", "overlook", "disregard"],
-    pronunciation: { text: "tayk in-too uh-KOWNT", ipa: "/teɪk ˈɪn.tə əˈkaʊnt/" },
-    difficulty: "intermediate",
-  },
-  {
     id: "p64",
     word: "Come to terms with",
     slug: "come-to-terms-with",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To accept a difficult or painful situation", id: "Menerima / Berdamai dengan / Mengikhlaskan" },
+    meaning: {
+      en: "To accept a difficult or painful situation",
+      id: "Menerima / Berdamai dengan / Mengikhlaskan",
+    },
     examples: [
       "She struggled to come to terms with the loss.",
       "He finally came to terms with his failure.",
@@ -6576,29 +6407,15 @@ export const vocabulary: VocabWord[] = [
     difficulty: "basic",
   },
   {
-    id: "p66",
-    word: "Break the ice",
-    slug: "break-the-ice",
-    partOfSpeech: "phrase",
-    categories: ["phrases", "daily"],
-    meaning: { en: "To do or say something to relieve tension in a social situation", id: "Mencairkan suasana / Memulai pembicaraan" },
-    examples: [
-      "He told a joke to break the ice.",
-      "Icebreaker games help break the ice at parties.",
-      "She smiled to break the ice before the interview.",
-    ],
-    synonyms: ["start a conversation", "ease tension", "warm up"],
-    antonyms: [],
-    pronunciation: { text: "brayk thuh ys", ipa: "/breɪk ðə aɪs/" },
-    difficulty: "basic",
-  },
-  {
     id: "p67",
     word: "Keep an eye on",
     slug: "keep-an-eye-on",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To watch someone or something carefully", id: "Mengawasi / Memantau / Menjaga" },
+    meaning: {
+      en: "To watch someone or something carefully",
+      id: "Mengawasi / Memantau / Menjaga",
+    },
     examples: [
       "Keep an eye on the children while I'm gone.",
       "Please keep an eye on the stock market.",
@@ -6615,7 +6432,10 @@ export const vocabulary: VocabWord[] = [
     slug: "make-the-most-of",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To use or enjoy something as much as possible; to take full advantage", id: "Memanfaatkan sebaik-baiknya / Memaksimalkan" },
+    meaning: {
+      en: "To use or enjoy something as much as possible; to take full advantage",
+      id: "Memanfaatkan sebaik-baiknya / Memaksimalkan",
+    },
     examples: [
       "Make the most of every opportunity.",
       "She made the most of her time abroad.",
@@ -6632,7 +6452,10 @@ export const vocabulary: VocabWord[] = [
     slug: "be-in-charge-of",
     partOfSpeech: "phrase",
     categories: ["phrases", "work-tech"],
-    meaning: { en: "To be responsible for managing or taking care of something or someone", id: "Bertanggung jawab atas / Mengelola / Memimpin" },
+    meaning: {
+      en: "To be responsible for managing or taking care of something or someone",
+      id: "Bertanggung jawab atas / Mengelola / Memimpin",
+    },
     examples: [
       "She is in charge of the marketing department.",
       "Who is in charge of organizing this event?",
@@ -6649,7 +6472,10 @@ export const vocabulary: VocabWord[] = [
     slug: "go-hand-in-hand",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To be closely related or exist together naturally", id: "Berjalan beriringan / Saling berkaitan" },
+    meaning: {
+      en: "To be closely related or exist together naturally",
+      id: "Berjalan beriringan / Saling berkaitan",
+    },
     examples: [
       "Success and hard work go hand in hand.",
       "Technology and innovation go hand in hand.",
@@ -6666,7 +6492,10 @@ export const vocabulary: VocabWord[] = [
     slug: "shed-light-on",
     partOfSpeech: "phrase",
     categories: ["phrases", "work-tech", "daily"],
-    meaning: { en: "To help to explain something or make it easier to understand", id: "Menjelaskan / Menerangi / Memperjelaskan" },
+    meaning: {
+      en: "To help to explain something or make it easier to understand",
+      id: "Menjelaskan / Menerangi / Memperjelaskan",
+    },
     examples: [
       "The research shed light on the causes of the disease.",
       "Can you shed light on what happened?",
@@ -6683,7 +6512,10 @@ export const vocabulary: VocabWord[] = [
     slug: "take-for-granted",
     partOfSpeech: "phrase",
     categories: ["phrases", "daily"],
-    meaning: { en: "To fail to appreciate the value of something; to assume something will always be available", id: "Menganggap remeh / Tidak menghargai" },
+    meaning: {
+      en: "To fail to appreciate the value of something; to assume something will always be available",
+      id: "Menganggap remeh / Tidak menghargai",
+    },
     examples: [
       "Don't take your health for granted.",
       "We often take clean water for granted.",
@@ -6693,6 +6525,1895 @@ export const vocabulary: VocabWord[] = [
     antonyms: ["appreciate", "value", "cherish"],
     pronunciation: { text: "tayk fer GRAN-tid", ipa: "/teɪk fə ˈɡræn.tɪd/" },
     difficulty: "intermediate",
+  },
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL NOUNS (Melanjutkan dari ID n48+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "n65",
+    word: "Efficiency",
+    slug: "efficiency-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily", "work-tech"],
+    meaning: {
+      en: "The state or quality of achieving maximum productivity with minimum wasted effort or expense",
+      id: "Efisiensi / Ketepatan gunaan",
+    },
+    examples: [
+      "The new management team improved the warehouse efficiency.",
+      "We need to maximize energy efficiency in the office.",
+      "Organization helps improve your daily efficiency.",
+    ],
+    synonyms: ["productivity", "competence", "capability"],
+    antonyms: ["inefficiency", "wastefulness"],
+    pronunciation: { text: "ih-FISH-un-see", ipa: "/ɪˈfɪʃ.ən.si/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "n52",
+    word: "Collaboration",
+    slug: "collaboration-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "work-tech", "daily"],
+    meaning: {
+      en: "The action of working with someone or a group to produce or create something",
+      id: "Kolaborasi / Kerja sama",
+    },
+    examples: [
+      "The success of the project was due to close collaboration between teachers and parents.",
+      "They are writing the book in collaboration with a famous researcher.",
+      "International collaboration is needed to solve global issues.",
+    ],
+    synonyms: ["cooperation", "partnership", "teamwork"],
+    antonyms: ["competition", "division"],
+    pronunciation: { text: "kuh-lab-uh-RAY-shun", ipa: "/kəˌlæb.əˈreɪ.ʃən/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL VERBS (Melanjutkan dari ID v34+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "v53",
+    word: "Optimize",
+    slug: "optimize-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "work-tech", "daily"],
+    meaning: {
+      en: "To make the best or most effective use of a situation or resource",
+      id: "Mengoptimalkan / Memaksimalkan",
+    },
+    examples: [
+      "You should optimize your schedule to spend more time with family.",
+      "The factory changed its methods to optimize production.",
+      "Athletes train daily to optimize their performance.",
+    ],
+    synonyms: ["enhance", "improve", "streamline", "maximize"],
+    antonyms: ["worsen", "waste"],
+    pronunciation: { text: "OP-tuh-myze", ipa: "/ˈɒp.tɪ.maɪz/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "v54",
+    word: "Execute",
+    slug: "execute-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "work-tech"],
+    meaning: {
+      en: "To carry out or put into effect a plan, order, or course of action",
+      id: "Melaksanakan / Menjalankan / Mengeksekusi",
+    },
+    examples: [
+      "The military forces executed the rescue mission successfully.",
+      "The team executed the business plan perfectly.",
+      "It is easy to dream, but hard to execute.",
+    ],
+    synonyms: ["implement", "perform", "run", "accomplish"],
+    antonyms: ["halt", "cancel", "neglect"],
+    pronunciation: { text: "EK-suh-kyoot", ipa: "/ˈek.sɪ.kjuːt/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL ADJECTIVES (ID disesuaikan agar unik)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "adj35",
+    word: "Dynamic",
+    slug: "dynamic-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "Characterized by constant change, activity, or progress; full of energy",
+      id: "Dinamis / Penuh energi / Aktif berkembang",
+    },
+    examples: [
+      "The modern business market is dynamic and fast-paced.",
+      "She is a dynamic speaker who keeps the audience excited.",
+      "They are a dynamic couple who love outdoor activities.",
+    ],
+    synonyms: ["energetic", "active", "vibrant", "lively"],
+    antonyms: ["static", "sluggish", "unchanging"],
+    pronunciation: { text: "dy-NAM-ik", ipa: "/daɪˈnæm.ɪk/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "adj48",
+    word: "Feasible",
+    slug: "feasible-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "work-tech", "daily"],
+    meaning: {
+      en: "Possible to do easily or conveniently; realistic",
+      id: "Layak / Masuk akal / Mungkin dilakukan",
+    },
+    examples: [
+      "It is not financially feasible to build a new airport this year.",
+      "With careful planning, the project is completely feasible.",
+      "Is it feasible to finish this homework before tomorrow morning?",
+    ],
+    synonyms: ["practicable", "viable", "achievable", "realistic"],
+    antonyms: ["impossible", "unfeasible", "impractical"],
+    pronunciation: { text: "FEE-zuh-bul", ipa: "/ˈfiː.zə.bəl/" },
+    difficulty: "advanced",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL PHRASES (Melanjutkan dari ID p71+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p112",
+    word: "Hit the ground running",
+    slug: "hit-the-ground-running-general",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "To start something immediately with great energy, enthusiasm, and speed",
+      id: "Langsung tancap gas / Memulai sesuatu dengan cepat dan sukses",
+    },
+    examples: [
+      "She hit the ground running on her very first day at the new school.",
+      "As soon as the funding arrived, the team hit the ground running.",
+    ],
+    synonyms: ["start fast", "make a quick start"],
+    antonyms: ["start slowly", "lag behind"],
+    pronunciation: {
+      text: "hit thuh grownd RUN-ing",
+      ipa: "/hɪt ðə ɡraʊnd ˈrʌn.ɪŋ/",
+    },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p73",
+    word: "See eye to eye",
+    slug: "see-eye-to-eye-general",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "To agree with someone completely; to have the same opinion",
+      id: "Sependapat / Sepemikiran / Akur",
+    },
+    examples: [
+      "My brother and I don't always see eye to eye on politics.",
+      "They finally saw eye to eye after a very long conversation.",
+    ],
+    synonyms: ["agree", "concur", "be of one mind"],
+    antonyms: ["disagree", "clash", "differ"],
+    pronunciation: { text: "see ay too ay", ipa: "/siː aɪ tuː aɪ/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p74",
+    word: "Touch base",
+    slug: "touch-base-general",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "To briefly contact or meet with someone to find out how they are or update them",
+      id: "Menghubungi sebentar (untuk bertukar kabar atau perkembangan)",
+    },
+    examples: [
+      "I just wanted to touch base with you before you leave for vacation.",
+      "Let's touch base tomorrow morning to review our holiday plans.",
+    ],
+    synonyms: ["reconnect", "contact", "check in", "get in touch"],
+    antonyms: [],
+    pronunciation: { text: "tutch bays", ipa: "/tʌtʃ beɪs/" },
+    difficulty: "intermediate",
+  },
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL NOUNS (Melanjutkan dari ID n53+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "n53",
+    word: "Incentive",
+    slug: "incentive-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily", "work-tech"],
+    meaning: {
+      en: "A thing that motivates or encourages someone to do something",
+      id: "Insentif / Pendorong / Motivasi tambahan",
+    },
+    examples: [
+      "The company offers a cash incentive for employees who arrive on time.",
+      "Bonus points give students an incentive to work harder.",
+      "There is little economic incentive for them to sell the land.",
+    ],
+    synonyms: ["motivation", "stimulus", "inducement", "reward"],
+    antonyms: ["deterrent", "discouragement"],
+    pronunciation: { text: "in-SEN-tiv", ipa: "/ɪnˈsen.tɪv/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "n55",
+    word: "Discrepancy",
+    slug: "discrepancy-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily", "work-tech"],
+    meaning: {
+      en: "A lack of compatibility or similarity between two or more facts; an inconsistency",
+      id: "Ketidaksesuaian / Perbedaan / Kejanggalan",
+    },
+    examples: [
+      "The police found a discrepancy between the two witnesses' stories.",
+      "There is a small discrepancy between the budget and the actual expenses.",
+      "She corrected the discrepancy in the financial report.",
+    ],
+    synonyms: ["inconsistency", "difference", "disparity", "divergence"],
+    antonyms: ["similarity", "consistency", "agreement"],
+    pronunciation: { text: "dih-SKREP-un-see", ipa: "/dɪˈskrep.ən.si/" },
+    difficulty: "advanced",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL VERBS (Melanjutkan dari ID v38+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "v38",
+    word: "Clarify",
+    slug: "clarify-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To make a statement or situation less confused and more clearly comprehensible",
+      id: "Mengklarifikasi / Memperjelas",
+    },
+    examples: [
+      "Could you please clarify what you meant by that comment?",
+      "The report helps to clarify the government's position on immigration.",
+      "I called her just to clarify the meeting time.",
+    ],
+    synonyms: ["explain", "elucidate", "clear up", "simplify"],
+    antonyms: ["confuse", "complicate", "obscure"],
+    pronunciation: { text: "KLAR-uh-fy", ipa: "/ˈklær.ɪ.faɪ/" },
+    difficulty: "basic",
+  },
+  {
+    id: "v40",
+    word: "Anticipate",
+    slug: "anticipate-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To regard as probable; expect or predict something will happen",
+      id: "Mengantisipasi / Mengharapkan / Menduga",
+    },
+    examples: [
+      "We don't anticipate any problems with the new schedule.",
+      "The store anticipates a large crowd for the weekend sale.",
+      "She eagerly anticipated her holiday to Bali.",
+    ],
+    synonyms: ["expect", "predict", "foresee", "await"],
+    antonyms: [],
+    pronunciation: { text: "an-TISS-uh-payt", ipa: "/ænˈtɪs.ɪ.peɪt/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL ADJECTIVES (Melanjutkan dari ID adj38+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "adj38",
+    word: "Simultaneous",
+    slug: "simultaneous-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "Occurring, operating, or done at the same time",
+      id: "Serentak / Bersamaan / Simultan",
+    },
+    examples: [
+      "There were simultaneous explosions in three different cities.",
+      "The movie was released with simultaneous translations in five languages.",
+      "He is capable of handling simultaneous tasks without getting stressed.",
+    ],
+    synonyms: ["concurrent", "coincident", "parallel"],
+    antonyms: ["asynchronous", "sequential"],
+    pronunciation: { text: "sy-mul-TAY-nee-us", ipa: "/ˌsaɪ.məlˈteɪ.ni.əs/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "adj39",
+    word: "Vague",
+    slug: "vague-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "Of uncertain, indefinite, or unclear character or meaning",
+      id: "Samar / Samar-samar / Tidak jelas",
+    },
+    examples: [
+      "His directions were so vague that we got completely lost.",
+      "I have a vague memory of meeting him when I was a child.",
+      "She gave a vague answer because she didn't want to reveal the truth.",
+    ],
+    synonyms: ["unclear", "fuzzy", "indistinct", "hazy"],
+    antonyms: ["clear", "definite", "specific", "explicit"],
+    pronunciation: { text: "vayg", ipa: "/veɪɡ/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "adj49",
+    word: "Superficial",
+    slug: "superficial-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "Existing or occurring at or on the surface; shallow, not deep or thorough",
+      id: "Dangkal / Hanya di permukaan / Tidak mendalam",
+    },
+    examples: [
+      "The book only gives a superficial description of the country's history.",
+      "He suffered only superficial injuries in the car accident.",
+      "She dislikes superficial friendships that only care about looks.",
+    ],
+    synonyms: ["shallow", "surface-level", "cursory", "slight"],
+    antonyms: ["deep", "profound", "thorough"],
+    pronunciation: { text: "soo-per-FISH-ul", ipa: "/ˌsuː.pəˈfɪʃ.əl/" },
+    difficulty: "advanced",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL PHRASES (Melanjutkan dari ID p75+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p77",
+    word: "Blessing in disguise",
+    slug: "blessing-in-disguise-general",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "A misfortune that eventually results in a good outcome",
+      id: "Berkah tersembunyi / Hikmah di balik cobaan",
+    },
+    examples: [
+      "Losing that job was a blessing in disguise because I found a much better one.",
+      "Missing the flight turned out to be a blessing in disguise.",
+    ],
+    synonyms: ["hidden benefit", "good luck"],
+    antonyms: ["misfortune"],
+    pronunciation: {
+      text: "BLESS-ing in dis-GYZE",
+      ipa: "/ˈbles.ɪŋ ɪn dɪsˈɡaɪz/",
+    },
+    difficulty: "intermediate",
+  },
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL NOUNS (Melanjutkan dari ID n56+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "n56",
+    word: "Objective",
+    slug: "objective-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily", "work-tech"],
+    meaning: {
+      en: "A goal or specific aim that a person or organization wants to achieve",
+      id: "Tujuan / Target / Sasaran",
+    },
+    examples: [
+      "The main objective of this presentation is to explain our new strategy.",
+      "We must set clear objectives before starting the project.",
+      "My primary objective this year is to improve my speaking skills.",
+    ],
+    synonyms: ["goal", "aim", "target", "purpose"],
+    antonyms: [],
+    pronunciation: { text: "ub-JEK-tiv", ipa: "/əbˈdʒek.tɪv/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "n57",
+    word: "Alternative",
+    slug: "alternative-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "One of two or more available possibilities or choices",
+      id: "Alternatif / Pilihan lain",
+    },
+    examples: [
+      "If the flight is canceled, we have no alternative but to take the train.",
+      "Are there any healthy alternatives to sugar?",
+      "We need to consider all the alternatives before making a decision.",
+    ],
+    synonyms: ["option", "choice", "substitute", "possibility"],
+    antonyms: [],
+    pronunciation: { text: "awl-TUR-nuh-tiv", ipa: "/ɒlˈtɜː.nə.tɪv/" },
+    difficulty: "basic",
+  },
+  {
+    id: "n58",
+    word: "Overview",
+    slug: "overview-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily", "work-tech"],
+    meaning: {
+      en: "A general review or summary of a subject or situation",
+      id: "Gambaran umum / Ringkasan singkat",
+    },
+    examples: [
+      "Let me start by giving you a brief overview of our topic today.",
+      "The first chapter provides an overview of the country's history.",
+      "I need a quick overview of the situation before I talk to the client.",
+    ],
+    synonyms: ["summary", "outline", "synopsis", "recap"],
+    antonyms: [],
+    pronunciation: { text: "OH-ver-vyoo", ipa: "/ˈəʊ.və.vjuː/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL VERBS (Melanjutkan dari ID v41+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "v41",
+    word: "Illustrate",
+    slug: "illustrate-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily", "work-tech"],
+    meaning: {
+      en: "To explain or make something clear by using examples, charts, or stories",
+      id: "Menggambarkan / Mengilustrasikan / Menjelaskan dengan contoh",
+    },
+    examples: [
+      "To illustrate my point, let's look at this chart on the screen.",
+      "He used a personal story to illustrate the importance of teamwork.",
+      "The lecturer drew a diagram to illustrate how the system works.",
+    ],
+    synonyms: ["demonstrate", "explain", "exemplify", "show"],
+    antonyms: ["confuse", "obscure"],
+    pronunciation: { text: "IL-uh-strayt", ipa: "/ˈɪl.ə.streɪt/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "v42",
+    word: "Elaborate",
+    slug: "elaborate-verb",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To add more detail, explanation, or information to something already said",
+      id: "Menjelaskan lebih detail / Menjabarkan / Memperluas penjelasan",
+    },
+    examples: [
+      "That is an interesting idea, could you elaborate on that?",
+      "The manager refused to elaborate on the reasons for his resignation.",
+      "In the next paragraph, you should elaborate on your main argument.",
+    ],
+    synonyms: ["expand", "explain further", "detail", "flesh out"],
+    antonyms: ["summarize", "simplify"],
+    pronunciation: { text: "ih-LAB-uh-rayt", ipa: "/iˈlæb.ə.reɪt/" },
+    difficulty: "advanced",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL ADJECTIVES (Melanjutkan dari ID adj41+)
+  // ──────────────────────────────────────────────────────────────
+
+  // ──────────────────────────────────────────────────────────────
+  //  GENERAL PHRASES (Melanjutkan dari ID p78+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p78",
+    word: "Long story short",
+    slug: "long-story-short-general",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used when you are skipping extra details to get to the point quickly",
+      id: "Singkat cerita / Intinya adalah",
+    },
+    examples: [
+      "Long story short, we missed the train and had to stay at a hotel.",
+      "Anyway, long story short, I decided to take the new job offer.",
+    ],
+    synonyms: ["in short", "to sum up", "briefly"],
+    antonyms: [],
+    pronunciation: { text: "long STOH-ree short", ipa: "/lɒŋ ˈstɔː.ri ʃɔːt/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p79",
+    word: "To put it another way",
+    slug: "to-put-it-another-way",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "Used for saying something in a different, usually simpler way",
+      id: "Dengan kata lain / Cara penyebutan lainnya adalah",
+    },
+    examples: [
+      "We are losing money. To put it another way, we are in big trouble.",
+      "He isn't very reliable. To put it another way, don't trust his promises.",
+    ],
+    synonyms: ["in other words", "that is to say"],
+    antonyms: [],
+    pronunciation: {
+      text: "too put it uh-NUH-ther way",
+      ipa: "/tuː pʊt ɪt əˈnʌð.ə weɪ/",
+    },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p80",
+    word: "Take it with a grain of salt",
+    slug: "take-it-with-a-grain-of-salt",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "To look at information or a statement with skepticism; not to believe it completely",
+      id: "Jangan ditelan mentah-mentah / Jangan langsung percaya begitu saja",
+    },
+    examples: [
+      "Most gossip on social media should be taken with a grain of salt.",
+      "He exaggerates a lot, so you should take his stories with a grain of salt.",
+    ],
+    synonyms: ["be skeptical", "take with a pinch of salt"],
+    antonyms: ["believe blindly"],
+    pronunciation: {
+      text: "tayk it with uh grayn ov sawlt",
+      ipa: "/teɪk ɪt wɪð ə ɡreɪn ɒv sɒlt/",
+    },
+    difficulty: "advanced",
+  },
+  // ──────────────────────────────────────────────────────────────
+  //  CONNECTORS & PHRASING NOUNS (Melanjutkan dari ID n59+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "n59",
+    word: "Transition",
+    slug: "transition-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily", "work-tech"],
+    meaning: {
+      en: "The process or a period of changing from one state or condition to another",
+      id: "Transisi / Peralihan",
+    },
+    examples: [
+      "The transition from high school to university can be difficult.",
+      "We need a smooth transition when moving to the new system.",
+      "Your essay has excellent transitions between paragraphs.",
+    ],
+    synonyms: ["changeover", "shift", "conversion", "progression"],
+    antonyms: ["stagnation"],
+    pronunciation: { text: "tran-ZISH-un", ipa: "/trænˈzɪʃ.ən/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  CONNECTORS & PHRASING VERBS (Melanjutkan dari ID v44+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "v55",
+    word: "Contradict",
+    slug: "contradict-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To deny the truth of a statement by implying the opposite; to be in conflict with",
+      id: "Menyanggah / Bertolak belakang dengan / Menyalahi",
+    },
+    examples: [
+      "The new evidence contradicts his previous statement.",
+      "You shouldn't contradict your teacher during the presentation.",
+      "The two reports completely contradict each other.",
+    ],
+    synonyms: ["deny", "oppose", "counter", "clash with"],
+    antonyms: ["agree", "confirm", "support"],
+    pronunciation: { text: "kon-truh-DIKT", ipa: "/ˌkɒn.trəˈdɪkt/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  CONNECTORS & PHRASING ADJECTIVES/ADVERBS (Melanjutkan dari ID adj44+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "adj45",
+    word: "Subsequently",
+    slug: "subsequently-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "After a particular thing has happened; afterwards; later on",
+      id: "Selanjutnya / Kemudian / Setelah itu",
+    },
+    examples: [
+      "The book was published in 2010 and was subsequently turned into a movie.",
+      "He fell down and subsequently lost consciousness.",
+      "She made a mistake and subsequently apologized for it.",
+    ],
+    synonyms: ["afterwards", "later", "thereafter", "next"],
+    antonyms: ["previously", "before"],
+    pronunciation: { text: "SUB-suh-kwunt-lee", ipa: "/ˈsʌb.sɪ.kwənt.li/" },
+    difficulty: "advanced",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  TRANSITIONAL PHRASES / CONNECTORS (Melanjutkan dari ID p81+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p81",
+    word: "However",
+    slug: "however-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to introduce a statement that contrasts with or contradicts something just said",
+      id: "Namun / Akan tetapi / Bagaimanapun juga",
+    },
+    examples: [
+      "The hotel was wonderful. However, it was too expensive.",
+      "I wanted to go to the party; however, I was too tired.",
+      "This plan sounds good. However, there are a few risks we must consider.",
+    ],
+    synonyms: ["but", "yet", "nevertheless", "nonetheless"],
+    antonyms: [],
+    pronunciation: { text: "how-EV-er", ipa: "/haʊˈev.ər/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p84",
+    word: "In addition to",
+    slug: "in-addition-to-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "As well as; along with; besides something else",
+      id: "Di samping / Selain dari / Sebagai tambahan untuk",
+    },
+    examples: [
+      "In addition to his high salary, he also gets a free car from the company.",
+      "In addition to English, she can speak fluent French and Japanese.",
+    ],
+    synonyms: ["as well as", "along with", "besides"],
+    antonyms: [],
+    pronunciation: { text: "in uh-DISH-un too", ipa: "/ɪn əˈdɪʃ.ən tuː/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p85",
+    word: "As a matter of fact",
+    slug: "as-a-matter-of-fact",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to add emphasis or correct a statement by revealing the actual truth",
+      id: "Kenyataannya / Sebenarnya / Faktanya",
+    },
+    examples: [
+      "I know him very well. As a matter of fact, we went to the same school.",
+      "It didn't rain at all. As a matter of fact, the weather was quite sunny.",
+    ],
+    synonyms: ["actually", "in fact", "in reality"],
+    antonyms: [],
+    pronunciation: {
+      text: "az uh MAT-er ov fakt",
+      ipa: "/æz ə ˈmæt.ər ɒv fækt/",
+    },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p86",
+    word: "In terms of",
+    slug: "in-terms-of-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "With regard to the specific aspect or subject being discussed",
+      id: "Dalam hal / Ditinjau dari / Dari segi",
+    },
+    examples: [
+      "The job is great in terms of salary, but the hours are too long.",
+      "In terms of features, this new phone is much better than the old one.",
+    ],
+    synonyms: ["regarding", "concerning", "with respect to"],
+    antonyms: [],
+    pronunciation: { text: "in turmz ov", ipa: "/ɪn tɜːmz ɒv/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p87",
+    word: "With that being said",
+    slug: "with that being said-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "Used to introduce a statement that qualifies, limits, or modifies what was just said",
+      id: "Meskipun demikian / Namun demikian / Dengan begitu",
+    },
+    examples: [
+      "The test was incredibly difficult. With that being said, most students still passed.",
+      "He lacks experience. With that being said, his enthusiasm makes him a great candidate.",
+    ],
+    synonyms: ["that having been said", "even so", "nevertheless"],
+    antonyms: [],
+    pronunciation: {
+      text: "with that BEE-ing sed",
+      ipa: "/wɪð ðæt ˈbiː.ɪŋ sed/",
+    },
+    difficulty: "advanced",
+  },
+  {
+    id: "p88",
+    word: "In conclusion",
+    slug: "in-conclusion-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "Used to introduce the final point or summary of a speech, presentation, or essay",
+      id: "Kesimpulannya / Sebagai penutup",
+    },
+    examples: [
+      "In conclusion, we need to take immediate action to protect the environment.",
+      "In conclusion, I would like to thank you all for coming today.",
+    ],
+    synonyms: ["to sum up", "finally", "to conclude", "in short"],
+    antonyms: ["firstly", "to begin with"],
+    pronunciation: { text: "in kun-KLOO-zhun", ipa: "/ɪn kənˈkluː.ʒən/" },
+    difficulty: "basic",
+  },
+  // ──────────────────────────────────────────────────────────────
+  //  5W 1H & CONNECTOR PRONOUNS (Kategori khusus / dimasukkan ke 'nouns' atau 'phrases' sesuai kecocokan struktur)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "n60",
+    word: "Which",
+    slug: "which-connector",
+    partOfSpeech: "noun", // Umumnya relative pronoun, disesuaikan ke noun/phrase agar cocok dengan tipe data Anda
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "Used to refer to one or more people or things from a definite set, or to add extra information about a thing",
+      id: "Yang mana / Yang (digunakan khusus untuk benda atau pilihan)",
+    },
+    examples: [
+      "Which book do you want to read tonight?",
+      "He bought a new car, which is very fuel-efficient.",
+      "We need to decide which strategy is the best for our presentation.",
+    ],
+    synonyms: ["that", "whichever"],
+    antonyms: [],
+    pronunciation: { text: "witch", ipa: "/wɪtʃ/" },
+    difficulty: "basic",
+  },
+  {
+    id: "n61",
+    word: "That",
+    slug: "that-connector",
+    partOfSpeech: "noun", // Relative pronoun / Conjunction
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "Used to identify a specific person or thing observed or heard, or to introduce a defining clause",
+      id: "Itu / Yang (digunakan untuk memperjelas benda, orang, atau konsep secara spesifik)",
+    },
+    examples: [
+      "The laptop that I bought yesterday is very fast.",
+      "I think that this solution will solve our main problem.",
+      "She told me that the presentation went really well.",
+    ],
+    synonyms: ["which", "who"],
+    antonyms: [],
+    pronunciation: { text: "that", ipa: "/ðæt/" },
+    difficulty: "basic",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  THE 5W 1H CORE PHRASES (Melanjutkan dari ID p89+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p89",
+    word: "What",
+    slug: "what-question",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to ask for information about someone or something",
+      id: "Apa / Apakah",
+    },
+    examples: [
+      "What is the main objective of this meeting?",
+      "What do you think about our new presentation topic?",
+      "I don't understand what he is trying to write in this essay.",
+    ],
+    synonyms: [],
+    antonyms: [],
+    pronunciation: { text: "wot", ipa: "/wɒt/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p90",
+    word: "Why",
+    slug: "why-question",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to ask for a reason, cause, or purpose",
+      id: "Mengapa / Kenapa",
+    },
+    examples: [
+      "Why did you choose this specific argument for your essay?",
+      "Why is this issue considered so crucial for our team?",
+      "That is the reason why we need to change our current plan.",
+    ],
+    synonyms: ["how come", "wherefore"],
+    antonyms: [],
+    pronunciation: { text: "way", ipa: "/waɪ/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p91",
+    word: "Who",
+    slug: "who-question",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to ask about the identity of a person or which person is involved",
+      id: "Siapa / Yang (untuk orang)",
+    },
+    examples: [
+      "Who will be the main speaker in tomorrow's presentation?",
+      "The person who wrote this report did an excellent job.",
+      "Who is going to lead the discussion during the meeting?",
+    ],
+    synonyms: [],
+    antonyms: [],
+    pronunciation: { text: "hoo", ipa: "/huː/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p92",
+    word: "When",
+    slug: "when-question",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to ask about the time or period that something happens",
+      id: "Kapan / Ketika / Saat",
+    },
+    examples: [
+      "When is the deadline for submitting this writing assignment?",
+      "When you give a presentation, make sure to look at the audience.",
+      "I will call you when I arrive at the office.",
+    ],
+    synonyms: ["at what time"],
+    antonyms: [],
+    pronunciation: { text: "wen", ipa: "/wen/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p93",
+    word: "Where",
+    slug: "where-question",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to ask about the place, position, or location of something",
+      id: "Di mana / Ke mana / Tempat di mana",
+    },
+    examples: [
+      "Where did you find the sources for this article?",
+      "This is the room where we will deliver our presentation.",
+      "Where should we go to discuss this matter more privately?",
+    ],
+    synonyms: ["in what place"],
+    antonyms: [],
+    pronunciation: { text: "wair", ipa: "/weər/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p94",
+    word: "How",
+    slug: "how-question",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to ask about the manner, method, condition, or quality of something",
+      id: "Bagaimana / Berapa / Cara",
+    },
+    examples: [
+      "How can we explain this difficult concept to the audience simply?",
+      "How much time do we have to finish this writing task?",
+      "Let me show you how to structure a good introduction paragraph.",
+    ],
+    synonyms: ["in what way"],
+    antonyms: [],
+    pronunciation: { text: "how", ipa: "/haʊ/" },
+    difficulty: "basic",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  BONUS: 5W 1H ADVANCED CONVERSATIONAL PHRASES
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p95",
+    word: "How come",
+    slug: "how-come-phrase",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used in informal conversation to ask why something happened or is the case",
+      id: "Kok bisa / Bagaimana bisa (Kenapa versi santai/ngobrol)",
+    },
+    examples: [
+      "How come you didn't attend the presentation group study yesterday?",
+      "How come the results are so different from our expectations?",
+    ],
+    synonyms: ["why", "how is it that"],
+    antonyms: [],
+    pronunciation: { text: "how kum", ipa: "/haʊ kʌm/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p96",
+    word: "What if",
+    slug: "what-if-phrase",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "Used to ask about the consequences of something happening, or to make a suggestion",
+      id: "Bagaimana jika / Bagaimana kalau / Seandainya",
+    },
+    examples: [
+      "What if the audience asks a question we cannot answer?",
+      "What if we add a few charts into our essay to illustrate the data better?",
+    ],
+    synonyms: ["supposing that", "in case"],
+    antonyms: [],
+    pronunciation: { text: "wot if", ipa: "/wɒt ɪf/" },
+    difficulty: "basic",
+  },
+  // ──────────────────────────────────────────────────────────────
+  //  NOUNS FOR SPEAKING & WRITING (Melanjutkan dari ID n62+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "n63",
+    word: "Hypothesis",
+    slug: "hypothesis-noun",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "A proposed explanation made on the basis of limited evidence as a starting point for further investigation",
+      id: "Hipotesis / Dugaan awal / Asumsi dasar",
+    },
+    examples: [
+      "The presentation will test our initial hypothesis.",
+      "In your writing, you need to support your hypothesis with data.",
+    ],
+    synonyms: ["theory", "assumption", "premise"],
+    antonyms: ["fact", "certainty"],
+    pronunciation: { text: "hy-POTH-uh-sis", ipa: "/haɪˈpɒθ.ə.sɪs/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "n64",
+    word: "Analogy",
+    slug: "analogy-noun",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "A comparison between two things, typically for the purpose of explanation or clarification",
+      id: "Analogi / Perumpamaan",
+    },
+    examples: [
+      "To simplify the concept in my presentation, I used a simple analogy.",
+      "An analogy between the human brain and a computer is often used.",
+    ],
+    synonyms: ["comparison", "metaphor", "likeness"],
+    antonyms: ["difference"],
+    pronunciation: { text: "uh-NAL-uh-jee", ipa: "/əˈnæl.ə.dʒi/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  VERBS FOR PRESENTATION & WRITING (Melanjutkan dari ID v45+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "v46",
+    word: "Summarize",
+    slug: "summarize-verb",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To give a brief statement of the main points of something",
+      id: "Merangkum / Menyimpulkan secara singkat",
+    },
+    examples: [
+      "Before concluding my talk, let me summarize the main arguments.",
+      "You should summarize the research findings at the end of the report.",
+    ],
+    synonyms: ["recap", "condense", "outline"],
+    antonyms: ["elaborate", "expand"],
+    pronunciation: { text: "SUM-uh-ryze", ipa: "/ˈsʌm.ə.raɪz/" },
+    difficulty: "basic",
+  },
+  {
+    id: "v56",
+    word: "Acknowledge",
+    slug: "acknowledge-verb",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To accept or admit the existence or truth of something",
+      id: "Mengakui / Mengapresiasi / Memaklumi",
+    },
+    examples: [
+      "We must acknowledge that this project has several limitations.",
+      "In casual chats, it is polite to acknowledge other people's opinions.",
+    ],
+    synonyms: ["admit", "accept", "recognize"],
+    antonyms: ["deny", "ignore"],
+    pronunciation: { text: "ak-NOL-idj", ipa: "/əkˈnɒl.ɪdʒ/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  ADJECTIVES/ADVERBS FOR DEBATE & TALK (Melanjutkan dari ID adj46+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "adj46",
+    word: "Inevitably",
+    slug: "inevitably-adverb",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "As is certain to happen; unavoidably",
+      id: "Pasti / Tidak dapat dihindari / Ujung-ujungnya",
+    },
+    examples: [
+      "If we don't fix this mistake now, it will inevitably cause problems later.",
+      "Technological growth will inevitably change how we communicate.",
+    ],
+    synonyms: ["unavoidably", "certainly", "necessarily"],
+    antonyms: ["avoidably", "uncertainly"],
+    pronunciation: { text: "in-EV-ih-tuh-blee", ipa: "/ɪnˈev.ɪ.tə.bli/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "adj47",
+    word: "Controversial",
+    slug: "controversial-adjective",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "Giving rise or likely to give rise to public disagreement",
+      id: "Kontroversial / Menuai perdebatan",
+    },
+    examples: [
+      "The government made a controversial decision to raise taxes.",
+      "Avoid choosing highly controversial topics for a short presentation.",
+    ],
+    synonyms: ["disputable", "arguable", "contentious"],
+    antonyms: ["agreeable", "undisputed"],
+    pronunciation: { text: "kon-truh-VUR-shul", ipa: "/ˌkɒn.trəˈvɜː.ʃəl/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  PHRASES & CONNECTORS (Melanjutkan dari ID p97+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p97",
+    word: "Moreover",
+    slug: "moreover-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "As a further matter; besides; in addition",
+      id: "Bahkan / Terlebih lagi / Selain itu",
+    },
+    examples: [
+      "The food at that restaurant is delicious; moreover, it is very cheap.",
+      "The study is outdated; moreover, the sample size was too small.",
+    ],
+    synonyms: ["furthermore", "in addition", "besides"],
+    antonyms: [],
+    pronunciation: { text: "mor-OH-ver", ipa: "/mɔːrˈəʊ.vər/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p98",
+    word: "Therefore",
+    slug: "therefore-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "For that reason; consequently",
+      id: "Oleh karena itu / Maka dari itu",
+    },
+    examples: [
+      "We do not have enough funds; therefore, the project must be postponed.",
+      "She trained hard and therefore won the competition.",
+    ],
+    synonyms: ["consequently", "thus", "hence", "as a result"],
+    antonyms: [],
+    pronunciation: { text: "THAIR-for", ipa: "/ˈðeə.fɔːr/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p99",
+    word: "In contrast",
+    slug: "in-contrast-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to show a clear difference between two things",
+      id: "Sebaliknya / Sangat berbeda dengan",
+    },
+    examples: [
+      "The city is very noisy. In contrast, the countryside is peaceful and quiet.",
+      "The first group succeeded; in contrast, the second group failed completely.",
+    ],
+    synonyms: ["on the contrary", "conversely", "on the other hand"],
+    antonyms: ["similarly"],
+    pronunciation: { text: "in KON-trast", ipa: "/ɪn ˈkɒn.trɑːst/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p100",
+    word: "To give you an example",
+    slug: "to-give-you-an-example",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "A phrase used to introduce an instance or illustration of what you mean",
+      id: "Sebagai contoh / Contohnya begini",
+    },
+    examples: [
+      "Regular exercise is good for you. To give you an example, it improves sleep quality.",
+      "Public transport has improved. To give you an example, trains are now always on time.",
+    ],
+    synonyms: ["for instance", "for example", "such as"],
+    antonyms: [],
+    pronunciation: {
+      text: "too giv yoo un eg-ZAM-pul",
+      ipa: "/tuː ɡɪv juː ən ɪɡˈzɑːm.pəl/",
+    },
+    difficulty: "basic",
+  },
+  {
+    id: "p101",
+    word: "From my perspective",
+    slug: "from my perspective",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to share your personal point of view or opinion",
+      id: "Dari sudut pandang saya / Menurut saya pribadi",
+    },
+    examples: [
+      "From my perspective, changing the logo is unnecessary right now.",
+      "The presentation went quite well, at least from my perspective.",
+    ],
+    synonyms: ["in my opinion", "from my point of view", "as I see it"],
+    antonyms: [],
+    pronunciation: {
+      text: "frum my per-SPEK-tiv",
+      ipa: "/frɒm maɪ pəˈspek.tɪv/",
+    },
+    difficulty: "basic",
+  },
+  {
+    id: "p102",
+    word: "In other words",
+    slug: "in-other-words",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Expressed in a different and usually simpler way",
+      id: "Dengan kata lain / Maksudnya adalah",
+    },
+    examples: [
+      "He failed the medical exam; in other words, he cannot join the army.",
+      "The company is downsizing. In other words, some people will lose their jobs.",
+    ],
+    synonyms: ["to put it another way", "that is to say"],
+    antonyms: [],
+    pronunciation: { text: "in UH-ther wurdz", ipa: "/ɪn ˈʌð.ər wɜːdz/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p103",
+    word: "Speaking of which",
+    slug: "speaking-of-which",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to introduce a statement that is related to the subject just mentioned",
+      id: "Ngomong-ngomong soal itu / Berkaitan dengan hal tersebut",
+    },
+    examples: [
+      "I love Italian food. Speaking of which, have you tried the new pizza place?",
+      "We need to finish the slides tonight. Speaking of which, where is the laptop?",
+    ],
+    synonyms: ["by the way", "incidentally"],
+    antonyms: [],
+    pronunciation: { text: "SPEE-king ov witch", ipa: "/ˈspiː.kɪŋ ɒv wɪtʃ/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p104",
+    word: "As far as I'm concerned",
+    slug: "as-far-as-i-am-concerned",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "In my opinion; from my point of view (used to state a firm belief)",
+      id: "Sejauh yang saya pedulikan / Bagi saya pribadi / Menurut saya",
+    },
+    examples: [
+      "As far as I'm concerned, this discussion is completely over.",
+      "You can choose any topic, as far as I'm concerned.",
+    ],
+    synonyms: ["to my mind", "in my view"],
+    antonyms: [],
+    pronunciation: {
+      text: "az far az ay-m kun-SURND",
+      ipa: "/æz fɑːr æz aɪm kənˈsɜːnd/",
+    },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p105",
+    word: "On the contrary",
+    slug: "on-the-contrary",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to intensify a denial or statement of the opposite truth",
+      id: "Sebaliknya / Malahan justru",
+    },
+    examples: [
+      "People think I am rich. On the contrary, I am actually struggling with debt.",
+      "The movie wasn't boring at all; on the contrary, it was thrilling.",
+    ],
+    synonyms: ["quite the opposite", "conversely"],
+    antonyms: [],
+    pronunciation: { text: "on thuh KON-trair-ee", ipa: "/ɒn ðə ˈkɒn.trə.ri/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "p106",
+    word: "In compliance with",
+    slug: "in-compliance-with",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily", "work-tech"],
+    meaning: {
+      en: "In accordance with a rule, law, order, or request",
+      id: "Sesuai dengan / Mematuhi aturan / Selaras dengan ketentuan",
+    },
+    examples: [
+      "The building was constructed in compliance with safety regulations.",
+      "In compliance with your request, we have sent the document.",
+    ],
+    synonyms: ["according to", "in accordance with", "following"],
+    antonyms: ["against", "in violation of"],
+    pronunciation: {
+      text: "in kum-PLY-uns with",
+      ipa: "/ɪn kəmˈplaɪ.əns wɪð/",
+    },
+    difficulty: "advanced",
+  },
+  {
+    id: "p107",
+    word: "To sum up",
+    slug: "to-sum-up-phrase",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "To give a brief summary or conclusion of something",
+      id: "Intinya / Singkat kata / Ringkasnya",
+    },
+    examples: [
+      "To sum up, we must act quickly before the deadline passes.",
+      "To sum up, she is the most qualified person for this job.",
+    ],
+    synonyms: ["in conclusion", "in short", "briefly"],
+    antonyms: [],
+    pronunciation: { text: "too sum up", ipa: "/tuː sʌm ʌp/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p108",
+    word: "Regardless of",
+    slug: "regardless-of",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Without being affected or influenced by something; anyway",
+      id: "Terlepas dari / Tanpa memandang / Bagaimanapun juga",
+    },
+    examples: [
+      "The club welcomes everyone, regardless of their age or background.",
+      "Regardless of the weather, the event will continue tomorrow.",
+    ],
+    synonyms: ["despite", "irrespective of", "anyway"],
+    antonyms: ["depending on"],
+    pronunciation: { text: "ree-GARD-lus ov", ipa: "/rɪˈɡɑːd.ləs ɒv/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p109",
+    word: "For instance",
+    slug: "for-instance",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "As an example; for example",
+      id: "Misalkan / Contohnya",
+    },
+    examples: [
+      "You can paint the room any bright color—for instance, yellow or light green.",
+      "He has many hobbies; for instance, he loves cooking and hiking.",
+    ],
+    synonyms: ["for example", "such as"],
+    antonyms: [],
+    pronunciation: { text: "for IN-stuns", ipa: "/fɔːr ˈɪn.stəns/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p110",
+    word: "By all means",
+    slug: "by-all-means",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to give enthusiastic permission or agreement",
+      id: "Tentu saja / Silakan saja / Sangat diperbolehkan",
+    },
+    examples: [
+      "If you need to use my dictionary, by all means, take it.",
+      "A: 'May I ask a question?' B: 'By all means! Please do.'",
+    ],
+    synonyms: ["of course", "certainly", "absolutely"],
+    antonyms: ["by no means", "not at all"],
+    pronunciation: { text: "by awl meenz", ipa: "/baɪ ɔːl miːnz/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p111",
+    word: "In the meantime",
+    slug: "in-the-meantime",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "While something else is happening; in the intervening period",
+      id: "Sementara itu / Sembari menunggu",
+    },
+    examples: [
+      "The doctor will see you in 20 minutes. In the meantime, you can sit here.",
+      "My car is being repaired. In the meantime, I am using a bicycle.",
+    ],
+    synonyms: ["meanwhile", "simultaneously"],
+    antonyms: [],
+    pronunciation: { text: "in thuh MEEN-tyme", ipa: "/ɪn ðə ˈmiːn.taɪm/" },
+    difficulty: "intermediate",
+  },
+  // ──────────────────────────────────────────────────────────────
+  //  FRESH NOUNS (Melanjutkan dari ID n65+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "n65",
+    word: "Paradigm",
+    slug: "paradigm-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "A typical example or pattern of something; a distinct set of concepts",
+      id: "Paradigma / Pola pikir / Model contoh",
+    },
+    examples: [
+      "The internet created a new paradigm for how we share information.",
+      "We need a shift in our paradigm to solve this social issue.",
+    ],
+    synonyms: ["model", "pattern", "framework-concept", "prototype"],
+    antonyms: [],
+    pronunciation: { text: "PAR-uh-dyme", ipa: "/ˈpær.ə.daɪm/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "n66",
+    word: "Correlation",
+    slug: "correlation-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "A mutual relationship or connection between two or more things",
+      id: "Korelasi / Hubungan timbal balik",
+    },
+    examples: [
+      "There is a strong correlation between regular exercise and mental health.",
+      "The research shows no correlation between the two events.",
+    ],
+    synonyms: ["connection", "link", "relationship", "association"],
+    antonyms: ["difference", "disconnection"],
+    pronunciation: { text: "kor-uh-LAY-shun", ipa: "/ˌkɒr.əˈleɪ.ʃən/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "n67",
+    word: "Breakthrough",
+    slug: "breakthrough-general",
+    partOfSpeech: "noun",
+    categories: ["nouns", "daily"],
+    meaning: {
+      en: "A sudden, dramatic, and important discovery or development",
+      id: "Terobosan besar / Penemuan penting",
+    },
+    examples: [
+      "Scientists made a major breakthrough in cancer research this year.",
+      "This new product is a creative breakthrough for our team.",
+    ],
+    synonyms: ["advancement", "discovery", "innovation", "leap"],
+    antonyms: ["setback", "regression"],
+    pronunciation: { text: "BRAYK-throo", ipa: "/ˈbreɪk.θruː/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  FRESH VERBS (Melanjutkan dari ID v48+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "v48",
+    word: "Contribute",
+    slug: "contribute-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To give something, especially money, help, or ideas, to help achieve something",
+      id: "Berkontribusi / Menyumbang / Ikut serta",
+    },
+    examples: [
+      "Everyone in the group should contribute at least one idea.",
+      "Fresh air and good food contribute to a healthier lifestyle.",
+    ],
+    synonyms: ["donate", "provide", "share", "add"],
+    antonyms: ["withhold", "take away"],
+    pronunciation: { text: "kun-TRIB-yoot", ipa: "/kənˈtrɪb.juːt/" },
+    difficulty: "basic",
+  },
+  {
+    id: "v49",
+    word: "Advocate",
+    slug: "advocate-verb",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To publicly recommend or support a particular cause or policy",
+      id: "Mendukung / Menyuarakan / Membela suatu gagasan",
+    },
+    examples: [
+      "He advocates using public transport to reduce pollution.",
+      "In her writing, she advocates for equal education rights.",
+    ],
+    synonyms: ["support", "recommend", "champion", "promote"],
+    antonyms: ["oppose", "criticize", "discourage"],
+    pronunciation: { text: "AD-vuh-kayt", ipa: "/ˈæd.və.keɪt/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "v50",
+    word: "Incorporate",
+    slug: "incorporate-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To include something as part of a whole; combine ingredients or ideas",
+      id: "Memasukkan / Menggabungkan / Menyertakan",
+    },
+    examples: [
+      "You should incorporate more charts into your presentation slides.",
+      "The chef decided to incorporate local spices into the recipe.",
+    ],
+    synonyms: ["integrate", "include", "absorb", "blend"],
+    antonyms: ["exclude", "separate"],
+    pronunciation: { text: "in-KOR-puh-rayt", ipa: "/ɪnˈkɔː.pər.eɪt/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "v51",
+    word: "Justify",
+    slug: "justify-general",
+    partOfSpeech: "verb",
+    categories: ["verbs", "daily"],
+    meaning: {
+      en: "To show or prove that something is right, reasonable, or necessary",
+      id: "Membenarkan / Memberikan alasan logis (Justifikasi)",
+    },
+    examples: [
+      "How do you justify spending so much money on a new gadget?",
+      "You need to provide data to justify your argument in this essay.",
+    ],
+    synonyms: ["defend", "validate", "warrant", "explain"],
+    antonyms: ["condemn", "disprove"],
+    pronunciation: { text: "JUSS-tuh-fy", ipa: "/ˈdʒʌs.tɪ.faɪ/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  FRESH ADJECTIVES (Melanjutkan dari ID adj49+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "adj49",
+    word: "Plausible",
+    slug: "plausible-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "Seeming reasonable or probable; believable",
+      id: "Masuk akal / Masih bisa dipercaya / Masih mungkin",
+    },
+    examples: [
+      "Her explanation for being late sounds plausible.",
+      "That is a plausible theory, but we need more proof.",
+    ],
+    synonyms: ["credible", "believable", "reasonable", "likely"],
+    antonyms: ["implausible", "unbelievable", "unreasonable"],
+    pronunciation: { text: "PLAW-zuh-bul", ipa: "/ˈplɔː.zə.bəl/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "adj50",
+    word: "Obsolete",
+    slug: "obsolete-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "No longer produced or used; out of date",
+      id: "Usang / Ketinggalan zaman / Tidak berlaku lagi",
+    },
+    examples: [
+      "Typewriters have become completely obsolete because of computers.",
+      "Using that old method is now obsolete in modern workplaces.",
+    ],
+    synonyms: ["outdated", "antique", "old-fashioned"],
+    antonyms: ["modern", "current", "up-to-date"],
+    pronunciation: { text: "ob-suh-LEET", ipa: "/ˌɒb.səˈliːt/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "adj51",
+    word: "Coherent",
+    slug: "coherent-general",
+    partOfSpeech: "adjective",
+    categories: ["adjectives", "daily"],
+    meaning: {
+      en: "Logical, consistent, and clear; easy to understand as a whole",
+      id: "Koheren / Nyambung / Logis dan jelas strukturnya",
+    },
+    examples: [
+      "He was so nervous that he couldn't deliver a coherent sentence.",
+      "The presentation was structured in a coherent and professional way.",
+    ],
+    synonyms: ["logical", "rational", "clear", "consistent"],
+    antonyms: ["incoherent", "confused", "illogical"],
+    pronunciation: { text: "koh-HEER-unt", ipa: "/kəʊˈhɪə.rənt/" },
+    difficulty: "intermediate",
+  },
+
+  // ──────────────────────────────────────────────────────────────
+  //  FRESH PHRASES & CONNECTORS (Melanjutkan dari ID p112+)
+  // ──────────────────────────────────────────────────────────────
+  {
+    id: "p112",
+    word: "On the grounds that",
+    slug: "on-the-grounds-that",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to state the reason or justification for an action or belief",
+      id: "Dengan alasan bahwa / Berdasarkan pertimbangan bahwa",
+    },
+    examples: [
+      "He rejected the job offer on the grounds that the salary was too low.",
+      "The event was canceled on the grounds that the weather was unsafe.",
+    ],
+    synonyms: ["because", "since", "for the reason that"],
+    antonyms: [],
+    pronunciation: { text: "on thuh growndz that", ipa: "/ɒn ðə ɡraʊndz ðæt/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "p113",
+    word: "In comparison with",
+    slug: "in-comparison-with",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Compared with something else; showing a relationship of scale or quality",
+      id: "Jika dibandingkan dengan / Dibandingkan",
+    },
+    examples: [
+      "In comparison with last year, our sales have improved significantly.",
+      "This city is quite safe in comparison with other big capitals.",
+    ],
+    synonyms: ["compared to", "in contrast to"],
+    antonyms: [],
+    pronunciation: {
+      text: "in kum-PAR-ih-sun with",
+      ipa: "/ɪn kəmˈpær.ɪ.sən wɪð/",
+    },
+    difficulty: "basic",
+  },
+  {
+    id: "p114",
+    word: "In accordance with",
+    slug: "in-accordance-with",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "In a way that agrees with or follows a rule, request, or tradition",
+      id: "Sesuai dengan / Berdasarkan kesepakatan / Selaras dengan",
+    },
+    examples: [
+      "The prize was awarded in accordance with the judges' decision.",
+      "We must act in accordance with the local laws.",
+    ],
+    synonyms: ["according to", "in line with", "following"],
+    antonyms: ["against", "contrary to"],
+    pronunciation: { text: "in uh-KOR-duns with", ipa: "/ɪn əˈkɔː.dəns wɪð/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p115",
+    word: "To a certain extent",
+    slug: "to-a-certain-extent",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to say that something is partly, but not completely, true",
+      id: "Sampai batas tertentu / Ada benarnya juga (tapi tidak semua)",
+    },
+    examples: [
+      "I agree with your argument to a certain extent, but you missed a few points.",
+      "The plan was successful to a certain extent.",
+    ],
+    synonyms: ["partly", "up to a point", "somewhat"],
+    antonyms: ["completely", "totally"],
+    pronunciation: {
+      text: "too uh SUR-tun ik-STENT",
+      ipa: "/tuː ə ˈsɜː.tən ɪkˈstent/",
+    },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p116",
+    word: "By contrast",
+    slug: "by-contrast-connector",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to introduce a fact or statement that shows a stark difference",
+      id: "Sebaliknya / Kontras dengan hal itu",
+    },
+    examples: [
+      "My brother loves indoor activities. By contrast, I prefer exploring the outdoors.",
+      "The small shop failed. By contrast, the mall across the street is thriving.",
+    ],
+    synonyms: ["in contrast", "on the other hand", "conversely"],
+    antonyms: ["similarly"],
+    pronunciation: { text: "by KON-trast", ipa: "/baɪ ˈkɒn.trɑːst/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p117",
+    word: "In light of",
+    slug: "in-light-of-phrase",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Drawing attention to or considering a new fact or piece of information",
+      id: "Mengingat / Berdasarkan adanya / Menimbang fakta bahwa",
+    },
+    examples: [
+      "In light of recent events, we have decided to cancel the presentation.",
+      "The plan was revised in light of new feedback from the teacher.",
+    ],
+    synonyms: ["considering", "taking into account", "because of"],
+    antonyms: [],
+    pronunciation: { text: "in lyt ov", ipa: "/ɪn laɪt ɒv/" },
+    difficulty: "advanced",
+  },
+  {
+    id: "p118",
+    word: "Frankly speaking",
+    slug: "frankly-speaking",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to state that you are being totally honest and direct",
+      id: "Jujur saja / Terus terang saja",
+    },
+    examples: [
+      "Frankly speaking, I think your presentation slide has too much text.",
+      "Frankly speaking, I don't really like the taste of this coffee.",
+    ],
+    synonyms: ["honestly", "to be honest", "candidly"],
+    antonyms: [],
+    pronunciation: {
+      text: "FRANK-lee SPEE-king",
+      ipa: "/ˈfræŋ.kli ˈspiː.kɪŋ/",
+    },
+    difficulty: "basic",
+  },
+  {
+    id: "p119",
+    word: "At the end of the day",
+    slug: "at-the-end-of-the-day",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to state the most important fact after everything has been considered",
+      id: "Pada akhirnya / Intinya / Bagaimanapun juga",
+    },
+    examples: [
+      "At the end of the day, it is your choice whether to take the job or not.",
+      "We can argue all night, but at the end of the day, we need a decision.",
+    ],
+    synonyms: ["ultimately", "in the end", "finally"],
+    antonyms: [],
+    pronunciation: {
+      text: "at thuh end ov thuh day",
+      ipa: "/æt ðə end ɒv ðə deɪ/",
+    },
+    difficulty: "basic",
+  },
+  {
+    id: "p120",
+    word: "To put it simply",
+    slug: "to-put-it-simply",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to explain something complex in a basic, straightforward manner",
+      id: "Sederhananya / Gampangnya begini",
+    },
+    examples: [
+      "To put it simply, we don't have enough money to buy a car.",
+      "He is a polyglot. To put it simply, he can speak many languages.",
+    ],
+    synonyms: ["in short", "in simple terms", "basically"],
+    antonyms: ["complexly"],
+    pronunciation: {
+      text: "too put it SIM-plee",
+      ipa: "/tuː pʊt ɪt ˈsɪm.pli/",
+    },
+    difficulty: "basic",
+  },
+  {
+    id: "p121",
+    word: "Judging by",
+    slug: "judging-by",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Used to express an opinion or conclusion based on visible evidence",
+      id: "Menilai dari / Dilihat dari / Berkaca pada",
+    },
+    examples: [
+      "Judging by the clouds, it is going to rain very soon.",
+      "Judging by his reaction, he didn't know about the secret plan.",
+    ],
+    synonyms: ["based on", "considering"],
+    antonyms: [],
+    pronunciation: { text: "JUDJ-ing by", ipa: "/ˈdʒʌdʒ.ɪŋ baɪ/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p122",
+    word: "Off the top of my head",
+    slug: "off-the-top-of-my-head",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "From memory or immediate thought, without checking the facts or details",
+      id: "Spontan saja / Seingat saya / Tanpa mikir panjang",
+    },
+    examples: [
+      "Off the top of my head, I think the meeting starts at 2 PM.",
+      "I can't give you the exact number off the top of my head.",
+    ],
+    synonyms: ["spontaneously", "extemporaneously"],
+    antonyms: ["after careful research"],
+    pronunciation: {
+      text: "awf thuh top ov my hed",
+      ipa: "/ɒf ðə tɒp ɒv maɪ hed/",
+    },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p123",
+    word: "In the long run",
+    slug: "in the-long-run",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Over a long period of time in the future; eventually",
+      id: "Dalam jangka panjang / Untuk ke depannya nanti",
+    },
+    examples: [
+      "Saving money now will benefit you in the long run.",
+      "This choice might be hard today, but it is better in the long run.",
+    ],
+    synonyms: ["eventually", "ultimately", "in the future"],
+    antonyms: ["in the short term"],
+    pronunciation: { text: "in thuh long run", ipa: "/ɪn ðə lɒŋ rʌn/" },
+    difficulty: "basic",
+  },
+  {
+    id: "p124",
+    word: "Bear in mind",
+    slug: "bear-in-mind",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "To remember or consider an important piece of information",
+      id: "Harap diingat / Ingat baik-baik / Pertimbangkan fakta bahwa",
+    },
+    examples: [
+      "Bear in mind that tomorrow is a public holiday, so shops might be closed.",
+      "When writing your essay, bear in mind the strict word count limit.",
+    ],
+    synonyms: ["keep in mind", "remember", "consider"],
+    antonyms: ["forget", "ignore"],
+    pronunciation: { text: "bair in mynd", ipa: "/beər ɪn maɪnd/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p125",
+    word: "As a consequence",
+    slug: "as-a-consequence",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "As a result of an action or event",
+      id: "Sebagai dampaknya / Alhasil / Akibatnya",
+    },
+    examples: [
+      "He missed the deadline and, as a consequence, lost the client.",
+      "The heavy rain caused flooding and, as a consequence, heavy traffic.",
+    ],
+    synonyms: ["as a result", "consequently", "therefore"],
+    antonyms: [],
+    pronunciation: { text: "az uh KON-suh-kwuns", ipa: "/æz ə ˈmɒn.sɪ.kwəns/" },
+    difficulty: "intermediate",
+  },
+  {
+    id: "p126",
+    word: "In other words",
+    slug: "in-other-words-fresh",
+    partOfSpeech: "phrase",
+    categories: ["phrases", "daily"],
+    meaning: {
+      en: "Expressed in a different and simpler way to clarify meaning",
+      id: "Dengan kata lain / Maksudnya yaitu",
+    },
+    examples: [
+      "He failed the test; in other words, he needs to retake it next month.",
+      "The machine is broken. In other words, we cannot work today.",
+    ],
+    synonyms: ["to put it another way", "that is to say"],
+    antonyms: [],
+    pronunciation: { text: "in UH-ther wurdz", ipa: "/ɪn ˈʌð.ər wɜːdz/" },
+    difficulty: "basic",
   },
 ];
 
