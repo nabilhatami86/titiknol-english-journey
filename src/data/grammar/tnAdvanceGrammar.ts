@@ -2176,122 +2176,152 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g8a-mc1",
         type: "multiple-choice",
-        question: "The board hasn't decided ___ the new branch will be established in Jakarta or Surabaya next year.",
+        question:
+          "The board hasn't decided ___ the new branch will be established in Jakarta or Surabaya next year.",
         options: ["A. whether", "B. who", "C. whom", "D. which"],
         correctAnswer: "A. whether",
-        reason: "Dua pilihan (Jakarta OR Surabaya) + makna yes/no → WHETHER. 'Whether A or B' = salah satu dari dua kemungkinan.",
+        reason:
+          "Dua pilihan (Jakarta OR Surabaya) + makna yes/no → WHETHER. 'Whether A or B' = salah satu dari dua kemungkinan.",
       },
       {
         id: "adv-g8a-mc2",
         type: "multiple-choice",
-        question: "The supervisor asked me ___ I had completed all the revisions before the deadline yesterday.",
+        question:
+          "The supervisor asked me ___ I had completed all the revisions before the deadline yesterday.",
         options: ["A. if", "B. who", "C. whom", "D. which"],
         correctAnswer: "A. if",
-        reason: "Indirect yes/no question setelah 'asked' → IF atau WHETHER. Tidak ada 'or not' di sini → IF bisa dipakai.",
+        reason:
+          "Indirect yes/no question setelah 'asked' → IF atau WHETHER. Tidak ada 'or not' di sini → IF bisa dipakai.",
       },
       {
         id: "adv-g8a-mc3",
         type: "multiple-choice",
-        question: "Nobody knows ___ will be appointed as the new ambassador to Japan by the president.",
+        question:
+          "Nobody knows ___ will be appointed as the new ambassador to Japan by the president.",
         options: ["A. who", "B. whom", "C. what", "D. which"],
         correctAnswer: "A. who",
-        reason: "WHO = subjek NC merujuk orang. '___ will be appointed' → butuh subjek pronoun → WHO (bukan WHOM yang adalah objek).",
+        reason:
+          "WHO = subjek NC merujuk orang. '___ will be appointed' → butuh subjek pronoun → WHO (bukan WHOM yang adalah objek).",
       },
       {
         id: "adv-g8a-mc4",
         type: "multiple-choice",
-        question: "It remains unclear ___ the annual meeting will be held at the headquarters or at a different location.",
+        question:
+          "It remains unclear ___ the annual meeting will be held at the headquarters or at a different location.",
         options: ["A. whether", "B. who", "C. what", "D. which"],
         correctAnswer: "A. whether",
-        reason: "TIP 5: 'unclear' = trigger WHETHER/IF. Ada makna dua kemungkinan (headquarters OR different location) → WHETHER.",
+        reason:
+          "TIP 5: 'unclear' = trigger WHETHER/IF. Ada makna dua kemungkinan (headquarters OR different location) → WHETHER.",
       },
       {
         id: "adv-g8a-mc5",
         type: "multiple-choice",
-        question: "The principal wants to find out ___ of the students in the science club won the national competition.",
+        question:
+          "The principal wants to find out ___ of the students in the science club won the national competition.",
         options: ["A. which", "B. who", "C. whom", "D. what"],
         correctAnswer: "A. which",
-        reason: "TIP 8: WHICH + 'of the students' = pilihan spesifik dari kelompok tertentu (specific selection from a defined group).",
+        reason:
+          "TIP 8: WHICH + 'of the students' = pilihan spesifik dari kelompok tertentu (specific selection from a defined group).",
       },
       {
         id: "adv-g8a-mc6",
         type: "multiple-choice",
-        question: "We are not sure ___ the financial report was reviewed by the auditing team last week.",
+        question:
+          "We are not sure ___ the financial report was reviewed by the auditing team last week.",
         options: ["A. if", "B. who", "C. whom", "D. which"],
         correctAnswer: "A. if",
-        reason: "TIP 5: 'not sure' = trigger WHETHER/IF. Pertanyaan ya/tidak → IF.",
+        reason:
+          "TIP 5: 'not sure' = trigger WHETHER/IF. Pertanyaan ya/tidak → IF.",
       },
       {
         id: "adv-g8a-mc7",
         type: "multiple-choice",
-        question: "The question is ___ should be responsible for coordinating the international conference this year.",
+        question:
+          "The question is ___ should be responsible for coordinating the international conference this year.",
         options: ["A. who", "B. whom", "C. what", "D. which"],
         correctAnswer: "A. who",
-        reason: "TIP 6: WHO = subjek NC merujuk orang. '___ should be responsible' → butuh subjek yang merujuk orang → WHO.",
+        reason:
+          "TIP 6: WHO = subjek NC merujuk orang. '___ should be responsible' → butuh subjek yang merujuk orang → WHO.",
       },
       {
         id: "adv-g8a-mc8",
         type: "multiple-choice",
-        question: "They haven't decided ___ will cancel the outdoor event because of the severe weather forecast or not.",
+        question:
+          "They haven't decided ___ will cancel the outdoor event because of the severe weather forecast or not.",
         options: ["A. whether", "B. who", "C. whom", "D. which"],
         correctAnswer: "A. whether",
-        reason: "TIP 5: Ada 'or not' di akhir klausa → pasti WHETHER (bukan IF, karena IF tidak bisa langsung sebelum 'or not' di awal).",
+        reason:
+          "TIP 5: Ada 'or not' di akhir klausa → pasti WHETHER (bukan IF, karena IF tidak bisa langsung sebelum 'or not' di awal).",
       },
       {
         id: "adv-g8a-mc9",
         type: "multiple-choice",
-        question: "It has not been confirmed ___ the guest speaker will be able to attend the business summit in Singapore.",
+        question:
+          "It has not been confirmed ___ the guest speaker will be able to attend the business summit in Singapore.",
         options: ["A. whether or not", "B. who", "C. what", "D. which"],
         correctAnswer: "A. whether or not",
-        reason: "'confirmed' = trigger WHETHER/IF. 'Whether or not' langsung di depan = WHETHER OR NOT (opsi A menggunakan bentuk lengkap).",
+        reason:
+          "'confirmed' = trigger WHETHER/IF. 'Whether or not' langsung di depan = WHETHER OR NOT (opsi A menggunakan bentuk lengkap).",
       },
       {
         id: "adv-g8a-mc10",
         type: "multiple-choice",
-        question: "We couldn't decide ___ of the two proposed designs would be more effective for the marketing campaign.",
+        question:
+          "We couldn't decide ___ of the two proposed designs would be more effective for the marketing campaign.",
         options: ["A. which", "B. who", "C. whom", "D. what"],
         correctAnswer: "A. which",
-        reason: "TIP 8: WHICH + 'of the two' = pilihan spesifik antara dua opsi yang sudah ditetapkan.",
+        reason:
+          "TIP 8: WHICH + 'of the two' = pilihan spesifik antara dua opsi yang sudah ditetapkan.",
       },
       {
         id: "adv-g8a-mc11",
         type: "multiple-choice",
-        question: "The committee is discussing ___ should represent the university at the upcoming global youth forum.",
+        question:
+          "The committee is discussing ___ should represent the university at the upcoming global youth forum.",
         options: ["A. who", "B. whom", "C. what", "D. which"],
         correctAnswer: "A. who",
-        reason: "TIP 6: WHO = subjek NC merujuk orang. '___ should represent' → WHO (subject position, person).",
+        reason:
+          "TIP 6: WHO = subjek NC merujuk orang. '___ should represent' → WHO (subject position, person).",
       },
       {
         id: "adv-g8a-mc12",
         type: "multiple-choice",
-        question: "I'm not certain ___ she submitted the final version of her research paper on time or not.",
+        question:
+          "I'm not certain ___ she submitted the final version of her research paper on time or not.",
         options: ["A. whether", "B. who", "C. what", "D. which"],
         correctAnswer: "A. whether",
-        reason: "TIP 5: 'not certain' = trigger WHETHER. Ada 'or not' → pasti WHETHER.",
+        reason:
+          "TIP 5: 'not certain' = trigger WHETHER. Ada 'or not' → pasti WHETHER.",
       },
       {
         id: "adv-g8a-mc13",
         type: "multiple-choice",
-        question: "They are still debating ___ will approve the new budget proposal after the unexpected increase in costs.",
+        question:
+          "They are still debating ___ will approve the new budget proposal after the unexpected increase in costs.",
         options: ["A. whether or not", "B. what", "C. whom", "D. which"],
         correctAnswer: "A. whether or not",
-        reason: "'debating whether or not [they] will approve' = membahas apakah proposal itu akan disetujui atau tidak. Subjek 'they' tersirat dari klausa utama.",
+        reason:
+          "'debating whether or not [they] will approve' = membahas apakah proposal itu akan disetujui atau tidak. Subjek 'they' tersirat dari klausa utama.",
       },
       {
         id: "adv-g8a-mc14",
         type: "multiple-choice",
-        question: "The manager asked ___ could handle the investor presentation during his absence next Friday.",
+        question:
+          "The manager asked ___ could handle the investor presentation during his absence next Friday.",
         options: ["A. who", "B. whom", "C. what", "D. which"],
         correctAnswer: "A. who",
-        reason: "TIP 6: WHO = subjek NC merujuk orang. '___ could handle' → butuh subjek orang → WHO.",
+        reason:
+          "TIP 6: WHO = subjek NC merujuk orang. '___ could handle' → butuh subjek orang → WHO.",
       },
       {
         id: "adv-g8a-mc15",
         type: "multiple-choice",
-        question: "It is still unknown ___ caused the sudden breakdown of the main computer system during the conference.",
+        question:
+          "It is still unknown ___ caused the sudden breakdown of the main computer system during the conference.",
         options: ["A. what", "B. which", "C. who", "D. whom"],
         correctAnswer: "A. what",
-        reason: "TIP 9: WHAT = hal/penyebab yang tidak diketahui (open-ended, bisa benda atau situasi). 'What caused' = penyebabnya apa. WHAT lebih tepat dari WHO untuk kerusakan sistem.",
+        reason:
+          "TIP 9: WHAT = hal/penyebab yang tidak diketahui (open-ended, bisa benda atau situasi). 'What caused' = penyebabnya apa. WHAT lebih tepat dari WHO untuk kerusakan sistem.",
       },
     ],
   },
@@ -2303,7 +2333,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
     day: 8,
     tutor: "Ms. Vita",
     title: "Comparison Degree Exercise",
-    subtitle: "Positive · Comparative · Superlative · Logical Comparison · 15 soal",
+    subtitle:
+      "Positive · Comparative · Superlative · Logical Comparison · 15 soal",
     overview:
       "Latihan soal pilihan ganda Comparison Degree dari worksheet kelas. Fokus pada as...as, than, the most, logical comparison (that of / those of), dan irregular forms.",
     materialSections: [
@@ -2338,10 +2369,12 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g8b-mc1",
         type: "multiple-choice",
-        question: "Pilots who prepare for military careers train on the ground ___ in the air.",
+        question:
+          "Pilots who prepare for military careers train on the ground ___ in the air.",
         options: ["A. as good as", "B. as well as", "C. well as", "D. good as"],
         correctAnswer: "B. as well as",
-        reason: "TIP 2: 'train' adalah verb → gunakan ADVERB 'well' bukan adjective 'good'. Format: as + adv + as → 'as well as'.",
+        reason:
+          "TIP 2: 'train' adalah verb → gunakan ADVERB 'well' bukan adjective 'good'. Format: as + adv + as → 'as well as'.",
       },
       {
         id: "adv-g8b-mc2",
@@ -2354,20 +2387,29 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. to compare as a teacher",
         ],
         correctAnswer: "C. than that of a teacher",
-        reason: "TIP 3: Logical comparison. Membandingkan salary vs salary (bukan salary vs person). 'that of' = 'the salary of'. Opsi B salah karena membandingkan salary dengan teacher (orang).",
+        reason:
+          "TIP 3: Logical comparison. Membandingkan salary vs salary (bukan salary vs person). 'that of' = 'the salary of'. Opsi B salah karena membandingkan salary dengan teacher (orang).",
       },
       {
         id: "adv-g8b-mc3",
         type: "multiple-choice",
-        question: "Tuition at an American university runs ___ twenty thousand dollars a semester.",
-        options: ["A. so high as", "B. as high to", "C. as high as", "D. as high than"],
+        question:
+          "Tuition at an American university runs ___ twenty thousand dollars a semester.",
+        options: [
+          "A. so high as",
+          "B. as high to",
+          "C. as high as",
+          "D. as high than",
+        ],
         correctAnswer: "C. as high as",
-        reason: "TIP 1: Positive degree → AS + adj + AS. Hanya 'as high as' yang benar. 'So...as' hanya untuk kalimat negatif.",
+        reason:
+          "TIP 1: Positive degree → AS + adj + AS. Hanya 'as high as' yang benar. 'So...as' hanya untuk kalimat negatif.",
       },
       {
         id: "adv-g8b-mc4",
         type: "multiple-choice",
-        question: "The observation deck at the World Trade Center ___ in New York.",
+        question:
+          "The observation deck at the World Trade Center ___ in New York.",
         options: [
           "A. is highest than any other one",
           "B. is higher than any other one",
@@ -2375,23 +2417,33 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. is higher that any other one",
         ],
         correctAnswer: "B. is higher than any other one",
-        reason: "TIP 5: Comparative + THAN (bukan 'that'). Gunakan comparative 'higher' (bukan superlative 'highest') dengan 'than any other one'.",
+        reason:
+          "TIP 5: Comparative + THAN (bukan 'that'). Gunakan comparative 'higher' (bukan superlative 'highest') dengan 'than any other one'.",
       },
       {
         id: "adv-g8b-mc5",
         type: "multiple-choice",
-        question: "Migraine headaches are more frequent among women ___ among men.",
+        question:
+          "Migraine headaches are more frequent among women ___ among men.",
         options: ["A. than", "B. however", "C. except for", "D. as are"],
         correctAnswer: "A. than",
-        reason: "'more frequent...than' = structure comparative standard. Parallel: 'more frequent among women than [more frequent] among men'.",
+        reason:
+          "'more frequent...than' = structure comparative standard. Parallel: 'more frequent among women than [more frequent] among men'.",
       },
       {
         id: "adv-g8b-mc6",
         type: "multiple-choice",
-        question: "Helium is ___ all gasses to liquify and is impossible to solidify at normal air pressure.",
-        options: ["A. more than difficult", "B. the most difficult of", "C. more difficult of", "D. most difficult"],
+        question:
+          "Helium is ___ all gasses to liquify and is impossible to solidify at normal air pressure.",
+        options: [
+          "A. more than difficult",
+          "B. the most difficult of",
+          "C. more difficult of",
+          "D. most difficult",
+        ],
         correctAnswer: "B. the most difficult of",
-        reason: "TIP 4: Superlative + OF + plural → 'the most difficult of all gases'. Harus ada 'the' sebelum superlative.",
+        reason:
+          "TIP 4: Superlative + OF + plural → 'the most difficult of all gases'. Harus ada 'the' sebelum superlative.",
       },
       {
         id: "adv-g8b-mc7",
@@ -2404,7 +2456,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. most commonly used material",
         ],
         correctAnswer: "D. most commonly used material",
-        reason: "TIP 6: Urutan benar → superlative + adverb + adjective + noun = 'most commonly used material'.",
+        reason:
+          "TIP 6: Urutan benar → superlative + adverb + adjective + noun = 'most commonly used material'.",
       },
       {
         id: "adv-g8b-mc8",
@@ -2417,7 +2470,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. than they do any other",
         ],
         correctAnswer: "A. than do any other",
-        reason: "Inverted comparison setelah 'than': 'more water than do any other [living organisms]'. Subject-auxiliary inversion setelah 'than' sering muncul di TOEFL.",
+        reason:
+          "Inverted comparison setelah 'than': 'more water than do any other [living organisms]'. Subject-auxiliary inversion setelah 'than' sering muncul di TOEFL.",
       },
       {
         id: "adv-g8b-mc9",
@@ -2430,36 +2484,59 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. bone largest and longest and",
         ],
         correctAnswer: "C. largest and longest bone",
-        reason: "Superlative adjective sebelum noun: 'the largest and longest bone in the body'. Tidak perlu 'the' kedua sebelum 'longest'.",
+        reason:
+          "Superlative adjective sebelum noun: 'the largest and longest bone in the body'. Tidak perlu 'the' kedua sebelum 'longest'.",
       },
       {
         id: "adv-g8b-mc10",
         type: "multiple-choice",
-        question: "Although beavers rarely remain submerged for more than two minutes, they can stay underwater ___ fifteen minutes before having to surface for air.",
-        options: ["A. as long", "B. as long as", "C. so long", "D. so long that"],
+        question:
+          "Although beavers rarely remain submerged for more than two minutes, they can stay underwater ___ fifteen minutes before having to surface for air.",
+        options: [
+          "A. as long",
+          "B. as long as",
+          "C. so long",
+          "D. so long that",
+        ],
         correctAnswer: "B. as long as",
-        reason: "'As long as' = selama / hingga (durasi). 'As long as fifteen minutes' = hingga lima belas menit. Perlu 'as...as' lengkap.",
+        reason:
+          "'As long as' = selama / hingga (durasi). 'As long as fifteen minutes' = hingga lima belas menit. Perlu 'as...as' lengkap.",
       },
       {
         id: "adv-g8b-mc11",
         type: "multiple-choice",
-        question: "Liquid water has fewer hydrogen bonds than ice, so more molecules can occupy the same space, making liquid water ___ than ice.",
-        options: ["A. denser", "B. is denser", "C. more than dense", "D. As more dense"],
+        question:
+          "Liquid water has fewer hydrogen bonds than ice, so more molecules can occupy the same space, making liquid water ___ than ice.",
+        options: [
+          "A. denser",
+          "B. is denser",
+          "C. more than dense",
+          "D. As more dense",
+        ],
         correctAnswer: "A. denser",
-        reason: "TIP 7: 'dense' = 1 suku kata → comparative form '-er' → 'denser'. Struktur 'making + obj + adj comparative' tidak butuh 'is'.",
+        reason:
+          "TIP 7: 'dense' = 1 suku kata → comparative form '-er' → 'denser'. Struktur 'making + obj + adj comparative' tidak butuh 'is'.",
       },
       {
         id: "adv-g8b-mc12",
         type: "multiple-choice",
-        question: "Although thunder and lightning are produced at the same time, light waves travel faster ___, so we see the lightning before we hear the thunder.",
-        options: ["A. than sound waves do", "B. than sound waves are", "C. do sound waves", "D. sound waves"],
+        question:
+          "Although thunder and lightning are produced at the same time, light waves travel faster ___, so we see the lightning before we hear the thunder.",
+        options: [
+          "A. than sound waves do",
+          "B. than sound waves are",
+          "C. do sound waves",
+          "D. sound waves",
+        ],
         correctAnswer: "A. than sound waves do",
-        reason: "Parallel comparison: 'travel faster than sound waves do [travel]'. 'Do' menggantikan 'travel' untuk menghindari pengulangan. 'Are' tidak tepat karena 'travel' adalah action verb.",
+        reason:
+          "Parallel comparison: 'travel faster than sound waves do [travel]'. 'Do' menggantikan 'travel' untuk menghindari pengulangan. 'Are' tidak tepat karena 'travel' adalah action verb.",
       },
       {
         id: "adv-g8b-mc13",
         type: "multiple-choice",
-        question: "The decimal numeral system is one of the ___ ways of expressing numbers.",
+        question:
+          "The decimal numeral system is one of the ___ ways of expressing numbers.",
         options: [
           "A. useful mort world's",
           "B. world's most useful",
@@ -2467,12 +2544,14 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. most world's useful",
         ],
         correctAnswer: "B. world's most useful",
-        reason: "Urutan kata yang benar: possessive ('world's') + superlative ('most') + adjective ('useful') + noun. → 'the world's most useful ways'.",
+        reason:
+          "Urutan kata yang benar: possessive ('world's') + superlative ('most') + adjective ('useful') + noun. → 'the world's most useful ways'.",
       },
       {
         id: "adv-g8b-mc14",
         type: "multiple-choice",
-        question: "The province of Newfoundland has ___ than any other region of North America in which the first language is English.",
+        question:
+          "The province of Newfoundland has ___ than any other region of North America in which the first language is English.",
         options: [
           "A. its longer history",
           "B. a longer history",
@@ -2480,12 +2559,14 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. the history is longer",
         ],
         correctAnswer: "B. a longer history",
-        reason: "Comparative 'longer' + indefinite article 'a' + noun 'history'. 'Has a longer history than...' adalah struktur yang benar.",
+        reason:
+          "Comparative 'longer' + indefinite article 'a' + noun 'history'. 'Has a longer history than...' adalah struktur yang benar.",
       },
       {
         id: "adv-g8b-mc15",
         type: "multiple-choice",
-        question: "The knee is ___ most other joints in the body because it cannot twist without injury.",
+        question:
+          "The knee is ___ most other joints in the body because it cannot twist without injury.",
         options: [
           "A. more likely to be damaged than",
           "B. likely to be more than damaged",
@@ -2493,7 +2574,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. to be damaged more than likely",
         ],
         correctAnswer: "A. more likely to be damaged than",
-        reason: "Comparative adjective phrase: 'more likely to be damaged than most other joints.' Urutan: more + adj phrase + than.",
+        reason:
+          "Comparative adjective phrase: 'more likely to be damaged than most other joints.' Urutan: more + adj phrase + than.",
       },
     ],
   },
@@ -2505,7 +2587,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
     day: 8,
     tutor: "Ms. Vita",
     title: "Compilation Exercise — Week 1–2",
-    subtitle: "NC · Comparison · Causative · Parallel Structure · 15 soal review",
+    subtitle:
+      "NC · Comparison · Causative · Parallel Structure · 15 soal review",
     overview:
       "Soal kompilasi dari materi Week 1–2: Noun Clause, Comparison Degree, Causative Verbs, dan Parallel Structure. Semua topik digabung dalam satu sesi review.",
     materialSections: [
@@ -2532,71 +2615,113 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g8c-mc1",
         type: "multiple-choice",
-        question: "___ was caused by breathing impure air was once a common belief.",
-        options: ["A. Malaria", "B. That Malaria", "C. Why Malaria", "D. Because Malaria"],
+        question:
+          "___ was caused by breathing impure air was once a common belief.",
+        options: [
+          "A. Malaria",
+          "B. That Malaria",
+          "C. Why Malaria",
+          "D. Because Malaria",
+        ],
         correctAnswer: "B. That Malaria",
-        reason: "NC sebagai Subject kalimat utama. 'That Malaria was caused by...' = NC of Statement sebagai Subject. 'That' mengawali NC, bukan 'Why' atau 'Because'.",
+        reason:
+          "NC sebagai Subject kalimat utama. 'That Malaria was caused by...' = NC of Statement sebagai Subject. 'That' mengawali NC, bukan 'Why' atau 'Because'.",
       },
       {
         id: "adv-g8c-mc2",
         type: "multiple-choice",
-        question: "Scientists cannot agree on ___ related to other orders of insects.",
-        options: ["A. How fleas are", "B. Fleas that are", "C. That are fleas", "D. How are fleas"],
+        question:
+          "Scientists cannot agree on ___ related to other orders of insects.",
+        options: [
+          "A. How fleas are",
+          "B. Fleas that are",
+          "C. That are fleas",
+          "D. How are fleas",
+        ],
         correctAnswer: "A. How fleas are",
-        reason: "TIP 4: THAT tidak bisa langsung setelah preposisi 'on'. Gunakan HOW. NC setelah preposisi harus berurutan S + V (statement order) → 'How fleas are [related]' bukan 'How are fleas'.",
+        reason:
+          "TIP 4: THAT tidak bisa langsung setelah preposisi 'on'. Gunakan HOW. NC setelah preposisi harus berurutan S + V (statement order) → 'How fleas are [related]' bukan 'How are fleas'.",
       },
       {
         id: "adv-g8c-mc3",
         type: "multiple-choice",
-        question: "Hubble's law states that the greater the distance between any two galaxies, ___ is their relative speed of separation.",
-        options: ["A. The greatest", "B. The greater", "C. Greater than", "D. As great as"],
+        question:
+          "Hubble's law states that the greater the distance between any two galaxies, ___ is their relative speed of separation.",
+        options: [
+          "A. The greatest",
+          "B. The greater",
+          "C. Greater than",
+          "D. As great as",
+        ],
         correctAnswer: "B. The greater",
-        reason: "Double Comparative I (sebab-akibat): 'The greater... the greater...' Kedua bagian harus comparative, bukan superlative.",
+        reason:
+          "Double Comparative I (sebab-akibat): 'The greater... the greater...' Kedua bagian harus comparative, bukan superlative.",
       },
       {
         id: "adv-g8c-mc4",
         type: "multiple-choice",
-        question: "We know that in 1000 AD Leif Erikcson ___ on the North American coast, and Norwegian companions were the first white men to see the new world.",
+        question:
+          "We know that in 1000 AD Leif Erikcson ___ on the North American coast, and Norwegian companions were the first white men to see the new world.",
         options: ["A. Landed", "B. Is landed", "C. Landing", "D. To land"],
         correctAnswer: "A. Landed",
-        reason: "Simple Past untuk fakta sejarah (1000 AD). 'Is landed' = salah (passive present). 'Landing' dan 'To land' tidak membentuk klausa lengkap.",
+        reason:
+          "Simple Past untuk fakta sejarah (1000 AD). 'Is landed' = salah (passive present). 'Landing' dan 'To land' tidak membentuk klausa lengkap.",
       },
       {
         id: "adv-g8c-mc5",
         type: "multiple-choice",
-        question: "The flexibility of films allows the artist ___ unbridled imagination to the animation of cartoon characters.",
+        question:
+          "The flexibility of films allows the artist ___ unbridled imagination to the animation of cartoon characters.",
         options: ["A. Brings", "B. Is brought", "C. Bringing", "D. To bring"],
         correctAnswer: "D. To bring",
-        reason: "ALLOW + object + TO + V1. 'allows the artist TO BRING' = struktur baku causative 'allow'.",
+        reason:
+          "ALLOW + object + TO + V1. 'allows the artist TO BRING' = struktur baku causative 'allow'.",
       },
       {
         id: "adv-g8c-mc6",
         type: "multiple-choice",
-        question: "Usually, the more skilled an athlete ___, the more effortless the athlete's movements appear to be.",
+        question:
+          "Usually, the more skilled an athlete ___, the more effortless the athlete's movements appear to be.",
         options: ["A. It is that", "B. That it is", "C. That is", "D. Is"],
         correctAnswer: "D. Is",
-        reason: "DC I: 'The more skilled an athlete IS, the more effortless...' Dibutuhkan verb 'is' untuk melengkapi 'an athlete ___'.",
+        reason:
+          "DC I: 'The more skilled an athlete IS, the more effortless...' Dibutuhkan verb 'is' untuk melengkapi 'an athlete ___'.",
       },
       {
         id: "adv-g8c-mc7",
         type: "multiple-choice",
-        question: "Hardin's professor had him ___ his thesis many times before allowing him to present it to the committee.",
-        options: ["A. Rewrite", "B. Who writes", "C. To rewriting", "D. To rewrite"],
+        question:
+          "Hardin's professor had him ___ his thesis many times before allowing him to present it to the committee.",
+        options: [
+          "A. Rewrite",
+          "B. Who writes",
+          "C. To rewriting",
+          "D. To rewrite",
+        ],
         correctAnswer: "A. Rewrite",
-        reason: "HAVE + object + V-base. 'had him REWRITE' = bare infinitive tanpa 'to'. 'To rewrite' (D) salah karena 'have' causative tidak pakai 'to'.",
+        reason:
+          "HAVE + object + V-base. 'had him REWRITE' = bare infinitive tanpa 'to'. 'To rewrite' (D) salah karena 'have' causative tidak pakai 'to'.",
       },
       {
         id: "adv-g8c-mc8",
         type: "multiple-choice",
-        question: "A three-foot octopus can crawl through a hole ___ in diameter.",
-        options: ["A. Than one inch less", "B. Less than one inch", "C. One less inch than", "D. Than less one inch"],
+        question:
+          "A three-foot octopus can crawl through a hole ___ in diameter.",
+        options: [
+          "A. Than one inch less",
+          "B. Less than one inch",
+          "C. One less inch than",
+          "D. Than less one inch",
+        ],
         correctAnswer: "B. Less than one inch",
-        reason: "'Less than one inch in diameter' = urutan kata yang benar. 'Less than' = kurang dari, mengikuti pola quantity expression.",
+        reason:
+          "'Less than one inch in diameter' = urutan kata yang benar. 'Less than' = kurang dari, mengikuti pola quantity expression.",
       },
       {
         id: "adv-g8c-mc9",
         type: "multiple-choice",
-        question: "If one of the participants in a conversation wonders ___ no real communication has taken place.",
+        question:
+          "If one of the participants in a conversation wonders ___ no real communication has taken place.",
         options: [
           "A. What said the person",
           "B. What the other person said",
@@ -2604,55 +2729,87 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. What was the other person saying",
         ],
         correctAnswer: "B. What the other person said",
-        reason: "NC setelah 'wonders' → statement word order (S + V). 'What the other person said' = urutan benar. C dan D salah karena memakai question word order.",
+        reason:
+          "NC setelah 'wonders' → statement word order (S + V). 'What the other person said' = urutan benar. C dan D salah karena memakai question word order.",
       },
       {
         id: "adv-g8c-mc10",
         type: "multiple-choice",
-        question: "Dr. James was displeased because the student had turned in unacceptable report, so he made it ___.",
-        options: ["A. Presented", "B. To presented", "C. To be presented", "D. Presenting"],
+        question:
+          "Dr. James was displeased because the student had turned in unacceptable report, so he made it ___.",
+        options: [
+          "A. Presented",
+          "B. To presented",
+          "C. To be presented",
+          "D. Presenting",
+        ],
         correctAnswer: "A. Presented",
-        reason: "MAKE + object + past participle (passive causative). 'Made it presented' = caused the report to be in a presented state. 'To be presented' salah karena MAKE tidak pakai 'to'.",
+        reason:
+          "MAKE + object + past participle (passive causative). 'Made it presented' = caused the report to be in a presented state. 'To be presented' salah karena MAKE tidak pakai 'to'.",
       },
       {
         id: "adv-g8c-mc11",
         type: "multiple-choice",
         question: "To answer accurately is more important than ___.",
-        options: ["A. A quick finish", "B. To finish quickly", "C. Finishing quickly", "D. You finish quickly"],
+        options: [
+          "A. A quick finish",
+          "B. To finish quickly",
+          "C. Finishing quickly",
+          "D. You finish quickly",
+        ],
         correctAnswer: "B. To finish quickly",
-        reason: "Parallel structure: 'To answer accurately' ↔ 'to finish quickly'. Kedua elemen harus infinitive (TO + V).",
+        reason:
+          "Parallel structure: 'To answer accurately' ↔ 'to finish quickly'. Kedua elemen harus infinitive (TO + V).",
       },
       {
         id: "adv-g8c-mc12",
         type: "multiple-choice",
-        question: "Ostrich eggs are larger ___ of any other living animals; they may be 150 mm long and 127 mm wide.",
+        question:
+          "Ostrich eggs are larger ___ of any other living animals; they may be 150 mm long and 127 mm wide.",
         options: ["A. Than those", "B. Of those", "C. Those that", "D. than"],
         correctAnswer: "A. Than those",
-        reason: "Logical comparison (plural): 'larger than THOSE [= eggs] of any other living animals.' THOSE menggantikan plural noun 'eggs'.",
+        reason:
+          "Logical comparison (plural): 'larger than THOSE [= eggs] of any other living animals.' THOSE menggantikan plural noun 'eggs'.",
       },
       {
         id: "adv-g8c-mc13",
         type: "multiple-choice",
-        question: "The chief justice of the United States is the country's ___ and is appointed by the president with the approval of the senate.",
-        options: ["A. Judicial officer highest", "B. Officer judicial highest", "C. Officer highest judicial", "D. Highest judicial officer"],
+        question:
+          "The chief justice of the United States is the country's ___ and is appointed by the president with the approval of the senate.",
+        options: [
+          "A. Judicial officer highest",
+          "B. Officer judicial highest",
+          "C. Officer highest judicial",
+          "D. Highest judicial officer",
+        ],
         correctAnswer: "D. Highest judicial officer",
-        reason: "Urutan adjective: superlative ('highest') + adjective ('judicial') + noun ('officer'). → 'highest judicial officer'.",
+        reason:
+          "Urutan adjective: superlative ('highest') + adjective ('judicial') + noun ('officer'). → 'highest judicial officer'.",
       },
       {
         id: "adv-g8c-mc14",
         type: "multiple-choice",
-        question: "To generate income, magazine publishers must decide whether to increase the subscription price or ___.",
-        options: ["A. To sell advertising", "B. If they should sell advertising", "C. Selling advertising", "D. To sold advertising"],
+        question:
+          "To generate income, magazine publishers must decide whether to increase the subscription price or ___.",
+        options: [
+          "A. To sell advertising",
+          "B. If they should sell advertising",
+          "C. Selling advertising",
+          "D. To sold advertising",
+        ],
         correctAnswer: "A. To sell advertising",
-        reason: "Parallel structure: 'whether TO increase... or TO sell...' Kedua pilihan harus TO + V1. 'If' salah karena parallel dengan 'whether'.",
+        reason:
+          "Parallel structure: 'whether TO increase... or TO sell...' Kedua pilihan harus TO + V1. 'If' salah karena parallel dengan 'whether'.",
       },
       {
         id: "adv-g8c-mc15",
         type: "multiple-choice",
-        question: "A conductor uses signals and gestures to let the musicians ___ when to play various parts of a composition.",
+        question:
+          "A conductor uses signals and gestures to let the musicians ___ when to play various parts of a composition.",
         options: ["A. Knowing", "B. Known", "C. To know", "D. Know"],
         correctAnswer: "D. Know",
-        reason: "LET + object + V-base. 'let the musicians KNOW' = bare infinitive tanpa 'to'. LET tidak menggunakan 'to' seperti ALLOW.",
+        reason:
+          "LET + object + V-base. 'let the musicians KNOW' = bare infinitive tanpa 'to'. LET tidak menggunakan 'to' seperti ALLOW.",
       },
     ],
   },
@@ -2673,10 +2830,12 @@ const advanceGrammarLessons: ModuleLesson[] = [
         id: "adv-g8d-mc1",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q1] No one could really understand ___ he left the meeting at the very beginning of the debate.",
+        question:
+          "[Part I — Q1] No one could really understand ___ he left the meeting at the very beginning of the debate.",
         options: ["A. What", "B. Why", "C. Where", "D. Whom"],
         correctAnswer: "B. Why",
-        reason: "'Why' memperkenalkan NC yang mengungkapkan alasan (reason). 'Why he left' = alasan ia pergi. 'What' salah (bukan benda), 'Where' salah (bukan tempat), 'Whom' salah (bukan orang).",
+        reason:
+          "'Why' memperkenalkan NC yang mengungkapkan alasan (reason). 'Why he left' = alasan ia pergi. 'What' salah (bukan benda), 'Where' salah (bukan tempat), 'Whom' salah (bukan orang).",
       },
       {
         id: "adv-g8d-mc2",
@@ -2690,7 +2849,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. The one of the seven deadly sins is pride",
         ],
         correctAnswer: "C. That AIDS has change social practices",
-        reason: "TIP 1+2: 'It is + adj (obvious) + THAT + S + V'. Hanya opsi C yang menggunakan THAT + S + V (statement order). A dan B salah karena question word order.",
+        reason:
+          "TIP 1+2: 'It is + adj (obvious) + THAT + S + V'. Hanya opsi C yang menggunakan THAT + S + V (statement order). A dan B salah karena question word order.",
       },
       {
         id: "adv-g8d-mc3",
@@ -2704,13 +2864,15 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. Are they cute",
         ],
         correctAnswer: "A. How cute they are",
-        reason: "NC of Exclamation: HOW + adj + S + V. 'How cute they are' = urutan benar. B salah (question order), C salah (adj setelah subject), D salah (question form).",
+        reason:
+          "NC of Exclamation: HOW + adj + S + V. 'How cute they are' = urutan benar. B salah (question order), C salah (adj setelah subject), D salah (question form).",
       },
       {
         id: "adv-g8d-mc4",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q4] The dogs are so noisy that I can hardly hear what ___",
+        question:
+          "[Part I — Q4] The dogs are so noisy that I can hardly hear what ___",
         options: [
           "A. Are saying you",
           "B. That you are saying",
@@ -2718,31 +2880,37 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. You are saying",
         ],
         correctAnswer: "D. You are saying",
-        reason: "NC setelah 'what' → statement word order (S + V). 'You are saying' = urutan benar. A, B, C memakai question order atau tambahan 'that' yang tidak perlu.",
+        reason:
+          "NC setelah 'what' → statement word order (S + V). 'You are saying' = urutan benar. A, B, C memakai question order atau tambahan 'that' yang tidak perlu.",
       },
       {
         id: "adv-g8d-mc5",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q5] ___ the speaker said next was lost in the general uproar.",
+        question:
+          "[Part I — Q5] ___ the speaker said next was lost in the general uproar.",
         options: ["A. Why", "B. The thing", "C. How", "D. What"],
         correctAnswer: "D. What",
-        reason: "TIP 9: WHAT = 'hal yang' (the thing that). 'What the speaker said next' = NC sebagai subject kalimat. WHAT menggantikan 'the thing that'.",
+        reason:
+          "TIP 9: WHAT = 'hal yang' (the thing that). 'What the speaker said next' = NC sebagai subject kalimat. WHAT menggantikan 'the thing that'.",
       },
       {
         id: "adv-g8d-mc6",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q6] The authorities called for checks to discover ___ corruption officials are being bribed to conceive of construction or not.",
+        question:
+          "[Part I — Q6] The authorities called for checks to discover ___ corruption officials are being bribed to conceive of construction or not.",
         options: ["A. Whether", "B. Why", "C. Because", "D. Although"],
         correctAnswer: "A. Whether",
-        reason: "TIP 5: 'or not' di akhir → pasti WHETHER. 'To discover whether...' = menemukan apakah (yes/no). 'Because' dan 'Although' adalah conjunction, bukan conjunction NC.",
+        reason:
+          "TIP 5: 'or not' di akhir → pasti WHETHER. 'To discover whether...' = menemukan apakah (yes/no). 'Because' dan 'Although' adalah conjunction, bukan conjunction NC.",
       },
       {
         id: "adv-g8d-mc7",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q7] ___ so incredible is that these insects successfully migrate to places that they have never even seen.",
+        question:
+          "[Part I — Q7] ___ so incredible is that these insects successfully migrate to places that they have never even seen.",
         options: [
           "A. That makes the monarch butterflies' migration",
           "B. What makes the monarch butterflies' migration",
@@ -2750,40 +2918,53 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. The migration of the monarch butterflies that",
         ],
         correctAnswer: "B. What makes the monarch butterflies' migration",
-        reason: "'What makes... so incredible' = NC sebagai subject kalimat. 'What' = hal yang. Kalimat lengkap: 'What makes... so incredible IS THAT...'",
+        reason:
+          "'What makes... so incredible' = NC sebagai subject kalimat. 'What' = hal yang. Kalimat lengkap: 'What makes... so incredible IS THAT...'",
       },
       {
         id: "adv-g8d-mc8",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q8] Most of ___ archeologists know about prehistoric cultures based on studies of material remains.",
+        question:
+          "[Part I — Q8] Most of ___ archeologists know about prehistoric cultures based on studies of material remains.",
         options: ["A. These", "B. What", "C. Which", "D. Their"],
         correctAnswer: "B. What",
-        reason: "TIP 9: WHAT setelah preposisi 'of'. 'Most of what archeologists know' = sebagian besar hal yang diketahui arkeolog.",
+        reason:
+          "TIP 9: WHAT setelah preposisi 'of'. 'Most of what archeologists know' = sebagian besar hal yang diketahui arkeolog.",
       },
       {
         id: "adv-g8d-mc9",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q9] In the eighteenth century, questions of how we come to know ___ is known as epistemology.",
-        options: ["A. What we believe", "B. There is believe", "C. Is is believed", "D. Which believes"],
+        question:
+          "[Part I — Q9] In the eighteenth century, questions of how we come to know ___ is known as epistemology.",
+        options: [
+          "A. What we believe",
+          "B. There is believe",
+          "C. Is is believed",
+          "D. Which believes",
+        ],
         correctAnswer: "A. What we believe",
-        reason: "NC di dalam NC: 'how we come to know WHAT WE BELIEVE'. 'What we believe' = hal yang kita percayai, sebagai objek dari 'know'.",
+        reason:
+          "NC di dalam NC: 'how we come to know WHAT WE BELIEVE'. 'What we believe' = hal yang kita percayai, sebagai objek dari 'know'.",
       },
       {
         id: "adv-g8d-mc10",
         type: "multiple-choice",
         section: "part1",
-        question: "[Part I — Q10] In the modern era, some scientists assume ___ traditional parts of philosophy become academic disciplines.",
+        question:
+          "[Part I — Q10] In the modern era, some scientists assume ___ traditional parts of philosophy become academic disciplines.",
         options: ["A. It is that", "B. That it is", "C. That", "D. Is that"],
         correctAnswer: "C. That",
-        reason: "TIP 3: ASSUME + THAT + S + V (NC of Statement). Cukup 'that' saja, tidak perlu 'it is' atau 'it is that' di tengah.",
+        reason:
+          "TIP 3: ASSUME + THAT + S + V (NC of Statement). Cukup 'that' saja, tidak perlu 'it is' atau 'it is that' di tengah.",
       },
       {
         id: "adv-g8d-mc11",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q1] Scientists are now beginning to conduct experiments on ___ trigger different sorts of health risks.",
+        question:
+          "[Part II — Q1] Scientists are now beginning to conduct experiments on ___ trigger different sorts of health risks.",
         options: [
           "A. Noise pollution can",
           "B. That noise pollution",
@@ -2791,13 +2972,15 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. How nice pollution can",
         ],
         correctAnswer: "C. How noise pollution",
-        reason: "TIP 4: Setelah preposisi 'on' → tidak bisa THAT. Gunakan HOW. 'experiments on HOW noise pollution can trigger...' (statement order: S + V).",
+        reason:
+          "TIP 4: Setelah preposisi 'on' → tidak bisa THAT. Gunakan HOW. 'experiments on HOW noise pollution can trigger...' (statement order: S + V).",
       },
       {
         id: "adv-g8d-mc12",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q2] ___ Have at least 4 hours of hazardous materials response training is mandated by federal laws.",
+        question:
+          "[Part II — Q2] ___ Have at least 4 hours of hazardous materials response training is mandated by federal laws.",
         options: [
           "A. All police officers",
           "B. All police officers must",
@@ -2805,67 +2988,96 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. For all police officers",
         ],
         correctAnswer: "C. That all police officers",
-        reason: "TIP 1 + TIP 2: NC sebagai Subject. 'That all police officers have at least 4 hours...' = NC of Statement sebagai subject dari 'is mandated'.",
+        reason:
+          "TIP 1 + TIP 2: NC sebagai Subject. 'That all police officers have at least 4 hours...' = NC of Statement sebagai subject dari 'is mandated'.",
       },
       {
         id: "adv-g8d-mc13",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q3] The fact ___ the most important ratings period is about to begin has caused all the networks to shore up their schedules.",
+        question:
+          "[Part II — Q3] The fact ___ the most important ratings period is about to begin has caused all the networks to shore up their schedules.",
         options: ["A. Is that", "B. Of", "C. That", "D. What"],
         correctAnswer: "C. That",
-        reason: "'The fact THAT...' = NC in apposition. 'That' memperkenalkan isi dari 'the fact'. Ini adalah struktur khusus: The fact THAT + S + V.",
+        reason:
+          "'The fact THAT...' = NC in apposition. 'That' memperkenalkan isi dari 'the fact'. Ini adalah struktur khusus: The fact THAT + S + V.",
       },
       {
         id: "adv-g8d-mc14",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q4] ___ will be carried in the next space shuttle payload has not been announced to the public.",
+        question:
+          "[Part II — Q4] ___ will be carried in the next space shuttle payload has not been announced to the public.",
         options: ["A. It", "B. What", "C. When", "D. That"],
         correctAnswer: "B. What",
-        reason: "TIP 9: WHAT = NC sebagai Subject. 'What will be carried... has not been announced.' WHAT = benda/hal yang akan dibawa.",
+        reason:
+          "TIP 9: WHAT = NC sebagai Subject. 'What will be carried... has not been announced.' WHAT = benda/hal yang akan dibawa.",
       },
       {
         id: "adv-g8d-mc15",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q5] ___ contained in the chromosomes and they are thought of as the units of heredity.",
-        options: ["A. Genes which are", "B. Genes are", "C. When genes", "D. Because of genes"],
+        question:
+          "[Part II — Q5] ___ contained in the chromosomes and they are thought of as the units of heredity.",
+        options: [
+          "A. Genes which are",
+          "B. Genes are",
+          "C. When genes",
+          "D. Because of genes",
+        ],
         correctAnswer: "B. Genes are",
-        reason: "Kalimat deklaratif sederhana butuh S + V. 'Genes ARE contained in the chromosomes and they are thought of as the units of heredity.' Bukan klausa NC.",
+        reason:
+          "Kalimat deklaratif sederhana butuh S + V. 'Genes ARE contained in the chromosomes and they are thought of as the units of heredity.' Bukan klausa NC.",
       },
       {
         id: "adv-g8d-mc16",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q6] ___ in the first draft of the budget will not necessarily be in the final draft.",
-        options: ["A. Although it appears", "B. It appears", "C. What appears", "D. Despite its appearance"],
+        question:
+          "[Part II — Q6] ___ in the first draft of the budget will not necessarily be in the final draft.",
+        options: [
+          "A. Although it appears",
+          "B. It appears",
+          "C. What appears",
+          "D. Despite its appearance",
+        ],
         correctAnswer: "C. What appears",
-        reason: "TIP 9: WHAT = NC sebagai Subject. 'What appears in the first draft' = hal yang muncul di draft pertama. Berfungsi sebagai subject dari 'will not necessarily be'.",
+        reason:
+          "TIP 9: WHAT = NC sebagai Subject. 'What appears in the first draft' = hal yang muncul di draft pertama. Berfungsi sebagai subject dari 'will not necessarily be'.",
       },
       {
         id: "adv-g8d-mc17",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q7] If a food label indicates that a food is mostly carbohydrate, it doesn't mean ___ is a good food to eat.",
+        question:
+          "[Part II — Q7] If a food label indicates that a food is mostly carbohydrate, it doesn't mean ___ is a good food to eat.",
         options: ["A. and it", "B. End", "C. That it", "D. When"],
         correctAnswer: "C. That it",
-        reason: "TIP 3: MEAN + THAT + S + V. 'It doesn't mean THAT IT is a good food to eat.' 'That it' = NC of Statement sebagai objek 'mean'.",
+        reason:
+          "TIP 3: MEAN + THAT + S + V. 'It doesn't mean THAT IT is a good food to eat.' 'That it' = NC of Statement sebagai objek 'mean'.",
       },
       {
         id: "adv-g8d-mc18",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q8] The report on the nuclear power plant indicated that when the plan had gone on line ___ unsafe.",
-        options: ["A. and it had been", "B. It had been", "C. Had been", "D. That it had been"],
+        question:
+          "[Part II — Q8] The report on the nuclear power plant indicated that when the plan had gone on line ___ unsafe.",
+        options: [
+          "A. and it had been",
+          "B. It had been",
+          "C. Had been",
+          "D. That it had been",
+        ],
         correctAnswer: "D. That it had been",
-        reason: "NC embedded: 'indicated THAT [when the plan had gone on line] THAT IT HAD BEEN unsafe.' 'That it had been' melengkapi NC kedua sebagai objek dari 'indicated'.",
+        reason:
+          "NC embedded: 'indicated THAT [when the plan had gone on line] THAT IT HAD BEEN unsafe.' 'That it had been' melengkapi NC kedua sebagai objek dari 'indicated'.",
       },
       {
         id: "adv-g8d-mc19",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q9] ___ a cheese shop has since grown into a small conglomerate consisting of a catering business and two retail stores.",
+        question:
+          "[Part II — Q9] ___ a cheese shop has since grown into a small conglomerate consisting of a catering business and two retail stores.",
         options: [
           "A. In the beginning of",
           "B. It began us",
@@ -2873,32 +3085,44 @@ const advanceGrammarLessons: ModuleLesson[] = [
           "D. What began as",
         ],
         correctAnswer: "D. What began as",
-        reason: "TIP 9: WHAT = NC sebagai Subject. 'What began as a cheese shop has since grown...' = hal yang dimulai sebagai toko keju.",
+        reason:
+          "TIP 9: WHAT = NC sebagai Subject. 'What began as a cheese shop has since grown...' = hal yang dimulai sebagai toko keju.",
       },
       {
         id: "adv-g8d-mc20",
         type: "multiple-choice",
         section: "part2",
-        question: "[Part II — Q10] Because the project depends on ___ at the federal level, the city and country may have to wait until the budget cutting ends.",
-        options: ["A. it happens", "B. Which happening", "C. What happens", "D. That it happens"],
+        question:
+          "[Part II — Q10] Because the project depends on ___ at the federal level, the city and country may have to wait until the budget cutting ends.",
+        options: [
+          "A. it happens",
+          "B. Which happening",
+          "C. What happens",
+          "D. That it happens",
+        ],
         correctAnswer: "C. What happens",
-        reason: "TIP 4+9: Setelah preposisi 'on' → tidak bisa THAT. Gunakan WHAT. 'depends on WHAT HAPPENS at the federal level' = bergantung pada apa yang terjadi.",
+        reason:
+          "TIP 4+9: Setelah preposisi 'on' → tidak bisa THAT. Gunakan WHAT. 'depends on WHAT HAPPENS at the federal level' = bergantung pada apa yang terjadi.",
       },
       {
         id: "adv-g8d-mc21",
         type: "multiple-choice",
-        question: "[Extra — Q1 Relative Clause] The boy ___ was rescued from the collapsed building survived without serious injuries.",
+        question:
+          "[Extra — Q1 Relative Clause] The boy ___ was rescued from the collapsed building survived without serious injuries.",
         options: ["A. what", "B. who", "C. that", "D. whom"],
         correctAnswer: "B. who",
-        reason: "Adjective Clause (Relative Clause): WHO = relative pronoun subject untuk orang. 'The boy WHO was rescued...' WHO menjadi subject dari 'was rescued'.",
+        reason:
+          "Adjective Clause (Relative Clause): WHO = relative pronoun subject untuk orang. 'The boy WHO was rescued...' WHO menjadi subject dari 'was rescued'.",
       },
       {
         id: "adv-g8d-mc22",
         type: "multiple-choice",
-        question: "[Extra — Q2 Relative Clause] The proposal ___ by the research team was finally accepted after several revisions.",
+        question:
+          "[Extra — Q2 Relative Clause] The proposal ___ by the research team was finally accepted after several revisions.",
         options: ["A. what", "B. submitting", "C. which", "D. submitted"],
         correctAnswer: "D. submitted",
-        reason: "Reduced Relative Clause (passive): 'The proposal [which was] SUBMITTED by the research team.' 'Submitted' = past participle dalam bentuk reduced relative clause pasif.",
+        reason:
+          "Reduced Relative Clause (passive): 'The proposal [which was] SUBMITTED by the research team.' 'Submitted' = past participle dalam bentuk reduced relative clause pasif.",
       },
     ],
   },
@@ -3050,14 +3274,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g10-mc1",
         type: "multiple-choice",
-        question:
-          "___ my phone rang, I was ironing my shirt.",
-        options: [
-          "A. Although",
-          "B. When",
-          "C. Wherever",
-          "D. Because",
-        ],
+        question: "___ my phone rang, I was ironing my shirt.",
+        options: ["A. Although", "B. When", "C. Wherever", "D. Because"],
         correctAnswer: "B. When",
         reason:
           "'When' = konjungsi AVC of Time yang tepat untuk menyatakan dua kegiatan yang terjadi bersamaan (berpotongan). 'Although' = kontras, 'Wherever' = tempat, 'Because' = sebab-akibat.",
@@ -3065,14 +3283,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g10-mc2",
         type: "multiple-choice",
-        question:
-          "Mr. Panji waved to me ___ I was walking down the street.",
-        options: [
-          "A. wherever",
-          "B. even though",
-          "C. when",
-          "D. as long as",
-        ],
+        question: "Mr. Panji waved to me ___ I was walking down the street.",
+        options: ["A. wherever", "B. even though", "C. when", "D. as long as"],
         correctAnswer: "C. when",
         reason:
           "'When' = konjungsi AVC of Time posisi FINAL (tidak perlu koma). Dua kegiatan berpotongan: 'waved' (K2) terjadi saat 'was walking' (K1) masih berlangsung.",
@@ -3082,12 +3294,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         question:
           "___ I have had breakfast, I drink some coffee. (Pilih konjungsi yang menunjukkan Berurutan-Jeda)",
-        options: [
-          "A. While",
-          "B. Although",
-          "C. When",
-          "D. Wherever",
-        ],
+        options: ["A. While", "B. Although", "C. When", "D. Wherever"],
         correctAnswer: "C. When",
         reason:
           "Berurutan-Jeda: K1 = Perfect (have had), K2 = Simple (drink). 'When' tepat untuk menyatakan urutan dengan jeda. 'While' = bersamaan (continuous), 'Although' = kontras, 'Wherever' = tempat.",
@@ -3095,14 +3302,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g10-mc4",
         type: "multiple-choice",
-        question:
-          "She lives ___ her parents used to live.",
-        options: [
-          "A. when",
-          "B. although",
-          "C. where",
-          "D. since",
-        ],
+        question: "She lives ___ her parents used to live.",
+        options: ["A. when", "B. although", "C. where", "D. since"],
         correctAnswer: "C. where",
         reason:
           "'Where' = konjungsi AVC of Place. Verb 'lives' adalah action verb yang menjelaskan tempat tinggal → AVC of Place. 'When' = waktu, 'Although' = kontras, 'Since' = waktu/sebab.",
@@ -3112,12 +3313,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         question:
           "___ it was raining heavily, the advanced B students still attended the class.",
-        options: [
-          "A. Since",
-          "B. When",
-          "C. Wherever",
-          "D. Even though",
-        ],
+        options: ["A. Since", "B. When", "C. Wherever", "D. Even though"],
         correctAnswer: "D. Even though",
         reason:
           "'Even though' = konjungsi AVC of Contrast posisi INITIAL (perlu koma). Menyatakan pertentangan: hujan deras TAPI tetap hadir. 'Since' = sejak/sebab, 'When' = waktu, 'Wherever' = tempat.",
@@ -3127,12 +3323,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         question:
           "___ I was cooking, my baby cried. (Pilih konjungsi K2K Tanpa Durasi yang tepat)",
-        options: [
-          "A. After",
-          "B. Since",
-          "C. While",
-          "D. Even though",
-        ],
+        options: ["A. After", "B. Since", "C. While", "D. Even though"],
         correctAnswer: "C. While",
         reason:
           "K2K Tanpa Durasi: K1 = Continuous (was cooking), K2 = Simple (cried). 'While' = konjungsi untuk dua kegiatan berpotongan tanpa durasi. 'After' = berurutan, 'Since' = sejak, 'Even though' = kontras.",
@@ -3140,14 +3331,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g10-mc7",
         type: "multiple-choice",
-        question:
-          "Ms. Manda has learnt English ___ she was a student in UM.",
-        options: [
-          "A. when",
-          "B. since",
-          "C. wherever",
-          "D. although",
-        ],
+        question: "Ms. Manda has learnt English ___ she was a student in UM.",
+        options: ["A. when", "B. since", "C. wherever", "D. although"],
         correctAnswer: "B. since",
         reason:
           "'Since' = konjungsi AVC of Time Non K2K yang menyatakan SEJAK kapan. 'Ms. Manda has learnt English since she was a student' → dari dulu sampai sekarang (Present Perfect + since). 'When' bisa tapi kurang tepat di sini karena menekankan titik awal waktu.",
@@ -3155,14 +3340,8 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g10-mc8",
         type: "multiple-choice",
-        question:
-          "Students can access the online class ___ they need.",
-        options: [
-          "A. whenever",
-          "B. anywhere",
-          "C. although",
-          "D. since",
-        ],
+        question: "Students can access the online class ___ they need.",
+        options: ["A. whenever", "B. anywhere", "C. although", "D. since"],
         correctAnswer: "B. anywhere",
         reason:
           "'Anywhere' = konjungsi AVC of Place (di mana saja). Kalimat menjelaskan TEMPAT akses belajar. 'Whenever' = waktu kapanpun, 'Although' = kontras, 'Since' = waktu/sebab.",
@@ -3185,8 +3364,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
       {
         id: "adv-g10-mc10",
         type: "multiple-choice",
-        question:
-          "Which sentence uses AVC of Contrast correctly?",
+        question: "Which sentence uses AVC of Contrast correctly?",
         options: [
           "A. Though she studied hard, she passed the exam.",
           "B. She studied hard, where she passed the exam.",
@@ -3196,6 +3374,1152 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "A. Though she studied hard, she passed the exam.",
         reason:
           "'Though' = konjungsi AVC of Contrast posisi INITIAL (perlu koma). Menyatakan pertentangan: belajar keras TAPI lulus (seolah mengejutkan). Pilihan B = AVC of Place, C = AVC of Time (since), D = AVC of Place (wherever).",
+      },
+    ],
+  },
+
+  // ── Day 11 · AVC of Reason · AVC of Result · AVC of Purpose ─────────────
+  {
+    id: "adv-grammar-day11",
+    track: "grammar",
+    day: 11,
+    tutor: "Ms. Manda",
+    title: "Adverbial Clause (Lanjutan)",
+    subtitle: "AVC of Reason · AVC of Result · AVC of Purpose",
+    overview:
+      "Melanjutkan Adverbial Clause: (4) AVC of Reason — menyatakan sebab/alasan dengan because, since, inasmuch as, now that, in that; (5) AVC of Result — menyatakan akibat/hasil dengan so...that dan such...that; (6) AVC of Purpose — menyatakan tujuan dengan so that, in order that (positif) dan for fear that, lest (negatif).",
+    materialSections: [
+      {
+        title: "4) AVC of Reason (I, M, F) — Sebab / Alasan",
+        points: [
+          "AVC of Reason = menyatakan SEBAB / ALASAN terjadinya suatu peristiwa → artinya 'karena'",
+          "",
+          "Konjungsi AVC of Reason:",
+          "  • because          = karena (paling umum)",
+          "  • since            = karena (lebih formal)",
+          "  • inasmuch as      = karena (sangat formal/written)",
+          "  • now that         = karena (sekarang) — setelah ada perubahan situasi",
+          "  • in that          = dalam hal bahwa",
+          "",
+          "Posisi: Initial (I), Middle (M), Final (F)",
+          "",
+          "Contoh INITIAL:",
+          "  → 'Because he is tired, he looks stressed.'",
+          "       AVC (SC)           MC",
+          "",
+          "Contoh MIDDLE:",
+          "  → 'She, since she was sick, couldn't come to the class.'",
+          "       S   ←── AVC ───→    V",
+          "",
+          "Contoh FINAL:",
+          "  → 'The president addressed the nation because the situation was serious.'",
+          "       MC                                    AVC",
+          "",
+          "Contoh 'now that':",
+          "  → 'Now that I have passed the exam, I can relax.'",
+          "  → 'Now that you are here, we can start the meeting.'",
+        ],
+      },
+      {
+        title: "5) AVC of Result — Akibat / Hasil (So...That & Such...That)",
+        points: [
+          "AVC of Result = menyatakan HASIL / AKIBAT suatu peristiwa → artinya 'sehingga'",
+          "",
+          "━━ Formula 1: So + adj/adv + that ━━",
+          "  → 'She is SO BEAUTIFUL that I feel insecure.'",
+          "  → 'The test was SO DIFFICULT that many students failed.'",
+          "  → 'She looks SO TIRED that she sleeps in the class.'",
+          "",
+          "━━ Formula 2: So + many/few + Plural Noun + that ━━",
+          "  → 'There were SO MANY gallon waters in front of my house that I could not pass it.'",
+          "  → 'There are SO MANY beaches in Bali that many tourists visit every year.'",
+          "  → 'There are SO MANY chairs in the class that I can sit anywhere.'",
+          "",
+          "━━ Formula 3: So + much/little + Uncountable Noun + that ━━",
+          "  → 'There is SO MUCH fog that I couldn't see the road.'",
+          "  → 'There is SO LITTLE money that he can't spend more.'",
+          "  → 'There was SO MUCH water in my bedroom that I could not sleep.'",
+          "",
+          "━━ Formula 4: Such + a/an + adj + Singular Noun + that ━━",
+          "  → 'It is SUCH FRESH AIR in my home that I love being there.'",
+          "  → 'Today is SUCH A HARD DAY that I decided to sleep at home.'",
+          "  → 'She is SUCH A KIND PERSON that everyone respects her.'",
+          "  → 'He is SUCH A FRIENDLY PERSON that everyone likes him.'",
+          "",
+          "━━ Formula 5: Such + adj + Uncountable Noun + that ━━",
+          "  → 'He drinks SUCH BLACK COFFEE that he can't sleep very well.'",
+          "  → 'It is SUCH FRESH WATER that I really want to buy it.'",
+          "",
+          "⚠️ Ingat: 'So' diikuti adj/adv; 'Such' diikuti noun phrase (a/an + adj + N).",
+        ],
+      },
+      {
+        title: "6) AVC of Purpose (I, F) — Tujuan",
+        points: [
+          "AVC of Purpose = menyatakan TUJUAN → 'agar / supaya'",
+          "",
+          "━━ (+) POSITIF — Agar / Supaya ━━",
+          "  Konjungsi: in order that  /  so that",
+          "",
+          "  Contoh:",
+          "  → 'MBG was given for students SO THAT the nutrition can be fulfilled.'",
+          "  → 'I study hard SO THAT I can get good grades.'",
+          "  → 'I slept earlier SO THAT I can wake up early in the morning.'",
+          "  → 'He often practises swimming SO THAT he can win the competition.'",
+          "  → 'I saved some money IN ORDER THAT I could buy a new computer.'",
+          "",
+          "━━ (-) NEGATIF — Agar/Supaya... TIDAK ━━",
+          "  Konjungsi: for fear that  /  lest (formal)",
+          "",
+          "  Contoh 'for fear that':",
+          "  → 'He goes out early FOR FEAR THAT he will be late.'",
+          "  → 'The workers wore helmets FOR FEAR THAT an accident would happen.'",
+          "",
+          "  Contoh 'lest' (formal — langsung diikuti bare infinitive/should):",
+          "  → 'I study hard LEST I fail in the exam.'",
+          "       S     V        C    V",
+          "  → 'She checked the door twice lest she forget to lock it.'",
+          "",
+          "⚠️ Catatan 'so that' vs 'so...that':",
+          "  • 'so THAT' (purpose) = agar/supaya → tidak ada adj/adv di antara so dan that",
+          "    e.g. 'I study hard so that I can pass.'",
+          "  • 'so ADJ/ADV that' (result) = sehingga → ada adj/adv setelah 'so'",
+          "    e.g. 'She studied so hard that she passed.'",
+        ],
+      },
+    ],
+    exercises: [
+      {
+        id: "adv-g11-mc1",
+        type: "multiple-choice",
+        question:
+          "_____ he had missed several classes, he still managed to pass the exam.",
+        options: [
+          "A. Although",
+          "B. Because",
+          "C. Even though",
+          "D. Despite",
+        ],
+        correctAnswer: "C. Even though",
+        reason:
+          "Kalimat ini menyatakan PERTENTANGAN (missed classes ↔ still passed). Pilihan A & C sama-sama AVC of Contrast; pilihan C 'Even though' lebih tepat untuk menekankan kejutan. 'Despite' tidak bisa diikuti S+V. 'Because' = alasan, bukan pertentangan.",
+      },
+      {
+        id: "adv-g11-mc2",
+        type: "multiple-choice",
+        question:
+          "She couldn't attend the meeting _____ she was stuck in traffic for two hours.",
+        options: [
+          "A. so that",
+          "B. in order that",
+          "C. because",
+          "D. lest",
+        ],
+        correctAnswer: "C. because",
+        reason:
+          "Kalimat ini menyatakan ALASAN (kenapa dia tidak bisa hadir). 'Because' = AVC of Reason. 'So that' & 'in order that' = tujuan. 'Lest' = agar tidak.",
+      },
+      {
+        id: "adv-g11-mc3",
+        type: "multiple-choice",
+        question:
+          "The music was _____ loud that the neighbours called the police.",
+        options: ["A. such", "B. very", "C. too", "D. so"],
+        correctAnswer: "D. so",
+        reason:
+          "Formula AVC of Result: So + adj + that. 'So loud that...' = sangat keras sehingga... 'Such' diikuti noun phrase (a/an + adj + N). 'Very' dan 'too' tidak berpasangan dengan 'that' dalam pola ini.",
+      },
+      {
+        id: "adv-g11-mc4",
+        type: "multiple-choice",
+        question:
+          "It was _____ a boring lecture that half the students fell asleep.",
+        options: ["A. so", "B. such", "C. very", "D. too"],
+        correctAnswer: "B. such",
+        reason:
+          "Formula: Such + a/an + adj + Singular Noun + that. 'Such a boring lecture that...' → 'lecture' adalah singular noun, jadi gunakan 'such a'. 'So' diikuti adj/adv langsung (bukan noun phrase).",
+      },
+      {
+        id: "adv-g11-mc5",
+        type: "multiple-choice",
+        question:
+          "I always double-check my work _____ I make a careless mistake.",
+        options: [
+          "A. so that",
+          "B. lest",
+          "C. in order that",
+          "D. because",
+        ],
+        correctAnswer: "B. lest",
+        reason:
+          "'Lest' = AVC of Purpose NEGATIF (agar tidak). 'I double-check my work LEST I make a mistake' = agar saya tidak membuat kesalahan. 'So that' & 'in order that' = tujuan positif (agar). 'Because' = alasan.",
+      },
+      {
+        id: "adv-g11-mc6",
+        type: "multiple-choice",
+        question:
+          "The manager reduced working hours _____ the employees could spend more time with their families.",
+        options: [
+          "A. for fear that",
+          "B. lest",
+          "C. so that",
+          "D. because",
+        ],
+        correctAnswer: "C. so that",
+        reason:
+          "'So that' = AVC of Purpose POSITIF (agar/supaya). Tujuan pengurangan jam kerja = supaya karyawan bisa lebih banyak waktu dengan keluarga. 'For fear that' & 'lest' = tujuan negatif (agar tidak).",
+      },
+      {
+        id: "adv-g11-mc7",
+        type: "multiple-choice",
+        question:
+          "There were _____ many applicants for the job that the company had to hold a second round of interviews.",
+        options: ["A. such", "B. very", "C. so", "D. too"],
+        correctAnswer: "C. so",
+        reason:
+          "Formula: So + many + Plural Noun + that. 'So many applicants that...' → 'applicants' adalah plural noun, gunakan 'so many'. 'Such' dipakai dengan 'such + a/an + adj + N.sing'.",
+      },
+      {
+        id: "adv-g11-mc8",
+        type: "multiple-choice",
+        question:
+          "_____ now that she has graduated, she is looking for a job in the city.",
+        options: [
+          "A. Because",
+          "B. Since",
+          "C. Inasmuch as",
+          "D. Now that",
+        ],
+        correctAnswer: "D. Now that",
+        reason:
+          "'Now that' = AVC of Reason yang menyatakan alasan karena adanya PERUBAHAN SITUASI (dia baru saja lulus). Berbeda dari 'because/since' yang bersifat statis. 'Inasmuch as' sangat formal dan jarang dipakai lisan.",
+      },
+      {
+        id: "adv-g11-mc9",
+        type: "multiple-choice",
+        question:
+          "She wore a thick coat _____ she would feel cold on the way home.",
+        options: [
+          "A. so that",
+          "B. in order that",
+          "C. for fear that",
+          "D. because",
+        ],
+        correctAnswer: "C. for fear that",
+        reason:
+          "'For fear that' = AVC of Purpose NEGATIF → memakai mantel tebal AGAR TIDAK kedinginan. Bandingkan: 'so that she would feel warm' (positif). 'Because' = alasan, bukan tujuan.",
+      },
+      {
+        id: "adv-g11-mc10",
+        type: "multiple-choice",
+        question:
+          "The presentation was _____ well-prepared that the audience gave a standing ovation.",
+        options: ["A. such", "B. very", "C. too", "D. so"],
+        correctAnswer: "D. so",
+        reason:
+          "Formula: So + adv + that. 'So well-prepared that...' = sangat well-prepared sehingga... 'Well-prepared' di sini berfungsi sebagai adjective/adverb. 'Such' perlu noun phrase setelahnya.",
+      },
+    ],
+  },
+
+  // ── Day 12 · AVC of Condition · AVC of Manner ────────────────────────────
+  {
+    id: "adv-grammar-day12",
+    track: "grammar",
+    day: 12,
+    tutor: "Ms. Manda",
+    title: "Adverbial Clause (Lanjutan 2)",
+    subtitle: "AVC of Condition · AVC of Manner",
+    overview:
+      "Dua AVC terakhir: (7) AVC of Condition — menyatakan syarat/kondisi dengan if, unless, provided that, as long as, in case, on condition that; berbagai tipe conditional. (8) AVC of Manner — menyatakan cara/metode dengan as, as if, as though.",
+    materialSections: [
+      {
+        title: "7) AVC of Condition (I, F) — Syarat / Kondisi",
+        points: [
+          "AVC of Condition = menyatakan SYARAT agar sesuatu terjadi",
+          "",
+          "Konjungsi AVC of Condition:",
+          "  • if                 = jika / kalau",
+          "  • unless             = kecuali jika / if... not",
+          "  • provided (that)    = asalkan",
+          "  • as long as         = selama / asalkan",
+          "  • in case            = jika / untuk berjaga-jaga",
+          "  • on condition that  = dengan syarat bahwa",
+          "",
+          "━━ Tipe Conditional ━━",
+          "",
+          "Type 0 — Fakta umum / kebenaran ilmiah",
+          "  Formula: If + Simple Present, Simple Present",
+          "  → 'If you heat water to 100°C, it boils.'",
+          "  → 'If it rains, the ground gets wet.'",
+          "",
+          "Type 1 — Kemungkinan NYATA (real future) → 90% kemungkinan terjadi",
+          "  Formula: If + Sp, Sp / Sf  (Simple Present → Simple Present / Future)",
+          "  → 'If I run slowly, I will not get my goal pace.'",
+          "  → 'If I study hard, I will have high grades.'",
+          "  → 'If you don't sleep early, you will be late to come to class.'",
+          "  → 'If she calls me, I will answer immediately.'",
+          "  → 'Unless you wake up early, you will be late.'",
+          "  → 'If only Real Madrid does not recruit Mbappe, the dressing room will be okay.'",
+          "",
+          "Type 2 — Kondisi TIDAK NYATA saat ini (unreal present) → 1% kemungkinan terjadi",
+          "  Formula: If + Sps (were), Past Future (would + V1)",
+          "  ⚠️ Gunakan 'were' (bukan 'was') untuk SEMUA subject dalam Type 2.",
+          "  → 'If I were rich, I would travel around the world.'",
+          "  → 'If I were a lion, I would eat you.'",
+          "  → 'If I were pretty, I would be an actress.'",
+          "  → 'If she knew the answer, she would tell us.'",
+          "  → 'If I had more time, I could help you.'",
+          "  → 'If Mourinho became Madrid coach, the dressing room would be more harmonic.'",
+          "  → 'Imagine I had some girlfriends — it would make me happy.'",
+          "",
+          "Type 3 — Kondisi TIDAK NYATA di masa lalu (unreal past) → 0% (sudah terjadi/tidak mungkin diubah)",
+          "  Formula: If + PpChad (Past Perfect / had + V3), PFP (would have + V3)",
+          "  → 'If I had accepted your proposal, we would have married now.'",
+          "  → 'If I had learned English, I would have studied abroad.'",
+          "  → 'If you had not cheated, we would have been happy together.'",
+          "  → 'If she had taken that job, she would have been happier.'",
+          "  → 'If it hadn't rained, we could have gone to the beach.'",
+          "",
+          "━━ Unless ━━",
+          "  Unless = if... not (kecuali jika tidak)",
+          "  → 'Unless you wake up early, you will be late.'",
+          "     = 'If you don't wake up early, you will be late.'",
+          "  → 'Unless you apologise, she won't forgive you.'",
+          "     = 'If you don't apologise, she won't forgive you.'",
+          "",
+          "━━ Contoh Lain ━━",
+          "  → 'They allow him to use the lab provided he cleans it up after.'",
+          "  → 'You can go, provided (that) you finish your homework first.'",
+          "  → 'I will lend you the money on condition that you pay it back.'",
+          "  → 'Take an umbrella in case it rains.'",
+          "  → 'As long as you are honest, I will trust you.'",
+        ],
+      },
+      {
+        title: "8) AVC of Manner (F) — Cara / Metode",
+        points: [
+          "AVC of Manner = menyatakan CARA atau METODE melakukan sesuatu",
+          "  → 'sebagaimana', 'seolah-olah', 'seperti halnya'",
+          "",
+          "Konjungsi AVC of Manner:",
+          "  • as           = sebagaimana / seperti yang",
+          "  • as if        = seolah-olah (kenyataannya TIDAK demikian)",
+          "  • as though    = seolah-olah (sama dengan as if, lebih formal)",
+          "  • the way      = dengan cara",
+          "",
+          "━━ 'As' ━━",
+          "  → 'Do it as I showed you.' = lakukan seperti yang aku tunjukkan",
+          "  → 'She speaks as a native speaker does.'",
+          "  → 'He works hard as his father always did.'",
+          "  → 'Please guide them as the prophet showed.'",
+          "",
+          "━━ 'As if / As though' ━━",
+          "  Digunakan untuk situasi TIDAK NYATA (unreal).",
+          "  Diikuti Past Tense (meski konteksnya present) = bentuk subjunctive.",
+          "",
+          "  → 'Mr. Proba leads us as though he is a dictator.'  (padahal dia bukan diktator)",
+          "  → 'She ignored me as if I had never existed.'  (padahal aku ada)",
+          "  → 'He talks as if he knew everything.'  (padahal dia tidak tahu segalanya)",
+          "  → 'She acts as though she were the boss.' (padahal dia bukan bos)",
+          "  → 'He spent money as if he were a millionaire.' (padahal dia bukan)",
+          "  → 'The child cried as if she had lost everything.'",
+          "  → 'They looked at me as though I had said something wrong.'",
+          "",
+          "━━ 'The way' ━━",
+          "  → 'She sings the way her mother taught her.'",
+          "  → 'He fixed the car the way the manual instructed.'",
+          "",
+          "⚠️ Catatan 'as if' vs 'as':",
+          "  • 'as' = membandingkan dengan fakta NYATA",
+          "    e.g. 'Do it as I told you.' (saya memang memberitahu kamu — nyata)",
+          "  • 'as if / as though' = membandingkan dengan sesuatu yang TIDAK nyata",
+          "    e.g. 'He acted as if he owned the place.' (dia tidak memiliki tempat itu)",
+        ],
+      },
+      {
+        title: "Peringkasan AVC — Abridgment & Reducing",
+        points: [
+          "Peringkasan AVC = menyingkat Adverbial Clause tanpa mengubah makna.",
+          "",
+          "Berlaku untuk: AVC of TIME, PLACE, CONTRAST, REASON, MANNER",
+          "(TIDAK berlaku untuk AVC of Condition & Purpose)",
+          "",
+          "━━ Syarat Peringkasan ━━",
+          "  1) Subjek SC & MC harus SAMA",
+          "  2) Tidak ada MODAL di dalam SC",
+          "",
+          "━━ ABRIDGMENT (konjungsi DIPERTAHANKAN) ━━",
+          "  Formula: Conj + Ving (aktif) / V3 (pasif) / ANA (non-verbal)",
+          "",
+          "  Aktif     : Conj + Ving",
+          "  Pasif     : Conj + V3",
+          "  Non-verbal: Conj + ANA (Adjective/Noun/Adverb)",
+          "",
+          "  Contoh (aktif):",
+          "  Full      : Before Panji met Putri, Panji went to Sakura Mart.",
+          "  Abridgment: Before meeting Putri, Panji went to Sakura Mart.",
+          "",
+          "  Contoh (pasif):",
+          "  Full      : After the letter was signed, it was sent to the office.",
+          "  Abridgment: After signed, it was sent to the office.",
+          "",
+          "━━ REDUCING (konjungsi DIHILANGKAN) ━━",
+          "  Formula: Ving (aktif) / V3 (pasif) / Being + ANA (non-verbal)",
+          "  → Konjungsi dihilangkan; non-verbal menggunakan 'being' di depan",
+          "",
+          "  Contoh (aktif):",
+          "  Full     : Before Panji met Putri, Panji went to Sakura Mart.",
+          "  Reducing : Meeting Putri, Panji went to Sakura Mart.",
+          "",
+          "  Contoh (non-verbal):",
+          "  Full     : Although he was tired, he continued working.",
+          "  Reducing : Being tired, he continued working.",
+          "",
+          "  Contoh (pasif):",
+          "  Full     : After it was built, the bridge was opened to the public.",
+          "  Reducing : Built, the bridge was opened to the public.",
+          "",
+          "━━ Ringkasan Rumus ━━",
+          "  Abridgment: Conj + Ving / V3 / ANA",
+          "  Reducing  : Ving / V3 / Being + ANA  (tanpa konjungsi)",
+        ],
+      },
+      {
+        title: "Ringkasan 8 Jenis AVC",
+        points: [
+          "1) AVC of Time      → when, while, before, after, since, as soon as",
+          "2) AVC of Place     → where, wherever",
+          "3) AVC of Contrast  → although, even though, whereas, while",
+          "4) AVC of Reason    → because, since, inasmuch as, now that, in that",
+          "5) AVC of Result    → so...that, such...that",
+          "6) AVC of Purpose   → so that, in order that (positif); for fear that, lest (negatif)",
+          "7) AVC of Condition → if, unless, provided that, as long as, in case",
+          "8) AVC of Manner    → as, as if, as though, the way",
+          "",
+          "⚡ Peringkasan berlaku untuk: Time, Place, Contrast, Reason, Manner",
+          "   Syarat: subjek SC = subjek MC, tidak ada modal di SC",
+          "   Abridgment = konjungsi tetap + Ving/V3/ANA",
+          "   Reducing   = konjungsi hilang + Ving/V3/Being+ANA",
+        ],
+      },
+    ],
+    exercises: [
+      {
+        id: "adv-g12-mc1",
+        type: "multiple-choice",
+        question:
+          "_____ you don't leave now, you will miss the last train.",
+        options: ["A. Unless", "B. If", "C. Provided that", "D. In case"],
+        correctAnswer: "A. Unless",
+        reason:
+          "'Unless' = 'if... not'. 'Unless you leave now' = 'If you don't leave now'. Menyatakan syarat negatif. Pilihan B 'If' bisa dipakai jika diubah menjadi 'If you don't leave now'.",
+      },
+      {
+        id: "adv-g12-mc2",
+        type: "multiple-choice",
+        question:
+          "If I _____ a million dollars, I would travel the world.",
+        options: ["A. have", "B. had", "C. will have", "D. would have"],
+        correctAnswer: "B. had",
+        reason:
+          "Type 2 Conditional (kondisi tidak nyata sekarang): If + Simple Past, would + V1. 'If I had (a million dollars), I would travel...' Gunakan Simple Past 'had', bukan present 'have' atau 'will have'.",
+      },
+      {
+        id: "adv-g12-mc3",
+        type: "multiple-choice",
+        question:
+          "She speaks French _____ she had lived in Paris all her life.",
+        options: ["A. as", "B. because", "C. as if", "D. so that"],
+        correctAnswer: "C. as if",
+        reason:
+          "'As if' = AVC of Manner yang menyatakan sesuatu yang TIDAK NYATA (dia belum tentu pernah tinggal di Paris). 'As if she had lived...' = seolah-olah dia pernah tinggal. 'As' = membandingkan fakta nyata.",
+      },
+      {
+        id: "adv-g12-mc4",
+        type: "multiple-choice",
+        question:
+          "You can borrow my car _____ you return it before 6 p.m.",
+        options: [
+          "A. unless",
+          "B. in case",
+          "C. provided that",
+          "D. lest",
+        ],
+        correctAnswer: "C. provided that",
+        reason:
+          "'Provided that' = AVC of Condition yang berarti 'asalkan'. 'Provided that you return it before 6' = asalkan kamu mengembalikannya sebelum pukul 6. Menyatakan syarat positif.",
+      },
+      {
+        id: "adv-g12-mc5",
+        type: "multiple-choice",
+        question:
+          "If she _____ the warning, the accident would not have happened.",
+        options: [
+          "A. had heeded",
+          "B. heeded",
+          "C. would heed",
+          "D. has heeded",
+        ],
+        correctAnswer: "A. had heeded",
+        reason:
+          "Type 3 Conditional (kondisi tidak nyata di masa lalu): If + Past Perfect + would/could have + V3. 'If she had heeded (the warning), the accident would not have happened.' Past Perfect = had + V3.",
+      },
+      {
+        id: "adv-g12-mc6",
+        type: "multiple-choice",
+        question:
+          "He acts _____ he owns the entire company, but he is just an intern.",
+        options: [
+          "A. as",
+          "B. as if",
+          "C. the way",
+          "D. because",
+        ],
+        correctAnswer: "B. as if",
+        reason:
+          "'As if' = seolah-olah (kondisi tidak nyata). Dia bertingkah seolah-olah memiliki perusahaan, padahal dia hanya magang. 'As' dipakai untuk perbandingan nyata.",
+      },
+      {
+        id: "adv-g12-mc7",
+        type: "multiple-choice",
+        question:
+          "Take a spare key _____ you lock yourself out of the house.",
+        options: [
+          "A. unless",
+          "B. so that",
+          "C. in case",
+          "D. provided that",
+        ],
+        correctAnswer: "C. in case",
+        reason:
+          "'In case' = untuk berjaga-jaga jika sesuatu terjadi. 'Take a spare key in case you lock yourself out' = bawa kunci cadangan untuk berjaga-jaga kalau terkunci di luar. Berbeda dari 'so that' yang menyatakan tujuan positif.",
+      },
+      {
+        id: "adv-g12-mc8",
+        type: "multiple-choice",
+        question:
+          "Do the report _____ the professor explained in the last class.",
+        options: [
+          "A. as if",
+          "B. as though",
+          "C. the way",
+          "D. unless",
+        ],
+        correctAnswer: "C. the way",
+        reason:
+          "'The way' = AVC of Manner yang menyatakan cara nyata. 'Do it the way the professor explained' = lakukan dengan cara yang dijelaskan profesor (nyata, bukan seolah-olah). 'As if/as though' = tidak nyata.",
+      },
+      {
+        id: "adv-g12-mc9",
+        type: "multiple-choice",
+        question:
+          "Water freezes _____ the temperature drops below zero degrees.",
+        options: ["A. unless", "B. if", "C. provided", "D. in case"],
+        correctAnswer: "B. if",
+        reason:
+          "Type 0 Conditional (fakta umum / kebenaran ilmiah): If + Simple Present, Simple Present. 'If the temperature drops below zero, water freezes.' — menyatakan hukum alam yang selalu benar.",
+      },
+      {
+        id: "adv-g12-mc10",
+        type: "multiple-choice",
+        question:
+          "The student stared blankly at the board _____ he hadn't understood anything the teacher said.",
+        options: ["A. as", "B. because", "C. as though", "D. so that"],
+        correctAnswer: "C. as though",
+        reason:
+          "'As though' = AVC of Manner TIDAK NYATA, sama dengan 'as if'. 'As though he hadn't understood' = seolah-olah dia tidak mengerti (kita tidak tahu pasti, hanya mengamati tingkah lakunya). 'Because' = alasan, bukan cara.",
+      },
+    ],
+  },
+
+  // ── Day 13 · Latihan Peringkasan AVC ─────────────────────────────────────────
+  {
+    id: "adv-grammar-day13",
+    track: "grammar",
+    day: 13,
+    tutor: "Ms. Manda",
+    title: "Latihan Peringkasan AVC",
+    subtitle: "Abridgment & Reducing — Aktif · Pasif · Non-Verbal · Result · Purpose",
+    overview:
+      "Latihan lengkap peringkasan Adverbial Clause melalui Abridgment (konjungsi dipertahankan) dan Reducing (konjungsi dihilangkan). Mencakup kalimat aktif, pasif, non-verbal, serta aturan khusus AVC of Result dan AVC of Purpose.",
+    materialSections: [
+      {
+        title: "Latihan Aktif — Abridgment & Reducing",
+        points: [
+          "Abridgment aktif : Conj + Ving",
+          "Reducing aktif   : Ving  (konjungsi dihilangkan)",
+          "",
+          "━━ Contoh 1 ━━",
+          "Full : After Panji comes to the class, he is sitting near to me.",
+          "Abr  : After coming to the class, Panji is sitting near to me.",
+          "Red  : Coming to the class, Panji is sitting near to me.",
+          "",
+          "━━ Contoh 2 ━━",
+          "Full : Before he goes to Pare, he does not understand English.",
+          "Abr  : Before going to Pare, he does not understand English.",
+          "Red  : Going to Pare, he does not understand English.",
+        ],
+      },
+      {
+        title: "Latihan Pasif — Abridgment & Reducing",
+        points: [
+          "Abridgment pasif : Conj + V3",
+          "Reducing pasif   : V3  (konjungsi dihilangkan)",
+          "",
+          "━━ Contoh 1 ━━",
+          "Full : Although he was bought a new car, he is not happy.",
+          "Abr  : Although bought a new car, he is not happy.",
+          "Red  : Bought a new car, he is not happy.",
+          "",
+          "━━ Contoh 2 ━━",
+          "Full : Although I was given beautiful shoes, I still want to buy Omas Brand.",
+          "Abr  : Although given beautiful shoes, I'm still want to buy Omas Brand.",
+          "Red  : Given beautiful shoes, I'm still want to buy Omas Brand.",
+        ],
+      },
+      {
+        title: "Latihan Non-Verbal — Abridgment & Reducing",
+        points: [
+          "Abridgment non-verbal : Conj + ANA (Adjective / Noun / Adverb)",
+          "Reducing non-verbal   : Being + ANA  (konjungsi dihilangkan, tambah 'being')",
+          "",
+          "━━ Contoh 1 ━━",
+          "Full : As though she is an angel, Putri wears a white dress.",
+          "Abr  : As though an angel, Putri wears a white dress.",
+          "Red  : (Being) an angel, Putri wears a white dress.",
+          "",
+          "━━ Contoh 2 ━━",
+          "Full : As though he is a superstar, he spent so much money.",
+          "Abr  : As though a superstar, he spent so much money.",
+          "Red  : Being a superstar, he spent so much money.",
+        ],
+      },
+      {
+        title: "Peringkasan AVC of Result — so/such...that",
+        points: [
+          "Syarat peringkasan AVC of Result:",
+          "  1) Subjek SC & MC harus SAMA",
+          "  2) SC harus ada MODAL (can, could, would, dll.)",
+          "",
+          "Abridgment : so/such...that  →  so/such...as + to inf",
+          "Reducing   : so/such...that  →  (+) ...enough + to inf",
+          "                               (-) too...+ to inf",
+          "",
+          "━━ Contoh 1 (positif) ━━",
+          "Full : Arya is so diligent that he can finish the exam quickly.",
+          "Abr  : Arya is so diligent as to finish the exam quickly.",
+          "Red  : Arya is diligent enough to finish the exam quickly.",
+          "",
+          "━━ Contoh 2 (negatif / can't) ━━",
+          "Full : Panji is so young that he can't go to Lombok alone.",
+          "Abr  : Panji is so young as not to go to Lombok alone.",
+          "Red  : Panji is too young to go to Lombok alone.",
+          "",
+          "━━ Contoh 3 (positif) ━━",
+          "Full : Probo is so smart that he can do the exam easily.",
+          "Abr  : Probo is so smart as to do the exam easily.",
+          "Red  : Probo is smart enough to do the exam easily.",
+          "",
+          "━━ Contoh 4 (such...that) ━━",
+          "Full : They faced such difficult problems that they would almost give up.",
+          "Abr  : They faced such difficult problems as almost to give up.",
+          "Red  : They faced difficult problems enough almost to give up.",
+        ],
+      },
+      {
+        title: "Peringkasan AVC of Purpose — so that / in order that",
+        points: [
+          "Syarat peringkasan AVC of Purpose:",
+          "  1) Subjek SC & MC harus SAMA",
+          "  2) SC ada MODAL (can, could, will, dll.)",
+          "",
+          "Abridgment : so that / in order that  →  so as to inf / in order to inf",
+          "Reducing   : so that / in order that  →  to inf",
+          "",
+          "━━ Contoh 1 ━━",
+          "Full : Salsa studies English in Pare so that she can speak fluently.",
+          "Abr  : Salsa studies English in Pare so as to speak fluently.",
+          "Red  : Salsa studies English in Pare to speak fluently.",
+          "",
+          "━━ Contoh 2 ━━",
+          "Full : Ms. Nadine joins the run competition so that she can get the gold medal.",
+          "Abr  : Ms. Nadine joins the competition so as to get the gold medal.",
+          "Red  : Ms. Nadine joins the competition to get the gold medal.",
+          "",
+          "━━ Contoh 3 ━━",
+          "Full : I saved our old photos in order that we could remember the good moments.",
+          "Abr  : I saved our old photos in order to remember the good moments.",
+          "Red  : I saved our old photos to remember the good moments.",
+        ],
+      },
+    ],
+    exercises: [
+      {
+        id: "adv-g13-mc1",
+        type: "multiple-choice",
+        question:
+          "After Panji comes to the class, he sits near to me.\nAbridgment yang tepat adalah...",
+        options: [
+          "A. After coming to the class, Panji sits near to me.",
+          "B. After comes to the class, Panji sits near to me.",
+          "C. After come to the class, Panji sits near to me.",
+          "D. After Panji coming to the class, he sits near to me.",
+        ],
+        correctAnswer: "A. After coming to the class, Panji sits near to me.",
+        reason:
+          "Abridgment aktif: Conj + Ving. Subjek SC 'Panji' sama dengan MC. Ganti 'comes' → 'coming', konjungsi 'After' dipertahankan. Subjek SC dihapus sehingga subjek MC yang disebutkan.",
+      },
+      {
+        id: "adv-g13-mc2",
+        type: "multiple-choice",
+        question:
+          "Before he goes to Pare, he does not understand English.\nReducing yang tepat adalah...",
+        options: [
+          "A. Before going to Pare, he does not understand English.",
+          "B. Going to Pare, he does not understand English.",
+          "C. Gone to Pare, he does not understand English.",
+          "D. To go to Pare, he does not understand English.",
+        ],
+        correctAnswer: "B. Going to Pare, he does not understand English.",
+        reason:
+          "Reducing aktif: konjungsi DIHILANGKAN, verb → Ving. 'Before' dihapus, 'goes' → 'Going'. Pilihan A adalah Abridgment (konjungsi masih ada), bukan Reducing.",
+      },
+      {
+        id: "adv-g13-mc3",
+        type: "multiple-choice",
+        question:
+          "Although he was bought a new car, he is not happy.\nAbridgment yang tepat adalah...",
+        options: [
+          "A. Although buying a new car, he is not happy.",
+          "B. Although bought a new car, he is not happy.",
+          "C. Bought a new car, he is not happy.",
+          "D. Although being bought a new car, he is not happy.",
+        ],
+        correctAnswer: "B. Although bought a new car, he is not happy.",
+        reason:
+          "Abridgment PASIF: Conj + V3. Konjungsi 'Although' dipertahankan, 'was bought' → 'bought' (V3 saja). Pilihan C adalah Reducing (tanpa konjungsi). Pilihan A salah karena aktif Ving dipakai untuk pasif.",
+      },
+      {
+        id: "adv-g13-mc4",
+        type: "multiple-choice",
+        question:
+          "Although I was given beautiful shoes, I still want to buy Omas Brand.\nReducing yang tepat adalah...",
+        options: [
+          "A. Although given beautiful shoes, I still want to buy Omas Brand.",
+          "B. Being given beautiful shoes, I still want to buy Omas Brand.",
+          "C. Given beautiful shoes, I still want to buy Omas Brand.",
+          "D. Giving beautiful shoes, I still want to buy Omas Brand.",
+        ],
+        correctAnswer: "C. Given beautiful shoes, I still want to buy Omas Brand.",
+        reason:
+          "Reducing PASIF: V3 saja (konjungsi dihilangkan). 'Although' dihapus, 'was given' → 'Given'. Pilihan A = Abridgment (konjungsi masih ada). Pilihan B pakai 'Being' yang dipakai untuk non-verbal, bukan pasif.",
+      },
+      {
+        id: "adv-g13-mc5",
+        type: "multiple-choice",
+        question:
+          "As though she is an angel, Putri wears a white dress.\nReducing yang tepat adalah...",
+        options: [
+          "A. As though an angel, Putri wears a white dress.",
+          "B. Angel, Putri wears a white dress.",
+          "C. Being an angel, Putri wears a white dress.",
+          "D. Angling, Putri wears a white dress.",
+        ],
+        correctAnswer: "C. Being an angel, Putri wears a white dress.",
+        reason:
+          "Reducing NON-VERBAL: Being + ANA. Konjungsi 'As though' dihilangkan, tambahkan 'Being' di depan noun 'an angel'. Pilihan A = Abridgment (konjungsi masih ada).",
+      },
+      {
+        id: "adv-g13-mc6",
+        type: "multiple-choice",
+        question:
+          "Arya is so diligent that he can finish the exam quickly.\nAbridgment (AVC of Result) yang tepat adalah...",
+        options: [
+          "A. Arya is diligent enough to finish the exam quickly.",
+          "B. Arya is so diligent as to finish the exam quickly.",
+          "C. Arya is so diligent to finish the exam quickly.",
+          "D. Arya is too diligent to finish the exam quickly.",
+        ],
+        correctAnswer: "B. Arya is so diligent as to finish the exam quickly.",
+        reason:
+          "Abridgment AVC of Result: so...that → so...as + to inf. 'so diligent that he can finish' → 'so diligent as to finish'. Pilihan A adalah Reducing (+enough). Pilihan D (too) dipakai untuk kalimat negatif/can't.",
+      },
+      {
+        id: "adv-g13-mc7",
+        type: "multiple-choice",
+        question:
+          "Panji is so young that he can't go to Lombok alone.\nReducing (AVC of Result) yang tepat adalah...",
+        options: [
+          "A. Panji is so young as not to go to Lombok alone.",
+          "B. Panji is young enough to go to Lombok alone.",
+          "C. Panji is too young to go to Lombok alone.",
+          "D. Panji is so young to go to Lombok alone.",
+        ],
+        correctAnswer: "C. Panji is too young to go to Lombok alone.",
+        reason:
+          "Reducing AVC of Result negatif (can't): so...that (negatif) → too...+ to inf. 'so young that he can't' → 'too young to go'. Pilihan A = Abridgment. Pilihan B salah arti karena 'enough' berarti positif (mampu).",
+      },
+      {
+        id: "adv-g13-mc8",
+        type: "multiple-choice",
+        question:
+          "Salsa studies English in Pare so that she can speak fluently.\nAbridgment (AVC of Purpose) yang tepat adalah...",
+        options: [
+          "A. Salsa studies English in Pare to speak fluently.",
+          "B. Salsa studies English in Pare so as to speak fluently.",
+          "C. Salsa studies English in Pare in order to speak fluently.",
+          "D. Salsa studies English in Pare so that to speak fluently.",
+        ],
+        correctAnswer: "B. Salsa studies English in Pare so as to speak fluently.",
+        reason:
+          "Abridgment AVC of Purpose: so that → so as to inf. Konjungsi dipertahankan dalam bentuk 'so as to'. Pilihan A = Reducing (langsung to inf). Pilihan C juga benar tapi itu dari 'in order that', bukan 'so that'.",
+      },
+      {
+        id: "adv-g13-mc9",
+        type: "multiple-choice",
+        question:
+          "I saved our old photos in order that we could remember the good moments.\nReducing (AVC of Purpose) yang tepat adalah...",
+        options: [
+          "A. I saved our old photos in order to remember the good moments.",
+          "B. I saved our old photos so as to remember the good moments.",
+          "C. I saved our old photos to remember the good moments.",
+          "D. I saved our old photos for remembering the good moments.",
+        ],
+        correctAnswer: "C. I saved our old photos to remember the good moments.",
+        reason:
+          "Reducing AVC of Purpose: in order that → to inf (konjungsi dihilangkan sepenuhnya). 'in order that we could remember' → 'to remember'. Pilihan A = Abridgment (in order to). Pilihan B = Abridgment dari 'so that'.",
+      },
+      {
+        id: "adv-g13-mc10",
+        type: "multiple-choice",
+        question:
+          "Probo is so smart that he can do the exam easily.\nReducing (AVC of Result) yang tepat adalah...",
+        options: [
+          "A. Probo is too smart to do the exam easily.",
+          "B. Probo is so smart as to do the exam easily.",
+          "C. Probo is smart enough to do the exam easily.",
+          "D. Probo is smart so to do the exam easily.",
+        ],
+        correctAnswer: "C. Probo is smart enough to do the exam easily.",
+        reason:
+          "Reducing AVC of Result positif (can): so...that → ...enough + to inf. 'so smart that he can' → 'smart enough to'. Pilihan A (too) dipakai untuk negatif/can't. Pilihan B = Abridgment (so...as to).",
+      },
+    ],
+  },
+  // ── Day 14 · Inversion · Causative Verbs ─────────────────────────────────────
+  {
+    id: "adv-grammar-day14",
+    track: "grammar",
+    day: 14,
+    tutor: "Ms. Manda",
+    title: "Inversion & Causative Verbs",
+    subtitle: "Subject Inversion (7 Tipe) · Tabel Causative Verbs",
+    overview:
+      "Inversion = susunan balik di mana verb terletak SEBELUM subject. Digunakan untuk menambah penekanan (emphasis), membuat kalimat lebih formal, dan lebih dramatis. Ada 7 tipe inversion: Question Word, Expression of Place, Negative Word, So+adj, Comparison, Only+Prep/Con/Adv, dan Conditional. Ditambah tabel Causative Verbs (get/have/make/let/help).",
+    materialSections: [
+      {
+        title: "Pengertian & Pola Inversion",
+        points: [
+          "Definisi : Susunan balik di mana VERB terletak SEBELUM subject.",
+          "",
+          "Fungsi Inversion:",
+          "  • To add EMPHASIS (penekanan)",
+          "  • To make more FORMAL",
+          "  • To make more DRAMATIC",
+          "",
+          "Pola Normal  : S + V",
+          "Pola Inversion: Vaux + S + Vord  atau  Vord + S",
+          "",
+          "Catatan: 'Vaux' = auxiliary verb (is/are/do/does/did/can/will/dll.)",
+          "         'Vord' = ordinary verb (main verb)",
+        ],
+      },
+      {
+        title: "1) Inversion — Question Word",
+        points: [
+          "Dalam kalimat tanya, auxiliary verb (Vaux) mendahului subject (S).",
+          "",
+          "  → Are you okay?           (Vaux + S)",
+          "  → What are you doing?     (Wh + Vaux + S + Vord)",
+          "  → Is it your home?        (Vaux + S)",
+          "  → Where are you going?    (Wh + Vaux + S + Vord)",
+        ],
+      },
+      {
+        title: "2) Inversion — Expression of Place",
+        points: [
+          "Ketika kalimat dimulai dengan keterangan tempat (in front of, there, here),",
+          "verb berpindah ke depan subject.",
+          "",
+          "Formula: Place/There/Here + Vord + S",
+          "",
+          "  → In front of TN is Ganesha.",
+          "     (V = 'is', S = 'Ganesha')",
+          "  → There is my house.",
+          "     (V = 'is', S = 'my house')",
+          "  → Here is (the) police station.",
+          "     (V = 'is', S = 'police station')",
+        ],
+      },
+      {
+        title: "3) Inversion — Negative Word",
+        points: [
+          "Ketika kalimat dimulai dengan kata negatif, auxiliary verb mendahului subject.",
+          "",
+          "Kata-kata negatif yang memicu inversion:",
+          "  no / not / nor",
+          "  never / little",
+          "  rarely / seldom",
+          "  hardly / barely / scarcely",
+          "  not only...but also",
+          "",
+          "Formula: Neg Word + Vaux + S + Vord",
+          "",
+          "  → Not only did he steal her money, but also he betrayed her.",
+          "     (inversion setelah 'not only')",
+          "  → Rarely does Probo take a bath.",
+          "  → Seldom does Indi call Putri.",
+          "  → Never does Arsenal win the Europe League.",
+          "  → Little do I know about him.",
+        ],
+      },
+      {
+        title: "4) Inversion — So + Adjective/Adverb (means 'also')",
+        points: [
+          "'So' di awal klausa berarti 'juga/also' — memicu inversion.",
+          "",
+          "Formula A (adj → makna deskriptif): So + adj + Vord + S",
+          "  → So amazing is the view which Jakarta provides.",
+          "  → So bright are the lamps at my room.",
+          "  → So clean is the toilet in my boarding house.",
+          "",
+          "Formula B (makna 'juga' — menyatakan kesamaan): ...and so + Vaux + S",
+          "  Full : Panji loves swimming and Nabil loves swimming.",
+          "  Inv  : Panji loves swimming and so does Nabil.",
+          "  ('so does Nabil' = 'Nabil juga')",
+          "",
+          "  → The Belgium class is so hot and so is Ukraine.",
+          "     (Ukraine is also hot)",
+          "",
+          "Formula C (so + adv + did... that): So + adv + Vaux + S + Vord + that...",
+          "  → So slowly did she speak that nobody heard her.",
+        ],
+      },
+      {
+        title: "5) Inversion — Comparison",
+        points: [
+          "Dalam klausa perbandingan, verb bisa diinversi untuk variasi formal.",
+          "",
+          "Formula: ...than/as + Vaux/Vord + S",
+          "",
+          "  → Nadine is more talkative than Indi is.",
+          "     Inv: Nadine is more talkative than is Indi.",
+          "",
+          "  → Salsa is as beautiful as Selena Gomez is.",
+          "     Inv: Salsa is as beautiful as is Selena.",
+          "",
+          "  → I run as fast as a horse does.",
+          "     Inv: I run as fast as does a horse.",
+          "",
+          "  → I speak as fluently as my tutor does.",
+          "     Inv: I speak as fluently as does my tutor.",
+        ],
+      },
+      {
+        title: "6) Inversion — Only + Prep / Con / Adv",
+        points: [
+          "Ketika 'only' diikuti preposition, conjunction, atau adverb di awal kalimat,",
+          "auxiliary verb mendahului subject.",
+          "",
+          "Tipe 'only' pemicu inversion:",
+          "  only + Preposition : only in / on / at / by / ...",
+          "  only + Conjunction : only after / only if / ...",
+          "  only + Adverb      : only now / only recently / ...",
+          "",
+          "Formula: Only + Prep/Con/Adv + Vaux + S + Vord",
+          "",
+          "  → Only by using headphones can I listen to the music clearly.",
+          "     (only + prep 'by' → inversion: can I)",
+          "  → Only after Panji studied could he play FF game.",
+          "     (only + con 'after' → inversion: could he)",
+          "  → Only now can you buy this house.",
+          "     (only + adv 'now' → inversion: can you)",
+          "  → Only after practicing every day did I understand grammar.",
+          "  → Only recently can I study English in Pare.",
+          "  → Only in Sakura Mart can I buy Soda.",
+        ],
+      },
+      {
+        title: "7) Inversion — Conditional Sentence (Formal)",
+        points: [
+          "Dalam conditional formal, konjungsi 'if' dihilangkan dan auxiliary diinversi ke depan.",
+          "",
+          "Type 1 → Should + S + V1",
+          "  Normal : If Ms. Nadine speaks up about the environment, I will respond well.",
+          "  Inv    : Should Ms. Nadine speak up about the environment, I will respond very well.",
+          "",
+          "Type 2 → Were + S + (to inf)",
+          "  Normal : If I had much money, I would watch TXT concert every year.",
+          "  Inv    : Were I to have much money, I will watch TXT concert every year.",
+          "",
+          "Type 3 → Had + S + V3",
+          "  Normal : If he had exercised regularly, he would have avoided being injured.",
+          "  Inv    : Had he exercised regularly, he would have avoided injured.",
+          "",
+          "⚠️ Catatan: 'if' dihilangkan — auxiliary (should/were/had) langsung ke depan.",
+        ],
+      },
+      {
+        title: "Tabel Causative Verbs — Get / Have / Make / Let / Help",
+        points: [
+          "Causative verb = kata kerja yang menyatakan bahwa subject menyebabkan",
+          "orang lain melakukan sesuatu.",
+          "",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "  Verb   │  Aktif            │  Pasif",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "  get    │  + to inf         │  + V3",
+          "  have   │  + V1             │  + V3",
+          "  make   │  + V1             │  + be + V3",
+          "  let    │  + V1             │  —",
+          "  help   │  + (to) inf / V1  │  —",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "",
+          "Contoh Aktif:",
+          "  get  : I got him to fix my car.     (to + V1)",
+          "  have : She had the plumber repair the sink.  (V1)",
+          "  make : The teacher made the students study.  (V1)",
+          "  let  : Mom let me go to the concert.         (V1)",
+          "  help : He helped me (to) carry the box.      ((to) V1)",
+          "",
+          "Contoh Pasif:",
+          "  get  : I got my car fixed.           (V3)",
+          "  have : She had the sink repaired.    (V3)",
+          "  make : She was made to apologise.    (be + V3)",
+        ],
+      },
+    ],
+    exercises: [
+      {
+        id: "adv-g14-mc1",
+        type: "multiple-choice",
+        question:
+          "Rarely _____ Probo take a bath on time.",
+        options: ["A. Probo does", "B. does Probo", "C. do Probo", "D. Probo is"],
+        correctAnswer: "B. does Probo",
+        reason:
+          "'Rarely' adalah negative word yang memicu inversion: Neg Word + Vaux + S + Vord. 'Probo' (subject tunggal, simple present) → auxiliary 'does' + S 'Probo'. Formula: Rarely + does + Probo + V.",
+      },
+      {
+        id: "adv-g14-mc2",
+        type: "multiple-choice",
+        question:
+          "In front of our school _____ a beautiful garden.",
+        options: ["A. is there", "B. it is", "C. is", "D. there is"],
+        correctAnswer: "C. is",
+        reason:
+          "Expression of Place inversion: Place + Vord + S. 'In front of our school' adalah keterangan tempat → verb 'is' mendahului subject 'a beautiful garden'. Formula: In front of... + is + S.",
+      },
+      {
+        id: "adv-g14-mc3",
+        type: "multiple-choice",
+        question:
+          "Not only _____ her money, but also he betrayed her.",
+        options: [
+          "A. he stole",
+          "B. did he steal",
+          "C. he did steal",
+          "D. does he steal",
+        ],
+        correctAnswer: "B. did he steal",
+        reason:
+          "'Not only' adalah negative word yang memicu inversion. Kalimat past tense → auxiliary 'did'. Formula: Not only + did + S + V1. 'did he steal' = inversion yang benar.",
+      },
+      {
+        id: "adv-g14-mc4",
+        type: "multiple-choice",
+        question:
+          "Nadine is more talkative than _____ Indi. (inversion)",
+        options: ["A. is", "B. does", "C. Indi is", "D. was"],
+        correctAnswer: "A. is",
+        reason:
+          "Comparison inversion: ...than + Vaux/Vord + S. Karena 'Nadine is more talkative', maka klausa perbandingan menggunakan 'is' (be-verb). Formula: than + is + Indi.",
+      },
+      {
+        id: "adv-g14-mc5",
+        type: "multiple-choice",
+        question:
+          "Panji loves swimming and _____ Nabil. (inversion dengan 'so')",
+        options: [
+          "A. so loves",
+          "B. so does",
+          "C. so is",
+          "D. so do",
+        ],
+        correctAnswer: "B. so does",
+        reason:
+          "'So' + inversion menyatakan 'juga/also'. 'Panji loves swimming' → 'so does Nabil' (Nabil also loves swimming). Gunakan auxiliary 'does' karena simple present + subject tunggal 'Nabil'.",
+      },
+      {
+        id: "adv-g14-mc6",
+        type: "multiple-choice",
+        question:
+          "Only by practicing every day _____ improve your English.",
+        options: [
+          "A. you can",
+          "B. can you",
+          "C. you will",
+          "D. will",
+        ],
+        correctAnswer: "B. can you",
+        reason:
+          "'Only + Preposition (by)' memicu inversion: Only + by + ... + Vaux + S + Vord. 'can you' = auxiliary 'can' di depan subject 'you'. Pilihan A tidak terinversi.",
+      },
+      {
+        id: "adv-g14-mc7",
+        type: "multiple-choice",
+        question:
+          "_____ he exercised regularly, he would have avoided the injury. (formal conditional)",
+        options: ["A. If", "B. Should", "C. Had", "D. Were"],
+        correctAnswer: "C. Had",
+        reason:
+          "Inversion conditional Type 3: Had + S + V3 (menggantikan 'If + Past Perfect'). 'Had he exercised' = 'If he had exercised'. Ini Type 3 karena konteksnya masa lalu dengan 'would have'.",
+      },
+      {
+        id: "adv-g14-mc8",
+        type: "multiple-choice",
+        question:
+          "_____ Ms. Nadine speak up about the issue, I will respond immediately. (formal conditional)",
+        options: ["A. Had", "B. Were", "C. Should", "D. If"],
+        correctAnswer: "C. Should",
+        reason:
+          "Inversion conditional Type 1: Should + S + V1 (menggantikan 'If + Simple Present'). 'Should Ms. Nadine speak up' = 'If Ms. Nadine speaks up'. Ini Type 1 karena hasil klausa 'I will respond' adalah future.",
+      },
+      {
+        id: "adv-g14-mc9",
+        type: "multiple-choice",
+        question:
+          "I got my car _____. (causative pasif)",
+        options: ["A. repair", "B. to repair", "C. repaired", "D. repairing"],
+        correctAnswer: "C. repaired",
+        reason:
+          "Causative 'get' pasif: get + O + V3. 'I got my car repaired' = saya menyuruh mobil saya diperbaiki (oleh orang lain). 'Repaired' = V3. Aktif: 'I got someone to repair my car' (to inf).",
+      },
+      {
+        id: "adv-g14-mc10",
+        type: "multiple-choice",
+        question:
+          "So _____ is the view from the top of the mountain.",
+        options: [
+          "A. beautiful it",
+          "B. beautiful is",
+          "C. is beautiful",
+          "D. beautiful",
+        ],
+        correctAnswer: "B. beautiful is",
+        reason:
+          "Inversion dengan 'So + adjective': So + adj + Vord + S. 'So beautiful is the view' = penekanan betapa indahnya pemandangan. Formula: So + beautiful (adj) + is (Vord) + the view (S).",
       },
     ],
   },
