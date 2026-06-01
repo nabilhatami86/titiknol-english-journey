@@ -3401,6 +3401,47 @@ export const advanceReadingLessons: ModuleLesson[] = [
       },
     ],
     exercises: [
+      // ── Part 1: Summary Completion — Word Bank (Q5–Q8) ───────────────
+      {
+        id: "adv-r13-q5",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Summary Completion — choose ONE word from the box for each blank.\n\nWord Bank: extend · intercepts · vegetation · aquatic · stabilize · erosion · myriad · vanish\n\nQ5. The effects of logging _____ beyond the simple felling of trees, also removing nutrients, water, and shelter for the countless organisms that depend on the forest ecosystem.",
+        correctAnswer: "extend",
+        reason:
+          'Para. A: "The effects of logging extend beyond just the felling of a swath of trees." — extend = meluas, menjangkau.',
+      },
+      {
+        id: "adv-r13-q6",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q6. The dense forest canopy _____ heavy rainfall, slowing it down so that water soaks gradually into the porous soil rather than washing it away.",
+        correctAnswer: "intercepts",
+        reason:
+          'Para. B: "The canopy prevents surface runoff by intercepting heavy rainfall so that water can drip down slowly onto the porous earth." — intercepts = menangkap/memotong.',
+      },
+      {
+        id: "adv-r13-q7",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q7. Along riverbanks and stream edges, _____ plays a crucial role in blocking soil from washing into the water and in shading the stream to prevent excessive algae growth.",
+        correctAnswer: "vegetation",
+        reason:
+          'Para. C: "Vegetation along rivers and stream banks helps maintain steady water flow by blocking the erosion of soil and other residue, and tree shade inhibits the growth of algae." — vegetation = vegetasi/tumbuhan.',
+      },
+      {
+        id: "adv-r13-q8",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q8. When eroded soil flows into waterways it consumes oxygen, creating conditions that are deadly for fish and other _____ animals that rely on clean, well-oxygenated water to survive.",
+        correctAnswer: "aquatic",
+        reason:
+          'Para. C: "oxygen depletion in the water, killing fish and other aquatic life." — aquatic = hidup di air.',
+      },
       // ── Part 2: Paragraph Matching (Q11–Q14) ─────────────────────────
       {
         id: "adv-r13-q11",
@@ -3445,6 +3486,395 @@ export const advanceReadingLessons: ModuleLesson[] = [
         correctAnswer: "C",
         reason:
           "Para. C: 'When the soil flows into waterways...oxygen depletion in the water, killing fish and other aquatic life.' Paragraf ini membahas dampak erosi terhadap ikan.",
+      },
+    ],
+  },
+
+  // ── Day 14 · The Rodeo ─────────────────────────────────────────────────
+  {
+    id: "adv-reading-14",
+    track: "reading",
+    day: 14,
+    tutor: "Mrs. Aji",
+    title: "RODEO — The Sport of the West",
+    subtitle:
+      "Unit 2: Sport & Culture — America's wild-west tradition, crowd atmosphere, and rodeo events",
+    overview:
+      "Teks deskriptif tentang pengalaman menghadiri Deschutes County Rodeo di Oregon. Menggambarkan suasana fair, berbagai atraksi rodeo seperti calf roping, bronco riding, dan bull riding, serta budaya lokal yang melekat pada tradisi rodeo Amerika.",
+    passage: [
+      `Rodeo is to America what bull-fighting is to Spain or horse-racing is to Britain: the nation's most popular animal sport, and a very popular sport at that. Paul Denman spent a day at the Deschutes County Fair, in Redmond Oregon, and joined hundreds of Oregonians to watch the highlight of the fair, the annual Deschutes Rodeo.`,
+
+      `(Rodeo bagi Amerika seperti adu banteng bagi Spanyol atau balap kuda bagi Inggris: olahraga hewan paling populer di negara itu, dan memang sangat populer. Paul Denman menghabiskan sehari di Deschutes County Fair, di Redmond Oregon, dan bergabung dengan ratusan warga Oregon untuk menyaksikan acara puncak fair tersebut, yaitu Deschutes Rodeo tahunan.)`,
+
+      `At 1 p.m. the air is still, heavy with a confusion of smells that drifts among the stalls and the barbeques, the animal enclosures and the ice-cream vendors. In the hot midday sun, the fair throngs with visitors, but there's little shade to sit in, just narrow strips of shadow alongside the buildings and the tents. All around, the music is playing while kids run riot and stall-holders beckon passing visitors with their colorful displays.`,
+
+      `(Pukul 1 siang, udara begitu tenang, dipenuhi campuran aroma yang mengambang di antara kios-kios dan panggangan barbeque, kandang hewan, dan penjual es krim. Dalam terik matahari siang, fair dipenuhi pengunjung, namun hampir tidak ada tempat berteduh, hanya sepotong-sepotong bayangan sempit di sisi bangunan dan tenda. Di mana-mana, musik mengalun sementara anak-anak berlarian dan para penjual kios memanggil pengunjung yang lewat dengan pajangan warna-warni mereka.)`,
+
+      `Then, as the time moves towards 2.30, there is a new sense of excitement in the air: people are no longer moving round randomly, but heading in the same direction, towards the dusty arena to the south of the showground. It's almost time for the rodeo! Here at last there is shade for everyone: the grandstand, with its tiered seating, rapidly fills up, as thousands of fair-goers pile in, eager for a good view of the excitement that is soon to begin.`,
+
+      `(Kemudian, saat waktu mendekati pukul 2.30, ada nuansa kegembiraan baru di udara: orang-orang tidak lagi bergerak sembarangan, melainkan menuju ke arah yang sama, menuju arena berdebu di selatan area pertunjukan. Sebentar lagi rodeo dimulai! Di sini akhirnya ada tempat berteduh untuk semua orang: tribun penonton dengan tempat duduk bertingkat cepat terisi, sementara ribuan pengunjung fair berdatangan, bersemangat untuk mendapatkan posisi terbaik menyaksikan pertunjukan yang segera dimulai.)`,
+
+      `For some people it has already begun. Microlight kids on minuscule ponies are cavorting round the empty arena, while a handful of cowboys, astride impeccably trained horses, walk or trot sedately round the ring. Suddenly a little blonde girl, hardly four feet tall, careers into view, riding bareback at the speed of light on a bright white pony. No-one pays much attention. The folk in the stands are too busy talking about horses and rodeo-riders, discussing the last rodeo, predicting the winners of the next. Somehow, as someone who has not been brought up in the company of horses, I feel slightly out of place, as if everyone here except me knows everything about what is going on.`,
+
+      `(Bagi sebagian orang, pertunjukan sudah dimulai. Anak-anak kecil di atas kuda poni mungil berlarian riang di arena yang masih kosong, sementara sekelompok koboi di atas kuda terlatih sempurna berjalan atau berlari kecil dengan tenang mengelilingi arena. Tiba-tiba seorang gadis kecil berambut pirang, tingginya hampir tidak mencapai empat kaki, muncul dengan gesit, menunggang tanpa pelana dengan kecepatan penuh di atas kuda poni putih cerah. Tidak ada yang terlalu memperhatikan. Orang-orang di tribun terlalu sibuk membicarakan kuda dan penunggang rodeo, mendiskusikan rodeo sebelumnya, memprediksi pemenang berikutnya. Entah kenapa, sebagai seseorang yang tidak dibesarkan di lingkungan berkuda, saya merasa sedikit tidak pada tempatnya, seolah semua orang di sini kecuali saya tahu segalanya tentang apa yang sedang terjadi.)`,
+
+      `I had been to a couple of rodeos before, including the biggest of them all, Canada's Calgary Stampede; but the other rodeos I had been to were put on for the tourists. Not this one; in central Oregon, there are few tourists. Rodeos here are for the locals, people who know them and understand them; most of the folk round me are from Redmond, or Prineville or Madras or Bend, certainly not from Europe!`,
+
+      `(Saya sudah pernah menghadiri beberapa rodeo sebelumnya, termasuk yang terbesar dari semuanya, Calgary Stampede di Kanada; tetapi rodeo lain yang pernah saya hadiri dibuat untuk para turis. Bukan yang ini; di pusat Oregon, turis sangat sedikit. Rodeo di sini diperuntukkan bagi warga lokal, orang-orang yang sudah kenal dan paham; sebagian besar orang di sekitar saya berasal dari Redmond, Prineville, Madras, atau Bend, tentu bukan dari Eropa!)`,
+
+      `Then action: suddenly the gates at the end of the arena burst open, and a posse of flag-carrying girls erupts into view, circling the arena in formation on shining dark ponies. Dressed in patriotic red, white and blue, courtesy of Pepsi-Cola, the girls come to a stop in the middle of the ring, as the crowd rise to their feet, the men take off their stetson hats, and everyone joins in the singing of God Bless America.`,
+
+      `(Lalu aksi dimulai: tiba-tiba gerbang di ujung arena terbuka, dan sekelompok gadis pembawa bendera muncul secara dramatis, mengelilingi arena dalam formasi di atas kuda poni gelap yang mengkilap. Berpakaian merah, putih, dan biru patriotik, atas nama Pepsi-Cola, para gadis itu berhenti di tengah arena, sementara penonton berdiri, para pria melepas topi stetson mereka, dan semua orang ikut menyanyikan God Bless America.)`,
+
+      `The rodeo has begun! For the next couple of hours, spectators watch with excitement as local heroes perform feats of dexterity on the backs of bucking animals! While some show their skills at calf roping — catching a running calf with a lasso and tying it up in just a few seconds — others demonstrate their daredevil skills by riding untamed broncos or bounding round on the backs of enormous raging bulls. As intrepid riders master or fall off their wild mounts, the crowd cheer wildly or aah in apprehension, then burst into laughter as the obligatory clown, the matador of the rodeo, distracts the attention of the raging animals while mounted cowboys round them up and calm them down, coaxing them away into the pens from which they originally emerged, their day's work finished.`,
+
+      `(Rodeo telah dimulai! Selama beberapa jam berikutnya, penonton menyaksikan dengan penuh semangat saat para pahlawan lokal menampilkan atraksi ketangkasan di punggung hewan-hewan yang meronta! Beberapa menunjukkan keahlian mereka dalam calf roping — menangkap anak sapi yang berlari dengan lasso dan mengikatnya hanya dalam beberapa detik — yang lain memperlihatkan keberanian mereka dengan menunggang kuda liar atau melompat-lompat di punggung banteng besar yang mengamuk. Saat penunggang pemberani berhasil menguasai atau terjatuh dari tunggangannya, penonton bersorak-sorai atau menahan napas cemas, lalu meledak tawa saat badut wajib, sang matador rodeo, mengalihkan perhatian hewan-hewan yang mengamuk sementara koboi berkuda menggiring dan menenangkan mereka, membawa mereka kembali ke kandang tempat mereka semula berasal, pekerjaan hari itu selesai.)`,
+
+      `Katie Sharpe, 21, the local Rodeo Queen, does a lap of honour, then participates in the ladies' events; but in this macho part of the world, the ladies do not get to pit themselves against untamed bulls and broncs! That's men's stuff! Katie and the other young ladies show their skills at "barrel racing", hurling their horses at breakneck speed round a triangular shaped race-course, marked out with barrels, in the middle of the arena. It's not as dramatic as bull-riding, but it's exciting, and the crowd roar their approval.`,
+
+      `(Katie Sharpe, 21 tahun, Ratu Rodeo setempat, melakukan lap kehormatan, kemudian berpartisipasi dalam lomba khusus wanita; tetapi di bagian dunia yang macho ini, para wanita tidak diperbolehkan bertarung melawan banteng dan kuda liar! Itu urusan pria! Katie dan para gadis muda lainnya menunjukkan keahlian mereka dalam "barrel racing", memacu kuda mereka dengan kecepatan tinggi mengelilingi lintasan berbentuk segitiga yang ditandai dengan tong-tong di tengah arena. Ini tidak sedramatik menunggang banteng, tetapi tetap seru, dan penonton bersorak setuju.)`,
+
+      `As the sun falls lower in the sky and the shadows begin to lengthen, the final rounds of calf-roping and saddle-bronc riding bring another half hour of thrills and spills before the commentator finally announces that the Rodeo is drawing to an end. The last prizes are handed out, the last riders leave the arena, and the show is over. As the spectators pick up their belongings and move slowly towards the exits, the kids on their ponies come back again for another few minutes as imaginary champions, tomorrow's local heroes in the arena of the stars. Here, it seems, if rodeo does not flow in the blood, at least it's all in the family.`,
+
+      `(Saat matahari makin rendah di langit dan bayangan mulai memanjang, babak terakhir calf roping dan saddle-bronc riding menghadirkan setengah jam terakhir penuh ketegangan sebelum komentator akhirnya mengumumkan bahwa Rodeo hampir berakhir. Hadiah terakhir dibagikan, penunggang terakhir meninggalkan arena, dan pertunjukan selesai. Saat penonton mengambil barang-barang mereka dan perlahan bergerak menuju pintu keluar, anak-anak di atas kuda poni kembali lagi selama beberapa menit sebagai juara imajiner, pahlawan lokal masa depan di arena para bintang. Di sini, tampaknya, jika rodeo tidak mengalir dalam darah, setidaknya itu semua ada dalam keluarga.)`,
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. 1 — Rodeo = olahraga hewan terpopuler di Amerika, seperti adu banteng di Spanyol atau balap kuda di Inggris.",
+          "Para. 2 — Suasana fair siang hari: bau campuran, panas, musik, anak-anak, dan penjual kios.",
+          "Para. 3 — Menjelang pukul 2.30: penonton bergerak menuju arena; tribun bertingkat dengan cepat penuh.",
+          "Para. 4 — Pra-rodeo: anak-anak berkuda, koboi berlatih; penulis merasa asing karena bukan orang lokal.",
+          "Para. 5 — Rodeo ini bukan untuk turis — ini acara warga lokal Oregon yang benar-benar mengenal dan mencintai rodeo.",
+          "Para. 6 — Pembukaan: gadis-gadis pembawa bendera memasuki arena, penonton berdiri, menyanyikan God Bless America.",
+          "Para. 7 — Aksi rodeo: calf roping, bronco riding, bull riding; badut rodeo mengamankan hewan yang mengamuk.",
+          "Para. 8 — Ratu Rodeo Katie Sharpe dan barrel racing untuk peserta wanita.",
+          "Para. 9 — Penutupan: babak terakhir, pembagian hadiah; anak-anak kembali ke arena sebagai 'juara imajiner'.",
+        ],
+      },
+      {
+        title: "Key Vocabulary — 20 Words",
+        points: [
+          "apprehension (n.) — anxiety, fear about what might happen — kecemasan, kekhawatiran",
+          "arena (n.) — a large area for sports or performances — arena pertunjukan",
+          "bareback (adv.) — riding a horse without a saddle — tanpa pelana",
+          "bronco (n.) — a wild or half-tamed horse — kuda liar / kuda tak jinak",
+          "bucking (adj.) — jumping or kicking violently — meronta-ronta",
+          "cavort (v.) — to jump or run around in a playful way — berlarian riang",
+          "daredevil (adj.) — recklessly bold, fearless — nekat, tanpa rasa takut",
+          "dexterity (n.) — skill in using the body, especially hands — ketangkasan",
+          "erupts (v.) — bursts out suddenly and dramatically — meledak, muncul tiba-tiba",
+          "feat (n.) — a remarkable achievement requiring skill — prestasi / atraksi luar biasa",
+          "grandstand (n.) — the main seating area for spectators — tribun utama penonton",
+          "intrepid (adj.) — fearless, adventurous — pemberani, tak gentar",
+          "lasso (n.) — a rope with a loop used to catch animals — tali lasso",
+          "macho (adj.) — aggressively masculine — sangat maskulin / jantan",
+          "minuscule (adj.) — extremely small — sangat kecil",
+          "obligatory (adj.) — required, compulsory — wajib, tidak bisa dihindari",
+          "posse (n.) — a group of people assembled for a common purpose — rombongan, kelompok",
+          "sedately (adv.) — calmly and without rushing — dengan tenang",
+          "stetson (n.) — a wide-brimmed cowboy hat — topi koboi",
+          "throng (v.) — to fill a place with a large crowd — dipenuhi keramaian",
+        ],
+      },
+      {
+        title: "Reading Strategy: Descriptive Text & Atmosphere",
+        points: [
+          "📌 Teks deskriptif = menggambarkan suasana, tempat, dan peristiwa secara detail dan hidup.",
+          "",
+          "⚡ Strategi membaca teks deskriptif:",
+          "   1. Perhatikan kata sifat dan kata keterangan yang membangun suasana (e.g., 'dusty arena', 'tiered seating', 'breakneck speed').",
+          "   2. Ikuti kronologi waktu: penulis sering menggunakan penanda waktu (1 p.m., 2.30, as the sun falls).",
+          "   3. Identifikasi emosi dan sudut pandang penulis — penting untuk menjawab soal inferensi.",
+          "   4. Bedakan antara observasi faktual (apa yang terjadi) dan kesan subjektif penulis (bagaimana rasanya).",
+          "",
+          "📌 Contoh dari teks:",
+          "   'I feel slightly out of place' → penulis bukan orang lokal; merasa asing di tengah orang-orang yang sangat familiar dengan rodeo.",
+          "   'kids on their ponies come back as imaginary champions' → menunjukkan rodeo adalah bagian dari identitas dan masa depan komunitas lokal.",
+        ],
+      },
+    ],
+    exercises: [],
+  },
+
+  // ── Day 15 · RODEO — Exercises ─────────────────────────────────────────
+  {
+    id: "adv-reading-15",
+    track: "reading",
+    day: 15,
+    tutor: "Mrs. Aji",
+    title: "RODEO — Exercises",
+    subtitle:
+      "Unit 2: Sport & Culture — True/False/Not Given + Summary Completion",
+    overview:
+      "Latihan membaca berbasis teks Rodeo dari Day 14. Part 1: True/False/Not Given (Q1–Q4) — menguji pemahaman detail teks. Part 2: Summary Completion (Q5–Q7) — melengkapi ringkasan dengan kata dari word bank.",
+    passage: [
+      `Rodeo is to America what bull-fighting is to Spain or horse-racing is to Britain: the nation's most popular animal sport, and a very popular sport at that. Paul Denman spent a day at the Deschutes County Fair, in Redmond Oregon, and joined hundreds of Oregonians to watch the highlight of the fair, the annual Deschutes Rodeo.`,
+      `At 1 p.m. the air is still, heavy with a confusion of smells that drifts among the stalls and the barbeques, the animal enclosures and the ice-cream vendors. In the hot midday sun, the fair throngs with visitors, but there's little shade to sit in, just narrow strips of shadow alongside the buildings and the tents. All around, the music is playing while kids run riot and stall-holders beckon passing visitors with their colorful displays.`,
+      `Then, as the time moves towards 2.30, there is a new sense of excitement in the air: people are no longer moving round randomly, but heading in the same direction, towards the dusty arena to the south of the showground. It's almost time for the rodeo! Here at last there is shade for everyone: the grandstand, with its tiered seating, rapidly fills up, as thousands of fair-goers pile in, eager for a good view of the excitement that is soon to begin.`,
+      `For some people it has already begun. Microlight kids on minuscule ponies are cavorting round the empty arena, while a handful of cowboys, astride impeccably trained horses, walk or trot sedately round the ring. Suddenly a little blonde girl, hardly four feet tall, careers into view, riding bareback at the speed of light on a bright white pony. No-one pays much attention. The folk in the stands are too busy talking about horses and rodeo-riders, discussing the last rodeo, predicting the winners of the next. Somehow, as someone who has not been brought up in the company of horses, I feel slightly out of place, as if everyone here except me knows everything about what is going on.`,
+      `I had been to a couple of rodeos before, including the biggest of them all, Canada's Calgary Stampede; but the other rodeos I had been to were put on for the tourists. Not this one; in central Oregon, there are few tourists. Rodeos here are for the locals, people who know them and understand them; most of the folk round me are from Redmond, or Prineville or Madras or Bend, certainly not from Europe!`,
+      `Then action: suddenly the gates at the end of the arena burst open, and a posse of flag-carrying girls erupts into view, circling the arena in formation on shining dark ponies. Dressed in patriotic red, white and blue, courtesy of Pepsi-Cola, the girls come to a stop in the middle of the ring, as the crowd rise to their feet, the men take off their stetson hats, and everyone joins in the singing of God Bless America.`,
+      `The rodeo has begun! For the next couple of hours, spectators watch with excitement as local heroes perform feats of dexterity on the backs of bucking animals! While some show their skills at calf roping — catching a running calf with a lasso and tying it up in just a few seconds — others demonstrate their daredevil skills by riding untamed broncos or bounding round on the backs of enormous raging bulls. As intrepid riders master or fall off their wild mounts, the crowd cheer wildly or aah in apprehension, then burst into laughter as the obligatory clown, the matador of the rodeo, distracts the attention of the raging animals while mounted cowboys round them up and calm them down, coaxing them away into the pens from which they originally emerged, their day's work finished.`,
+      `Katie Sharpe, 21, the local Rodeo Queen, does a lap of honour, then participates in the ladies' events; but in this macho part of the world, the ladies do not get to pit themselves against untamed bulls and broncs! That's men's stuff! Katie and the other young ladies show their skills at "barrel racing", hurling their horses at breakneck speed round a triangular shaped race-course, marked out with barrels, in the middle of the arena. It's not as dramatic as bull-riding, but it's exciting, and the crowd roar their approval.`,
+      `As the sun falls lower in the sky and the shadows begin to lengthen, the final rounds of calf-roping and saddle-bronc riding bring another half hour of thrills and spills before the commentator finally announces that the Rodeo is drawing to an end. The last prizes are handed out, the last riders leave the arena, and the show is over. As the spectators pick up their belongings and move slowly towards the exits, the kids on their ponies come back again for another few minutes as imaginary champions, tomorrow's local heroes in the arena of the stars. Here, it seems, if rodeo does not flow in the blood, at least it's all in the family.`,
+    ],
+    materialSections: [
+      {
+        title: "Exercise Guide",
+        points: [
+          "📋 Part 1 — True / False / Not Given (Q1–Q4)",
+          "   TRUE  = pernyataan sesuai dengan informasi dalam teks",
+          "   FALSE = pernyataan berlawanan dengan informasi dalam teks",
+          "   NOT GIVEN = informasi tidak disebutkan sama sekali dalam teks",
+          "",
+          "📋 Part 2 — Summary Completion (Q5–Q7)",
+          "   Pilih satu kata dari word bank untuk melengkapi setiap kalimat.",
+          "   Word Bank: grandstand · dexterity · apprehension · intrepid · obligatory · stetson",
+          "",
+          "💡 Tips: Untuk TFNG, baca teks dengan cermat — jangan menebak berdasarkan logika umum, hanya dari informasi yang tertulis.",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Part 1: True / False / Not Given (Q1–Q4) ─────────────────────
+      {
+        id: "adv-r15-q1",
+        type: "true-false-not-given",
+        section: "part1",
+        question:
+          "Q1 — True / False / Not Given\n\n'The author had never attended a rodeo before visiting the Deschutes County Fair.'",
+        options: ["True", "False", "Not Given"],
+        correctAnswer: "False",
+        reason:
+          "Para. 5: 'I had been to a couple of rodeos before, including the biggest of them all, Canada's Calgary Stampede.' — Penulis sudah pernah menghadiri rodeo sebelumnya, jadi pernyataan ini FALSE.",
+      },
+      {
+        id: "adv-r15-q2",
+        type: "true-false-not-given",
+        section: "part1",
+        question:
+          "Q2 — True / False / Not Given\n\n'The grandstand at the Deschutes Rodeo provides shade for the spectators.'",
+        options: ["True", "False", "Not Given"],
+        correctAnswer: "True",
+        reason:
+          "Para. 3: 'Here at last there is shade for everyone: the grandstand, with its tiered seating, rapidly fills up.' — Grandstand memang menyediakan tempat berteduh. TRUE.",
+      },
+      {
+        id: "adv-r15-q3",
+        type: "true-false-not-given",
+        section: "part1",
+        question:
+          "Q3 — True / False / Not Given\n\n'The Deschutes Rodeo is organised primarily to attract tourists to central Oregon.'",
+        options: ["True", "False", "Not Given"],
+        correctAnswer: "False",
+        reason:
+          "Para. 5: 'in central Oregon, there are few tourists. Rodeos here are for the locals.' — Rodeo ini ditujukan untuk warga lokal, bukan turis. FALSE.",
+      },
+      {
+        id: "adv-r15-q4",
+        type: "true-false-not-given",
+        section: "part1",
+        question:
+          "Q4 — True / False / Not Given\n\n'Women at the Deschutes Rodeo are allowed to compete in bull-riding events.'",
+        options: ["True", "False", "Not Given"],
+        correctAnswer: "False",
+        reason:
+          "Para. 8: 'the ladies do not get to pit themselves against untamed bulls and broncs! That's men's stuff!' — Wanita tidak diperbolehkan dalam bull riding. FALSE.",
+      },
+      // ── Part 2: Summary Completion (Q5–Q7) ───────────────────────────
+      {
+        id: "adv-r15-q5",
+        type: "fill-the-gap",
+        section: "part2",
+        question:
+          "Summary Completion — choose ONE word from the box.\n\nWord Bank: grandstand · dexterity · apprehension · intrepid · obligatory · stetson\n\nQ5. As the clock approached 2.30, the _____ with its tiered seating rapidly filled with thousands of eager spectators looking for shade and a good view.",
+        correctAnswer: "grandstand",
+        reason:
+          "Para. 3: 'the grandstand, with its tiered seating, rapidly fills up, as thousands of fair-goers pile in.' — grandstand = tribun utama penonton.",
+      },
+      {
+        id: "adv-r15-q6",
+        type: "fill-the-gap",
+        section: "part2",
+        question:
+          "Q6. The crowd held their breath in _____ as riders struggled to stay on the backs of bucking broncos and raging bulls, then erupted into cheers when each rider succeeded.",
+        correctAnswer: "apprehension",
+        reason:
+          "Para. 7: 'the crowd cheer wildly or aah in apprehension' — apprehension = kecemasan/kekhawatiran saat menonton atraksi berbahaya.",
+      },
+      {
+        id: "adv-r15-q7",
+        type: "fill-the-gap",
+        section: "part2",
+        question:
+          "Q7. During the opening ceremony, the men in the grandstand removed their _____ hats and stood to sing God Bless America as the flag-carrying girls circled the arena.",
+        correctAnswer: "stetson",
+        reason:
+          "Para. 6: 'the men take off their stetson hats, and everyone joins in the singing of God Bless America.' — stetson = topi koboi berbrim lebar.",
+      },
+    ],
+  },
+
+  // ── Day 16 · Electric Cars Around the Globe ────────────────────────────
+  {
+    id: "adv-reading-16",
+    track: "reading",
+    day: 16,
+    tutor: "Mrs. Aji",
+    title: "Electric Cars Around the Globe",
+    subtitle:
+      "Unit 2: Technology & Environment — history, global adoption, and design innovations of electric vehicles",
+    overview:
+      "Teks akademik tentang perkembangan mobil listrik di dunia: sejarah singkat, mengapa bensin menjadi standar, kebangkitan kembali EV di Eropa dan Asia, kondisi di Amerika Utara, hingga desain inovatif mobil listrik masa kini. Latihan: Summary Completion Q1–Q7.",
+    passage: [
+      `Para. A — Cars have reshaped our world since they first rolled off mass production lines in the early twentieth century. One- and two-thousand-year-old Roman roads have been replaced by highways. Longer and wider bridges span rivers. The sharp division between urban and rural landscapes has been replaced by suburban sprawl, town, and country linked by eight-lane expressways with stop-and-go traffic. Gas stations are everywhere. Countries with oil reserves are enormously rich and powerful. After a century, the romance with internal combustion engines is on the wane. As the price of oil rises, the reserves of irreplaceable oil are consumed, and exhaust fumes hamper life in urban areas, alternatives to gas-powered vehicles are becoming more attractive.`,
+
+      `(Para. A — Mobil telah membentuk ulang dunia kita sejak pertama kali keluar dari lini produksi massal pada awal abad kedua puluh. Jalan Romawi berusia satu hingga dua ribu tahun telah digantikan oleh jalan raya. Jembatan yang lebih panjang dan lebar membentangi sungai. Pemisahan tajam antara lanskap perkotaan dan pedesaan telah digantikan oleh kawasan pinggiran kota, kota kecil, dan desa yang dihubungkan oleh jalan layang delapan lajur dengan lalu lintas padat. Pom bensin ada di mana-mana. Negara-negara dengan cadangan minyak sangat kaya dan berkuasa. Setelah satu abad, romansa dengan mesin pembakaran internal mulai memudar. Seiring harga minyak naik, cadangan minyak yang tidak bisa diperbarui terus terpakai, dan asap knalpot mengganggu kehidupan di perkotaan, alternatif kendaraan bermotor menjadi semakin menarik.)`,
+
+      `Para. B — In the early twentieth century in North America, electric cars shared the roads with gas-fueled cars, but after a short time, gas-fueled cars became the standard. Although electric cars were quieter, cleaner, and easier to start, they were not able to travel the required distances, and their plodding speed failed to capture the imagination.`,
+
+      `(Para. B — Pada awal abad kedua puluh di Amerika Utara, mobil listrik berbagi jalan dengan mobil berbahan bakar bensin, namun dalam waktu singkat, mobil berbahan bakar bensin menjadi standar. Meskipun mobil listrik lebih senyap, lebih bersih, dan lebih mudah dinyalakan, mereka tidak mampu menempuh jarak yang dibutuhkan, dan kecepatan mereka yang lambat gagal menarik imajinasi orang.)`,
+
+      `Para. C — Lately, in Europe and in Asia, where commuting distances are shorter and gas is more expensive than in the United States, electric cars have grown in popularity. Electric recharging stations are appearing in cities. The government of China has offered monetary incentives to car manufacturers for each electric car they manufacture as well as to the people who purchase the electric cars. Taxi drivers in Tokyo have embraced electric vehicles. Major car manufacturers, including Mitsubishi, Nissan, Toyota, and Mercedes Benz, all offer electric cars everywhere but in North America.`,
+
+      `(Para. C — Belakangan ini, di Eropa dan Asia, di mana jarak komuter lebih pendek dan bensin lebih mahal dibandingkan di Amerika Serikat, mobil listrik semakin populer. Stasiun pengisian ulang listrik mulai bermunculan di kota-kota. Pemerintah Cina menawarkan insentif moneter kepada produsen mobil untuk setiap mobil listrik yang mereka produksi, serta kepada masyarakat yang membeli mobil listrik. Pengemudi taksi di Tokyo telah menyambut kendaraan listrik dengan antusias. Produsen mobil besar, termasuk Mitsubishi, Nissan, Toyota, dan Mercedes Benz, semuanya menawarkan mobil listrik di mana-mana kecuali di Amerika Utara.)`,
+
+      `Para. D — In North America, slow, short-ranged electric vehicles with a high initial cost have thus far appealed to a limited audience. An American electric car that appeared briefly in the 1990s had a cruising speed of twenty-five miles per hour and could travel eighty-five miles on a single charge. Since then, battery technology has improved markedly. More recently, a North American company introduced an electric sports car that can travel 300 miles on a single charge and accelerate from 0 to 60 mph in 3.7 seconds, similar to the best sports car. The hope is that North Americans will embrace the new technology when they see an electric car as appealing as a conventional sports car.`,
+
+      `(Para. D — Di Amerika Utara, kendaraan listrik yang lambat, berjangkauan pendek, dan berbiaya awal tinggi hingga kini hanya menarik minat kalangan terbatas. Sebuah mobil listrik Amerika yang sempat muncul pada 1990-an memiliki kecepatan jelajah dua puluh lima mil per jam dan mampu menempuh delapan puluh lima mil dalam sekali pengisian daya. Sejak saat itu, teknologi baterai telah berkembang secara signifikan. Baru-baru ini, sebuah perusahaan Amerika Utara memperkenalkan mobil sport listrik yang mampu menempuh 300 mil dalam sekali pengisian daya dan berakselerasi dari 0 hingga 60 mph dalam 3,7 detik, setara dengan mobil sport terbaik. Harapannya adalah warga Amerika Utara akan menerima teknologi baru ini ketika mereka melihat mobil listrik sama menariknya dengan mobil sport konvensional.)`,
+
+      `Para. E — Other American auto manufacturers are marketing electric cars as they do in Europe, as commuter cars. The design of many of these cars is innovative: Some are made of light composites and seat only two people. One is a three-wheeler that is classified as a motorcycle. Another electric car, the Tango, is five inches narrower than a large motorcycle and seats two, one behind the other. Four of these vehicles fit in a single parking space. The vehicle is marketed as a great way to drive between lanes of stopped traffic.`,
+
+      `(Para. E — Produsen otomotif Amerika lainnya memasarkan mobil listrik seperti yang dilakukan di Eropa, sebagai mobil komuter. Desain banyak mobil ini sangat inovatif: beberapa dibuat dari komposit ringan dan hanya menampung dua orang. Salah satunya adalah kendaraan roda tiga yang diklasifikasikan sebagai sepeda motor. Mobil listrik lainnya, Tango, lima inci lebih sempit dari sepeda motor besar dan menampung dua orang duduk berurutan. Empat kendaraan ini muat dalam satu tempat parkir. Kendaraan ini dipasarkan sebagai cara terbaik untuk berkendara di antara jalur lalu lintas yang macet.)`,
+
+      `Para. F — All electric cars will help to reduce exhaust and greenhouse gases; some will do it with greater flair than others.`,
+
+      `(Para. F — Semua mobil listrik akan membantu mengurangi gas buang dan gas rumah kaca; beberapa akan melakukannya dengan gaya yang lebih mencolok dibanding yang lain.)`,
+    ],
+    materialSections: [
+      {
+        title: "Main Passage Focus",
+        points: [
+          "Para. A — Mobil telah mengubah lanskap dunia: jalan raya, jembatan, suburban sprawl. Namun kini harga minyak naik & cadangan menipis → alternatif EV makin menarik.",
+          "Para. B — Awal abad 20: mobil listrik & bensin berbagi jalan. Bensin menang karena EV lambat (plodding) & jangkauan pendek.",
+          "Para. C — Eropa & Asia: EV makin populer. China beri insentif, Tokyo taksi pakai EV. Nissan, Toyota, Mercedes jual EV — kecuali di Amerika Utara.",
+          "Para. D — Amerika Utara: EV kurang populer karena lambat & mahal. Tapi teknologi baterai makin canggih — EV sports car 300 mil, 0–60 mph dalam 3.7 detik.",
+          "Para. E — Desain inovatif: komposit ringan, 2 kursi, 3 roda, Tango 5 inci lebih sempit dari motor. 4 unit muat 1 parkir — ideal untuk commuter.",
+          "Para. F — Semua EV mengurangi emisi gas buang & greenhouse gases.",
+        ],
+      },
+      {
+        title: "Key Vocabulary — 20 Words",
+        points: [
+          "accelerated (v.) — increased speed or rate — berakselerasi, bertambah cepat",
+          "commuters (n.) — people who travel regularly to work — para komuter",
+          "composites (n.) — materials made from two or more substances — material komposit",
+          "consumed (v.) — used up completely — dikonsumsi, habis terpakai",
+          "conventional (adj.) — traditional, standard — konvensional, umum",
+          "embraced (v.) — accepted enthusiastically — menerima dengan antusias",
+          "exhaust (n.) — waste gases from an engine — gas buang knalpot",
+          "fumes (n.) — harmful gases or smoke — asap / uap berbahaya",
+          "hamper (v.) — to slow down or hinder — menghambat",
+          "incentives (n.) — rewards to encourage action — insentif, dorongan",
+          "innovative (adj.) — introducing new ideas or methods — inovatif",
+          "internal combustion (n.) — engine powered by burning fuel inside — mesin pembakaran internal",
+          "markedly (adv.) — noticeably, significantly — secara signifikan",
+          "monetary (adj.) — relating to money — moneter, berkaitan dengan uang",
+          "plodding (adj.) — slow and without excitement — lambat dan membosankan",
+          "reshaped (v.) — changed the form or nature of — membentuk ulang",
+          "sprawl (n.) — uncontrolled spread of urban development — penyebaran kota yang tidak terencana",
+          "standard (n.) — the accepted norm or model — standar, acuan umum",
+          "suburban (adj.) — relating to residential areas outside a city — pinggiran kota",
+          "wane (v.) — to decrease or become weaker — memudar, berkurang",
+        ],
+      },
+      {
+        title: "Exercise Guide — Summary Completion Q1–Q7",
+        points: [
+          "📋 Cara mengerjakan Summary Completion:",
+          "   1. Baca ringkasan secara keseluruhan terlebih dahulu untuk memahami konteks.",
+          "   2. Identifikasi bagian kalimat yang kosong dan tentukan jenis kata yang diperlukan (noun/verb/adjective).",
+          "   3. Pilih kata dari word bank yang paling sesuai secara makna DAN grammar.",
+          "   4. Setelah mengisi, baca ulang seluruh ringkasan untuk memastikan kohesi.",
+          "",
+          "Word Bank: accelerated · consumed · fumes · incentives · standard · urban",
+          "           commuters · embraced · hampered · plodding · suburban",
+        ],
+      },
+    ],
+    exercises: [
+      // ── Summary Completion Q1–Q7 ──────────────────────────────────────
+      {
+        id: "adv-r16-q1",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Summary Completion — choose ONE word from the box for each blank.\n\nWord Bank: accelerated · consumed · fumes · incentives · standard · urban · commuters · embraced · hampered · plodding · suburban\n\nQ1. New _____ neighbourhoods have developed between the cities and the rural areas as a result of the spread of car culture.",
+        correctAnswer: "suburban",
+        reason:
+          "Para. A: 'The sharp division between urban and rural landscapes has been replaced by suburban sprawl.' — suburban = kawasan pinggiran kota di antara kota dan pedesaan.",
+      },
+      {
+        id: "adv-r16-q2",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q2. Cars are causing serious problems — oil is expensive, and we have already _____ a lot of oil that cannot be replaced.",
+        correctAnswer: "consumed",
+        reason:
+          "Para. A: 'the reserves of irreplaceable oil are consumed' — consumed = telah habis terpakai / dikonsumsi.",
+      },
+      {
+        id: "adv-r16-q3",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q3. Gas-powered cars also pollute the air with their _____, which cause serious problems especially in busy urban areas.",
+        correctAnswer: "fumes",
+        reason:
+          "Para. A: 'exhaust fumes hamper life in urban areas' — fumes = asap/uap berbahaya dari knalpot.",
+      },
+      {
+        id: "adv-r16-q4",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q4. In the early days, people felt that electric cars did not have the flair that gas-powered cars had. For example, electric cars travelled at a more _____ speed.",
+        correctAnswer: "plodding",
+        reason:
+          "Para. B: 'their plodding speed failed to capture the imagination.' — plodding = lambat dan tidak mengesankan.",
+      },
+      {
+        id: "adv-r16-q5",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q5. Gas-powered cars became more popular around the world, and now they are the _____ that most people expect from a personal vehicle.",
+        correctAnswer: "standard",
+        reason:
+          "Para. B: 'gas-fueled cars became the standard.' — standard = norma / acuan yang diterima umum.",
+      },
+      {
+        id: "adv-r16-q6",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q6. However, there is a renewed interest in electric cars, and they have been _____ by people in many countries around the world, including taxi drivers in Tokyo.",
+        correctAnswer: "embraced",
+        reason:
+          "Para. C: 'Taxi drivers in Tokyo have embraced electric vehicles.' — embraced = diterima dengan antusias.",
+      },
+      {
+        id: "adv-r16-q7",
+        type: "fill-the-gap",
+        section: "part1",
+        question:
+          "Q7. Manufacturers are developing electric cars to sell to _____ in both Europe and North America because these compact, efficient cars are a practical way to get to work.",
+        correctAnswer: "commuters",
+        reason:
+          "Para. E: 'Other American auto manufacturers are marketing electric cars...as commuter cars.' — commuters = orang-orang yang bepergian secara rutin ke tempat kerja.",
       },
     ],
   },
