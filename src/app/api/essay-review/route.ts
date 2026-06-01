@@ -3,13 +3,28 @@ import { callAI } from '@/lib/callAI';
 
 type Section = 'introduction' | 'body1' | 'body2' | 'conclusion';
 
+interface BodyPlan {
+  why: string[];
+  how: string;
+  example: string;
+}
+
 function buildPrompt(
   section: Section,
   topic: string,
   text: string,
   mi1: string,
-  mi2: string
+  mi2: string,
+  plan?: BodyPlan
 ): string {
+  const planNote = plan
+    ? `\n\nStudent's writing plan for this paragraph (brainstormed before writing):
+- WHY: ${plan.why.length ? plan.why.join(' / ') : '(not provided)'}
+- HOW: ${plan.how || '(not provided)'}
+- Example: ${plan.example || '(not provided)'}
+When evaluating, check if the student's paragraph reflects their own plan. If they planned a specific WHY/HOW/Example but wrote something different, flag it in the relevant structureBreakdown item.`
+    : '';
+
   const criteria: Record<Section, string> = {
     introduction: `The introduction must have exactly 2 sentences:
 - Sentence 1: Paraphrase the topic (do NOT copy the original words; use synonyms, change structure, change word forms).
@@ -42,7 +57,7 @@ function buildPrompt(
   return `You are an IELTS essay writing coach evaluating a student's ${sectionLabel} for the essay topic: "${topic}".
 
 STRUCTURE CRITERIA (from the teacher's board — must be followed exactly):
-${criteria[section]}
+${criteria[section]}${planNote}
 
 Student's text:
 """
@@ -124,6 +139,12 @@ export async function POST(req: NextRequest) {
   const text: string = body?.text?.trim() ?? '';
   const mi1: string = body?.mi1?.trim() ?? 'Main Idea 1';
   const mi2: string = body?.mi2?.trim() ?? 'Main Idea 2';
+  const why1: string[] = Array.isArray(body?.why1) ? body.why1.filter((s: string) => s?.trim()) : [];
+  const how1: string = body?.how1?.trim() ?? '';
+  const example1: string = body?.example1?.trim() ?? '';
+  const why2: string[] = Array.isArray(body?.why2) ? body.why2.filter((s: string) => s?.trim()) : [];
+  const how2: string = body?.how2?.trim() ?? '';
+  const example2: string = body?.example2?.trim() ?? '';
 
   const validSections: Section[] = ['introduction', 'body1', 'body2', 'conclusion'];
   if (!validSections.includes(section)) {
@@ -133,7 +154,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'too_short', message: 'Write at least 5 words.' }, { status: 400 });
   }
 
-  const prompt = buildPrompt(section, topic, text, mi1, mi2);
+  const plan: BodyPlan | undefined =
+    section === 'body1' && (why1.length || how1 || example1)
+      ? { why: why1, how: how1, example: example1 }
+    : section === 'body2' && (why2.length || how2 || example2)
+      ? { why: why2, how: how2, example: example2 }
+    : undefined;
+
+  const prompt = buildPrompt(section, topic, text, mi1, mi2, plan);
 
   try {
     const raw = await callAI(prompt, 3000);
@@ -150,6 +178,7 @@ export async function POST(req: NextRequest) {
     const msg = err instanceof Error ? err.message : String(err);
     if (msg === 'no_api_key') return NextResponse.json({ error: 'no_api_key', message: 'No AI key configured.' }, { status: 503 });
     if (msg === 'quota_exceeded') return NextResponse.json({ error: 'quota_exceeded', message: 'AI quota exceeded. Try again shortly.' }, { status: 429 });
+    if (msg === 'timeout') return NextResponse.json({ error: 'timeout', message: 'AI took too long. Please try again.' }, { status: 504 });
     return NextResponse.json({ error: 'server_error', message: msg }, { status: 500 });
   }
 }

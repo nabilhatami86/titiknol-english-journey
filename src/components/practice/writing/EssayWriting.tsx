@@ -52,6 +52,12 @@ interface EssayHistoryEntry {
   topic: EssayTopic;
   mi1: string;
   mi2: string;
+  why1?: [string, string];
+  how1?: string;
+  example1?: string;
+  why2?: [string, string];
+  how2?: string;
+  example2?: string;
   sections: Record<Section, { text: string; review: ReviewResult | null }>;
 }
 
@@ -88,6 +94,76 @@ function avgScore(entry: EssayHistoryEntry): number | null {
   return scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null;
 }
 
+const inputCls = 'w-full px-3 py-2 rounded-lg border border-(--border) bg-(--bg-card) text-(--text) text-sm focus:outline-none focus:ring-2 focus:ring-primary/40';
+const labelCls = 'block text-xs font-semibold text-(--text-muted) uppercase tracking-wide mb-1';
+
+interface MiBlockProps {
+  num: 1 | 2;
+  mi: string; setMi: (v: string) => void;
+  why: [string, string]; setWhy: (v: [string, string]) => void;
+  how: string; setHow: (v: string) => void;
+  example: string; setExample: (v: string) => void;
+  placeholder: string;
+}
+
+function MiBlock({ num, mi, setMi, why, setWhy, how, setHow, example, setExample, placeholder }: MiBlockProps) {
+  return (
+    <div className="p-4 rounded-xl border border-(--border) bg-(--bg-card) space-y-3">
+      <div className="flex items-center gap-2 mb-1">
+        <span className="w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center shrink-0">{num}</span>
+        <span className="font-semibold text-(--text) text-sm">Main Idea {num} (MI{num})</span>
+        <span className="text-xs text-primary ml-auto">required</span>
+      </div>
+      <div>
+        <input
+          value={mi}
+          onChange={e => setMi(e.target.value)}
+          placeholder={placeholder}
+          className={inputCls}
+        />
+      </div>
+      <div className="border-t border-(--border) pt-3 space-y-2.5">
+        <p className="text-xs text-(--text-muted) italic">Brainstorm your paragraph plan (optional but recommended)</p>
+        <div>
+          <label className={labelCls}>WHY — Why is this important? <span className="text-[10px] normal-case font-normal">(max 2)</span></label>
+          <div className="space-y-1.5">
+            <input
+              value={why[0]}
+              onChange={e => setWhy([e.target.value, why[1]])}
+              placeholder="Reason 1..."
+              className={inputCls}
+            />
+            <input
+              value={why[1]}
+              onChange={e => setWhy([why[0], e.target.value])}
+              placeholder="Reason 2 (optional)..."
+              className={inputCls}
+            />
+          </div>
+        </div>
+        <div>
+          <label className={labelCls}>HOW — How does it work or apply?</label>
+          <input
+            value={how}
+            onChange={e => setHow(e.target.value)}
+            placeholder="HOW it works or is implemented..."
+            className={inputCls}
+          />
+        </div>
+        <div>
+          <label className={labelCls}>EXAMPLE — Real-world evidence or example</label>
+          <input
+            value={example}
+            onChange={e => setExample(e.target.value)}
+            placeholder="e.g. According to a 2023 study..."
+            className={inputCls}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function cefrLevel(score: number): string {
   if (score >= 90) return 'C2';
   if (score >= 75) return 'C1';
@@ -102,6 +178,12 @@ export function EssayWriting() {
   const [topic, setTopic] = useState<EssayTopic | null>(null);
   const [mi1, setMi1] = useState('');
   const [mi2, setMi2] = useState('');
+  const [why1, setWhy1] = useState<[string, string]>(['', '']);
+  const [how1, setHow1] = useState('');
+  const [example1, setExample1] = useState('');
+  const [why2, setWhy2] = useState<[string, string]>(['', '']);
+  const [how2, setHow2] = useState('');
+  const [example2, setExample2] = useState('');
   const [activeSection, setActiveSection] = useState<Section>('introduction');
   const [sections, setSections] = useState<Record<Section, SectionState>>(BLANK_SECTIONS);
   const [hydrated, setHydrated] = useState(false);
@@ -124,6 +206,12 @@ export function EssayWriting() {
         if (raw.topic) setTopic(raw.topic);
         if (raw.mi1) setMi1(raw.mi1);
         if (raw.mi2) setMi2(raw.mi2);
+        if (raw.why1) setWhy1(raw.why1);
+        if (raw.how1) setHow1(raw.how1);
+        if (raw.example1) setExample1(raw.example1);
+        if (raw.why2) setWhy2(raw.why2);
+        if (raw.how2) setHow2(raw.how2);
+        if (raw.example2) setExample2(raw.example2);
         if (raw.activeSection) setActiveSection(raw.activeSection);
         if (raw.sections) setSections({
           introduction: { ...defaultSection(), text: raw.sections.introduction?.text ?? '', review: raw.sections.introduction?.review ?? null },
@@ -147,8 +235,8 @@ export function EssayWriting() {
   // Persist session cache
   useEffect(() => {
     if (!hydrated) return;
-    localStorage.setItem(CACHE_KEY, JSON.stringify({ step, topic, mi1, mi2, activeSection, sections, historyId }));
-  }, [hydrated, step, topic, mi1, mi2, activeSection, sections, historyId]);
+    localStorage.setItem(CACHE_KEY, JSON.stringify({ step, topic, mi1, mi2, why1, how1, example1, why2, how2, example2, activeSection, sections, historyId }));
+  }, [hydrated, step, topic, mi1, mi2, why1, how1, example1, why2, how2, example2, activeSection, sections, historyId]);
 
   // Auto-save to history when all sections are reviewed (once per session)
   const allDone = hydrated && step === 'write' && topic !== null &&
@@ -163,6 +251,12 @@ export function EssayWriting() {
       topic,
       mi1,
       mi2,
+      why1,
+      how1,
+      example1,
+      why2,
+      how2,
+      example2,
       sections: {
         introduction: { text: sections.introduction.text, review: sections.introduction.review },
         body1: { text: sections.body1.text, review: sections.body1.review },
@@ -177,7 +271,7 @@ export function EssayWriting() {
       setHistoryData(updated);
       setHistoryId(id);
     } catch { /* ignore */ }
-  }, [hydrated, allDone, historyId, topic, mi1, mi2, sections]);
+  }, [hydrated, allDone, historyId, topic, mi1, mi2, why1, how1, example1, why2, how2, example2, sections]);
 
   function updateSection(key: Section, patch: Partial<SectionState>) {
     setSections(prev => ({ ...prev, [key]: { ...prev[key], ...patch } }));
@@ -191,7 +285,11 @@ export function EssayWriting() {
       const res = await fetch('/api/essay-review', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ section: key, topic: topic.title, text: sec.text, mi1, mi2 }),
+        body: JSON.stringify({
+          section: key, topic: topic.title, text: sec.text, mi1, mi2,
+          why1: why1.filter(w => w.trim()), how1: how1.trim(), example1: example1.trim(),
+          why2: why2.filter(w => w.trim()), how2: how2.trim(), example2: example2.trim(),
+        }),
       });
       const data = await res.json();
       if (!res.ok) { updateSection(key, { loading: false, error: data.message ?? 'Error reviewing section.' }); return; }
@@ -202,7 +300,10 @@ export function EssayWriting() {
   }
 
   function handleSelectTopic(t: EssayTopic) {
-    setTopic(t); setMi1(t.mi1Hint ?? ''); setMi2(t.mi2Hint ?? ''); setStep('setup');
+    setTopic(t); setMi1(t.mi1Hint ?? ''); setMi2(t.mi2Hint ?? '');
+    setWhy1(['', '']); setHow1(''); setExample1('');
+    setWhy2(['', '']); setHow2(''); setExample2('');
+    setStep('setup');
   }
 
   function handleStartWriting() {
@@ -216,6 +317,8 @@ export function EssayWriting() {
   function handleReset() {
     localStorage.removeItem(CACHE_KEY);
     setStep('pick'); setTopic(null); setMi1(''); setMi2('');
+    setWhy1(['', '']); setHow1(''); setExample1('');
+    setWhy2(['', '']); setHow2(''); setExample2('');
     setActiveSection('introduction');
     setSections(BLANK_SECTIONS());
     setHistoryId(null);
@@ -235,6 +338,12 @@ export function EssayWriting() {
     setTopic(entry.topic);
     setMi1(entry.mi1);
     setMi2(entry.mi2);
+    setWhy1(entry.why1 ?? ['', '']);
+    setHow1(entry.how1 ?? '');
+    setExample1(entry.example1 ?? '');
+    setWhy2(entry.why2 ?? ['', '']);
+    setHow2(entry.how2 ?? '');
+    setExample2(entry.example2 ?? '');
     setSections({
       introduction: { ...defaultSection(), text: entry.sections.introduction.text, review: entry.sections.introduction.review },
       body1: { ...defaultSection(), text: entry.sections.body1.text, review: entry.sections.body1.review },
@@ -519,7 +628,7 @@ export function EssayWriting() {
     );
   }
 
-  // ── SETUP MI1 / MI2 ───────────────────────────────────────────────────────
+  // ── SETUP MI1 / MI2 + WHY / HOW / EXAMPLE ────────────────────────────────
   if (step === 'setup' && topic) {
     return (
       <div className="max-w-2xl mx-auto pt-2">
@@ -528,24 +637,20 @@ export function EssayWriting() {
         <p className="text-sm text-(--text-muted) mb-1">Topic:</p>
         <p className="font-medium text-(--text) mb-5 p-3 bg-(--bg-card) rounded-lg border border-(--border)">{topic.title}</p>
         <div className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-(--text) mb-1">Main Idea 1 (MI1)</label>
-            <input
-              value={mi1}
-              onChange={e => setMi1(e.target.value)}
-              placeholder="e.g. Transition to Renewable Energy"
-              className="w-full px-4 py-2.5 rounded-lg border border-(--border) bg-(--bg-card) text-(--text) text-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-(--text) mb-1">Main Idea 2 (MI2)</label>
-            <input
-              value={mi2}
-              onChange={e => setMi2(e.target.value)}
-              placeholder="e.g. Stronger Governmental Regulations"
-              className="w-full px-4 py-2.5 rounded-lg border border-(--border) bg-(--bg-card) text-(--text) text-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
-            />
-          </div>
+          <MiBlock
+            num={1} mi={mi1} setMi={setMi1}
+            why={why1} setWhy={setWhy1}
+            how={how1} setHow={setHow1}
+            example={example1} setExample={setExample1}
+            placeholder="e.g. Transition to Renewable Energy"
+          />
+          <MiBlock
+            num={2} mi={mi2} setMi={setMi2}
+            why={why2} setWhy={setWhy2}
+            how={how2} setHow={setHow2}
+            example={example2} setExample={setExample2}
+            placeholder="e.g. Stronger Governmental Regulations"
+          />
         </div>
         <button
           onClick={handleStartWriting}
@@ -622,16 +727,52 @@ export function EssayWriting() {
           <div className="p-4 rounded-xl border border-(--border) bg-(--bg-card)">
             <h3 className="font-semibold text-(--text) mb-0.5">{activeInfo.label}</h3>
             <p className="text-xs text-(--text-muted) mb-3">{activeInfo.hint}</p>
-            {activeSection === 'body1' && (
-              <p className="text-xs bg-primary/8 text-primary px-3 py-2 rounded-lg mb-3 border border-primary/20">
-                <strong>MI1:</strong> {mi1}
-              </p>
-            )}
-            {activeSection === 'body2' && (
-              <p className="text-xs bg-primary/8 text-primary px-3 py-2 rounded-lg mb-3 border border-primary/20">
-                <strong>MI2:</strong> {mi2}
-              </p>
-            )}
+            {(activeSection === 'body1' || activeSection === 'body2') && (() => {
+              const isB1 = activeSection === 'body1';
+              const planMi = isB1 ? mi1 : mi2;
+              const planWhy = isB1 ? why1 : why2;
+              const planHow = isB1 ? how1 : how2;
+              const planEx = isB1 ? example1 : example2;
+              const hasDetails = planWhy.some(w => w.trim()) || planHow.trim() || planEx.trim();
+              return (
+                <div className="mb-3 rounded-lg border border-primary/25 bg-primary/5 overflow-hidden">
+                  <div className="px-3 py-2 bg-primary/10 border-b border-primary/20 flex items-center gap-2">
+                    <span className="text-[11px] font-bold text-primary uppercase tracking-wide">Your Plan — {isB1 ? 'Body 1' : 'Body 2'}</span>
+                  </div>
+                  <div className="px-3 py-2 space-y-1.5 text-xs">
+                    <div className="flex gap-2">
+                      <span className="font-bold text-primary shrink-0 w-14">MI:</span>
+                      <span className="text-(--text)">{planMi}</span>
+                    </div>
+                    {hasDetails && (
+                      <>
+                        {planWhy.filter(w => w.trim()).map((w, i) => (
+                          <div key={i} className="flex gap-2">
+                            <span className="font-bold text-primary shrink-0 w-14">{i === 0 ? 'WHY:' : ''}</span>
+                            <span className="text-(--text-muted)">{w}</span>
+                          </div>
+                        ))}
+                        {planHow.trim() && (
+                          <div className="flex gap-2">
+                            <span className="font-bold text-primary shrink-0 w-14">HOW:</span>
+                            <span className="text-(--text-muted)">{planHow}</span>
+                          </div>
+                        )}
+                        {planEx.trim() && (
+                          <div className="flex gap-2">
+                            <span className="font-bold text-primary shrink-0 w-14">Example:</span>
+                            <span className="text-(--text-muted)">{planEx}</span>
+                          </div>
+                        )}
+                      </>
+                    )}
+                    {!hasDetails && (
+                      <p className="text-(--text-muted) italic">No plan details added — go back to Setup to add WHY / HOW / Example.</p>
+                    )}
+                  </div>
+                </div>
+              );
+            })()}
             <textarea
               value={activeSec.text}
               onChange={e => updateSection(activeSection, { text: e.target.value, review: null, error: '' })}
