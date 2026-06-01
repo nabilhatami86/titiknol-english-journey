@@ -749,9 +749,9 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
                         green:  { badge: 'bg-green-100 dark:bg-green-950/40 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800', row: 'bg-green-50/40 dark:bg-green-950/20' },
                       };
                       return (
-                        <div key={`${section.title}-${pIdx}`} className="mt-3 rounded-xl border border-(--border) overflow-hidden text-xs">
+                        <div key={`${section.title}-${pIdx}`} className="mt-3 rounded-xl border border-(--border) overflow-x-auto text-xs">
                           {/* Header */}
-                          <div className="grid grid-cols-4 bg-(--bg-secondary) border-b border-(--border)">
+                          <div className="grid grid-cols-4 min-w-[480px] bg-(--bg-secondary) border-b border-(--border)">
                             {['Tense', 'Active', 'Passive', 'Non-Verbal'].map((h) => (
                               <div key={h} className="px-3 py-2 font-bold text-(--text-muted) uppercase tracking-wider text-[10px] text-center">{h}</div>
                             ))}
@@ -760,7 +760,7 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
                           {rows.map((row) => {
                             const c = colorMap[row.color];
                             return (
-                              <div key={row.label} className={`grid grid-cols-4 border-b last:border-b-0 border-(--border) ${c.row}`}>
+                              <div key={row.label} className={`grid grid-cols-4 min-w-[480px] border-b last:border-b-0 border-(--border) ${c.row}`}>
                                 <div className="px-3 py-3 flex flex-col items-center justify-center gap-1 border-r border-(--border)">
                                   <span className={`inline-block px-2 py-0.5 rounded-md text-[10px] font-bold ${c.badge}`}>{row.label}</span>
                                   <span className="text-(--text-muted) text-[10px] italic">{row.sub}</span>
@@ -775,6 +775,45 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
                           <div className="px-3 py-2 bg-(--bg-secondary) border-t border-(--border) text-(--text-muted) text-[10px] italic">
                             💡 ANA = Adjective / Noun / Adverb
                           </div>
+                        </div>
+                      );
+                    }
+
+                    // Causative verbs table
+                    if (point.trim() === '{{causative-table}}') {
+                      const rows = [
+                        { verb: 'get',  aktif: '+ to inf',      pasif: '+ V3',      color: 'blue' },
+                        { verb: 'have', aktif: '+ V1',          pasif: '+ V3',      color: 'green' },
+                        { verb: 'make', aktif: '+ V1',          pasif: '+ be + V3', color: 'orange' },
+                        { verb: 'let',  aktif: '+ V1',          pasif: '—',         color: 'violet' },
+                        { verb: 'help', aktif: '+ (to) inf/V1', pasif: '—',         color: 'rose' },
+                      ] as const;
+                      const colorMap = {
+                        blue:   { badge: 'bg-blue-100 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300', row: '' },
+                        green:  { badge: 'bg-green-100 dark:bg-green-950/40 text-green-700 dark:text-green-300', row: '' },
+                        orange: { badge: 'bg-orange-100 dark:bg-orange-950/40 text-orange-700 dark:text-orange-300', row: '' },
+                        violet: { badge: 'bg-violet-100 dark:bg-violet-950/40 text-violet-700 dark:text-violet-300', row: '' },
+                        rose:   { badge: 'bg-rose-100 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300', row: '' },
+                      };
+                      return (
+                        <div key={`${section.title}-${pIdx}`} className="mt-3 rounded-xl border border-(--border) overflow-x-auto text-xs">
+                          <div className="grid grid-cols-3 min-w-[340px] bg-(--bg-secondary) border-b border-(--border)">
+                            {['Verb', 'Aktif', 'Pasif'].map((h) => (
+                              <div key={h} className="px-3 py-2 font-bold text-(--text-muted) uppercase tracking-wider text-[10px] text-center">{h}</div>
+                            ))}
+                          </div>
+                          {rows.map((row) => {
+                            const c = colorMap[row.color];
+                            return (
+                              <div key={row.verb} className="grid grid-cols-3 min-w-[340px] border-b last:border-b-0 border-(--border) hover:bg-(--hover)">
+                                <div className="px-3 py-2.5 flex items-center justify-center border-r border-(--border)">
+                                  <span className={`inline-block px-2.5 py-0.5 rounded-md text-[11px] font-bold ${c.badge}`}>{row.verb}</span>
+                                </div>
+                                <div className="px-3 py-2.5 flex items-center justify-center font-mono text-(--text) border-r border-(--border) text-center text-[11px]">{row.aktif}</div>
+                                <div className="px-3 py-2.5 flex items-center justify-center font-mono text-(--text) text-center text-[11px]">{row.pasif}</div>
+                              </div>
+                            );
+                          })}
                         </div>
                       );
                     }
@@ -1240,20 +1279,20 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
 
       {lesson.passage && lesson.passage.length > 0 && (
         <section className="space-y-4">
-          <div className="flex items-center justify-between gap-2">
-            <h2 className="text-lg font-semibold text-(--text) flex items-center gap-2">
-              {lesson.track === 'reading' && <BookText className="w-5 h-5 text-blue-500" />}
-              {lesson.track === 'listening' && <Volume2 className="w-5 h-5 text-primary" />}
-              {lesson.track === 'speaking' && <MessageCircle className="w-5 h-5 text-green-500" />}
-              {{ reading: 'Full Reading Passage', speaking: 'Sample Script', grammar: 'Grammar Examples', listening: 'Listening Script', writing: 'Writing Examples' }[lesson.track]}
+          <div className="flex flex-wrap items-center gap-2">
+            <h2 className="text-lg font-semibold text-(--text) flex items-center gap-2 flex-1 min-w-0">
+              {lesson.track === 'reading' && <BookText className="w-5 h-5 text-blue-500 shrink-0" />}
+              {lesson.track === 'listening' && <Volume2 className="w-5 h-5 text-primary shrink-0" />}
+              {lesson.track === 'speaking' && <MessageCircle className="w-5 h-5 text-green-500 shrink-0" />}
+              <span className="truncate">{{ reading: 'Full Reading Passage', speaking: 'Sample Script', grammar: 'Grammar Examples', listening: 'Listening Script', writing: 'Writing Examples' }[lesson.track]}</span>
             </h2>
-            {lesson.track === 'reading' && (
-              <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 shrink-0 flex-wrap">
+              {lesson.track === 'reading' && (
                 <button
                   type="button"
                   onClick={() => { setShowGrammarMode(v => !v); setGrammarPopup(null); }}
                   className={cn(
-                    'flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border transition-colors',
+                    'flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border transition-colors whitespace-nowrap',
                     showGrammarMode
                       ? 'bg-violet-500/10 border-violet-500/30 text-violet-600 dark:text-violet-400'
                       : 'bg-(--bg-secondary) border-(--border) text-(--text-muted) hover:text-(--text-secondary)'
@@ -1262,26 +1301,26 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
                   <Braces className="w-3.5 h-3.5" />
                   {showGrammarMode ? 'Kelas Kata ON' : 'Kelas Kata'}
                 </button>
-              </div>
-            )}
-            {lesson.track === 'reading' && lesson.passage.some(p => p.startsWith('(') && p.endsWith(')')) && (
-              <button
-                type="button"
-                onClick={() => setShowTranslation(v => !v)}
-                className={cn(
-                  'flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border transition-colors',
-                  showTranslation
-                    ? 'bg-blue-500/10 border-blue-500/30 text-blue-600 dark:text-blue-400'
-                    : 'bg-(--bg-secondary) border-(--border) text-(--text-muted) hover:text-(--text-secondary)'
-                )}
-              >
-                {showTranslation ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
-                {showTranslation ? 'Sembunyikan terjemahan' : 'Tampilkan terjemahan'}
-              </button>
-            )}
+              )}
+              {lesson.track === 'reading' && lesson.passage.some(p => p.startsWith('(') && p.endsWith(')')) && (
+                <button
+                  type="button"
+                  onClick={() => setShowTranslation(v => !v)}
+                  className={cn(
+                    'flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border transition-colors whitespace-nowrap',
+                    showTranslation
+                      ? 'bg-blue-500/10 border-blue-500/30 text-blue-600 dark:text-blue-400'
+                      : 'bg-(--bg-secondary) border-(--border) text-(--text-muted) hover:text-(--text-secondary)'
+                  )}
+                >
+                  {showTranslation ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
+                  {showTranslation ? 'Sembunyikan' : 'Terjemahan'}
+                </button>
+              )}
+            </div>
           </div>
           <div className={cn(
-            'bg-(--bg-card) border border-(--border) rounded-xl p-5',
+            'bg-(--bg-card) border border-(--border) rounded-xl p-3 sm:p-5',
             lesson.track === 'reading' ? 'space-y-5' : 'space-y-4'
           )}>
             {lesson.passage.map((paragraph, idx) => {
@@ -1553,27 +1592,19 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
 
                 if (showTranslation && hasTranslation) {
                   const translationText = nextParagraph!.slice(1, -1);
-                  const splitSentences = (text: string) =>
-                    text.match(/[^.!?]*[.!?]+(?=\s|$)/g)?.map(s => s.trim()).filter(Boolean) ?? [text];
-                  const engSentences = splitSentences(paragraph);
-                  const idSentences = splitSentences(translationText);
-
                   return (
                     <div key={`${lesson.id}-p-${idx}`} className="flex gap-3">
                       <span className="text-xs text-primary/40 font-mono mt-1.5 shrink-0 select-none w-4 text-right">{readingParaIdx}</span>
-                      <div className="space-y-0">
-                        {engSentences.map((sentence, sIdx) => (
-                          <div key={sIdx}>
-                            <p className="text-sm leading-7 text-(--text-secondary) text-justify">
-                              {renderClickableText(sentence)}
-                            </p>
-                            {idSentences[sIdx] && (
-                              <p className="text-xs leading-5 italic text-blue-500/70 dark:text-blue-400/60 pl-2 border-l-2 border-blue-400/30 mb-2">
-                                {idSentences[sIdx]}
-                              </p>
-                            )}
-                          </div>
-                        ))}
+                      <div className="flex-1 space-y-2">
+                        <p className="text-sm leading-7 text-(--text-secondary) text-justify first-letter:text-lg first-letter:font-semibold first-letter:text-(--text)">
+                          {renderClickableText(paragraph, true)}
+                        </p>
+                        <div className="rounded-lg bg-(--bg-secondary) border border-(--border) border-l-4 border-l-primary/30 px-3.5 py-2.5">
+                          <p className="text-[11px] font-semibold text-primary/50 uppercase tracking-widest mb-1.5">Terjemahan</p>
+                          <p className="text-[13.5px] leading-[1.75] text-(--text-secondary) italic">
+                            {translationText}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   );

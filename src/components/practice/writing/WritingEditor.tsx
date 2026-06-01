@@ -29,7 +29,7 @@ export function WritingEditor({
     <div className="space-y-4">
 
       {/* Writing type chips */}
-      <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+      <div className="flex gap-2 overflow-x-auto pb-1">
         {WRITING_TYPES.map((t) => (
           <span key={t} className="shrink-0 text-xs font-medium px-3 py-1.5 rounded-full border border-(--border) text-(--text-muted)">
             {t}

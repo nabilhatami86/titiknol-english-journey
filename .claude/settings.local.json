@@ -26,7 +26,8 @@
       "Bash(grep:*)",
       "Read(//c/Users/muham/.claude/projects/c--Users-muham-Desktop-vocab-for-train/memory/**)",
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\\\\src\\\\data\\\\vocabulary.ts\"\\) | Select-String 'id: \"' | Select-Object -Last 20)",
-      "PowerShell(\\(Get-Content \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\\\\src\\\\data\\\\vocabulary.ts\"\\) | Measure-Object -Line | Select-Object -ExpandProperty Lines)"
+      "PowerShell(\\(Get-Content \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\\\\src\\\\data\\\\vocabulary.ts\"\\) | Measure-Object -Line | Select-Object -ExpandProperty Lines)",
+      "Bash(echo \"EXIT:$?\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\muham\\Desktop\\vocab-for-train\\src\\app\\tn-advance",
