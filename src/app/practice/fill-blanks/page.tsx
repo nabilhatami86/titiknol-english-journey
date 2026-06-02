@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useRef } from 'react';
 import Link from 'next/link';
@@ -116,8 +116,8 @@ export default function FillBlanksPage() {
                 className={cn(
                   'w-8 h-8 rounded-lg flex items-center justify-center text-xs font-medium',
                   correct
-                    ? 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300'
-                    : 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300'
+                    ? 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
+                    : 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
                 )}
               >
                 {i + 1}
@@ -198,8 +198,8 @@ export default function FillBlanksPage() {
             className={cn(
               'w-full px-4 py-3 rounded-xl border text-sm focus:outline-none focus:ring-2 transition-colors',
               !isChecked && 'border-(--border) bg-(--bg-secondary) text-(--text) focus:ring-primary/50 focus:border-primary',
-              isChecked && isCorrect && 'border-green-500 bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300',
-              isChecked && !isCorrect && 'border-red-500 bg-red-50 text-red-700 dark:bg-red-950 dark:text-red-300'
+              isChecked && isCorrect && 'border-primary/50 bg-primary/10 text-primary dark:bg-primary dark:text-primary',
+              isChecked && !isCorrect && 'border-primary/50 bg-primary/10 text-primary dark:bg-primary dark:text-primary'
             )}
           />
 
@@ -207,8 +207,8 @@ export default function FillBlanksPage() {
             <div className={cn(
               'flex items-center gap-2 text-sm p-3 rounded-lg',
               isCorrect
-                ? 'bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300'
-                : 'bg-red-50 text-red-700 dark:bg-red-950 dark:text-red-300'
+                ? 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
+                : 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
             )}>
               {isCorrect ? (
                 <><CheckCircle className="w-4 h-4" /> Correct!</>

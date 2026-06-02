@@ -1,4 +1,4 @@
-import type { ModuleLesson } from "@/types/module";
+﻿import type { ModuleLesson } from "@/types/module";
 
 const advanceSpeakingLessons: ModuleLesson[] = [
 
@@ -145,7 +145,7 @@ const advanceSpeakingLessons: ModuleLesson[] = [
           "   My passion for this field, combined with the program's A-accreditation and",
           "   varied curriculum, made it the perfect choice for my further studies.",
           "",
-          "📌 Formula jawaban yang baik: STAR Method",
+          "Formula jawaban yang baik: STAR Method",
           "   S = Situation  (konteks/latar belakang)",
           "   T = Task       (apa yang harus Anda lakukan)",
           "   A = Action     (apa yang Anda lakukan)",

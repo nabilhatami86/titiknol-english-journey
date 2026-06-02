@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -455,7 +455,7 @@ function TypeCard({
       <p className="text-sm text-(--text-secondary) mt-1 leading-relaxed">{desc}</p>
       <div className="mt-3 flex flex-wrap gap-1.5">
         {tags.map(t => (
-          <span key={t} className={cn('text-[10px] px-2 py-0.5 rounded-full border', highlight ? 'bg-primary/8 text-primary border-primary/15' : 'bg-(--bg-secondary) text-(--text-muted) border-(--border)')}>
+          <span key={t} className={cn('text-[10px] px-2 py-0.5 rounded-full border', highlight ? 'bg-primary/10 text-primary border-primary/15' : 'bg-(--bg-secondary) text-(--text-muted) border-(--border)')}>
             {t}
           </span>
         ))}

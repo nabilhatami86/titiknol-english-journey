@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ClipboardList, FileText, BookOpen } from 'lucide-react';
 
@@ -21,7 +21,7 @@ type TaskItem = {
 const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
   {
     group: 'Tugas dari Tutor',
-    labelColor: 'text-red-700',
+    labelColor: 'text-primary',
     items: [
       {
         href: '/practice/exams/tugas-conjunction-preposition',
@@ -29,8 +29,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Latihan conjunction koordinatif & korelatif (and/but/yet, either/or, neither/nor, not only/but also) dan preposisi waktu & tempat (in/on/at).',
         icon: ClipboardList,
-        accentColor: 'bg-indigo-500',
-        iconBg: 'bg-indigo-500/10 text-indigo-600',
+        accentColor: 'bg-primary/10',
+        iconBg: 'bg-primary/10/10 text-primary',
         badge: '15 soal',
         tags: ['Conjunction', 'Preposition', 'in/on/at', 'Correlative'],
       },
@@ -40,8 +40,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Identifikasi jenis frasa: Noun Phrase, Verb Phrase, Adjective Phrase, Adverbial Phrase, Gerund Phrase, Infinitive Phrase, dan Prepositional Phrase.',
         icon: FileText,
-        accentColor: 'bg-teal-500',
-        iconBg: 'bg-teal-500/10 text-teal-600',
+        accentColor: 'bg-primary/10',
+        iconBg: 'bg-primary/10/10 text-primary',
         badge: '20 soal',
         tags: ['Noun Phrase', 'Verb Phrase', 'Gerund', 'Infinitive', 'Prepositional'],
       },
@@ -51,8 +51,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Articles (a/an/the), Demonstratives, Possessives, Quantifiers, Ordinal/Cardinal Numbers, Plural Nouns.',
         icon: ClipboardList,
-        accentColor: 'bg-red-400',
-        iconBg: 'bg-red-400/10 text-red-500',
+        accentColor: 'bg-primary/30',
+        iconBg: 'bg-primary/10 text-primary',
         badge: '20 soal',
         tags: ['Articles', 'Nouns', 'Possessives', 'Quantifiers'],
       },
@@ -62,8 +62,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Articles, Demonstratives, Possessives, Quantifiers, Ordinal/Cardinal Numbers. Paket tugas kedua.',
         icon: ClipboardList,
-        accentColor: 'bg-red-500',
-        iconBg: 'bg-red-500/10 text-red-600',
+        accentColor: 'bg-primary',
+        iconBg: 'bg-primary/10 text-primary',
         badge: '15 soal',
         tags: ['Articles', 'Demonstratives', 'Ordinal Numbers'],
       },
@@ -73,8 +73,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Pilih pronoun yang benar dari dua opsi dalam kurung: subject/object, possessives, reflexive pronouns.',
         icon: BookOpen,
-        accentColor: 'bg-rose-500',
-        iconBg: 'bg-rose-500/10 text-rose-600',
+        accentColor: 'bg-primary/10',
+        iconBg: 'bg-primary/10/10 text-primary',
         badge: '15 soal',
         tags: ['Subject Pronoun', 'Object Pronoun', 'Reflexive'],
       },
@@ -84,8 +84,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Pilih pronoun yang benar dari dua opsi dalam kurung: subject/object, possessives, reflexive, reciprocal.',
         icon: BookOpen,
-        accentColor: 'bg-rose-600',
-        iconBg: 'bg-rose-600/10 text-rose-700',
+        accentColor: 'bg-primary/10',
+        iconBg: 'bg-primary/10/10 text-primary',
         badge: '15 soal',
         tags: ['Object Pronoun', 'Reflexive', 'Reciprocal'],
       },
@@ -95,8 +95,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Latihan 30 soal dari file REVIEW BASIC GRAMMAR 1-2 untuk persiapan ujian.',
         icon: FileText,
-        accentColor: 'bg-red-700',
-        iconBg: 'bg-red-700/10 text-red-800',
+        accentColor: 'bg-primary',
+        iconBg: 'bg-primary/10 text-primary',
         badge: '30 soal',
         tags: ['Adjective', 'Adverb', 'Noun', 'Verb', 'Mixed'],
       },
@@ -106,8 +106,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Latihan pilihan ganda 10 soal: Adjective, Adverb, Noun, Pronoun, Verb Agreement, dan Quantifier.',
         icon: ClipboardList,
-        accentColor: 'bg-orange-500',
-        iconBg: 'bg-orange-500/10 text-orange-600',
+        accentColor: 'bg-primary/10',
+        iconBg: 'bg-primary/10/10 text-primary',
         badge: '10 soal',
         tags: ['Adjective', 'Adverb', 'Verb Agreement', 'Quantifier'],
       },
@@ -117,8 +117,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Pilih kata yang tepat dalam kurung: Adverb vs Adjective, Subject-Verb Agreement, Countable/Uncountable Noun.',
         icon: ClipboardList,
-        accentColor: 'bg-orange-600',
-        iconBg: 'bg-orange-600/10 text-orange-700',
+        accentColor: 'bg-primary/10',
+        iconBg: 'bg-primary/10/10 text-primary',
         badge: '10 soal',
         tags: ['Adverb vs Adjective', 'Verb Agreement', 'Uncountable Noun'],
       },
@@ -126,7 +126,7 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
   },
   {
     group: 'Kisi-Kisi Mid Test Grammar',
-    labelColor: 'text-rose-800',
+    labelColor: 'text-primary',
     items: [
       {
         href: '/practice/exams/kisi-kisi-having',
@@ -134,8 +134,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Persiapan ujian Mid Test Basic Grammar — Adjective, Adverb, Noun, Pronoun, dan Verb.',
         icon: ClipboardList,
-        accentColor: 'bg-red-800',
-        iconBg: 'bg-red-800/10 text-red-900',
+        accentColor: 'bg-primary',
+        iconBg: 'bg-primary/10 text-primary',
         badge: 'Mid Test',
         tags: ['Adjective', 'Adverb', 'Noun', 'Pronoun', 'Verb'],
       },
@@ -143,7 +143,7 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
   },
   {
     group: 'Kisi-Kisi Post Test Grammar',
-    labelColor: 'text-blue-800',
+    labelColor: 'text-primary',
     items: [
       {
         href: '/practice/exams/kisi-kisi-grammar-post-test',
@@ -151,8 +151,8 @@ const groups: { group: string; labelColor: string; items: TaskItem[] }[] = [
         description:
           'Persiapan ujian Post Test — 30 soal mencakup seluruh materi: Parts of Speech, Nouns, Articles, Pronouns, Quantifiers, Adj vs Adv, Verb Agreement, Another/Other, Prepositions, Conjunctions.',
         icon: ClipboardList,
-        accentColor: 'bg-blue-600',
-        iconBg: 'bg-blue-600/10 text-blue-700',
+        accentColor: 'bg-primary/10',
+        iconBg: 'bg-primary/10 text-primary',
         badge: '30 soal',
         tags: ['Parts of Speech', 'Articles', 'Pronouns', 'Verb Agreement', 'Prepositions'],
       },

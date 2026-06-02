@@ -6,16 +6,16 @@ import { vocabCategories, totalWordCount } from '@/data/tnIntermediateVocab';
 import { cn } from '@/lib/utils';
 
 const COLOR_MAP: Record<string, { bg: string; border: string; text: string; badge: string }> = {
-  blue:   { bg: 'bg-blue-50 dark:bg-blue-950/30',     border: 'border-blue-200 dark:border-blue-800',   text: 'text-blue-700 dark:text-blue-300',   badge: 'bg-blue-500' },
-  green:  { bg: 'bg-green-50 dark:bg-green-950/30',   border: 'border-green-200 dark:border-green-800', text: 'text-green-700 dark:text-green-300', badge: 'bg-green-500' },
-  red:    { bg: 'bg-red-50 dark:bg-red-950/30',       border: 'border-red-200 dark:border-red-800',     text: 'text-red-700 dark:text-red-300',     badge: 'bg-red-500' },
-  orange: { bg: 'bg-orange-50 dark:bg-orange-950/30', border: 'border-orange-200 dark:border-orange-800',text: 'text-orange-700 dark:text-orange-300',badge: 'bg-orange-500' },
-  pink:   { bg: 'bg-pink-50 dark:bg-pink-950/30',     border: 'border-pink-200 dark:border-pink-800',   text: 'text-pink-700 dark:text-pink-300',   badge: 'bg-pink-500' },
-  yellow: { bg: 'bg-yellow-50 dark:bg-yellow-950/30', border: 'border-yellow-200 dark:border-yellow-800',text: 'text-yellow-700 dark:text-yellow-300',badge: 'bg-yellow-500' },
-  purple: { bg: 'bg-purple-50 dark:bg-purple-950/30', border: 'border-purple-200 dark:border-purple-800',text: 'text-purple-700 dark:text-purple-300',badge: 'bg-purple-500' },
-  teal:   { bg: 'bg-teal-50 dark:bg-teal-950/30',     border: 'border-teal-200 dark:border-teal-800',   text: 'text-teal-700 dark:text-teal-300',   badge: 'bg-teal-500' },
-  indigo: { bg: 'bg-indigo-50 dark:bg-indigo-950/30', border: 'border-indigo-200 dark:border-indigo-800',text: 'text-indigo-700 dark:text-indigo-300',badge: 'bg-indigo-500' },
-  cyan:   { bg: 'bg-cyan-50 dark:bg-cyan-950/30',     border: 'border-cyan-200 dark:border-cyan-800',   text: 'text-cyan-700 dark:text-cyan-300',   badge: 'bg-cyan-500' },
+  blue:   { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  green:  { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  red:    { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  orange: { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  pink:   { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  yellow: { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  purple: { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  teal:   { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  indigo: { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
+  cyan:   { bg: 'bg-primary/5',  border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary' },
 };
 
 export default function IntermediateVocabPage() {
@@ -35,8 +35,8 @@ export default function IntermediateVocabPage() {
 
       {/* Header */}
       <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-5 flex items-start gap-4">
-        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 text-2xl">
-          📚
+        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+          <BookOpen className="w-6 h-6 text-primary" />
         </div>
         <div className="flex-1">
           <h1 className="text-xl font-bold text-(--text)">Vocabulary Bank</h1>
@@ -64,7 +64,9 @@ export default function IntermediateVocabPage() {
               )}
             >
               <div className="flex items-start gap-3">
-                <span className="text-3xl leading-none">{cat.icon}</span>
+                <span className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <BookOpen className="w-4 h-4 text-primary" />
+                </span>
                 <div className="flex-1 min-w-0">
                   <h2 className={cn('font-bold text-sm leading-tight group-hover:underline', c.text)}>
                     {cat.title}

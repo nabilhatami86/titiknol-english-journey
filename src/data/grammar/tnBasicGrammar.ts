@@ -1,4 +1,4 @@
-import type { ModuleLesson } from "@/types/module";
+﻿import type { ModuleLesson } from "@/types/module";
 
 const basicGrammarLessons: ModuleLesson[] = [
   {
@@ -1022,7 +1022,7 @@ const basicGrammarLessons: ModuleLesson[] = [
           "-ly (noun + ly) → ⚠️ HATI-HATI ini ADJECTIVE bukan adverb!:",
           "  friend → friendly, love → lovely, lone → lonely, like → likely, cost → costly, time → timely, live → lively, dead → deadly, order → orderly, day → daily",
           '  Bukti: "She is friendly." (adjective setelah linking verb). BUKAN "She speaks friendly." → harus "She speaks in a friendly way."',
-          "  📌 Adj + -ly = ADVERB (berbeda!): quick → quickly, slow → slowly, happy → happily. Ini adverb, bukan adjective!",
+          "  Adj + -ly = ADVERB (berbeda!): quick → quickly, slow → slowly, happy → happily. Ini adverb, bukan adjective!",
         ],
       },
       {
@@ -2326,7 +2326,7 @@ const basicGrammarLessons: ModuleLesson[] = [
         section: "middle",
         type: "multiple-choice",
         question:
-          '🎯 GAME: Pilih jenis verb yang tepat untuk kata "love" dalam kalimat "I love chocolate":',
+          'GAME: Pilih jenis verb yang tepat untuk kata "love" dalam kalimat "I love chocolate":',
         options: [
           "Dynamic verb",
           "Stative verb",
@@ -2342,7 +2342,7 @@ const basicGrammarLessons: ModuleLesson[] = [
         section: "middle",
         type: "multiple-choice",
         question:
-          '🎯 GAME: "She ___ a letter to her mom." Jenis verb apa yang cocok (transitive)?',
+          'GAME: "She ___ a letter to her mom." Jenis verb apa yang cocok (transitive)?',
         options: ["sleep", "run", "wrote", "arrived"],
         correctAnswer: "wrote",
         reason:
@@ -2352,7 +2352,7 @@ const basicGrammarLessons: ModuleLesson[] = [
         id: "grev-q3",
         section: "middle",
         type: "multiple-choice",
-        question: "🎯 GAME: Mana yang SALAH?",
+        question: "GAME: Mana yang SALAH?",
         options: [
           "She is studying English now.",
           "They have finished the project.",
@@ -2367,7 +2367,7 @@ const basicGrammarLessons: ModuleLesson[] = [
         id: "grev-q4",
         section: "middle",
         type: "multiple-choice",
-        question: '🎯 GAME: V3 dari "speak" adalah:',
+        question: 'GAME: V3 dari "speak" adalah:',
         options: ["speaked", "spoke", "spoken", "speaking"],
         correctAnswer: "spoken",
         reason:
@@ -2378,7 +2378,7 @@ const basicGrammarLessons: ModuleLesson[] = [
         section: "middle",
         type: "multiple-choice",
         question:
-          '🎯 GAME: "She ___ a book to her sister." Identifikasi IO dan DO!',
+          'GAME: "She ___ a book to her sister." Identifikasi IO dan DO!',
         options: [
           "gave — IO: a book, DO: her sister",
           "gave — IO: her sister, DO: a book",
@@ -2394,7 +2394,7 @@ const basicGrammarLessons: ModuleLesson[] = [
         section: "middle",
         type: "multiple-choice",
         question:
-          '🎯 GAME: Semi-modal yang tepat untuk "I must see a doctor" adalah:',
+          'GAME: Semi-modal yang tepat untuk "I must see a doctor" adalah:',
         options: [
           "I be going to see a doctor.",
           "I used to see a doctor.",

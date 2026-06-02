@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
@@ -902,9 +902,9 @@ export default function GrammarEvaluatorPage() {
                                   'text-left text-sm rounded-lg border px-3 py-2 transition-colors',
                                   submitted
                                     ? idx === q.correctIndex
-                                      ? 'border-green-500 bg-green-50 dark:bg-green-950/40'
+                                      ? 'border-primary/50 bg-primary/10 dark:bg-primary/40'
                                       : selected
-                                        ? 'border-red-500 bg-red-50 dark:bg-red-950/40'
+                                        ? 'border-primary/50 bg-primary/10 dark:bg-primary/40'
                                         : 'border-(--border) opacity-80'
                                     : selected
                                       ? 'border-primary bg-primary/10 text-primary'
@@ -931,9 +931,9 @@ export default function GrammarEvaluatorPage() {
                       {submitted && qEval && (
                         <div className={cn(
                           'rounded-lg border p-3 text-sm space-y-2',
-                          qEval.isCorrect ? 'border-green-500/40 bg-green-500/5' : 'border-red-500/40 bg-red-500/5'
+                          qEval.isCorrect ? 'border-primary/40 bg-primary/5' : 'border-primary/40 bg-primary/5'
                         )}>
-                          <p className={cn('font-semibold', qEval.isCorrect ? 'text-green-600' : 'text-red-600')}>
+                          <p className={cn('font-semibold', qEval.isCorrect ? 'text-primary' : 'text-primary')}>
                             {qEval.isCorrect ? 'Correct' : 'Incorrect'}
                           </p>
                           <p><span className="font-medium">Your answer:</span> {qEval.userAnswer}</p>
@@ -987,7 +987,7 @@ export default function GrammarEvaluatorPage() {
       ) : (
         <section className="bg-(--bg-card) border border-(--border) rounded-2xl p-6 space-y-3">
           <h2 className="text-lg font-semibold text-(--text) flex items-center gap-2">
-            <Trophy className="w-5 h-5 text-amber-500" /> Final Result
+            <Trophy className="w-5 h-5 text-primary" /> Final Result
           </h2>
           <p className="text-sm text-(--text-secondary)">
             Total score: <span className="font-semibold text-(--text)">{score}/{total}</span>

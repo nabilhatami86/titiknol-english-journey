@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -87,7 +87,7 @@ export default function ReviewPage() {
               onClick={() => toggleFavorite(current.id)}
               className="p-2 rounded-lg hover:bg-(--hover) transition-colors"
             >
-              <Heart className={cn('w-5 h-5', isFav ? 'fill-red-500 text-red-500' : 'text-(--text-muted)')} />
+              <Heart className={cn('w-5 h-5', isFav ? 'fill-primary text-primary' : 'text-(--text-muted)')} />
             </button>
             <button
               onClick={() => markAsLearned(current.id)}

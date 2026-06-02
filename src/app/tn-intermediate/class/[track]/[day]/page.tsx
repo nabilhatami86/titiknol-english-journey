@@ -1,8 +1,8 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getTnIntermediateLesson, getTnIntermediateLessonsByTrack, tnIntermediateLessons } from '@/data/tnIntermediateModules';
 import type { ModuleTrack } from '@/types/module';
-import ModuleLessonClient from '@/app/tn-basic-cource/[track]/[day]/ModuleLessonClient';
+import ModuleLessonClient from '@/components/lesson/ModuleLessonClient';
 
 interface PageProps {
   params: Promise<{ track: string; day: string }>;

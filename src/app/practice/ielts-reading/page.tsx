@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -122,7 +122,7 @@ function QuestionSectionBlock({
                       'w-full px-2.5 py-1.5 text-sm rounded-lg border outline-none transition-colors',
                       submitted
                         ? ok
-                          ? 'bg-primary/8 border-primary/30 text-primary font-semibold'
+                          ? 'bg-primary/10 border-primary/30 text-primary font-semibold'
                           : 'bg-(--bg-secondary) border-(--border) text-(--text-muted) line-through'
                         : 'bg-(--bg-secondary) border-(--border) focus:border-primary text-(--text)',
                     )}

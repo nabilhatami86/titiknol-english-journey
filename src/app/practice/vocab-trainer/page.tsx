@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -104,10 +104,10 @@ const ARRANGE_SHUFFLED = ARRANGE_DATA.map((item, i) => ({
 /* ─── Category Styles ────────────────────────────────────────────────────── */
 
 const CAT_STYLES: Record<string, string> = {
-  Addition:   'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
-  Contrast:   'bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300',
-  Concession: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
-  Result:     'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  Addition:   'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
+  Contrast:   'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
+  Concession: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
+  Result:     'bg-primary/10 text-primary dark:bg-primary/30 dark:text-primary',
 };
 
 /* ─── Component ──────────────────────────────────────────────────────────── */
@@ -209,7 +209,7 @@ export default function VocabTrainerPage() {
     return (
       <>
         {sentence.slice(0, idx)}
-        <mark className="bg-yellow-200 dark:bg-yellow-700/50 text-yellow-900 dark:text-yellow-100 px-0.5 rounded not-italic">
+        <mark className="bg-primary/10 dark:bg-primary/10 text-primary dark:text-primary px-0.5 rounded not-italic">
           {marker}
         </mark>
         {sentence.slice(idx + marker.length)}
@@ -297,9 +297,9 @@ export default function VocabTrainerPage() {
                   <p className="text-xs font-semibold text-(--text-muted) mb-1">Example</p>
                   <p className="text-sm text-(--text) italic">{card.example}</p>
                 </div>
-                <div className="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-3 border border-amber-200 dark:border-amber-800">
-                  <p className="text-xs font-semibold text-amber-700 dark:text-amber-400 mb-1">Tip</p>
-                  <p className="text-sm text-amber-800 dark:text-amber-200">{card.tip}</p>
+                <div className="bg-primary/10 dark:bg-primary/10 rounded-xl p-3 border border-primary/30 dark:border-primary/30">
+                  <p className="text-xs font-semibold text-primary dark:text-primary mb-1">Tip</p>
+                  <p className="text-sm text-primary dark:text-primary">{card.tip}</p>
                 </div>
               </div>
             )}
@@ -401,8 +401,8 @@ export default function VocabTrainerPage() {
               <div className={cn(
                 'rounded-xl p-3 text-sm font-medium flex items-start gap-2',
                 arrResult
-                  ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200'
-                  : 'bg-rose-100 text-rose-800 dark:bg-rose-900/30 dark:text-rose-200'
+                  ? 'bg-primary/10 text-primary dark:bg-primary/30 dark:text-primary'
+                  : 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary'
               )}>
                 {arrResult
                   ? <Check className="w-4 h-4 mt-0.5 shrink-0" />
@@ -475,11 +475,11 @@ export default function VocabTrainerPage() {
                       chosen === null
                         ? 'bg-(--bg) border-(--border) hover:bg-(--hover) text-(--text)'
                         : isChosen && isCorrect
-                          ? 'bg-green-100 border-green-400 text-green-800 dark:bg-green-900/30 dark:text-green-200'
+                          ? 'bg-primary/10 border-primary/30 text-primary dark:bg-primary/30 dark:text-primary'
                           : isChosen && !isCorrect
-                            ? 'bg-rose-100 border-rose-400 text-rose-800 dark:bg-rose-900/30 dark:text-rose-200'
+                            ? 'bg-primary/10 border-primary/30 text-primary dark:bg-primary/10 dark:text-primary'
                             : isCorrect
-                              ? 'bg-green-50 border-green-300 text-green-700 dark:bg-green-900/20 dark:text-green-300'
+                              ? 'bg-primary/10 border-primary/30 text-primary dark:bg-primary/20 dark:text-primary'
                               : 'bg-(--bg) border-(--border) text-(--text-muted) opacity-50'
                     )}
                   >
@@ -506,8 +506,8 @@ export default function VocabTrainerPage() {
       {/* ── Done ── */}
       {phase === 'done' && (
         <div className="text-center space-y-6 py-8">
-          <div className="w-20 h-20 mx-auto bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center">
-            <Trophy className="w-10 h-10 text-yellow-500" />
+          <div className="w-20 h-20 mx-auto bg-primary/10 dark:bg-primary/10 rounded-full flex items-center justify-center">
+            <Trophy className="w-10 h-10 text-primary" />
           </div>
           <div>
             <h2 className="text-2xl font-bold text-(--text)">Selesai!</h2>

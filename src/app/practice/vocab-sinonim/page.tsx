@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
@@ -61,44 +61,44 @@ const CEFR_CONFIG: Record<CefrLevel, {
 }> = {
   A1: {
     label: 'A1', desc: 'Pemula — Kosakata dasar sehari-hari',
-    color: 'text-emerald-600 dark:text-emerald-400',
-    badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300',
-    border: 'border-emerald-400', ring: 'ring-emerald-400',
+    color: 'text-primary',
+    badge: 'bg-primary/10 text-primary',
+    border: 'border-primary/30', ring: 'ring-primary/30',
     difficulty: ['basic'], wordSlice: [0, 48], stageCount: 6,
   },
   A2: {
     label: 'A2', desc: 'Dasar — Kalimat & topik sederhana',
-    color: 'text-teal-600 dark:text-teal-400',
-    badge: 'bg-teal-100 text-teal-700 dark:bg-teal-950 dark:text-teal-300',
-    border: 'border-teal-400', ring: 'ring-teal-400',
+    color: 'text-primary',
+    badge: 'bg-primary/10 text-primary',
+    border: 'border-primary/30', ring: 'ring-primary/30',
     difficulty: ['basic'], wordSlice: [48, 96], stageCount: 6,
   },
   B1: {
     label: 'B1', desc: 'Menengah — Topik familiar & umum',
-    color: 'text-blue-600 dark:text-blue-400',
-    badge: 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
-    border: 'border-blue-400', ring: 'ring-blue-400',
+    color: 'text-primary',
+    badge: 'bg-primary/15 text-primary',
+    border: 'border-primary/40', ring: 'ring-primary/40',
     difficulty: ['basic'], wordSlice: [96, 144], stageCount: 6,
   },
   B2: {
     label: 'B2', desc: 'Atas-menengah — Teks kompleks',
-    color: 'text-violet-600 dark:text-violet-400',
-    badge: 'bg-violet-100 text-violet-700 dark:bg-violet-950 dark:text-violet-300',
-    border: 'border-violet-400', ring: 'ring-violet-400',
+    color: 'text-primary',
+    badge: 'bg-primary/15 text-primary',
+    border: 'border-primary/40', ring: 'ring-primary/40',
     difficulty: ['basic', 'intermediate'], wordSlice: [144, 192], stageCount: 6,
   },
   C1: {
     label: 'C1', desc: 'Mahir — Bahasa kompleks & nuanced',
-    color: 'text-orange-600 dark:text-orange-400',
-    badge: 'bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300',
-    border: 'border-orange-400', ring: 'ring-orange-400',
+    color: 'text-primary font-medium',
+    badge: 'bg-primary/20 text-primary',
+    border: 'border-primary/50', ring: 'ring-primary/50',
     difficulty: ['intermediate', 'advanced'], wordSlice: [0, 48], stageCount: 5,
   },
   C2: {
     label: 'C2', desc: 'Sangat mahir — Level native speaker',
-    color: 'text-rose-600 dark:text-rose-400',
-    badge: 'bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300',
-    border: 'border-rose-400', ring: 'ring-rose-400',
+    color: 'text-primary font-bold',
+    badge: 'bg-primary/20 text-primary font-bold',
+    border: 'border-primary/60', ring: 'ring-primary/60',
     difficulty: ['advanced', 'intermediate'], wordSlice: [0, 40], stageCount: 4,
   },
 };
@@ -114,11 +114,11 @@ const POS_LABEL: Record<VocabWord['partOfSpeech'], string> = {
 };
 
 const POS_COLOR: Record<VocabWord['partOfSpeech'], string> = {
-  noun:      'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
-  verb:      'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300',
-  adjective: 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300',
-  adverb:    'bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300',
-  phrase:    'bg-pink-100 text-pink-700 dark:bg-pink-950 dark:text-pink-300',
+  noun:      'bg-primary/10 text-primary',
+  verb:      'bg-primary/10 text-primary',
+  adjective: 'bg-primary/10 text-primary',
+  adverb:    'bg-primary/10 text-primary',
+  phrase:    'bg-primary/10 text-primary',
 };
 
 // ═══════════════════════════════════════════════════════════════════
@@ -411,12 +411,12 @@ export default function VocabSinonimPage() {
           {showCodeInput && (
             <div className="border-t border-(--border) px-4 py-3 space-y-2">
               {codeStatus === 'success' && (
-                <p className="text-xs text-green-600 dark:text-green-400 font-semibold flex items-center gap-1">
+                <p className="text-xs text-primary dark:text-primary font-semibold flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" /> Semua stage berhasil dibuka!
                 </p>
               )}
               {codeStatus === 'error' && (
-                <p className="text-xs text-red-500 font-semibold flex items-center gap-1">
+                <p className="text-xs text-primary font-semibold flex items-center gap-1">
                   <XCircle className="w-3.5 h-3.5" /> Kode salah, coba lagi.
                 </p>
               )}
@@ -481,14 +481,14 @@ export default function VocabSinonimPage() {
                       <span className={cn('text-xs font-semibold px-2 py-0.5 rounded-full', isLocked ? 'bg-(--bg-secondary) text-(--text-muted)' : cfg.badge)}>
                         {cfg.label}
                       </span>
-                      {isAllDone && <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300 flex items-center gap-1"><Trophy className="w-3 h-3" /> Selesai!</span>}
-                      {!isLocked && !isAllDone && prevDone && <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300 flex items-center gap-1"><Flame className="w-3 h-3" /> Aktif</span>}
+                      {isAllDone && <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-primary/10 text-primary flex items-center gap-1"><Trophy className="w-3 h-3" /> Selesai!</span>}
+                      {!isLocked && !isAllDone && prevDone && <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-primary/10 text-primary flex items-center gap-1"><Flame className="w-3 h-3" /> Aktif</span>}
                     </div>
                     <p className="text-sm text-(--text-secondary) mt-0.5">{cfg.desc}</p>
                     {!isLocked && (
                       <div className="mt-2 flex items-center gap-2">
                         <div className="flex-1 h-1.5 rounded-full bg-(--bg-secondary) overflow-hidden">
-                          <div className={cn('h-full rounded-full transition-all', isAllDone ? 'bg-green-500' : 'bg-primary')} style={{ width: `${(completedCount / cfg.stageCount) * 100}%` }} />
+                          <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${(completedCount / cfg.stageCount) * 100}%` }} />
                         </div>
                         <span className="text-xs text-(--text-muted) shrink-0">{completedCount}/{cfg.stageCount}</span>
                       </div>
@@ -547,8 +547,8 @@ export default function VocabSinonimPage() {
                   <div className={cn(
                     'w-10 h-10 rounded-lg flex items-center justify-center text-sm font-bold shrink-0',
                     isLocked ? 'bg-(--bg-secondary) text-(--text-muted)'
-                    : isDone ? cn('text-white', cfg.badge.includes('emerald') ? 'bg-emerald-500' : cfg.badge.includes('teal') ? 'bg-teal-500' : cfg.badge.includes('blue') ? 'bg-blue-500' : cfg.badge.includes('violet') ? 'bg-violet-500' : cfg.badge.includes('orange') ? 'bg-orange-500' : 'bg-rose-500')
-                    : 'bg-primary text-white',
+                    : isDone ? 'bg-primary text-white'
+                    : 'bg-primary/20 text-primary',
                   )}>
                     {isLocked ? <Lock className="w-4 h-4" /> : isDone ? <CheckCircle2 className="w-5 h-5" /> : sIdx + 1}
                   </div>
@@ -564,7 +564,7 @@ export default function VocabSinonimPage() {
                       <div className="flex items-center gap-2 mt-1">
                         <div className="flex gap-0.5">
                           {[1, 2, 3].map(n => (
-                            <Star key={n} className={cn('w-3.5 h-3.5', n <= stars ? 'text-amber-400 fill-amber-400' : 'text-(--border)')} />
+                            <Star key={n} className={cn('w-3.5 h-3.5', n <= stars ? 'text-primary fill-primary' : 'text-(--border)')} />
                           ))}
                         </div>
                         <span className="text-xs text-(--text-secondary)">{stage.bestScore}/{STAGE_SIZE} ({pct}%)</span>
@@ -617,11 +617,7 @@ export default function VocabSinonimPage() {
 
         {/* Question type badge */}
         <div className="flex items-center gap-2">
-          <span className={cn('text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full',
-            q.type === 'synonym-find' ? 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300'
-            : q.type === 'meaning-match' ? 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300'
-            : 'bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300',
-          )}>
+          <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-primary/10 text-primary">
             {q.type === 'synonym-find' ? 'Cari Sinonim'
              : q.type === 'meaning-match' ? 'Tebak dari Makna'
              : 'Temukan yang Berbeda'}
@@ -660,8 +656,8 @@ export default function VocabSinonimPage() {
                 className={cn(
                   'flex items-center gap-3 px-4 py-3.5 rounded-xl border text-left text-sm transition-all font-medium',
                   !showResult && 'border-(--border) hover:border-primary/50 hover:bg-primary/5 text-(--text)',
-                  showResult && isCorrect && 'border-green-400 bg-green-50 dark:bg-green-950/40 text-green-700 dark:text-green-300',
-                  showResult && isSelected && !isCorrect && 'border-red-400 bg-red-50 dark:bg-red-950/40 text-red-700 dark:text-red-300 line-through opacity-80',
+                  showResult && isCorrect && 'border-primary/50 bg-primary/10 text-primary',
+                  showResult && isSelected && !isCorrect && 'border-primary/30 bg-primary/5 text-primary/50 line-through opacity-80',
                   showResult && !isSelected && !isCorrect && 'border-(--border) opacity-40',
                   isSelected && !showResult && 'border-primary bg-primary/10 text-primary',
                 )}
@@ -669,8 +665,8 @@ export default function VocabSinonimPage() {
                 <span className={cn(
                   'w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0',
                   !showResult && isSelected ? 'bg-primary text-white' : 'bg-(--bg-secondary) text-(--text-muted)',
-                  showResult && isCorrect && 'bg-green-500 text-white',
-                  showResult && isSelected && !isCorrect && 'bg-red-400 text-white',
+                  showResult && isCorrect && 'bg-primary text-white',
+                  showResult && isSelected && !isCorrect && 'bg-primary/40 text-white',
                 )}>
                   {showResult && isCorrect ? <CheckCircle2 className="w-4 h-4" /> :
                    showResult && isSelected && !isCorrect ? <XCircle className="w-4 h-4" /> :
@@ -685,17 +681,12 @@ export default function VocabSinonimPage() {
         {/* Explanation + Next */}
         {selected !== null && (
           <div className="space-y-3 animate-fade-in">
-            <div className={cn(
-              'flex items-start gap-2 rounded-xl px-4 py-3 border',
-              selected === q.correctAnswer
-                ? 'bg-green-50 dark:bg-green-950/30 border-green-300 dark:border-green-800'
-                : 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800',
-            )}>
-              <Lightbulb className={cn('w-4 h-4 mt-0.5 shrink-0', selected === q.correctAnswer ? 'text-green-500' : 'text-amber-500')} />
-              <div className="text-xs leading-relaxed">
+            <div className="flex items-start gap-2 rounded-xl px-4 py-3 border bg-primary/5 border-primary/20">
+              <Lightbulb className="w-4 h-4 mt-0.5 shrink-0 text-primary" />
+              <div className="text-xs leading-relaxed text-(--text-secondary)">
                 {selected === q.correctAnswer
-                  ? <span className="text-green-700 dark:text-green-300 font-medium">Correct! "{q.correctAnswer}" {q.type === 'synonym-find' ? `is a synonym of "${q.targetWord}"` : q.type === 'meaning-match' ? `means "${q.hint}"` : `is not a synonym of "${q.targetWord}"`}.</span>
-                  : <span className="text-amber-800 dark:text-amber-300">The correct answer is <strong>"{q.correctAnswer}"</strong>. {q.type === 'odd-one-out' ? `"${selected}" is actually a synonym of "${q.targetWord}".` : `"${q.correctAnswer}" means: ${q.hint}.`}</span>
+                  ? <span className="text-primary font-medium">Correct! "{q.correctAnswer}" {q.type === 'synonym-find' ? `is a synonym of "${q.targetWord}"` : q.type === 'meaning-match' ? `means "${q.hint}"` : `is not a synonym of "${q.targetWord}"`}.</span>
+                  : <span>The correct answer is <strong className="text-primary">"{q.correctAnswer}"</strong>. {q.type === 'odd-one-out' ? `"${selected}" is actually a synonym of "${q.targetWord}".` : `"${q.correctAnswer}" means: ${q.hint}.`}</span>
                 }
               </div>
             </div>
@@ -731,9 +722,9 @@ export default function VocabSinonimPage() {
         {/* Score card */}
         <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-6 text-center">
           <div className={cn('w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 border-4',
-            passed ? 'border-green-400 bg-green-50 dark:bg-green-950/30' : 'border-red-400 bg-red-50 dark:bg-red-950/30',
+            passed ? 'border-primary/30 bg-primary/10 dark:bg-primary/30' : 'border-primary/30 bg-primary/10 dark:bg-primary/30',
           )}>
-            {passed ? <Trophy className="w-10 h-10 text-amber-500" /> : <RotateCcw className="w-10 h-10 text-red-500" />}
+            {passed ? <Trophy className="w-10 h-10 text-primary" /> : <RotateCcw className="w-10 h-10 text-primary" />}
           </div>
 
           <span className={cn('text-xs font-semibold px-2.5 py-1 rounded-full', cfg.badge)}>{activeLevel} · Stage {activeStage + 1}</span>
@@ -742,12 +733,12 @@ export default function VocabSinonimPage() {
           {/* Stars */}
           <div className="flex justify-center gap-1 my-3">
             {[1, 2, 3].map(n => (
-              <Star key={n} className={cn('w-7 h-7', n <= stars ? 'text-amber-400 fill-amber-400' : 'text-(--border)')} />
+              <Star key={n} className={cn('w-7 h-7', n <= stars ? 'text-primary fill-primary' : 'text-(--border)')} />
             ))}
           </div>
 
           <p className="text-sm font-semibold text-(--text) mb-1">
-            {passed ? (score === STAGE_SIZE ? '🎉 Sempurna!' : '✅ Lulus!') : '❌ Belum Lulus'}
+            {passed ? (score === STAGE_SIZE ? 'Sempurna!' : 'Lulus!') : 'Belum Lulus'}
           </p>
           <p className="text-xs text-(--text-secondary)">
             {passed
@@ -760,7 +751,7 @@ export default function VocabSinonimPage() {
 
           {/* Progress bar */}
           <div className="h-2.5 rounded-full bg-(--bg-secondary) overflow-hidden mt-4 max-w-xs mx-auto">
-            <div className={cn('h-full rounded-full transition-all', passed ? 'bg-green-500' : 'bg-red-400')}
+            <div className="h-full rounded-full bg-primary transition-all"
               style={{ width: `${pct}%` }} />
           </div>
           <p className="text-xs text-(--text-muted) mt-1">{pct}% benar</p>
@@ -776,13 +767,13 @@ export default function VocabSinonimPage() {
               return (
                 <div key={q.id} className="px-4 py-2.5 flex items-start gap-3">
                   <div className={cn('w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold shrink-0 mt-0.5',
-                    correct ? 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300' : 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300',
+                    correct ? 'bg-primary/10 text-primary' : 'bg-primary/5 text-primary/40',
                   )}>
                     {i + 1}
                   </div>
                   <div className="flex-1 min-w-0 text-xs">
                     <p className="text-(--text) font-medium truncate">{q.prompt} <span className="text-primary">"{q.targetWord}"</span></p>
-                    <p className={cn('mt-0.5', correct ? 'text-green-600 dark:text-green-400' : 'text-red-500')}>
+                    <p className={cn('mt-0.5', correct ? 'text-primary dark:text-primary' : 'text-primary')}>
                       {correct ? `✓ ${userAns}` : `✗ Kamu: ${userAns ?? '—'} → Benar: ${q.correctAnswer}`}
                     </p>
                   </div>

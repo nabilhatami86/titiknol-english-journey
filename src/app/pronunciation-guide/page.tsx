@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 };
 
 const legend = [
-  { label: "/t/ — voiceless", pill: "bg-blue-100 text-blue-800" },
-  { label: "/d/ — voiced", pill: "bg-green-100 text-green-800" },
-  { label: "/ɪd/ — setelah t/d", pill: "bg-purple-100 text-purple-800" },
-  { label: "❌ Silent", pill: "bg-red-100 text-red-800" },
-  { label: "/θ/ — th tak bersuara", pill: "bg-orange-100 text-orange-800" },
-  { label: "/ð/ — th bersuara", pill: "bg-teal-100 text-teal-800" },
-  { label: "/ə/ — schwa", pill: "bg-slate-100 text-slate-700" },
+  { label: "/t/ — voiceless",      pill: "bg-primary/10 text-primary" },
+  { label: "/d/ — voiced",         pill: "bg-primary/10 text-primary" },
+  { label: "/ɪd/ — setelah t/d",   pill: "bg-primary/15 text-primary" },
+  { label: "Silent",               pill: "bg-primary/20 text-primary" },
+  { label: "/θ/ — th tak bersuara", pill: "bg-primary/10 text-primary" },
+  { label: "/ð/ — th bersuara",    pill: "bg-primary/10 text-primary" },
+  { label: "/ə/ — schwa",          pill: "bg-primary/10 text-primary" },
 ];
 
 export default function PronunciationGuidePage() {

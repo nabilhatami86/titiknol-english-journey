@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { BookOpen, Clock, BarChart2 } from 'lucide-react';
 import { stories } from '@/data/stories';
 import type { StoryDifficulty } from '@/types/story';
@@ -9,23 +9,23 @@ const difficultyConfig: Record<
 > = {
   basic: {
     label: 'Basic',
-    color: 'text-green-600 dark:text-green-400',
-    bg: 'bg-green-500/10',
-    border: 'border-green-400/30',
+    color: 'text-primary dark:text-primary',
+    bg: 'bg-primary/10',
+    border: 'border-primary/30',
     description: 'Kalimat pendek, kosakata sehari-hari yang umum',
   },
   intermediate: {
     label: 'Intermediate',
-    color: 'text-blue-600 dark:text-blue-400',
-    bg: 'bg-blue-500/10',
-    border: 'border-blue-400/30',
+    color: 'text-primary dark:text-primary',
+    bg: 'bg-primary/10',
+    border: 'border-primary/30',
     description: 'Kalimat lebih kompleks, kosakata topik spesifik',
   },
   advanced: {
     label: 'Advanced',
-    color: 'text-purple-600 dark:text-purple-400',
-    bg: 'bg-purple-500/10',
-    border: 'border-purple-400/30',
+    color: 'text-primary dark:text-primary',
+    bg: 'bg-primary/10/10',
+    border: 'border-primary/30/30',
     description: 'Teks akademik & analitik, kosakata tinggi',
   },
 };
@@ -63,12 +63,12 @@ function StoryListContent() {
           <p className="text-xs text-(--text-secondary) mt-1">Klik satu kata untuk melihat terjemahan lengkap beserta contoh kalimat</p>
         </div>
         <div className="bg-(--bg-card) border border-(--border) rounded-xl p-4 text-center">
-          <div className="w-8 h-8 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center mx-auto mb-2 text-sm font-bold">2</div>
+          <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-2 text-sm font-bold">2</div>
           <p className="text-xs font-semibold text-(--text)">Tandai Merah</p>
           <p className="text-xs text-(--text-secondary) mt-1">Di panel terjemahan, klik "Tidak Tahu" untuk menandai kata dengan warna merah</p>
         </div>
         <div className="bg-(--bg-card) border border-(--border) rounded-xl p-4 text-center">
-          <div className="w-8 h-8 rounded-full bg-amber-500/10 text-amber-600 flex items-center justify-center mx-auto mb-2 text-sm font-bold">3</div>
+          <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-2 text-sm font-bold">3</div>
           <p className="text-xs font-semibold text-(--text)">Blok Frasa</p>
           <p className="text-xs text-(--text-secondary) mt-1">Seleksi/blok teks panjang lalu klik "Tandai Frasa" untuk menyorot dan menerjemahkan</p>
         </div>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import {
@@ -41,15 +41,15 @@ type WordResult = {
 };
 
 const POS_COLOR: Record<string, string> = {
-  noun:        "bg-blue-100 text-blue-700",
-  verb:        "bg-green-100 text-green-700",
-  adjective:   "bg-purple-100 text-purple-700",
-  adverb:      "bg-orange-100 text-orange-700",
-  preposition: "bg-pink-100 text-pink-700",
-  conjunction: "bg-yellow-100 text-yellow-700",
-  pronoun:     "bg-teal-100 text-teal-700",
-  exclamation: "bg-red-100 text-red-700",
-  phrase:      "bg-indigo-100 text-indigo-700",
+  noun:        "bg-primary/10 text-primary",
+  verb:        "bg-primary/10 text-primary",
+  adjective:   "bg-primary/10 text-primary",
+  adverb:      "bg-primary/10 text-primary",
+  preposition: "bg-primary/10 text-primary",
+  conjunction: "bg-primary/10 text-primary",
+  pronoun:     "bg-primary/10 text-primary",
+  exclamation: "bg-primary/10 text-primary",
+  phrase:      "bg-primary/10 text-primary",
 };
 function posColor(pos: string) {
   const key = pos.toLowerCase();
@@ -188,7 +188,7 @@ export default function TranslatePage() {
 
           {/* Error */}
           {wordError && (
-            <div className="flex items-start gap-2 text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+            <div className="flex items-start gap-2 text-sm text-primary bg-primary/10 border border-primary/30 rounded-xl px-4 py-3">
               <AlertCircle className="w-4 h-4 mt-0.5 shrink-0" />
               <span>{wordError}</span>
             </div>
@@ -348,7 +348,7 @@ export default function TranslatePage() {
                 <button
                   onClick={() => setTextInput("")}
                   disabled={!textInput}
-                  className="text-xs text-(--text-muted) hover:text-red-500 disabled:opacity-30 transition-colors"
+                  className="text-xs text-(--text-muted) hover:text-primary disabled:opacity-30 transition-colors"
                 >
                   Clear
                 </button>
@@ -365,7 +365,7 @@ export default function TranslatePage() {
                   className="p-1 rounded-md text-(--text-muted) hover:text-primary disabled:opacity-30 transition-colors"
                   title="Copy"
                 >
-                  {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4" />}
+                  {copied ? <Check className="w-4 h-4 text-primary" /> : <Copy className="w-4 h-4" />}
                 </button>
               </div>
               <div className="flex-1 px-4 py-3 min-h-48">
@@ -395,7 +395,7 @@ export default function TranslatePage() {
               Translate
             </button>
             {textError && (
-              <p className="text-red-500 text-sm">{textError}</p>
+              <p className="text-primary text-sm">{textError}</p>
             )}
           </div>
         </div>

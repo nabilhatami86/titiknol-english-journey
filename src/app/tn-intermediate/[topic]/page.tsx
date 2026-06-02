@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -28,16 +28,16 @@ function WrongRightList({ items }: { items: WrongRight[] }) {
       {items.map((wr, i) => (
         <div key={i} className="bg-(--bg-card) border border-(--border) rounded-xl p-4 space-y-2">
           <div className="flex items-start gap-2">
-            <XCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+            <XCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
             <div>
-              <p className="text-xs text-red-500 font-semibold uppercase mb-0.5">Salah</p>
-              <p className="text-sm font-mono text-(--text) line-through decoration-red-400">{wr.wrong}</p>
+              <p className="text-xs text-primary font-semibold uppercase mb-0.5">Salah</p>
+              <p className="text-sm font-mono text-(--text) line-through decoration-primary">{wr.wrong}</p>
             </div>
           </div>
           <div className="flex items-start gap-2">
-            <CheckCircle className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
+            <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
             <div>
-              <p className="text-xs text-green-600 font-semibold uppercase mb-0.5">Benar</p>
+              <p className="text-xs text-primary font-semibold uppercase mb-0.5">Benar</p>
               <p className="text-sm font-mono text-(--text)">{wr.right}</p>
             </div>
           </div>
@@ -111,9 +111,9 @@ function TenseDetail({ tense }: { tense: TenseTopic }) {
       <GrammarCard title="Rumus">
         {(
           [
-            { label: '(+)', value: tense.formula.positive, color: 'text-green-600 bg-green-50 dark:bg-green-950/30 border-green-200/60' },
-            { label: '(−)', value: tense.formula.negative, color: 'text-red-600 bg-red-50 dark:bg-red-950/30 border-red-200/60' },
-            { label: '(?)', value: tense.formula.question, color: 'text-blue-600 bg-blue-50 dark:bg-blue-950/30 border-blue-200/60' },
+            { label: '(+)', value: tense.formula.positive, color: 'text-primary bg-primary/10 dark:bg-primary/30 border-primary/60' },
+            { label: '(−)', value: tense.formula.negative, color: 'text-primary bg-primary/10 dark:bg-primary/30 border-primary/60' },
+            { label: '(?)', value: tense.formula.question, color: 'text-primary bg-primary/10 dark:bg-primary/30 border-primary/60' },
           ] as const
         ).map(({ label, value, color }) => (
           <div key={label} className={`flex items-start gap-3 rounded-lg border px-4 py-2.5 ${color}`}>
@@ -155,8 +155,9 @@ function TenseDetail({ tense }: { tense: TenseTopic }) {
               )}
               <p className="text-xs text-(--text-secondary) mt-0.5">{ex.translation}</p>
               {ex.note && (
-                <span className="text-[10px] text-primary/80 bg-primary/5 rounded-md px-2 py-0.5 mt-0.5 inline-block">
-                  💡 {ex.note}
+                <span className="inline-flex items-center gap-1 text-[10px] text-primary/80 bg-primary/5 rounded-md px-2 py-0.5 mt-0.5">
+                  <Lightbulb className="w-3 h-3 shrink-0" />
+                  {ex.note}
                 </span>
               )}
             </BulletRow>
@@ -219,8 +220,9 @@ function GrammarDetail({ topic }: { topic: GrammarTopic }) {
                   )}
                   <p className="text-xs text-(--text-secondary)">{ex.translation}</p>
                   {ex.note && (
-                    <p className="text-xs text-primary/80 bg-primary/5 rounded-md px-2 py-1 mt-0.5 inline-block">
-                      💡 {ex.note}
+                    <p className="inline-flex items-center gap-1 text-xs text-primary/80 bg-primary/5 rounded-md px-2 py-1 mt-0.5">
+                      <Lightbulb className="w-3 h-3 shrink-0" />
+                      {ex.note}
                     </p>
                   )}
                 </div>
@@ -229,9 +231,9 @@ function GrammarDetail({ topic }: { topic: GrammarTopic }) {
           )}
 
           {sec.tip && (
-            <div className="flex items-start gap-2.5 bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-300/50 rounded-xl px-4 py-3">
-              <Lightbulb className="w-4 h-4 text-yellow-500 shrink-0 mt-0.5" />
-              <p className="text-xs text-yellow-800 dark:text-yellow-200 leading-relaxed">{sec.tip}</p>
+            <div className="flex items-start gap-2.5 bg-primary/10 dark:bg-primary/20 border border-primary/50 rounded-xl px-4 py-3">
+              <Lightbulb className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+              <p className="text-xs text-primary dark:text-primary leading-relaxed">{sec.tip}</p>
             </div>
           )}
 
@@ -272,8 +274,9 @@ function GrammarDetail({ topic }: { topic: GrammarTopic }) {
                           <p className="text-sm font-semibold text-(--text)">{ex.sentence}</p>
                           <p className="text-xs text-(--text-secondary)">{ex.translation}</p>
                           {ex.note && (
-                            <p className="text-xs text-primary/80 bg-primary/5 rounded-md px-2 py-1 mt-1 inline-block">
-                              💡 {ex.note}
+                            <p className="inline-flex items-center gap-1 text-xs text-primary/80 bg-primary/5 rounded-md px-2 py-1 mt-1">
+                              <Lightbulb className="w-3 h-3 shrink-0" />
+                              {ex.note}
                             </p>
                           )}
                         </div>
@@ -282,9 +285,9 @@ function GrammarDetail({ topic }: { topic: GrammarTopic }) {
                   )}
 
                   {sub.tip && (
-                    <div className="flex items-start gap-2.5 bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-300/50 rounded-xl px-4 py-3">
-                      <Lightbulb className="w-4 h-4 text-yellow-500 shrink-0 mt-0.5" />
-                      <p className="text-xs text-yellow-800 dark:text-yellow-200 leading-relaxed">{sub.tip}</p>
+                    <div className="flex items-start gap-2.5 bg-primary/10 dark:bg-primary/20 border border-primary/50 rounded-xl px-4 py-3">
+                      <Lightbulb className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <p className="text-xs text-primary dark:text-primary leading-relaxed">{sub.tip}</p>
                     </div>
                   )}
 

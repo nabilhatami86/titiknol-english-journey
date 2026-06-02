@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import {
   GraduationCap, Brain, PenLine, RotateCcw, BookCheck,
@@ -29,7 +29,7 @@ const vocabItems: PracticeItem[] = [
     title: 'Sinonim & Makna',
     description: 'Kenali sinonim & makna kata dari level A1 → C2. Progress tersimpan, harus selesaikan tiap stage untuk lanjut.',
     icon: BookOpen,
-    color: 'bg-emerald-500/10 text-emerald-600',
+    color: 'bg-primary/10 text-primary',
     badge: 'A1 → C2',
   },
   {
@@ -61,7 +61,7 @@ const grammarItems: PracticeItem[] = [
     title: 'Structure 1000 Soal',
     description: '700 soal TOEFL Structure pilihan ganda dari buku "1000 Soal Grammar". Ada level All, Basic, Intermediate, dan Advance.',
     icon: ListChecks,
-    color: 'bg-orange-500/10 text-orange-600',
+    color: 'bg-primary/10 text-primary',
     badge: '700 soal',
   },
   {
@@ -69,7 +69,7 @@ const grammarItems: PracticeItem[] = [
     title: 'Buat Contoh + AI Review',
     description: 'Pilih topik grammar → tulis kalimat contoh → AI review: benar/salah, koreksi, breakdown, dan tips.',
     icon: Sparkles,
-    color: 'bg-rose-500/10 text-rose-600',
+    color: 'bg-primary/10 text-primary',
     badge: 'AI',
   },
   {
@@ -85,7 +85,7 @@ const grammarItems: PracticeItem[] = [
     title: 'Grammar Quiz',
     description: '25 soal pilihan ganda dari semua parts of speech: Nouns, Verbs, Adjectives, Adverbs, Pronouns, dll.',
     icon: BookCheck,
-    color: 'bg-amber-500/10 text-amber-600',
+    color: 'bg-primary/10 text-primary',
   },
   {
     href: '/practice/grammar-evaluator',
@@ -103,7 +103,7 @@ const writingItems: PracticeItem[] = [
     title: 'Latihan Menulis Surat',
     description: 'Tulis surat formal atau informal berdasarkan skenario, lalu AI koreksi struktur, grammar, tone, dan kosakata.',
     icon: FileText,
-    color: 'bg-blue-500/10 text-blue-600',
+    color: 'bg-primary/10 text-primary',
     badge: 'AI Review',
   },
   {
@@ -111,7 +111,7 @@ const writingItems: PracticeItem[] = [
     title: 'IELTS Writing Practice',
     description: 'Latihan Task 1 (deskripsi grafik) & Task 2 (essay). AI beri band score 0–9 berdasarkan 4 kriteria resmi IELTS: Task Achievement, Coherence, Lexical, Grammar.',
     icon: BarChart2,
-    color: 'bg-violet-500/10 text-violet-600',
+    color: 'bg-primary/10 text-primary',
     badge: 'Band Score',
   },
 ];
@@ -122,7 +122,7 @@ const tnItems: PracticeItem[] = [
     title: 'Practice Grammar TN',
     description: 'Latihan soal langsung dari materi grammar Basic, Intermediate, dan Advance TitikNolJourney.',
     icon: GraduationCap,
-    color: 'bg-purple-500/10 text-purple-600',
+    color: 'bg-primary/10 text-primary',
     badge: 'Basic · Inter · Adv',
   },
   {
@@ -130,7 +130,7 @@ const tnItems: PracticeItem[] = [
     title: 'Tugas Grammar',
     description: 'Kumpulan tugas & kisi-kisi dari tutor: Articles, Nouns, Pronouns, Mid Test, Reading, dan Speaking.',
     icon: ClipboardList,
-    color: 'bg-violet-500/10 text-violet-600',
+    color: 'bg-primary/10 text-primary',
     badge: '6 paket',
   },
   {
@@ -138,7 +138,7 @@ const tnItems: PracticeItem[] = [
     title: 'Kisi-Kisi Mid Test',
     description: 'Persiapan Mid Test: Reading (comprehension) dan Speaking (greeting, identity, family, hobby, dll).',
     icon: BookOpen,
-    color: 'bg-cyan-500/10 text-cyan-700',
+    color: 'bg-primary/10 text-primary',
     badge: '2 paket',
   },
   {
@@ -146,7 +146,7 @@ const tnItems: PracticeItem[] = [
     title: 'Daily Conversations',
     description: 'Percakapan sehari-hari di berbagai situasi: restoran, sekolah, belanja, rumah sakit + terjemahan.',
     icon: MessageCircle,
-    color: 'bg-teal-500/10 text-teal-600',
+    color: 'bg-primary/10 text-primary',
     badge: '12 dialog',
   },
 ];
@@ -216,7 +216,7 @@ export default function PracticePage() {
         <SectionHeader
           title="Latihan Vocabulary"
           subtitle="Latihan mandiri kosakata Bahasa Inggris"
-          accent="border-emerald-400 dark:border-emerald-600"
+          accent="border-primary/30 dark:border-primary/30"
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {vocabItems.map(item => <PracticeCard key={item.href} item={item} />)}
@@ -228,7 +228,7 @@ export default function PracticePage() {
         <SectionHeader
           title="Latihan Writing"
           subtitle="Latihan menulis teks dengan koreksi AI"
-          accent="border-blue-400 dark:border-blue-600"
+          accent="border-primary/30 dark:border-primary/30"
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {writingItems.map(item => <PracticeCard key={item.href} item={item} />)}
@@ -240,7 +240,7 @@ export default function PracticePage() {
         <SectionHeader
           title="Latihan Grammar"
           subtitle="Latihan tata bahasa Inggris umum"
-          accent="border-amber-400 dark:border-amber-600"
+          accent="border-primary/30 dark:border-primary/30"
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {grammarItems.map(item => <PracticeCard key={item.href} item={item} />)}
@@ -252,7 +252,7 @@ export default function PracticePage() {
         <SectionHeader
           title="TitikNolJourney (TN)"
           subtitle="Materi & latihan dari kelas TitikNolJourney"
-          accent="border-purple-400 dark:border-purple-600"
+          accent="border-primary/30 dark:border-primary/30"
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {tnItems.map(item => <PracticeCard key={item.href} item={item} />)}

@@ -1,4 +1,4 @@
-import type { ModuleLesson } from "@/types/module";
+﻿import type { ModuleLesson } from "@/types/module";
 
 // ── Intermediate Speaking Lessons ────────────────────────────────────────────
 
@@ -264,7 +264,7 @@ const intermediateSpeakingLessons: ModuleLesson[] = [
           "4️⃣ And explain why you would like to visit that country",
           "─────────────────────────────",
           "⏱ Preparation time: 1 minute  |  Speaking time: 1–2 minutes",
-          "💡 Tip: gunakan Present tense untuk fakta, Future tense (would like to / want to) untuk rencana.",
+          "Tip: Tip: gunakan Present tense untuk fakta, Future tense (would like to / want to) untuk rencana.",
         ],
       },
       {
@@ -279,7 +279,7 @@ const intermediateSpeakingLessons: ModuleLesson[] = [
           "── Point 4: Why you would like to visit ──",
           '   "The main reason why I want to visit Japan is because I am deeply fascinated by how the Japanese people manage to preserve their traditional culture while at the same time being one of the most technologically advanced countries in the world. I would love to experience that contrast myself — walking through ancient shrines in Kyoto in the morning and exploring the futuristic city of Tokyo in the evening. I also believe that visiting Japan would broaden my perspective and help me appreciate different cultures more deeply."',
           "─────────────────────────────",
-          "📝 Key phrases to use:",
+          "Key phrases to use:",
           "   would like to / want to / hope to / plan to + V1",
           "   I already know that... / I have heard that... / As far as I know...",
           "   The main reason is... / One of the reasons why... / That is why...",
@@ -387,7 +387,7 @@ const intermediateSpeakingLessons: ModuleLesson[] = [
           "4️⃣ And explain why you think this job is useful to society",
           "─────────────────────────────",
           "⏱ Preparation time: 1 minute  |  Speaking time: 1–2 minutes",
-          "💡 Tip: gunakan Present tense untuk fakta umum dan pendapat, Simple Past untuk pengalaman pribadi yang membuatmu tahu tentang pekerjaan ini.",
+          "Tip: Tip: gunakan Present tense untuk fakta umum dan pendapat, Simple Past untuk pengalaman pribadi yang membuatmu tahu tentang pekerjaan ini.",
         ],
       },
       {
@@ -402,7 +402,7 @@ const intermediateSpeakingLessons: ModuleLesson[] = [
           "── Point 4: Why this job is useful to society ──",
           '   "I strongly believe that doctors are one of the most important and useful members of society. Without doctors, people would have no one to turn to when they are seriously ill. Doctors save lives every single day, whether it is treating a child with a fever or performing a complex surgery. They also play a key role in preventing diseases by educating the public about healthy lifestyles and vaccinations. On a larger scale, doctors helped the world fight against dangerous pandemics like COVID-19, which showed us just how essential this profession truly is. That is why I think being a doctor is not only a great career but also a noble contribution to humanity."',
           "─────────────────────────────",
-          "📝 Key phrases to use:",
+          "Key phrases to use:",
           "   In my opinion / I believe / I strongly think that...",
           "   Without... / If there were no..., ...",
           "   Not only... but also... / As well as...",
@@ -710,7 +710,7 @@ const intermediateSpeakingLessons: ModuleLesson[] = [
       {
         title: "IELTS Speaking Part 2 — Format",
         points: [
-          "📋 Kamu diberi CUE CARD berisi topik + 3–4 poin panduan.",
+          "Kamu diberi CUE CARD berisi topik + 3–4 poin panduan.",
           "⏱ Persiapan: 1 menit (boleh buat catatan singkat).",
           "🗣 Bicara: 1–2 menit TANPA henti.",
           "❓ Follow-up: examiner bertanya 1–2 pertanyaan singkat.",

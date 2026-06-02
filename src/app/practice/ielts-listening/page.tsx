@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
@@ -220,14 +220,14 @@ export default function IeltsListeningPage() {
             ok === true
               ? 'border-primary/30 bg-primary/5'
               : ok === false
-                ? 'border-red-300/50 bg-red-50/30 dark:bg-red-950/10'
+                ? 'border-primary/50 bg-primary/30 dark:bg-primary/10'
                 : 'border-(--border)',
           )}
         >
           <div className="flex items-start gap-3">
             <span className={cn(
               'text-sm font-bold w-7 shrink-0 mt-0.5',
-              ok === true ? 'text-primary' : ok === false ? 'text-red-500' : 'text-primary',
+              ok === true ? 'text-primary' : ok === false ? 'text-primary' : 'text-primary',
             )}>
               {q.n}.
             </span>
@@ -246,7 +246,7 @@ export default function IeltsListeningPage() {
                     submitted
                       ? ok
                         ? 'border-primary/40 text-primary font-semibold bg-primary/5'
-                        : 'border-red-300/60 text-(--text-muted) line-through'
+                        : 'border-primary/60 text-(--text-muted) line-through'
                       : 'border-(--border) focus:border-primary text-(--text)',
                   )}
                 />
@@ -267,7 +267,7 @@ export default function IeltsListeningPage() {
                           isCorrectOpt
                             ? 'border-primary/40 bg-primary/5 text-primary font-semibold'
                             : isWrong
-                              ? 'border-red-300/60 bg-red-50/30 dark:bg-red-950/10 text-red-600 dark:text-red-400'
+                              ? 'border-primary/60 bg-primary/30 dark:bg-primary/10 text-primary dark:text-primary'
                               : isSel
                                 ? 'border-primary/40 bg-primary/5 text-primary'
                                 : 'border-(--border) bg-(--bg-secondary) text-(--text) hover:border-primary/30',
@@ -298,7 +298,7 @@ export default function IeltsListeningPage() {
                           isCorrectOpt
                             ? 'border-primary/40 bg-primary/10 text-primary'
                             : isWrong
-                              ? 'border-red-300/60 bg-red-50/30 dark:bg-red-950/10 text-red-600 dark:text-red-400'
+                              ? 'border-primary/60 bg-primary/30 dark:bg-primary/10 text-primary dark:text-primary'
                               : isSel
                                 ? 'border-primary/40 bg-primary/10 text-primary'
                                 : 'border-(--border) bg-(--bg-secondary) text-(--text) hover:border-primary/30',

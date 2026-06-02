@@ -1,4 +1,4 @@
-import type { ModuleLesson } from "@/types/module";
+﻿import type { ModuleLesson } from "@/types/module";
 
 // ── Advance Reading Lessons ───────────────────────────────────────────
 
@@ -59,20 +59,20 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Identifying Cause and Effect",
         points: [
-          "📌 Cause and Effect = hubungan sebab-akibat dalam teks.",
+          "Cause and Effect = hubungan sebab-akibat dalam teks.",
           "",
-          "⚡ Signal words yang menunjukkan sebab:",
+          "Signal words yang menunjukkan sebab:",
           "   because | due to | as a result of | since",
           "",
-          "⚡ Signal words yang menunjukkan akibat:",
+          "Signal words yang menunjukkan akibat:",
           "   therefore | consequently | thus | resulting in",
           "",
-          "📌 Contoh dari teks:",
+          "Contoh dari teks:",
           "   'People consistently purchase pricey items because of the perceived status...'",
           "   Cause → perceived status",
           "   Effect → consumers buy expensive products",
           "",
-          "📌 Tip: Cari alasan mengapa sesuatu terjadi dan dampaknya pada paragraf.",
+          "Tip: Cari alasan mengapa sesuatu terjadi dan dampaknya pada paragraf.",
         ],
       },
       {
@@ -232,16 +232,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Summary Completion",
         points: [
-          "📌 Summary completion = melengkapi ringkasan dengan kata dari word bank.",
-          "📌 Ringkasan tidak selalu menggunakan kata persis dari teks — bisa parafrase.",
+          "Summary completion = melengkapi ringkasan dengan kata dari word bank.",
+          "Ringkasan tidak selalu menggunakan kata persis dari teks — bisa parafrase.",
           "",
-          "⚡ Langkah-langkah:",
+          "Langkah-langkah:",
           "   1. Baca ringkasan dulu untuk memahami konteks setiap blank.",
           "   2. Identifikasi bagian teks yang relevan dengan setiap blank.",
           "   3. Pilih kata dari word bank yang secara gramatikal dan maknanya cocok.",
           "   4. Periksa kembali — pastikan kalimat lengkap masuk akal.",
           "",
-          "⚡ Tip: Perhatikan part of speech (noun/verb/adj/adv) yang dibutuhkan setiap blank.",
+          "Tip: Perhatikan part of speech (noun/verb/adj/adv) yang dibutuhkan setiap blank.",
         ],
       },
       {
@@ -383,15 +383,15 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Matching Information",
         points: [
-          "📌 Matching information = mencocokkan pernyataan dengan paragraf atau kategori.",
+          "Matching information = mencocokkan pernyataan dengan paragraf atau kategori.",
           "",
-          "⚡ Langkah-langkah:",
+          "Langkah-langkah:",
           "   1. Baca pertanyaan/pernyataan dulu.",
           "   2. Identifikasi kata kunci di setiap pernyataan.",
           "   3. Scan teks untuk menemukan bagian yang relevan.",
           "   4. Cocokkan — perhatikan parafrase, bukan kata yang sama persis.",
           "",
-          "⚡ Tip: Jawaban bisa tidak berurutan dan satu kategori bisa dipakai lebih dari sekali.",
+          "Tip: Jawaban bisa tidak berurutan dan satu kategori bisa dipakai lebih dari sekali.",
         ],
       },
       {
@@ -884,11 +884,11 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: True / False / Not Given",
         points: [
-          "📌 TRUE = pernyataan SESUAI dengan informasi dalam teks.",
-          "📌 FALSE = pernyataan BERTENTANGAN dengan informasi dalam teks.",
-          "📌 NOT GIVEN = tidak ada informasi tentang ini di dalam teks.",
+          "TRUE = pernyataan SESUAI dengan informasi dalam teks.",
+          "FALSE = pernyataan BERTENTANGAN dengan informasi dalam teks.",
+          "NOT GIVEN = tidak ada informasi tentang ini di dalam teks.",
           "",
-          "⚡ Tips:",
+          "Tips:",
           "   • Jangan menebak berdasarkan pengetahuan umum — hanya gunakan teks!",
           "   • NOT GIVEN ≠ FALSE. NOT GIVEN = teks tidak menyebutkan, bukan berarti salah.",
           "   • Cari parafrase — jawaban bisa pakai kata berbeda dari teks.",
@@ -1419,15 +1419,15 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Summary Completion & Sentence Endings",
         points: [
-          "📌 Summary Completion = melengkapi ringkasan dengan kata dari word bank.",
-          "📌 Sentence Endings = memilih akhiran kalimat yang paling tepat dari daftar pilihan.",
+          "Summary Completion = melengkapi ringkasan dengan kata dari word bank.",
+          "Sentence Endings = memilih akhiran kalimat yang paling tepat dari daftar pilihan.",
           "",
-          "⚡ Tips Summary Completion:",
+          "Tips Summary Completion:",
           "   • Perhatikan part of speech (noun/verb/adj) yang dibutuhkan setiap blank.",
           "   • Word bank punya lebih banyak kata dari blank — ada kata yang tidak dipakai.",
           "   • Cari konteks kalimat untuk menentukan kata yang tepat.",
           "",
-          "⚡ Tips Sentence Endings:",
+          "Tips Sentence Endings:",
           "   • Ada lebih banyak endings dari kalimat — tidak semua dipakai.",
           "   • Cari di teks untuk memverifikasi endings yang benar.",
           "   • Eliminasi endings yang tidak sesuai secara gramatikal atau maknawi.",
@@ -2020,15 +2020,15 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Vocabulary in Context",
         points: [
-          "📌 Vocabulary in Context = memahami arti kata dari konteks kalimat di sekitarnya.",
-          "📌 Teks ini banyak menggunakan istilah teknis arsitektur: buttresses, cladding, masonry, partitions, stress.",
+          "Vocabulary in Context = memahami arti kata dari konteks kalimat di sekitarnya.",
+          "Teks ini banyak menggunakan istilah teknis arsitektur: buttresses, cladding, masonry, partitions, stress.",
           "",
-          "⚡ Tips Vocabulary Matching:",
+          "Tips Vocabulary Matching:",
           "   • Baca kalimat di mana kata muncul untuk mendapat konteks.",
           "   • Perhatikan part of speech (n./v./adj./adv.) untuk menyaring pilihan.",
           "   • Eliminasi definisi yang tidak masuk akal secara konteks.",
           "",
-          "⚡ Contoh konteks dalam teks:",
+          "Contoh konteks dalam teks:",
           "   '...systems of buttresses and flying buttresses, to stop them falling down' → penopang struktural",
           "   'masonry cladding... rooms and partitions' → material & pembatas ruang",
           "   'skyscrapers have mushroomed in all the world's big cities' → berkembang/muncul pesat",
@@ -2133,15 +2133,15 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Paragraph Information Matching",
         points: [
-          "📌 Paragraph information matching = menentukan paragraf mana yang membahas informasi tertentu.",
+          "Paragraph information matching = menentukan paragraf mana yang membahas informasi tertentu.",
           "",
-          "⚡ Langkah-langkah:",
+          "Langkah-langkah:",
           "   1. Baca pertanyaan dan identifikasi kata kunci utama.",
           "   2. Scan setiap paragraf untuk menemukan kata kunci atau parafrasenya.",
           "   3. Pastikan SELURUH informasi dalam pertanyaan ada di satu paragraf.",
           "   4. Setiap huruf paragraf hanya digunakan sekali.",
           "",
-          "⚡ Tips:",
+          "Tips:",
           "   → Perhatikan sinonim dan parafrase — soal jarang menggunakan kata yang persis sama dengan teks.",
           "   → Untuk multiple choice, baca semua pilihan sebelum memilih.",
           "   → Kata kunci dalam soal seringkali merupakan parafrase dari teks aslinya.",
@@ -2425,9 +2425,9 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: True / False / Not Given",
         points: [
-          "📌 True/False/Not Given = tentukan apakah pernyataan sesuai teks (True), bertentangan (False), atau tidak dibahas sama sekali (Not Given).",
+          "True/False/Not Given = tentukan apakah pernyataan sesuai teks (True), bertentangan (False), atau tidak dibahas sama sekali (Not Given).",
           "",
-          "⚡ Langkah-langkah:",
+          "Langkah-langkah:",
           "   1. Baca pernyataan dan cari kata kunci.",
           "   2. Temukan bagian teks yang membahas topik yang sama.",
           "   3. Bandingkan makna pernyataan dengan teks:",
@@ -2435,7 +2435,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
           "      → FALSE: teks secara eksplisit bertentangan dengan pernyataan.",
           "      → NOT GIVEN: teks tidak membahas informasi ini sama sekali.",
           "",
-          "⚡ Tips:",
+          "Tips:",
           "   → Jangan gunakan pengetahuan luar — hanya berdasarkan teks.",
           "   → Hati-hati dengan 'almost true' — jika ada satu detail yang salah, jawabannya FALSE.",
           "   → NOT GIVEN ≠ False; jika teks diam tentang topik itu, jawab NOT GIVEN.",
@@ -2735,17 +2735,17 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Multiple Choice & T/F/NG",
         points: [
-          "📌 Questions 1–3: Choose THREE answers from A–F.",
+          "Questions 1–3: Choose THREE answers from A–F.",
           "   → Cari kata kunci dari setiap opsi di dalam teks.",
           "   → Perhatikan parafrase — opsi jarang menggunakan kata yang sama persis.",
           "   → Opsi yang 'hampir benar' tapi detail berbeda = salah.",
           "",
-          "📌 Questions 4–7: True / False / Not Given.",
+          "Questions 4–7: True / False / Not Given.",
           "   TRUE      = pernyataan sesuai dengan informasi di teks.",
           "   FALSE     = pernyataan bertentangan dengan informasi di teks.",
           "   NOT GIVEN = informasi tidak ada di teks (tidak bisa disimpulkan).",
           "",
-          "⚡ Tips T/F/NG:",
+          "Tips T/F/NG:",
           "   → TRUE  : ada bukti langsung di teks yang mendukung.",
           "   → FALSE : ada bukti langsung di teks yang menyangkal.",
           "   → NOT GIVEN: tidak ada informasi — jangan menebak dari pengetahuan umum.",
@@ -2916,13 +2916,13 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Paragraph Matching & Multiple Choice",
         points: [
-          "📌 Questions 1–3: Paragraph Matching (A–E).",
+          "Questions 1–3: Paragraph Matching (A–E).",
           "   → Baca pertanyaan dan temukan kata kunci utama.",
           "   → Scan setiap paragraf untuk menemukan topik yang cocok.",
           "   → Pastikan SELURUH isi pertanyaan dibahas di paragraf itu.",
           "   → Satu huruf paragraf bisa dipakai lebih dari sekali.",
           "",
-          "📌 Questions 4–6: Multiple Choice (A/B/C/D).",
+          "Questions 4–6: Multiple Choice (A/B/C/D).",
           "   → Baca pertanyaan dahulu, lalu cari bagian teks yang relevan.",
           "   → Perhatikan parafrase — jawaban jarang menggunakan kata yang sama.",
           "   → Eliminasi opsi yang bertentangan atau tidak ada di teks.",
@@ -3079,16 +3079,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Paragraph Matching & Summary Completion",
         points: [
-          "📌 Paragraph Matching = tentukan paragraf mana yang berisi informasi dari pernyataan.",
+          "Paragraph Matching = tentukan paragraf mana yang berisi informasi dari pernyataan.",
           "   → Cari kata kunci dari pernyataan → temukan di paragraf mana kata kunci tersebut muncul.",
           "   → Jawaban bisa dari paragraf mana saja; satu paragraf bisa dipakai lebih dari sekali.",
           "",
-          "📌 Summary Completion = lengkapi ringkasan dengan kata dari word bank.",
+          "Summary Completion = lengkapi ringkasan dengan kata dari word bank.",
           "   → Baca ringkasan dulu, perhatikan konteks kalimat sebelum & sesudah blank.",
           "   → Cocokkan kata dari word bank dengan makna yang tepat sesuai konteks.",
           "   → Pastikan kata yang dipilih secara tata bahasa sesuai (noun/verb/adj).",
           "",
-          "⚡ Word Bank: exploded · immense · acquaintances · pursue · interact",
+          "Word Bank: exploded · immense · acquaintances · pursue · interact",
         ],
       },
       {
@@ -3387,15 +3387,15 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Paragraph Matching",
         points: [
-          "📌 Paragraph Matching = mencocokkan pernyataan/informasi dengan paragraf yang membahasnya.",
+          "Paragraph Matching = mencocokkan pernyataan/informasi dengan paragraf yang membahasnya.",
           "",
-          "⚡ Strategi:",
+          "Strategi:",
           "   1. Baca pertanyaan terlebih dahulu untuk mengetahui informasi apa yang dicari.",
           "   2. Cari kata kunci dalam pertanyaan (e.g., 'weather', 'soil erosion', 'air pollution', 'fish').",
           "   3. Scan setiap paragraf untuk menemukan kata kunci atau ide yang sesuai.",
           "   4. Satu paragraf bisa menjadi jawaban untuk lebih dari satu pertanyaan.",
           "",
-          "📌 Contoh dari teks:",
+          "Contoh dari teks:",
           "   Q: 'How trees inhibit soil erosion' → Cari 'erosion', 'roots', 'stabilize' → Para. B",
         ],
       },
@@ -3408,6 +3408,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Summary Completion — choose ONE word from the box for each blank.\n\nWord Bank: extend · intercepts · vegetation · aquatic · stabilize · erosion · myriad · vanish\n\nQ5. The effects of logging _____ beyond the simple felling of trees, also removing nutrients, water, and shelter for the countless organisms that depend on the forest ecosystem.",
+        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
         correctAnswer: "extend",
         reason:
           'Para. A: "The effects of logging extend beyond just the felling of a swath of trees." — extend = meluas, menjangkau.',
@@ -3418,6 +3419,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Q6. The dense forest canopy _____ heavy rainfall, slowing it down so that water soaks gradually into the porous soil rather than washing it away.",
+        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
         correctAnswer: "intercepts",
         reason:
           'Para. B: "The canopy prevents surface runoff by intercepting heavy rainfall so that water can drip down slowly onto the porous earth." — intercepts = menangkap/memotong.',
@@ -3428,6 +3430,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Q7. Along riverbanks and stream edges, _____ plays a crucial role in blocking soil from washing into the water and in shading the stream to prevent excessive algae growth.",
+        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
         correctAnswer: "vegetation",
         reason:
           'Para. C: "Vegetation along rivers and stream banks helps maintain steady water flow by blocking the erosion of soil and other residue, and tree shade inhibits the growth of algae." — vegetation = vegetasi/tumbuhan.',
@@ -3438,6 +3441,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Q8. When eroded soil flows into waterways it consumes oxygen, creating conditions that are deadly for fish and other _____ animals that rely on clean, well-oxygenated water to survive.",
+        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
         correctAnswer: "aquatic",
         reason:
           'Para. C: "oxygen depletion in the water, killing fish and other aquatic life." — aquatic = hidup di air.',
@@ -3581,15 +3585,15 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Descriptive Text & Atmosphere",
         points: [
-          "📌 Teks deskriptif = menggambarkan suasana, tempat, dan peristiwa secara detail dan hidup.",
+          "Teks deskriptif = menggambarkan suasana, tempat, dan peristiwa secara detail dan hidup.",
           "",
-          "⚡ Strategi membaca teks deskriptif:",
+          "Strategi membaca teks deskriptif:",
           "   1. Perhatikan kata sifat dan kata keterangan yang membangun suasana (e.g., 'dusty arena', 'tiered seating', 'breakneck speed').",
           "   2. Ikuti kronologi waktu: penulis sering menggunakan penanda waktu (1 p.m., 2.30, as the sun falls).",
           "   3. Identifikasi emosi dan sudut pandang penulis — penting untuk menjawab soal inferensi.",
           "   4. Bedakan antara observasi faktual (apa yang terjadi) dan kesan subjektif penulis (bagaimana rasanya).",
           "",
-          "📌 Contoh dari teks:",
+          "Contoh dari teks:",
           "   'I feel slightly out of place' → penulis bukan orang lokal; merasa asing di tengah orang-orang yang sangat familiar dengan rodeo.",
           "   'kids on their ponies come back as imaginary champions' → menunjukkan rodeo adalah bagian dari identitas dan masa depan komunitas lokal.",
         ],
@@ -3604,115 +3608,113 @@ export const advanceReadingLessons: ModuleLesson[] = [
     track: "reading",
     day: 15,
     tutor: "Mrs. Aji",
-    title: "RODEO — Exercises",
+    title: "MAJOR SUBWAYS OF EUROPE — Exercises",
     subtitle:
-      "Unit 2: Sport & Culture — True/False/Not Given + Summary Completion",
+      "Unit 3: Transportation — Subway Classification + Multiple Choice",
     overview:
-      "Latihan membaca berbasis teks Rodeo dari Day 14. Part 1: True/False/Not Given (Q1–Q4) — menguji pemahaman detail teks. Part 2: Summary Completion (Q5–Q7) — melengkapi ringkasan dengan kata dari word bank.",
+      "Latihan membaca berbasis teks sistem kereta bawah tanah di Eropa. Part 1: Subway Classification (Q1–Q4) — mengklasifikasikan karakteristik subways di London, Paris, atau Moscow. Part 2: Multiple Choice (Q5–Q7) — menguji pemahaman detail informasi dan hubungan sebab-akibat dalam teks.",
     passage: [
-      `Rodeo is to America what bull-fighting is to Spain or horse-racing is to Britain: the nation's most popular animal sport, and a very popular sport at that. Paul Denman spent a day at the Deschutes County Fair, in Redmond Oregon, and joined hundreds of Oregonians to watch the highlight of the fair, the annual Deschutes Rodeo.`,
-      `At 1 p.m. the air is still, heavy with a confusion of smells that drifts among the stalls and the barbeques, the animal enclosures and the ice-cream vendors. In the hot midday sun, the fair throngs with visitors, but there's little shade to sit in, just narrow strips of shadow alongside the buildings and the tents. All around, the music is playing while kids run riot and stall-holders beckon passing visitors with their colorful displays.`,
-      `Then, as the time moves towards 2.30, there is a new sense of excitement in the air: people are no longer moving round randomly, but heading in the same direction, towards the dusty arena to the south of the showground. It's almost time for the rodeo! Here at last there is shade for everyone: the grandstand, with its tiered seating, rapidly fills up, as thousands of fair-goers pile in, eager for a good view of the excitement that is soon to begin.`,
-      `For some people it has already begun. Microlight kids on minuscule ponies are cavorting round the empty arena, while a handful of cowboys, astride impeccably trained horses, walk or trot sedately round the ring. Suddenly a little blonde girl, hardly four feet tall, careers into view, riding bareback at the speed of light on a bright white pony. No-one pays much attention. The folk in the stands are too busy talking about horses and rodeo-riders, discussing the last rodeo, predicting the winners of the next. Somehow, as someone who has not been brought up in the company of horses, I feel slightly out of place, as if everyone here except me knows everything about what is going on.`,
-      `I had been to a couple of rodeos before, including the biggest of them all, Canada's Calgary Stampede; but the other rodeos I had been to were put on for the tourists. Not this one; in central Oregon, there are few tourists. Rodeos here are for the locals, people who know them and understand them; most of the folk round me are from Redmond, or Prineville or Madras or Bend, certainly not from Europe!`,
-      `Then action: suddenly the gates at the end of the arena burst open, and a posse of flag-carrying girls erupts into view, circling the arena in formation on shining dark ponies. Dressed in patriotic red, white and blue, courtesy of Pepsi-Cola, the girls come to a stop in the middle of the ring, as the crowd rise to their feet, the men take off their stetson hats, and everyone joins in the singing of God Bless America.`,
-      `The rodeo has begun! For the next couple of hours, spectators watch with excitement as local heroes perform feats of dexterity on the backs of bucking animals! While some show their skills at calf roping — catching a running calf with a lasso and tying it up in just a few seconds — others demonstrate their daredevil skills by riding untamed broncos or bounding round on the backs of enormous raging bulls. As intrepid riders master or fall off their wild mounts, the crowd cheer wildly or aah in apprehension, then burst into laughter as the obligatory clown, the matador of the rodeo, distracts the attention of the raging animals while mounted cowboys round them up and calm them down, coaxing them away into the pens from which they originally emerged, their day's work finished.`,
-      `Katie Sharpe, 21, the local Rodeo Queen, does a lap of honour, then participates in the ladies' events; but in this macho part of the world, the ladies do not get to pit themselves against untamed bulls and broncs! That's men's stuff! Katie and the other young ladies show their skills at "barrel racing", hurling their horses at breakneck speed round a triangular shaped race-course, marked out with barrels, in the middle of the arena. It's not as dramatic as bull-riding, but it's exciting, and the crowd roar their approval.`,
-      `As the sun falls lower in the sky and the shadows begin to lengthen, the final rounds of calf-roping and saddle-bronc riding bring another half hour of thrills and spills before the commentator finally announces that the Rodeo is drawing to an end. The last prizes are handed out, the last riders leave the arena, and the show is over. As the spectators pick up their belongings and move slowly towards the exits, the kids on their ponies come back again for another few minutes as imaginary champions, tomorrow's local heroes in the arena of the stars. Here, it seems, if rodeo does not flow in the blood, at least it's all in the family.`,
+      `Public transportation is an intrinsic part of every modern city. Many big cities have an underground rail system as their centerpiece. Three of the biggest and busiest underground rail systems in Europe are in London, Paris, and Moscow. The character of each city imprints its railways.`,
+      `The first of these subways was London's Underground, which opened in 1863. By that time, horses and pedestrians had so clogged the streets of London that city government ruled that no railroads could enter the city except underground. The method used for laying the first underground tracks is called "cut and cover," meaning the streets were dug up, the track was laid, a tunnel was built, and then everything was buried. Although the method was disruptive, it worked. Steam engines chugged under London, releasing steam through vents along the city streets. In its initial day of operation, the London Underground carried 30,000 passengers.`,
+      `This cut-and-cover method caused massive disruptions in the city and required the destruction of the structures above the tunnel. A better means of expanding the original Underground was needed, and builders did not have to look far to find it. London was also home to the first underwater tunnel, a pedestrian tunnel that had been built under the Thames River in 1825, made possible by the engineer Marc Brunel. He had devised a way of supporting the tunnel while the workers dug, called the Brunel Shield. Two young engineers improved the Brunel Shield for use in expanding the London Underground. The new Harlow-Greathead Shield carved a circular tube more than seven feet in diameter, which is why the London Underground is called the Tube. By then, the tunnels could be deeper than the original ones because electric train engines had become available. These trains did not have to be close to the surface to release steam. The shield could be used to dig deeper tunnels without destroying the surface structures above them.`,
+      `Paris started designing an underground rail service to rival London's. The first part of its system was not opened until the World's Fair and Olympics were held in that city in 1900. The Paris Metro is shorter than London's, but it carries more passengers every day, second in Europe only to Moscow. Whereas London's Underground is known for its engineering, Paris's Metro is known for its beauty. The stations and entrances are examples of art nouveau architecture, and they are decorated with mosaics, sculptures, paintings, and innovative doors and walls.`,
+      `The Moscow Metro opened in 1935. It was based on the design of the London Tube, except much of the track is above ground. When Stalin came to power, he used the stations as showcases of Russian art, culture, and engineering. The underground Moscow stations are filled with statuary, painting, and mosaics.`,
+      `Underground railways are not only for transportation. During World War II, all three underground systems were used as bomb shelters for the populace. The Moscow subway was even used as a military headquarters. Stores and malls have sprung up by stations, something that is especially convenient in cold climates. All three systems are continuing to expand, providing service to more riders in more distant locales. This is all part of an effort to decrease greenhouse gases emitted from personal vehicles.`,
     ],
     materialSections: [
       {
         title: "Exercise Guide",
         points: [
-          "📋 Part 1 — True / False / Not Given (Q1–Q4)",
-          "   TRUE  = pernyataan sesuai dengan informasi dalam teks",
-          "   FALSE = pernyataan berlawanan dengan informasi dalam teks",
-          "   NOT GIVEN = informasi tidak disebutkan sama sekali dalam teks",
+          "Part 1 — Subway Classification (Q1–Q4)",
+          "  Pilihlah kota yang tepat untuk setiap pernyataan berdasarkan teks:",
+          "  A = London | B = Paris | C = Moscow",
           "",
-          "📋 Part 2 — Summary Completion (Q5–Q7)",
-          "   Pilih satu kata dari word bank untuk melengkapi setiap kalimat.",
-          "   Word Bank: grandstand · dexterity · apprehension · intrepid · obligatory · stetson",
+          "Part 2 — Multiple Choice (Q5–Q7)",
+          "  Pilihlah satu jawaban yang paling tepat (A, B, C, atau D) berdasarkan isi teks bacaan.",
           "",
-          "💡 Tips: Untuk TFNG, baca teks dengan cermat — jangan menebak berdasarkan logika umum, hanya dari informasi yang tertulis.",
+          "Tip: Tips: Perhatikan kata kunci spesifik seperti nama tokoh (Stalin, Brunel) atau penanda waktu sejarah (World War II, 1863) untuk mempercepat pencarian informasi di dalam teks.",
         ],
       },
     ],
     exercises: [
-      // ── Part 1: True / False / Not Given (Q1–Q4) ─────────────────────
+      // ── Part 1: Subway Classification (Q1–Q4) ───────────────────────
       {
         id: "adv-r15-q1",
-        type: "true-false-not-given",
+        type: "multiple-choice",
         section: "part1",
         question:
-          "Q1 — True / False / Not Given\n\n'The author had never attended a rodeo before visiting the Deschutes County Fair.'",
-        options: ["True", "False", "Not Given"],
-        correctAnswer: "False",
+          "Q1 — Subway Classification\n\n'It was used as a military headquarters during World War II.'",
+        options: ["A. London", "B. Paris", "C. Moscow"],
+        correctAnswer: "C. Moscow",
         reason:
-          "Para. 5: 'I had been to a couple of rodeos before, including the biggest of them all, Canada's Calgary Stampede.' — Penulis sudah pernah menghadiri rodeo sebelumnya, jadi pernyataan ini FALSE.",
+          "Para. 6: 'The Moscow subway was even used as a military headquarters.' — Jalur bawah tanah Moscow digunakan sebagai markas militer selama Perang Dunia II.",
       },
       {
         id: "adv-r15-q2",
-        type: "true-false-not-given",
+        type: "multiple-choice",
         section: "part1",
         question:
-          "Q2 — True / False / Not Given\n\n'The grandstand at the Deschutes Rodeo provides shade for the spectators.'",
-        options: ["True", "False", "Not Given"],
-        correctAnswer: "True",
+          "Q2 — Subway Classification\n\n'It has a large percentage of its track above the ground.'",
+        options: ["A. London", "B. Paris", "C. Moscow"],
+        correctAnswer: "C. Moscow",
         reason:
-          "Para. 3: 'Here at last there is shade for everyone: the grandstand, with its tiered seating, rapidly fills up.' — Grandstand memang menyediakan tempat berteduh. TRUE.",
+          "Para. 5: 'The Moscow Metro opened in 1935. It was based on the design of the London Tube, except much of the track is above ground.' — Banyak jalur kereta Moscow yang berada di atas tanah.",
       },
       {
         id: "adv-r15-q3",
-        type: "true-false-not-given",
+        type: "multiple-choice",
         section: "part1",
         question:
-          "Q3 — True / False / Not Given\n\n'The Deschutes Rodeo is organised primarily to attract tourists to central Oregon.'",
-        options: ["True", "False", "Not Given"],
-        correctAnswer: "False",
+          "Q3 — Subway Classification\n\n'It was originally built for the operation of steam trains.'",
+        options: ["A. London", "B. Paris", "C. Moscow"],
+        correctAnswer: "A. London",
         reason:
-          "Para. 5: 'in central Oregon, there are few tourists. Rodeos here are for the locals.' — Rodeo ini ditujukan untuk warga lokal, bukan turis. FALSE.",
+          "Para. 2: Mengenai London's Underground, tertulis 'Steam engines chugged under London, releasing steam through vents...' — Kereta generasi pertama London menggunakan mesin uap.",
       },
       {
         id: "adv-r15-q4",
-        type: "true-false-not-given",
+        type: "multiple-choice",
         section: "part1",
         question:
-          "Q4 — True / False / Not Given\n\n'Women at the Deschutes Rodeo are allowed to compete in bull-riding events.'",
-        options: ["True", "False", "Not Given"],
-        correctAnswer: "False",
+          "Q4 — Subway Classification\n\n'It is famous for its beautiful architecture.'",
+        options: ["A. London", "B. Paris", "C. Moscow"],
+        correctAnswer: "B. Paris",
         reason:
-          "Para. 8: 'the ladies do not get to pit themselves against untamed bulls and broncs! That's men's stuff!' — Wanita tidak diperbolehkan dalam bull riding. FALSE.",
+          "Para. 4: 'Whereas London's Underground is known for its engineering, Paris's Metro is known for its beauty. The stations and entrances are examples of art nouveau architecture...' — Paris Metro terkenal dengan keindahan arsitekturnya.",
       },
-      // ── Part 2: Summary Completion (Q5–Q7) ───────────────────────────
+      // ── Part 2: Multiple Choice (Q5–Q7) ─────────────────────────────
       {
         id: "adv-r15-q5",
-        type: "fill-the-gap",
+        type: "multiple-choice",
         section: "part2",
         question:
-          "Summary Completion — choose ONE word from the box.\n\nWord Bank: grandstand · dexterity · apprehension · intrepid · obligatory · stetson\n\nQ5. As the clock approached 2.30, the _____ with its tiered seating rapidly filled with thousands of eager spectators looking for shade and a good view.",
-        correctAnswer: "grandstand",
+          "Q5. The Paris Metro stations are decorated with\n\nA. pictures of the Olympics.\nB. different kinds of artwork.\nC. photographs of the World's Fair.\nD. examples of engineering.",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "B",
         reason:
-          "Para. 3: 'the grandstand, with its tiered seating, rapidly fills up, as thousands of fair-goers pile in.' — grandstand = tribun utama penonton.",
+          "Para. 4: '...they are decorated with mosaics, sculptures, paintings...' — Mozaik, patung, dan lukisan dikategorikan secara umum sebagai jenis karya seni (different kinds of artwork).",
       },
       {
         id: "adv-r15-q6",
-        type: "fill-the-gap",
+        type: "multiple-choice",
         section: "part2",
         question:
-          "Q6. The crowd held their breath in _____ as riders struggled to stay on the backs of bucking broncos and raging bulls, then erupted into cheers when each rider succeeded.",
-        correctAnswer: "apprehension",
+          "Q6. The London Underground was first built because\n\nA. the underwater pedestrian tunnel had been damaged.\nB. a new method for digging tunnels had been developed.\nC. the city streets were too clogged for trains on the surface.\nD. the city wanted to rival the transportation system in Paris.",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "C",
         reason:
-          "Para. 7: 'the crowd cheer wildly or aah in apprehension' — apprehension = kecemasan/kekhawatiran saat menonton atraksi berbahaya.",
+          "Para. 2: '...horses and pedestrians had so clogged the streets of London that city government ruled that no railroads could enter the city except underground.' — Kondisi jalanan yang macet/penuh sesak membuat kereta permukaan dilarang masuk.",
       },
       {
         id: "adv-r15-q7",
-        type: "fill-the-gap",
+        type: "multiple-choice",
         section: "part2",
         question:
-          "Q7. During the opening ceremony, the men in the grandstand removed their _____ hats and stood to sing God Bless America as the flag-carrying girls circled the arena.",
-        correctAnswer: "stetson",
+          "Q7. The introduction of electric train engines allowed for\n\nA. deeper tunnels.\nB. more pedestrians.\nC. innovative doors and walls.\nD. more art showcases in the stations.",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "A",
         reason:
-          "Para. 6: 'the men take off their stetson hats, and everyone joins in the singing of God Bless America.' — stetson = topi koboi berbrim lebar.",
+          "Para. 3: 'By then, the tunnels could be deeper than the original ones because electric train engines had become available.' — Penggunaan mesin listrik menghilangkan kebutuhan pembuangan uap di dekat permukaan, sehingga terowongan bisa dibuat lebih dalam.",
       },
     ],
   },
@@ -3793,7 +3795,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
       {
         title: "Exercise Guide — Summary Completion Q1–Q7",
         points: [
-          "📋 Cara mengerjakan Summary Completion:",
+          "Cara mengerjakan Summary Completion:",
           "   1. Baca ringkasan secara keseluruhan terlebih dahulu untuk memahami konteks.",
           "   2. Identifikasi bagian kalimat yang kosong dan tentukan jenis kata yang diperlukan (noun/verb/adjective).",
           "   3. Pilih kata dari word bank yang paling sesuai secara makna DAN grammar.",

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import Link from 'next/link';
@@ -44,18 +44,18 @@ const DIFFICULTY_CONFIG: Record<
 > = {
   basic: {
     label: 'Basic',
-    color: 'text-green-600 dark:text-green-400',
-    bg: 'bg-green-500/10',
+    color: 'text-primary dark:text-primary',
+    bg: 'bg-primary/10',
   },
   intermediate: {
     label: 'Intermediate',
-    color: 'text-blue-600 dark:text-blue-400',
-    bg: 'bg-blue-500/10',
+    color: 'text-primary dark:text-primary',
+    bg: 'bg-primary/10',
   },
   advanced: {
     label: 'Advanced',
-    color: 'text-purple-600 dark:text-purple-400',
-    bg: 'bg-purple-500/10',
+    color: 'text-primary dark:text-primary',
+    bg: 'bg-primary/10',
   },
 };
 
@@ -286,8 +286,8 @@ export default function StoryReaderClient({ story }: Props) {
               className={cn(
                 'cursor-pointer rounded px-0.5 border-b-2 transition-all',
                 isActive
-                  ? 'bg-amber-300/50 border-amber-500 dark:bg-amber-500/35'
-                  : 'bg-amber-200/40 border-amber-400/70 hover:bg-amber-300/40 dark:bg-amber-500/15 dark:border-amber-500/50'
+                  ? 'bg-primary/50 border-primary/50 dark:bg-primary/35'
+                  : 'bg-primary/40 border-primary/70 hover:bg-primary/40 dark:bg-primary/15 dark:border-primary/50'
               )}
             >
               {seg.text}
@@ -317,7 +317,7 @@ export default function StoryReaderClient({ story }: Props) {
                   className={cn(
                     'cursor-pointer rounded px-0.5 transition-colors',
                     isUnknown
-                      ? 'text-red-500 dark:text-red-400 underline decoration-dotted underline-offset-2 hover:bg-red-500/10'
+                      ? 'text-primary dark:text-primary underline decoration-dotted underline-offset-2 hover:bg-primary/10'
                       : isActive
                         ? 'bg-primary/15 text-primary'
                         : 'hover:bg-primary/10 hover:text-primary'
@@ -353,12 +353,12 @@ export default function StoryReaderClient({ story }: Props) {
         </Link>
         <div className="flex items-center gap-2 flex-wrap">
           {unknownWords.size > 0 && (
-            <span className="text-xs bg-red-500/10 text-red-500 border border-red-400/30 px-2 py-1 rounded-full">
+            <span className="text-xs bg-primary/10 text-primary border border-primary/30 px-2 py-1 rounded-full">
               {unknownWords.size} kata merah
             </span>
           )}
           {markedPhrases.length > 0 && (
-            <span className="text-xs bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-400/30 px-2 py-1 rounded-full">
+            <span className="text-xs bg-primary/10 text-primary dark:text-primary border border-primary/30 px-2 py-1 rounded-full">
               {markedPhrases.length} frasa ditandai
             </span>
           )}
@@ -425,18 +425,18 @@ export default function StoryReaderClient({ story }: Props) {
 
       {/* Unknown words summary */}
       {unknownWords.size > 0 && (
-        <div className="bg-red-500/5 border border-red-400/30 rounded-xl overflow-hidden">
+        <div className="bg-primary/5 border border-primary/30 rounded-xl overflow-hidden">
           <button
             onClick={() => setShowSummary((s) => !s)}
             className="w-full flex items-center justify-between p-4 text-left"
           >
-            <p className="text-xs font-semibold text-red-500 uppercase tracking-wider">
+            <p className="text-xs font-semibold text-primary uppercase tracking-wider">
               Kata yang Belum Dikuasai ({unknownWords.size})
             </p>
             {showSummary ? (
-              <ChevronUp className="w-4 h-4 text-red-400" />
+              <ChevronUp className="w-4 h-4 text-primary" />
             ) : (
-              <ChevronDown className="w-4 h-4 text-red-400" />
+              <ChevronDown className="w-4 h-4 text-primary" />
             )}
           </button>
           {showSummary && (
@@ -444,17 +444,17 @@ export default function StoryReaderClient({ story }: Props) {
               {[...unknownWords].map((word) => (
                 <div
                   key={word}
-                  className="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-red-500/10 border border-red-400/30"
+                  className="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-primary/10 border border-primary/30"
                 >
                   <button
                     onClick={() => translate(word)}
-                    className="text-red-500 hover:underline font-medium"
+                    className="text-primary hover:underline font-medium"
                   >
                     {word}
                   </button>
                   <button
                     onClick={() => toggleUnknown(word)}
-                    className="text-red-400 hover:text-red-600 ml-0.5 leading-none"
+                    className="text-primary hover:text-primary ml-0.5 leading-none"
                     title="Hapus tanda"
                   >
                     ×
@@ -468,25 +468,25 @@ export default function StoryReaderClient({ story }: Props) {
 
       {/* Marked phrases summary */}
       {markedPhrases.length > 0 && (
-        <div className="bg-amber-500/5 border border-amber-400/30 rounded-xl p-4">
-          <p className="text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wider mb-3">
+        <div className="bg-primary/5 border border-primary/30 rounded-xl p-4">
+          <p className="text-xs font-semibold text-primary dark:text-primary uppercase tracking-wider mb-3">
             Frasa yang Ditandai ({markedPhrases.length})
           </p>
           <div className="flex flex-wrap gap-2">
             {markedPhrases.map((phrase) => (
               <div
                 key={phrase.id}
-                className="flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-400/30"
+                className="flex items-center gap-1 text-xs px-2.5 py-1.5 rounded-full bg-primary/10 border border-primary/30"
               >
                 <button
                   onClick={() => translate(phrase.text, true)}
-                  className="text-amber-700 dark:text-amber-300 hover:underline max-w-[200px] truncate"
+                  className="text-primary dark:text-primary hover:underline max-w-[200px] truncate"
                 >
                   {phrase.text}
                 </button>
                 <button
                   onClick={() => removePhraseMark(phrase.id)}
-                  className="text-amber-500 hover:text-amber-700 leading-none shrink-0"
+                  className="text-primary hover:text-primary leading-none shrink-0"
                   title="Hapus tanda"
                 >
                   ×
@@ -511,7 +511,7 @@ export default function StoryReaderClient({ story }: Props) {
         >
           <button
             onClick={handleMarkPhrase}
-            className="text-xs px-3 py-1.5 rounded-md bg-amber-500 text-white font-semibold hover:bg-amber-600 transition-colors whitespace-nowrap"
+            className="text-xs px-3 py-1.5 rounded-md bg-primary text-white font-semibold hover:bg-primary transition-colors whitespace-nowrap"
           >
             Tandai Frasa
           </button>
@@ -534,7 +534,7 @@ export default function StoryReaderClient({ story }: Props) {
           <div className="flex items-center justify-between px-3 py-2.5 border-b border-(--border)">
             <div className="flex items-center gap-2 min-w-0">
               {selectedPhrase ? (
-                <span className="shrink-0 text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400">
+                <span className="shrink-0 text-xs font-bold px-2 py-0.5 rounded-full bg-primary/15 text-primary dark:text-primary">
                   Frasa
                 </span>
               ) : (
@@ -564,8 +564,8 @@ export default function StoryReaderClient({ story }: Props) {
                   className={cn(
                     'p-1.5 rounded-lg transition-colors',
                     unknownWords.has(selectedWord)
-                      ? 'bg-red-500/10 text-red-500 hover:bg-red-500/20'
-                      : 'hover:bg-red-500/10 text-(--text-secondary) hover:text-red-500'
+                      ? 'bg-primary/10 text-primary hover:bg-primary/20'
+                      : 'hover:bg-primary/10 text-(--text-secondary) hover:text-primary'
                   )}
                   title={
                     unknownWords.has(selectedWord) ? 'Hapus tanda merah' : 'Tandai tidak tahu (merah)'
@@ -591,7 +591,7 @@ export default function StoryReaderClient({ story }: Props) {
                       );
                       if (p) removePhraseMark(p.id);
                     }}
-                    className="p-1.5 rounded-lg hover:bg-amber-500/10 text-(--text-secondary) hover:text-amber-600 transition-colors"
+                    className="p-1.5 rounded-lg hover:bg-primary/10 text-(--text-secondary) hover:text-primary transition-colors"
                     title="Hapus tanda frasa"
                   >
                     <BookmarkX className="w-3.5 h-3.5" />
@@ -637,7 +637,7 @@ export default function StoryReaderClient({ story }: Props) {
 
               {/* Error */}
               {translationError && !isTranslating && (
-                <p className="text-sm text-red-500">{translationError}</p>
+                <p className="text-sm text-primary">{translationError}</p>
               )}
 
               {/* Result */}
@@ -704,8 +704,8 @@ export default function StoryReaderClient({ story }: Props) {
                       className={cn(
                         'w-full text-xs py-2 rounded-lg font-semibold transition-colors mt-1',
                         unknownWords.has(selectedWord)
-                          ? 'bg-red-500/10 text-red-500 hover:bg-red-500/20 border border-red-400/30'
-                          : 'bg-(--bg-secondary) text-(--text-secondary) hover:bg-red-500/10 hover:text-red-500 border border-(--border)'
+                          ? 'bg-primary/10 text-primary hover:bg-primary/20 border border-primary/30'
+                          : 'bg-(--bg-secondary) text-(--text-secondary) hover:bg-primary/10 hover:text-primary border border-(--border)'
                       )}
                     >
                       {unknownWords.has(selectedWord)

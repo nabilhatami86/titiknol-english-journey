@@ -1,8 +1,8 @@
-'use client';
+﻿'use client';
 
-import { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Trophy, RotateCcw, CheckCircle2, XCircle, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowLeft, Trophy, RotateCcw, CheckCircle2, XCircle, Lightbulb, ChevronDown, ChevronUp, Shuffle, Box, Zap, Palette, Wind, User, MapPin, Link2, FileText } from 'lucide-react';
 import { shuffleArray, cn } from '@/lib/utils';
 import { useVocabStore } from '@/store/useVocabStore';
 
@@ -194,16 +194,16 @@ const allQuestions: GrammarQuestion[] = [
 
 // ════════════════════════════════════════════════════════════════
 
-const topics = [
-  { key: 'all', label: 'Semua (Campur)', icon: '🔀', desc: 'Semua 25 soal dari 8 topik + mixed' },
-  { key: 'Nouns', label: 'Nouns', icon: '📦', desc: 'Kata benda — countable, uncountable, plural' },
-  { key: 'Verbs', label: 'Verbs', icon: '⚡', desc: 'Kata kerja — tenses, irregular, linking' },
-  { key: 'Adjectives', label: 'Adjectives', icon: '🎨', desc: 'Kata sifat — comparative, suffix, order' },
-  { key: 'Adverbs', label: 'Adverbs', icon: '💨', desc: 'Kata keterangan — manner, frequency' },
-  { key: 'Pronouns', label: 'Pronouns', icon: '👤', desc: 'Kata ganti — possessive, reflexive, relative' },
-  { key: 'Prepositions', label: 'Prepositions', icon: '📍', desc: 'Kata depan — in/on/at, place, collocation' },
-  { key: 'Conjunctions', label: 'Conjunctions', icon: '🔗', desc: 'Kata hubung — coordinating, subordinating' },
-  { key: 'Articles', label: 'Articles', icon: '📰', desc: 'Kata sandang — a, an, the' },
+const topics: { key: string; label: string; Icon: React.ElementType; desc: string }[] = [
+  { key: 'all',          label: 'Semua (Campur)', Icon: Shuffle,  desc: 'Semua 25 soal dari 8 topik + mixed' },
+  { key: 'Nouns',        label: 'Nouns',          Icon: Box,      desc: 'Kata benda — countable, uncountable, plural' },
+  { key: 'Verbs',        label: 'Verbs',          Icon: Zap,      desc: 'Kata kerja — tenses, irregular, linking' },
+  { key: 'Adjectives',   label: 'Adjectives',     Icon: Palette,  desc: 'Kata sifat — comparative, suffix, order' },
+  { key: 'Adverbs',      label: 'Adverbs',        Icon: Wind,     desc: 'Kata keterangan — manner, frequency' },
+  { key: 'Pronouns',     label: 'Pronouns',       Icon: User,     desc: 'Kata ganti — possessive, reflexive, relative' },
+  { key: 'Prepositions', label: 'Prepositions',   Icon: MapPin,   desc: 'Kata depan — in/on/at, place, collocation' },
+  { key: 'Conjunctions', label: 'Conjunctions',   Icon: Link2,    desc: 'Kata hubung — coordinating, subordinating' },
+  { key: 'Articles',     label: 'Articles',       Icon: FileText, desc: 'Kata sandang — a, an, the' },
 ];
 
 export default function GrammarQuizPage() {
@@ -289,15 +289,15 @@ export default function GrammarQuizPage() {
   };
 
   const topicColors: Record<string, string> = {
-    Nouns: 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
-    Verbs: 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300',
-    Adjectives: 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300',
-    Adverbs: 'bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300',
-    Pronouns: 'bg-pink-100 text-pink-700 dark:bg-pink-950 dark:text-pink-300',
-    Prepositions: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-950 dark:text-cyan-300',
-    Conjunctions: 'bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300',
-    Articles: 'bg-teal-100 text-teal-700 dark:bg-teal-950 dark:text-teal-300',
-    Mixed: 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300',
+    Nouns:        'bg-primary/10 text-primary',
+    Verbs:        'bg-primary/10 text-primary',
+    Adjectives:   'bg-primary/10 text-primary',
+    Adverbs:      'bg-primary/10 text-primary',
+    Pronouns:     'bg-primary/10 text-primary',
+    Prepositions: 'bg-primary/10 text-primary',
+    Conjunctions: 'bg-primary/10 text-primary',
+    Articles:     'bg-primary/10 text-primary',
+    Mixed:        'bg-primary/10 text-primary',
   };
 
   // ── RESULTS VIEW ──
@@ -310,7 +310,7 @@ export default function GrammarQuizPage() {
 
         {/* Score Card */}
         <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-8 text-center">
-          <Trophy className={cn('w-16 h-16 mx-auto mb-4', percentage >= 70 ? 'text-amber-500' : 'text-(--text-muted)')} />
+          <Trophy className={cn('w-16 h-16 mx-auto mb-4', percentage >= 70 ? 'text-primary' : 'text-(--text-muted)')} />
           <h1 className="text-2xl font-bold text-(--text) mb-2">Grammar Quiz Selesai!</h1>
           <p className="text-5xl font-bold text-primary mb-1">{score} / {totalQuestions}</p>
           <p className="text-sm text-(--text-secondary) mb-4">{percentage}% benar</p>
@@ -318,7 +318,7 @@ export default function GrammarQuizPage() {
           {/* Score bar */}
           <div className="h-3 rounded-full bg-(--bg-secondary) overflow-hidden max-w-xs mx-auto mb-6">
             <div
-              className={cn('h-full rounded-full transition-all duration-500', percentage >= 70 ? 'bg-green-500' : percentage >= 40 ? 'bg-amber-500' : 'bg-red-500')}
+              className={cn('h-full rounded-full transition-all duration-500', percentage >= 70 ? 'bg-primary' : percentage >= 40 ? 'bg-primary/10' : 'bg-primary')}
               style={{ width: `${percentage}%` }}
             />
           </div>
@@ -333,8 +333,8 @@ export default function GrammarQuizPage() {
                   className={cn(
                     'w-9 h-9 rounded-lg flex items-center justify-center text-xs font-bold',
                     isCorrect
-                      ? 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300'
-                      : 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300'
+                      ? 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
+                      : 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
                   )}
                 >
                   {i + 1}
@@ -380,7 +380,7 @@ export default function GrammarQuizPage() {
               className="w-full flex items-center justify-between px-6 py-4 hover:bg-(--hover) transition-colors"
             >
               <span className="font-semibold text-(--text) flex items-center gap-2">
-                <XCircle className="w-5 h-5 text-red-500" />
+                <XCircle className="w-5 h-5 text-primary" />
                 Jawaban Salah ({wrongQuestions.length} soal)
               </span>
               {showDetails ? <ChevronUp className="w-5 h-5 text-(--text-muted)" /> : <ChevronDown className="w-5 h-5 text-(--text-muted)" />}
@@ -393,7 +393,7 @@ export default function GrammarQuizPage() {
                   return (
                     <div key={q.id} className="px-6 py-4 space-y-3">
                       <div className="flex items-start gap-3">
-                        <span className="bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-300 text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center shrink-0">
+                        <span className="bg-primary/10 dark:bg-primary text-primary dark:text-primary text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center shrink-0">
                           {questions.indexOf(q) + 1}
                         </span>
                         <div className="space-y-2 flex-1">
@@ -414,25 +414,25 @@ export default function GrammarQuizPage() {
                                   key={optIdx}
                                   className={cn(
                                     'flex items-center gap-2 px-3 py-2 rounded-lg text-sm',
-                                    isCorrectOpt && 'bg-green-50 dark:bg-green-950/50 border border-green-300 dark:border-green-800',
-                                    isYourAnswer && !isCorrectOpt && 'bg-red-50 dark:bg-red-950/50 border border-red-300 dark:border-red-800 line-through opacity-70',
+                                    isCorrectOpt && 'bg-primary/10 dark:bg-primary/50 border border-primary/30 dark:border-primary/50',
+                                    isYourAnswer && !isCorrectOpt && 'bg-primary/10 dark:bg-primary/50 border border-primary/30 dark:border-primary/50 line-through opacity-70',
                                     !isCorrectOpt && !isYourAnswer && 'opacity-40',
                                   )}
                                 >
                                   <span className="font-mono text-xs font-bold w-5">{letter}.</span>
-                                  <span className={cn(isCorrectOpt && 'font-semibold text-green-700 dark:text-green-300')}>
+                                  <span className={cn(isCorrectOpt && 'font-semibold text-primary dark:text-primary')}>
                                     {opt}
                                   </span>
-                                  {isCorrectOpt && <CheckCircle2 className="w-4 h-4 text-green-500 ml-auto shrink-0" />}
-                                  {isYourAnswer && !isCorrectOpt && <XCircle className="w-4 h-4 text-red-500 ml-auto shrink-0" />}
+                                  {isCorrectOpt && <CheckCircle2 className="w-4 h-4 text-primary ml-auto shrink-0" />}
+                                  {isYourAnswer && !isCorrectOpt && <XCircle className="w-4 h-4 text-primary ml-auto shrink-0" />}
                                 </div>
                               );
                             })}
                           </div>
 
-                          <div className="flex items-start gap-2 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg px-3 py-2">
-                            <Lightbulb className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
-                            <p className="text-xs text-amber-800 dark:text-amber-300 leading-relaxed">{q.reason}</p>
+                          <div className="flex items-start gap-2 bg-primary/5 border border-primary/20 rounded-lg px-3 py-2">
+                            <Lightbulb className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                            <p className="text-xs text-(--text-secondary) leading-relaxed">{q.reason}</p>
                           </div>
                         </div>
                       </div>
@@ -475,7 +475,9 @@ export default function GrammarQuizPage() {
                 )}
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">{t.icon}</span>
+                  <span className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <t.Icon className="w-5 h-5 text-primary" />
+                  </span>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       <h3 className="font-semibold text-(--text) group-hover:text-primary transition-colors">{t.label}</h3>

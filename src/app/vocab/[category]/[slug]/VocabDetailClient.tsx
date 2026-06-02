@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 import {
@@ -78,7 +78,7 @@ export function VocabDetailClient({ word, category }: Props) {
               className={cn(
                 'p-2 rounded-lg border transition-colors',
                 isFavorite
-                  ? 'bg-red-50 border-red-200 dark:bg-red-950 dark:border-red-800'
+                  ? 'bg-primary/10 border-primary/30 dark:bg-primary dark:border-primary/50'
                   : 'border-(--border) hover:bg-(--hover)'
               )}
               aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
@@ -86,7 +86,7 @@ export function VocabDetailClient({ word, category }: Props) {
               <Heart
                 className={cn(
                   'w-5 h-5',
-                  isFavorite ? 'fill-red-500 text-red-500' : 'text-(--text-muted)'
+                  isFavorite ? 'fill-primary text-primary' : 'text-(--text-muted)'
                 )}
               />
             </button>
@@ -95,7 +95,7 @@ export function VocabDetailClient({ word, category }: Props) {
               className={cn(
                 'p-2 rounded-lg border transition-colors',
                 isLearned
-                  ? 'bg-green-50 border-green-200 dark:bg-green-950 dark:border-green-800'
+                  ? 'bg-primary/10 border-primary/30 dark:bg-primary dark:border-primary/50'
                   : 'border-(--border) hover:bg-(--hover)'
               )}
               aria-label={isLearned ? 'Mark as not learned' : 'Mark as learned'}
@@ -161,7 +161,7 @@ export function VocabDetailClient({ word, category }: Props) {
                 {word.synonyms.map((s) => (
                   <span
                     key={s}
-                    className="px-2.5 py-1 bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300 rounded-lg text-sm"
+                    className="px-2.5 py-1 bg-primary/10 text-primary dark:bg-primary dark:text-primary rounded-lg text-sm"
                   >
                     {s}
                   </span>
@@ -178,7 +178,7 @@ export function VocabDetailClient({ word, category }: Props) {
                 {word.antonyms.map((a) => (
                   <span
                     key={a}
-                    className="px-2.5 py-1 bg-red-50 text-red-700 dark:bg-red-950 dark:text-red-300 rounded-lg text-sm"
+                    className="px-2.5 py-1 bg-primary/10 text-primary dark:bg-primary dark:text-primary rounded-lg text-sm"
                   >
                     {a}
                   </span>

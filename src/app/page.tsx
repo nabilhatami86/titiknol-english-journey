@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 import {
@@ -66,8 +66,8 @@ export default function Dashboard() {
       label: 'Favorites',
       value: favorites.length,
       icon: Heart,
-      color: 'text-red-500',
-      bg: 'bg-red-500/10',
+      color: 'text-primary',
+      bg: 'bg-primary/10',
     },
     {
       label: 'Quizzes Taken',
@@ -185,9 +185,9 @@ export default function Dashboard() {
 
       {/* Rekomendasi Topik Lemah */}
       {weakTopics.length > 0 && (
-        <div className="bg-(--bg-card) border border-amber-300 dark:border-amber-700 rounded-xl p-5">
+        <div className="bg-(--bg-card) border border-primary/30 dark:border-primary/50 rounded-xl p-5">
           <h2 className="text-lg font-semibold text-(--text) mb-1 flex items-center gap-2">
-            <AlertTriangle className="w-5 h-5 text-amber-500" />
+            <AlertTriangle className="w-5 h-5 text-primary" />
             Perlu Ditingkatkan
           </h2>
           <p className="text-sm text-(--text-secondary) mb-4">
@@ -204,13 +204,13 @@ export default function Dashboard() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1">
                       <span className="text-sm font-medium text-(--text)">{topic}</span>
-                      <span className={`text-xs font-semibold ${acc < 40 ? 'text-red-500' : 'text-amber-500'}`}>
+                      <span className="text-xs font-semibold text-primary">
                         {acc}%
                       </span>
                     </div>
                     <div className="h-1.5 bg-(--bg-secondary) rounded-full overflow-hidden">
                       <div
-                        className={`h-full rounded-full ${acc < 40 ? 'bg-red-500' : 'bg-amber-500'}`}
+                        className="h-full rounded-full bg-primary"
                         style={{ width: `${acc}%` }}
                       />
                     </div>

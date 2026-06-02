@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -26,14 +26,14 @@ import {
 // ─── Style maps ─────────────────────────────────────────────────────────────
 
 const PART_STYLE: Record<string, { bg: string; text: string; border: string }> = {
-  A: { bg: 'bg-indigo-50 dark:bg-indigo-950/30',  text: 'text-indigo-600',  border: 'border-indigo-200 dark:border-indigo-800'  },
-  B: { bg: 'bg-teal-50 dark:bg-teal-950/30',      text: 'text-teal-600',    border: 'border-teal-200 dark:border-teal-800'      },
-  C: { bg: 'bg-amber-50 dark:bg-amber-950/30',    text: 'text-amber-600',   border: 'border-amber-200 dark:border-amber-800'    },
+  A: { bg: 'bg-primary/10 dark:bg-primary/10/30',  text: 'text-primary',  border: 'border-primary/30 dark:border-primary/30'  },
+  B: { bg: 'bg-primary/10 dark:bg-primary/10/30',      text: 'text-primary',    border: 'border-primary/30 dark:border-primary/30'      },
+  C: { bg: 'bg-primary/10 dark:bg-primary/10',    text: 'text-primary',   border: 'border-primary/30 dark:border-primary/30'    },
 };
 
 const TFN_STYLE: Record<string, { active: string; idle: string }> = {
-  True:      { active: 'border-green-500 bg-green-50 dark:bg-green-950/30 text-green-700 dark:text-green-300',  idle: 'border-(--border) hover:border-green-400 hover:bg-green-50/60 dark:hover:bg-green-950/20' },
-  False:     { active: 'border-red-400   bg-red-50 dark:bg-red-950/30 text-red-700 dark:text-red-300',          idle: 'border-(--border) hover:border-red-400   hover:bg-red-50/60   dark:hover:bg-red-950/20'   },
+  True:      { active: 'border-primary/50 bg-primary/10 dark:bg-primary/30 text-primary dark:text-primary',  idle: 'border-(--border) hover:border-primary/30 hover:bg-primary/60 dark:hover:bg-primary/20' },
+  False:     { active: 'border-primary/30   bg-primary/10 dark:bg-primary/30 text-primary dark:text-primary',          idle: 'border-(--border) hover:border-primary/30   hover:bg-primary/60   dark:hover:bg-primary/20'   },
   'Not Given': { active: 'border-gray-500  bg-gray-100 dark:bg-gray-800/40 text-gray-700 dark:text-gray-300',  idle: 'border-(--border) hover:border-gray-400  hover:bg-gray-100/60 dark:hover:bg-gray-800/20'  },
 };
 
@@ -67,8 +67,8 @@ function PostTestReadingContent() {
   const percent       = answeredCount > 0 ? Math.round((scoreCount / answeredCount) * 100) : 0;
   const allDone       = remaining === 0;
 
-  const scoreColor    = percent >= 80 ? 'text-green-600' : percent >= 60 ? 'text-amber-500' : 'text-red-500';
-  const scoreBarColor = percent >= 80 ? 'bg-green-500'   : percent >= 60 ? 'bg-amber-500'   : 'bg-red-500';
+  const scoreColor    = percent >= 80 ? 'text-primary' : percent >= 60 ? 'text-primary' : 'text-primary';
+  const scoreBarColor = percent >= 80 ? 'bg-primary'   : percent >= 60 ? 'bg-primary/10'   : 'bg-primary';
 
   // Part A: T/F/NG — click option label
   const handleTFN = (id: string, optionIndex: number, correctIndex: number) => {
@@ -139,8 +139,8 @@ function PostTestReadingContent() {
       {/* Header card */}
       <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-5 space-y-3">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0">
-            <FileText className="w-5 h-5 text-emerald-600" />
+          <div className="w-10 h-10 rounded-xl bg-primary/10/10 flex items-center justify-center shrink-0">
+            <FileText className="w-5 h-5 text-primary" />
           </div>
           <div className="flex-1">
             <h1 className="text-lg font-bold text-(--text)">Post Test — Reading</h1>
@@ -163,7 +163,7 @@ function PostTestReadingContent() {
           <div className="rounded-xl border border-(--border) bg-(--bg-secondary) p-3 space-y-2">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Trophy className="w-4 h-4 text-amber-500" />
+                <Trophy className="w-4 h-4 text-primary" />
                 <span className="text-sm font-bold text-(--text)">
                   {allDone ? 'Sesi Selesai!' : 'Skor Sementara'}
                 </span>
@@ -174,8 +174,8 @@ function PostTestReadingContent() {
               <div className={cn('h-full rounded-full transition-all duration-500', scoreBarColor)} style={{ width: `${percent}%` }} />
             </div>
             <div className="flex justify-between text-xs text-(--text-secondary)">
-              <span>Benar: <span className="font-semibold text-green-600">{scoreCount}</span></span>
-              <span>Salah: <span className="font-semibold text-red-500">{answeredCount - scoreCount}</span></span>
+              <span>Benar: <span className="font-semibold text-primary">{scoreCount}</span></span>
+              <span>Salah: <span className="font-semibold text-primary">{answeredCount - scoreCount}</span></span>
               <span>Sisa: <span className="font-semibold text-(--text)">{remaining}</span></span>
             </div>
             {allDone && (
@@ -198,7 +198,7 @@ function PostTestReadingContent() {
           className="w-full flex items-center justify-between gap-3 px-5 py-4 text-left hover:bg-(--hover) transition-colors"
         >
           <div className="flex items-center gap-3">
-            <BookOpen className="w-5 h-5 text-emerald-600 shrink-0" />
+            <BookOpen className="w-5 h-5 text-primary shrink-0" />
             <div>
               <p className="text-sm font-bold text-(--text)">Reading Passage</p>
               <p className="text-xs text-(--text-muted) mt-0.5">{readingPassage.title}</p>
@@ -252,8 +252,8 @@ function PostTestReadingContent() {
                   key={q.id}
                   className={cn(
                     'bg-(--bg-card) border rounded-2xl overflow-hidden transition-all duration-200',
-                    isRight  && 'border-green-300 dark:border-green-800',
-                    isWrong  && 'border-red-300 dark:border-red-800',
+                    isRight  && 'border-primary/30 dark:border-primary/50',
+                    isWrong  && 'border-primary/30 dark:border-primary/50',
                     !isAnswered && 'border-(--border)',
                   )}
                 >
@@ -262,8 +262,8 @@ function PostTestReadingContent() {
                     <span
                       className={cn(
                         'shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold mt-0.5',
-                        isRight  && 'bg-green-500 text-white',
-                        isWrong  && 'bg-red-500 text-white',
+                        isRight  && 'bg-primary text-white',
+                        isWrong  && 'bg-primary text-white',
                         !isAnswered && 'bg-primary/10 text-primary',
                       )}
                     >
@@ -275,7 +275,7 @@ function PostTestReadingContent() {
                       </span>
                       <p className="font-medium text-(--text) text-sm leading-relaxed">{q.question}</p>
                       {q.paraphraseNote && (
-                        <p className="text-[11px] text-indigo-500 dark:text-indigo-400 italic bg-indigo-50/60 dark:bg-indigo-950/20 rounded-lg px-2.5 py-1.5 border border-indigo-100 dark:border-indigo-900">
+                        <p className="text-[11px] text-primary dark:text-primary italic bg-primary/10/60 dark:bg-primary/10/20 rounded-lg px-2.5 py-1.5 border border-primary/30 dark:border-primary/30">
                           {q.paraphraseNote}
                         </p>
                       )}
@@ -299,7 +299,7 @@ function PostTestReadingContent() {
                               'flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-semibold transition-all',
                               !isAnswered && style.idle,
                               isAnswered && isCorrectOpt && style.active,
-                              isAnswered && isSelected && !isCorrectOpt && 'border-red-400 bg-red-50 dark:bg-red-950/30 text-red-700 dark:text-red-300 line-through opacity-70',
+                              isAnswered && isSelected && !isCorrectOpt && 'border-primary/30 bg-primary/10 dark:bg-primary/30 text-primary dark:text-primary line-through opacity-70',
                               isAnswered && !isSelected && !isCorrectOpt && 'border-(--border) opacity-30',
                             )}
                           >
@@ -327,8 +327,8 @@ function PostTestReadingContent() {
                             className={cn(
                               'w-full text-left rounded-xl border p-3 text-sm transition-all flex items-center gap-3',
                               !isAnswered && 'border-(--border) hover:border-primary/40 hover:bg-primary/5',
-                              isAnswered && isCorrectOpt && 'border-green-500 bg-green-50 dark:bg-green-950/30',
-                              isAnswered && isSelected && !isCorrectOpt && 'border-red-400 bg-red-50 dark:bg-red-950/30',
+                              isAnswered && isCorrectOpt && 'border-primary/50 bg-primary/10 dark:bg-primary/30',
+                              isAnswered && isSelected && !isCorrectOpt && 'border-primary/30 bg-primary/10 dark:bg-primary/30',
                               isAnswered && !isSelected && !isCorrectOpt && 'border-(--border) opacity-40',
                             )}
                           >
@@ -336,16 +336,16 @@ function PostTestReadingContent() {
                               className={cn(
                                 'shrink-0 w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold',
                                 !isAnswered && 'bg-(--bg-secondary) text-(--text-muted)',
-                                isAnswered && isCorrectOpt && 'bg-green-500 text-white',
-                                isAnswered && isSelected && !isCorrectOpt && 'bg-red-400 text-white',
+                                isAnswered && isCorrectOpt && 'bg-primary text-white',
+                                isAnswered && isSelected && !isCorrectOpt && 'bg-primary/30 text-white',
                                 isAnswered && !isSelected && !isCorrectOpt && 'bg-(--bg-secondary) text-(--text-muted)',
                               )}
                             >
                               {MCQ_LABELS[i]}
                             </span>
                             <span className="flex-1">{opt}</span>
-                            {isAnswered && isCorrectOpt && <CheckCircle2 className="shrink-0 w-4 h-4 text-green-600" />}
-                            {isAnswered && isSelected && !isCorrectOpt && <XCircle className="shrink-0 w-4 h-4 text-red-500" />}
+                            {isAnswered && isCorrectOpt && <CheckCircle2 className="shrink-0 w-4 h-4 text-primary" />}
+                            {isAnswered && isSelected && !isCorrectOpt && <XCircle className="shrink-0 w-4 h-4 text-primary" />}
                           </button>
                         );
                       })}
@@ -366,8 +366,8 @@ function PostTestReadingContent() {
                           className={cn(
                             'flex-1 rounded-xl border px-3 py-2.5 text-sm bg-(--bg-card) text-(--text) outline-none transition-all placeholder:text-(--text-muted)',
                             !isAnswered && 'border-(--border) focus:border-primary',
-                            isAnswered && isRight  && 'border-green-400 bg-green-50 dark:bg-green-950/20',
-                            isAnswered && isWrong  && 'border-red-400 bg-red-50 dark:bg-red-950/20',
+                            isAnswered && isRight  && 'border-primary/30 bg-primary/10 dark:bg-primary/20',
+                            isAnswered && isWrong  && 'border-primary/30 bg-primary/10 dark:bg-primary/20',
                           )}
                         />
                         {!isAnswered && (
@@ -395,7 +395,7 @@ function PostTestReadingContent() {
                     <div className="mx-5 mb-4 space-y-2 text-xs">
                       <div className={cn(
                         'flex items-center gap-2 rounded-xl px-4 py-2.5 font-semibold',
-                        isRight ? 'bg-green-500/15 text-green-700 dark:text-green-400' : 'bg-red-500/15 text-red-600 dark:text-red-400',
+                        isRight ? 'bg-primary/15 text-primary dark:text-primary' : 'bg-primary/15 text-primary dark:text-primary',
                       )}>
                         {isRight
                           ? <><CheckCircle2 className="w-4 h-4 shrink-0" /> Benar! Jawaban kamu tepat.</>
@@ -404,11 +404,11 @@ function PostTestReadingContent() {
                       </div>
 
                       {isWrong && (
-                        <div className="rounded-xl border border-green-300 dark:border-green-700 bg-green-50 dark:bg-green-950/30 px-4 py-3 space-y-1">
-                          <p className="text-[10px] font-bold uppercase tracking-wider text-green-700 dark:text-green-500 flex items-center gap-1">
+                        <div className="rounded-xl border border-primary/30 dark:border-primary/50 bg-primary/10 dark:bg-primary/30 px-4 py-3 space-y-1">
+                          <p className="text-[10px] font-bold uppercase tracking-wider text-primary dark:text-primary flex items-center gap-1">
                             <CheckCircle2 className="w-3 h-3" /> Jawaban yang benar
                           </p>
-                          <p className="font-semibold text-green-700 dark:text-green-300 text-sm">
+                          <p className="font-semibold text-primary dark:text-primary text-sm">
                             {isTFN
                               ? q.options[q.correctIndex]
                               : isText
@@ -420,9 +420,9 @@ function PostTestReadingContent() {
                       )}
 
                       {isRight && (
-                        <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/20 px-4 py-2.5 flex items-center gap-2">
-                          <BookOpen className="w-3.5 h-3.5 text-green-600 shrink-0" />
-                          <p className="text-green-700 dark:text-green-400">
+                        <div className="rounded-xl border border-primary/30 dark:border-primary/50 bg-primary/10 dark:bg-primary/20 px-4 py-2.5 flex items-center gap-2">
+                          <BookOpen className="w-3.5 h-3.5 text-primary shrink-0" />
+                          <p className="text-primary dark:text-primary">
                             Jawaban:{' '}
                             <span className="font-semibold">
                               {isTFN
@@ -437,7 +437,7 @@ function PostTestReadingContent() {
                       )}
 
                       <div className="flex gap-3 pl-1">
-                        <Lightbulb className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
+                        <Lightbulb className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                         <p className="text-(--text-secondary) leading-relaxed">{q.reason}</p>
                       </div>
                     </div>
@@ -454,7 +454,7 @@ function PostTestReadingContent() {
         <div className="flex items-center gap-3 bg-(--bg-card) border border-(--border) rounded-2xl p-3 shadow-lg">
           <div className="flex-1">
             {allDone ? (
-              <p className="text-xs text-green-600 font-medium">Semua soal selesai! Skor: {scoreCount}/{total}</p>
+              <p className="text-xs text-primary font-medium">Semua soal selesai! Skor: {scoreCount}/{total}</p>
             ) : (
               <p className="text-xs text-(--text-secondary)">
                 Sisa <span className="font-semibold text-(--text)">{remaining} soal</span> — jawab langsung di atas

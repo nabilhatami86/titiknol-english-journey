@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
@@ -19,9 +19,9 @@ import { pickKisiKisiSession, postTestGrammarPool } from '@/data/randomPostTestG
 const LABELS = ['A', 'B', 'C', 'D'];
 
 const PART_STYLE: Record<string, { bg: string; text: string; border: string }> = {
-  I:   { bg: 'bg-indigo-50 dark:bg-indigo-950/30',  text: 'text-indigo-600',  border: 'border-indigo-200 dark:border-indigo-800'  },
-  II:  { bg: 'bg-teal-50 dark:bg-teal-950/30',      text: 'text-teal-600',    border: 'border-teal-200 dark:border-teal-800'      },
-  III: { bg: 'bg-amber-50 dark:bg-amber-950/30',    text: 'text-amber-600',   border: 'border-amber-200 dark:border-amber-800'    },
+  I:   { bg: 'bg-primary/10 dark:bg-primary/10/30',  text: 'text-primary',  border: 'border-primary/30 dark:border-primary/30'  },
+  II:  { bg: 'bg-primary/10 dark:bg-primary/10/30',      text: 'text-primary',    border: 'border-primary/30 dark:border-primary/30'      },
+  III: { bg: 'bg-primary/10 dark:bg-primary/10',    text: 'text-primary',   border: 'border-primary/30 dark:border-primary/30'    },
 };
 
 function normalize(s: string) {
@@ -60,8 +60,8 @@ export default function KisiKisiGrammarPage() {
 
   const scoreCount = Object.values(results).filter(Boolean).length;
   const percent = isSubmitted && total > 0 ? Math.round((scoreCount / total) * 100) : 0;
-  const scoreColor = percent >= 80 ? 'text-green-600' : percent >= 60 ? 'text-amber-500' : 'text-red-500';
-  const scoreBarColor = percent >= 80 ? 'bg-green-500' : percent >= 60 ? 'bg-amber-500' : 'bg-red-500';
+  const scoreColor = percent >= 80 ? 'text-primary' : percent >= 60 ? 'text-primary' : 'text-primary';
+  const scoreBarColor = percent >= 80 ? 'bg-primary' : percent >= 60 ? 'bg-primary/10' : 'bg-primary';
 
   const newSession = () => {
     setSelectedMCQ({});
@@ -99,8 +99,8 @@ export default function KisiKisiGrammarPage() {
       {/* Header card */}
       <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-5 space-y-3">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center shrink-0">
-            <FileText className="w-5 h-5 text-violet-600" />
+          <div className="w-10 h-10 rounded-xl bg-primary/10/10 flex items-center justify-center shrink-0">
+            <FileText className="w-5 h-5 text-primary" />
           </div>
           <div className="flex-1">
             <h1 className="text-lg font-bold text-(--text)">Kisi-Kisi Grammar — Post Test</h1>
@@ -127,7 +127,7 @@ export default function KisiKisiGrammarPage() {
           <div className="rounded-xl border border-(--border) bg-(--bg-secondary) p-3 space-y-2">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Trophy className="w-4 h-4 text-amber-500" />
+                <Trophy className="w-4 h-4 text-primary" />
                 <span className="text-sm font-bold text-(--text)">Hasil Post Test</span>
               </div>
               <span className={cn('text-xl font-bold', scoreColor)}>{percent}%</span>
@@ -136,8 +136,8 @@ export default function KisiKisiGrammarPage() {
               <div className={cn('h-full rounded-full transition-all duration-500', scoreBarColor)} style={{ width: `${percent}%` }} />
             </div>
             <div className="flex justify-between text-xs text-(--text-secondary)">
-              <span>Benar: <span className="font-semibold text-green-600">{scoreCount}</span></span>
-              <span>Salah: <span className="font-semibold text-red-500">{total - scoreCount}</span></span>
+              <span>Benar: <span className="font-semibold text-primary">{scoreCount}</span></span>
+              <span>Salah: <span className="font-semibold text-primary">{total - scoreCount}</span></span>
               <span>Total: <span className="font-semibold text-(--text)">{total}</span></span>
             </div>
             <button
@@ -166,8 +166,8 @@ export default function KisiKisiGrammarPage() {
               key={`${sessionKey}-${q.id}`}
               className={cn(
                 'bg-(--bg-card) border rounded-2xl overflow-hidden transition-all duration-200',
-                isRight && 'border-green-300 dark:border-green-800',
-                isWrong && 'border-red-300 dark:border-red-800',
+                isRight && 'border-primary/30 dark:border-primary/50',
+                isWrong && 'border-primary/30 dark:border-primary/50',
                 !isAnswered && 'border-(--border)',
               )}
             >
@@ -176,8 +176,8 @@ export default function KisiKisiGrammarPage() {
                 <span
                   className={cn(
                     'shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold mt-0.5',
-                    isRight && 'bg-green-500 text-white',
-                    isWrong && 'bg-red-500 text-white',
+                    isRight && 'bg-primary text-white',
+                    isWrong && 'bg-primary text-white',
                     !isAnswered && 'bg-primary/10 text-primary',
                   )}
                 >
@@ -210,8 +210,8 @@ export default function KisiKisiGrammarPage() {
                           'w-full text-left rounded-xl border p-3 text-sm transition-all flex items-center gap-3',
                           !isSubmitted && isSelected && 'border-primary bg-primary/10 text-primary',
                           !isSubmitted && !isSelected && 'border-(--border) hover:border-primary/40 hover:bg-primary/5',
-                          isSubmitted && isCorrectOpt && 'border-green-500 bg-green-50 dark:bg-green-950/30',
-                          isSubmitted && isSelected && !isCorrectOpt && 'border-red-400 bg-red-50 dark:bg-red-950/30',
+                          isSubmitted && isCorrectOpt && 'border-primary/50 bg-primary/10 dark:bg-primary/30',
+                          isSubmitted && isSelected && !isCorrectOpt && 'border-primary/30 bg-primary/10 dark:bg-primary/30',
                           isSubmitted && !isSelected && !isCorrectOpt && 'border-(--border) opacity-40',
                         )}
                       >
@@ -220,16 +220,16 @@ export default function KisiKisiGrammarPage() {
                             'shrink-0 w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold',
                             !isSubmitted && isSelected && 'bg-primary text-white',
                             !isSubmitted && !isSelected && 'bg-(--bg-secondary) text-(--text-muted)',
-                            isSubmitted && isCorrectOpt && 'bg-green-500 text-white',
-                            isSubmitted && isSelected && !isCorrectOpt && 'bg-red-400 text-white',
+                            isSubmitted && isCorrectOpt && 'bg-primary text-white',
+                            isSubmitted && isSelected && !isCorrectOpt && 'bg-primary/30 text-white',
                             isSubmitted && !isSelected && !isCorrectOpt && 'bg-(--bg-secondary) text-(--text-muted)',
                           )}
                         >
                           {LABELS[i]}
                         </span>
                         <span className="flex-1">{opt}</span>
-                        {isSubmitted && isCorrectOpt && <CheckCircle2 className="shrink-0 w-4 h-4 text-green-600" />}
-                        {isSubmitted && isSelected && !isCorrectOpt && <XCircle className="shrink-0 w-4 h-4 text-red-500" />}
+                        {isSubmitted && isCorrectOpt && <CheckCircle2 className="shrink-0 w-4 h-4 text-primary" />}
+                        {isSubmitted && isSelected && !isCorrectOpt && <XCircle className="shrink-0 w-4 h-4 text-primary" />}
                       </button>
                     );
                   })}
@@ -249,8 +249,8 @@ export default function KisiKisiGrammarPage() {
                       className={cn(
                         'flex-1 rounded-xl border px-3 py-2.5 text-sm bg-(--bg-card) text-(--text) outline-none transition-all placeholder:text-(--text-muted)',
                         !isSubmitted && 'border-(--border) focus:border-primary',
-                        isSubmitted && isRight && 'border-green-400 bg-green-50 dark:bg-green-950/20',
-                        isSubmitted && isWrong && 'border-red-400 bg-red-50 dark:bg-red-950/20',
+                        isSubmitted && isRight && 'border-primary/30 bg-primary/10 dark:bg-primary/20',
+                        isSubmitted && isWrong && 'border-primary/30 bg-primary/10 dark:bg-primary/20',
                       )}
                     />
                   </div>
@@ -264,8 +264,8 @@ export default function KisiKisiGrammarPage() {
                   <div className={cn(
                     'flex items-center gap-2 rounded-xl px-4 py-2.5 font-semibold',
                     isRight
-                      ? 'bg-green-500/15 text-green-700 dark:text-green-400'
-                      : 'bg-red-500/15 text-red-600 dark:text-red-400',
+                      ? 'bg-primary/15 text-primary dark:text-primary'
+                      : 'bg-primary/15 text-primary dark:text-primary',
                   )}>
                     {isRight
                       ? <><CheckCircle2 className="w-4 h-4 shrink-0" /> Benar! Pilihan kamu tepat.</>
@@ -275,11 +275,11 @@ export default function KisiKisiGrammarPage() {
 
                   {/* Correct answer box (only shown if wrong) */}
                   {isWrong && (
-                    <div className="rounded-xl border border-green-300 dark:border-green-700 bg-green-50 dark:bg-green-950/30 px-4 py-3 space-y-1">
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-green-700 dark:text-green-500 flex items-center gap-1">
+                    <div className="rounded-xl border border-primary/30 dark:border-primary/50 bg-primary/10 dark:bg-primary/30 px-4 py-3 space-y-1">
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-primary dark:text-primary flex items-center gap-1">
                         <CheckCircle2 className="w-3 h-3" /> Jawaban yang benar
                       </p>
-                      <p className="font-semibold text-green-700 dark:text-green-300 text-sm">
+                      <p className="font-semibold text-primary dark:text-primary text-sm">
                         {q.options[q.correctIndex]}
                       </p>
                     </div>
@@ -287,11 +287,11 @@ export default function KisiKisiGrammarPage() {
 
                   {/* What user picked (Part I & II, wrong) */}
                   {isWrong && !isText && (
-                    <div className="rounded-xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/20 px-4 py-3 space-y-1">
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-red-600 dark:text-red-400 flex items-center gap-1">
+                    <div className="rounded-xl border border-primary/30 dark:border-primary/50 bg-primary/10 dark:bg-primary/20 px-4 py-3 space-y-1">
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-primary dark:text-primary flex items-center gap-1">
                         <XCircle className="w-3 h-3" /> Pilihan kamu
                       </p>
-                      <p className="text-red-600 dark:text-red-400 text-sm line-through">
+                      <p className="text-primary dark:text-primary text-sm line-through">
                         {userMCQ !== undefined ? q.options[userMCQ] : '(tidak dijawab)'}
                       </p>
                     </div>
@@ -299,11 +299,11 @@ export default function KisiKisiGrammarPage() {
 
                   {/* What user typed (Part III, wrong) */}
                   {isWrong && isText && (
-                    <div className="rounded-xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/20 px-4 py-3 space-y-1">
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-red-600 dark:text-red-400 flex items-center gap-1">
+                    <div className="rounded-xl border border-primary/30 dark:border-primary/50 bg-primary/10 dark:bg-primary/20 px-4 py-3 space-y-1">
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-primary dark:text-primary flex items-center gap-1">
                         <XCircle className="w-3 h-3" /> Jawaban kamu
                       </p>
-                      <p className="text-red-600 dark:text-red-400 text-sm italic">
+                      <p className="text-primary dark:text-primary text-sm italic">
                         {(textInputs[q.id] ?? '').trim() ? `"${textInputs[q.id]}"` : '(tidak dijawab)'}
                       </p>
                     </div>
@@ -312,16 +312,16 @@ export default function KisiKisiGrammarPage() {
                   {/* Explanation */}
                   <div className="flex gap-3 pl-1">
                     <div className="shrink-0 mt-1">
-                      <Lightbulb className="w-4 h-4 text-amber-500" />
+                      <Lightbulb className="w-4 h-4 text-primary" />
                     </div>
                     <p className="text-(--text-secondary) leading-relaxed">{q.reason}</p>
                   </div>
 
                   {/* Correct answer confirmation (if right) */}
                   {isRight && (
-                    <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/20 px-4 py-2.5 flex items-center gap-2">
-                      <BookOpen className="w-3.5 h-3.5 text-green-600 shrink-0" />
-                      <p className="text-green-700 dark:text-green-400">
+                    <div className="rounded-xl border border-primary/30 dark:border-primary/50 bg-primary/10 dark:bg-primary/20 px-4 py-2.5 flex items-center gap-2">
+                      <BookOpen className="w-3.5 h-3.5 text-primary shrink-0" />
+                      <p className="text-primary dark:text-primary">
                         Jawaban: <span className="font-semibold">{q.options[q.correctIndex]}</span>
                       </p>
                     </div>
@@ -338,7 +338,7 @@ export default function KisiKisiGrammarPage() {
         <div className="flex items-center gap-3 bg-(--bg-card) border border-(--border) rounded-2xl p-3 shadow-lg">
           <div className="flex-1">
             {isSubmitted ? (
-              <p className="text-xs text-green-600 font-medium">Selesai! Lihat hasil di atas.</p>
+              <p className="text-xs text-primary font-medium">Selesai! Lihat hasil di atas.</p>
             ) : (
               <p className="text-xs text-(--text-secondary)">
                 Dijawab: <span className="font-semibold text-(--text)">{answeredCount}/{total}</span> — submit setelah semua selesai

@@ -1,4 +1,4 @@
-import type { ModuleLesson } from "@/types/module";
+﻿import type { ModuleLesson } from "@/types/module";
 
 const basicSpeakingLessons: ModuleLesson[] = [
   {

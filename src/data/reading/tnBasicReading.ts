@@ -1,4 +1,4 @@
-import type { ModuleLesson } from "@/types/module";
+﻿import type { ModuleLesson } from "@/types/module";
 
 const basicReadingLessons: ModuleLesson[] = [
   {
@@ -363,8 +363,8 @@ const basicReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: TRUE / FALSE / NOT GIVEN",
         points: [
-          "⚡ TRUE/FALSE/NOT GIVEN → digunakan untuk teks faktual & science.",
-          "⚡ YES/NO/NOT GIVEN → digunakan untuk teks opini (History, Education, Psychology).",
+          "TRUE/FALSE/NOT GIVEN → digunakan untuk teks faktual & science.",
+          "YES/NO/NOT GIVEN → digunakan untuk teks opini (History, Education, Psychology).",
           "✅ TRUE — Statement AGREE 100% dengan passage (tidak boleh kurang dari 100%). Meskipun katanya beda, kalau maksudnya SAMA (same meaning) → tetap TRUE.",
           "❌ FALSE — Statement DISAGREE / OPPOSITE dengan passage (bertentangan/berlawanan).",
           "❓ NOT GIVEN — Informasi TIDAK DISEBUTKAN di passage. Ciri-ciri: tidak disebut sama sekali (fully/partially), terlalu spesifik, tidak bisa disimpulkan true/false, tidak cukup informasi.",

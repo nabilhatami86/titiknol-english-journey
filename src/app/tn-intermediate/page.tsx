@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import {
   BookOpenText, Mic2, PenLine, Headphones,
@@ -20,11 +20,11 @@ const trackIcons = {
 } as const;
 
 const trackColors = {
-  reading:   'from-blue-500/10  to-blue-500/5   border-blue-400/40   text-blue-600',
-  speaking:  'from-green-500/10 to-green-500/5  border-green-400/40  text-green-600',
-  grammar:   'from-violet-500/10 to-violet-500/5 border-violet-400/40 text-violet-600',
-  listening: 'from-amber-500/10 to-amber-500/5  border-amber-400/40  text-amber-600',
-  writing:   'from-rose-500/10  to-rose-500/5   border-rose-400/40   text-rose-600',
+  reading:   'from-primary/20/10  to-primary/5/5   border-primary/40   text-primary',
+  speaking:  'from-primary/20/10 to-primary/5/5  border-primary/40  text-primary',
+  grammar:   'from-primary/20/10 to-primary/5/5 border-primary/30/40 text-primary',
+  listening: 'from-primary/20/10 to-primary/5/5  border-primary/30/40  text-primary',
+  writing:   'from-primary/20/10  to-primary/5/5   border-primary/30/40   text-primary',
 } as const;
 
 export default function TNIntermediatePage() {

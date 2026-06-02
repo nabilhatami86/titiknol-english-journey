@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useMemo, useCallback } from 'react';
 import Link from 'next/link';
@@ -88,8 +88,8 @@ export default function QuizPage() {
                 className={cn(
                   'w-8 h-8 rounded-lg flex items-center justify-center text-xs font-medium',
                   correct
-                    ? 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300'
-                    : 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300'
+                    ? 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
+                    : 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
                 )}
               >
                 {i + 1}
@@ -160,21 +160,21 @@ export default function QuizPage() {
                 className={cn(
                   'w-full text-left p-4 rounded-xl border text-sm transition-all',
                   !showResult && 'border-(--border) hover:border-primary/50 hover:bg-(--hover)',
-                  showResult && isCorrect && 'border-green-500 bg-green-50 dark:bg-green-950',
-                  showResult && isSelected && !isCorrect && 'border-red-500 bg-red-50 dark:bg-red-950',
+                  showResult && isCorrect && 'border-primary/50 bg-primary/10 dark:bg-primary',
+                  showResult && isSelected && !isCorrect && 'border-primary/50 bg-primary/10 dark:bg-primary',
                   showResult && !isSelected && !isCorrect && 'border-(--border) opacity-50'
                 )}
               >
                 <div className="flex items-center justify-between">
                   <span className={cn(
                     'text-(--text)',
-                    showResult && isCorrect && 'text-green-700 dark:text-green-300 font-medium',
-                    showResult && isSelected && !isCorrect && 'text-red-700 dark:text-red-300'
+                    showResult && isCorrect && 'text-primary dark:text-primary font-medium',
+                    showResult && isSelected && !isCorrect && 'text-primary dark:text-primary'
                   )}>
                     {option}
                   </span>
-                  {showResult && isCorrect && <CheckCircle className="w-5 h-5 text-green-500" />}
-                  {showResult && isSelected && !isCorrect && <XCircle className="w-5 h-5 text-red-500" />}
+                  {showResult && isCorrect && <CheckCircle className="w-5 h-5 text-primary" />}
+                  {showResult && isSelected && !isCorrect && <XCircle className="w-5 h-5 text-primary" />}
                 </div>
               </button>
             );

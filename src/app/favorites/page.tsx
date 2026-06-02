@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { Heart } from 'lucide-react';
 import { vocabulary } from '@/data/vocabulary';
@@ -15,7 +15,7 @@ export default function FavoritesPage() {
     <div className="p-4 lg:p-6 space-y-6 animate-fade-in">
       <div>
         <h1 className="text-2xl font-bold text-(--text) flex items-center gap-2">
-          <Heart className="w-6 h-6 text-red-500" />
+          <Heart className="w-6 h-6 text-primary" />
           Favorites
         </h1>
         <p className="text-sm text-(--text-secondary) mt-1">

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
@@ -72,9 +72,9 @@ export default function LatihanAcakPage() {
   };
 
   const scoreColor =
-    percent >= 80 ? "text-green-600" : percent >= 60 ? "text-amber-500" : "text-red-500";
+    percent >= 80 ? "text-primary" : percent >= 60 ? "text-primary" : "text-primary";
   const scoreBarColor =
-    percent >= 80 ? "bg-green-500" : percent >= 60 ? "bg-amber-500" : "bg-red-500";
+    percent >= 80 ? "bg-primary" : percent >= 60 ? "bg-primary/10" : "bg-primary";
 
   return (
     <div className="p-4 lg:p-6 max-w-3xl mx-auto space-y-5 animate-fade-in">
@@ -132,7 +132,7 @@ export default function LatihanAcakPage() {
           <div className="rounded-xl border border-(--border) bg-(--bg-secondary) p-4 space-y-3">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Trophy className="w-5 h-5 text-amber-500" />
+                <Trophy className="w-5 h-5 text-primary" />
                 <span className="font-bold text-(--text)">Hasil Sesi ini</span>
               </div>
               <span className={cn("text-2xl font-bold", scoreColor)}>{percent}%</span>
@@ -144,8 +144,8 @@ export default function LatihanAcakPage() {
               />
             </div>
             <div className="flex justify-between text-xs text-(--text-secondary)">
-              <span>Benar: <span className="font-semibold text-green-600">{score}</span></span>
-              <span>Salah: <span className="font-semibold text-red-500">{total - score}</span></span>
+              <span>Benar: <span className="font-semibold text-primary">{score}</span></span>
+              <span>Salah: <span className="font-semibold text-primary">{total - score}</span></span>
               <span>Total: <span className="font-semibold text-(--text)">{total}</span></span>
             </div>
             <p className="text-xs text-(--text-muted) pt-1">
@@ -167,8 +167,8 @@ export default function LatihanAcakPage() {
               key={`${sessionKey}-${q.id}`}
               className={cn(
                 "bg-(--bg-card) border rounded-2xl overflow-hidden transition-all",
-                submitted && isWrong && "border-red-300 dark:border-red-800",
-                submitted && isRight && "border-green-300 dark:border-green-800",
+                submitted && isWrong && "border-primary/30 dark:border-primary/50",
+                submitted && isRight && "border-primary/30 dark:border-primary/50",
                 !submitted && "border-(--border)",
               )}
             >
@@ -177,8 +177,8 @@ export default function LatihanAcakPage() {
                 <span
                   className={cn(
                     "shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold mt-0.5",
-                    submitted && isRight && "bg-green-500 text-white",
-                    submitted && isWrong && "bg-red-500 text-white",
+                    submitted && isRight && "bg-primary text-white",
+                    submitted && isWrong && "bg-primary text-white",
                     !submitted && "bg-primary/10 text-primary",
                   )}
                 >
@@ -207,9 +207,9 @@ export default function LatihanAcakPage() {
                         !submitted && isSelected &&
                           "border-primary bg-primary/10",
                         submitted && isCorrectOpt &&
-                          "border-green-500 bg-green-50 dark:bg-green-950/30",
+                          "border-primary/50 bg-primary/10 dark:bg-primary/30",
                         submitted && isSelected && !isCorrectOpt &&
-                          "border-red-400 bg-red-50 dark:bg-red-950/30",
+                          "border-primary/30 bg-primary/10 dark:bg-primary/30",
                         submitted && !isSelected && !isCorrectOpt &&
                           "border-(--border) opacity-50",
                       )}
@@ -219,8 +219,8 @@ export default function LatihanAcakPage() {
                           "shrink-0 w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold",
                           !submitted && !isSelected && "bg-(--bg-secondary) text-(--text-muted)",
                           !submitted && isSelected && "bg-primary text-white",
-                          submitted && isCorrectOpt && "bg-green-500 text-white",
-                          submitted && isSelected && !isCorrectOpt && "bg-red-400 text-white",
+                          submitted && isCorrectOpt && "bg-primary text-white",
+                          submitted && isSelected && !isCorrectOpt && "bg-primary/30 text-white",
                           submitted && !isSelected && !isCorrectOpt && "bg-(--bg-secondary) text-(--text-muted)",
                         )}
                       >
@@ -228,10 +228,10 @@ export default function LatihanAcakPage() {
                       </span>
                       <span className="flex-1">{opt}</span>
                       {submitted && isCorrectOpt && (
-                        <CheckCircle2 className="shrink-0 w-4 h-4 text-green-600" />
+                        <CheckCircle2 className="shrink-0 w-4 h-4 text-primary" />
                       )}
                       {submitted && isSelected && !isCorrectOpt && (
-                        <XCircle className="shrink-0 w-4 h-4 text-red-500" />
+                        <XCircle className="shrink-0 w-4 h-4 text-primary" />
                       )}
                     </button>
                   );
@@ -244,22 +244,22 @@ export default function LatihanAcakPage() {
                   className={cn(
                     "mx-5 mb-4 rounded-xl p-3 text-xs space-y-1.5",
                     isRight
-                      ? "bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800"
-                      : "bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800",
+                      ? "bg-primary/10 dark:bg-primary/30 border border-primary/30 dark:border-primary/50"
+                      : "bg-primary/10 dark:bg-primary/30 border border-primary/30 dark:border-primary/50",
                   )}
                 >
                   <div className="flex items-center gap-1.5">
                     {isRight ? (
                       <>
-                        <CheckCircle2 className="w-3.5 h-3.5 text-green-600 shrink-0" />
-                        <span className="font-semibold text-green-700 dark:text-green-400">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span className="font-semibold text-primary dark:text-primary">
                           Jawaban benar!
                         </span>
                       </>
                     ) : (
                       <>
-                        <AlertCircle className="w-3.5 h-3.5 text-red-500 shrink-0" />
-                        <span className="font-semibold text-red-600 dark:text-red-400">
+                        <AlertCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span className="font-semibold text-primary dark:text-primary">
                           Salah — jawaban yang benar:{" "}
                           <span className="underline">{q.options[q.correctIndex]}</span>
                         </span>
@@ -286,7 +286,7 @@ export default function LatihanAcakPage() {
                   Sisa <span className="font-semibold text-(--text)">{remaining} soal</span> belum dijawab
                 </p>
               ) : (
-                <p className="text-xs text-green-600 font-medium">Semua soal sudah dijawab!</p>
+                <p className="text-xs text-primary font-medium">Semua soal sudah dijawab!</p>
               )}
               <div className="w-full h-1 bg-(--bg-secondary) rounded-full mt-1 overflow-hidden">
                 <div

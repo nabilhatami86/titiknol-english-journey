@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
@@ -73,17 +73,17 @@ export default function GrammarExamPage() {
 
   const scoreColor =
     percent >= 80
-      ? "text-green-600"
+      ? "text-primary"
       : percent >= 60
-      ? "text-amber-500"
-      : "text-red-500";
+      ? "text-primary"
+      : "text-primary";
 
   const scoreBarColor =
     percent >= 80
-      ? "bg-green-500"
+      ? "bg-primary"
       : percent >= 60
-      ? "bg-amber-500"
-      : "bg-red-500";
+      ? "bg-primary"
+      : "bg-primary";
 
   return (
     <div className="p-4 lg:p-6 max-w-3xl mx-auto space-y-5 animate-fade-in">
@@ -179,7 +179,7 @@ export default function GrammarExamPage() {
           <div className="rounded-xl border border-(--border) bg-(--bg-secondary) p-4 space-y-3">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <Trophy className="w-5 h-5 text-amber-500" />
+                <Trophy className="w-5 h-5 text-primary" />
                 <span className="font-bold text-(--text)">Hasil Ujian</span>
               </div>
               <span className={cn("text-2xl font-bold", scoreColor)}>
@@ -193,8 +193,8 @@ export default function GrammarExamPage() {
               />
             </div>
             <div className="flex justify-between text-xs text-(--text-secondary)">
-              <span>Benar: <span className="font-semibold text-green-600">{score}</span></span>
-              <span>Salah: <span className="font-semibold text-red-500">{total - score}</span></span>
+              <span>Benar: <span className="font-semibold text-primary">{score}</span></span>
+              <span>Salah: <span className="font-semibold text-primary">{total - score}</span></span>
               <span>Total: <span className="font-semibold text-(--text)">{total}</span></span>
             </div>
           </div>
@@ -214,8 +214,8 @@ export default function GrammarExamPage() {
               key={q.id}
               className={cn(
                 "bg-(--bg-card) border rounded-2xl overflow-hidden transition-all",
-                submitted && isWrong && "border-red-300 dark:border-red-800",
-                submitted && isRight && "border-green-300 dark:border-green-800",
+                submitted && isWrong && "border-primary/30 dark:border-primary/50",
+                submitted && isRight && "border-primary/30 dark:border-primary/50",
                 (!submitted || !isAnswered) && "border-(--border)",
               )}
             >
@@ -224,8 +224,8 @@ export default function GrammarExamPage() {
                 <span
                   className={cn(
                     "shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold",
-                    submitted && isRight && "bg-green-500 text-white",
-                    submitted && isWrong && "bg-red-500 text-white",
+                    submitted && isRight && "bg-primary text-white",
+                    submitted && isWrong && "bg-primary text-white",
                     !submitted && "bg-primary/10 text-primary",
                   )}
                 >
@@ -253,8 +253,8 @@ export default function GrammarExamPage() {
                         !submitted && !isSelected && "border-(--border) hover:border-primary/40 hover:bg-primary/5",
                         !submitted && isSelected && "border-primary bg-primary/10 text-(--text)",
                         // post-submit states
-                        submitted && isCorrectOpt && "border-green-500 bg-green-50 dark:bg-green-950/30",
-                        submitted && isSelected && !isCorrectOpt && "border-red-400 bg-red-50 dark:bg-red-950/30",
+                        submitted && isCorrectOpt && "border-primary/50 bg-primary/10 dark:bg-primary/30",
+                        submitted && isSelected && !isCorrectOpt && "border-primary/30 bg-primary/10 dark:bg-primary/30",
                         submitted && !isSelected && !isCorrectOpt && "border-(--border) opacity-50",
                       )}
                     >
@@ -264,8 +264,8 @@ export default function GrammarExamPage() {
                           "shrink-0 w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold",
                           !submitted && !isSelected && "bg-(--bg-secondary) text-(--text-muted)",
                           !submitted && isSelected && "bg-primary text-white",
-                          submitted && isCorrectOpt && "bg-green-500 text-white",
-                          submitted && isSelected && !isCorrectOpt && "bg-red-400 text-white",
+                          submitted && isCorrectOpt && "bg-primary text-white",
+                          submitted && isSelected && !isCorrectOpt && "bg-primary/30 text-white",
                           submitted && !isSelected && !isCorrectOpt && "bg-(--bg-secondary) text-(--text-muted)",
                         )}
                       >
@@ -276,10 +276,10 @@ export default function GrammarExamPage() {
 
                       {/* Status icon */}
                       {submitted && isCorrectOpt && (
-                        <CheckCircle2 className="shrink-0 w-4 h-4 text-green-600" />
+                        <CheckCircle2 className="shrink-0 w-4 h-4 text-primary" />
                       )}
                       {submitted && isSelected && !isCorrectOpt && (
-                        <XCircle className="shrink-0 w-4 h-4 text-red-500" />
+                        <XCircle className="shrink-0 w-4 h-4 text-primary" />
                       )}
                     </button>
                   );
@@ -292,22 +292,22 @@ export default function GrammarExamPage() {
                   className={cn(
                     "mx-5 mb-4 rounded-xl p-3 text-xs space-y-1.5",
                     isRight
-                      ? "bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800"
-                      : "bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800",
+                      ? "bg-primary/10 dark:bg-primary/30 border border-primary/30 dark:border-primary/50"
+                      : "bg-primary/10 dark:bg-primary/30 border border-primary/30 dark:border-primary/50",
                   )}
                 >
                   <div className="flex items-center gap-1.5">
                     {isRight ? (
                       <>
-                        <CheckCircle2 className="w-3.5 h-3.5 text-green-600 shrink-0" />
-                        <span className="font-semibold text-green-700 dark:text-green-400">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span className="font-semibold text-primary dark:text-primary">
                           Jawaban benar!
                         </span>
                       </>
                     ) : (
                       <>
-                        <AlertCircle className="w-3.5 h-3.5 text-red-500 shrink-0" />
-                        <span className="font-semibold text-red-600 dark:text-red-400">
+                        <AlertCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span className="font-semibold text-primary dark:text-primary">
                           Jawaban salah — yang benar:{" "}
                           <span className="underline">{q.options[q.correctIndex]}</span>
                         </span>
@@ -334,7 +334,7 @@ export default function GrammarExamPage() {
                   Masih <span className="font-semibold text-(--text)">{remaining} soal</span> belum dijawab
                 </p>
               ) : (
-                <p className="text-xs text-green-600 font-medium">Semua soal sudah dijawab!</p>
+                <p className="text-xs text-primary font-medium">Semua soal sudah dijawab!</p>
               )}
               <div className="w-full h-1 bg-(--bg-secondary) rounded-full mt-1 overflow-hidden">
                 <div

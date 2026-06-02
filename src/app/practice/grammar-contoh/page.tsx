@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -34,23 +34,23 @@ interface FeedbackResult {
 const levelConfig: Record<Level, { label: string; color: string; badge: string; border: string; lessons: ModuleLesson[] }> = {
   basic: {
     label: 'Basic',
-    color: 'text-emerald-600 dark:text-emerald-400',
-    badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300',
-    border: 'border-emerald-400 dark:border-emerald-600',
+    color: 'text-primary dark:text-primary',
+    badge: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
+    border: 'border-primary/30 dark:border-primary/30',
     lessons: basicGrammarLessons,
   },
   intermediate: {
     label: 'Intermediate',
-    color: 'text-blue-600 dark:text-blue-400',
-    badge: 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
-    border: 'border-blue-400 dark:border-blue-600',
+    color: 'text-primary dark:text-primary',
+    badge: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
+    border: 'border-primary/30 dark:border-primary/30',
     lessons: intermediateGrammarLessons,
   },
   advance: {
     label: 'Advance',
-    color: 'text-purple-600 dark:text-purple-400',
-    badge: 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300',
-    border: 'border-purple-400 dark:border-purple-600',
+    color: 'text-primary dark:text-primary',
+    badge: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
+    border: 'border-primary/30 dark:border-primary/30',
     lessons: advanceGrammarLessons,
   },
 };
@@ -67,9 +67,9 @@ function getSubtopics(lesson: ModuleLesson): string[] {
 
 // ── Score colour ───────────────────────────────────────────────────────────
 function scoreColor(s: number) {
-  if (s >= 80) return 'text-green-600 dark:text-green-400';
-  if (s >= 60) return 'text-amber-600 dark:text-amber-400';
-  return 'text-red-500 dark:text-red-400';
+  if (s >= 80) return 'text-primary dark:text-primary';
+  if (s >= 60) return 'text-primary dark:text-primary';
+  return 'text-primary dark:text-primary';
 }
 
 // ── Main ───────────────────────────────────────────────────────────────────
@@ -272,9 +272,9 @@ export default function GrammarContohPage() {
 
       {/* Error */}
       {error && (
-        <div className="flex items-start gap-2 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-xl px-4 py-3">
-          <AlertCircle className="w-4 h-4 text-red-500 mt-0.5 shrink-0" />
-          <p className="text-sm text-red-700 dark:text-red-300">{error}</p>
+        <div className="flex items-start gap-2 bg-primary/10 dark:bg-primary/10 border border-primary/30 dark:border-primary/30 rounded-xl px-4 py-3">
+          <AlertCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+          <p className="text-sm text-primary dark:text-primary">{error}</p>
         </div>
       )}
 
@@ -285,25 +285,25 @@ export default function GrammarContohPage() {
           <div className={cn(
             'rounded-xl px-5 py-4 flex items-center gap-4 border',
             result.isCorrect
-              ? 'bg-green-50 dark:bg-green-950/30 border-green-300 dark:border-green-800'
+              ? 'bg-primary/10 dark:bg-primary/10 border-primary/30 dark:border-primary/30'
               : result.verdict === 'Hampir Benar'
-              ? 'bg-amber-50 dark:bg-amber-950/30 border-amber-300 dark:border-amber-800'
-              : 'bg-red-50 dark:bg-red-950/30 border-red-300 dark:border-red-800',
+              ? 'bg-primary/10 dark:bg-primary/10 border-primary/30 dark:border-primary/30'
+              : 'bg-primary/10 dark:bg-primary/10 border-primary/30 dark:border-primary/30',
           )}>
             {result.isCorrect
-              ? <CheckCircle2 className="w-8 h-8 text-green-500 shrink-0" />
+              ? <CheckCircle2 className="w-8 h-8 text-primary shrink-0" />
               : result.verdict === 'Hampir Benar'
-              ? <AlertCircle className="w-8 h-8 text-amber-500 shrink-0" />
-              : <XCircle className="w-8 h-8 text-red-500 shrink-0" />
+              ? <AlertCircle className="w-8 h-8 text-primary shrink-0" />
+              : <XCircle className="w-8 h-8 text-primary shrink-0" />
             }
             <div className="flex-1">
-              <p className={cn('text-lg font-bold', result.isCorrect ? 'text-green-700 dark:text-green-300' : result.verdict === 'Hampir Benar' ? 'text-amber-700 dark:text-amber-300' : 'text-red-700 dark:text-red-300')}>
+              <p className={cn('text-lg font-bold', result.isCorrect ? 'text-primary dark:text-primary' : result.verdict === 'Hampir Benar' ? 'text-primary dark:text-primary' : 'text-primary dark:text-primary')}>
                 {result.verdict}
               </p>
               <p className={cn('text-3xl font-black', scoreColor(result.score))}>{result.score}<span className="text-base font-semibold text-(--text-muted)">/100</span></p>
             </div>
             {!result.topicUsed && (
-              <span className="text-xs bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 px-2 py-1 rounded-lg font-medium">
+              <span className="text-xs bg-primary/10 dark:bg-primary/10 text-primary dark:text-primary px-2 py-1 rounded-lg font-medium">
                 Topik kurang terlihat
               </span>
             )}
@@ -316,7 +316,7 @@ export default function GrammarContohPage() {
             {result.correctedSentence && result.correctedSentence !== sentence.trim() && (
               <div className="bg-(--bg-secondary) rounded-lg px-4 py-3">
                 <p className="text-xs font-semibold text-(--text-muted) uppercase tracking-wide mb-1">Koreksi</p>
-                <p className="text-sm font-medium text-green-600 dark:text-green-400">"{result.correctedSentence}"</p>
+                <p className="text-sm font-medium text-primary dark:text-primary">"{result.correctedSentence}"</p>
               </div>
             )}
 
@@ -355,9 +355,9 @@ export default function GrammarContohPage() {
 
           {/* Improvement tip */}
           {result.improvement && (
-            <div className="flex items-start gap-3 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl px-4 py-3">
-              <Lightbulb className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
-              <p className="text-sm text-amber-800 dark:text-amber-300 leading-relaxed">{result.improvement}</p>
+            <div className="flex items-start gap-3 bg-primary/10 dark:bg-primary/10 border border-primary/30 dark:border-primary/30 rounded-xl px-4 py-3">
+              <Lightbulb className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+              <p className="text-sm text-primary dark:text-primary leading-relaxed">{result.improvement}</p>
             </div>
           )}
 
@@ -382,10 +382,10 @@ export default function GrammarContohPage() {
           {history.slice(1).map((h, i) => (
             <div key={i} className="flex items-center gap-3 bg-(--bg-card) border border-(--border) rounded-lg px-4 py-2.5">
               {h.result.isCorrect
-                ? <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" />
+                ? <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                 : h.result.verdict === 'Hampir Benar'
-                ? <AlertCircle className="w-4 h-4 text-amber-500 shrink-0" />
-                : <XCircle className="w-4 h-4 text-red-500 shrink-0" />
+                ? <AlertCircle className="w-4 h-4 text-primary shrink-0" />
+                : <XCircle className="w-4 h-4 text-primary shrink-0" />
               }
               <p className="text-sm text-(--text-secondary) flex-1 truncate italic">"{h.sentence}"</p>
               <span className={cn('text-sm font-bold shrink-0', scoreColor(h.result.score))}>{h.result.score}</span>

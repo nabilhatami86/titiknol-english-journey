@@ -102,7 +102,7 @@ export function AIWritingPractice() {
             <p className="text-xs text-(--text-secondary)">AI-powered writing feedback &amp; guided essay practice</p>
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <button
             onClick={() => setMode('check')}
             className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium border transition-colors ${

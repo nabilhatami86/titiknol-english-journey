@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -27,9 +27,9 @@ const difficultyLabel: Record<string, string> = {
 };
 
 const difficultyColor: Record<string, string> = {
-  basic: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
-  intermediate: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
-  advanced: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
+  basic: "bg-primary/10 text-primary dark:bg-primary/30 dark:text-primary",
+  intermediate: "bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary",
+  advanced: "bg-primary/10 text-primary dark:bg-primary/30 dark:text-primary",
 };
 
 // Alternate sides: even index = left (A), odd index = right (B)

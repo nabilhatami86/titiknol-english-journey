@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Volume2, ArrowLeft, ChevronRight, Lightbulb, AlertCircle } from "lucide-react";
+import { Volume2, ArrowLeft, ChevronRight, Lightbulb, AlertCircle, XCircle, CheckCircle } from "lucide-react";
 import { pronunciationTopics } from "@/data/pronunciationGuide";
 import { type Metadata } from "next";
 
@@ -23,36 +23,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const soundColors: Record<string, string> = {
-  "/t/": "bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300",
-  "/d/": "bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300",
-  "/ɪd/": "bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300",
-  "/s/": "bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-300",
-  "/z/": "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300",
-  "/ɪz/": "bg-violet-100 text-violet-800 dark:bg-violet-900/40 dark:text-violet-300",
-  "/θ/": "bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300",
-  "/ð/": "bg-teal-100 text-teal-800 dark:bg-teal-900/40 dark:text-teal-300",
-  "/ə/": "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300",
-  "/uː/ atau /ʊ/": "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-300",
-  "/iː/ atau /ɛ/": "bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-300",
-  "/oʊ/ atau /aʊ/": "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300",
-  "´xx": "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300",
-  "x´x": "bg-lime-100 text-lime-800 dark:bg-lime-900/40 dark:text-lime-300",
-  "xx´": "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-300",
-  "/k/": "bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300",
-  "/g/": "bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300",
-  "/dʒ/": "bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300",
-  "❌ K": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
-  "❌ B": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
-  "❌ GH": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
-  "❌ W": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
-  "❌ L": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
-  "❌ H": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
-  "❌ P": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
-  "❌ T": "bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300",
+  "/t/":           "bg-primary/10 text-primary",
+  "/d/":           "bg-primary/10 text-primary",
+  "/ɪd/":          "bg-primary/15 text-primary",
+  "/s/":           "bg-primary/10 text-primary",
+  "/z/":           "bg-primary/10 text-primary",
+  "/ɪz/":          "bg-primary/15 text-primary",
+  "/θ/":           "bg-primary/10 text-primary",
+  "/ð/":           "bg-primary/10 text-primary",
+  "/ə/":           "bg-primary/10 text-primary",
+  "/uː/ atau /ʊ/": "bg-primary/10 text-primary",
+  "/iː/ atau /ɛ/": "bg-primary/10 text-primary",
+  "/oʊ/ atau /aʊ/": "bg-primary/10 text-primary",
+  "´xx":           "bg-primary/10 text-primary",
+  "x´x":           "bg-primary/15 text-primary",
+  "xx´":           "bg-primary/20 text-primary",
+  "/k/":           "bg-primary/10 text-primary",
+  "/g/":           "bg-primary/10 text-primary",
+  "/dʒ/":          "bg-primary/10 text-primary",
+  "❌ K":          "bg-primary/20 text-primary font-semibold",
+  "❌ B":          "bg-primary/20 text-primary font-semibold",
+  "❌ GH":         "bg-primary/20 text-primary font-semibold",
+  "❌ W":          "bg-primary/20 text-primary font-semibold",
+  "❌ L":          "bg-primary/20 text-primary font-semibold",
+  "❌ H":          "bg-primary/20 text-primary font-semibold",
+  "❌ P":          "bg-primary/20 text-primary font-semibold",
+  "❌ T":          "bg-primary/20 text-primary font-semibold",
 };
 
 function getSoundColor(sound: string) {
-  return soundColors[sound] ?? "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-300";
+  return soundColors[sound] ?? "bg-primary/10 text-primary";
 }
 
 export default async function PronunciationTopicPage({ params }: Props) {
@@ -164,13 +164,13 @@ export default async function PronunciationTopicPage({ params }: Props) {
       {topic.tips.length > 0 && (
         <div className="bg-(--bg-card) border border-(--border) rounded-xl p-5">
           <h2 className="text-base font-semibold text-(--text) flex items-center gap-2 mb-3">
-            <Lightbulb className="w-5 h-5 text-yellow-500" />
+            <Lightbulb className="w-5 h-5 text-primary" />
             Tips & Trik
           </h2>
           <ul className="space-y-2">
             {topic.tips.map((tip, idx) => (
               <li key={idx} className="flex gap-2 text-sm text-(--text-secondary)">
-                <span className="text-yellow-500 font-bold shrink-0">•</span>
+                <span className="text-primary font-bold shrink-0">•</span>
                 {tip}
               </li>
             ))}
@@ -182,7 +182,7 @@ export default async function PronunciationTopicPage({ params }: Props) {
       {topic.commonMistakes && topic.commonMistakes.length > 0 && (
         <div className="bg-(--bg-card) border border-(--border) rounded-xl p-5">
           <h2 className="text-base font-semibold text-(--text) flex items-center gap-2 mb-4">
-            <AlertCircle className="w-5 h-5 text-red-500" />
+            <AlertCircle className="w-5 h-5 text-primary" />
             Kesalahan Umum
           </h2>
           <div className="space-y-3">
@@ -192,20 +192,20 @@ export default async function PronunciationTopicPage({ params }: Props) {
                 className="rounded-lg border border-(--border) overflow-hidden"
               >
                 <div className="flex items-stretch">
-                  <div className="bg-red-50 dark:bg-red-950/30 border-r border-(--border) px-4 py-3 flex flex-col gap-1 min-w-0 flex-1">
-                    <span className="text-xs font-semibold text-red-600 dark:text-red-400 uppercase tracking-wider">
-                      ❌ Salah
+                  <div className="bg-primary/5 border-r border-(--border) px-4 py-3 flex flex-col gap-1 min-w-0 flex-1">
+                    <span className="text-xs font-semibold text-primary/70 uppercase tracking-wider flex items-center gap-1">
+                      <XCircle className="w-3 h-3" /> Salah
                     </span>
                     <span className="font-semibold text-(--text)">{mistake.word}</span>
-                    <span className="font-mono text-red-600 dark:text-red-400 text-sm">
+                    <span className="font-mono text-primary/70 text-sm">
                       {mistake.wrong}
                     </span>
                   </div>
-                  <div className="bg-green-50 dark:bg-green-950/30 px-4 py-3 flex flex-col gap-1 min-w-0 flex-1">
-                    <span className="text-xs font-semibold text-green-600 dark:text-green-400 uppercase tracking-wider">
-                      ✓ Benar
+                  <div className="bg-primary/10 px-4 py-3 flex flex-col gap-1 min-w-0 flex-1">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider flex items-center gap-1">
+                      <CheckCircle className="w-3 h-3" /> Benar
                     </span>
-                    <span className="font-mono text-green-600 dark:text-green-400 text-sm">
+                    <span className="font-mono text-primary text-sm">
                       {mistake.right}
                     </span>
                     <span className="text-xs text-(--text-secondary) mt-1">{mistake.tip}</span>

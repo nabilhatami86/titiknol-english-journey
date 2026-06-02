@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
@@ -27,23 +27,23 @@ interface QuizItem {
 const levelConfig: Record<Level, { label: string; color: string; border: string; badge: string; lessons: ModuleLesson[] }> = {
   basic: {
     label: 'Basic',
-    color: 'text-emerald-600 dark:text-emerald-400',
-    border: 'border-emerald-400 dark:border-emerald-600',
-    badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300',
+    color: 'text-primary dark:text-primary',
+    border: 'border-primary/30 dark:border-primary/30',
+    badge: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
     lessons: basicGrammarLessons,
   },
   intermediate: {
     label: 'Intermediate',
-    color: 'text-blue-600 dark:text-blue-400',
-    border: 'border-blue-400 dark:border-blue-600',
-    badge: 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300',
+    color: 'text-primary dark:text-primary',
+    border: 'border-primary/30 dark:border-primary/30',
+    badge: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
     lessons: intermediateGrammarLessons,
   },
   advance: {
     label: 'Advance',
-    color: 'text-purple-600 dark:text-purple-400',
-    border: 'border-purple-400 dark:border-purple-600',
-    badge: 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300',
+    color: 'text-primary dark:text-primary',
+    border: 'border-primary/30 dark:border-primary/30',
+    badge: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
     lessons: advanceGrammarLessons,
   },
 };
@@ -157,7 +157,7 @@ export default function GrammarLatihanPage() {
         </button>
 
         <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-8 text-center">
-          <Trophy className={cn('w-16 h-16 mx-auto mb-4', percentage >= 70 ? 'text-amber-500' : 'text-(--text-muted)')} />
+          <Trophy className={cn('w-16 h-16 mx-auto mb-4', percentage >= 70 ? 'text-primary' : 'text-(--text-muted)')} />
           <span className={cn('text-xs font-semibold px-3 py-1 rounded-full mb-3 inline-block', cfg.badge)}>{cfg.label}</span>
           <h1 className="text-xl font-bold text-(--text) mt-2 mb-1">{selectedLesson?.title}</h1>
           <p className="text-5xl font-bold text-primary my-3">{score} / {totalCount}</p>
@@ -165,7 +165,7 @@ export default function GrammarLatihanPage() {
 
           <div className="h-3 rounded-full bg-(--bg-secondary) overflow-hidden max-w-xs mx-auto mb-6">
             <div
-              className={cn('h-full rounded-full transition-all duration-500', percentage >= 70 ? 'bg-green-500' : percentage >= 40 ? 'bg-amber-500' : 'bg-red-500')}
+              className={cn('h-full rounded-full transition-all duration-500', percentage >= 70 ? 'bg-primary' : percentage >= 40 ? 'bg-primary/10' : 'bg-primary/10')}
               style={{ width: `${percentage}%` }}
             />
           </div>
@@ -175,7 +175,7 @@ export default function GrammarLatihanPage() {
               const correct = answers[q.id] === q.correctAnswer;
               return (
                 <div key={q.id} className={cn('w-9 h-9 rounded-lg flex items-center justify-center text-xs font-bold',
-                  correct ? 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300' : 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300',
+                  correct ? 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary' : 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
                 )}>
                   {i + 1}
                 </div>
@@ -207,7 +207,7 @@ export default function GrammarLatihanPage() {
           <div className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden">
             <button onClick={() => setShowDetails(!showDetails)} className="w-full flex items-center justify-between px-6 py-4 hover:bg-(--hover) transition-colors">
               <span className="font-semibold text-(--text) flex items-center gap-2">
-                <XCircle className="w-5 h-5 text-red-500" />
+                <XCircle className="w-5 h-5 text-primary" />
                 Jawaban Salah ({wrongItems.length} soal)
               </span>
               {showDetails ? <ChevronUp className="w-5 h-5 text-(--text-muted)" /> : <ChevronDown className="w-5 h-5 text-(--text-muted)" />}
@@ -225,21 +225,21 @@ export default function GrammarLatihanPage() {
                         return (
                           <div key={opt} className={cn(
                             'flex items-center gap-2 px-3 py-2 rounded-lg text-sm',
-                            isCorrect && 'bg-green-50 dark:bg-green-950/50 border border-green-300 dark:border-green-800',
-                            isYours && !isCorrect && 'bg-red-50 dark:bg-red-950/50 border border-red-300 dark:border-red-800 line-through opacity-70',
+                            isCorrect && 'bg-primary/10 dark:bg-primary/10 border border-primary/30 dark:border-primary/30',
+                            isYours && !isCorrect && 'bg-primary/10 dark:bg-primary/10 border border-primary/30 dark:border-primary/30 line-through opacity-70',
                             !isCorrect && !isYours && 'opacity-40',
                           )}>
-                            <span className={cn('flex-1', isCorrect && 'font-semibold text-green-700 dark:text-green-300')}>{opt}</span>
-                            {isCorrect && <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" />}
-                            {isYours && !isCorrect && <XCircle className="w-4 h-4 text-red-500 shrink-0" />}
+                            <span className={cn('flex-1', isCorrect && 'font-semibold text-primary dark:text-primary')}>{opt}</span>
+                            {isCorrect && <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />}
+                            {isYours && !isCorrect && <XCircle className="w-4 h-4 text-primary shrink-0" />}
                           </div>
                         );
                       })}
                     </div>
                     {q.reason && (
-                      <div className="flex items-start gap-2 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg px-3 py-2">
-                        <Lightbulb className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
-                        <p className="text-xs text-amber-800 dark:text-amber-300 leading-relaxed">{q.reason}</p>
+                      <div className="flex items-start gap-2 bg-primary/10 dark:bg-primary/10 border border-primary/30 dark:border-primary/30 rounded-lg px-3 py-2">
+                        <Lightbulb className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                        <p className="text-xs text-primary dark:text-primary leading-relaxed">{q.reason}</p>
                       </div>
                     )}
                   </div>

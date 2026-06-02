@@ -8,16 +8,16 @@ import { cn } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 
 const COLOR_MAP: Record<string, { bg: string; border: string; text: string; badge: string; input: string }> = {
-  blue:   { bg: 'bg-blue-50 dark:bg-blue-950/30',     border: 'border-blue-200 dark:border-blue-800',   text: 'text-blue-700 dark:text-blue-300',    badge: 'bg-blue-500', input: 'focus:border-blue-400' },
-  green:  { bg: 'bg-green-50 dark:bg-green-950/30',   border: 'border-green-200 dark:border-green-800', text: 'text-green-700 dark:text-green-300',  badge: 'bg-green-500', input: 'focus:border-green-400' },
-  red:    { bg: 'bg-red-50 dark:bg-red-950/30',       border: 'border-red-200 dark:border-red-800',     text: 'text-red-700 dark:text-red-300',      badge: 'bg-red-500', input: 'focus:border-red-400' },
-  orange: { bg: 'bg-orange-50 dark:bg-orange-950/30', border: 'border-orange-200 dark:border-orange-800',text: 'text-orange-700 dark:text-orange-300', badge: 'bg-orange-500', input: 'focus:border-orange-400' },
-  pink:   { bg: 'bg-pink-50 dark:bg-pink-950/30',     border: 'border-pink-200 dark:border-pink-800',   text: 'text-pink-700 dark:text-pink-300',    badge: 'bg-pink-500', input: 'focus:border-pink-400' },
-  yellow: { bg: 'bg-yellow-50 dark:bg-yellow-950/30', border: 'border-yellow-200 dark:border-yellow-800',text: 'text-yellow-700 dark:text-yellow-300', badge: 'bg-yellow-500', input: 'focus:border-yellow-400' },
-  purple: { bg: 'bg-purple-50 dark:bg-purple-950/30', border: 'border-purple-200 dark:border-purple-800',text: 'text-purple-700 dark:text-purple-300', badge: 'bg-purple-500', input: 'focus:border-purple-400' },
-  teal:   { bg: 'bg-teal-50 dark:bg-teal-950/30',     border: 'border-teal-200 dark:border-teal-800',   text: 'text-teal-700 dark:text-teal-300',    badge: 'bg-teal-500', input: 'focus:border-teal-400' },
-  indigo: { bg: 'bg-indigo-50 dark:bg-indigo-950/30', border: 'border-indigo-200 dark:border-indigo-800',text: 'text-indigo-700 dark:text-indigo-300', badge: 'bg-indigo-500', input: 'focus:border-indigo-400' },
-  cyan:   { bg: 'bg-cyan-50 dark:bg-cyan-950/30',     border: 'border-cyan-200 dark:border-cyan-800',   text: 'text-cyan-700 dark:text-cyan-300',    badge: 'bg-cyan-500', input: 'focus:border-cyan-400' },
+  blue:   { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  green:  { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  red:    { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  orange: { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  pink:   { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  yellow: { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  purple: { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  teal:   { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  indigo: { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
+  cyan:   { bg: 'bg-primary/5', border: 'border-primary/20', text: 'text-primary', badge: 'bg-primary', input: 'focus:border-primary/50' },
 };
 
 function speak(word: string) {
@@ -181,7 +181,7 @@ export default function VocabCategoryPage({ params }: { params: Promise<{ catego
 
       {filtered.length === 0 && (
         <div className="text-center py-12 text-(--text-muted)">
-          <p className="text-2xl mb-2">🔍</p>
+          <Search className="w-8 h-8 mx-auto mb-2 text-primary/40" />
           <p className="text-sm">Kata tidak ditemukan. Coba kata lain.</p>
         </div>
       )}

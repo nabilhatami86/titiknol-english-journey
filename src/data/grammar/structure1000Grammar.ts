@@ -730,8 +730,8 @@ export const s1000ByLevel: Record<S1000Level, S1000Question[]> = {
 };
 
 export const S1000_LEVEL_INFO: Record<S1000Level, { label: string; range: string; color: string; badge: string; border: string }> = {
-  all:          { label: 'Semua Soal',    range: 'Soal 1–700', color: 'text-slate-600 dark:text-slate-300',    badge: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300',    border: 'border-slate-400 dark:border-slate-600' },
-  basic:        { label: 'Basic',         range: 'Soal 1–233', color: 'text-emerald-600 dark:text-emerald-400', badge: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300', border: 'border-emerald-400 dark:border-emerald-600' },
-  intermediate: { label: 'Intermediate',  range: 'Soal 234–467', color: 'text-blue-600 dark:text-blue-400',    badge: 'bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300',         border: 'border-blue-400 dark:border-blue-600' },
-  advance:      { label: 'Advance',       range: 'Soal 468–700', color: 'text-purple-600 dark:text-purple-400', badge: 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300',  border: 'border-purple-400 dark:border-purple-600' },
+  all:          { label: 'Semua Soal',   range: 'Soal 1–700',   color: 'text-primary',            badge: 'bg-primary/10 text-primary',           border: 'border-primary/30' },
+  basic:        { label: 'Basic',        range: 'Soal 1–233',   color: 'text-primary',            badge: 'bg-primary/10 text-primary',           border: 'border-primary/30' },
+  intermediate: { label: 'Intermediate', range: 'Soal 234–467', color: 'text-primary font-medium', badge: 'bg-primary/15 text-primary',          border: 'border-primary/40' },
+  advance:      { label: 'Advance',      range: 'Soal 468–700', color: 'text-primary font-bold',  badge: 'bg-primary/20 text-primary font-bold', border: 'border-primary/50' },
 };

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { BookMarked, ArrowRight, GraduationCap } from "lucide-react";
 import { grammarTopics } from "@/data/grammarGuide";
 import { tensesTopics, grammarTopics as tnIntGrammarTopics } from "@/data/tnIntermediateGrammar";
@@ -10,27 +10,27 @@ export const metadata: Metadata = {
 };
 
 const legend = [
-  { label: "Noun",        pill: "bg-blue-200 text-blue-900" },
-  { label: "Verb",        pill: "bg-green-200 text-green-900" },
-  { label: "Modal Verb",  pill: "bg-indigo-200 text-indigo-900" },
-  { label: "Adjective",   pill: "bg-purple-200 text-purple-900" },
-  { label: "Adverb",      pill: "bg-orange-200 text-orange-900" },
-  { label: "Pronoun",     pill: "bg-pink-200 text-pink-900" },
-  { label: "Article",     pill: "bg-slate-200 text-slate-800" },
-  { label: "Quantifier",  pill: "bg-rose-200 text-rose-900" },
-  { label: "Preposition", pill: "bg-teal-200 text-teal-900" },
-  { label: "Conjunction", pill: "bg-amber-200 text-amber-900" },
-  { label: "Possessive",  pill: "bg-cyan-200 text-cyan-900" },
+  { label: "Noun",        pill: "bg-primary/10 text-primary" },
+  { label: "Verb",        pill: "bg-primary/10 text-primary" },
+  { label: "Modal Verb",  pill: "bg-primary/10 text-primary" },
+  { label: "Adjective",   pill: "bg-primary/10 text-primary" },
+  { label: "Adverb",      pill: "bg-primary/10 text-primary" },
+  { label: "Pronoun",     pill: "bg-primary/10 text-primary" },
+  { label: "Article",     pill: "bg-primary/10 text-primary" },
+  { label: "Quantifier",  pill: "bg-primary/10 text-primary" },
+  { label: "Preposition", pill: "bg-primary/10 text-primary" },
+  { label: "Conjunction", pill: "bg-primary/10 text-primary" },
+  { label: "Possessive",  pill: "bg-primary/10 text-primary" },
 ];
 
 const tenseColors: Record<string, string> = {
-  'simple-present':       'border-green-400/40  bg-green-500/5   text-green-600',
-  'simple-past':          'border-blue-400/40   bg-blue-500/5    text-blue-600',
-  'simple-future':        'border-yellow-400/40 bg-yellow-500/5  text-yellow-600',
-  'present-continuous':   'border-orange-400/40 bg-orange-500/5  text-orange-600',
-  'present-perfect':      'border-red-400/40    bg-red-500/5     text-red-600',
-  'adjective-clause':     'border-purple-400/40 bg-purple-500/5  text-purple-600',
-  'to-infinitive-gerund': 'border-teal-400/40   bg-teal-500/5    text-teal-600',
+  'simple-present':       'border-primary/30  bg-primary/5   text-primary',
+  'simple-past':          'border-primary/30   bg-primary/10    text-primary',
+  'simple-future':        'border-primary/30/40 bg-primary/10/5  text-primary',
+  'present-continuous':   'border-primary/30/40 bg-primary/10/5  text-primary',
+  'present-perfect':      'border-primary/30    bg-primary/10     text-primary',
+  'adjective-clause':     'border-primary/30/40 bg-primary/10/5  text-primary',
+  'to-infinitive-gerund': 'border-primary/30/40   bg-primary/10/5    text-primary',
 };
 
 export default function GrammarGuidePage() {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search, BookOpen, Languages } from "lucide-react";
+import { Search, Languages, BookOpen, Shuffle, Check } from "lucide-react";
 import VerbTable from "@/components/verb/VerbTable";
 import { irregularVerbs, regularVerbs } from "@/data/verbs";
 
@@ -9,37 +9,32 @@ const VERB_FORMS = [
   {
     label: "V1",
     subtitle: "Base Form",
-    desc: "Present simple & setelah modal verb",
+    desc: "Present simple & after modal verb",
     example: "I walk every day.",
-    badge: "bg-blue-100 text-blue-700",
   },
   {
     label: "Vs/es",
-    subtitle: "Third Person Singular",
+    subtitle: "3rd Person Singular",
     desc: "He / She / It — present simple",
     example: "She walks to school.",
-    badge: "bg-violet-100 text-violet-700",
   },
   {
     label: "V2",
     subtitle: "Past Form",
-    desc: "Simple past — aksi yang sudah selesai",
+    desc: "Simple past — completed action",
     example: "I walked yesterday.",
-    badge: "bg-amber-100 text-amber-700",
   },
   {
     label: "V3",
     subtitle: "Past Participle",
     desc: "Perfect tense & passive voice",
     example: "She has gone home.",
-    badge: "bg-emerald-100 text-emerald-700",
   },
   {
     label: "V-ing",
     subtitle: "Present Participle",
     desc: "Continuous tense & gerund",
-    example: "I am walking. / Swimming is fun.",
-    badge: "bg-rose-100 text-rose-700",
+    example: "I am walking now.",
   },
 ];
 
@@ -67,75 +62,114 @@ export default function VerbPage() {
     [search],
   );
 
+  const totalVerbs = irregularVerbs.length + regularVerbs.length;
+
   return (
-    <div className="p-4 lg:p-6 space-y-6 animate-fade-in">
-      {/* Header */}
-      <div>
-        <h1 className="text-2xl font-bold text-(--text) flex items-center gap-2">
-          <BookOpen className="w-6 h-6 text-primary" />
-          Verb Learning Module
-        </h1>
-        <p className="text-sm text-(--text-secondary) mt-1">
-          Pelajari bentuk-bentuk verb bahasa Inggris — Regular dan Irregular —
-          beserta penggunaannya dalam kalimat.
-        </p>
+    <div className="p-4 lg:p-6 max-w-5xl mx-auto space-y-7 animate-fade-in">
+
+      {/* ── Hero card ────────────────────────────────────────────── */}
+      <div className="relative rounded-2xl overflow-hidden border border-(--border) bg-(--bg-card)">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-primary/5 to-transparent pointer-events-none" />
+        <div className="absolute -top-8 -right-8 w-40 h-40 rounded-full bg-primary/5 pointer-events-none" />
+        <div className="absolute -bottom-6 -left-6 w-28 h-28 rounded-full bg-primary/5 pointer-events-none" />
+
+        <div className="relative p-6 sm:p-8">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/20 flex items-center justify-center shrink-0">
+              <BookOpen className="w-6 h-6 text-primary" />
+            </div>
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-bold text-(--text) leading-tight">
+                Verb Learning Module
+              </h1>
+              <p className="text-sm text-(--text-secondary) mt-1.5 leading-relaxed">
+                Pelajari bentuk-bentuk verb bahasa Inggris — Regular dan Irregular —
+                beserta penggunaannya dalam kalimat.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-2 mt-5 pt-4 border-t border-(--border)/50">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
+              <BookOpen className="w-3 h-3" /> {totalVerbs} total verbs
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
+              {irregularVerbs.length} irregular
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-(--bg-secondary) text-(--text-secondary) border border-(--border)">
+              {regularVerbs.length} regular
+            </span>
+          </div>
+        </div>
       </div>
 
-      {/* Verb Forms Cards */}
-      <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-5">
-        <h2 className="text-sm font-semibold text-(--text) mb-4">
-          Bentuk Verb &amp; Fungsinya
-        </h2>
+      {/* ── Verb Forms section ───────────────────────────────────── */}
+      <section className="space-y-3">
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
+            <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center">
+              <Shuffle className="w-4 h-4 text-primary" />
+            </div>
+            <h2 className="text-base font-bold text-(--text) tracking-tight">Verb Forms</h2>
+          </div>
+          <div className="h-px flex-1 bg-gradient-to-r from-(--border) to-transparent" />
+          <span className="text-xs text-(--text-muted) font-medium">5 forms</span>
+        </div>
+
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {VERB_FORMS.map((f) => (
             <div
               key={f.label}
-              className="border border-(--border) rounded-xl p-3 bg-(--bg-secondary) space-y-1.5"
+              className="relative rounded-2xl overflow-hidden border border-(--border) bg-(--bg-card) hover:border-primary/30 transition-colors"
             >
-              <span
-                className={`inline-block text-xs font-bold px-2 py-0.5 rounded-md ${f.badge}`}
-              >
-                {f.label}
-              </span>
-              <p className="text-xs font-semibold text-(--text)">{f.subtitle}</p>
-              <p className="text-xs text-(--text-secondary)">{f.desc}</p>
-              <p className="text-xs text-(--text-muted) italic">
-                &ldquo;{f.example}&rdquo;
-              </p>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent pointer-events-none" />
+              <div className="relative p-3.5 space-y-2">
+                <span className="inline-flex items-center text-xs font-bold px-2.5 py-0.5 rounded-full border bg-primary/15 text-primary border-primary/25">
+                  {f.label}
+                </span>
+                <p className="text-xs font-bold text-(--text) leading-tight">{f.subtitle}</p>
+                <p className="text-xs text-(--text-secondary) leading-snug">{f.desc}</p>
+                <p className="text-[11px] text-(--text-muted) italic leading-snug">
+                  &ldquo;{f.example}&rdquo;
+                </p>
+              </div>
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* Search + Controls Row */}
+      {/* ── Search + Controls ────────────────────────────────────── */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-        <div className="flex items-center gap-4 text-xs text-(--text-secondary)">
-          <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0" />
-            {filteredIrregular.length} irregular verbs
+        <div className="flex items-center gap-2.5 text-xs">
+          <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-semibold border border-primary/20">
+            {filteredIrregular.length} irregular
           </span>
-          <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
-            {filteredRegular.length} regular verbs
+          <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-(--bg-secondary) text-(--text-secondary) font-semibold border border-(--border)">
+            {filteredRegular.length} regular
           </span>
+          {search && (
+            <span className="text-(--text-muted) font-medium">
+              dari {filteredIrregular.length + filteredRegular.length} hasil
+            </span>
+          )}
         </div>
+
         <div className="flex items-center gap-2">
-          {/* Translation Toggle */}
           <button
             onClick={() => setShowMeaning((v) => !v)}
-            className={`flex items-center gap-1.5 text-xs px-3 py-2 rounded-lg border transition-colors ${
+            className={`flex items-center gap-1.5 text-xs px-3 py-2 rounded-xl border font-medium transition-all ${
               showMeaning
-                ? "bg-primary text-white border-primary"
-                : "border-(--border) text-(--text-secondary) hover:bg-(--hover)"
+                ? "bg-primary/15 text-primary border-primary/30"
+                : "border-(--border) text-(--text-secondary) hover:border-primary/30 hover:text-primary"
             }`}
           >
-            <Languages size={13} />
+            {showMeaning ? <Check size={12} /> : <Languages size={12} />}
             {showMeaning ? "Sembunyikan Arti" : "Tampilkan Arti"}
           </button>
-          {/* Search */}
+
           <div className="relative">
             <Search
-              size={14}
+              size={13}
               className="absolute left-3 top-1/2 -translate-y-1/2 text-(--text-muted)"
             />
             <input
@@ -143,52 +177,62 @@ export default function VerbPage() {
               placeholder="Cari verb atau arti..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-52 border border-(--border) rounded-lg pl-8 pr-3 py-2 text-xs bg-(--bg-card) text-(--text) placeholder:text-(--text-muted) focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition"
+              className="w-52 border border-(--border) rounded-xl pl-8 pr-3 py-2 text-xs bg-(--bg-card) text-(--text) placeholder:text-(--text-muted) focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition"
             />
           </div>
         </div>
       </div>
 
-      {/* Irregular Verbs Section */}
-      <section className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden">
-        <div className="px-5 py-4 border-b border-(--border) flex items-center justify-between gap-3">
-          <div>
-            <h2 className="text-base font-semibold text-(--text)">
-              Irregular Verbs
-            </h2>
-            <p className="text-xs text-(--text-secondary) mt-0.5">
+      {/* ── Irregular Verbs ──────────────────────────────────────── */}
+      <section className="space-y-3">
+        <div className="flex items-center gap-3">
+          <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center shrink-0">
+            <span className="text-white text-[11px] font-bold leading-none">I</span>
+          </div>
+          <h2 className="text-base font-bold text-(--text) tracking-tight">Irregular Verbs</h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-(--border) to-transparent" />
+          <span className="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary font-semibold border border-primary/20">
+            {filteredIrregular.length} verbs
+          </span>
+        </div>
+
+        <div className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden">
+          <div className="px-5 py-3.5 bg-gradient-to-r from-primary/[0.06] to-transparent border-b border-(--border)">
+            <p className="text-xs text-(--text-secondary)">
               V2 dan V3 tidak mengikuti aturan -ed. Harus dihafal!
               <span className="ml-2 font-medium text-(--text)">
                 ex: sing → sang → sung
               </span>
             </p>
           </div>
-          <span className="shrink-0 text-xs px-2.5 py-1 rounded-full bg-amber-100 text-amber-700 font-semibold">
-            {filteredIrregular.length} verbs
-          </span>
+          <VerbTable verbs={filteredIrregular} type="irregular" showMeaning={showMeaning} />
         </div>
-        <VerbTable verbs={filteredIrregular} type="irregular" showMeaning={showMeaning} />
       </section>
 
-      {/* Regular Verbs Section */}
-      <section className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden">
-        <div className="px-5 py-4 border-b border-(--border) flex items-center justify-between gap-3">
-          <div>
-            <h2 className="text-base font-semibold text-(--text)">
-              Regular Verbs
-            </h2>
-            <p className="text-xs text-(--text-secondary) mt-0.5">
+      {/* ── Regular Verbs ────────────────────────────────────────── */}
+      <section className="space-y-3">
+        <div className="flex items-center gap-3">
+          <div className="w-6 h-6 rounded-full bg-(--text-muted) flex items-center justify-center shrink-0">
+            <span className="text-white text-[11px] font-bold leading-none">R</span>
+          </div>
+          <h2 className="text-base font-bold text-(--text) tracking-tight">Regular Verbs</h2>
+          <div className="h-px flex-1 bg-gradient-to-r from-(--border) to-transparent" />
+          <span className="text-xs px-2.5 py-1 rounded-full bg-(--bg-secondary) text-(--text-secondary) font-semibold border border-(--border)">
+            {filteredRegular.length} verbs
+          </span>
+        </div>
+
+        <div className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden">
+          <div className="px-5 py-3.5 bg-gradient-to-r from-(--border)/30 to-transparent border-b border-(--border)">
+            <p className="text-xs text-(--text-secondary)">
               V2 dan V3 dibentuk dengan menambahkan -ed. V2 = V3.
               <span className="ml-2 font-medium text-(--text)">
                 ex: work → worked → worked
               </span>
             </p>
           </div>
-          <span className="shrink-0 text-xs px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-semibold">
-            {filteredRegular.length} verbs
-          </span>
+          <VerbTable verbs={filteredRegular} type="regular" showMeaning={showMeaning} />
         </div>
-        <VerbTable verbs={filteredRegular} type="regular" showMeaning={showMeaning} />
       </section>
     </div>
   );

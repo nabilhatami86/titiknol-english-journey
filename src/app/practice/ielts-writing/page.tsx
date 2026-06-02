@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -88,7 +88,7 @@ export default function IeltsWritingPage() {
           <p className="text-xs font-semibold text-(--text-muted) uppercase tracking-wide mb-3">4 Kriteria Penilaian</p>
           <div className="grid grid-cols-2 gap-2">
             {['Task Achievement / Response', 'Coherence & Cohesion', 'Lexical Resource', 'Grammatical Range & Accuracy'].map(l => (
-              <div key={l} className="rounded-lg px-3 py-2 text-xs font-medium bg-primary/8 text-primary border border-primary/20">{l}</div>
+              <div key={l} className="rounded-lg px-3 py-2 text-xs font-medium bg-primary/10 text-primary border border-primary/20">{l}</div>
             ))}
           </div>
         </div>

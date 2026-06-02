@@ -1,4 +1,4 @@
-import type { ModuleLesson } from "@/types/module";
+﻿import type { ModuleLesson } from "@/types/module";
 
 // ── Intermediate 2 Reading Lessons ───────────────────────────────────────────
 
@@ -49,19 +49,19 @@ export const intermediate2ReadingLessons: ModuleLesson[] = [
       {
         title: "Reading Strategy: Identifying Author's Purpose",
         points: [
-          "📌 Author's purpose = alasan penulis menulis teks (to inform, to persuade, to entertain).",
-          "📌 Teks ini bertujuan TO INFORM (menginformasikan) sekaligus TO PERSUADE (meyakinkan) pembaca.",
+          "Author's purpose = alasan penulis menulis teks (to inform, to persuade, to entertain).",
+          "Teks ini bertujuan TO INFORM (menginformasikan) sekaligus TO PERSUADE (meyakinkan) pembaca.",
           "",
-          "⚡ Kata-kata yang menunjukkan argument/persuasion:",
+          "Kata-kata yang menunjukkan argument/persuasion:",
           "   'Research has consistently shown...'",
           "   '...is widely regarded as...'",
           "   '...is inseparable from...'",
           "",
-          "⚡ Kata-kata yang menunjukkan cause-effect:",
+          "Kata-kata yang menunjukkan cause-effect:",
           "   'Consequently...' | 'Therefore...' | 'Moreover...'",
           "   'As a result...' | 'In this regard...'",
           "",
-          "📌 Tip: Paragraf terakhir sering berisi solusi/rekomendasi penulis.",
+          "Tip: Paragraf terakhir sering berisi solusi/rekomendasi penulis.",
           "   Di sini: 'creating a supportive environment is essential to accelerating language acquisition.'",
         ],
       },

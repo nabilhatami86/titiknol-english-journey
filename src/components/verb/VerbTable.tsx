@@ -1,8 +1,9 @@
 "use client";
 
 import { Fragment, useState } from "react";
-import { VerbItem } from "@/data/verbs";
 import { ChevronDown } from "lucide-react";
+import { VerbItem } from "@/data/verbs";
+import { cn } from "@/lib/utils";
 
 type VerbTableProps = {
   verbs: VerbItem[];
@@ -10,15 +11,16 @@ type VerbTableProps = {
   showMeaning: boolean;
 };
 
+const FORM_BADGE = "bg-primary/10 text-primary";
+
 function getContextualMeanings(verb: VerbItem) {
   const m = verb.meaning;
   return [
-    { form: "Base", word: verb.base,  label: "Dasar",              context: m },
-    { form: "V1",   word: verb.v1,    label: "Present / I-You-We-They", context: m },
-    { form: "Vs/es",word: verb.v1,    label: "Present / He-She-It",     context: m },
-    { form: "V2",   word: verb.v2,    label: "Simple Past",         context: `${m} (lampau)` },
-    { form: "V3",   word: verb.v3,    label: "Past Participle",     context: `sudah ${m} / di-${m} (perfect/passive)` },
-    { form: "V-ing",word: verb.ing,   label: "Present Participle",  context: `sedang ${m} (continuous/gerund)` },
+    { form: "V1",    word: verb.v1,  label: "Present / I-You-We-They", context: m },
+    { form: "Vs/es", word: verb.v1,  label: "Present / He-She-It",     context: m },
+    { form: "V2",    word: verb.v2,  label: "Simple Past",             context: `${m} (lampau)` },
+    { form: "V3",    word: verb.v3,  label: "Past Participle",         context: `sudah ${m} / di-${m}` },
+    { form: "V-ing", word: verb.ing, label: "Present Participle",      context: `sedang ${m}` },
   ];
 }
 
@@ -34,44 +36,44 @@ export default function VerbTable({ verbs, type, showMeaning }: VerbTableProps) 
     });
   };
 
-  const baseClass =
-    type === "irregular"
-      ? "text-amber-600 font-semibold"
-      : "text-emerald-600 font-semibold";
-
-  const accentBg =
-    type === "irregular"
-      ? "bg-amber-50/60 border-amber-200/50"
-      : "bg-emerald-50/60 border-emerald-200/50";
-
-  const badgeClass =
-    type === "irregular"
-      ? "bg-amber-100 text-amber-700"
-      : "bg-emerald-100 text-emerald-700";
+  const isIrregular = type === "irregular";
 
   if (verbs.length === 0) {
     return (
-      <p className="text-center text-sm text-(--text-muted) py-10">
-        Tidak ada verb yang ditemukan.
-      </p>
+      <div className="flex flex-col items-center justify-center py-14 gap-2">
+        <div className="w-10 h-10 rounded-full bg-(--bg-secondary) flex items-center justify-center">
+          <span className="text-(--text-muted) text-lg">🔍</span>
+        </div>
+        <p className="text-sm text-(--text-muted)">Tidak ada verb yang ditemukan.</p>
+      </div>
     );
   }
-
-  const colCount = showMeaning ? 6 : 5;
 
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
-          <tr className="bg-(--bg-secondary) text-xs uppercase tracking-wide text-(--text-muted)">
-            <th className="px-5 py-3 text-left font-semibold">Base</th>
+          <tr className="bg-(--bg-secondary)">
+            <th className="px-5 py-3 text-left text-[11px] font-bold uppercase tracking-wider text-(--text-muted)">
+              Base
+            </th>
             {showMeaning && (
-              <th className="px-5 py-3 text-left font-semibold text-primary/70">Arti</th>
+              <th className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wider text-primary/60">
+                Arti
+              </th>
             )}
-            <th className="px-5 py-3 text-left font-semibold">V1</th>
-            <th className="px-5 py-3 text-left font-semibold">V2</th>
-            <th className="px-5 py-3 text-left font-semibold">V3</th>
-            <th className="px-5 py-3 text-left font-semibold">V-ing</th>
+            <th className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wider text-(--text-muted)">
+              V1
+            </th>
+            <th className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wider text-(--text-muted)">
+              V2
+            </th>
+            <th className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wider text-(--text-muted)">
+              V3
+            </th>
+            <th className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wider text-(--text-muted)">
+              V-ing
+            </th>
           </tr>
         </thead>
         <tbody className="divide-y divide-(--border)">
@@ -82,40 +84,60 @@ export default function VerbTable({ verbs, type, showMeaning }: VerbTableProps) 
               <Fragment key={`${verb.base}-${i}`}>
                 <tr
                   onClick={() => toggle(verb.base)}
-                  className="hover:bg-(--hover) transition-colors cursor-pointer select-none"
+                  className={cn(
+                    "hover:bg-(--hover) transition-colors cursor-pointer select-none",
+                    isOpen && (isIrregular ? "bg-primary/5" : "bg-(--bg-secondary)/50"),
+                  )}
                 >
-                  <td className={`px-5 py-3 ${baseClass}`}>
+                  <td className={cn(
+                    "px-5 py-3 font-bold",
+                    isIrregular ? "text-primary" : "text-(--text)",
+                  )}>
                     <span className="flex items-center gap-1.5">
                       {verb.base}
                       <ChevronDown
                         size={12}
-                        className={`text-(--text-muted) transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                        className={cn(
+                          "text-(--text-muted) transition-transform duration-200 shrink-0",
+                          isOpen && "rotate-180",
+                        )}
                       />
                     </span>
                   </td>
                   {showMeaning && (
-                    <td className="px-5 py-3 text-primary/80 text-xs italic">{verb.meaning}</td>
+                    <td className="px-4 py-3 text-primary/75 text-xs italic">
+                      {verb.meaning}
+                    </td>
                   )}
-                  <td className="px-5 py-3 text-(--text)">{verb.v1}</td>
-                  <td className="px-5 py-3 text-(--text)">{verb.v2}</td>
-                  <td className="px-5 py-3 text-(--text)">{verb.v3}</td>
-                  <td className="px-5 py-3 text-(--text)">{verb.ing}</td>
+                  <td className="px-4 py-3 text-(--text)">{verb.v1}</td>
+                  <td className="px-4 py-3 text-(--text-secondary)">{verb.v2}</td>
+                  <td className="px-4 py-3 text-(--text-secondary)">{verb.v3}</td>
+                  <td className="px-4 py-3 text-(--text-secondary)">{verb.ing}</td>
                 </tr>
 
                 {isOpen && (
                   <tr>
-                    <td colSpan={colCount} className={`px-5 py-3 border-t ${accentBg}`}>
-                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    <td
+                      colSpan={showMeaning ? 6 : 5}
+                      className="px-5 py-4 border-t bg-primary/[0.03] border-primary/15"
+                    >
+                      <p className="text-[10px] text-(--text-muted) uppercase tracking-widest font-bold mb-3">
+                        Konteks Penggunaan
+                      </p>
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                         {rows.map((r) => (
-                          <div key={r.form} className="flex flex-col gap-0.5">
+                          <div
+                            key={r.form}
+                            className="bg-(--bg-card) border border-(--border) rounded-xl p-2.5 space-y-1 hover:border-primary/30 transition-colors"
+                          >
                             <div className="flex items-center gap-1.5">
-                              <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${badgeClass}`}>
+                              <span className={cn("text-[10px] font-bold px-1.5 py-0.5 rounded-md", FORM_BADGE)}>
                                 {r.form}
                               </span>
-                              <span className="text-xs font-semibold text-(--text)">{r.word}</span>
+                              <span className="text-xs font-bold text-(--text)">{r.word}</span>
                             </div>
-                            <span className="text-[11px] text-(--text-secondary) pl-0.5">{r.label}</span>
-                            <span className="text-[11px] text-(--text-muted) italic pl-0.5">{r.context}</span>
+                            <p className="text-[11px] text-(--text-secondary) leading-snug">{r.label}</p>
+                            <p className="text-[11px] text-(--text-muted) italic leading-snug">{r.context}</p>
                           </div>
                         ))}
                       </div>

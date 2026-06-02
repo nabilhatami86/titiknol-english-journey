@@ -1,7 +1,7 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getTnAdvanceLesson, getTnAdvanceLessonById, getTnAdvanceLessonsByTrack, tnAdvanceLessons } from '@/data/tnAdvanceModules';
-import ModuleLessonClient from '@/app/tn-basic-cource/[track]/[day]/ModuleLessonClient';
+import ModuleLessonClient from '@/components/lesson/ModuleLessonClient';
 
 export const dynamicParams = true;
 

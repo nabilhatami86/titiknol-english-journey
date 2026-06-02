@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
@@ -102,24 +102,24 @@ export default async function BasicTrackPage({ params }: PageProps) {
       {isReading && (
         <Link
           href="/tn-basic-cource/post-test-reading"
-          className="flex items-center gap-3 border border-emerald-400/50 bg-emerald-50/40 dark:bg-emerald-950/20 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 rounded-xl p-4 transition-colors group"
+          className="flex items-center gap-3 border border-primary/50 bg-primary/40 dark:bg-primary/20 hover:bg-primary/10 dark:hover:bg-primary/30 rounded-xl p-4 transition-colors group"
         >
-          <div className="w-10 h-10 rounded-full bg-emerald-500/15 flex items-center justify-center shrink-0">
-            <BookMarked className="w-5 h-5 text-emerald-600" />
+          <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
+            <BookMarked className="w-5 h-5 text-primary" />
           </div>
           <div className="flex-1">
             <div className="flex items-center gap-2">
-              <p className="text-xs font-bold text-emerald-600 uppercase tracking-wider">Post Test</p>
-              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 font-semibold">25 Soal</span>
+              <p className="text-xs font-bold text-primary uppercase tracking-wider">Post Test</p>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/15 text-primary font-semibold">25 Soal</span>
             </div>
-            <p className="text-sm font-medium text-(--text) group-hover:text-emerald-600 transition-colors">
+            <p className="text-sm font-medium text-(--text) group-hover:text-primary transition-colors">
               Post Test — Reading
             </p>
             <p className="text-xs text-(--text-muted) mt-0.5">
               Part A: True/False/Not Given · Part B: Multiple Choice · Part C: Short Answer
             </p>
           </div>
-          <ArrowRight className="w-4 h-4 text-emerald-500 shrink-0" />
+          <ArrowRight className="w-4 h-4 text-primary shrink-0" />
         </Link>
       )}
 
@@ -128,46 +128,46 @@ export default async function BasicTrackPage({ params }: PageProps) {
         <div className="space-y-3">
           <Link
             href="/tn-basic-cource/latihan-post-test"
-            className="flex items-center gap-3 border border-violet-400/50 bg-violet-50/40 dark:bg-violet-950/20 hover:bg-violet-50 dark:hover:bg-violet-950/30 rounded-xl p-4 transition-colors group"
+            className="flex items-center gap-3 border border-primary/50 bg-primary/40 dark:bg-primary/20 hover:bg-primary/10 dark:hover:bg-primary/30 rounded-xl p-4 transition-colors group"
           >
-            <div className="w-10 h-10 rounded-full bg-violet-500/15 flex items-center justify-center shrink-0">
-              <Shuffle className="w-5 h-5 text-violet-600" />
+            <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
+              <Shuffle className="w-5 h-5 text-primary" />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-2">
-                <p className="text-xs font-bold text-violet-600 uppercase tracking-wider">Latihan Acak</p>
-                <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-violet-500/15 text-violet-600 font-semibold">45 bank soal</span>
+                <p className="text-xs font-bold text-primary uppercase tracking-wider">Latihan Acak</p>
+                <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/15 text-primary font-semibold">45 bank soal</span>
               </div>
-              <p className="text-sm font-medium text-(--text) group-hover:text-violet-600 transition-colors">
+              <p className="text-sm font-medium text-(--text) group-hover:text-primary transition-colors">
                 Latihan Acak Post Test Grammar
               </p>
               <p className="text-xs text-(--text-muted) mt-0.5">
                 20 soal acak tiap sesi · Langsung tau kenapa salah · Berbasis kisi-kisi post test
               </p>
             </div>
-            <ArrowRight className="w-4 h-4 text-violet-500 shrink-0" />
+            <ArrowRight className="w-4 h-4 text-primary shrink-0" />
           </Link>
 
           <Link
             href="/tn-basic-cource/kisi-kisi-post-test"
-            className="flex items-center gap-3 border border-blue-400/50 bg-blue-50/40 dark:bg-blue-950/20 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl p-4 transition-colors group"
+            className="flex items-center gap-3 border border-primary/50 bg-primary/40 dark:bg-primary/20 hover:bg-primary/10 dark:hover:bg-primary/30 rounded-xl p-4 transition-colors group"
           >
-            <div className="w-10 h-10 rounded-full bg-blue-500/15 flex items-center justify-center shrink-0">
-              <ClipboardList className="w-5 h-5 text-blue-600" />
+            <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
+              <ClipboardList className="w-5 h-5 text-primary" />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-2">
-                <p className="text-xs font-bold text-blue-600 uppercase tracking-wider">Post Test</p>
-                <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-500/15 text-blue-600 font-semibold">30 Soal</span>
+                <p className="text-xs font-bold text-primary uppercase tracking-wider">Post Test</p>
+                <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/15 text-primary font-semibold">30 Soal</span>
               </div>
-              <p className="text-sm font-medium text-(--text) group-hover:text-blue-600 transition-colors">
+              <p className="text-sm font-medium text-(--text) group-hover:text-primary transition-colors">
                 Kisi-Kisi Grammar — Post Test
               </p>
               <p className="text-xs text-(--text-muted) mt-0.5">
                 Part I: Correct Phrase · Part II: Conjunction &amp; Preposition · Part III: Translate to English
               </p>
             </div>
-            <ArrowRight className="w-4 h-4 text-blue-500 shrink-0" />
+            <ArrowRight className="w-4 h-4 text-primary shrink-0" />
           </Link>
         </div>
       )}

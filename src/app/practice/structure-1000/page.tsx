@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useMemo, useCallback } from 'react';
 import Link from 'next/link';
@@ -108,7 +108,7 @@ export default function Structure1000Page() {
         </button>
 
         <div className="bg-(--bg-card) border border-(--border) rounded-2xl p-8 text-center">
-          <Trophy className={cn('w-16 h-16 mx-auto mb-4', pct >= 70 ? 'text-amber-500' : 'text-(--text-muted)')} />
+          <Trophy className={cn('w-16 h-16 mx-auto mb-4', pct >= 70 ? 'text-primary' : 'text-(--text-muted)')} />
           <span className={cn('text-xs font-semibold px-3 py-1 rounded-full inline-block mb-2', cfg.badge)}>
             {cfg.label} · {activeSet.range}
           </span>
@@ -118,7 +118,7 @@ export default function Structure1000Page() {
           <div className="h-3 rounded-full bg-(--bg-secondary) overflow-hidden max-w-xs mx-auto mb-6">
             <div
               className={cn('h-full rounded-full transition-all duration-500',
-                pct >= 70 ? 'bg-green-500' : pct >= 40 ? 'bg-amber-500' : 'bg-red-500')}
+                pct >= 70 ? 'bg-primary' : pct >= 40 ? 'bg-primary/10' : 'bg-primary')}
               style={{ width: `${pct}%` }}
             />
           </div>
@@ -130,8 +130,8 @@ export default function Structure1000Page() {
                 <div key={q.id} className={cn(
                   'w-9 h-9 rounded-lg flex items-center justify-center text-xs font-bold',
                   ok
-                    ? 'bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300'
-                    : 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300',
+                    ? 'bg-primary/10 text-primary dark:bg-primary dark:text-primary'
+                    : 'bg-primary/10 text-primary dark:bg-primary dark:text-primary',
                 )}>
                   {i + 1}
                 </div>
@@ -167,7 +167,7 @@ export default function Structure1000Page() {
             <button onClick={() => setShowWrong(v => !v)}
               className="w-full flex items-center justify-between px-6 py-4 hover:bg-(--hover) transition-colors">
               <span className="font-semibold text-(--text) flex items-center gap-2">
-                <XCircle className="w-5 h-5 text-red-500" />
+                <XCircle className="w-5 h-5 text-primary" />
                 Jawaban Salah ({wrongItems.length} soal)
               </span>
               {showWrong ? <ChevronUp className="w-5 h-5 text-(--text-muted)" /> : <ChevronDown className="w-5 h-5 text-(--text-muted)" />}
@@ -186,13 +186,13 @@ export default function Structure1000Page() {
                         return (
                           <div key={opt} className={cn(
                             'flex items-center gap-2 px-3 py-2 rounded-lg text-sm',
-                            isCorrect && 'bg-green-50 dark:bg-green-950/50 border border-green-300 dark:border-green-800',
-                            isYours && !isCorrect && 'bg-red-50 dark:bg-red-950/50 border border-red-300 dark:border-red-800 line-through opacity-70',
+                            isCorrect && 'bg-primary/10 dark:bg-primary/50 border border-primary/30 dark:border-primary/50',
+                            isYours && !isCorrect && 'bg-primary/10 dark:bg-primary/50 border border-primary/30 dark:border-primary/50 line-through opacity-70',
                             !isCorrect && !isYours && 'opacity-40',
                           )}>
-                            <span className={cn('flex-1', isCorrect && 'font-semibold text-green-700 dark:text-green-300')}>{opt}</span>
-                            {isCorrect   && <CheckCircle2 className="w-4 h-4 text-green-500 shrink-0" />}
-                            {isYours && !isCorrect && <XCircle className="w-4 h-4 text-red-500 shrink-0" />}
+                            <span className={cn('flex-1', isCorrect && 'font-semibold text-primary dark:text-primary')}>{opt}</span>
+                            {isCorrect   && <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />}
+                            {isYours && !isCorrect && <XCircle className="w-4 h-4 text-primary shrink-0" />}
                           </div>
                         );
                       })}

@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, BookOpen, Mic, FileText } from 'lucide-react';
 
@@ -15,8 +15,8 @@ const tasks = [
     description:
       'Teks bacaan topik Hobby and Interest: soal True/False/Not Given, multiple choice detail question, dan vocabulary.',
     icon: BookOpen,
-    accentColor: 'bg-red-500',
-    iconBg: 'bg-red-500/10 text-red-600',
+    accentColor: 'bg-primary',
+    iconBg: 'bg-primary/10 text-primary',
     badge: '15 soal',
     tags: ['True/False/NG', 'Detail Question', 'Vocabulary'],
   },
@@ -27,8 +27,8 @@ const tasks = [
     description:
       'Materi speaking: greeting & introduction, personal identity, education background, family, hobby, angka dan waktu.',
     icon: Mic,
-    accentColor: 'bg-rose-500',
-    iconBg: 'bg-rose-500/10 text-rose-600',
+    accentColor: 'bg-primary/10',
+    iconBg: 'bg-primary/10/10 text-primary',
     badge: 'Speaking',
     tags: ['Greeting', 'Identity', 'Family', 'Hobby', 'Numbers'],
   },
@@ -39,8 +39,8 @@ const tasks = [
     description:
       'Latihan 30 soal format post test: urutan adjective, correlative conjunctions & prepositions, terjemahan ke Inggris.',
     icon: FileText,
-    accentColor: 'bg-violet-500',
-    iconBg: 'bg-violet-500/10 text-violet-600',
+    accentColor: 'bg-primary/10',
+    iconBg: 'bg-primary/10/10 text-primary',
     badge: '30 soal',
     tags: ['Correct Phrase', 'Conjunction', 'Preposition', 'Translate'],
   },
@@ -89,7 +89,7 @@ export default function KisiKisiPage() {
 
       {/* Section label */}
       <div className="flex items-center gap-2">
-        <span className="text-xs font-bold uppercase tracking-widest text-red-700">
+        <span className="text-xs font-bold uppercase tracking-widest text-primary">
           Materi Mid Test
         </span>
         <div className="flex-1 h-px bg-(--border)" />
