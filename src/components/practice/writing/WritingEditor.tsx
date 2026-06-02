@@ -2,16 +2,10 @@
 
 import type { RefObject } from "react";
 import {
-  PenLine,
-  X,
-  Sparkles,
-  Loader2,
-  AlertCircle,
-  FileWarning,
-  WifiOff,
-  KeyRound,
-  Gauge,
+  PenLine, X, Sparkles, Loader2, AlertCircle,
+  FileWarning, WifiOff, KeyRound, Gauge,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 import type { WritingErrorType } from "@/types/writingPractice";
 import { WRITING_TYPES } from "./utils";
 
@@ -28,37 +22,50 @@ interface Props {
   onClear: () => void;
 }
 
+const MAX_WORDS = 150;
+
 export function WritingEditor({
-  text,
-  wordCount,
-  promptIdea,
-  loading,
-  error,
-  errorType,
-  textareaRef,
-  onChange,
-  onSubmit,
-  onClear,
+  text, wordCount, promptIdea, loading, error, errorType,
+  textareaRef, onChange, onSubmit, onClear,
 }: Props) {
+  const wordPct  = Math.min((wordCount / MAX_WORDS) * 100, 100);
+  const isReady  = wordCount >= 5 && !loading;
+
   return (
     <div className="space-y-4">
+
       {/* Writing type chips */}
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-1.5">
         {WRITING_TYPES.map((t) => (
           <span
             key={t}
-            className="text-xs font-medium px-3 py-1.5 rounded-full border border-(--border) text-(--text-muted)"
+            className="text-xs font-medium px-2.5 py-1 rounded-full border border-(--border) bg-(--bg-secondary) text-(--text-muted)"
           >
             {t}
           </span>
         ))}
       </div>
 
+      {/* Prompt idea banner */}
+      {!text && promptIdea && (
+        <div className="flex items-start gap-2.5 bg-primary/4 border border-primary/15 rounded-xl px-3.5 py-2.5">
+          <Sparkles className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+          <p className="text-xs text-(--text-secondary) leading-relaxed">
+            <span className="font-semibold text-primary">Butuh ide? </span>
+            <span className="italic">{promptIdea}</span>
+          </p>
+        </div>
+      )}
+
       {/* Textarea card */}
-      <div className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden shadow-sm">
-        <div className="flex items-center justify-between px-4 py-2.5 border-b border-(--border) bg-(--bg-secondary)/30">
-          <span className="text-xs font-medium text-(--text-secondary) flex items-center gap-1.5">
-            <PenLine className="w-3.5 h-3.5" /> Your Writing
+      <div className={cn(
+        "bg-(--bg-card) border rounded-2xl overflow-hidden shadow-sm transition-colors",
+        "focus-within:border-primary/40 hover:border-primary/25 border-(--border)",
+      )}>
+        {/* Header */}
+        <div className="flex items-center justify-between px-4 py-2.5 border-b border-(--border) bg-(--bg-secondary)/40">
+          <span className="text-xs font-semibold text-(--text-secondary) flex items-center gap-1.5">
+            <PenLine className="w-3.5 h-3.5 text-primary" /> Your Writing
           </span>
           {text && (
             <button
@@ -74,141 +81,115 @@ export function WritingEditor({
           ref={textareaRef}
           value={text}
           onChange={(e) => onChange(e.target.value)}
-          placeholder={`Start writing here...\n\nNeed an idea? Try: "${promptIdea}"`}
-          className="w-full min-h-[200px] sm:min-h-[340px] p-5 text-sm text-(--text) bg-transparent resize-none focus:outline-none leading-relaxed placeholder:text-(--text-muted) placeholder:italic"
+          placeholder="Start writing here..."
+          className="w-full min-h-[200px] sm:min-h-80 p-5 text-sm text-(--text) bg-transparent resize-none focus:outline-none leading-relaxed placeholder:text-(--text-muted)"
           spellCheck
         />
 
-        <div className="flex items-center justify-between px-4 py-2.5 border-t border-(--border) bg-(--bg-secondary)/30">
-          <div className="flex flex-wrap items-center gap-3 text-xs text-(--text-muted)">
-            <span>{wordCount} words</span>
-            <span>·</span>
-            <span>{text.length} chars</span>
+        {/* Footer */}
+        <div className="px-4 py-2.5 border-t border-(--border) bg-(--bg-secondary)/40 space-y-2">
+          <div className="flex items-center justify-between text-xs text-(--text-muted)">
+            <div className="flex items-center gap-3">
+              <span className={cn('font-medium', wordCount > 0 && wordCount < 5 && 'text-primary')}>
+                {wordCount} / {MAX_WORDS} kata
+              </span>
+              <span>{text.length} karakter</span>
+            </div>
             {wordCount > 0 && wordCount < 5 && (
-              <span className="text-primary">— write at least 5 words</span>
+              <span className="text-primary text-[11px] font-semibold">min. 5 kata</span>
             )}
+          </div>
+          {/* Progress bar */}
+          <div className="h-1 bg-(--bg-secondary) rounded-full overflow-hidden">
+            <div
+              className={cn(
+                'h-full rounded-full transition-all duration-300',
+                wordPct >= 100 ? 'bg-primary/50' : 'bg-primary',
+              )}
+              style={{ width: `${wordPct}%` }}
+            />
           </div>
         </div>
       </div>
 
-      {/* Error: too long */}
+      {/* Error states */}
       {error && errorType === "too_long" && (
-        <div className="border border-primary/30 bg-primary/5 rounded-2xl p-4 space-y-3">
+        <div className="border border-primary/25 bg-primary/5 rounded-2xl p-4 space-y-3">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
               <FileWarning className="w-4 h-4 text-primary" />
             </div>
             <div>
-              <p className="text-sm font-bold text-(--text)">
-                Teks Terlalu Panjang
-              </p>
-              <p className="text-xs text-(--text-muted)">
-                Response AI kepotong karena token habis
-              </p>
+              <p className="text-sm font-bold text-(--text)">Teks Terlalu Panjang</p>
+              <p className="text-xs text-(--text-muted)">Response AI kepotong karena token habis</p>
             </div>
           </div>
           <div className="bg-primary/10 rounded-xl px-3 py-2.5 space-y-1.5">
             <div className="flex items-center justify-between text-xs">
               <span className="text-(--text) font-semibold flex items-center gap-1.5">
                 <Gauge className="w-3.5 h-3.5 text-primary" /> Panjang tulisanmu
-                sekarang
               </span>
               <span className="font-bold text-primary">{wordCount} kata</span>
             </div>
             <div className="h-2 bg-primary/20 rounded-full overflow-hidden">
-              <div
-                className="h-full rounded-full bg-primary transition-all"
-                style={{ width: `${Math.min((wordCount / 150) * 100, 100)}%` }}
-              />
+              <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${Math.min((wordCount / 150) * 100, 100)}%` }} />
             </div>
-            <p className="text-[11px] text-(--text-muted)">
-              Rekomendasi: <strong>maksimal 150 kata</strong> untuk analisis
-              lengkap
-            </p>
+            <p className="text-[11px] text-(--text-muted)">Rekomendasi: <strong>maksimal 150 kata</strong></p>
           </div>
-          <p className="text-xs text-(--text-muted)">
-            Potong tulisanmu jadi lebih pendek, lalu coba lagi.
-          </p>
         </div>
       )}
-
-      {/* Error: quota */}
       {error && errorType === "quota" && (
-        <div className="flex items-start gap-2.5 bg-primary/5 border border-primary/30 rounded-xl px-4 py-3">
+        <div className="flex items-start gap-2.5 bg-primary/5 border border-primary/25 rounded-xl px-4 py-3">
           <AlertCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
           <div>
-            <p className="text-sm font-semibold text-(--text)">
-              Quota AI habis
-            </p>
-            <p className="text-xs text-(--text-muted) mt-0.5">
-              {error} Groq gratis: 30 request/menit, 14.400/hari.
-            </p>
+            <p className="text-sm font-semibold text-(--text)">Quota AI habis</p>
+            <p className="text-xs text-(--text-muted) mt-0.5">Groq gratis: 30 request/menit. Tunggu sebentar lalu coba lagi.</p>
           </div>
         </div>
       )}
-
-      {/* Error: no key */}
       {error && errorType === "no_key" && (
-        <div className="flex items-start gap-2.5 bg-primary/5 border border-primary/30 rounded-xl px-4 py-3">
+        <div className="flex items-start gap-2.5 bg-primary/5 border border-primary/25 rounded-xl px-4 py-3">
           <KeyRound className="w-4 h-4 text-primary shrink-0 mt-0.5" />
           <div>
-            <p className="text-sm font-semibold text-(--text)">
-              API Key belum diisi
-            </p>
+            <p className="text-sm font-semibold text-(--text)">API Key belum diisi</p>
             <p className="text-xs text-(--text-muted) mt-0.5">
-              Tambahkan{" "}
-              <code className="bg-primary/10 px-1 rounded text-primary">
-                GROQ_API_KEY
-              </code>{" "}
-              di file{" "}
-              <code className="bg-primary/10 px-1 rounded text-primary">
-                .env.local
-              </code>
-              . Daftar gratis di console.groq.com
+              Tambahkan <code className="bg-primary/10 px-1 rounded text-primary">GROQ_API_KEY</code> di{" "}
+              <code className="bg-primary/10 px-1 rounded text-primary">.env.local</code>
             </p>
           </div>
         </div>
       )}
-
-      {/* Error: network */}
       {error && errorType === "network" && (
         <div className="flex items-start gap-2.5 bg-(--bg-card) border border-(--border) rounded-xl px-4 py-3">
           <WifiOff className="w-4 h-4 text-(--text-muted) shrink-0 mt-0.5" />
           <div>
-            <p className="text-sm font-semibold text-(--text)">
-              Tidak ada koneksi
-            </p>
-            <p className="text-xs text-(--text-muted) mt-0.5">
-              Cek internet kamu lalu coba lagi.
-            </p>
+            <p className="text-sm font-semibold text-(--text)">Tidak ada koneksi</p>
+            <p className="text-xs text-(--text-muted) mt-0.5">Cek internet kamu lalu coba lagi.</p>
           </div>
         </div>
       )}
-
-      {/* Error: general */}
       {error && errorType === "general" && (
-        <div className="flex items-start gap-2.5 bg-primary/5 border border-primary/30 rounded-xl px-4 py-3">
+        <div className="flex items-start gap-2.5 bg-primary/5 border border-primary/25 rounded-xl px-4 py-3">
           <AlertCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
           <p className="text-sm text-(--text)">{error}</p>
         </div>
       )}
 
-      {/* Submit button */}
+      {/* Submit */}
       <button
         onClick={onSubmit}
-        disabled={loading || wordCount < 5}
-        className="w-full flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-3.5 px-6 font-semibold text-sm hover:bg-primary/90 transition-all disabled:opacity-40 disabled:cursor-not-allowed shadow-sm"
-      >
-        {loading ? (
-          <>
-            <Loader2 className="w-4 h-4 animate-spin" /> AI is reviewing your
-            writing...
-          </>
-        ) : (
-          <>
-            <Sparkles className="w-4 h-4" /> Check My Writing
-          </>
+        disabled={!isReady}
+        className={cn(
+          'w-full flex items-center justify-center gap-2 rounded-2xl py-3.5 px-6 font-bold text-sm transition-all',
+          isReady
+            ? 'bg-primary text-white hover:bg-primary/90 shadow-sm shadow-primary/25'
+            : 'bg-(--bg-secondary) text-(--text-muted) border border-(--border) cursor-not-allowed',
         )}
+      >
+        {loading
+          ? <><Loader2 className="w-4 h-4 animate-spin" /> AI is reviewing your writing...</>
+          : <><Sparkles className="w-4 h-4" /> Check My Writing</>
+        }
       </button>
     </div>
   );

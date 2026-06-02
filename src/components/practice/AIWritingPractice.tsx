@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, PenLine, History, BookOpen } from 'lucide-react';
+import { ArrowLeft, PenLine, History, BookOpen, Sparkles } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import type { WritingFeedback, WritingHistoryEntry, WritingTab, WritingErrorType } from '@/types/writingPractice';
 import { WritingEditor } from './writing/WritingEditor';
 import { FeedbackPanel } from './writing/FeedbackPanel';
@@ -77,80 +78,100 @@ export function AIWritingPractice() {
   }
 
   return (
-    <div className="p-4 lg:p-6">
+    <div className="p-4 lg:p-6 max-w-7xl mx-auto space-y-6 animate-fade-in">
 
-      {/* Header */}
-      <div className="flex items-center justify-between mb-5 max-w-7xl mx-auto">
-        <Link href="/practice" className="inline-flex items-center gap-1.5 text-sm text-(--text-secondary) hover:text-primary transition-colors">
-          <ArrowLeft className="w-4 h-4" /> Back to Practice
-        </Link>
-        {mode === 'check' && (
-          <button onClick={openHistory} className="flex items-center gap-1.5 text-xs text-(--text-secondary) hover:text-primary border border-(--border) px-3 py-1.5 rounded-lg transition-colors">
-            <History className="w-3.5 h-3.5" /> History
-          </button>
-        )}
-      </div>
+      {/* Back link */}
+      <Link
+        href="/practice"
+        className="inline-flex items-center gap-1.5 text-sm text-(--text-secondary) hover:text-primary transition-colors font-medium"
+      >
+        <ArrowLeft className="w-4 h-4" /> Back to Practice
+      </Link>
 
-      {/* Title + Mode Tabs */}
-      <div className="max-w-7xl mx-auto mb-5">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-            <PenLine className="w-5 h-5 text-primary" />
+      {/* Hero card */}
+      <div className="relative rounded-2xl overflow-hidden border border-(--border) bg-(--bg-card)">
+        <div className="absolute inset-0 bg-linear-to-br from-primary/15 via-primary/5 to-transparent pointer-events-none" />
+        <div className="absolute -top-8 -right-8 w-40 h-40 rounded-full bg-primary/5 pointer-events-none" />
+        <div className="absolute -bottom-6 -left-6 w-28 h-28 rounded-full bg-primary/5 pointer-events-none" />
+
+        <div className="relative p-6 sm:p-8">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/20 flex items-center justify-center shrink-0">
+                <PenLine className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <h1 className="text-2xl sm:text-3xl font-bold text-(--text) leading-tight">Writing Practice</h1>
+                <p className="text-sm text-(--text-secondary) mt-1.5 leading-relaxed">
+                  AI-powered writing feedback &amp; guided essay practice.
+                </p>
+              </div>
+            </div>
+            {mode === 'check' && (
+              <button
+                onClick={openHistory}
+                className="shrink-0 flex items-center gap-1.5 text-xs font-semibold text-(--text-secondary) hover:text-primary border border-(--border) hover:border-primary/30 px-3 py-2 rounded-xl transition-all"
+              >
+                <History className="w-3.5 h-3.5" /> History
+              </button>
+            )}
           </div>
-          <div>
-            <h1 className="text-xl font-bold text-(--text)">Writing Practice</h1>
-            <p className="text-xs text-(--text-secondary)">AI-powered writing feedback &amp; guided essay practice</p>
+
+          {/* Mode tabs */}
+          <div className="flex gap-2 mt-6 pt-5 border-t border-(--border)/50">
+            <button
+              onClick={() => setMode('check')}
+              className={cn(
+                'flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all',
+                mode === 'check'
+                  ? 'bg-primary/15 text-primary border-primary/30'
+                  : 'bg-(--bg-secondary) text-(--text-muted) border-(--border) hover:border-primary/30 hover:text-primary'
+              )}
+            >
+              <Sparkles className="w-3.5 h-3.5" /> AI Writing Check
+            </button>
+            <button
+              onClick={() => setMode('essay')}
+              className={cn(
+                'flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold border transition-all',
+                mode === 'essay'
+                  ? 'bg-primary/15 text-primary border-primary/30'
+                  : 'bg-(--bg-secondary) text-(--text-muted) border-(--border) hover:border-primary/30 hover:text-primary'
+              )}
+            >
+              <BookOpen className="w-3.5 h-3.5" /> Guided Essay
+            </button>
           </div>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          <button
-            onClick={() => setMode('check')}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium border transition-colors ${
-              mode === 'check' ? 'bg-primary text-white border-primary' : 'bg-(--bg-card) text-(--text-muted) border-(--border) hover:border-primary'
-            }`}
-          >
-            <PenLine className="w-3.5 h-3.5" /> AI Writing Check
-          </button>
-          <button
-            onClick={() => setMode('essay')}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium border transition-colors ${
-              mode === 'essay' ? 'bg-primary text-white border-primary' : 'bg-(--bg-card) text-(--text-muted) border-(--border) hover:border-primary'
-            }`}
-          >
-            <BookOpen className="w-3.5 h-3.5" /> Guided Essay
-          </button>
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto">
-        {mode === 'check' ? (
-          <div className={`grid gap-6 ${feedback ? 'md:grid-cols-2' : 'max-w-3xl mx-auto'}`}>
-            <WritingEditor
-              text={text}
-              wordCount={wordCount}
-              promptIdea={promptIdea}
-              loading={loading}
-              error={error}
-              errorType={errorType}
-              textareaRef={textareaRef}
-              onChange={setText}
-              onSubmit={checkWriting}
-              onClear={clearAll}
+      {mode === 'check' ? (
+        <div className={cn('grid gap-6', feedback ? 'md:grid-cols-2' : 'max-w-3xl mx-auto')}>
+          <WritingEditor
+            text={text}
+            wordCount={wordCount}
+            promptIdea={promptIdea}
+            loading={loading}
+            error={error}
+            errorType={errorType}
+            textareaRef={textareaRef}
+            onChange={setText}
+            onSubmit={checkWriting}
+            onClear={clearAll}
+          />
+          {feedback && (
+            <FeedbackPanel
+              feedback={feedback}
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+              feedbackRef={feedbackRef}
             />
-            {feedback && (
-              <FeedbackPanel
-                feedback={feedback}
-                activeTab={activeTab}
-                setActiveTab={setActiveTab}
-                feedbackRef={feedbackRef}
-              />
-            )}
-          </div>
-        ) : (
-          <EssayWriting />
-        )}
-      </div>
+          )}
+        </div>
+      ) : (
+        <EssayWriting />
+      )}
 
       {showHistory && (
         <HistoryModal
