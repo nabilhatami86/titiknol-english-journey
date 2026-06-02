@@ -1592,19 +1592,26 @@ export default function ModuleLessonClient({ lesson, backHref = '/tn-basic-courc
 
                 if (showTranslation && hasTranslation) {
                   const translationText = nextParagraph!.slice(1, -1);
+                  const splitSentences = (text: string): string[] =>
+                    text.match(/[^.!?]*[.!?]+(?=\s|$)/g)?.map(s => s.trim()).filter(Boolean) ?? [text];
+                  const engSentences = splitSentences(paragraph);
+                  const idSentences = splitSentences(translationText);
                   return (
                     <div key={`${lesson.id}-p-${idx}`} className="flex gap-3">
                       <span className="text-xs text-primary/40 font-mono mt-1.5 shrink-0 select-none w-4 text-right">{readingParaIdx}</span>
-                      <div className="flex-1 space-y-2">
-                        <p className="text-sm leading-7 text-(--text-secondary) text-justify first-letter:text-lg first-letter:font-semibold first-letter:text-(--text)">
-                          {renderClickableText(paragraph, true)}
-                        </p>
-                        <div className="rounded-lg bg-(--bg-secondary) border border-(--border) border-l-4 border-l-primary/30 px-3.5 py-2.5">
-                          <p className="text-[11px] font-semibold text-primary/50 uppercase tracking-widest mb-1.5">Terjemahan</p>
-                          <p className="text-[13.5px] leading-[1.75] text-(--text-secondary) italic">
-                            {translationText}
-                          </p>
-                        </div>
+                      <div className="flex-1 space-y-3">
+                        {engSentences.map((sentence, sIdx) => (
+                          <div key={sIdx} className="space-y-0.5">
+                            <p className="text-sm leading-7 text-(--text-secondary) text-justify">
+                              {renderClickableText(sentence)}
+                            </p>
+                            {idSentences[sIdx] && (
+                              <p className="text-[13px] leading-[1.65] text-primary/60 italic pl-3 border-l-2 border-primary/20">
+                                {idSentences[sIdx]}
+                              </p>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   );
