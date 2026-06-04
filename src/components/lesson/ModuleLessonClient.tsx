@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {
   ArrowLeft, BookText, Languages, X, Volume2, Braces,
   BookOpen, Headphones, MessageCircle, PenLine, GraduationCap,
-  Sparkles, ChevronRight,
+  Sparkles, ChevronDown,
 } from 'lucide-react';
 import type { ModuleLesson } from '@/types/module';
 import { cn } from '@/lib/utils';
@@ -69,6 +69,9 @@ export default function ModuleLessonClient({
   const [showGrammarMode, setShowGrammarMode] = useState(false);
   const [grammarPopup, setGrammarPopup] = useState<{ word: string; label: string; reason: string; color: string; bg: string } | null>(null);
   const [showQuizGame, setShowQuizGame] = useState(false);
+  const [openSections, setOpenSections] = useState<Record<number, boolean>>(() =>
+    Object.fromEntries(lesson.materialSections.map((_, i) => [i, true]))
+  );
   const quizGameRef = useRef<HTMLDivElement>(null);
 
   const trackMeta = TRACK_META[lesson.track] ?? TRACK_META.reading;
@@ -296,39 +299,49 @@ export default function ModuleLessonClient({
             <span className="text-xs text-(--text-muted) font-medium">{lesson.materialSections.length} section{lesson.materialSections.length !== 1 ? 's' : ''}</span>
           </div>
 
-          <div className={cn(lesson.track === 'listening' ? 'grid md:grid-cols-2 gap-3' : 'space-y-3')}>
-            {lesson.materialSections.map((section, si) => (
-              <div key={section.title} className="group bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden hover:border-primary/30 transition-colors">
-                {/* Section header */}
-                <div className="flex items-center gap-3 px-5 py-3.5 bg-gradient-to-r from-primary/[0.06] to-transparent border-b border-(--border)">
-                  <span className="shrink-0 w-6 h-6 rounded-full bg-primary text-white text-[11px] font-bold flex items-center justify-center leading-none">
-                    {SECTION_LETTERS[si] ?? (si + 1)}
-                  </span>
-                  <h3 className="font-semibold text-(--text) text-sm flex-1">{section.title}</h3>
-                  <ChevronRight className="w-4 h-4 text-(--text-muted) group-hover:text-primary transition-colors shrink-0" />
-                </div>
+          <div className={cn(lesson.track === 'listening' ? 'grid md:grid-cols-2 gap-3' : 'space-y-2.5')}>
+            {lesson.materialSections.map((section, si) => {
+              const isOpen = openSections[si] !== false;
+              return (
+                <div key={section.title} className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden transition-colors hover:border-primary/20">
+                  {/* Section header — clickable toggle */}
+                  <button
+                    onClick={() => setOpenSections(prev => ({ ...prev, [si]: !isOpen }))}
+                    className="w-full flex items-center gap-3 px-5 py-3.5 bg-linear-to-r from-primary/[0.06] to-transparent hover:from-primary/10 transition-all text-left"
+                  >
+                    <span className="shrink-0 w-6 h-6 rounded-full bg-primary text-white text-[11px] font-bold flex items-center justify-center leading-none">
+                      {SECTION_LETTERS[si] ?? (si + 1)}
+                    </span>
+                    <h3 className="font-semibold text-(--text) text-sm flex-1">{section.title}</h3>
+                    <ChevronDown className={cn('w-4 h-4 text-(--text-muted) transition-transform duration-200 shrink-0', isOpen && 'rotate-180')} />
+                  </button>
 
-                {/* Section body */}
-                <div className="p-5">
-                  <SectionPoints
-                    points={section.points}
-                    title={section.title}
-                    track={lesson.track}
-                    imageUrl={section.imageUrl}
-                    renderClickableText={renderClickableText}
-                    translateWord={translateWord}
-                    setShowQuizGame={setShowQuizGame}
-                    quizGameRef={quizGameRef}
-                  />
+                  {/* Section body */}
+                  {isOpen && (
+                    <div className="border-t border-(--border)/60">
+                      <div className="p-5">
+                        <SectionPoints
+                          points={section.points}
+                          title={section.title}
+                          track={lesson.track}
+                          imageUrl={section.imageUrl}
+                          renderClickableText={renderClickableText}
+                          translateWord={translateWord}
+                          setShowQuizGame={setShowQuizGame}
+                          quizGameRef={quizGameRef}
+                        />
+                      </div>
+                      {section.imageUrl && (
+                        <div className="px-5 pb-5">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={section.imageUrl} alt={section.title} className="w-full rounded-xl border border-(--border) object-contain" />
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
-                {section.imageUrl && (
-                  <div className="px-5 pb-5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={section.imageUrl} alt={section.title} className="w-full rounded-xl border border-(--border) object-contain" />
-                  </div>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 

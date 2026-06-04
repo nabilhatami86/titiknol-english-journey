@@ -11,7 +11,7 @@ import { HistoryModal } from './writing/HistoryModal';
 import { PROMPT_IDEAS, loadHistory, saveEntry } from './writing/utils';
 import { EssayWriting } from './writing/EssayWriting';
 
-export function AIWritingPractice() {
+ export function AIWritingPractice() {
   const [mode, setMode] = useState<'check' | 'essay'>('check');
   const [text, setText] = useState('');
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null);

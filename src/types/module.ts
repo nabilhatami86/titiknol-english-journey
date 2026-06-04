@@ -20,7 +20,7 @@ export interface ModuleExercise {
   correctAnswer?: string;
   reason?: string;
   sampleAnswer?: string;
-  section?: "middle" | "final" | "quiz" | "part1" | "part2";
+  section?: "middle" | "final" | "quiz" | "part1" | "part2" | "part3";
   imageUrl?: string;
 }
 

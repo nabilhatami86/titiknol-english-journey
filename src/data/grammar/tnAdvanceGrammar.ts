@@ -4514,6 +4514,716 @@ const advanceGrammarLessons: ModuleLesson[] = [
       },
     ],
   },
+
+  // ── Day 15 · Noun Clause + Appositive ─────────────────────────────────────
+  {
+    id: "adv-grammar-15",
+    track: "grammar",
+    day: 15,
+    tutor: "Ms. Manda",
+    title: "Noun Clause & Appositive",
+    subtitle: "NC vs AC vs AVC · Appositive Position (Initial, Middle, Final)",
+    overview:
+      "Hari ini membahas dua topik: (1) Noun Clause — review singkat NC beserta perbandingannya dengan Adjective Clause (AC) dan Adverbial Clause (AVC); (2) Appositive — keterangan tambahan berupa noun/noun phrase yang bisa diletakkan di Initial, Middle, atau Final position.",
+
+    materialSections: [
+      {
+        title: "Noun Clause (NC) — Review & Perbandingan",
+        points: [
+          "NOUN CLAUSE = klausa yang berfungsi sebagai NOUN (subjek, objek, atau komplemen).",
+          "Konjungsi NC: that, whether, if, wh-words (what, which, who, when, where, why, how)",
+          "",
+          "Contoh NC:",
+          "  1. He believes THAT everything happens for a reason.",
+          "  2. I still don't know WHETHER he will come or not.",
+          "  3. She asks WHICH I should finish first.",
+          "  4. I know THAT she wants to play a game.",
+          "",
+          "━━ Perbedaan NC vs AC vs AVC ━━",
+          "",
+          "AC (Adjective Clause) — memodifikasi NOUN sebelumnya:",
+          "  → I carry a box [WHICH is heavy].       ← 'which' = conj, 'a box' = noun yg dimodifikasi",
+          "  → My mother [WHO makes meatball] is beautiful.",
+          "  → I buy a car [WHICH I've dreamed of since the past].",
+          "",
+          "AVC (Adverbial Clause) — memodifikasi VERB / kalimat utama:",
+          "  → WHEN I ate pizza, the guys are knocking the door.",
+          "  → She is so smart THAT I study with her.",
+          "  → SINCE I was a child, I lived in Seoul.",
+          "  → It was such an amazing scenery THAT we want to visit again.",
+          "",
+          "NC (Noun Clause) — berfungsi sebagai NOUN (bisa jadi Objek/Subjek):",
+          "  → I know [THAT she wants to play a game].   ← NC sebagai objek 'know'",
+          "  → [WHAT he said] is surprising.              ← NC sebagai subjek",
+        ],
+      },
+      {
+        title: "Appositive — Definisi & Posisi",
+        points: [
+          "APPOSITIVE = keterangan tambahan berupa noun atau noun phrase yang menerangkan noun di sebelahnya.",
+          "Biasanya diawali: a, an, the, one of...",
+          "Dipisahkan dengan koma (,) dari kalimat utama.",
+          "",
+          "━━ 1) INITIAL Position — APP, S + V ━━",
+          "  Appositive diletakkan di awal kalimat, sebelum subjek.",
+          "  → A smart student, Nabil joins CoC.",
+          "  → One of my best friends, Frisca is having lunch with me.",
+          "  → One of my favorite tutors, Amanda is teaching now.",
+          "  → A beautiful lady, Ms. Aya is my best friend.",
+          "  → The strongest hero, Hulk protects the society.",
+          "",
+          "━━ 2) MIDDLE Position — S, APP, V ━━",
+          "  Appositive disisipkan di antara Subjek dan Verb.",
+          "  → Nadine, one of the most beautiful girls in Pare, went to Japan.",
+          "       S      ←────── APP ──────────────────→    V",
+          "  → Fortuner, one of my favorite cars, is repaired in the service station.",
+          "  → Oka, a famous person in Indonesia, was just arrested yesterday.",
+          "",
+          "━━ 3) FINAL Position — S + V + (O), APP ━━",
+          "  Appositive diletakkan di akhir kalimat, setelah objek atau verb.",
+          "  → I met Rosa, the most diligent student in Pare.",
+          "  → I bought a Barcelona Jersey, the most expensive in the store.",
+          "  → We decided to visit Busan, one of my favorite cities in Korea.",
+          "  → I managed to secure George Orwell's signature, the famous author of Animal Farm.",
+          "  → They visited Borobudur, a famous temple in Indonesia.",
+        ],
+      },
+      {
+        title: "Exercise Guide — Part 1: Exercise 3 (Appositive C/I)",
+        points: [
+          "EXERCISE 3: Underline the subject (once) and the verb (twice).",
+          "Be careful with appositives — jangan sampai salah identifikasi appositive sebagai subject.",
+          "Kemudian tentukan apakah kalimat CORRECT (C) atau INCORRECT (I).",
+          "",
+          "Cara identifikasi:",
+          "  1. Temukan appositive (noun phrase diantara koma)",
+          "  2. Sisihkan appositive → cari S dan V dari kalimat utama",
+          "  3. Jika S + V masih ada dan grammatical → CORRECT",
+          "  4. Jika setelah appositive dihilangkan tidak ada S atau V → INCORRECT",
+        ],
+      },
+      {
+        title: "Exercise Guide — Part 2: Identify the Clause (NC / AC / AVC)",
+        points: [
+          "Underline the clause in each sentence, then identify the type:",
+          "  • NC  (Noun Clause)      — berfungsi sebagai noun (S / O / komplemen)",
+          "  • AC  (Adjective Clause) — memodifikasi noun sebelumnya",
+          "  • AVC (Adverbial Clause) — memodifikasi verb / kalimat utama",
+          "",
+          "Kunci pembeda cepat:",
+          "  → Tanya: APA fungsinya dalam kalimat?",
+          "  → Kalau bisa diganti pronoun (it/that/him) = NC",
+          "  → Kalau menerangkan noun di depannya = AC",
+          "  → Kalau menerangkan kapan/mengapa/bagaimana verb terjadi = AVC",
+        ],
+      },
+      {
+        title: "Exercise Guide — Part 3: Pre-Exam 1 Grammar 2",
+        points: [
+          "20 soal pilihan ganda mencakup seluruh materi Grammar 2:",
+          "  • Noun Clause (NC of Question / Statement)",
+          "  • Adjective Clause (Relative Clause dengan who/which/that)",
+          "  • Adverbial Clause (Conditional / Concessive / Time)",
+          "  • Inversion (Seldom / Not until + auxiliary + S + V)",
+          "  • Reduction (Participial Phrase / Gerund / Infinitive)",
+          "  • Comparison (as...as / not as...as that of)",
+          "  • Gerund & Infinitive sebagai Subject",
+          "  • Appositive",
+          "",
+          "Strategi mengerjakan:",
+          "  1. Baca kalimat, tentukan apa yang dibutuhkan (conjunction / pronoun / verb form)",
+          "  2. Eliminasi pilihan yang jelas salah secara gramatikal",
+          "  3. Cek subject–verb agreement dan word order",
+          "  4. Perhatikan tanda koma — sering menjadi petunjuk jenis clause",
+        ],
+      },
+    ],
+
+    passage: [],
+
+    exercises: [
+      // ── Part 2: Identify the Clause Type (NC / AC / AVC) ────────────────
+      {
+        id: "adv-g15-cl1",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The cake, which was decorated with fresh strawberries, looked delicious.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "B. Adjective Clause (AC)",
+        reason:
+          "AC: 'which was decorated with fresh strawberries' — 'which' adalah relative pronoun yang memodifikasi noun 'the cake'. Clausanya menjelaskan SEPERTI APA cake itu → Adjective Clause.",
+      },
+      {
+        id: "adv-g15-cl2",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The rumor that they are moving to a new city spread quickly.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "A. Noun Clause (NC)",
+        reason:
+          "NC: 'that they are moving to a new city' — 'that' di sini adalah complementizer (bukan relative pronoun). Clause ini menerangkan ISI dari 'the rumor' (appositive NC) → Noun Clause.",
+      },
+      {
+        id: "adv-g15-cl3",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'We will start the meeting when everyone arrives.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "C. Adverbial Clause (AVC)",
+        reason:
+          "AVC of Time: 'when everyone arrives' — memodifikasi VERB 'will start', menyatakan KAPAN meeting dimulai. 'When' di sini adalah subordinating conjunction waktu → Adverbial Clause.",
+      },
+      {
+        id: "adv-g15-cl4",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'What you proposed at the meeting was well-received by the board.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "A. Noun Clause (NC)",
+        reason:
+          "NC sebagai Subject: 'What you proposed at the meeting' — clause ini berfungsi sebagai SUBJEK kalimat. 'What' = wh-word yang memperkenalkan NC. Tanpa clause: '___ was well-received' → posisi subject diisi NC.",
+      },
+      {
+        id: "adv-g15-cl5",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'He began his work in 1998 when the reformation happened.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "B. Adjective Clause (AC)",
+        reason:
+          "AC of Time: 'when the reformation happened' — 'when' di sini adalah relative adverb yang memodifikasi noun waktu '1998'. Clause ini menerangkan KAPAN tahun 1998 itu → Adjective Clause (memodifikasi noun '1998').",
+      },
+      {
+        id: "adv-g15-cl6",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'After it identified a new market opportunity, the company expanded its operations.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "C. Adverbial Clause (AVC)",
+        reason:
+          "AVC of Time: 'After it identified a new market opportunity' — posisi INITIAL (di awal kalimat, diikuti koma). 'After' = subordinating conjunction waktu, memodifikasi verb 'expanded' → Adverbial Clause.",
+      },
+      {
+        id: "adv-g15-cl7",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The question of when the project will be completed remains unanswered.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "A. Noun Clause (NC)",
+        reason:
+          "NC sebagai objek preposisi 'of': 'when the project will be completed' — merupakan embedded question (pertanyaan terbenam) yang berfungsi sebagai noun, menjadi pelengkap dari 'the question of ___' → Noun Clause.",
+      },
+      {
+        id: "adv-g15-cl8",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The novel that explores themes of identity and belonging has won several literary awards.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "B. Adjective Clause (AC)",
+        reason:
+          "AC: 'that explores themes of identity and belonging' — 'that' adalah relative pronoun yang memodifikasi noun 'the novel'. Clause ini mendeskripsikan novel SEPERTI APA → Adjective Clause.",
+      },
+      {
+        id: "adv-g15-cl9",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The moment when he realized his mistake was unforgettable.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "B. Adjective Clause (AC)",
+        reason:
+          "AC of Time: 'when he realized his mistake' — 'when' adalah relative adverb yang memodifikasi noun waktu 'the moment'. Clause ini menerangkan MOMEN yang mana → Adjective Clause.",
+      },
+      {
+        id: "adv-g15-cl10",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'I am uncertain whether the new strategy will be effective.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "A. Noun Clause (NC)",
+        reason:
+          "NC sebagai komplemen adjektiva: 'whether the new strategy will be effective' — 'whether' memperkenalkan embedded yes/no question. Clause ini mengisi posisi komplemen dari 'uncertain about ___' → Noun Clause.",
+      },
+      {
+        id: "adv-g15-cl11",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The policy, which was implemented to reduce pollution, has had mixed results.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "B. Adjective Clause (AC)",
+        reason:
+          "AC non-restrictive: 'which was implemented to reduce pollution' — diapit koma, memodifikasi 'the policy'. 'Which' = relative pronoun. Clause ini memberi info tambahan tentang kebijakan tersebut → Adjective Clause.",
+      },
+      {
+        id: "adv-g15-cl12",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'Whoever wins the competition will earn a significant scholarship.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "A. Noun Clause (NC)",
+        reason:
+          "NC sebagai Subject: 'Whoever wins the competition' — 'whoever' = compound relative pronoun yang memperkenalkan NC. Berfungsi sebagai SUBJEK kalimat utama → Noun Clause.",
+      },
+      {
+        id: "adv-g15-cl13",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'He invested in the startup because he believed in its potential for growth.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "C. Adverbial Clause (AVC)",
+        reason:
+          "AVC of Reason: 'because he believed in its potential for growth' — 'because' = subordinating conjunction sebab/alasan, memodifikasi verb 'invested'. Menyatakan MENGAPA dia berinvestasi → Adverbial Clause.",
+      },
+      {
+        id: "adv-g15-cl14",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The belief that he would succeed motivated him to keep going.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "A. Noun Clause (NC)",
+        reason:
+          "NC appositive: 'that he would succeed' — 'that' adalah complementizer yang menerangkan ISI dari 'the belief'. Sama seperti 'The rumor that...' — clause ini menjawab pertanyaan 'believe WHAT?' → Noun Clause.",
+      },
+      {
+        id: "adv-g15-cl15",
+        type: "multiple-choice",
+        section: "part2",
+        question:
+          "Identify the Clause Type — underline the clause & identify it!\n\n'The statement that she made caused a lot of confusion.'",
+        options: ["A. Noun Clause (NC)", "B. Adjective Clause (AC)", "C. Adverbial Clause (AVC)"],
+        correctAnswer: "B. Adjective Clause (AC)",
+        reason:
+          "AC: 'that she made' — 'that' adalah relative pronoun (bisa diganti 'which') yang memodifikasi noun 'the statement'. Clause ini menerangkan statement MANA yang dimaksud, bukan isi dari statement. Bandingkan dengan #14: 'the belief that he would succeed' (isi kepercayaan) → di sini 'the statement that she made' (pernyataan mana) → Adjective Clause.",
+      },
+
+      // ── Exercise 3: Appositive — Correct (C) or Incorrect (I) ────────────
+      {
+        id: "adv-g15-ci1",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'The son of the previous owner, the new owner is undertaking some fairly broad changes in management policy.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "C. Correct",
+        reason:
+          "APP: 'The son of the previous owner' (posisi INITIAL) | S: 'the new owner' | V: 'is undertaking'. Tanpa appositive: 'The new owner is undertaking changes' — kalimat tetap grammatical. ✓ CORRECT.",
+      },
+      {
+        id: "adv-g15-ci2",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'Last semester, a friend, graduated cum laude from the university.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "I. Incorrect",
+        reason:
+          "Setelah appositive dihilangkan: 'Last semester, graduated cum laude...' — tidak ada subjek. 'A friend' ditulis seolah appositive (diapit koma), tetapi justru itu adalah satu-satunya subject kandidat. Kalimat kehilangan subjek yang jelas. ✗ INCORRECT.",
+      },
+      {
+        id: "adv-g15-ci3",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'Valentine's Day, February 14, is a special holiday for sweethearts.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "C. Correct",
+        reason:
+          "S: 'Valentine's Day' | APP (MIDDLE): 'February 14' | V: 'is'. Tanpa appositive: 'Valentine's Day is a special holiday for sweethearts.' ✓ CORRECT.",
+      },
+      {
+        id: "adv-g15-ci4",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'At long last, the chief executive officer, has decided to step down.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "I. Incorrect",
+        reason:
+          "Koma setelah 'officer' membuat 'the chief executive officer' terlihat seperti appositive MIDDLE, padahal tidak ada noun sebelumnya yang diterangkan. Tanpa appositive: 'At long last, has decided to step down' — tidak ada subjek. ✗ INCORRECT.",
+      },
+      {
+        id: "adv-g15-ci5",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'Tonight's supper, leftovers from last night, did not taste any better tonight than last night.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "C. Correct",
+        reason:
+          "S: 'Tonight's supper' | APP (MIDDLE): 'leftovers from last night' | V: 'did not taste'. Tanpa appositive: 'Tonight's supper did not taste any better.' ✓ CORRECT.",
+      },
+      {
+        id: "adv-g15-ci6",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'The only entrance to the closet, the door was kept locked at all times.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "C. Correct",
+        reason:
+          "APP (INITIAL): 'The only entrance to the closet' | S: 'the door' | V: 'was kept'. Tanpa appositive: 'The door was kept locked at all times.' ✓ CORRECT.",
+      },
+      {
+        id: "adv-g15-ci7",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'In the cold of winter, a wall heating unit, would not turn on.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "I. Incorrect",
+        reason:
+          "Setelah frasa adverbia 'In the cold of winter', 'a wall heating unit' ditulis seolah appositive (diapit koma). Tanpa appositive: 'In the cold of winter, would not turn on.' — tidak ada subjek. ✗ INCORRECT.",
+      },
+      {
+        id: "adv-g15-ci8",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'The new tile pattern, yellow flowers on a white background, really brightens up the room.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "C. Correct",
+        reason:
+          "S: 'The new tile pattern' | APP (MIDDLE): 'yellow flowers on a white background' | V: 'really brightens'. Tanpa appositive: 'The new tile pattern really brightens up the room.' ✓ CORRECT.",
+      },
+      {
+        id: "adv-g15-ci9",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'The high-powered computer the most powerful machine of its type, was finally readied for use.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "I. Incorrect",
+        reason:
+          "Appositive 'the most powerful machine of its type' tidak dipisahkan dengan koma dari 'computer' — seharusnya: 'The high-powered computer, the most powerful machine of its type, was readied...' Koma pembuka sebelum appositive hilang. ✗ INCORRECT.",
+      },
+      {
+        id: "adv-g15-ci10",
+        type: "multiple-choice",
+        section: "part1",
+        question:
+          "Exercise 3 — C or I?\n\n'A longtime friend and confidant, the psychologist was often invited over for Sunday dinner.'",
+        options: ["C. Correct", "I. Incorrect"],
+        correctAnswer: "C. Correct",
+        reason:
+          "APP (INITIAL): 'A longtime friend and confidant' | S: 'the psychologist' | V: 'was often invited'. Tanpa appositive: 'The psychologist was often invited over for Sunday dinner.' ✓ CORRECT.",
+      },
+
+      // ── Part 3: Pre-Exam 1 Grammar 2 ────────────────────────────────────────
+      {
+        id: "adv-g15-pe1",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 1\n\n_____ bacteria in foods are killed, as they are during baking or stewing, decay is slowed down.",
+        options: ["A. What", "B. The", "C. If", "D. So"],
+        correctAnswer: "C. If",
+        reason:
+          "IF + S + V = Conditional Clause (AVC). 'If bacteria are killed, decay is slowed down.' → struktur kondisi (if-clause). 'What/The/So' tidak membentuk conditional clause yang benar. ✓ C. If",
+      },
+      {
+        id: "adv-g15-pe2",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 2\n\nThe world's deepest cave, Pierre St. Martin in the Pyrenees Mountains, is almost three times as deep _____.",
+        options: [
+          "A. as the Empire State Building is high",
+          "B. That the Empire State Building is higher",
+          "C. Is higher than the Empire State Building",
+          "D. And the Empire State Building's height",
+        ],
+        correctAnswer: "A. as the Empire State Building is high",
+        reason:
+          "Comparison: 'as deep AS ...' → struktur 'as [adj] as + clause' — 'as the Empire State Building is high' melengkapi perbandingan dengan benar. B/C/D menggunakan struktur yang salah. ✓ A. as the Empire State Building is high",
+      },
+      {
+        id: "adv-g15-pe3",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 3\n\nThe early years of the United States government were characterized by a debate concerning _____ or individual states should have more power.",
+        options: [
+          "A. whether the federal government",
+          "B. either the federal government",
+          "C. that the federal government",
+          "D. the federal government",
+        ],
+        correctAnswer: "A. whether the federal government",
+        reason:
+          "NC of Yes/No Question: 'concerning WHETHER the federal government or individual states should...' — 'whether' membentuk NC of Question setelah preposition 'concerning'. 'either' butuh pasangan 'or' langsung; 'that' tidak tepat untuk yes/no question. ✓ A. whether the federal government",
+      },
+      {
+        id: "adv-g15-pe4",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 4\n\nTornados, powerful, destructive wind storms, occur most often in the spring when hot winds _____ over flat land encounter heavy cold air.",
+        options: [
+          "A. which to rise",
+          "B. that rising",
+          "C. are rising",
+          "D. rising",
+        ],
+        correctAnswer: "D. rising",
+        reason:
+          "Reduced AC (Participial Phrase): 'hot winds RISING over flat land' — 'rising' = present participle memodifikasi 'hot winds'. A/B gramatikal salah. C ('are rising') membuat kalimat memiliki dua verb tanpa conjunction. ✓ D. rising",
+      },
+      {
+        id: "adv-g15-pe5",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 5\n\nSeldom _____ more than twenty minutes a night.",
+        options: [
+          "A. Sleep giraffes",
+          "B. Do giraffes sleep",
+          "C. Giraffes do sleep",
+          "D. Giraffes sleep",
+        ],
+        correctAnswer: "B. Do giraffes sleep",
+        reason:
+          "Inversion dengan 'Seldom' (negative adverb di awal kalimat): Seldom + DO/DOES/DID + S + V1 → 'Seldom DO giraffes sleep...' C = bukan inversion (statement order + 'do' emphatic); D = statement order tanpa inversion. ✓ B. Do giraffes sleep",
+      },
+      {
+        id: "adv-g15-pe6",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 6\n\nWorking like a telescope, _____ the size of objects at great distances.",
+        options: [
+          "A. which magnifies a telephoto lens",
+          "B. a telephoto lens magnifies",
+          "C. a telephoto lens which magnifies",
+          "D. and magnifying a telephoto lens",
+        ],
+        correctAnswer: "B. a telephoto lens magnifies",
+        reason:
+          "Dangling Modifier: 'Working like a telescope' (participial phrase) harus diikuti subject yang benar-benar 'bekerja seperti teleskop' → 'a telephoto lens magnifies...' A/C/D tidak logis atau gramatikal salah. ✓ B. a telephoto lens magnifies",
+      },
+      {
+        id: "adv-g15-pe7",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 7\n\nJackie Joyner-Kersee, _____ the world record in the heptathlon in the 1988 Olympics, also won the long jump in the year.",
+        options: [
+          "A. whose setting",
+          "B. which she set",
+          "C. whoever set",
+          "D. who set",
+        ],
+        correctAnswer: "D. who set",
+        reason:
+          "AC (Adjective Clause): 'who set the world record' — 'who' = relative pronoun untuk orang, berfungsi sebagai subject dalam AC. A = 'whose' butuh noun sesudahnya; B = 'which' untuk benda; C = 'whoever' salah konteks. ✓ D. who set",
+      },
+      {
+        id: "adv-g15-pe8",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 8\n\nGorillas are quiet animals, _____ they are capable of making about 20 different sounds.",
+        options: [
+          "A. whether",
+          "B. which",
+          "C. even though",
+          "D. as well as",
+        ],
+        correctAnswer: "C. even though",
+        reason:
+          "AVC of Contrast: 'even though they are capable...' — menunjukkan kontras (gorillas quiet TAPI mampu 20 suara). 'whether' butuh 'or'; 'which' membentuk AC bukan AVC kontras; 'as well as' tidak membentuk clause. ✓ C. even though",
+      },
+      {
+        id: "adv-g15-pe9",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 9\n\nBecause the wood of the dogwood tree is very hard, _____ is used for objects, such as roller skate wheels, in which hardness is desired.",
+        options: ["A. and", "B. it", "C. what", "D. thus"],
+        correctAnswer: "B. it",
+        reason:
+          "'Because...' = AVC (sudah ada), lalu butuh main clause dengan subject pronoun → 'it' merujuk ke 'the wood'. 'and/what/thus' tidak tepat sebagai pronoun subject di main clause. ✓ B. it",
+      },
+      {
+        id: "adv-g15-pe10",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 10\n\nThe early feminist leader Susan B. Anthony became increasingly aware through her work in the temperance movement _____ the same rights as men.",
+        options: [
+          "A. women were not granted that",
+          "B. that women were not granted",
+          "C. not granted women that wore",
+          "D. that were not granted women",
+        ],
+        correctAnswer: "B. that women were not granted",
+        reason:
+          "NC of Statement sebagai object dari 'aware of': 'aware THAT women were not granted the same rights as men.' A = word order terbalik ('that' seharusnya di depan); C/D = struktur tidak gramatikal. ✓ B. that women were not granted",
+      },
+      {
+        id: "adv-g15-pe11",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 11\n\nFossil records indicate _____ existing in the past have become extinct.",
+        options: [
+          "A. that many species of organisms",
+          "B. many species of organisms that",
+          "C. many species of organisms are",
+          "D. there are many organisms",
+        ],
+        correctAnswer: "A. that many species of organisms",
+        reason:
+          "NC of Statement sebagai object dari 'indicate': 'indicate THAT many species of organisms [existing in the past] have become extinct.' B = 'that' salah posisi (setelah object); C/D = tidak gramatikal atau hilang. ✓ A. that many species of organisms",
+      },
+      {
+        id: "adv-g15-pe12",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 12\n\n____________, the seeds of the Kentucky coffee plant are poisonous.",
+        options: [
+          "A. Cooking them",
+          "B. They have been cooked",
+          "C. Cooked until",
+          "D. Until they have been cooked",
+        ],
+        correctAnswer: "D. Until they have been cooked",
+        reason:
+          "AVC of Time/Condition: 'UNTIL they have been cooked, the seeds...are poisonous' — 'until' = conjunction AVC (selama belum dimasak, biji beracun). A = participial phrase (dangling); B = kalimat tanpa conjunction; C = 'until' di posisi salah. ✓ D. Until they have been cooked",
+      },
+      {
+        id: "adv-g15-pe13",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 13\n\nMost folk songs are ballads _____ have simple words and tell simple stories.",
+        options: ["A. What", "B. Although", "C. When", "D. That"],
+        correctAnswer: "D. That",
+        reason:
+          "AC (Adjective Clause): 'ballads THAT have simple words...' — 'that' = relative pronoun untuk benda/konsep. 'What' bukan relative pronoun (tidak bisa menggantikan 'ballads'); 'Although/When' = conjunction AVC. ✓ D. That",
+      },
+      {
+        id: "adv-g15-pe14",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 14\n\n_____ at home requires only three types of chemicals, several pieces of simple equipment, and running water.",
+        options: [
+          "A. For the development film",
+          "B. To develop film",
+          "C. When film is developed",
+          "D. In developing film",
+        ],
+        correctAnswer: "B. To develop film",
+        reason:
+          "Infinitive as Subject: 'TO DEVELOP film at home requires...' — infinitive phrase berfungsi sebagai grammatical subject. A = salah struktur; C = AVC (bukan subject); D = 'In developing' (preposition + gerund, bukan subject). ✓ B. To develop film",
+      },
+      {
+        id: "adv-g15-pe15",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 15\n\n_____ for a career in dance generally begins at an early age.",
+        options: [
+          "A. People train",
+          "B. That people train",
+          "C. If training",
+          "D. Training",
+        ],
+        correctAnswer: "D. Training",
+        reason:
+          "Gerund as Subject: 'TRAINING for a career in dance generally begins...' — gerund phrase berfungsi sebagai subject. A = kalimat lengkap (bukan gerund subject); B = NC of Statement (membutuhkan verb utama lain); C = 'If training' (AVC fragment). ✓ D. Training",
+      },
+      {
+        id: "adv-g15-pe16",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 16\n\nModern race cars store fuel in rubber bladders that are almost impossible _____.",
+        options: [
+          "A. Rupturing",
+          "B. To rupture",
+          "C. Ruptures",
+          "D. Ruptured",
+        ],
+        correctAnswer: "B. To rupture",
+        reason:
+          "Infinitive setelah adjective: impossible TO + V1 → 'almost impossible TO RUPTURE.' A = gerund (bukan infinitive); C = simple present verb (salah bentuk); D = past participle. ✓ B. To rupture",
+      },
+      {
+        id: "adv-g15-pe17",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 17\n\nThe social system of bumblebees is not as complex _____ honeybees.",
+        options: ["A. than", "B. as that of", "C. that are", "D. as"],
+        correctAnswer: "B. as that of",
+        reason:
+          "Comparison 'not as...as': 'not as complex AS THAT OF honeybees' — 'that' merujuk ke 'social system' sehingga menghindari repetisi ('as the social system of honeybees'). A = 'than' hanya untuk comparative (-er/more); C/D = tidak melengkapi perbandingan dengan benar. ✓ B. as that of",
+      },
+      {
+        id: "adv-g15-pe18",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 18\n\nNot until the seventeenth century _____ to measure the speed of light.",
+        options: [
+          "A. did anyone even attempt",
+          "B. anyone did even attempt",
+          "C. did anyone attempt even",
+          "D. did even attempt anyone",
+        ],
+        correctAnswer: "A. did anyone even attempt",
+        reason:
+          "Inversion dengan 'Not until' (negative adverb phrase di awal): Not until + AUX + S + V → 'Not until the seventeenth century DID ANYONE EVEN ATTEMPT...' B = statement order (bukan inversion); C = 'even' salah posisi; D = subject ('anyone') di akhir. ✓ A. did anyone even attempt",
+      },
+      {
+        id: "adv-g15-pe19",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 19\n\nThe black-billed cuckoo has been known to steal eggs _____ to other birds.",
+        options: [
+          "A. belong",
+          "B. which belonging",
+          "C. which they belong",
+          "D. that belong",
+        ],
+        correctAnswer: "D. that belong",
+        reason:
+          "AC (Adjective Clause): 'eggs THAT BELONG to other birds' — 'that' = relative pronoun untuk benda, berfungsi sebagai subject. A = tanpa relative pronoun (salah struktur); B = 'belonging' bukan finite verb; C = 'which they belong' = double subject. ✓ D. that belong",
+      },
+      {
+        id: "adv-g15-pe20",
+        type: "multiple-choice",
+        section: "part3",
+        question:
+          "Pre-Exam 1 — Question 20\n\nDespite its wide range of styles and instrumentation, country music has certain common features _____ its own special character.",
+        options: [
+          "A. give it that",
+          "B. that give it",
+          "C. give that",
+          "D. that gives it to",
+        ],
+        correctAnswer: "B. that give it",
+        reason:
+          "AC (Adjective Clause): 'features THAT GIVE IT its own special character' — 'that' = relative pronoun subject, 'give' agreement dengan 'features' (plural). A = tanpa relative pronoun di depan; C = tanpa pronoun; D = 'gives' salah agreement (features = plural). ✓ B. that give it",
+      },
+    ],
+  },
 ];
 
 export { advanceGrammarLessons };

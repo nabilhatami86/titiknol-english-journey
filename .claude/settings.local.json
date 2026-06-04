@@ -28,7 +28,11 @@
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\\\\src\\\\data\\\\vocabulary.ts\"\\) | Select-String 'id: \"' | Select-Object -Last 20)",
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\muham\\\\Desktop\\\\vocab-for-train\\\\src\\\\data\\\\vocabulary.ts\"\\) | Measure-Object -Line | Select-Object -ExpandProperty Lines)",
       "Bash(echo \"EXIT:$?\")",
-      "Bash(awk -F: '{print $1}')"
+      "Bash(awk -F: '{print $1}')",
+      "Read(//tmp/**)",
+      "Read(//c/tmp/**)",
+      "Bash(\"C:\\\\Program Files\\\\Git\\\\mingw64\\\\bin\\\\pdftotext.exe\" /tmp/exam.pdf -)",
+      "Bash(\"C:\\\\Program Files\\\\Git\\\\mingw64\\\\bin\\\\pdftotext.exe\" \"C:\\\\Users\\\\muham\\\\AppData\\\\Local\\\\Temp\\\\exam.pdf\" -)"
     ],
     "additionalDirectories": [
       "c:\\Users\\muham\\Desktop\\vocab-for-train\\src\\app\\tn-advance",

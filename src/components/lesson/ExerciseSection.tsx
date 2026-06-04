@@ -543,9 +543,10 @@ export function ExerciseSection({
   const quiz    = allExercises.filter(e => e.section === 'quiz');
   const part1   = allExercises.filter(e => e.section === 'part1');
   const part2   = allExercises.filter(e => e.section === 'part2');
+  const part3   = allExercises.filter(e => e.section === 'part3');
   const regular = allExercises.filter(e => !e.section);
   const hasTest  = middle.length > 0 || final.length > 0;
-  const hasParts = part1.length > 0 || part2.length > 0;
+  const hasParts = part1.length > 0 || part2.length > 0 || part3.length > 0;
 
   const sharedProps = {
     selectedOptions, setSelectedOptions,
@@ -672,6 +673,12 @@ export function ExerciseSection({
           <section className="space-y-4">
             <SectionDivider label="Part 2" primary />
             <ExerciseList exercises={part2} startNum={regular.length + part1.length + 1} {...sharedProps} />
+          </section>
+        )}
+        {part3.length > 0 && (
+          <section className="space-y-4">
+            <SectionDivider label="Part 3" primary />
+            <ExerciseList exercises={part3} startNum={regular.length + part1.length + part2.length + 1} {...sharedProps} />
           </section>
         )}
         {QuizGamePanel}

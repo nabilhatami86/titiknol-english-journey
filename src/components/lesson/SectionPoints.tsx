@@ -238,17 +238,21 @@ export function SectionPoints({ points, title, track, imageUrl, renderClickableT
         // ✅ / ❌ point markers
         if (point.startsWith('Wrong:') || point.startsWith('❌')) {
           return (
-            <div key={key} className="flex items-start gap-2 py-0.5">
-              <XCircle className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-              <span className="text-sm text-(--text-secondary) line-through leading-relaxed">{point.replace(/^(Wrong:\s*|❌\s*)/, '')}</span>
+            <div key={key} className="flex items-start gap-2 py-0.5 mt-0.5">
+              <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                <XCircle className="w-3 h-3 text-primary" />
+              </div>
+              <span className="text-sm text-(--text-secondary) line-through leading-relaxed">{renderClickableText(point.replace(/^(Wrong:\s*|❌\s*)/, ''))}</span>
             </div>
           );
         }
         if (point.startsWith('✅')) {
           return (
-            <div key={key} className="flex items-start gap-2 py-0.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-              <span className="text-sm text-(--text-secondary) leading-relaxed">{point.replace(/^✅\s*/, '')}</span>
+            <div key={key} className="flex items-start gap-2 py-0.5 mt-0.5">
+              <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                <CheckCircle2 className="w-3 h-3 text-primary" />
+              </div>
+              <span className="text-sm text-(--text-secondary) leading-relaxed">{renderClickableText(point.replace(/^✅\s*/, ''))}</span>
             </div>
           );
         }
@@ -256,16 +260,23 @@ export function SectionPoints({ points, title, track, imageUrl, renderClickableT
         // Indented sub-bullets
         if (point.startsWith('   ')) {
           if (point.includes('→')) {
+            const trimmed = point.trim();
+            const arrowIdx = trimmed.indexOf('→');
+            const prefix = trimmed.slice(0, arrowIdx + 1).trim();
+            const rest   = trimmed.slice(arrowIdx + 1).trim();
             return (
-              <div key={key} className="pl-6 py-0.5">
-                <p className="text-sm text-(--text-secondary) italic border-l-2 border-primary/20 pl-3">{renderClickableText(point.trim())}</p>
+              <div key={key} className="mt-1 mb-0.5">
+                <div className="bg-primary/[0.04] border border-primary/15 rounded-xl px-4 py-2.5">
+                  <span className="text-xs font-bold text-primary mr-2">{prefix}</span>
+                  <span className="text-sm text-(--text) leading-relaxed">{renderClickableText(rest)}</span>
+                </div>
               </div>
             );
           }
           return (
-            <div key={key} className="pl-6 py-0.5">
+            <div key={key} className="pl-5 py-0.5">
               <div className="flex items-start gap-2">
-                <span className="text-(--text-muted) mt-1 shrink-0 text-[10px]">○</span>
+                <span className="text-primary/50 mt-1.5 shrink-0 text-[9px]">◆</span>
                 <span className="text-sm text-(--text-secondary)">{renderClickableText(point.trim())}</span>
               </div>
             </div>
@@ -284,18 +295,25 @@ export function SectionPoints({ points, title, track, imageUrl, renderClickableT
 
         // Example sentences: Ex: / Examples: / "quoted"
         if (point.startsWith('Ex:')) {
+          const exText = point.replace(/^Ex:\s*/, '');
           return (
-            <div key={key} className="py-1 pl-3 border-l-2 border-primary/30 ml-1">
-              <p className="text-sm text-(--text-secondary) italic">{renderClickableText(point.replace('Ex: ', '').replace('Ex:', ''))}</p>
+            <div key={key} className="mt-1 mb-0.5">
+              <div className="bg-primary/[0.04] border border-primary/15 rounded-xl px-4 py-2.5">
+                <span className="text-xs font-bold text-primary mr-2">Ex:</span>
+                <span className="text-sm text-(--text) leading-relaxed italic">{renderClickableText(exText)}</span>
+              </div>
             </div>
           );
         }
         if (point.match(/^(Examples?|Practical):/) || point.match(/^"[^"]+"/)) {
           const label = point.match(/^(Examples?|Practical):\s*/)?.[0] || '';
+          const labelClean = label.replace(':', '').trim();
           return (
-            <div key={key} className="py-1.5 pl-3 border-l-2 border-primary/30 ml-1">
-              {label && <span className="text-xs text-primary font-semibold uppercase tracking-wider">{label.replace(':', '').trim()}</span>}
-              <p className="text-sm text-(--text-secondary) italic">{renderClickableText(point.slice(label.length))}</p>
+            <div key={key} className="mt-1 mb-0.5">
+              <div className="bg-primary/[0.04] border border-primary/15 rounded-xl px-4 py-2.5">
+                {labelClean && <span className="text-xs font-bold text-primary mr-2 uppercase tracking-wider">{labelClean}:</span>}
+                <span className="text-sm text-(--text) leading-relaxed italic">{renderClickableText(point.slice(label.length))}</span>
+              </div>
             </div>
           );
         }
@@ -328,20 +346,20 @@ export function SectionPoints({ points, title, track, imageUrl, renderClickableT
           if (dashIdx > 0) {
             return (
               <div key={key} className="py-1.5">
-                <div className="flex items-start gap-2">
-                  <span className="text-primary mt-1 shrink-0">▸</span>
+                <div className="flex items-start gap-2.5">
+                  <span className="shrink-0 mt-1 w-1.5 h-1.5 rounded-full bg-primary/60" />
                   <div>
                     <span className="text-sm font-semibold text-(--text)">{renderClickableText(ruleLabel)}: </span>
                     <span className="text-sm text-(--text-secondary)">{renderClickableText(ruleDesc.slice(0, dashIdx))}</span>
-                    <p className="text-xs text-(--text-muted) mt-1 pl-2 italic">{renderClickableText(ruleDesc.slice(dashIdx + 3))}</p>
+                    <p className="text-xs text-(--text-muted) mt-1 pl-2 italic border-l border-primary/20">{renderClickableText(ruleDesc.slice(dashIdx + 3))}</p>
                   </div>
                 </div>
               </div>
             );
           }
           return (
-            <div key={key} className="py-1 flex items-start gap-2">
-              <span className="text-primary mt-1 shrink-0">▸</span>
+            <div key={key} className="py-1 flex items-start gap-2.5">
+              <span className="shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/60" />
               <div className="text-sm">
                 <span className="font-semibold text-(--text)">{renderClickableText(ruleLabel)}: </span>
                 <span className="text-(--text-secondary)">{renderClickableText(ruleDesc)}</span>
@@ -352,8 +370,8 @@ export function SectionPoints({ points, title, track, imageUrl, renderClickableT
 
         // Default bullet
         return (
-          <div key={key} className="flex items-start gap-2 py-0.5">
-            <span className="text-primary mt-1.5 shrink-0 text-xs">●</span>
+          <div key={key} className="flex items-start gap-2.5 py-0.5">
+            <span className="shrink-0 mt-2 w-1.5 h-1.5 rounded-full bg-primary/50" />
             <span className="text-sm text-(--text-secondary) leading-relaxed">{renderClickableText(point)}</span>
           </div>
         );
