@@ -79,6 +79,60 @@ export function SectionPoints({ points, title, track, imageUrl, renderClickableT
           );
         }
 
+        // {{conj-prep-table}}
+        if (point.trim() === '{{conj-prep-table}}') {
+          const rows = [
+            { conj: 'because', prep: ['because of', 'due to'] },
+            { conj: 'although', prep: ['despite', 'in spite of'] },
+            { conj: 'when / while', prep: ['during'] },
+          ];
+          return (
+            <div key={key} className="mt-3 mb-1 rounded-2xl overflow-hidden border border-primary/20">
+              {/* Header */}
+              <div className="grid grid-cols-[1fr_auto_1fr]">
+                <div className="bg-primary px-4 py-3 flex flex-col items-center gap-0.5">
+                  <span className="text-white/70 text-[9px] font-semibold uppercase tracking-widest">Conjunction</span>
+                  <span className="text-white text-[11px] font-bold">+ Subject + Verb</span>
+                </div>
+                <div className="bg-primary/80 flex items-center justify-center px-3">
+                  <span className="text-white/60 text-[10px] font-black">VS</span>
+                </div>
+                <div className="bg-primary/10 px-4 py-3 flex flex-col items-center gap-0.5 border-l border-primary/20">
+                  <span className="text-primary/60 text-[9px] font-semibold uppercase tracking-widest">Preposition</span>
+                  <span className="text-primary text-[11px] font-bold">+ Noun / Phrase</span>
+                </div>
+              </div>
+              {/* Rows */}
+              <div className="divide-y divide-primary/10">
+                {rows.map((row, i) => (
+                  <div key={i} className="grid grid-cols-[1fr_auto_1fr] bg-(--bg-card)">
+                    <div className="px-4 py-3.5 flex items-center justify-center">
+                      <span className="px-3.5 py-1.5 rounded-xl bg-primary/10 border border-primary/25 text-primary text-sm font-bold">
+                        {row.conj}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-center px-2">
+                      <div className="w-px h-8 bg-primary/15" />
+                    </div>
+                    <div className="px-4 py-3.5 flex items-center justify-center gap-1.5 flex-wrap">
+                      {row.prep.map((p, j) => (
+                        <span key={j} className="px-3 py-1.5 rounded-xl bg-(--bg-secondary) border border-(--border) text-(--text) text-xs font-semibold">
+                          {p}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {/* Footer note */}
+              <div className="bg-primary/[0.04] border-t border-primary/15 px-4 py-2.5 flex items-center gap-2">
+                <Lightbulb className="w-3.5 h-3.5 text-primary/50 shrink-0" />
+                <span className="text-[11px] text-(--text-muted)">Conjunction diikuti <span className="font-semibold text-primary">S + V</span>, sedangkan Preposition diikuti <span className="font-semibold text-primary">Noun/Phrase</span></span>
+              </div>
+            </div>
+          );
+        }
+
         // {{quiz-game: title | desc}}
         const quizGameMatch = point.match(/^\{\{quiz-game:([^|]+)\|([^}]+)\}\}$/);
         if (quizGameMatch) {

@@ -1,6 +1,6 @@
 'use client';
 
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { CheckCircle2, Circle, XCircle, Lightbulb, BookText } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import ListeningAudioSection from '@/components/listening/ListeningAudioSection';
@@ -26,27 +26,39 @@ function FeedbackBox({ isCorrect, correctAnswer, reason }: {
   reason?: string;
 }) {
   return (
-    <div className="rounded-lg px-4 py-3 text-sm flex items-start gap-2 bg-primary/10 border border-primary/30">
-      {isCorrect
-        ? <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-primary" />
-        : <XCircle className="w-4 h-4 mt-0.5 shrink-0 text-primary" />}
-      <div>
-        <p className="font-medium text-primary">
-          {isCorrect ? 'Benar!' : 'Salah!'}
-          {!isCorrect && correctAnswer && (
-            <span className="font-normal text-(--text-secondary)">
-              {' '}Jawaban yang benar:{' '}
-              <span className="font-semibold text-primary">{correctAnswer}</span>
-            </span>
-          )}
-        </p>
-        {reason && (
-          <p className="mt-1 text-(--text-secondary) flex items-start gap-1.5">
-            <Lightbulb className="w-3.5 h-3.5 mt-0.5 shrink-0 text-primary" />
-            {reason}
-          </p>
+    <div className={cn(
+      'rounded-2xl border overflow-hidden text-sm',
+      isCorrect ? 'border-primary/30 bg-primary/[0.06]' : 'border-primary/20 bg-primary/[0.03]',
+    )}>
+      {/* header */}
+      <div className={cn(
+        'flex items-center gap-2.5 px-4 py-3 border-b',
+        isCorrect ? 'border-primary/20 bg-primary/[0.06]' : 'border-primary/10 bg-primary/[0.04]',
+      )}>
+        <div className={cn(
+          'w-6 h-6 rounded-full flex items-center justify-center shrink-0',
+          isCorrect ? 'bg-primary/20' : 'bg-primary/10',
+        )}>
+          {isCorrect
+            ? <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
+            : <XCircle className="w-3.5 h-3.5 text-primary" />}
+        </div>
+        <span className={cn('font-bold', isCorrect ? 'text-primary' : 'text-(--text)')}>
+          {isCorrect ? 'Jawaban Benar!' : 'Jawaban Salah'}
+        </span>
+        {!isCorrect && correctAnswer && (
+          <span className="ml-auto text-xs text-(--text-muted) font-medium">
+            Jawaban:{' '}
+            <span className="font-bold text-primary">{correctAnswer}</span>
+          </span>
         )}
       </div>
+      {reason && (
+        <div className="px-4 py-3 flex items-start gap-2.5">
+          <Lightbulb className="w-3.5 h-3.5 mt-0.5 shrink-0 text-primary/70" />
+          <p className="text-(--text-secondary) leading-relaxed text-xs">{reason}</p>
+        </div>
+      )}
     </div>
   );
 }
@@ -84,39 +96,60 @@ function ExerciseItem({
       ? Boolean(selectedOptions[exercise.id])
       : Boolean(notes[exercise.id]?.trim());
 
+  // Parse question: strip "Pre-Exam N — QN\n\n" or "Compilation QN\n\n" prefix
+  const qLines = exercise.question.split('\n\n');
+  const qLabel = qLines.length > 1 ? qLines[0] : null;
+  const qBody  = qLines.length > 1 ? qLines.slice(1).join('\n\n') : exercise.question;
+
   return (
-    <div className="bg-(--bg-card) border border-(--border) rounded-xl p-5 space-y-3">
-      <div className="space-y-1.5">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-(--text-muted)">{startNum + index}.</span>
-            {exercise.type === 'fill-the-gap' && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-primary/15 text-primary border border-primary/25">
-                Fill the Gap
-              </span>
-            )}
-            {exercise.type === 'true-false-not-given' && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-primary/15 text-primary border border-primary/25">
-                T / F / NG
-              </span>
-            )}
-            {exercise.question.startsWith('Terjemahkan: ') && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-primary/15 text-primary border border-primary/25">
-                Terjemahkan
-              </span>
-            )}
+    <div className="bg-(--bg-card) border border-(--border) rounded-2xl overflow-hidden hover:border-primary/20 transition-colors">
+      {/* Question header */}
+      <div className="flex items-start gap-3.5 px-5 pt-5 pb-4">
+        <div className="shrink-0 flex flex-col items-center gap-1.5 pt-0.5">
+          <div className={cn(
+            'w-8 h-8 rounded-xl flex items-center justify-center text-sm font-black transition-colors',
+            isDone ? 'bg-primary text-white' : 'bg-primary/10 text-primary',
+          )}>
+            {startNum + index}
           </div>
           {isDone
-            ? <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-            : <Circle className="w-4 h-4 text-(--text-muted) shrink-0" />}
+            ? <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
+            : <Circle className="w-3.5 h-3.5 text-(--text-muted)/40" />}
         </div>
-        {exercise.type !== 'fill-the-gap' && (
-          <p className="text-sm text-(--text) font-medium leading-relaxed">
-            {exercise.question.startsWith('Terjemahkan: ')
-              ? renderClickableText(exercise.question.replace('Terjemahkan: ', ''))
-              : renderClickableText(exercise.question)}
-          </p>
-        )}
+
+        <div className="flex-1 space-y-1.5 min-w-0">
+          {qLabel && (
+            <p className="text-[10px] font-bold uppercase tracking-widest text-(--text-muted)">{qLabel}</p>
+          )}
+          <div className="flex items-start justify-between gap-2">
+            <div className="flex-1">
+              {exercise.type === 'fill-the-gap' ? null : (
+                <p className="text-sm text-(--text) font-medium leading-relaxed">
+                  {exercise.question.startsWith('Terjemahkan: ')
+                    ? renderClickableText(exercise.question.replace('Terjemahkan: ', ''))
+                    : renderClickableText(qBody)}
+                </p>
+              )}
+            </div>
+            <div className="flex items-center gap-1.5 shrink-0">
+              {exercise.type === 'fill-the-gap' && (
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase tracking-wider">
+                  Fill Gap
+                </span>
+              )}
+              {exercise.type === 'true-false-not-given' && (
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase tracking-wider">
+                  T / F / NG
+                </span>
+              )}
+              {exercise.question.startsWith('Terjemahkan: ') && (
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase tracking-wider">
+                  Translate
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Multiple choice */}
@@ -164,51 +197,69 @@ function ExerciseItem({
         }
 
         return (
-          <div className="space-y-3">
-            <div className="grid sm:grid-cols-2 gap-2">
-              {exercise.options.map((option, oi) => {
-                const letter = letters[oi];
-                const isSelected = selected === option;
-                const isAnswer = option === exercise.correctAnswer;
-                const showResult = hasAnswered && exercise.correctAnswer;
-                return (
-                  <button
-                    key={option}
-                    onClick={() => setSelectedOptions(prev => ({ ...prev, [exercise.id]: option }))}
-                    className={cn(
-                      'text-left text-sm px-3 py-2.5 rounded-lg border transition-colors',
-                      showResult
-                        ? isAnswer ? 'border-primary/50 bg-primary/10 text-primary font-medium'
-                          : isSelected ? 'border-primary/50 bg-primary/10 text-primary'
+          <div className="px-4 pb-4 space-y-2">
+            {exercise.options.map((option, oi) => {
+              const letter = letters[oi];
+              const isSelected = selected === option;
+              const isAnswer = option === exercise.correctAnswer;
+              const showResult = hasAnswered && exercise.correctAnswer;
+              return (
+                <button
+                  key={option}
+                  disabled={Boolean(showResult)}
+                  onClick={() => !showResult && setSelectedOptions(prev => ({ ...prev, [exercise.id]: option }))}
+                  className={cn(
+                    'w-full text-left flex items-center gap-3 px-4 py-3 rounded-xl border transition-all duration-150',
+                    showResult
+                      ? isAnswer
+                        ? 'border-primary/50 bg-primary/10 cursor-default'
+                        : isSelected
+                          ? 'border-primary/20 bg-primary/[0.04] opacity-50 cursor-default'
+                          : 'border-(--border) opacity-30 cursor-default'
+                      : isSelected
+                        ? 'border-primary bg-primary/10 shadow-sm shadow-primary/10'
+                        : 'border-(--border) bg-(--bg-secondary)/40 hover:border-primary/40 hover:bg-primary/[0.04] cursor-pointer',
+                  )}
+                >
+                  <span className={cn(
+                    'shrink-0 w-7 h-7 rounded-lg border text-xs font-black flex items-center justify-center transition-all',
+                    showResult
+                      ? isAnswer
+                        ? 'border-primary bg-primary text-white'
+                        : isSelected
+                          ? 'border-primary/30 bg-primary/10 text-primary/50'
                           : 'border-(--border) text-(--text-muted)'
-                        : isSelected ? 'border-primary bg-primary/10 text-primary'
-                        : 'border-(--border) hover:border-primary/50 text-(--text-secondary)'
-                    )}
-                  >
-                    <span className="flex items-center gap-2">
-                      <span className={cn(
-                        'shrink-0 w-5 h-5 rounded-full border text-[10px] font-bold flex items-center justify-center',
-                        showResult
-                          ? isAnswer ? 'border-primary/50 text-primary'
-                            : isSelected ? 'border-primary/50 text-primary'
-                            : 'border-(--border) text-(--text-muted)'
-                          : isSelected ? 'border-primary text-primary'
-                          : 'border-(--border) text-(--text-muted)'
-                      )}>{letter}</span>
-                      {showResult && isAnswer && <CheckCircle2 className="w-3.5 h-3.5 shrink-0 text-primary" />}
-                      {showResult && isSelected && !isAnswer && <XCircle className="w-3.5 h-3.5 shrink-0 text-primary" />}
-                      {option}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
+                      : isSelected
+                        ? 'border-primary bg-primary text-white'
+                        : 'border-(--border) text-(--text-muted)',
+                  )}>{letter}</span>
+                  <span className={cn(
+                    'text-sm flex-1 leading-snug',
+                    showResult
+                      ? isAnswer ? 'text-(--text) font-semibold'
+                        : isSelected ? 'text-(--text-muted) line-through'
+                        : 'text-(--text-muted)'
+                      : isSelected ? 'text-(--text) font-medium' : 'text-(--text-secondary)',
+                  )}>
+                    {option}
+                  </span>
+                  {showResult && isAnswer && (
+                    <CheckCircle2 className="w-4 h-4 shrink-0 text-primary" />
+                  )}
+                  {showResult && isSelected && !isAnswer && (
+                    <XCircle className="w-4 h-4 shrink-0 text-primary/40" />
+                  )}
+                </button>
+              );
+            })}
             {hasAnswered && exercise.correctAnswer && (
-              <FeedbackBox
-                isCorrect={isCorrect}
-                correctAnswer={!isCorrect ? exercise.correctAnswer : undefined}
-                reason={exercise.reason}
-              />
+              <div className="pt-1">
+                <FeedbackBox
+                  isCorrect={isCorrect}
+                  correctAnswer={!isCorrect ? exercise.correctAnswer : undefined}
+                  reason={exercise.reason}
+                />
+              </div>
             )}
           </div>
         );
@@ -241,7 +292,7 @@ function ExerciseItem({
         const sentAfter  = blankIdx >= 0 ? sentence.slice(blankIdx + (blankMatch?.[0].length ?? 5)) : '';
 
         return (
-          <div className="space-y-4">
+          <div className="px-4 pb-4 space-y-3">
             {instructionRaw && (
               <p className="text-xs text-(--text-muted) italic leading-relaxed">{instructionRaw}</p>
             )}
@@ -331,18 +382,18 @@ function ExerciseItem({
         };
 
         return (
-          <div className="space-y-3">
+          <div className="px-4 pb-4 space-y-2.5">
             <div className="flex gap-2 flex-wrap">
               {exercise.options.map(option => (
                 <button
                   key={option}
                   disabled={hasAnswered}
                   onClick={() => { if (!hasAnswered) setSelectedOptions(prev => ({ ...prev, [exercise.id]: option })); }}
-                  className={cn('px-4 py-2 rounded-lg text-sm transition-all', btnStyle(option))}
+                  className={cn('flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all', btnStyle(option))}
                 >
-                  {option === 'True' && <CheckCircle2 className="w-3.5 h-3.5 inline mr-1.5" />}
-                  {option === 'False' && <XCircle className="w-3.5 h-3.5 inline mr-1.5" />}
-                  {option === 'Not Given' && <span className="mr-1.5 font-bold">?</span>}
+                  {option === 'True' && <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />}
+                  {option === 'False' && <XCircle className="w-3.5 h-3.5 shrink-0" />}
+                  {option === 'Not Given' && <span className="font-black text-xs">?</span>}
                   {option}
                 </button>
               ))}
@@ -380,7 +431,7 @@ function ExerciseItem({
           })();
 
           return (
-            <div className="space-y-2">
+            <div className="px-4 pb-4 space-y-2.5">
               <div className="flex gap-2 items-end">
                 {isTranslate ? (
                   <textarea
@@ -391,7 +442,7 @@ function ExerciseItem({
                     }}
                     placeholder="Tulis terjemahan kamu..."
                     rows={2}
-                    className="flex-1 rounded-lg border border-(--border) bg-(--bg-secondary) px-3 py-2 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none"
+                    className="flex-1 rounded-xl border border-(--border) bg-(--bg-secondary) px-3.5 py-2.5 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none"
                   />
                 ) : (
                   <input
@@ -405,12 +456,12 @@ function ExerciseItem({
                       if (e.key === 'Enter') setSubmittedAnswers(prev => ({ ...prev, [exercise.id]: true }));
                     }}
                     placeholder="Tulis jawaban..."
-                    className="flex-1 rounded-lg border border-(--border) bg-(--bg-secondary) px-3 py-2 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/40"
+                    className="flex-1 rounded-xl border border-(--border) bg-(--bg-secondary) px-3.5 py-2.5 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
                 )}
                 <button
                   onClick={() => setSubmittedAnswers(prev => ({ ...prev, [exercise.id]: true }))}
-                  className="px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors shrink-0"
+                  className="px-4 py-2.5 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-colors shrink-0"
                 >Cek</button>
               </div>
               {isSubmitted && (
@@ -427,23 +478,23 @@ function ExerciseItem({
         if (exercise.type === 'short-answer' && exercise.sampleAnswer) {
           const isSubmitted = submittedAnswers[exercise.id] === true;
           return (
-            <div className="space-y-2">
+            <div className="px-4 pb-4 space-y-2.5">
               <textarea
                 value={notes[exercise.id] ?? ''}
                 onChange={(e) => setNotes(prev => ({ ...prev, [exercise.id]: e.target.value }))}
                 placeholder="Tulis terjemahan kamu..."
-                className="w-full min-h-[80px] rounded-lg border border-(--border) bg-(--bg-secondary) px-3 py-2 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/40"
+                className="w-full min-h-20 rounded-xl border border-(--border) bg-(--bg-secondary) px-3.5 py-2.5 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/30"
               />
               <button
                 onClick={() => setSubmittedAnswers(prev => ({ ...prev, [exercise.id]: true }))}
-                className="px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 text-primary text-sm font-medium hover:bg-primary/20 transition-colors"
+                className="px-4 py-2 rounded-xl bg-primary/10 border border-primary/25 text-primary text-sm font-semibold hover:bg-primary/15 transition-colors"
               >Lihat Contoh Jawaban</button>
               {isSubmitted && (
-                <div className="rounded-lg px-4 py-3 text-sm bg-primary/10 border border-primary/30 flex items-start gap-2">
+                <div className="rounded-2xl px-4 py-3.5 text-sm bg-primary/[0.06] border border-primary/20 flex items-start gap-3">
                   <Lightbulb className="w-4 h-4 mt-0.5 shrink-0 text-primary" />
                   <div>
-                    <p className="font-medium text-primary">Contoh jawaban:</p>
-                    <p className="mt-0.5 text-(--text-secondary)">{exercise.sampleAnswer}</p>
+                    <p className="font-bold text-primary text-xs uppercase tracking-wider mb-1">Contoh jawaban</p>
+                    <p className="text-(--text-secondary) leading-relaxed">{exercise.sampleAnswer}</p>
                   </div>
                 </div>
               )}
@@ -452,12 +503,14 @@ function ExerciseItem({
         }
 
         return (
-          <textarea
-            value={notes[exercise.id] ?? ''}
-            onChange={(e) => setNotes(prev => ({ ...prev, [exercise.id]: e.target.value }))}
-            placeholder="Write your answer here..."
-            className="w-full min-h-[90px] rounded-lg border border-(--border) bg-(--bg-secondary) px-3 py-2 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/40"
-          />
+          <div className="px-4 pb-4">
+            <textarea
+              value={notes[exercise.id] ?? ''}
+              onChange={(e) => setNotes(prev => ({ ...prev, [exercise.id]: e.target.value }))}
+              placeholder="Write your answer here..."
+              className="w-full min-h-24 rounded-xl border border-(--border) bg-(--bg-secondary) px-3.5 py-2.5 text-sm text-(--text) focus:outline-none focus:ring-2 focus:ring-primary/30"
+            />
+          </div>
         );
       })()}
     </div>
@@ -510,14 +563,68 @@ function ExerciseList({
 function SectionDivider({ label, primary }: { label: string; primary?: boolean }) {
   return (
     <div className="flex items-center gap-3">
-      <div className={cn('h-px flex-1', primary ? 'bg-primary/30' : 'bg-(--border)')} />
-      <h2 className={cn(
-        'text-sm font-semibold uppercase tracking-wider whitespace-nowrap px-2',
-        primary ? 'text-primary' : 'text-(--text-secondary)'
+      <div className={cn('h-px flex-1', primary ? 'bg-linear-to-r from-primary/30 to-transparent' : 'bg-linear-to-r from-(--border) to-transparent')} />
+      <div className={cn(
+        'flex items-center px-3.5 py-1 rounded-full border text-xs font-bold uppercase tracking-widest whitespace-nowrap',
+        primary
+          ? 'bg-primary/10 border-primary/25 text-primary'
+          : 'bg-(--bg-secondary) border-(--border) text-(--text-muted)',
       )}>
         {label}
-      </h2>
+      </div>
       <div className={cn('h-px flex-1', primary ? 'bg-primary/30' : 'bg-(--border)')} />
+    </div>
+  );
+}
+
+function PartsTabs({
+  parts,
+  startNums,
+  sharedProps,
+}: {
+  parts: Exercise[][];
+  startNums: number[];
+  sharedProps: {
+    selectedOptions: Record<string, string>;
+    setSelectedOptions: React.Dispatch<React.SetStateAction<Record<string, string>>>;
+    notes: Record<string, string>;
+    setNotes: React.Dispatch<React.SetStateAction<Record<string, string>>>;
+    submittedAnswers: Record<string, boolean>;
+    setSubmittedAnswers: React.Dispatch<React.SetStateAction<Record<string, boolean>>>;
+    renderClickableText: (text: string) => ReactNode;
+  };
+}) {
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  function getLabel(exercises: Exercise[], idx: number): string {
+    const firstQ = exercises[0]?.question ?? '';
+    if (firstQ.includes('Pre-Exam 1')) return 'Pre-Exam 1';
+    if (firstQ.includes('Pre-Exam 2')) return 'Pre-Exam 2';
+    if (firstQ.includes('Compilation')) return 'Compilation';
+    return `Part ${idx + 1}`;
+  }
+
+  return (
+    <div className="space-y-5">
+      <div className="flex gap-1.5 bg-(--bg-secondary) rounded-2xl p-1.5">
+        {parts.map((p, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => setActiveIdx(i)}
+            className={cn(
+              'flex-1 flex flex-col items-center py-2.5 px-3 rounded-xl transition-all',
+              i === activeIdx
+                ? 'bg-(--bg-card) text-primary shadow-sm'
+                : 'text-(--text-muted) hover:text-primary',
+            )}
+          >
+            <span className="text-sm font-semibold">{getLabel(p, i)}</span>
+            <span className="text-[10px] font-normal mt-0.5 text-(--text-muted)">{p.length} soal</span>
+          </button>
+        ))}
+      </div>
+      <ExerciseList exercises={parts[activeIdx]} startNum={startNums[activeIdx]} {...sharedProps} />
     </div>
   );
 }
@@ -653,34 +760,16 @@ export function ExerciseSection({
     );
   }
 
-  // Part 1 / Part 2 layout
+  // Part 1 / Part 2 / Part 3 layout — tab selector
   if (hasParts) {
+    const tabParts = [part1, part2, part3].filter(p => p.length > 0);
+    const tabStartNums = tabParts.map((_, i) =>
+      regular.length + tabParts.slice(0, i).reduce((s, p) => s + p.length, 0) + 1,
+    );
     return (
-      <div className="space-y-8">
-        {regular.length > 0 && (
-          <section className="space-y-4">
-            <h2 className="text-lg font-semibold text-(--text)">Exercises</h2>
-            <ExerciseList exercises={regular} startNum={1} {...sharedProps} />
-          </section>
-        )}
-        {part1.length > 0 && (
-          <section className="space-y-4">
-            <SectionDivider label="Part 1" />
-            <ExerciseList exercises={part1} startNum={regular.length + 1} {...sharedProps} />
-          </section>
-        )}
-        {part2.length > 0 && (
-          <section className="space-y-4">
-            <SectionDivider label="Part 2" primary />
-            <ExerciseList exercises={part2} startNum={regular.length + part1.length + 1} {...sharedProps} />
-          </section>
-        )}
-        {part3.length > 0 && (
-          <section className="space-y-4">
-            <SectionDivider label="Part 3" primary />
-            <ExerciseList exercises={part3} startNum={regular.length + part1.length + part2.length + 1} {...sharedProps} />
-          </section>
-        )}
+      <div className="space-y-5">
+        {regular.length > 0 && <ExerciseList exercises={regular} startNum={1} {...sharedProps} />}
+        <PartsTabs parts={tabParts} startNums={tabStartNums} sharedProps={sharedProps} />
         {QuizGamePanel}
       </div>
     );
