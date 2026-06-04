@@ -5224,6 +5224,298 @@ const advanceGrammarLessons: ModuleLesson[] = [
       },
     ],
   },
+
+  // ── Day 16 · Compilation Exercise Week 3–4 ──────────────────────────────
+  {
+    id: "adv-grammar-16",
+    track: "grammar",
+    day: 16,
+    tutor: "Ms. Manda",
+    title: "Compilation Exercise — Week 3–4",
+    subtitle: "20 Mixed Grammar Questions · NC · AC · AVC · Inversion · Reduction · Gerund/Infinitive · Comparison",
+    overview:
+      "Latihan kompilasi ini mencakup semua topik Grammar 2 yang telah dipelajari selama Week 3–4: Noun Clause, Adjective Clause, Adverbial Clause, Inversion, Reduction (Participial Phrase / Gerund / Infinitive), dan Comparison.",
+    materialSections: [
+      {
+        title: "Exercise Guide — Compilation Week 3–4",
+        points: [
+          "20 soal pilihan ganda — semua topik Grammar 2:",
+          "  • NC  : whether / that / what / how (conjunction NC)",
+          "  • AC  : who / which / that (relative pronoun)",
+          "  • AVC : if / when / because / not until / rarely / seldom (adverbial conjunction)",
+          "  • Inversion : Rarely + HAS + S + V3 | Seldom + DO + S + V | Not until + DID + S + V",
+          "  • Reduction : Participial Phrase (V-ing) | Gerund/Infinitive as Subject | allow/let + obj + V",
+          "  • Comparison : not as complex as that of ...",
+          "",
+          "Kunci strategi cepat:",
+          "  1. Identifikasi slot yang harus diisi → subject / conjunction / pronoun / verb form",
+          "  2. Cek kata di depan blank → allow/let/make/help? → pola verb berikutnya",
+          "  3. Kalimat dimulai negative adverb (Rarely/Seldom/Not until)? → wajib inversion",
+          "  4. Blank di awal kalimat sebelum verb? → NC as Subject (That / Whether + S + V)",
+        ],
+      },
+    ],
+
+    passage: [],
+
+    exercises: [
+      {
+        id: "adv-g16-q1",
+        type: "multiple-choice",
+        question:
+          "Compilation Q1\n\n____ bacteria in food are killed, as they are during baking or stewing, decay is slowed down.",
+        options: ["A. What", "B. The", "C. If", "D. So"],
+        correctAnswer: "C. If",
+        reason:
+          "AVC of Condition: IF + S + V = conditional clause. 'If bacteria are killed, decay is slowed down.' → What/The/So tidak membentuk conditional clause. ✓ C. If",
+      },
+      {
+        id: "adv-g16-q2",
+        type: "multiple-choice",
+        question:
+          "Compilation Q2\n\nThe early years of the United States government were characterized by a debate concerning ____ or individual states should have more power.",
+        options: [
+          "A. Whether the federal government",
+          "B. Neither the federal government",
+          "C. That federal government",
+          "D. The federal government",
+        ],
+        correctAnswer: "A. Whether the federal government",
+        reason:
+          "NC of Yes/No Question: 'concerning WHETHER the federal government or individual states should...' — whether membentuk NC of Question setelah preposition. Neither butuh nor; That bukan untuk yes/no question. ✓ A. Whether the federal government",
+      },
+      {
+        id: "adv-g16-q3",
+        type: "multiple-choice",
+        question:
+          "Compilation Q3\n\nSeldom ____ more than twenty minutes a night.",
+        options: [
+          "A. Sleep giraffes",
+          "B. Do giraffes sleep",
+          "C. Giraffes do sleep",
+          "D. Giraffes sleep",
+        ],
+        correctAnswer: "B. Do giraffes sleep",
+        reason:
+          "Inversion dengan Seldom (negative adverb di awal): Seldom + DO/DOES/DID + S + V → 'Seldom DO giraffes sleep...' C/D = statement order tanpa inversion. ✓ B. Do giraffes sleep",
+      },
+      {
+        id: "adv-g16-q4",
+        type: "multiple-choice",
+        question:
+          "Compilation Q4\n\nSleeve bearings allow pistons ____ back and forth.",
+        options: ["A. Moves", "B. Move", "C. To move", "D. Moving"],
+        correctAnswer: "C. To move",
+        reason:
+          "allow + object + to-infinitive: 'allow pistons TO MOVE back and forth.' — pola allow/permit/enable butuh to-inf setelah object. B = bare inf (hanya untuk let/make/help). ✓ C. To move",
+      },
+      {
+        id: "adv-g16-q5",
+        type: "multiple-choice",
+        question:
+          "Compilation Q5\n\nBecause the wood of the dogwood tree is very hard, ____ is used for objects, such as roller skate wheels, in which hardness is desired.",
+        options: ["A. And", "B. It", "C. What", "D. Thus"],
+        correctAnswer: "B. It",
+        reason:
+          "'Because...' = AVC (sudah ada), main clause butuh subject pronoun → 'IT' merujuk ke 'the wood'. And/What/Thus bukan pronoun subject. ✓ B. It",
+      },
+      {
+        id: "adv-g16-q6",
+        type: "multiple-choice",
+        question:
+          "Compilation Q6\n\nFossil records indicate ____ existing in the past have become extinct.",
+        options: [
+          "A. That many species of organisms",
+          "B. Many species of organisms that",
+          "C. Many species of organisms are",
+          "D. There are many organisms",
+        ],
+        correctAnswer: "A. That many species of organisms",
+        reason:
+          "NC of Statement sebagai object dari 'indicate': 'indicate THAT many species of organisms [existing in the past] have become extinct.' B = 'that' salah posisi. ✓ A. That many species of organisms",
+      },
+      {
+        id: "adv-g16-q7",
+        type: "multiple-choice",
+        question:
+          "Compilation Q7\n\nWorking like a telescope, ____ the size of objects at great distances.",
+        options: [
+          "A. Which magnifies a telephoto lens",
+          "B. A telephoto lens magnifies",
+          "C. A telephoto lens which magnifies",
+          "D. And magnifying a telephoto lens",
+        ],
+        correctAnswer: "B. A telephoto lens magnifies",
+        reason:
+          "Dangling Modifier: 'Working like a telescope' harus diikuti subject yang benar-benar bekerja seperti teleskop → 'a telephoto lens magnifies.' A/C/D tidak logis atau gramatikal salah. ✓ B. A telephoto lens magnifies",
+      },
+      {
+        id: "adv-g16-q8",
+        type: "multiple-choice",
+        question:
+          "Compilation Q8\n\nThe social system of bumble bees is not as complex ____ pollen bees.",
+        options: ["A. Than", "B. As that of", "C. That are", "D. As"],
+        correctAnswer: "B. As that of",
+        reason:
+          "Comparison: 'not as complex AS THAT OF pollen bees' — 'that' merujuk ke 'social system' untuk menghindari repetisi. A = 'than' hanya untuk comparative; D = 'as' tidak lengkap (butuh pronoun 'that of'). ✓ B. As that of",
+      },
+      {
+        id: "adv-g16-q9",
+        type: "multiple-choice",
+        question:
+          "Compilation Q9\n\nNot until the seventeenth century ____ to measure the speed of light.",
+        options: [
+          "A. Did anyone even attempt",
+          "B. Anyone did even attempt",
+          "C. Did anyone attempt even",
+          "D. Did even attempt anyone",
+        ],
+        correctAnswer: "A. Did anyone even attempt",
+        reason:
+          "Inversion dengan 'Not until' (negative adverb phrase): Not until + DID + S + V → 'Not until the seventeenth century DID ANYONE EVEN ATTEMPT...' B = statement order; C/D = urutan salah. ✓ A. Did anyone even attempt",
+      },
+      {
+        id: "adv-g16-q10",
+        type: "multiple-choice",
+        question:
+          "Compilation Q10\n\nDespite its wide range of styles and instrumentation, country music has certain common features ____ its own special character.",
+        options: [
+          "A. Give it that",
+          "B. That give it",
+          "C. Give that",
+          "D. That gives it to",
+        ],
+        correctAnswer: "B. That give it",
+        reason:
+          "AC: 'features THAT GIVE IT its own special character' — 'that' = relative pronoun subject, 'give' agreement dengan 'features' (plural). A/C = tanpa relative pronoun; D = 'gives' salah agreement. ✓ B. That give it",
+      },
+      {
+        id: "adv-g16-q11",
+        type: "multiple-choice",
+        question:
+          "Compilation Q11\n\nA single-lens reflex camera allows a photographer ____ exactly what the camera will photograph.",
+        options: ["A. See", "B. To see", "C. Sees", "D. To be seen"],
+        correctAnswer: "B. To see",
+        reason:
+          "allow + object + to-infinitive: 'allows a photographer TO SEE exactly what...' — pola yang sama dengan Q4. A = bare inf (bukan untuk allow). ✓ B. To see",
+      },
+      {
+        id: "adv-g16-q12",
+        type: "multiple-choice",
+        question:
+          "Compilation Q12\n\nPeople who reverse the letters of words ____ to read suffer from dyslexia.",
+        options: [
+          "A. If they tried",
+          "B. When trying",
+          "C. When tried",
+          "D. If he tries",
+        ],
+        correctAnswer: "B. When trying",
+        reason:
+          "Reduced AVC of Time: 'WHEN TRYING to read' = 'when they are trying to read' — participial reduction dengan 'when'. C = passive (salah makna); A/D = full clause dengan pronoun yang tidak perlu. ✓ B. When trying",
+      },
+      {
+        id: "adv-g16-q13",
+        type: "multiple-choice",
+        question:
+          "Compilation Q13\n\nOne important branch of linguistics is semantics ____ analyzes the meaning of words.",
+        options: ["A. What", "B. And", "C. Because", "D. That"],
+        correctAnswer: "D. That",
+        reason:
+          "AC: 'semantics THAT analyzes the meaning of words' — 'that' = relative pronoun untuk benda/konsep. 'What' bukan relative pronoun; 'And/Because' = conjunction, bukan relative. ✓ D. That",
+      },
+      {
+        id: "adv-g16-q14",
+        type: "multiple-choice",
+        question:
+          "Compilation Q14\n\nIf a food label indicates that a food is mostly carbohydrate, it does not mean ____ is a good food to eat.",
+        options: ["A. It", "B. And", "C. When", "D. That it"],
+        correctAnswer: "D. That it",
+        reason:
+          "NC of Statement sebagai object dari 'mean': 'does not mean THAT IT is a good food' — 'that' = conjunction NC, 'it' = pronoun subject dari NC. A = tidak ada conjunction; B/C = tidak membentuk NC. ✓ D. That it",
+      },
+      {
+        id: "adv-g16-q15",
+        type: "multiple-choice",
+        question:
+          "Compilation Q15\n\nDamage ____ from thunderstorms is mainly inflicted by downburst winds, large hailstones, and flash flooding.",
+        options: [
+          "A. Results",
+          "B. Resulting",
+          "C. Was resulted",
+          "D. Resulted",
+        ],
+        correctAnswer: "B. Resulting",
+        reason:
+          "Reduced AC (Participial Phrase): 'Damage RESULTING from thunderstorms' — 'resulting' = present participle memodifikasi 'damage'. A = finite verb (membuat double verb); C/D = passive/past (salah). ✓ B. Resulting",
+      },
+      {
+        id: "adv-g16-q16",
+        type: "multiple-choice",
+        question:
+          "Compilation Q16\n\nIn a 1988 advanced officers' training program, Sampson developed a plan to incorporate police in enforcing environmental protection laws whenever ____ feasible.",
+        options: ["A. It", "B. Is", "C. Has", "D. It is"],
+        correctAnswer: "D. It is",
+        reason:
+          "AVC dengan 'whenever': 'whenever IT IS feasible' = 'whenever it is possible' — butuh subject + verb lengkap. A = hanya subject tanpa verb; B/C = hanya verb tanpa subject. ✓ D. It is",
+      },
+      {
+        id: "adv-g16-q17",
+        type: "multiple-choice",
+        question:
+          "Compilation Q17\n\nThe early feminist leader Susan B. Anthony became increasingly aware through her work in the temperance movement ____ the same rights as men.",
+        options: [
+          "A. Women were not granted that",
+          "B. That women were not granted",
+          "C. Not granted women that were",
+          "D. That were not granted women",
+        ],
+        correctAnswer: "B. That women were not granted",
+        reason:
+          "NC of Statement sebagai object dari 'aware of': 'aware THAT women were not granted the same rights' — 'that' di awal NC, lalu S + V. A = word order terbalik; C/D = struktur tidak gramatikal. ✓ B. That women were not granted",
+      },
+      {
+        id: "adv-g16-q18",
+        type: "multiple-choice",
+        question:
+          "Compilation Q18\n\nIsadora Martinez invented a knee implant that lets people with arthritis ____ their knees easily.",
+        options: ["A. Bend", "B. To bend", "C. Bending", "D. Bent"],
+        correctAnswer: "A. Bend",
+        reason:
+          "let + object + bare infinitive (V1): 'lets people BEND their knees' — let/make/have butuh bare infinitive (tanpa 'to'). B = to-infinitive (hanya untuk allow/permit). ✓ A. Bend",
+      },
+      {
+        id: "adv-g16-q19",
+        type: "multiple-choice",
+        question:
+          "Compilation Q19\n\n____ appears considerably larger at the horizon than it does overhead is merely an optical illusion.",
+        options: [
+          "A. The moon",
+          "B. That the moon",
+          "C. When the moon",
+          "D. The moon which",
+        ],
+        correctAnswer: "B. That the moon",
+        reason:
+          "NC as Subject: 'THAT THE MOON appears considerably larger... is merely an optical illusion.' — NC of Statement sebagai subject kalimat utama. A = bukan NC (tidak ada verb utama); C = AVC (bukan subject); D = AC fragment. ✓ B. That the moon",
+      },
+      {
+        id: "adv-g16-q20",
+        type: "multiple-choice",
+        question:
+          "Compilation Q20\n\nRarely ____ of the United States grown during a Republican administration.",
+        options: [
+          "A. The federal government has",
+          "B. Has grown the federal government",
+          "C. The federal government",
+          "D. Has the federal government",
+        ],
+        correctAnswer: "D. Has the federal government",
+        reason:
+          "Inversion dengan Rarely (negative adverb di awal): Rarely + HAS + S + V3 → 'Rarely HAS THE FEDERAL GOVERNMENT grown...' A = statement order (bukan inversion); B = verb sebelum subject benar, tapi verb split; C = tidak ada verb. ✓ D. Has the federal government",
+      },
+    ],
+  },
 ];
 
 export { advanceGrammarLessons };

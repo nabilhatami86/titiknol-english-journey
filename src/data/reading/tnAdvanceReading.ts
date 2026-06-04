@@ -198,7 +198,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-2",
     track: "reading",
     day: 2,
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     title: "The Art of Mime",
     subtitle: "History, technique, and evolution of a silent performance art",
     overview:
@@ -343,7 +343,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-3",
     track: "reading",
     day: 3,
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     title: "Learning Styles",
     subtitle: "Visual · Auditory · Kinesthetic — Types of Classroom Learners",
     overview:
@@ -838,7 +838,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-4",
     track: "reading",
     day: 4,
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     title: "Origins of Writing",
     subtitle:
       "Ancient Sumerians · Ancient Chinese · Ancient Maya — History of Written Language",
@@ -3254,7 +3254,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     day: 12,
     title: "Teen Court in Texas",
     subtitle: "Reading Passage — juvenile justice and peer trials",
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     overview:
       "Teks ini membahas sistem 'Teen Court' di Odessa, Texas, di mana remaja diadili oleh sesama remaja mereka. Dimulai dari akar historis prinsip 'juri dari sesama' yang berasal dari Magna Carta 1215, teks menjelaskan bagaimana sistem ini berkembang di AS dan mengapa tingkat residivisme sangat rendah (di bawah 5%). Latihan mencakup True/False/Not Given, pilihan ganda, dan vocabulary matching.",
     passage: [
@@ -3327,7 +3327,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-13",
     track: "reading",
     day: 13,
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     title: "Environmental Impacts of Logging",
     subtitle:
       "Unit 1: The Natural World — habitat loss, soil erosion, aquatic damage, and climate change",
@@ -3408,7 +3408,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Summary Completion — choose ONE word from the box for each blank.\n\nWord Bank: extend · intercepts · vegetation · aquatic · stabilize · erosion · myriad · vanish\n\nQ5. The effects of logging _____ beyond the simple felling of trees, also removing nutrients, water, and shelter for the countless organisms that depend on the forest ecosystem.",
-        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
+        options: [
+          "extend",
+          "intercepts",
+          "vegetation",
+          "aquatic",
+          "stabilize",
+          "erosion",
+          "myriad",
+          "vanish",
+        ],
         correctAnswer: "extend",
         reason:
           'Para. A: "The effects of logging extend beyond just the felling of a swath of trees." — extend = meluas, menjangkau.',
@@ -3419,7 +3428,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Q6. The dense forest canopy _____ heavy rainfall, slowing it down so that water soaks gradually into the porous soil rather than washing it away.",
-        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
+        options: [
+          "extend",
+          "intercepts",
+          "vegetation",
+          "aquatic",
+          "stabilize",
+          "erosion",
+          "myriad",
+          "vanish",
+        ],
         correctAnswer: "intercepts",
         reason:
           'Para. B: "The canopy prevents surface runoff by intercepting heavy rainfall so that water can drip down slowly onto the porous earth." — intercepts = menangkap/memotong.',
@@ -3430,7 +3448,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Q7. Along riverbanks and stream edges, _____ plays a crucial role in blocking soil from washing into the water and in shading the stream to prevent excessive algae growth.",
-        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
+        options: [
+          "extend",
+          "intercepts",
+          "vegetation",
+          "aquatic",
+          "stabilize",
+          "erosion",
+          "myriad",
+          "vanish",
+        ],
         correctAnswer: "vegetation",
         reason:
           'Para. C: "Vegetation along rivers and stream banks helps maintain steady water flow by blocking the erosion of soil and other residue, and tree shade inhibits the growth of algae." — vegetation = vegetasi/tumbuhan.',
@@ -3441,7 +3468,16 @@ export const advanceReadingLessons: ModuleLesson[] = [
         section: "part1",
         question:
           "Q8. When eroded soil flows into waterways it consumes oxygen, creating conditions that are deadly for fish and other _____ animals that rely on clean, well-oxygenated water to survive.",
-        options: ["extend", "intercepts", "vegetation", "aquatic", "stabilize", "erosion", "myriad", "vanish"],
+        options: [
+          "extend",
+          "intercepts",
+          "vegetation",
+          "aquatic",
+          "stabilize",
+          "erosion",
+          "myriad",
+          "vanish",
+        ],
         correctAnswer: "aquatic",
         reason:
           'Para. C: "oxygen depletion in the water, killing fish and other aquatic life." — aquatic = hidup di air.',
@@ -3499,7 +3535,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-14",
     track: "reading",
     day: 14,
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     title: "RODEO — The Sport of the West",
     subtitle:
       "Unit 2: Sport & Culture — America's wild-west tradition, crowd atmosphere, and rodeo events",
@@ -3607,7 +3643,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-15",
     track: "reading",
     day: 15,
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     title: "MAJOR SUBWAYS OF EUROPE — Exercises",
     subtitle:
       "Unit 3: Transportation — Subway Classification + Multiple Choice",
@@ -3730,7 +3766,7 @@ export const advanceReadingLessons: ModuleLesson[] = [
     id: "adv-reading-16",
     track: "reading",
     day: 16,
-    tutor: "Mrs. Aji",
+    tutor: "Mr. Afrizal",
     title: "Electric Cars Around the Globe",
     subtitle:
       "Unit 2: Technology & Environment — history, global adoption, and design innovations of electric vehicles",
