@@ -5951,67 +5951,91 @@ const advanceGrammarLessons: ModuleLesson[] = [
         id: "adv-g17-q1",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q1\n\nOne important branch of linguistics is semantics ______ analyzes the meaning of words.",
+          "Pre-Exam 2 — Q1\n\nOne important branch of linguistics is **semantics** ___ analyzes the meaning of words.",
         options: ["A. what", "B. and", "C. because", "D. that"],
         correctAnswer: "D. that",
         reason:
-          "AC (Adjective Clause): 'semantics THAT analyzes the meaning of words' — 'that' = relative pronoun untuk benda/konsep. 'What' bukan relative pronoun; 'and/because' = conjunction, bukan relative. ✓ D. that",
+          "AC Restrictive: 'semantics THAT analyzes the meaning of words' — 'that' = relative pronoun untuk benda/konsep, berfungsi sebagai subject dalam AC. 'what' bukan relative pronoun; 'and/because' tidak membentuk AC. ✓ D. that",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: 'semantics' = antecedent (benda/konsep). Cari relative pronoun yang tepat sebagai subject AC.",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g17-q2",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q2\n\nUnlike folk dances, which _____ the product of a single culture, ballet is an international art form.",
+          "Pre-Exam 2 — Q2\n\nUnlike **folk dances**, which ___ the product of a single culture, ballet is an international art form.",
         options: ["A. is", "B. it", "C. there are", "D. are"],
         correctAnswer: "D. are",
         reason:
-          "AC Non-Restrictive: 'folk dances, which ARE the product...' — 'which' merujuk ke 'folk dances' (plural), sehingga verb harus plural 'are'. A = singular (salah agreement); B/C = double subject. ✓ D. are",
+          "SV dalam AC: 'folk dances, which ARE the product' — verb dalam AC harus agreement dengan antecedent 'folk dances' (plural). 'is' = singular salah; 'it/there are' = double subject. ✓ D. are",
+        grammarType: "AC",
+        grammarNote:
+          "Subject-Verb Agreement dalam AC: verb harus agreement dengan ANTECEDENT (bukan noun terdekat).",
+        lessonRef: { day: 4, topic: "Adjective Clause — Subject-Verb Agreement" },
       },
       {
         id: "adv-g17-q3",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q3\n\nThe Earth's outer shell is divided into sections called plates, ______ constantly in motion.",
+          "Pre-Exam 2 — Q3\n\nThe Earth's outer shell is divided into sections called **plates**, ___ constantly in motion.",
         options: ["A. which are", "B. are", "C. which", "D. how"],
         correctAnswer: "A. which are",
         reason:
-          "AC Non-Restrictive: 'plates, WHICH ARE constantly in motion' — setelah koma, 'which are' melengkapi AC non-restrictive. B = tanpa relative pronoun; C = tanpa verb (tidak lengkap); D = 'how' bukan relative pronoun untuk benda. ✓ A. which are",
+          "AC Non-Restrictive: 'sections called plates, WHICH ARE constantly in motion' — 'which are' membentuk AC non-restrictive (ada koma). 'are' saja tanpa relative pronoun = salah struktur; 'which' tanpa verb = tidak lengkap. ✓ A. which are",
+        grammarType: "AC",
+        grammarNote:
+          "AC Non-Restrictive (ada koma setelah 'plates'). Butuh RELATIVE PRONOUN + VERB untuk benda.",
+        lessonRef: { day: 4, topic: "Adjective Clause — Non-Restrictive" },
       },
       {
         id: "adv-g17-q4",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q4\n\nLuther Gulick was a teacher and physician ____ spent much of his life promoting physical fitness.",
+          "Pre-Exam 2 — Q4\n\nLuther Gulick was a teacher and **physician** ___ spent much of his life promoting physical fitness.",
         options: ["A. which have", "B. that", "C. who", "D. are"],
         correctAnswer: "C. who",
         reason:
-          "AC untuk orang: 'teacher and physician WHO spent...' — 'who' = relative pronoun untuk orang. A = 'which' untuk benda; B = 'that' bisa untuk orang tapi 'who' lebih tepat untuk satu individu; D = bukan relative pronoun. ✓ C. who",
+          "AC Restrictive: 'teacher and physician WHO spent much of his life' — 'who' = relative pronoun untuk ORANG, berfungsi sebagai subject dalam AC. 'which' untuk benda; 'that' bisa untuk orang tapi 'who' lebih tepat; 'are' tidak ada relative pronoun. ✓ C. who",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: antecedent = orang ('teacher and physician'). Pilih relative pronoun yang tepat untuk orang.",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g17-q5",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q5\n\nSome games rely mainly on skill and practice ______ others primarily involve luck.",
+          "Pre-Exam 2 — Q5\n\n**Some games** rely mainly on skill and practice ___ **others** primarily involve luck.",
         options: ["A. that", "B. to", "C. which", "D. while"],
         correctAnswer: "D. while",
         reason:
-          "AVC of Contrast: 'skill and practice WHILE others involve luck' — 'while' = conjunction kontras (some...while others). 'that/which' = relative pronoun, bukan conjunction kontras. ✓ D. while",
+          "AVC of Contrast: 'Some games rely on skill... WHILE others involve luck' — 'while' = conjunction kontras (membandingkan dua hal yang berbeda). 'that/which' = relative pronoun; 'to' tidak membentuk clause. ✓ D. while",
+        grammarType: "AVC",
+        grammarNote:
+          "AVC of Contrast: dua hal yang dikontraskan ('some' vs 'others'). Cari conjunction kontras yang tepat.",
+        lessonRef: { day: 10, topic: "AVC of Contrast" },
       },
       {
         id: "adv-g17-q6",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q6\n\nA dog should be checked regularly by a veterinarian to ensure that it ______ in good health.",
+          "Pre-Exam 2 — Q6\n\nA dog should be checked regularly by a veterinarian to ensure that **it** ___ in good health.",
         options: ["A. remaining", "B. But", "C. Although", "D. remains"],
         correctAnswer: "D. remains",
         reason:
-          "Verb needed in that-clause: 'ensure that it REMAINS in good health' — butuh finite verb (simple present) sebagai predicate dalam NC. A = participle (bukan finite verb); B/C = conjunction (tidak tepat dalam that-clause). ✓ D. remains",
+          "Subject-Verb Agreement: 'ensure that IT REMAINS in good health' — subject = 'it' (= the dog, singular) → verb singular 'remains'. 'remaining' = participle (tidak ada auxiliary); 'But/Although' = conjunction (tidak tepat di sini). ✓ D. remains",
+        grammarType: "SV",
+        grammarNote:
+          "Subject-Verb Agreement: subject = 'it' (singular). Setelah 'that', butuh S + V lengkap.",
+        lessonRef: { day: 3, topic: "Subject-Verb Agreement" },
       },
       {
         id: "adv-g17-q7",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q7\n\n______ have at least four hours of hazardous materials response training is mandated by federal law.",
+          "Pre-Exam 2 — Q7\n\n___ have at least four hours of hazardous materials response training **is mandated** by federal law.",
         options: [
           "A. All police officers",
           "B. All police officers must",
@@ -6020,13 +6044,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "D. That all police officers",
         reason:
-          "NC as Subject: 'THAT ALL POLICE OFFICERS have at least four hours... is mandated by federal law.' — 'That' mengawali NC of Statement yang berfungsi sebagai subject. A/B = kalimat tanpa conjunction NC; C = prepositional phrase. ✓ D. That all police officers",
+          "NC of Statement sebagai SUBJECT kalimat: 'THAT ALL POLICE OFFICERS have...IS MANDATED' — 'That' membentuk NC of Statement yang berfungsi sebagai subject. Main verb = 'is mandated'. A = bukan clause (tidak ada conjunction); B = double verb (must + is); C = preposition phrase (bukan NC). ✓ D. That all police officers",
+        grammarType: "NC",
+        grammarNote:
+          "NC of Statement sebagai Subject: 'is mandated' = main verb. Blank = NC subject, butuh conjunction 'that'.",
+        lessonRef: { day: 2, topic: "Noun Clause as Subject" },
       },
       {
         id: "adv-g17-q8",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q8\n\nDolphins form extremely complicated allegiances and ______ continually change.",
+          "Pre-Exam 2 — Q8\n\nDolphins form extremely complicated **allegiances** and ___ continually change.",
         options: [
           "A. enmities that is",
           "B. that are enmities",
@@ -6035,23 +6063,31 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "D. enmities that",
         reason:
-          "AC: 'allegiances and ENMITIES THAT continually change' — 'that' = relative pronoun subject untuk 'enmities', verb = 'continually change'. A = 'is' salah agreement; B/C = urutan kata salah. ✓ D. enmities that",
+          "AC (Adjective Clause): 'allegiances and ENMITIES THAT continually change' — 'enmities' = antecedent + 'that' = relative pronoun subject. A 'enmities that is' = verb agreement salah (plural → is); B 'that are enmities' = word order terbalik; C 'that enmities' = tidak ada verb. ✓ D. enmities that",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: 'allegiances and ___' — butuh noun (antecedent) + relative pronoun yang membentuk AC paralel.",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g17-q9",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q9\n\nAt the end of the nineteenth century, Alfred Binet developed a test for measuring intelligence _______ served as the basis of modern IQ tests.",
+          "Pre-Exam 2 — Q9\n\nAt the end of the nineteenth century, Alfred Binet developed a **test** for measuring intelligence ___ served as the basis of modern IQ tests.",
         options: ["A. who has", "B. it has", "C. and", "D. which has"],
         correctAnswer: "D. which has",
         reason:
-          "AC untuk benda: 'a test... WHICH HAS served as the basis' — 'which' = relative pronoun untuk 'test' (benda). A = 'who' untuk orang; B = double subject. ✓ D. which has",
+          "AC Restrictive: 'a test WHICH HAS served as the basis' — 'which' = relative pronoun untuk benda ('a test'), 'has served' = present perfect sebagai verb AC. 'who has' = untuk orang; 'it has' = double subject; 'and' tidak membentuk AC. ✓ D. which has",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: 'test' = antecedent (benda). Butuh relative pronoun untuk benda + auxiliary 'has'.",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g17-q10",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q10\n\nWhen _______ nests during spring nesting season, Canadian geese are fiercely territorial.",
+          "Pre-Exam 2 — Q10\n\n**When** ___ nests during spring nesting season, **Canadian geese** are fiercely territorial.",
         options: [
           "A. are building",
           "B. built",
@@ -6060,53 +6096,73 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "D. building",
         reason:
-          "Reduced AVC of Time: 'When BUILDING nests...' = 'when they are building nests' — participle reduction (subject sama dengan main clause). A = tidak boleh ada 'are' tanpa subject; B/C = passive (geese bukan yang dibangun). ✓ D. building",
+          "Reduced AVC: 'When BUILDING nests' = 'When [Canadian geese are] building nests' → AVC aktif yang disederhanakan menjadi V-ing. 'are building' = tidak terreduksi + butuh subject; 'built/are built' = pasif (geese yang AKTIF membangun sarang). ✓ D. building",
+        grammarType: "RED",
+        grammarNote:
+          "Reduced AVC Aktif: 'When [they are] ___ing' → hilangkan subject + be. Geese membangun sarang = AKTIF.",
+        lessonRef: { day: 13, topic: "Reduced Adverbial Clause" },
       },
       {
         id: "adv-g17-q11",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q11\n\nIn a 1988 advanced officers' training program, Sampson developed a plan to incorporate police in enforcing environmental protection laws whenever _______ feasible.",
+          "Pre-Exam 2 — Q11\n\nIn a 1988 advanced officers' training program, Sampson developed a plan to incorporate police in enforcing environmental protection laws **whenever** ___ feasible.",
         options: ["A. it", "B. is", "C. has", "D. it is"],
         correctAnswer: "D. it is",
         reason:
-          "AVC dengan 'whenever': 'whenever IT IS feasible' = 'whenever it is possible/appropriate' — butuh subject + finite verb. A = hanya subject; B = hanya verb; C = salah tense/verb. ✓ D. it is",
+          "AVC of Condition: 'whenever IT IS feasible' — 'whenever' = conjunction AVC, diikuti S + V (statement order) → 'it is' (it = melaksanakan hukum tersebut). 'it' saja = tanpa verb; 'is' saja = tanpa subject; 'has' tidak sesuai konteks. ✓ D. it is",
+        grammarType: "AVC",
+        grammarNote:
+          "AVC Condition: 'whenever' = conjunction, diikuti S + V lengkap. Butuh SUBJECT + VERB setelah 'whenever'.",
+        lessonRef: { day: 12, topic: "AVC of Condition" },
       },
       {
         id: "adv-g17-q12",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q12\n\nThe fact ____ the most important ratings period is about to begin has caused all the networks to shore up their schedules.",
+          "Pre-Exam 2 — Q12\n\nThe **fact** ___ the most important ratings period is about to begin has caused all the networks to shore up their schedules.",
         options: ["A. is that", "B. of", "C. what", "D. that"],
         correctAnswer: "D. that",
         reason:
-          "Appositive NC: 'The fact THAT the most important ratings period is about to begin...' — 'that' mengawali NC sebagai appositive dari 'the fact'. A = double verb; B = preposition; C = 'what' bukan untuk appositive NC. ✓ D. that",
+          "NC of Statement sebagai Appositive dari 'the fact': 'The fact THAT the most important ratings period is about to begin' — 'the fact that' = fixed phrase NC. 'is that' = double verb; 'of' = preposition (butuh gerund/noun); 'what' bukan conjunction NC of Statement. ✓ D. that",
+        grammarType: "NC",
+        grammarNote:
+          "Fixed phrase: 'the fact THAT + clause'. 'that' membentuk NC of Statement sebagai appositive dari 'the fact'.",
+        lessonRef: { day: 2, topic: "Noun Clause — The Fact That" },
       },
       {
         id: "adv-g17-q13",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q13\n\nThe same symptoms _______ with amphetamins can occur with cocaine.",
+          "Pre-Exam 2 — Q13\n\nThe same **symptoms** ___ with amphetamins can occur with cocaine.",
         options: ["A. occur", "B. it occur", "C. because", "D. occuring"],
         correctAnswer: "D. occuring",
         reason:
-          "Reduced AC (Participial Phrase): 'symptoms OCCURRING with amphetamins' — 'occurring' = present participle memodifikasi 'symptoms'. A = double verb (kalimat sudah punya verb 'can occur'); B/C = gramatikal salah. ✓ D. occuring (occurring)",
+          "Reduced AC (Participial Phrase): 'symptoms OCCURRING with amphetamins' = 'symptoms which are occurring with amphetamins' → V-ing aktif sebagai reduced relative clause. 'occur' = double verb tanpa conjunction; 'it occur' = double subject; 'because' = conjunction (butuh S+V). ✓ D. occuring",
+        grammarType: "RED",
+        grammarNote:
+          "Reduced AC Aktif: 'symptoms ___ with amphetamins'. Gunakan V-ing untuk reduced relative clause aktif.",
+        lessonRef: { day: 4, topic: "Reduced Adjective Clause" },
       },
       {
         id: "adv-g17-q14",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q14\n\nIf a food label indicates that a food is mostly carbohydrate, it does not mean _____ is a good food to eat.",
+          "Pre-Exam 2 — Q14\n\nIf a food label indicates that a food is mostly carbohydrate, it does not **mean** ___ is a good food to eat.",
         options: ["A. It", "B. And", "C. When", "D. That it"],
         correctAnswer: "D. That it",
         reason:
-          "NC of Statement sebagai object dari 'mean': 'does not mean THAT IT is a good food' — 'that' = conjunction NC, 'it' = pronoun subject. A = tanpa conjunction NC; B/C = conjunction yang tidak tepat. ✓ D. That it",
+          "NC of Statement sebagai object dari 'mean': 'does not mean THAT IT is a good food' — 'That it' membentuk NC of Statement ('that' = conjunction NC, 'it' = subject NC). 'It' saja = subject tanpa conjunction NC; 'And/When' tidak membentuk NC yang benar. ✓ D. That it",
+        grammarType: "NC",
+        grammarNote:
+          "NC of Statement sebagai object dari 'mean'. Setelah 'mean', butuh conjunction NC 'that' + subject.",
+        lessonRef: { day: 2, topic: "Noun Clause" },
       },
       {
         id: "adv-g17-q15",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q15\n\nThe report on the nuclear power plant indicated that when the plant had gone on line _______ unsafe.",
+          "Pre-Exam 2 — Q15\n\nThe report on the nuclear power plant **indicated that** when the plant had gone on line ___ unsafe.",
         options: [
           "A. what it had been",
           "B. which",
@@ -6115,23 +6171,31 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "D. it had been",
         reason:
-          "Kalimat utama dalam NC: 'indicated THAT [when the plant had gone on line, IT HAD BEEN unsafe]' — setelah AVC 'when...on line', butuh subject + verb dari main clause dalam NC tersebut. A = 'what' tidak tepat; C = 'that' tidak diperlukan (sudah ada 'that' sebelumnya). ✓ D. it had been",
+          "Reported Speech dalam NC: 'indicated that when the plant had gone on line, IT HAD BEEN unsafe' — 'it had been' = past perfect backshift (plant yang go on-line = past perfect dalam reported speech). 'what it had been' = word order salah; 'which' = relative pronoun tanpa antecedent; 'that it had been' = double conjunction (sudah ada 'that' dari 'indicated that'). ✓ D. it had been",
+        grammarType: "NC",
+        grammarNote:
+          "NC Reported Speech: 'indicated that...' → backshift tense. Sudah ada 'that', jadi jangan tambah 'that' lagi.",
+        lessonRef: { day: 3, topic: "Noun Clause — Reported Speech" },
       },
       {
         id: "adv-g17-q16",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q16\n\nThe benefit of the study is that it provides necessary information to anyone ____ it.",
+          "Pre-Exam 2 — Q16\n\nThe benefit of the study is that it provides necessary information to **anyone** ___ it.",
         options: ["A. which", "B. who", "C. needed", "D. needing"],
         correctAnswer: "D. needing",
         reason:
-          "Reduced AC (Participial): 'anyone NEEDING it' = 'anyone who needs it' — 'needing' = present participle memodifikasi 'anyone'. A = 'which' untuk benda (bukan orang); B = 'who' perlu verb setelahnya ('who it' tidak lengkap); C = 'needed' (passive participle, tidak cocok). ✓ D. needing",
+          "Reduced AC (Participial): 'anyone NEEDING it' = 'anyone who needs it' → V-ing sebagai reduced relative clause. 'which' = untuk benda (bukan orang); 'who' butuh verb setelahnya (tidak dalam reduced form); 'needed' = past participle (pasif, tidak logis — 'anyone who needs', bukan 'anyone who is needed'). ✓ D. needing",
+        grammarType: "RED",
+        grammarNote:
+          "Reduced AC: 'anyone ___ it'. V-ing untuk reduced relative clause aktif ('anyone who needs it').",
+        lessonRef: { day: 4, topic: "Reduced Adjective Clause" },
       },
       {
         id: "adv-g17-q17",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q17\n\nMany companies across the country have molded the concepts ______ describes into an integrated strategy for preventing stress.",
+          "Pre-Exam 2 — Q17\n\nMany companies across the country have molded the **concepts** ___ describes into an integrated strategy for preventing stress.",
         options: [
           "A. that wolf",
           "B. and wolf",
@@ -6140,13 +6204,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "A. that wolf",
         reason:
-          "AC: 'the concepts THAT WOLF describes' — 'that' = relative pronoun object, 'Wolf' = nama orang (subject AC) yang mendeskripsi konsep tersebut. B/C/D = conjunction, bukan relative pronoun. ✓ A. that wolf",
+          "AC Restrictive: 'the concepts THAT WOLF describes' — 'that' = relative pronoun sebagai object (Wolf describes THEM → that), 'wolf' = subject AC (nama orang/penulis). 'and wolf' tidak membentuk AC; 'if/so wolf' = conjunction yang tidak tepat. ✓ A. that wolf",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: 'concepts' = antecedent. 'that wolf describes' = relative pronoun + subject ('wolf' = nama penulis).",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g17-q18",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q18\n\nThe Apollo 11 astronauts _______ of the Earth's inhabitants witnessed the famous first moonwalk on July 20, 1969, were Neil Armstrong and Buzz Aldrin.",
+          "Pre-Exam 2 — Q18\n\nThe Apollo 11 **astronauts** ___ of the Earth's inhabitants **witnessed** the famous first moonwalk on July 20, 1969, were Neil Armstrong and Buzz Aldrin.",
         options: [
           "A. whom",
           "B. were some",
@@ -6155,23 +6223,31 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "D. whom millions",
         reason:
-          "AC: 'astronauts WHOM MILLIONS of the Earth's inhabitants witnessed' — 'whom' = relative pronoun object (astronauts = object dari 'witnessed'), 'millions of the Earth's inhabitants' = subject AC. A = 'whom' saja tidak ada subject AC; B/C = struktur salah. ✓ D. whom millions",
+          "AC Non-Restrictive dengan 'whom' (object): 'astronauts WHOM MILLIONS of the Earth's inhabitants witnessed' — 'whom' = relative pronoun sebagai OBJECT (inhabitants witnessed THEM → whom). 'whom' saja = tanpa subject AC; 'were some' = tidak ada relative pronoun; 'whom were' = double verb. ✓ D. whom millions",
+        grammarType: "AC",
+        grammarNote:
+          "AC Non-Restrictive: 'witnessed THEM' → THEM = object → gunakan 'whom'. 'whom millions' = whom + subject AC.",
+        lessonRef: { day: 4, topic: "Adjective Clause — whom (Object)" },
       },
       {
         id: "adv-g17-q19",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q19\n\nThe television _____ so long been a part of our culture, has an enormous influence.",
+          "Pre-Exam 2 — Q19\n\n**The television** ___ so long been a part of our culture, has an enormous influence on the way people think.",
         options: ["A. has", "B. it has", "C. which", "D. which has"],
         correctAnswer: "D. which has",
         reason:
-          "AC Non-Restrictive: 'The television, WHICH HAS so long been a part of our culture, has an enormous influence.' — 'which has' = relative pronoun + verb untuk AC non-restrictive. A = tidak ada relative pronoun; B = double subject; C = 'which' tanpa verb (tidak lengkap). ✓ D. which has",
+          "AC Non-Restrictive: 'The television, WHICH HAS so long been a part of our culture' — 'which has' = relative pronoun + auxiliary untuk AC non-restrictive (ada koma). 'has' saja = tidak ada relative pronoun; 'it has' = double subject; 'which' tanpa verb = tidak lengkap. ✓ D. which has",
+        grammarType: "AC",
+        grammarNote:
+          "AC Non-Restrictive (ada koma). 'The television' = antecedent (benda). 'which' + has untuk non-restrictive.",
+        lessonRef: { day: 4, topic: "Adjective Clause — Non-Restrictive" },
       },
       {
         id: "adv-g17-q20",
         type: "multiple-choice",
         question:
-          "Pre-Exam 2 — Q20\n\nDamage _____ from thunderstorms is mainly inflicted by downburst winds, large hailstones, and flash flooding which is caused by heavy precipitation.",
+          "Pre-Exam 2 — Q20\n\n**Damage** ___ from thunderstorms is mainly inflicted by downburst winds, large hailstones, and flash flooding which is caused by heavy precipitation.",
         options: [
           "A. results",
           "B. resulting",
@@ -6180,7 +6256,11 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "B. resulting",
         reason:
-          "Reduced AC (Participial Phrase): 'Damage RESULTING from thunderstorms' — 'resulting' = present participle memodifikasi 'damage'. A = double verb; C = passive (result tidak digunakan secara passive seperti ini); D = past participle (bukan ongoing process). ✓ B. resulting",
+          "Reduced AC (Participial Phrase): 'Damage RESULTING from thunderstorms' = 'Damage which is resulting from thunderstorms' → V-ing aktif sebagai reduced relative clause. 'results' = double verb; 'was resulted' = passive (result tidak digunakan secara passive seperti ini); 'resulted' = past participle (tidak tepat konteks). ✓ B. resulting",
+        grammarType: "RED",
+        grammarNote:
+          "Reduced AC Aktif: 'Damage ___ from thunderstorms'. V-ing untuk reduced relative clause aktif.",
+        lessonRef: { day: 4, topic: "Reduced Adjective Clause" },
       },
     ],
   },
@@ -6221,18 +6301,22 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q1\n\n_____ bacteria in foods are killed, as they are during baking or stewing, decay is slowed down.",
+          "Pre-Exam 1 — Q1\n\n**_____** bacteria in foods are killed, as they are during baking or stewing, decay is slowed down.",
         options: ["A. What", "B. The", "C. If", "D. So"],
         correctAnswer: "C. If",
         reason:
           "IF + S + V = Conditional Clause (AVC). 'If bacteria are killed, decay is slowed down.' → struktur kondisi (if-clause). 'What/The/So' tidak membentuk conditional clause yang benar. ✓ C. If",
+        grammarType: "AVC",
+        grammarNote:
+          "Blank diisi conjunction untuk membentuk klausa kondisi. Cari: apakah kalimat butuh IF / BECAUSE / ALTHOUGH?",
+        lessonRef: { day: 12, topic: "AVC of Condition" },
       },
       {
         id: "adv-g18-e1-q2",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q2\n\nThe world's deepest cave, Pierre St. Martin in the Pyrenees Mountains, is almost three times as deep _____.",
+          "Pre-Exam 1 — Q2\n\nThe world's deepest cave, Pierre St. Martin in the Pyrenees Mountains, is almost three times **as deep** _____.",
         options: [
           "A. as the Empire State Building is high",
           "B. That the Empire State Building is higher",
@@ -6242,13 +6326,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "A. as the Empire State Building is high",
         reason:
           "Comparison: 'as deep AS ...' → struktur 'as [adj] as + clause' — 'as the Empire State Building is high' melengkapi perbandingan dengan benar. B/C/D menggunakan struktur yang salah. ✓ A. as the Empire State Building is high",
+        grammarType: "COMP",
+        grammarNote:
+          "Positive Degree: as + adj + as. Perhatikan pola 'as deep _____'.",
+        lessonRef: { day: 6, topic: "Comparison — Positive Degree" },
       },
       {
         id: "adv-g18-e1-q3",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q3\n\nThe early years of the United States government were characterized by a debate concerning _____ or individual states should have more power.",
+          "Pre-Exam 1 — Q3\n\nThe early years of the United States government were characterized by a debate **concerning** _____ or individual states should have more power.",
         options: [
           "A. whether the federal government",
           "B. either the federal government",
@@ -6258,13 +6346,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "A. whether the federal government",
         reason:
           "NC of Yes/No Question: 'concerning WHETHER the federal government or individual states should...' — 'whether' membentuk NC of Question setelah preposition 'concerning'. 'either' butuh pasangan 'or' langsung; 'that' tidak tepat untuk yes/no question. ✓ A. whether the federal government",
+        grammarType: "NC",
+        grammarNote:
+          "NC of Question setelah preposition. Setelah 'concerning', butuh CONJUNCTION NC (whether/if/wh-word).",
+        lessonRef: { day: 2, topic: "Noun Clause — NC of Question" },
       },
       {
         id: "adv-g18-e1-q4",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q4\n\nTornados, powerful, destructive wind storms, occur most often in the spring when hot winds _____ over flat land encounter heavy cold air.",
+          "Pre-Exam 1 — Q4\n\nTornados, powerful, destructive wind storms, occur most often in the spring when **hot winds** _____ over flat land encounter heavy cold air.",
         options: [
           "A. which to rise",
           "B. that rising",
@@ -6274,13 +6366,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "D. rising",
         reason:
           "Reduced AC (Participial Phrase): 'hot winds RISING over flat land' — 'rising' = present participle memodifikasi 'hot winds'. A/B gramatikal salah. C ('are rising') membuat kalimat memiliki dua verb tanpa conjunction. ✓ D. rising",
+        grammarType: "RED",
+        grammarNote:
+          "Reduced AC (Participial Phrase). Modifikasi noun 'hot winds' dengan V-ing aktif.",
+        lessonRef: { day: 4, topic: "Reduced Adjective Clause" },
       },
       {
         id: "adv-g18-e1-q5",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q5\n\nSeldom _____ more than twenty minutes a night.",
+          "Pre-Exam 1 — Q5\n\n**Seldom** _____ more than twenty minutes a night.",
         options: [
           "A. Sleep giraffes",
           "B. Do giraffes sleep",
@@ -6290,13 +6386,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "B. Do giraffes sleep",
         reason:
           "Inversion dengan 'Seldom' (negative adverb di awal kalimat): Seldom + DO/DOES/DID + S + V1 → 'Seldom DO giraffes sleep...' C = bukan inversion (statement order + 'do' emphatic); D = statement order tanpa inversion. ✓ B. Do giraffes sleep",
+        grammarType: "INV",
+        grammarNote:
+          "Inversion: Negative Adverb di awal kalimat → AUX + S + V. 'Seldom' = inversion trigger.",
+        lessonRef: { day: 14, topic: "Inversion — Negative Adverb" },
       },
       {
         id: "adv-g18-e1-q6",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q6\n\nWorking like a telescope, _____ the size of objects at great distances.",
+          "Pre-Exam 1 — Q6\n\n**Working like a telescope**, _____ the size of objects at great distances.",
         options: [
           "A. which magnifies a telephoto lens",
           "B. a telephoto lens magnifies",
@@ -6306,13 +6406,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "B. a telephoto lens magnifies",
         reason:
           "Dangling Modifier: 'Working like a telescope' (participial phrase) harus diikuti subject yang benar-benar 'bekerja seperti teleskop' → 'a telephoto lens magnifies...' A/C/D tidak logis atau gramatikal salah. ✓ B. a telephoto lens magnifies",
+        grammarType: "RED",
+        grammarNote:
+          "Dangling Modifier: Participial phrase di awal. Subject setelah koma HARUS yang 'bekerja seperti teleskop'.",
+        lessonRef: { day: 13, topic: "Participial Phrase / Dangling Modifier" },
       },
       {
         id: "adv-g18-e1-q7",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q7\n\nJackie Joyner-Kersee, _____ the world record in the heptathlon in the 1988 Olympics, also won the long jump in the year.",
+          "Pre-Exam 1 — Q7\n\n**Jackie Joyner-Kersee**, _____ the world record in the heptathlon in the 1988 Olympics, also won the long jump in the year.",
         options: [
           "A. whose setting",
           "B. which she set",
@@ -6322,13 +6426,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "D. who set",
         reason:
           "AC (Adjective Clause): 'who set the world record' — 'who' = relative pronoun untuk orang, berfungsi sebagai subject dalam AC. A = 'whose' butuh noun sesudahnya; B = 'which' untuk benda; C = 'whoever' salah konteks. ✓ D. who set",
+        grammarType: "AC",
+        grammarNote:
+          "AC Non-Restrictive (ada koma). Relative pronoun untuk orang sebagai subject.",
+        lessonRef: { day: 4, topic: "Adjective Clause — Non-Restrictive" },
       },
       {
         id: "adv-g18-e1-q8",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q8\n\nGorillas are quiet animals, _____ they are capable of making about 20 different sounds.",
+          "Pre-Exam 1 — Q8\n\nGorillas are **quiet animals**, _____ they are capable of making about 20 different sounds.",
         options: [
           "A. whether",
           "B. which",
@@ -6338,24 +6446,32 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "C. even though",
         reason:
           "AVC of Contrast: 'even though they are capable...' — menunjukkan kontras (gorillas quiet TAPI mampu 20 suara). 'whether' butuh 'or'; 'which' membentuk AC bukan AVC kontras; 'as well as' tidak membentuk clause. ✓ C. even though",
+        grammarType: "AVC",
+        grammarNote:
+          "AVC of Contrast: blank diisi conjunction kontras. 'Gorillas quiet TAPI mampu 20 suara' = kontras.",
+        lessonRef: { day: 10, topic: "AVC of Contrast" },
       },
       {
         id: "adv-g18-e1-q9",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q9\n\nBecause the wood of the dogwood tree is very hard, _____ is used for objects, such as roller skate wheels, in which hardness is desired.",
+          "Pre-Exam 1 — Q9\n\n**Because** the wood of the dogwood tree is very hard, _____ is used for objects, such as roller skate wheels, in which hardness is desired.",
         options: ["A. and", "B. it", "C. what", "D. thus"],
         correctAnswer: "B. it",
         reason:
           "'Because...' = AVC (sudah ada), lalu butuh main clause dengan subject pronoun → 'it' merujuk ke 'the wood'. 'and/what/thus' tidak tepat sebagai pronoun subject di main clause. ✓ B. it",
+        grammarType: "AVC",
+        grammarNote:
+          "AVC of Reason sudah ada ('Because...'). Main clause butuh SUBJECT PRONOUN, bukan conjunction lagi.",
+        lessonRef: { day: 10, topic: "Adverbial Clause" },
       },
       {
         id: "adv-g18-e1-q10",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q10\n\nThe early feminist leader Susan B. Anthony became increasingly aware through her work in the temperance movement _____ the same rights as men.",
+          "Pre-Exam 1 — Q10\n\nThe early feminist leader Susan B. Anthony became increasingly **aware** through her work in the temperance movement _____ the same rights as men.",
         options: [
           "A. women were not granted that",
           "B. that women were not granted",
@@ -6365,13 +6481,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "B. that women were not granted",
         reason:
           "NC of Statement sebagai object dari 'aware of': 'aware THAT women were not granted the same rights as men.' A = word order terbalik ('that' seharusnya di depan); C/D = struktur tidak gramatikal. ✓ B. that women were not granted",
+        grammarType: "NC",
+        grammarNote:
+          "NC of Statement setelah adjective 'aware'. Formula: aware + that + S + V.",
+        lessonRef: { day: 2, topic: "Noun Clause — NC of Statement" },
       },
       {
         id: "adv-g18-e1-q11",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q11\n\nFossil records indicate _____ existing in the past have become extinct.",
+          "Pre-Exam 1 — Q11\n\nFossil records **indicate** _____ existing in the past have become extinct.",
         options: [
           "A. that many species of organisms",
           "B. many species of organisms that",
@@ -6381,13 +6501,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "A. that many species of organisms",
         reason:
           "NC of Statement sebagai object dari 'indicate': 'indicate THAT many species of organisms [existing in the past] have become extinct.' B = 'that' salah posisi (setelah object); C/D = tidak gramatikal atau hilang. ✓ A. that many species of organisms",
+        grammarType: "NC",
+        grammarNote:
+          "NC of Statement sebagai object dari 'indicate'. Formula: indicate + that + S + V.",
+        lessonRef: { day: 3, topic: "Noun Clause — NC of Statement" },
       },
       {
         id: "adv-g18-e1-q12",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q12\n\n____________, the seeds of the Kentucky coffee plant are poisonous.",
+          "Pre-Exam 1 — Q12\n\n____________, the seeds of the Kentucky coffee plant **are poisonous**.",
         options: [
           "A. Cooking them",
           "B. They have been cooked",
@@ -6397,17 +6521,25 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "D. Until they have been cooked",
         reason:
           "AVC of Time/Condition: 'UNTIL they have been cooked, the seeds...are poisonous' — 'until' = conjunction AVC (selama belum dimasak, biji beracun). A = participial phrase (dangling); B = kalimat tanpa conjunction; C = 'until' di posisi salah. ✓ D. Until they have been cooked",
+        grammarType: "AVC",
+        grammarNote:
+          "AVC of Time/Condition di awal kalimat. Blank diisi conjunction + clause.",
+        lessonRef: { day: 12, topic: "AVC of Time / Condition" },
       },
       {
         id: "adv-g18-e1-q13",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q13\n\nMost folk songs are ballads _____ have simple words and tell simple stories.",
+          "Pre-Exam 1 — Q13\n\nMost folk songs are **ballads** _____ have simple words and tell simple stories.",
         options: ["A. What", "B. Although", "C. When", "D. That"],
         correctAnswer: "D. That",
         reason:
           "AC (Adjective Clause): 'ballads THAT have simple words...' — 'that' = relative pronoun untuk benda/konsep. 'What' bukan relative pronoun (tidak bisa menggantikan 'ballads'); 'Although/When' = conjunction AVC. ✓ D. That",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: 'ballads' = antecedent (benda). Gunakan 'that' atau 'which' sebagai relative pronoun.",
+        lessonRef: { day: 4, topic: "Adjective Clause — Restrictive" },
       },
       {
         id: "adv-g18-e1-q14",
@@ -6424,6 +6556,10 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "B. To develop film",
         reason:
           "Infinitive as Subject: 'TO DEVELOP film at home requires...' — infinitive phrase berfungsi sebagai grammatical subject. A = salah struktur; C = AVC (bukan subject); D = 'In developing' (preposition + gerund, bukan subject). ✓ B. To develop film",
+        grammarType: "RED",
+        grammarNote:
+          "Blank = Subject kalimat. Pilih bentuk yang berfungsi sebagai SUBJECT (Infinitive atau Gerund).",
+        lessonRef: { day: 14, topic: "Infinitive / Gerund as Subject" },
       },
       {
         id: "adv-g18-e1-q15",
@@ -6440,13 +6576,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "D. Training",
         reason:
           "Gerund as Subject: 'TRAINING for a career in dance generally begins...' — gerund phrase berfungsi sebagai subject. A = kalimat lengkap (bukan gerund subject); B = NC of Statement (membutuhkan verb utama lain); C = 'If training' (AVC fragment). ✓ D. Training",
+        grammarType: "RED",
+        grammarNote:
+          "Blank = Subject kalimat. 'Generally begins' → butuh GERUND phrase sebagai subject.",
+        lessonRef: { day: 14, topic: "Gerund as Subject" },
       },
       {
         id: "adv-g18-e1-q16",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q16\n\nModern race cars store fuel in rubber bladders that are almost impossible _____.",
+          "Pre-Exam 1 — Q16\n\nModern race cars store fuel in rubber bladders that are almost **impossible** _____.",
         options: [
           "A. Rupturing",
           "B. To rupture",
@@ -6456,24 +6596,32 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "B. To rupture",
         reason:
           "Infinitive setelah adjective: impossible TO + V1 → 'almost impossible TO RUPTURE.' A = gerund (bukan infinitive); C = simple present verb (salah bentuk); D = past participle. ✓ B. To rupture",
+        grammarType: "RED",
+        grammarNote:
+          "Infinitive setelah adjective: impossible + to + V1.",
+        lessonRef: { day: 14, topic: "Infinitive after Adjective" },
       },
       {
         id: "adv-g18-e1-q17",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q17\n\nThe social system of bumblebees is not as complex _____ honeybees.",
+          "Pre-Exam 1 — Q17\n\nThe social system of bumblebees is **not as complex** _____ honeybees.",
         options: ["A. than", "B. as that of", "C. that are", "D. as"],
         correctAnswer: "B. as that of",
         reason:
           "Comparison 'not as...as': 'not as complex AS THAT OF honeybees' — 'that' merujuk ke 'social system' sehingga menghindari repetisi ('as the social system of honeybees'). A = 'than' hanya untuk comparative (-er/more); C/D = tidak melengkapi perbandingan dengan benar. ✓ B. as that of",
+        grammarType: "COMP",
+        grammarNote:
+          "Logical Comparison: 'not as...as that of' menghindari repetisi noun.",
+        lessonRef: { day: 7, topic: "Logical Comparison" },
       },
       {
         id: "adv-g18-e1-q18",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q18\n\nNot until the seventeenth century _____ to measure the speed of light.",
+          "Pre-Exam 1 — Q18\n\n**Not until** the seventeenth century _____ to measure the speed of light.",
         options: [
           "A. did anyone even attempt",
           "B. anyone did even attempt",
@@ -6483,13 +6631,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "A. did anyone even attempt",
         reason:
           "Inversion dengan 'Not until' (negative adverb phrase di awal): Not until + AUX + S + V → 'Not until the seventeenth century DID ANYONE EVEN ATTEMPT...' B = statement order (bukan inversion); C = 'even' salah posisi; D = subject ('anyone') di akhir. ✓ A. did anyone even attempt",
+        grammarType: "INV",
+        grammarNote:
+          "Inversion: 'Not until + time' di awal → Not until... + AUX + S + V.",
+        lessonRef: { day: 14, topic: "Inversion — Not Until" },
       },
       {
         id: "adv-g18-e1-q19",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q19\n\nThe black-billed cuckoo has been known to steal eggs _____ to other birds.",
+          "Pre-Exam 1 — Q19\n\nThe black-billed cuckoo has been known to steal **eggs** _____ to other birds.",
         options: [
           "A. belong",
           "B. which belonging",
@@ -6499,13 +6651,17 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "D. that belong",
         reason:
           "AC (Adjective Clause): 'eggs THAT BELONG to other birds' — 'that' = relative pronoun untuk benda, berfungsi sebagai subject. A = tanpa relative pronoun (salah struktur); B = 'belonging' bukan finite verb; C = 'which they belong' = double subject. ✓ D. that belong",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: 'eggs' = antecedent (benda). Relative pronoun sebagai subject.",
+        lessonRef: { day: 4, topic: "Adjective Clause — Restrictive" },
       },
       {
         id: "adv-g18-e1-q20",
         type: "multiple-choice",
         section: "part1",
         question:
-          "Pre-Exam 1 — Q20\n\nDespite its wide range of styles and instrumentation, country music has certain common features _____ its own special character.",
+          "Pre-Exam 1 — Q20\n\nDespite its wide range of styles and instrumentation, country music has certain **common features** _____ its own special character.",
         options: [
           "A. give it that",
           "B. that give it",
@@ -6515,6 +6671,10 @@ const advanceGrammarLessons: ModuleLesson[] = [
         correctAnswer: "B. that give it",
         reason:
           "AC (Adjective Clause): 'features THAT GIVE IT its own special character' — 'that' = relative pronoun subject, 'give' agreement dengan 'features' (plural). A = tanpa relative pronoun di depan; C = tanpa pronoun; D = 'gives' salah agreement (features = plural). ✓ B. that give it",
+        grammarType: "AC",
+        grammarNote:
+          "AC Restrictive: 'features' = antecedent (plural benda). Verb dalam AC harus agreement dengan antecedent.",
+        lessonRef: { day: 4, topic: "Adjective Clause — Restrictive" },
       },
 
       // ── Part 2: Pre-Exam 2 ───────────────────────────────────────────────────
@@ -6523,69 +6683,59 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q1\n\nThe chairman **suggested** _____ the problem could be solved within a week.",
-        options: ["A. if", "B. which", "C. whether", "D. that"],
+          "Pre-Exam 2 — Q1\n\nOne important branch of linguistics is **semantics** ___ analyzes the meaning of words.",
+        options: ["A. what", "B. and", "C. because", "D. that"],
         correctAnswer: "D. that",
         reason:
-          "NC of Statement sebagai object dari 'suggested': 'suggested THAT the problem could be solved...' — 'that' membentuk NC of Statement. 'if/whether' = NC of Yes/No Question; 'which' = relative pronoun (bukan conjunction NC). ✓ D. that",
-        grammarType: "NC",
+          "AC Restrictive: 'semantics THAT analyzes the meaning of words' — 'that' = relative pronoun untuk benda/konsep, berfungsi sebagai subject dalam AC. 'what' bukan relative pronoun; 'and/because' tidak membentuk AC. ✓ D. that",
+        grammarType: "AC",
         grammarNote:
-          "NC of Statement sebagai object dari 'suggested'. Formula: suggest + that + S + V.",
-        lessonRef: { day: 3, topic: "Noun Clause — NC of Statement" },
+          "AC Restrictive: 'semantics' = antecedent (benda/konsep). Cari relative pronoun yang tepat sebagai subject AC.",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g18-e2-q2",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q2\n\n**The number** of registered voters who actually vote in most elections _____ than half the total.",
-        options: ["A. is no more", "B. is not more", "C. are no more", "D. are"],
+          "Pre-Exam 2 — Q2\n\nUnlike **folk dances**, which ___ the product of a single culture, ballet is an international art form.",
+        options: ["A. is", "B. it", "C. there are", "D. are"],
         correctAnswer: "D. are",
         reason:
-          "Subject-Verb Agreement: 'The number of registered voters WHO ACTUALLY VOTE' — subject utama = 'The number' (singular) TAPI di sini head noun yang relevan adalah 'voters who...vote' (plural = konteks soal). Pilihan D 'are' dibenarkan karena merujuk ke 'voters'. ✓ D. are",
-        grammarType: "SV",
+          "SV dalam AC: 'folk dances, which ARE the product' — verb dalam AC harus agreement dengan antecedent 'folk dances' (plural). 'is' = singular salah; 'it/there are' = double subject. ✓ D. are",
+        grammarType: "AC",
         grammarNote:
-          "Subject-Verb Agreement: cari HEAD NOUN yang sesungguhnya. 'The number of + plural noun' → verb?",
-        lessonRef: { day: 3, topic: "Noun Clause / Subject-Verb Agreement" },
+          "Subject-Verb Agreement dalam AC: verb harus agreement dengan ANTECEDENT (bukan noun terdekat).",
+        lessonRef: { day: 4, topic: "Adjective Clause — Subject-Verb Agreement" },
       },
       {
         id: "adv-g18-e2-q3",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q3\n\nThe professor wanted the students to read **two books** _____ important contributions to modern psychology.",
-        options: [
-          "A. which are",
-          "B. that it is",
-          "C. as being",
-          "D. to be",
-        ],
+          "Pre-Exam 2 — Q3\n\nThe Earth's outer shell is divided into sections called **plates**, ___ constantly in motion.",
+        options: ["A. which are", "B. are", "C. which", "D. how"],
         correctAnswer: "A. which are",
         reason:
-          "AC (Adjective Clause): 'two books WHICH ARE important contributions...' — 'which are' = relative pronoun + verb untuk benda. B = double subject; C = 'as being' bukan AC; D = 'to be' tidak membentuk AC. ✓ A. which are",
+          "AC Non-Restrictive: 'sections called plates, WHICH ARE constantly in motion' — 'which are' membentuk AC non-restrictive (ada koma). 'are' saja tanpa relative pronoun = salah struktur; 'which' tanpa verb = tidak lengkap. ✓ A. which are",
         grammarType: "AC",
         grammarNote:
-          "AC Restrictive: 'two books' = antecedent. Butuh relative pronoun + verb untuk 'benda'.",
-        lessonRef: { day: 4, topic: "Adjective Clause" },
+          "AC Non-Restrictive (ada koma setelah 'plates'). Butuh RELATIVE PRONOUN + VERB untuk benda.",
+        lessonRef: { day: 4, topic: "Adjective Clause — Non-Restrictive" },
       },
       {
         id: "adv-g18-e2-q4",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q4\n\nWe saw **several dolphins** _____ were jumping out of the water as our boat passed.",
-        options: [
-          "A. which",
-          "B. that they",
-          "C. they",
-          "D. who",
-        ],
+          "Pre-Exam 2 — Q4\n\nLuther Gulick was a teacher and **physician** ___ spent much of his life promoting physical fitness.",
+        options: ["A. which have", "B. that", "C. who", "D. are"],
         correctAnswer: "C. who",
         reason:
-          "AC untuk makhluk hidup: 'dolphins WHO were jumping' — 'who' digunakan untuk makhluk hidup (hewan/manusia). A 'which' juga bisa untuk hewan, tapi D 'who' lebih tepat konteks. B = double subject; C = tanpa relative pronoun. ✓ C. who",
+          "AC Restrictive: 'teacher and physician WHO spent much of his life' — 'who' = relative pronoun untuk ORANG, berfungsi sebagai subject dalam AC. 'which' untuk benda; 'that' bisa untuk orang tapi 'who' lebih tepat; 'are' tidak ada relative pronoun. ✓ C. who",
         grammarType: "AC",
         grammarNote:
-          "AC Restrictive: 'dolphins' = antecedent (makhluk hidup). Pilih relative pronoun yang tepat.",
+          "AC Restrictive: antecedent = orang ('teacher and physician'). Pilih relative pronoun yang tepat untuk orang.",
         lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
@@ -6593,39 +6743,29 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q5\n\nJane was **watching a documentary** on television _____ the phone rang.",
-        options: [
-          "A. after",
-          "B. until",
-          "C. since",
-          "D. while",
-        ],
+          "Pre-Exam 2 — Q5\n\n**Some games** rely mainly on skill and practice ___ **others** primarily involve luck.",
+        options: ["A. that", "B. to", "C. which", "D. while"],
         correctAnswer: "D. while",
         reason:
-          "AVC of Time (Simultaneous): 'WHILE Jane was watching...the phone rang' — 'while' menunjukkan dua kejadian terjadi bersamaan. 'after' = berurutan; 'until' = batas waktu; 'since' = dari saat itu. ✓ D. while",
+          "AVC of Contrast: 'Some games rely on skill... WHILE others involve luck' — 'while' = conjunction kontras (membandingkan dua hal yang berbeda). 'that/which' = relative pronoun; 'to' tidak membentuk clause. ✓ D. while",
         grammarType: "AVC",
         grammarNote:
-          "AVC of Time: dua kejadian bersamaan vs berurutan. Perhatikan tense kedua klausa.",
-        lessonRef: { day: 10, topic: "AVC of Time" },
+          "AVC of Contrast: dua hal yang dikontraskan ('some' vs 'others'). Cari conjunction kontras yang tepat.",
+        lessonRef: { day: 10, topic: "AVC of Contrast" },
       },
       {
         id: "adv-g18-e2-q6",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q6\n\n**The demand** for well-qualified scientists in all branches of the government _____ strong despite the economic pressures.",
-        options: [
-          "A. remain",
-          "B. to remain",
-          "C. remaining",
-          "D. remains",
-        ],
+          "Pre-Exam 2 — Q6\n\nA dog should be checked regularly by a veterinarian to ensure that **it** ___ in good health.",
+        options: ["A. remaining", "B. But", "C. Although", "D. remains"],
         correctAnswer: "D. remains",
         reason:
-          "Subject-Verb Agreement: 'The demand...REMAINS' — subject = 'The demand' (singular) → verb singular 'remains'. Frasa 'for well-qualified scientists in all branches of the government' adalah modifier. ✓ D. remains",
+          "Subject-Verb Agreement: 'ensure that IT REMAINS in good health' — subject = 'it' (= the dog, singular) → verb singular 'remains'. 'remaining' = participle (tidak ada auxiliary); 'But/Although' = conjunction (tidak tepat di sini). ✓ D. remains",
         grammarType: "SV",
         grammarNote:
-          "Subject-Verb Agreement: 'The demand' = singular subject. Frasa panjang di tengah hanyalah modifier.",
+          "Subject-Verb Agreement: subject = 'it' (singular). Setelah 'that', butuh S + V lengkap.",
         lessonRef: { day: 3, topic: "Subject-Verb Agreement" },
       },
       {
@@ -6633,19 +6773,19 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q7\n\n_____ carry weapons while on duty **is required by law** in most states in America.",
+          "Pre-Exam 2 — Q7\n\n___ have at least four hours of hazardous materials response training **is mandated** by federal law.",
         options: [
           "A. All police officers",
-          "B. Police officers who",
-          "C. When police officers",
+          "B. All police officers must",
+          "C. For all police officers",
           "D. That all police officers",
         ],
         correctAnswer: "D. That all police officers",
         reason:
-          "NC of Statement sebagai Subject: 'THAT all police officers carry weapons...is required by law' — 'that' clause berfungsi sebagai subject kalimat. A = bukan clause; B = AC fragment; C = AVC (bukan NC subject). ✓ D. That all police officers",
+          "NC of Statement sebagai SUBJECT kalimat: 'THAT ALL POLICE OFFICERS have...IS MANDATED' — 'That' membentuk NC of Statement yang berfungsi sebagai subject. Main verb = 'is mandated'. A = bukan clause (tidak ada conjunction); B = double verb (must + is); C = preposition phrase (bukan NC). ✓ D. That all police officers",
         grammarType: "NC",
         grammarNote:
-          "NC of Statement sebagai SUBJECT kalimat. Formula: That + S + V + ... + main verb.",
+          "NC of Statement sebagai Subject: 'is mandated' = main verb. Blank = NC subject, butuh conjunction 'that'.",
         lessonRef: { day: 2, topic: "Noun Clause as Subject" },
       },
       {
@@ -6653,19 +6793,19 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q8\n\nWarring countries have often found it hard **to end** _____ have built up over the years.",
+          "Pre-Exam 2 — Q8\n\nDolphins form extremely complicated **allegiances** and ___ continually change.",
         options: [
-          "A. the enmity they",
-          "B. the enmities which",
-          "C. enmities",
+          "A. enmities that is",
+          "B. that are enmities",
+          "C. that enmities",
           "D. enmities that",
         ],
         correctAnswer: "D. enmities that",
         reason:
-          "AC (Adjective Clause): 'enmities THAT have built up over the years' — 'that' = relative pronoun subject untuk benda (enmities). A = object pronoun tanpa relative pronoun (salah struktur); B = 'which' + verb langsung (tanpa antecedent jelas); C = tanpa relative clause. ✓ D. enmities that",
+          "AC (Adjective Clause): 'allegiances and ENMITIES THAT continually change' — 'enmities' = antecedent + 'that' = relative pronoun subject. A 'enmities that is' = verb agreement salah (plural → is); B 'that are enmities' = word order terbalik; C 'that enmities' = tidak ada verb. ✓ D. enmities that",
         grammarType: "AC",
         grammarNote:
-          "AC Restrictive: antecedent = kata sebelum blank. Relative pronoun sebagai subject.",
+          "AC Restrictive: 'allegiances and ___' — butuh noun (antecedent) + relative pronoun yang membentuk AC paralel.",
         lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
@@ -6673,134 +6813,114 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q9\n\n**The Amazon River**, _____ its source in the Andes Mountains of Peru, is the world's largest river in terms of water volume.",
-        options: [
-          "A. which have",
-          "B. that has",
-          "C. it has",
-          "D. which has",
-        ],
+          "Pre-Exam 2 — Q9\n\nAt the end of the nineteenth century, Alfred Binet developed a **test** for measuring intelligence ___ served as the basis of modern IQ tests.",
+        options: ["A. who has", "B. it has", "C. and", "D. which has"],
         correctAnswer: "D. which has",
         reason:
-          "AC Non-Restrictive: 'The Amazon River, WHICH HAS its source in the Andes...' — 'which' digunakan dalam AC non-restrictive (ada koma). 'that' tidak digunakan dalam non-restrictive clause; 'it has' = double subject. ✓ D. which has",
+          "AC Restrictive: 'a test WHICH HAS served as the basis' — 'which' = relative pronoun untuk benda ('a test'), 'has served' = present perfect sebagai verb AC. 'who has' = untuk orang; 'it has' = double subject; 'and' tidak membentuk AC. ✓ D. which has",
         grammarType: "AC",
         grammarNote:
-          "AC Non-Restrictive (ada koma setelah proper noun). Gunakan 'which' bukan 'that'.",
-        lessonRef: { day: 4, topic: "Adjective Clause — Non-Restrictive" },
+          "AC Restrictive: 'test' = antecedent (benda). Butuh relative pronoun untuk benda + auxiliary 'has'.",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g18-e2-q10",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q10\n\nNew Yorkers watched **in amazement** as _____ of the old railroad station began.",
+          "Pre-Exam 2 — Q10\n\n**When** ___ nests during spring nesting season, **Canadian geese** are fiercely territorial.",
         options: [
-          "A. tearing down",
-          "B. torn down",
-          "C. to tear down",
+          "A. are building",
+          "B. built",
+          "C. are built",
           "D. building",
         ],
         correctAnswer: "D. building",
         reason:
-          "Konteks: 'amazement as BUILDING of the old railroad station began' — di sini 'tearing down' atau 'demolition' yang logis secara makna. Namun 'building' adalah gerund yang gramatikal sebagai object dari 'as'. Catatan: soal ini mengacu pada struktur gerund sebagai noun. ✓ D. building",
+          "Reduced AVC: 'When BUILDING nests' = 'When [Canadian geese are] building nests' → AVC aktif yang disederhanakan menjadi V-ing. 'are building' = tidak terreduksi + butuh subject; 'built/are built' = pasif (geese yang AKTIF membangun sarang). ✓ D. building",
         grammarType: "RED",
         grammarNote:
-          "Blank = gerund/noun yang jadi subject dari 'began'. Cari pilihan yang berfungsi sebagai noun.",
-        lessonRef: { day: 14, topic: "Gerund / Verbal Noun" },
+          "Reduced AVC Aktif: 'When [they are] ___ing' → hilangkan subject + be. Geese membangun sarang = AKTIF.",
+        lessonRef: { day: 13, topic: "Reduced Adverbial Clause" },
       },
       {
         id: "adv-g18-e2-q11",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q11\n\nBecause of the movement of the earth, the sun **appears** _____ moving from east to west.",
-        options: [
-          "A. as if",
-          "B. just as",
-          "C. like",
-          "D. it is",
-        ],
+          "Pre-Exam 2 — Q11\n\nIn a 1988 advanced officers' training program, Sampson developed a plan to incorporate police in enforcing environmental protection laws **whenever** ___ feasible.",
+        options: ["A. it", "B. is", "C. has", "D. it is"],
         correctAnswer: "D. it is",
         reason:
-          "Struktur 'appears + clause': 'the sun appears IT IS moving from east to west' — meskipun tidak umum, pilihan gramatikal dalam konteks ini adalah 'it is'. Catatan: umumnya 'appears to be moving' lebih natural, tapi di antara pilihan yang ada. ✓ D. it is",
-        grammarType: "NC",
+          "AVC of Condition: 'whenever IT IS feasible' — 'whenever' = conjunction AVC, diikuti S + V (statement order) → 'it is' (it = melaksanakan hukum tersebut). 'it' saja = tanpa verb; 'is' saja = tanpa subject; 'has' tidak sesuai konteks. ✓ D. it is",
+        grammarType: "AVC",
         grammarNote:
-          "Struktur 'appears + complement'. Pilih yang melengkapi 'appears' secara gramatikal.",
-        lessonRef: { day: 2, topic: "Noun Clause / Complement" },
+          "AVC Condition: 'whenever' = conjunction, diikuti S + V lengkap. Butuh SUBJECT + VERB setelah 'whenever'.",
+        lessonRef: { day: 12, topic: "AVC of Condition" },
       },
       {
         id: "adv-g18-e2-q12",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q12\n\nPollsters are having difficulty **predicting** _____ candidate will win the election.",
-        options: ["A. what", "B. who", "C. which it", "D. that"],
+          "Pre-Exam 2 — Q12\n\nThe **fact** ___ the most important ratings period is about to begin has caused all the networks to shore up their schedules.",
+        options: ["A. is that", "B. of", "C. what", "D. that"],
         correctAnswer: "D. that",
         reason:
-          "NC of Statement sebagai object dari 'predicting': 'predicting THAT [candidate] will win' — 'that' membentuk NC. Alternatif: 'which candidate' juga bisa, tapi 'that' adalah pilihan yang tersedia. ✓ D. that",
+          "NC of Statement sebagai Appositive dari 'the fact': 'The fact THAT the most important ratings period is about to begin' — 'the fact that' = fixed phrase NC. 'is that' = double verb; 'of' = preposition (butuh gerund/noun); 'what' bukan conjunction NC of Statement. ✓ D. that",
         grammarType: "NC",
         grammarNote:
-          "NC sebagai object dari 'predicting'. Formula: predicting + conjunction + S + V.",
-        lessonRef: { day: 2, topic: "Noun Clause" },
+          "Fixed phrase: 'the fact THAT + clause'. 'that' membentuk NC of Statement sebagai appositive dari 'the fact'.",
+        lessonRef: { day: 2, topic: "Noun Clause — The Fact That" },
       },
       {
         id: "adv-g18-e2-q13",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q13\n\nOne of the most common **errors in spelling** is _____ the last letter in a word.",
-        options: [
-          "A. omitting",
-          "B. to omit",
-          "C. omited",
-          "D. occuring",
-        ],
+          "Pre-Exam 2 — Q13\n\nThe same **symptoms** ___ with amphetamins can occur with cocaine.",
+        options: ["A. occur", "B. it occur", "C. because", "D. occuring"],
         correctAnswer: "D. occuring",
         reason:
-          "Spelling error identification: 'occuring' adalah ejaan yang salah (seharusnya 'occurring' — double r). Ini adalah soal yang menguji kemampuan menemukan kesalahan ejaan. ✓ D. occuring",
-        grammarType: "SPELL",
+          "Reduced AC (Participial Phrase): 'symptoms OCCURRING with amphetamins' = 'symptoms which are occurring with amphetamins' → V-ing aktif sebagai reduced relative clause. 'occur' = double verb tanpa conjunction; 'it occur' = double subject; 'because' = conjunction (butuh S+V). ✓ D. occuring",
+        grammarType: "RED",
         grammarNote:
-          "Soal spelling: temukan pilihan yang mengandung KESALAHAN EJAAN. Perhatikan double consonant.",
-        lessonRef: { day: 14, topic: "Common Spelling Errors" },
+          "Reduced AC Aktif: 'symptoms ___ with amphetamins'. Gunakan V-ing untuk reduced relative clause aktif.",
+        lessonRef: { day: 4, topic: "Reduced Adjective Clause" },
       },
       {
         id: "adv-g18-e2-q14",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q14\n\n_____ a new star was discovered **surprised astronomers** throughout the world.",
-        options: [
-          "A. There was",
-          "B. Which was",
-          "C. When it was",
-          "D. That it",
-        ],
+          "Pre-Exam 2 — Q14\n\nIf a food label indicates that a food is mostly carbohydrate, it does not **mean** ___ is a good food to eat.",
+        options: ["A. It", "B. And", "C. When", "D. That it"],
         correctAnswer: "D. That it",
         reason:
-          "NC of Statement sebagai Subject: 'THAT IT a new star was discovered surprised astronomers' — 'That it' dengan struktur NC. Catatan: secara gramatikal 'That a new star was discovered surprised...' lebih standard. Di antara pilihan, D paling mendekati struktur NC sebagai subject. ✓ D. That it",
+          "NC of Statement sebagai object dari 'mean': 'does not mean THAT IT is a good food' — 'That it' membentuk NC of Statement ('that' = conjunction NC, 'it' = subject NC). 'It' saja = subject tanpa conjunction NC; 'And/When' tidak membentuk NC yang benar. ✓ D. That it",
         grammarType: "NC",
         grammarNote:
-          "NC of Statement sebagai SUBJECT. Formula: That + clause → berfungsi sebagai subject.",
-        lessonRef: { day: 2, topic: "Noun Clause as Subject" },
+          "NC of Statement sebagai object dari 'mean'. Setelah 'mean', butuh conjunction NC 'that' + subject.",
+        lessonRef: { day: 2, topic: "Noun Clause" },
       },
       {
         id: "adv-g18-e2-q15",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q15\n\nThe report **claimed that** the patient _____ in great pain for months before being treated.",
+          "Pre-Exam 2 — Q15\n\nThe report on the nuclear power plant **indicated that** when the plant had gone on line ___ unsafe.",
         options: [
-          "A. would have been",
-          "B. will have been",
-          "C. had to be",
+          "A. what it had been",
+          "B. which",
+          "C. that it had been",
           "D. it had been",
         ],
         correctAnswer: "D. it had been",
         reason:
-          "NC of Statement dengan sequence of tenses: 'claimed that...it had been' — past perfect dalam reported speech. Catatan: 'the patient had been' lebih standard, namun pilihan D mencakup 'it had been' sebagai reported speech backshift. ✓ D. it had been",
+          "Reported Speech dalam NC: 'indicated that when the plant had gone on line, IT HAD BEEN unsafe' — 'it had been' = past perfect backshift (plant yang go on-line = past perfect dalam reported speech). 'what it had been' = word order salah; 'which' = relative pronoun tanpa antecedent; 'that it had been' = double conjunction (sudah ada 'that' dari 'indicated that'). ✓ D. it had been",
         grammarType: "NC",
         grammarNote:
-          "NC of Statement dalam reported speech. Backshift: present → past, past → past perfect.",
+          "NC Reported Speech: 'indicated that...' → backshift tense. Sudah ada 'that', jadi jangan tambah 'that' lagi.",
         lessonRef: { day: 3, topic: "Noun Clause — Reported Speech" },
       },
       {
@@ -6808,19 +6928,14 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q16\n\nThe committee decided that **a new regulation** _____ immediate attention.",
-        options: [
-          "A. needs",
-          "B. has needed",
-          "C. will need",
-          "D. needing",
-        ],
+          "Pre-Exam 2 — Q16\n\nThe benefit of the study is that it provides necessary information to **anyone** ___ it.",
+        options: ["A. which", "B. who", "C. needed", "D. needing"],
         correctAnswer: "D. needing",
         reason:
-          "Reduced AC (Participial Phrase): 'a new regulation NEEDING immediate attention' — 'needing' = present participle memodifikasi 'a new regulation'. A/B/C membentuk klausa finite yang tidak tepat dalam konteks ini. ✓ D. needing",
+          "Reduced AC (Participial): 'anyone NEEDING it' = 'anyone who needs it' → V-ing sebagai reduced relative clause. 'which' = untuk benda (bukan orang); 'who' butuh verb setelahnya (tidak dalam reduced form); 'needed' = past participle (pasif, tidak logis — 'anyone who needs', bukan 'anyone who is needed'). ✓ D. needing",
         grammarType: "RED",
         grammarNote:
-          "Reduced AC (Participial Phrase): 'a new regulation _____ immediate attention' → V-ing aktif.",
+          "Reduced AC: 'anyone ___ it'. V-ing untuk reduced relative clause aktif ('anyone who needs it').",
         lessonRef: { day: 4, topic: "Reduced Adjective Clause" },
       },
       {
@@ -6828,39 +6943,39 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q17\n\nNew evidence **suggests** _____ became the ancestor of today's dogs some fifteen thousand years ago.",
+          "Pre-Exam 2 — Q17\n\nMany companies across the country have molded the **concepts** ___ describes into an integrated strategy for preventing stress.",
         options: [
           "A. that wolf",
-          "B. the wolf that",
-          "C. which wolf",
-          "D. what the wolf",
+          "B. and wolf",
+          "C. if wolf",
+          "D. so wolf",
         ],
         correctAnswer: "A. that wolf",
         reason:
-          "NC of Statement: 'suggests THAT WOLF became the ancestor...' — 'that' membentuk NC of Statement sebagai object dari 'suggests'. B = 'the wolf that' membentuk AC, bukan NC; C/D = struktur tidak tepat. ✓ A. that wolf",
-        grammarType: "NC",
+          "AC Restrictive: 'the concepts THAT WOLF describes' — 'that' = relative pronoun sebagai object (Wolf describes THEM → that), 'wolf' = subject AC (nama orang/penulis). 'and wolf' tidak membentuk AC; 'if/so wolf' = conjunction yang tidak tepat. ✓ A. that wolf",
+        grammarType: "AC",
         grammarNote:
-          "NC of Statement sebagai object dari 'suggests'. Formula: suggest + that + S + V.",
-        lessonRef: { day: 3, topic: "Noun Clause — NC of Statement" },
+          "AC Restrictive: 'concepts' = antecedent. 'that wolf describes' = relative pronoun + subject ('wolf' = nama penulis).",
+        lessonRef: { day: 4, topic: "Adjective Clause" },
       },
       {
         id: "adv-g18-e2-q18",
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q18\n\n**Michael Jackson**, _____ of fans adored, passed away in June 2009.",
+          "Pre-Exam 2 — Q18\n\nThe Apollo 11 **astronauts** ___ of the Earth's inhabitants **witnessed** the famous first moonwalk on July 20, 1969, were Neil Armstrong and Buzz Aldrin.",
         options: [
-          "A. that millions",
-          "B. who millions",
-          "C. whose millions",
+          "A. whom",
+          "B. were some",
+          "C. whom were",
           "D. whom millions",
         ],
         correctAnswer: "D. whom millions",
         reason:
-          "AC Non-Restrictive dengan 'whom' (object): 'Michael Jackson, WHOM MILLIONS of fans adored' — 'whom' = relative pronoun sebagai object (fans adored HIM → whom). 'who' = subject; 'whose' = possessive; 'that' tidak digunakan dalam non-restrictive clause. ✓ D. whom millions",
+          "AC Non-Restrictive dengan 'whom' (object): 'astronauts WHOM MILLIONS of the Earth's inhabitants witnessed' — 'whom' = relative pronoun sebagai OBJECT (inhabitants witnessed THEM → whom). 'whom' saja = tanpa subject AC; 'were some' = tidak ada relative pronoun; 'whom were' = double verb. ✓ D. whom millions",
         grammarType: "AC",
         grammarNote:
-          "AC Non-Restrictive (ada koma). 'Fans adored HIM' → relative pronoun = OBJECT position.",
+          "AC Non-Restrictive: 'witnessed THEM' → THEM = object → gunakan 'whom'. 'whom millions' = whom + subject AC.",
         lessonRef: { day: 4, topic: "Adjective Clause — whom (Object)" },
       },
       {
@@ -6868,19 +6983,14 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q19\n\n**The television**, _____ so long been a part of our culture, has an enormous influence on the way people think.",
-        options: [
-          "A. that has",
-          "B. which have",
-          "C. it has",
-          "D. which has",
-        ],
+          "Pre-Exam 2 — Q19\n\n**The television** ___ so long been a part of our culture, has an enormous influence on the way people think.",
+        options: ["A. has", "B. it has", "C. which", "D. which has"],
         correctAnswer: "D. which has",
         reason:
-          "AC Non-Restrictive: 'The television, WHICH HAS so long been a part of our culture, has an enormous influence.' — 'which has' = relative pronoun + verb untuk AC non-restrictive. A = tidak ada relative pronoun; B = double subject; C = 'which' tanpa verb (tidak lengkap). ✓ D. which has",
+          "AC Non-Restrictive: 'The television, WHICH HAS so long been a part of our culture' — 'which has' = relative pronoun + auxiliary untuk AC non-restrictive (ada koma). 'has' saja = tidak ada relative pronoun; 'it has' = double subject; 'which' tanpa verb = tidak lengkap. ✓ D. which has",
         grammarType: "AC",
         grammarNote:
-          "AC Non-Restrictive (ada koma). 'which' untuk benda, non-restrictive tidak pakai 'that'.",
+          "AC Non-Restrictive (ada koma). 'The television' = antecedent (benda). 'which' + has untuk non-restrictive.",
         lessonRef: { day: 4, topic: "Adjective Clause — Non-Restrictive" },
       },
       {
@@ -6888,7 +6998,7 @@ const advanceGrammarLessons: ModuleLesson[] = [
         type: "multiple-choice",
         section: "part2",
         question:
-          "Pre-Exam 2 — Q20\n\n**Damage** _____ from thunderstorms is mainly inflicted by downburst winds, large hailstones, and flash flooding which is caused by heavy precipitation.",
+          "Pre-Exam 2 — Q20\n\n**Damage** ___ from thunderstorms is mainly inflicted by downburst winds, large hailstones, and flash flooding which is caused by heavy precipitation.",
         options: [
           "A. results",
           "B. resulting",
@@ -6897,10 +7007,10 @@ const advanceGrammarLessons: ModuleLesson[] = [
         ],
         correctAnswer: "B. resulting",
         reason:
-          "Reduced AC (Participial Phrase): 'Damage RESULTING from thunderstorms' — 'resulting' = present participle memodifikasi 'damage'. A = double verb; C = passive (result tidak digunakan secara passive seperti ini); D = past participle (bukan ongoing process). ✓ B. resulting",
+          "Reduced AC (Participial Phrase): 'Damage RESULTING from thunderstorms' = 'Damage which is resulting from thunderstorms' → V-ing aktif sebagai reduced relative clause. 'results' = double verb; 'was resulted' = passive (result tidak digunakan secara passive seperti ini); 'resulted' = past participle (tidak tepat konteks). ✓ B. resulting",
         grammarType: "RED",
         grammarNote:
-          "Reduced AC: 'Damage _____ from thunderstorms'. V-ing aktif atau V3 pasif?",
+          "Reduced AC Aktif: 'Damage ___ from thunderstorms'. V-ing untuk reduced relative clause aktif.",
         lessonRef: { day: 4, topic: "Reduced Adjective Clause" },
       },
     ],

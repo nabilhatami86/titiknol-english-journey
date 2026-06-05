@@ -20,10 +20,12 @@ interface Props {
   renderClickableText: (text: string) => ReactNode;
 }
 
-function FeedbackBox({ isCorrect, correctAnswer, reason, lessonRef }: {
+function FeedbackBox({ isCorrect, correctAnswer, reason, grammarType, grammarNote, lessonRef }: {
   isCorrect: boolean;
   correctAnswer?: string;
   reason?: string;
+  grammarType?: string;
+  grammarNote?: string;
   lessonRef?: { day: number; topic: string };
 }) {
   return (
@@ -33,7 +35,7 @@ function FeedbackBox({ isCorrect, correctAnswer, reason, lessonRef }: {
     )}>
       {/* header */}
       <div className={cn(
-        'flex items-center gap-2.5 px-4 py-3 border-b',
+        'flex items-center gap-2.5 px-4 py-3 border-b flex-wrap',
         isCorrect ? 'border-primary/20 bg-primary/[0.06]' : 'border-primary/10 bg-primary/[0.04]',
       )}>
         <div className={cn(
@@ -47,6 +49,11 @@ function FeedbackBox({ isCorrect, correctAnswer, reason, lessonRef }: {
         <span className={cn('font-bold', isCorrect ? 'text-primary' : 'text-(--text)')}>
           {isCorrect ? 'Jawaban Benar!' : 'Jawaban Salah'}
         </span>
+        {grammarType && (
+          <span className="ml-1 inline-flex items-center px-2.5 py-0.5 rounded-lg bg-primary text-white text-[10px] font-black uppercase tracking-widest">
+            {grammarType}
+          </span>
+        )}
         {!isCorrect && correctAnswer && (
           <span className="ml-auto text-xs text-(--text-muted) font-medium">
             Jawaban:{' '}
@@ -54,6 +61,12 @@ function FeedbackBox({ isCorrect, correctAnswer, reason, lessonRef }: {
           </span>
         )}
       </div>
+      {grammarNote && (
+        <div className="px-4 py-2.5 flex items-start gap-2.5 border-b border-primary/10 bg-primary/[0.02]">
+          <span className="shrink-0 mt-0.5 w-1.5 h-1.5 rounded-full bg-primary/60 mt-1.5" />
+          <p className="text-xs text-primary/80 leading-relaxed font-medium">{grammarNote}</p>
+        </div>
+      )}
       {reason && (
         <div className="px-4 py-3 flex items-start gap-2.5 border-b border-primary/10">
           <Lightbulb className="w-3.5 h-3.5 mt-0.5 shrink-0 text-primary/70" />
@@ -150,16 +163,6 @@ function ExerciseItem({
                           })
                         : renderClickableText(qBody)}
                   </p>
-                  {exercise.grammarType && (
-                    <div className="flex items-center gap-2 mt-2.5 flex-wrap">
-                      <span className="shrink-0 inline-flex items-center px-2.5 py-1 rounded-lg bg-primary text-white text-[10px] font-black uppercase tracking-widest">
-                        {exercise.grammarType}
-                      </span>
-                      {exercise.grammarNote && (
-                        <span className="text-xs text-(--text-muted) leading-relaxed">{exercise.grammarNote}</span>
-                      )}
-                    </div>
-                  )}
                 </>
               )}
             </div>
@@ -222,6 +225,8 @@ function ExerciseItem({
                   isCorrect={isCorrect}
                   correctAnswer={!isCorrect ? `${correctLetter} — ${exercise.correctAnswer}` : undefined}
                   reason={exercise.reason}
+                  grammarType={exercise.grammarType}
+                  grammarNote={exercise.grammarNote}
                   lessonRef={exercise.lessonRef}
                 />
               )}
@@ -291,6 +296,8 @@ function ExerciseItem({
                   isCorrect={isCorrect}
                   correctAnswer={!isCorrect ? exercise.correctAnswer : undefined}
                   reason={exercise.reason}
+                  grammarType={exercise.grammarType}
+                  grammarNote={exercise.grammarNote}
                   lessonRef={exercise.lessonRef}
                 />
               </div>
@@ -503,6 +510,8 @@ function ExerciseItem({
                   isCorrect={isCorrect}
                   correctAnswer={!isCorrect ? exercise.correctAnswer : undefined}
                   reason={exercise.reason}
+                  grammarType={exercise.grammarType}
+                  grammarNote={exercise.grammarNote}
                   lessonRef={exercise.lessonRef}
                 />
               )}
