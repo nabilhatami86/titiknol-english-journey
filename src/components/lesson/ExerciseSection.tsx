@@ -20,10 +20,11 @@ interface Props {
   renderClickableText: (text: string) => ReactNode;
 }
 
-function FeedbackBox({ isCorrect, correctAnswer, reason }: {
+function FeedbackBox({ isCorrect, correctAnswer, reason, lessonRef }: {
   isCorrect: boolean;
   correctAnswer?: string;
   reason?: string;
+  lessonRef?: { day: number; topic: string };
 }) {
   return (
     <div className={cn(
@@ -54,9 +55,21 @@ function FeedbackBox({ isCorrect, correctAnswer, reason }: {
         )}
       </div>
       {reason && (
-        <div className="px-4 py-3 flex items-start gap-2.5">
+        <div className="px-4 py-3 flex items-start gap-2.5 border-b border-primary/10">
           <Lightbulb className="w-3.5 h-3.5 mt-0.5 shrink-0 text-primary/70" />
           <p className="text-(--text-secondary) leading-relaxed text-xs">{reason}</p>
+        </div>
+      )}
+      {lessonRef && (
+        <div className="px-4 py-2.5 flex items-center gap-2">
+          <BookText className="w-3.5 h-3.5 shrink-0 text-primary/60" />
+          <span className="text-xs text-(--text-muted)">Dipelajari di</span>
+          <a
+            href={`/tn-advance/class/grammar/${lessonRef.day}`}
+            className="text-xs font-semibold text-primary hover:underline underline-offset-2"
+          >
+            Day {lessonRef.day} — {lessonRef.topic}
+          </a>
         </div>
       )}
     </div>
@@ -124,11 +137,30 @@ function ExerciseItem({
           <div className="flex items-start justify-between gap-2">
             <div className="flex-1">
               {exercise.type === 'fill-the-gap' ? null : (
-                <p className="text-sm text-(--text) font-medium leading-relaxed">
-                  {exercise.question.startsWith('Terjemahkan: ')
-                    ? renderClickableText(exercise.question.replace('Terjemahkan: ', ''))
-                    : renderClickableText(qBody)}
-                </p>
+                <>
+                  <p className="text-sm text-(--text) font-medium leading-relaxed">
+                    {exercise.question.startsWith('Terjemahkan: ')
+                      ? renderClickableText(exercise.question.replace('Terjemahkan: ', ''))
+                      : qBody.includes('**')
+                        ? qBody.split(/(\*\*[^*]+\*\*)/).map((part, i) => {
+                            const m = part.match(/^\*\*([^*]+)\*\*$/);
+                            return m
+                              ? <mark key={i} className="bg-primary/15 text-primary font-bold not-italic px-0.5 rounded-md">{m[1]}</mark>
+                              : <span key={i}>{renderClickableText(part)}</span>;
+                          })
+                        : renderClickableText(qBody)}
+                  </p>
+                  {exercise.grammarType && (
+                    <div className="flex items-center gap-2 mt-2.5 flex-wrap">
+                      <span className="shrink-0 inline-flex items-center px-2.5 py-1 rounded-lg bg-primary text-white text-[10px] font-black uppercase tracking-widest">
+                        {exercise.grammarType}
+                      </span>
+                      {exercise.grammarNote && (
+                        <span className="text-xs text-(--text-muted) leading-relaxed">{exercise.grammarNote}</span>
+                      )}
+                    </div>
+                  )}
+                </>
               )}
             </div>
             <div className="flex items-center gap-1.5 shrink-0">
@@ -190,6 +222,7 @@ function ExerciseItem({
                   isCorrect={isCorrect}
                   correctAnswer={!isCorrect ? `${correctLetter} — ${exercise.correctAnswer}` : undefined}
                   reason={exercise.reason}
+                  lessonRef={exercise.lessonRef}
                 />
               )}
             </div>
@@ -258,6 +291,7 @@ function ExerciseItem({
                   isCorrect={isCorrect}
                   correctAnswer={!isCorrect ? exercise.correctAnswer : undefined}
                   reason={exercise.reason}
+                  lessonRef={exercise.lessonRef}
                 />
               </div>
             )}
@@ -469,6 +503,7 @@ function ExerciseItem({
                   isCorrect={isCorrect}
                   correctAnswer={!isCorrect ? exercise.correctAnswer : undefined}
                   reason={exercise.reason}
+                  lessonRef={exercise.lessonRef}
                 />
               )}
             </div>

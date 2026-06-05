@@ -22,6 +22,9 @@ export interface ModuleExercise {
   sampleAnswer?: string;
   section?: "middle" | "final" | "quiz" | "part1" | "part2" | "part3";
   imageUrl?: string;
+  grammarType?: string;    // "NC" | "AC" | "AVC" | "INV" | "COMP" | "RED" | "CAUS" | "SV"
+  grammarNote?: string;    // short hint shown in the question card
+  lessonRef?: { day: number; topic: string };  // link to the lesson where this is taught
 }
 
 export interface ModuleMaterialSection {
