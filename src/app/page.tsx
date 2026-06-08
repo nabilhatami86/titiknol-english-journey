@@ -1,6 +1,6 @@
-﻿'use client';
+﻿"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 import {
   BookOpen,
   GraduationCap,
@@ -11,13 +11,17 @@ import {
   Calendar,
   Target,
   AlertTriangle,
-} from 'lucide-react';
-import { vocabulary, categories } from '@/data/vocabulary';
-import { useVocabStore } from '@/store/useVocabStore';
-import { getDailyWord, getDifficultyColor, getCategoryLabel } from '@/lib/utils';
-import { Badge } from '@/components/ui/Badge';
-import { ProgressBar } from '@/components/ui/ProgressBar';
-import { VocabCard } from '@/components/vocab/VocabCard';
+} from "lucide-react";
+import { vocabulary, categories } from "@/data/vocabulary";
+import { useVocabStore } from "@/store/useVocabStore";
+import {
+  getDailyWord,
+  getDifficultyColor,
+  getCategoryLabel,
+} from "@/lib/utils";
+import { Badge } from "@/components/ui/Badge";
+import { ProgressBar } from "@/components/ui/ProgressBar";
+import { VocabCard } from "@/components/vocab/VocabCard";
 
 export default function Dashboard() {
   const learnedWords = useVocabStore((s) => s.learnedWords);
@@ -30,18 +34,27 @@ export default function Dashboard() {
   const lastQuiz = quizScores[quizScores.length - 1];
 
   // Hitung akurasi per topik dari riwayat grammarScores
-  const topicAccuracy = grammarScores.reduce<Record<string, { correct: number; total: number }>>(
-    (acc, s) => {
-      if (!acc[s.topic]) acc[s.topic] = { correct: 0, total: 0 };
-      acc[s.topic].correct += s.score;
-      acc[s.topic].total += s.total;
-      return acc;
-    },
-    {}
-  );
+  const topicAccuracy = grammarScores.reduce<
+    Record<string, { correct: number; total: number }>
+  >((acc, s) => {
+    if (!acc[s.topic]) acc[s.topic] = { correct: 0, total: 0 };
+    acc[s.topic].correct += s.score;
+    acc[s.topic].total += s.total;
+    return acc;
+  }, {});
 
   // Topik lemah: sudah dikerjakan >= 3 soal dan akurasi < 60%, max 3 terlemah
-  const grammarQuizTopics = new Set(['Nouns', 'Verbs', 'Adjectives', 'Adverbs', 'Pronouns', 'Prepositions', 'Conjunctions', 'Articles', 'Mixed']);
+  const grammarQuizTopics = new Set([
+    "Nouns",
+    "Verbs",
+    "Adjectives",
+    "Adverbs",
+    "Pronouns",
+    "Prepositions",
+    "Conjunctions",
+    "Articles",
+    "Mixed",
+  ]);
   const weakTopics = Object.entries(topicAccuracy)
     .filter(([, v]) => v.total >= 3 && v.correct / v.total < 0.6)
     .sort((a, b) => a[1].correct / a[1].total - b[1].correct / b[1].total)
@@ -49,32 +62,32 @@ export default function Dashboard() {
 
   const stats = [
     {
-      label: 'Total Words',
+      label: "Total Words",
       value: vocabulary.length,
       icon: BookOpen,
-      color: 'text-primary',
-      bg: 'bg-primary/10',
+      color: "text-primary",
+      bg: "bg-primary/10",
     },
     {
-      label: 'Learned',
+      label: "Learned",
       value: learnedWords.length,
       icon: GraduationCap,
-      color: 'text-success',
-      bg: 'bg-success/10',
+      color: "text-success",
+      bg: "bg-success/10",
     },
     {
-      label: 'Favorites',
+      label: "Favorites",
       value: favorites.length,
       icon: Heart,
-      color: 'text-primary',
-      bg: 'bg-primary/10',
+      color: "text-primary",
+      bg: "bg-primary/10",
     },
     {
-      label: 'Quizzes Taken',
+      label: "Quizzes Taken",
       value: quizScores.length,
       icon: Target,
-      color: 'text-accent',
-      bg: 'bg-accent/10',
+      color: "text-accent",
+      bg: "bg-accent/10",
     },
   ];
 
@@ -83,11 +96,13 @@ export default function Dashboard() {
       {/* Welcome Section */}
       <div className="bg-linear-to-r from-primary to-primary-dark rounded-2xl p-6 lg:p-8 text-white">
         <h1 className="text-2xl lg:text-3xl font-bold mb-2">
-          Welcome to VocabMaster
+          My Titik Nol Journey
         </h1>
         <p className="text-white/80 mb-4 max-w-lg">
-          Build your English vocabulary with interactive lessons, quizzes, and daily practice.
-          Track your progress and become fluent!
+          This is a small story of my journey through an English course — from
+          the early lessons where everything felt new, to the practice sessions
+          that slowly built my confidence. Along the way, I’ve learned, made
+          mistakes, improved, and kept going step by step.
         </p>
         <div className="flex flex-wrap gap-3">
           <Link
@@ -114,7 +129,9 @@ export default function Dashboard() {
               key={stat.label}
               className="bg-(--bg-card) border border-(--border) rounded-xl p-4"
             >
-              <div className={`w-10 h-10 rounded-lg ${stat.bg} flex items-center justify-center mb-3`}>
+              <div
+                className={`w-10 h-10 rounded-lg ${stat.bg} flex items-center justify-center mb-3`}
+              >
                 <Icon className={`w-5 h-5 ${stat.color}`} />
               </div>
               <p className="text-2xl font-bold text-(--text)">{stat.value}</p>
@@ -132,15 +149,24 @@ export default function Dashboard() {
             <TrendingUp className="w-5 h-5 text-primary" />
             Learning Progress
           </h2>
-          <ProgressBar value={learnedWords.length} max={vocabulary.length} className="mb-4" />
+          <ProgressBar
+            value={learnedWords.length}
+            max={vocabulary.length}
+            className="mb-4"
+          />
           <div className="space-y-2">
-            {(['basic', 'intermediate', 'advanced'] as const).map((level) => {
-              const total = vocabulary.filter((w) => w.difficulty === level).length;
+            {(["basic", "intermediate", "advanced"] as const).map((level) => {
+              const total = vocabulary.filter(
+                (w) => w.difficulty === level,
+              ).length;
               const learned = vocabulary.filter(
-                (w) => w.difficulty === level && learnedWords.includes(w.id)
+                (w) => w.difficulty === level && learnedWords.includes(w.id),
               ).length;
               return (
-                <div key={level} className="flex items-center justify-between text-sm">
+                <div
+                  key={level}
+                  className="flex items-center justify-between text-sm"
+                >
                   <Badge className={getDifficultyColor(level)}>{level}</Badge>
                   <span className="text-(--text-secondary)">
                     {learned} / {total}
@@ -159,8 +185,12 @@ export default function Dashboard() {
           </h2>
           <div className="space-y-3">
             <div>
-              <h3 className="text-xl font-bold text-primary">{dailyWord.word}</h3>
-              <p className="text-xs text-(--text-muted)">{dailyWord.pronunciation.ipa}</p>
+              <h3 className="text-xl font-bold text-primary">
+                {dailyWord.word}
+              </h3>
+              <p className="text-xs text-(--text-muted)">
+                {dailyWord.pronunciation.ipa}
+              </p>
             </div>
             <div className="flex gap-2">
               <Badge variant="outline">{dailyWord.partOfSpeech}</Badge>
@@ -168,8 +198,12 @@ export default function Dashboard() {
                 {dailyWord.difficulty}
               </Badge>
             </div>
-            <p className="text-sm text-(--text-secondary)">{dailyWord.meaning.en}</p>
-            <p className="text-sm text-primary/80 italic">{dailyWord.meaning.id}</p>
+            <p className="text-sm text-(--text-secondary)">
+              {dailyWord.meaning.en}
+            </p>
+            <p className="text-sm text-primary/80 italic">
+              {dailyWord.meaning.id}
+            </p>
             <p className="text-xs text-(--text-muted) italic border-t border-(--border) pt-3">
               &ldquo;{dailyWord.examples[0]}&rdquo;
             </p>
@@ -191,19 +225,22 @@ export default function Dashboard() {
             Perlu Ditingkatkan
           </h2>
           <p className="text-sm text-(--text-secondary) mb-4">
-            Berdasarkan riwayat quiz kamu, topik-topik ini masih kurang — yuk latihan lagi!
+            Berdasarkan riwayat quiz kamu, topik-topik ini masih kurang — yuk
+            latihan lagi!
           </p>
           <div className="space-y-3">
             {weakTopics.map(([topic, { correct, total }]) => {
               const acc = Math.round((correct / total) * 100);
               const href = grammarQuizTopics.has(topic)
-                ? '/practice/grammar-quiz'
-                : '/practice/latihan-acak';
+                ? "/practice/grammar-quiz"
+                : "/practice/latihan-acak";
               return (
                 <div key={topic} className="flex items-center gap-3">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-sm font-medium text-(--text)">{topic}</span>
+                      <span className="text-sm font-medium text-(--text)">
+                        {topic}
+                      </span>
                       <span className="text-xs font-semibold text-primary">
                         {acc}%
                       </span>
@@ -246,7 +283,9 @@ export default function Dashboard() {
               <p className="font-medium text-(--text) group-hover:text-primary transition-colors">
                 {cat.name}
               </p>
-              <p className="text-xs text-(--text-muted) mt-1">{cat.count} words</p>
+              <p className="text-xs text-(--text-muted) mt-1">
+                {cat.count} words
+              </p>
             </Link>
           ))}
         </div>
