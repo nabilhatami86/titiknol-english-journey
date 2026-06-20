@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
   CheckCircle2,
@@ -12,25 +12,37 @@ import {
   Trophy,
   Volume2,
   XCircle,
-} from 'lucide-react';
-import { cn } from '@/lib/utils';
-import type { ToeflOption, ToeflQuestion, ToeflSample } from '@/data/toefl-listening/toeflListeningSamples';
+} from "lucide-react";
+import { cn } from "@/lib/utils";
+import type {
+  ToeflOption,
+  ToeflQuestion,
+  ToeflSample,
+} from "@/data/toefl-listening/toeflListeningSamples";
 
-const AUDIO_BASE_PATH = '/audio/listening-toefl';
+const AUDIO_BASE_PATH = "/audio/listening-toefl";
 
 function fmtTime(seconds: number) {
   const safe = Number.isFinite(seconds) ? seconds : 0;
-  return `${Math.floor(safe / 60).toString().padStart(2, '0')}:${Math.floor(safe % 60)
+  return `${Math.floor(safe / 60)
     .toString()
-    .padStart(2, '0')}`;
+    .padStart(2, "0")}:${Math.floor(safe % 60)
+    .toString()
+    .padStart(2, "0")}`;
 }
 
 function normalizeAnswer(value: string) {
-  return value.trim().toUpperCase().replace(/[\s,.-]+/g, '');
+  return value
+    .trim()
+    .toUpperCase()
+    .replace(/[\s,.-]+/g, "");
 }
 
-function isCorrectAnswer(given: string, correct: string) {
-  return normalizeAnswer(given) === normalizeAnswer(correct);
+function isCorrectAnswer(given: string, correct: string, alts?: string[]) {
+  const g = normalizeAnswer(given);
+  if (g === normalizeAnswer(correct)) return true;
+  if (alts && alts.some((a) => g === normalizeAnswer(a))) return true;
+  return false;
 }
 
 function AudioPlayer({ fileName }: { fileName: string }) {
@@ -72,8 +84,10 @@ function AudioPlayer({ fileName }: { fileName: string }) {
   if (loadError) {
     return (
       <p className="text-xs text-(--text-muted) italic">
-        Audio tidak ditemukan. Pastikan file ada di{' '}
-        <code className="rounded bg-(--bg-secondary) px-1">{AUDIO_BASE_PATH}/</code>
+        Audio tidak ditemukan. Pastikan file ada di{" "}
+        <code className="rounded bg-(--bg-secondary) px-1">
+          {AUDIO_BASE_PATH}/
+        </code>
       </p>
     );
   }
@@ -100,13 +114,16 @@ function AudioPlayer({ fileName }: { fileName: string }) {
       </div>
 
       <div className="flex items-center justify-between gap-3">
-        <span className="w-11 text-xs tabular-nums text-(--text-muted)">{fmtTime(current)}</span>
+        <span className="w-11 text-xs tabular-nums text-(--text-muted)">
+          {fmtTime(current)}
+        </span>
         <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={() => {
               const audio = audioRef.current;
-              if (audio) audio.currentTime = Math.max(0, audio.currentTime - 10);
+              if (audio)
+                audio.currentTime = Math.max(0, audio.currentTime - 10);
             }}
             className="rounded-lg p-1.5 text-(--text-secondary) transition-colors hover:bg-(--bg-secondary)"
             title="Rewind 10 seconds"
@@ -117,9 +134,13 @@ function AudioPlayer({ fileName }: { fileName: string }) {
             type="button"
             onClick={toggle}
             className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition-opacity hover:opacity-90"
-            title={playing ? 'Pause' : 'Play'}
+            title={playing ? "Pause" : "Play"}
           >
-            {playing ? <Pause className="h-4 w-4" /> : <Play className="ml-0.5 h-4 w-4" />}
+            {playing ? (
+              <Pause className="h-4 w-4" />
+            ) : (
+              <Play className="ml-0.5 h-4 w-4" />
+            )}
           </button>
           <select
             value={rate}
@@ -134,13 +155,21 @@ function AudioPlayer({ fileName }: { fileName: string }) {
             ))}
           </select>
         </div>
-        <span className="w-11 text-right text-xs tabular-nums text-(--text-muted)">{fmtTime(duration)}</span>
+        <span className="w-11 text-right text-xs tabular-nums text-(--text-muted)">
+          {fmtTime(duration)}
+        </span>
       </div>
     </div>
   );
 }
 
-function SampleCard({ sample, onSelect }: { sample: ToeflSample; onSelect: (sample: ToeflSample) => void }) {
+function SampleCard({
+  sample,
+  onSelect,
+}: {
+  sample: ToeflSample;
+  onSelect: (sample: ToeflSample) => void;
+}) {
   return (
     <button
       type="button"
@@ -152,7 +181,9 @@ function SampleCard({ sample, onSelect }: { sample: ToeflSample; onSelect: (samp
           <Headphones className="h-5 w-5" />
         </div>
         <div className="min-w-0 flex-1">
-          <h2 className="font-bold text-(--text) group-hover:text-primary">{sample.title}</h2>
+          <h2 className="font-bold text-(--text) group-hover:text-primary">
+            {sample.title}
+          </h2>
           <p className="mt-1 text-xs text-(--text-muted)">
             {sample.questions.length} questions · {sample.audioPath}
           </p>
@@ -185,19 +216,32 @@ function OptionButton({
       onClick={onSelect}
       disabled={submitted}
       className={cn(
-        'w-full rounded-lg border px-3 py-2.5 text-left text-sm transition-all',
-        !submitted && !selected && 'border-(--border) bg-(--bg-secondary) text-(--text-secondary) hover:border-primary/40',
-        !submitted && selected && 'border-primary bg-primary/10 font-medium text-(--text)',
-        showRight && 'border-green-500 bg-green-50 font-medium text-green-700 dark:bg-green-950/30 dark:text-green-400',
-        showWrong && 'border-red-400 bg-red-50 text-red-600 dark:bg-red-950/30 dark:text-red-400',
-        submitted && !selected && !correct && 'border-(--border) text-(--text-muted) opacity-60',
+        "w-full rounded-lg border px-3 py-2.5 text-left text-sm transition-all",
+        !submitted &&
+          !selected &&
+          "border-(--border) bg-(--bg-secondary) text-(--text-secondary) hover:border-primary/40",
+        !submitted &&
+          selected &&
+          "border-primary bg-primary/10 font-medium text-(--text)",
+        showRight &&
+          "border-green-500 bg-green-50 font-medium text-green-700 dark:bg-green-950/30 dark:text-green-400",
+        showWrong &&
+          "border-red-400 bg-red-50 text-red-600 dark:bg-red-950/30 dark:text-red-400",
+        submitted &&
+          !selected &&
+          !correct &&
+          "border-(--border) text-(--text-muted) opacity-60",
       )}
     >
       <span className="flex items-start gap-2">
         <span className="font-bold">{option.label}.</span>
         <span className="flex-1">{option.text}</span>
-        {showRight && <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />}
-        {showWrong && <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-red-400" />}
+        {showRight && (
+          <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
+        )}
+        {showWrong && (
+          <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-red-400" />
+        )}
       </span>
     </button>
   );
@@ -214,8 +258,13 @@ function QuestionCard({
   submitted: boolean;
   onAnswer: (value: string) => void;
 }) {
-  const correct = submitted ? isCorrectAnswer(answer, question.answer) : null;
-  const isChoiceQuestion = question.type === undefined || question.type === 'mc' || question.type === 'multi';
+  const correct = submitted
+    ? isCorrectAnswer(answer, question.answer, question.alts)
+    : null;
+  const isChoiceQuestion =
+    question.type === undefined ||
+    question.type === "mc" ||
+    question.type === "multi";
 
   return (
     <div className="rounded-xl border border-(--border) bg-(--bg-card) p-4">
@@ -223,12 +272,16 @@ function QuestionCard({
         <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm font-bold text-primary">
           {question.n}
         </span>
-        <p className="pt-0.5 text-sm font-semibold leading-relaxed text-(--text)">{question.prompt}</p>
+        <p className="pt-0.5 text-sm font-semibold leading-relaxed text-(--text)">
+          {question.prompt}
+        </p>
       </div>
 
-      {question.type === 'ordering' && question.items && (
+      {question.type === "ordering" && question.items && (
         <div className="mb-3 rounded-lg border border-(--border) bg-(--bg-secondary) p-3">
-          <p className="mb-2 text-xs font-bold uppercase tracking-wide text-(--text-muted)">Items</p>
+          <p className="mb-2 text-xs font-bold uppercase tracking-wide text-(--text-muted)">
+            Items
+          </p>
           <div className="space-y-1.5 text-sm text-(--text-secondary)">
             {question.items.map((item) => (
               <p key={item}>{item}</p>
@@ -243,10 +296,31 @@ function QuestionCard({
             <OptionButton
               key={option.label}
               option={option}
-              selected={answer === option.label}
-              correct={isCorrectAnswer(option.label, question.answer)}
+              selected={
+                question.type === "multi"
+                  ? (answer ?? "").includes(option.label)
+                  : answer === option.label
+              }
+              correct={
+                question.type === "multi"
+                  ? (question.answer ?? "").includes(option.label)
+                  : isCorrectAnswer(option.label, question.answer)
+              }
               submitted={submitted}
-              onSelect={() => onAnswer(option.label)}
+              onSelect={() => {
+                if (submitted) return;
+                if (question.type === "multi") {
+                  const prev = answer ?? "";
+                  const has = prev.includes(option.label);
+                  const next = has
+                    ? prev.replace(option.label, "")
+                    : prev + option.label;
+                  const sorted = next.split("").sort().join("");
+                  onAnswer(sorted);
+                } else {
+                  onAnswer(option.label);
+                }
+              }}
             />
           ))}
         </div>
@@ -256,18 +330,24 @@ function QuestionCard({
           value={answer}
           onChange={(e) => onAnswer(e.target.value)}
           readOnly={submitted}
-          placeholder={question.type === 'ordering' ? 'Example: BCA' : 'Type your answer'}
+          placeholder={
+            question.type === "ordering" ? "Example: BCA" : "Type your answer"
+          }
           className={cn(
-            'w-full rounded-lg border bg-(--bg-secondary) px-3 py-2.5 text-sm text-(--text) outline-none transition-colors',
-            !submitted && 'border-(--border) focus:border-primary',
-            correct === true && 'border-green-500 text-green-700 dark:text-green-400',
-            correct === false && 'border-red-400 text-red-600 dark:text-red-400',
+            "w-full rounded-lg border bg-(--bg-secondary) px-3 py-2.5 text-sm text-(--text) outline-none transition-colors",
+            !submitted && "border-(--border) focus:border-primary",
+            correct === true &&
+              "border-green-500 text-green-700 dark:text-green-400",
+            correct === false &&
+              "border-red-400 text-red-600 dark:text-red-400",
           )}
         />
       )}
 
       {submitted && correct === false && (
-        <p className="mt-2 text-xs font-semibold text-green-600 dark:text-green-400">Correct answer: {question.answer}</p>
+        <p className="mt-2 text-xs font-semibold text-green-600 dark:text-green-400">
+          Correct answer: {question.answer}
+        </p>
       )}
     </div>
   );
@@ -282,12 +362,16 @@ function ScorePanel({ correct, total }: { correct: number; total: number }) {
         <Trophy className="h-5 w-5 shrink-0 text-primary" />
         <div>
           <p className="font-bold text-(--text)">Hasil</p>
-          <p className="text-xs text-(--text-muted)">TOEFL Listening practice score</p>
+          <p className="text-xs text-(--text-muted)">
+            TOEFL Listening practice score
+          </p>
         </div>
         <div className="ml-auto text-right">
           <p className="text-2xl font-extrabold text-primary">
             {correct}
-            <span className="text-base font-semibold text-(--text-muted)">/{total}</span>
+            <span className="text-base font-semibold text-(--text-muted)">
+              /{total}
+            </span>
           </p>
           <p className="text-xs text-(--text-muted)">{percent}%</p>
         </div>
@@ -296,17 +380,29 @@ function ScorePanel({ correct, total }: { correct: number; total: number }) {
   );
 }
 
-export default function ToeflListeningPractice({ samples }: { samples: ToeflSample[] }) {
+export default function ToeflListeningPractice({
+  samples,
+}: {
+  samples: ToeflSample[];
+}) {
   const [selected, setSelected] = useState<ToeflSample | null>(null);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [submitted, setSubmitted] = useState(false);
 
   const correctCount = useMemo(() => {
     if (!selected || !submitted) return 0;
-    return selected.questions.filter((question) => isCorrectAnswer(answers[question.n] ?? '', question.answer)).length;
+    return selected.questions.filter((question) =>
+      isCorrectAnswer(
+        answers[question.n] ?? "",
+        question.answer,
+        question.alts,
+      ),
+    ).length;
   }, [answers, selected, submitted]);
 
-  const answeredCount = Object.values(answers).filter((value) => value.trim()).length;
+  const answeredCount = Object.values(answers).filter((value) =>
+    value.trim(),
+  ).length;
 
   const handleSelectSample = (sample: ToeflSample) => {
     setSelected(sample);
@@ -325,13 +421,22 @@ export default function ToeflListeningPractice({ samples }: { samples: ToeflSamp
       <div className="mx-auto max-w-3xl space-y-5 p-4 lg:p-6">
         <div>
           <p className="text-sm font-semibold text-primary">TOEFL Listening</p>
-          <h1 className="mt-1 text-2xl font-extrabold text-(--text)">Practice Samples</h1>
-          <p className="mt-1 text-sm text-(--text-secondary)">Pilih audio, dengarkan, lalu jawab soal berdasarkan percakapan atau lecture.</p>
+          <h1 className="mt-1 text-2xl font-extrabold text-(--text)">
+            Practice Samples
+          </h1>
+          <p className="mt-1 text-sm text-(--text-secondary)">
+            Pilih audio, dengarkan, lalu jawab soal berdasarkan percakapan atau
+            lecture.
+          </p>
         </div>
 
         <div className="space-y-3">
           {samples.map((sample) => (
-            <SampleCard key={sample.id} sample={sample} onSelect={handleSelectSample} />
+            <SampleCard
+              key={sample.id}
+              sample={sample}
+              onSelect={handleSelectSample}
+            />
           ))}
         </div>
       </div>
@@ -341,7 +446,11 @@ export default function ToeflListeningPractice({ samples }: { samples: ToeflSamp
   return (
     <div className="mx-auto max-w-3xl space-y-5 p-4 lg:p-6">
       <div className="flex items-center justify-between gap-3">
-        <button type="button" onClick={handleBack} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+        <button
+          type="button"
+          onClick={handleBack}
+          className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
+        >
           <ArrowLeft className="h-4 w-4" /> All Samples
         </button>
         <span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary">
@@ -351,16 +460,22 @@ export default function ToeflListeningPractice({ samples }: { samples: ToeflSamp
 
       <div>
         <h1 className="text-xl font-bold text-(--text)">{selected.title}</h1>
-        <p className="mt-0.5 text-sm text-(--text-secondary)">TOEFL Listening Practice</p>
+        <p className="mt-0.5 text-sm text-(--text-secondary)">
+          TOEFL Listening Practice
+        </p>
       </div>
 
-      {submitted && <ScorePanel correct={correctCount} total={selected.questions.length} />}
+      {submitted && (
+        <ScorePanel correct={correctCount} total={selected.questions.length} />
+      )}
 
       <div className="overflow-hidden rounded-xl border border-(--border) bg-(--bg-card)">
         <div className="flex items-center gap-2 border-b border-(--border) bg-(--bg-secondary) px-4 py-3">
           <Volume2 className="h-4 w-4 shrink-0 text-primary" />
           <span className="text-sm font-semibold text-(--text)">Audio</span>
-          <span className="ml-1 truncate text-xs text-(--text-muted)">{selected.audioPath}</span>
+          <span className="ml-1 truncate text-xs text-(--text-muted)">
+            {selected.audioPath}
+          </span>
         </div>
         <div className="px-4 py-4">
           <AudioPlayer key={selected.audioPath} fileName={selected.audioPath} />
@@ -372,10 +487,11 @@ export default function ToeflListeningPractice({ samples }: { samples: ToeflSamp
           <QuestionCard
             key={question.n}
             question={question}
-            answer={answers[question.n] ?? ''}
+            answer={answers[question.n] ?? ""}
             submitted={submitted}
             onAnswer={(value) => {
-              if (!submitted) setAnswers((prev) => ({ ...prev, [question.n]: value }));
+              if (!submitted)
+                setAnswers((prev) => ({ ...prev, [question.n]: value }));
             }}
           />
         ))}
@@ -386,7 +502,7 @@ export default function ToeflListeningPractice({ samples }: { samples: ToeflSamp
           type="button"
           onClick={() => {
             setSubmitted(true);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           disabled={answeredCount === 0}
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
@@ -399,7 +515,7 @@ export default function ToeflListeningPractice({ samples }: { samples: ToeflSamp
           onClick={() => {
             setAnswers({});
             setSubmitted(false);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           className="flex w-full items-center justify-center gap-2 rounded-xl border border-(--border) px-6 py-3 text-sm font-semibold text-(--text-secondary) transition-colors hover:bg-(--bg-secondary)"
         >

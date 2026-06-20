@@ -7,8 +7,8 @@ export const ListeningTOEFL = () => {
     </div>
   );
 };
-import ToeflListeningPractice from '@/components/practice/toefl-listening/ToeflListeningPractice';
-import { TOEFL_SAMPLES } from '@/data/toefl-listening/toeflListeningSamples';
+import ToeflListeningPractice from "@/components/practice/toefl-listening/ToeflListeningPractice";
+import { TOEFL_SAMPLES } from "@/data/toefl-listening/toeflListeningSamples";
 
 export default function ToeflListeningPage() {
   return <ToeflListeningPractice samples={TOEFL_SAMPLES} />;
