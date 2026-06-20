@@ -283,9 +283,85 @@ function QuestionCard({
             Items
           </p>
           <div className="space-y-1.5 text-sm text-(--text-secondary)">
-            {question.items.map((item) => (
-              <p key={item}>{item}</p>
+            {question.items.map((item, idx) => {
+              if (typeof item === "string") {
+                return <p key={item}>{item}</p>;
+              }
+              const content = item.text ?? String(item.answer ?? idx);
+              const key = content || String(idx);
+              return <p key={key}>{content}</p>;
+            })}
+          </div>
+        </div>
+      )}
+
+      {question.type === "table" && question.items && question.categories && (
+        <div className="mb-3 rounded-lg border border-(--border) bg-(--bg-secondary) p-3">
+          <p className="mb-2 text-xs font-bold uppercase tracking-wide text-(--text-muted)">
+            Categories
+          </p>
+          <div className="flex flex-wrap gap-3 text-sm text-(--text-secondary)">
+            {question.categories.map((cat, i) => (
+              <div
+                key={String(i)}
+                className="rounded px-3 py-1 border border-(--border) bg-(--bg-card)"
+              >
+                <span className="font-bold">
+                  {String.fromCharCode(65 + i)}.
+                </span>
+                <span className="ml-2">{cat}</span>
+              </div>
             ))}
+          </div>
+
+          <div className="mt-3 space-y-2">
+            {(
+              question.items as (string | { text: string; answer: string })[]
+            ).map((item, idx) => {
+              const content =
+                typeof item === "string"
+                  ? item
+                  : (item.text ?? String(item.answer ?? idx));
+              const key = content || String(idx);
+              const sel = (answer ?? "")[idx] ?? "";
+              return (
+                <div key={key} className="flex items-center gap-3">
+                  <p className="flex-1 text-sm text-(--text)">{content}</p>
+                  <select
+                    value={sel}
+                    onChange={(e) => {
+                      if (submitted) return;
+                      const val = e.target.value;
+                      const prev = (answer ?? "").split("");
+                      // ensure length
+                      while (prev.length < (question.items as any[]).length)
+                        prev.push("");
+                      prev[idx] = val;
+                      onAnswer(prev.join(""));
+                    }}
+                    disabled={submitted}
+                    className="rounded-lg border border-(--border) bg-(--bg-card) px-2 py-1 text-sm text-(--text-secondary)"
+                  >
+                    <option value="">—</option>
+                    {question.categories.map((_, ci) => (
+                      <option key={ci} value={String.fromCharCode(65 + ci)}>
+                        {String.fromCharCode(65 + ci)}
+                      </option>
+                    ))}
+                  </select>
+                  {submitted && (
+                    <span className="text-xs text-(--text-muted)">
+                      Correct: {question.answer[idx]} —{" "}
+                      {
+                        question.categories[
+                          (question.answer.charCodeAt(idx) ?? 65) - 65
+                        ]
+                      }
+                    </span>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
@@ -431,9 +507,9 @@ export default function ToeflListeningPractice({
         </div>
 
         <div className="space-y-3">
-          {samples.map((sample) => (
+          {samples.map((sample, idx) => (
             <SampleCard
-              key={sample.id}
+              key={`${sample.id}-${idx}`}
               sample={sample}
               onSelect={handleSelectSample}
             />

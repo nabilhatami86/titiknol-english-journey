@@ -12,7 +12,8 @@ export interface ToeflQuestion {
   answer: string;
   type?: ToeflQType;
   alts?: string[];
-  items?: string[];
+  categories?: string[];
+  items?: string[] | { text: string; answer: string }[];
 }
 
 export interface ToeflSample {
@@ -814,6 +815,875 @@ export const TOEFL_SAMPLES: ToeflSample[] = [
           },
         ],
         answer: "B",
+      },
+    ],
+  },
+  {
+    id: "weather-report-discussion",
+    title: "Weather Report Discussion",
+    section: "Listening",
+    audioPath: "tpo2_listening_passage1_1.mp3",
+    questions: [
+      {
+        n: 1,
+        type: "mc",
+        prompt: "Why does the man go to see his professor?",
+        options: [
+          {
+            label: "A",
+            text: "To borrow some charts and graphs from her",
+          },
+          {
+            label: "B",
+            text: "To ask her to explain some statistical procedures",
+          },
+          {
+            label: "C",
+            text: "To talk about a report he is writing",
+          },
+          {
+            label: "D",
+            text: "To discuss a grade he got on a paper",
+          },
+        ],
+        answer: "C",
+      },
+
+      {
+        n: 2,
+        type: "table",
+        prompt: "What information will the man include in his report?",
+        categories: ["Include in report", "Not include in report"],
+        items: [
+          {
+            text: "Climate charts",
+            answer: "Include in report",
+          },
+          {
+            text: "Interviews with meteorologists",
+            answer: "Not include in report",
+          },
+          {
+            text: "Journal notes",
+            answer: "Include in report",
+          },
+          {
+            text: "Statistical tests",
+            answer: "Include in report",
+          },
+        ],
+        answer: "ABAA",
+      },
+
+      {
+        n: 3,
+        type: "mc",
+        prompt:
+          "Why does the professor tell the man about the appointment at the doctor's office?",
+        options: [
+          {
+            label: "A",
+            text: "To demonstrate a way of remembering things",
+          },
+          {
+            label: "B",
+            text: "To explain why she needs to leave soon",
+          },
+          {
+            label: "C",
+            text: "To illustrate a point that appears in his report",
+          },
+          {
+            label: "D",
+            text: "To emphasize the importance of good health",
+          },
+        ],
+        answer: "C",
+      },
+
+      {
+        n: 4,
+        type: "mc",
+        prompt: "What does the professor offer to do for the man?",
+        options: [
+          {
+            label: "A",
+            text: "Help him collect more data in other areas of the state",
+          },
+          {
+            label: "B",
+            text: "Submit his research findings for publication",
+          },
+          {
+            label: "C",
+            text: "Give him the doctor's telephone number",
+          },
+          {
+            label: "D",
+            text: "Review the first version of his report",
+          },
+        ],
+        answer: "D",
+      },
+
+      {
+        n: 5,
+        type: "mc",
+        prompt: "Why does the professor say this?",
+        options: [
+          {
+            label: "A",
+            text: "To question the length of the paper",
+          },
+          {
+            label: "B",
+            text: "To offer encouragement",
+          },
+          {
+            label: "C",
+            text: "To dispute the data sources",
+          },
+          {
+            label: "D",
+            text: "To explain a theory",
+          },
+        ],
+        answer: "B",
+      },
+    ],
+  },
+  {
+    id: "motor-theory-of-thinking",
+    title: "Motor Theory of Thinking",
+    section: "Listening",
+    audioPath: "tpo2_listening_passage1_2.mp3",
+    questions: [
+      {
+        n: 1,
+        type: "mc",
+        prompt: "What is the professor mainly discussing?",
+        options: [
+          {
+            label: "A",
+            text: "The development of motor skills in children",
+          },
+          {
+            label: "B",
+            text: "How psychologists measure muscle activity in the throat",
+          },
+          {
+            label: "C",
+            text: "A theory about the relationship between muscle activity and thinking",
+          },
+          {
+            label: "D",
+            text: "A study on deaf people's problem-solving techniques",
+          },
+        ],
+        answer: "C",
+      },
+
+      {
+        n: 2,
+        type: "mc",
+        prompt: "Why does the professor say this?",
+        options: [
+          {
+            label: "A",
+            text: "To give an example of a laryngeal habit",
+          },
+          {
+            label: "B",
+            text: "To explain the meaning of a term",
+          },
+          {
+            label: "C",
+            text: "To explain why he is discussing laryngeal habits",
+          },
+          {
+            label: "D",
+            text: "To remind students of a point he had discussed previously",
+          },
+        ],
+        answer: "B",
+      },
+
+      {
+        n: 3,
+        type: "mc",
+        prompt:
+          "What does the professor say about people who use sign language?",
+        options: [
+          {
+            label: "A",
+            text: "It is not possible to study their thinking habits",
+          },
+          {
+            label: "B",
+            text: "They exhibit laryngeal habits",
+          },
+          {
+            label: "C",
+            text: "The muscles in their hands move when they solve problems",
+          },
+          {
+            label: "D",
+            text: "They do not exhibit ideomotor action",
+          },
+        ],
+        answer: "C",
+      },
+
+      {
+        n: 4,
+        type: "mc",
+        prompt:
+          "What point does the professor make when he refers to the university library?",
+        options: [
+          {
+            label: "A",
+            text: "A study on problem solving took place there",
+          },
+          {
+            label: "B",
+            text: "Students should go there to read more about behaviorism",
+          },
+          {
+            label: "C",
+            text: "Students' eyes will turn toward it if they think about it",
+          },
+          {
+            label: "D",
+            text: "He learned about William James's concept of thinking there",
+          },
+        ],
+        answer: "C",
+      },
+
+      {
+        n: 5,
+        type: "mc",
+        prompt:
+          "The professor describes a magic trick to the class. What does the magic trick demonstrate?",
+        options: [
+          {
+            label: "A",
+            text: "An action people make that they are not aware of",
+          },
+          {
+            label: "B",
+            text: "That behaviorists are not really scientists",
+          },
+          {
+            label: "C",
+            text: "How psychologists study children",
+          },
+          {
+            label: "D",
+            text: "A method for remembering locations",
+          },
+        ],
+        answer: "A",
+      },
+
+      {
+        n: 6,
+        type: "mc",
+        prompt:
+          "What is the professor's opinion of the motor theory of thinking?",
+        options: [
+          {
+            label: "A",
+            text: "Most of the evidence he has collected contradicts it",
+          },
+          {
+            label: "B",
+            text: "It explains adult behavior better than it explains child behavior",
+          },
+          {
+            label: "C",
+            text: "It is the most valid theory of thinking at the present time",
+          },
+          {
+            label: "D",
+            text: "It cannot be completely proved or disproved",
+          },
+        ],
+        answer: "D",
+      },
+    ],
+  },
+  {
+    id: "manila-hemp-fibers",
+    title: "Manila Hemp Fibers",
+    section: "Listening",
+    audioPath: "tpo2_listening_passage1_3.mp3",
+    questions: [
+      {
+        n: 1,
+        type: "mc",
+        prompt:
+          "What aspect of Manila hemp fibers does the professor mainly discuss in the lecture?",
+        options: [
+          {
+            label: "A",
+            text: "Similarities between cotton fibers and manila hemp fibers",
+          },
+          {
+            label: "B",
+            text: "Various types of manila hemp fibers",
+          },
+          {
+            label: "C",
+            text: "The economic importance of Manila hemp fibers",
+          },
+          {
+            label: "D",
+            text: "A use of Manila hemp fibers",
+          },
+        ],
+        answer: "D",
+      },
+
+      {
+        n: 2,
+        type: "mc",
+        prompt: "Why does the professor mention going away for the weekend?",
+        options: [
+          {
+            label: "A",
+            text: "To tell the class a joke",
+          },
+          {
+            label: "B",
+            text: "To apologize for not completing some work",
+          },
+          {
+            label: "C",
+            text: "To introduce the topic of the lecture",
+          },
+          {
+            label: "D",
+            text: "To encourage students to ask about her trip",
+          },
+        ],
+        answer: "B",
+      },
+
+      {
+        n: 3,
+        type: "mc",
+        prompt: 'What does the professor imply about the name "Manila hemp"?',
+        options: [
+          {
+            label: "A",
+            text: "It is a commercial brand name",
+          },
+          {
+            label: "B",
+            text: "Part of the name is inappropriate",
+          },
+          {
+            label: "C",
+            text: "The name has recently changed",
+          },
+          {
+            label: "D",
+            text: "The name was first used in the 1940s",
+          },
+        ],
+        answer: "B",
+      },
+
+      {
+        n: 4,
+        type: "mc",
+        prompt: "Why does the professor mention the Golden Gate Bridge?",
+        options: [
+          {
+            label: "A",
+            text: "To demonstrate a disadvantage of steel cables",
+          },
+          {
+            label: "B",
+            text: "To give an example of the creative use of color",
+          },
+          {
+            label: "C",
+            text: "To show that steel cables are able to resist salt water",
+          },
+          {
+            label: "D",
+            text: "To give an example of a use of Manila hemp",
+          },
+        ],
+        answer: "A",
+      },
+
+      {
+        n: 5,
+        type: "mc",
+        prompt:
+          "According to the professor, what was the main reason that many ships used Manila hemp ropes instead of steel cables?",
+        options: [
+          {
+            label: "A",
+            text: "Manila hemp was cheaper",
+          },
+          {
+            label: "B",
+            text: "Manila hemp was easier to produce",
+          },
+          {
+            label: "C",
+            text: "Manila hemp is more resistant to salt water",
+          },
+          {
+            label: "D",
+            text: "Manila hemp is lighter in weight",
+          },
+        ],
+        answer: "C",
+      },
+
+      {
+        n: 6,
+        type: "multi",
+        prompt:
+          "According to the lecture, what are TWO ways to increase the strength of rope made from Manila hemp fibers?",
+        options: [
+          {
+            label: "A",
+            text: "Coat the fibers with zinc-based paint",
+          },
+          {
+            label: "B",
+            text: "Combine the fibers into bundles",
+          },
+          {
+            label: "C",
+            text: "Soak bundles of fibers in salt water",
+          },
+          {
+            label: "D",
+            text: "Twist bundles of fibers",
+          },
+        ],
+        answer: "BD",
+        alts: ["DB"],
+      },
+    ],
+  },
+  {
+    id: "poetry-kitchen-club",
+    title: "Poetry Kitchen Club",
+    section: "Listening",
+    audioPath: "tpo2_listening_passage2_1.mp3",
+    questions: [
+      {
+        n: 1,
+        type: "multi",
+        prompt: "What are the students mainly discussing? Choose TWO answers.",
+        options: [
+          {
+            label: "A",
+            text: "Their courses for next semester",
+          },
+          {
+            label: "B",
+            text: "Their plans for the weekend",
+          },
+          {
+            label: "C",
+            text: "A poetry club",
+          },
+          {
+            label: "D",
+            text: "A class assignment",
+          },
+        ],
+        answer: "AC",
+        alts: ["CA"],
+      },
+
+      {
+        n: 2,
+        type: "mc",
+        prompt: "What does the man plan to do at the end of the month?",
+        options: [
+          {
+            label: "A",
+            text: "Register for classes",
+          },
+          {
+            label: "B",
+            text: "Finish writing his master's thesis",
+          },
+          {
+            label: "C",
+            text: "Leave his job at the coffee shop",
+          },
+          {
+            label: "D",
+            text: "Take a short vacation",
+          },
+        ],
+        answer: "C",
+      },
+
+      {
+        n: 3,
+        type: "mc",
+        prompt:
+          'Why does the man talk to the woman about the "Poetry Kitchen"?',
+        options: [
+          {
+            label: "A",
+            text: "To find out how often the club meets",
+          },
+          {
+            label: "B",
+            text: "To inform her that the date of the next meeting has changed",
+          },
+          {
+            label: "C",
+            text: "To complain that not enough people are reading their poems",
+          },
+          {
+            label: "D",
+            text: "To encourage her to attend",
+          },
+        ],
+        answer: "D",
+      },
+
+      {
+        n: 4,
+        type: "mc",
+        prompt:
+          "What is the woman's attitude toward participating in the poetry club?",
+        options: [
+          {
+            label: "A",
+            text: "She is looking forward to hearing her professor's poetry",
+          },
+          {
+            label: "B",
+            text: "She is interested in attending but she has no time",
+          },
+          {
+            label: "C",
+            text: "She thinks the poetry that is read there is not very good",
+          },
+          {
+            label: "D",
+            text: "She used to participate but did not enjoy it",
+          },
+        ],
+        answer: "B",
+      },
+
+      {
+        n: 5,
+        type: "mc",
+        prompt: "What will the students do in the summer?",
+        options: [
+          {
+            label: "A",
+            text: "They will both take courses",
+          },
+          {
+            label: "B",
+            text: "They will both have full-time jobs",
+          },
+          {
+            label: "C",
+            text: "They will travel to England together",
+          },
+          {
+            label: "D",
+            text: "They will teach a class together",
+          },
+        ],
+        answer: "A",
+      },
+    ],
+  },
+  {
+    id: "aristotle-happiness",
+    title: "Aristotle and Human Happiness",
+    section: "Listening",
+    audioPath: "tpo2_listening_passage2_2.mp3",
+    questions: [
+      {
+        n: 1,
+        type: "mc",
+        prompt: "What is the main purpose of the lecture?",
+        options: [
+          {
+            label: "A",
+            text: "To illustrate the importance of extrinsic values",
+          },
+          {
+            label: "B",
+            text: "To explain Aristotle's views about the importance of teaching",
+          },
+          {
+            label: "C",
+            text: "To explain why people change what they value",
+          },
+          {
+            label: "D",
+            text: "To discuss Aristotle's views about human happiness",
+          },
+        ],
+        answer: "D",
+      },
+
+      {
+        n: 2,
+        type: "table",
+        prompt:
+          "Indicate for each example what type of value it has for the professor.",
+        categories: [
+          "Only extrinsic value",
+          "Only intrinsic value",
+          "Both extrinsic and intrinsic value",
+        ],
+        items: [
+          {
+            text: "Teaching",
+            answer: "Both extrinsic and intrinsic value",
+          },
+          {
+            text: "Exercise",
+            answer: "Only intrinsic value",
+          },
+          {
+            text: "Health",
+            answer: "Only extrinsic value",
+          },
+          {
+            text: "Playing a musical instrument",
+            answer: "Both extrinsic and intrinsic value",
+          },
+        ],
+        answer: "BACB",
+      },
+
+      {
+        n: 3,
+        type: "mc",
+        prompt: "Why is happiness central to Aristotle's theory?",
+        options: [
+          {
+            label: "A",
+            text: "Because it is so difficult for people to attain",
+          },
+          {
+            label: "B",
+            text: "Because it is valued for its own sake by all people",
+          },
+          {
+            label: "C",
+            text: "Because it is a means to a productive life",
+          },
+          {
+            label: "D",
+            text: "Because most people agree about what happiness is",
+          },
+        ],
+        answer: "B",
+      },
+
+      {
+        n: 4,
+        type: "mc",
+        prompt:
+          "According to the professor, why does Aristotle think that fame cannot provide true happiness?",
+        options: [
+          {
+            label: "A",
+            text: "Fame cannot be obtained without help from other people",
+          },
+          {
+            label: "B",
+            text: "Fame cannot be obtained by all people",
+          },
+          {
+            label: "C",
+            text: "Fame does not last forever",
+          },
+          {
+            label: "D",
+            text: "People cannot share their fame with other people",
+          },
+        ],
+        answer: "A",
+      },
+
+      {
+        n: 5,
+        type: "mc",
+        prompt: "What does the professor mean when she says this?",
+        options: [
+          {
+            label: "A",
+            text: "Teaching is not a highly valued profession in society",
+          },
+          {
+            label: "B",
+            text: "She may change professions in order to earn more money",
+          },
+          {
+            label: "C",
+            text: "The reason she is a teacher has little to do with her salary",
+          },
+          {
+            label: "D",
+            text: "More people would become teachers if the salary were higher",
+          },
+        ],
+        answer: "C",
+      },
+    ],
+  },
+  {
+    id: "aristotle-happiness",
+    title: "Aristotle and Human Happiness",
+    section: "Listening",
+    audioPath: "tpo2_listening_passage2_3.mp3",
+    questions: [
+      {
+        n: 1,
+        type: "mc",
+        prompt: "What is the main purpose of the lecture?",
+        options: [
+          {
+            label: "A",
+            text: "To illustrate the importance of extrinsic values",
+          },
+          {
+            label: "B",
+            text: "To explain Aristotle's views about the importance of teaching",
+          },
+          {
+            label: "C",
+            text: "To explain why people change what they value",
+          },
+          {
+            label: "D",
+            text: "To discuss Aristotle's views about human happiness",
+          },
+        ],
+        answer: "D",
+      },
+
+      {
+        n: 2,
+        type: "table",
+        prompt:
+          "Indicate for each example what type of value it has for the professor.",
+        categories: [
+          "Only extrinsic value",
+          "Only intrinsic value",
+          "Both extrinsic and intrinsic value",
+        ],
+        items: [
+          {
+            text: "Teaching",
+            answer: "Both extrinsic and intrinsic value",
+          },
+          {
+            text: "Exercise",
+            answer: "Only intrinsic value",
+          },
+          {
+            text: "Health",
+            answer: "Only extrinsic value",
+          },
+          {
+            text: "Playing a musical instrument",
+            answer: "Both extrinsic and intrinsic value",
+          },
+        ],
+        answer: "BACB",
+      },
+
+      {
+        n: 3,
+        type: "mc",
+        prompt: "Why is happiness central to Aristotle's theory?",
+        options: [
+          {
+            label: "A",
+            text: "Because it is so difficult for people to attain",
+          },
+          {
+            label: "B",
+            text: "Because it is valued for its own sake by all people",
+          },
+          {
+            label: "C",
+            text: "Because it is a means to a productive life",
+          },
+          {
+            label: "D",
+            text: "Because most people agree about what happiness is",
+          },
+        ],
+        answer: "B",
+      },
+
+      {
+        n: 4,
+        type: "mc",
+        prompt:
+          "According to the professor, why does Aristotle think that fame cannot provide true happiness?",
+        options: [
+          {
+            label: "A",
+            text: "Fame cannot be obtained without help from other people",
+          },
+          {
+            label: "B",
+            text: "Fame cannot be obtained by all people",
+          },
+          {
+            label: "C",
+            text: "Fame does not last forever",
+          },
+          {
+            label: "D",
+            text: "People cannot share their fame with other people",
+          },
+        ],
+        answer: "A",
+      },
+
+      {
+        n: 5,
+        type: "mc",
+        prompt: "What does the professor mean when she says this?",
+        options: [
+          {
+            label: "A",
+            text: "Teaching is not a highly valued profession in society",
+          },
+          {
+            label: "B",
+            text: "She may change professions in order to earn more money",
+          },
+          {
+            label: "C",
+            text: "The reason she is a teacher has little to do with her salary",
+          },
+          {
+            label: "D",
+            text: "More people would become teachers if the salary were higher",
+          },
+        ],
+        answer: "C",
       },
     ],
   },
