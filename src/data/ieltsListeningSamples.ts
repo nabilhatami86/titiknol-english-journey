@@ -1,10 +1,9 @@
-// IELTS Listening Official Sample Tasks — source: IELTS.org 2023
-// Audio files: letakkan di /public/audio/listening-ielts/[audioPath]
-// Image files: letakkan di /public/image/listening/[imagePath]
+export type IeltsQType = "fill" | "mc" | "matching";
 
-export type IeltsQType = 'fill' | 'mc' | 'matching';
-
-export interface IeltsOption { label: string; text: string; }
+export interface IeltsOption {
+  label: string;
+  text: string;
+}
 
 export interface IeltsQuestion {
   n: number;
@@ -44,45 +43,95 @@ export interface IeltsSample {
 export const IELTS_SAMPLES: IeltsSample[] = [
   // ─── 1. Part 1 — Shipping Enquiry (Form Completion + Multiple Choice) ──────────
   {
-    id: 'p1-shipping',
-    title: 'Shipping Enquiry',
-    taskType: 'Form Completion + Multiple Choice',
+    id: "p1-shipping",
+    title: "Shipping Enquiry",
+    taskType: "Form Completion + Multiple Choice",
     part: 1,
     qRange: [1, 10],
-    imagePaths: ['part1.png'],
+    imagePaths: ["part1.png"],
     subsections: [
       {
-        audioPath: 'ielts-listening-sample-task-1-form-completion.mp3',
-        instruction: 'Complete the form below.',
-        wordLimit: 'NO MORE THAN THREE WORDS AND/OR A NUMBER',
+        audioPath: "ielts-listening-sample-task-1-form-completion.mp3",
+        instruction: "Complete the form below.",
+        wordLimit: "NO MORE THAN THREE WORDS AND/OR A NUMBER",
         questions: [
-          { n: 1, type: 'fill', prompt: 'Name: Jacob ___', answer: 'Mkere' },
-          { n: 2, type: 'fill', prompt: '___ College, Downlands Rd, Bristol', answer: 'Westall' },
-          { n: 3, type: 'fill', prompt: 'Postcode:', answer: 'BS8 9PU' },
-          { n: 4, type: 'fill', prompt: 'Width:', answer: '0.75m', alts: ['0.75 m','75cm','75 cm','three quarters of a metre','¾m','¾ m'] },
-          { n: 5, type: 'fill', prompt: 'Height:', answer: '0.5m', alts: ['0.5 m','50cm','50 cm','half a metre','½m','½ m'] },
-          { n: 6, type: 'fill', prompt: 'Contents (Q6 — besides clothes):', answer: 'books', alts: ['some books'] },
-          { n: 7, type: 'fill', prompt: 'Contents (Q7 — besides clothes):', answer: 'toys', alts: ['some toys'] },
-          { n: 8, type: 'fill', prompt: 'Total estimated value: £', answer: '1700', alts: ['1,700'] },
+          { n: 1, type: "fill", prompt: "Name: Jacob ___", answer: "Mkere" },
+          {
+            n: 2,
+            type: "fill",
+            prompt: "___ College, Downlands Rd, Bristol",
+            answer: "Westall",
+          },
+          { n: 3, type: "fill", prompt: "Postcode:", answer: "BS8 9PU" },
+          {
+            n: 4,
+            type: "fill",
+            prompt: "Width:",
+            answer: "0.75m",
+            alts: [
+              "0.75 m",
+              "75cm",
+              "75 cm",
+              "three quarters of a metre",
+              "¾m",
+              "¾ m",
+            ],
+          },
+          {
+            n: 5,
+            type: "fill",
+            prompt: "Height:",
+            answer: "0.5m",
+            alts: ["0.5 m", "50cm", "50 cm", "half a metre", "½m", "½ m"],
+          },
+          {
+            n: 6,
+            type: "fill",
+            prompt: "Contents (Q6 — besides clothes):",
+            answer: "books",
+            alts: ["some books"],
+          },
+          {
+            n: 7,
+            type: "fill",
+            prompt: "Contents (Q7 — besides clothes):",
+            answer: "toys",
+            alts: ["some toys"],
+          },
+          {
+            n: 8,
+            type: "fill",
+            prompt: "Total estimated value: £",
+            answer: "1700",
+            alts: ["1,700"],
+          },
         ],
       },
       {
-        audioPath: 'ielts-listening-sample-task-2-multiple-choice.mp3',
-        instruction: 'Choose the correct letter, A, B or C.',
+        audioPath: "ielts-listening-sample-task-2-multiple-choice.mp3",
+        instruction: "Choose the correct letter, A, B or C.",
         questions: [
           {
             n: 9,
-            type: 'mc',
-            prompt: 'Type of insurance chosen',
-            options: [{ label: 'A', text: 'Economy' }, { label: 'B', text: 'Standard' }, { label: 'C', text: 'Premium' }],
-            answer: 'C',
+            type: "mc",
+            prompt: "Type of insurance chosen",
+            options: [
+              { label: "A", text: "Economy" },
+              { label: "B", text: "Standard" },
+              { label: "C", text: "Premium" },
+            ],
+            answer: "C",
           },
           {
             n: 10,
-            type: 'mc',
-            prompt: 'Customer wants goods delivered to',
-            options: [{ label: 'A', text: 'port' }, { label: 'B', text: 'home' }, { label: 'C', text: 'depot' }],
-            answer: 'A',
+            type: "mc",
+            prompt: "Customer wants goods delivered to",
+            options: [
+              { label: "A", text: "port" },
+              { label: "B", text: "home" },
+              { label: "C", text: "depot" },
+            ],
+            answer: "A",
           },
         ],
       },
@@ -142,21 +191,62 @@ B: Can I pay by cheque?`,
 
   // ─── 3. Short-answer Questions ────────────────────────────────────────────────
   {
-    id: 'p2-short-answer',
-    title: 'Short-answer Questions',
-    taskType: 'Short-answer Questions',
+    id: "p2-short-answer",
+    title: "Short-answer Questions",
+    taskType: "Short-answer Questions",
     part: 2,
     qRange: [11, 16],
-    audioPath: 'ielts-listening-sample-task-3-short-answer-questions.mp3',
-    instruction: 'Answer the questions below.',
-    wordLimit: 'NO MORE THAN THREE WORDS AND/OR A NUMBER',
+    audioPath: "ielts-listening-sample-task-3-short-answer-questions.mp3",
+    instruction: "Answer the questions below.",
+    wordLimit: "NO MORE THAN THREE WORDS AND/OR A NUMBER",
     questions: [
-      { n: 11, type: 'fill', prompt: 'Factor 1 making social contact in a foreign country difficult:', answer: 'language' },
-      { n: 12, type: 'fill', prompt: 'Factor 2 making social contact in a foreign country difficult:', answer: 'customs' },
-      { n: 13, type: 'fill', prompt: 'Community group type (besides theatre):', answer: 'music', alts: ['music groups'] },
-      { n: 14, type: 'fill', prompt: 'Community group type:', answer: 'local history', alts: ['local history groups'] },
-      { n: 15, type: 'fill', prompt: 'Place 1 — information about community activities:', answer: 'library', alts: ['public library','the library','the public library','libraries'] },
-      { n: 16, type: 'fill', prompt: 'Place 2 — information about community activities:', answer: 'town hall', alts: ['the town hall'] },
+      {
+        n: 11,
+        type: "fill",
+        prompt:
+          "Factor 1 making social contact in a foreign country difficult:",
+        answer: "language",
+      },
+      {
+        n: 12,
+        type: "fill",
+        prompt:
+          "Factor 2 making social contact in a foreign country difficult:",
+        answer: "customs",
+      },
+      {
+        n: 13,
+        type: "fill",
+        prompt: "Community group type (besides theatre):",
+        answer: "music",
+        alts: ["music groups"],
+      },
+      {
+        n: 14,
+        type: "fill",
+        prompt: "Community group type:",
+        answer: "local history",
+        alts: ["local history groups"],
+      },
+      {
+        n: 15,
+        type: "fill",
+        prompt: "Place 1 — information about community activities:",
+        answer: "library",
+        alts: [
+          "public library",
+          "the library",
+          "the public library",
+          "libraries",
+        ],
+      },
+      {
+        n: 16,
+        type: "fill",
+        prompt: "Place 2 — information about community activities:",
+        answer: "town hall",
+        alts: ["the town hall"],
+      },
     ],
     tapescript: `You will hear an extract from a talk given to a group who are going to stay in the UK.
 
@@ -167,19 +257,43 @@ If you're going to work in the UK you will probably be living in private accommo
 
   // ─── 4. Sentence Completion ───────────────────────────────────────────────────
   {
-    id: 'p3-sentence-completion',
-    title: 'Sentence Completion',
-    taskType: 'Sentence Completion',
+    id: "p3-sentence-completion",
+    title: "Sentence Completion",
+    taskType: "Sentence Completion",
     part: 3,
     qRange: [27, 30],
-    audioPath: 'ielts-listening-sample-task-4-sentence-completion.mp3',
-    instruction: 'Complete the sentences below.',
-    wordLimit: 'NO MORE THAN TWO WORDS',
+    audioPath: "ielts-listening-sample-task-4-sentence-completion.mp3",
+    instruction: "Complete the sentences below.",
+    wordLimit: "NO MORE THAN TWO WORDS",
     questions: [
-      { n: 27, type: 'fill', prompt: 'Studying with the Open University demanded a great deal of ___', answer: 'motivation' },
-      { n: 28, type: 'fill', prompt: "Studying and working at the same time improved Rachel's ___ skills.", answer: 'time-management', alts: ['time management'] },
-      { n: 29, type: 'fill', prompt: 'It was helpful that the course was structured in ___', answer: 'modules' },
-      { n: 30, type: 'fill', prompt: 'She enjoyed meeting other students at ___', answer: 'summer schools', alts: ['summer school'] },
+      {
+        n: 27,
+        type: "fill",
+        prompt:
+          "Studying with the Open University demanded a great deal of ___",
+        answer: "motivation",
+      },
+      {
+        n: 28,
+        type: "fill",
+        prompt:
+          "Studying and working at the same time improved Rachel's ___ skills.",
+        answer: "time-management",
+        alts: ["time management"],
+      },
+      {
+        n: 29,
+        type: "fill",
+        prompt: "It was helpful that the course was structured in ___",
+        answer: "modules",
+      },
+      {
+        n: 30,
+        type: "fill",
+        prompt: "She enjoyed meeting other students at ___",
+        answer: "summer schools",
+        alts: ["summer school"],
+      },
     ],
     tapescript: `Two friends, Rachel and Paul, are discussing studying with the Open University.
 
@@ -198,24 +312,35 @@ Paul: Sounds good. So how do I apply?`,
 
   // ─── 5. Matching 1 — Course Options ──────────────────────────────────────────
   {
-    id: 'p3-matching-courses',
-    title: 'Matching — Course Options',
-    taskType: 'Matching',
+    id: "p3-matching-courses",
+    title: "Matching — Course Options",
+    taskType: "Matching",
     part: 3,
     qRange: [21, 25],
-    audioPath: 'ielts-listening-sample-task-5-matching.mp3',
-    instruction: 'What does Jack tell his tutor about each course option? Write A, B or C. You may use any letter more than once.',
+    audioPath: "ielts-listening-sample-task-5-matching.mp3",
+    instruction:
+      "What does Jack tell his tutor about each course option? Write A, B or C. You may use any letter more than once.",
     sharedOptions: [
-      { label: 'A', text: "He'll definitely do it." },
-      { label: 'B', text: 'He may or may not do it.' },
-      { label: 'C', text: "He won't do it." },
+      { label: "A", text: "He'll definitely do it." },
+      { label: "B", text: "He may or may not do it." },
+      { label: "C", text: "He won't do it." },
     ],
     questions: [
-      { n: 21, type: 'matching', prompt: 'Media Studies', answer: 'C' },
-      { n: 22, type: 'matching', prompt: 'Women and Power', answer: 'A' },
-      { n: 23, type: 'matching', prompt: 'Culture and Society', answer: 'B' },
-      { n: 24, type: 'matching', prompt: 'Identity and Popular Culture', answer: 'B' },
-      { n: 25, type: 'matching', prompt: 'Introduction to Cultural Theory', answer: 'C' },
+      { n: 21, type: "matching", prompt: "Media Studies", answer: "C" },
+      { n: 22, type: "matching", prompt: "Women and Power", answer: "A" },
+      { n: 23, type: "matching", prompt: "Culture and Society", answer: "B" },
+      {
+        n: 24,
+        type: "matching",
+        prompt: "Identity and Popular Culture",
+        answer: "B",
+      },
+      {
+        n: 25,
+        type: "matching",
+        prompt: "Introduction to Cultural Theory",
+        answer: "C",
+      },
     ],
     tapescript: `You will hear a Communication Studies student talking to his tutor about optional courses for the next semester.
 
@@ -241,25 +366,36 @@ Jack: Oh, I'll forget about that one, then.`,
 
   // ─── 6. Matching 2 — Hotels ───────────────────────────────────────────────────
   {
-    id: 'p1-matching-hotels',
-    title: 'Matching — Hotels',
-    taskType: 'Matching',
+    id: "p1-matching-hotels",
+    title: "Matching — Hotels",
+    taskType: "Matching",
     part: 1,
     qRange: [1, 4],
-    audioPath: 'ielts-listening-sample-task-6-matching.mp3',
-    instruction: 'Which hotel matches each description? Write the correct letter, A–E.',
+    audioPath: "ielts-listening-sample-task-6-matching.mp3",
+    instruction:
+      "Which hotel matches each description? Write the correct letter, A–E.",
     sharedOptions: [
-      { label: 'A', text: 'The Bridge Hotel' },
-      { label: 'B', text: 'Carlton House' },
-      { label: 'C', text: 'The Imperial' },
-      { label: 'D', text: 'The Majestic' },
-      { label: 'E', text: 'The Royal Oak' },
+      { label: "A", text: "The Bridge Hotel" },
+      { label: "B", text: "Carlton House" },
+      { label: "C", text: "The Imperial" },
+      { label: "D", text: "The Majestic" },
+      { label: "E", text: "The Royal Oak" },
     ],
     questions: [
-      { n: 1, type: 'matching', prompt: 'is in a rural area', answer: 'E' },
-      { n: 2, type: 'matching', prompt: 'only opened recently', answer: 'B' },
-      { n: 3, type: 'matching', prompt: 'offers facilities for business functions', answer: 'C' },
-      { n: 4, type: 'matching', prompt: 'has an indoor swimming pool', answer: 'A' },
+      { n: 1, type: "matching", prompt: "is in a rural area", answer: "E" },
+      { n: 2, type: "matching", prompt: "only opened recently", answer: "B" },
+      {
+        n: 3,
+        type: "matching",
+        prompt: "offers facilities for business functions",
+        answer: "C",
+      },
+      {
+        n: 4,
+        type: "matching",
+        prompt: "has an indoor swimming pool",
+        answer: "A",
+      },
     ],
     tapescript: `You will hear a man talking to an official at a tourist information office.
 
@@ -277,31 +413,32 @@ Man: I see. Well, I think I'll probably go for one of the city centre hotels.`,
 
   // ─── 7. Plan/Map/Diagram Labelling ───────────────────────────────────────────
   {
-    id: 'p2-diagram-labelling',
-    title: 'Plan / Map / Diagram Labelling',
-    taskType: 'Diagram Labelling',
+    id: "p2-diagram-labelling",
+    title: "Plan / Map / Diagram Labelling",
+    taskType: "Diagram Labelling",
     part: 2,
     qRange: [11, 15],
-    audioPath: 'ielts-listening-sample-task-7-plan-map-diagram-labelling.mp3',
-    imagePaths: ['task7.png'],
-    instruction: 'Label the plan below. Choose FIVE answers from the box (A–I) and write the correct letters next to questions 11–15.',
+    audioPath: "ielts-listening-sample-task-7-plan-map-diagram-labelling.mp3",
+    imagePaths: ["task7.png"],
+    instruction:
+      "Label the plan below. Choose FIVE answers from the box (A–I) and write the correct letters next to questions 11–15.",
     sharedOptions: [
-      { label: 'A', text: 'Art collection' },
-      { label: 'B', text: "Children's books" },
-      { label: 'C', text: 'Computers' },
-      { label: 'D', text: 'Local history collection' },
-      { label: 'E', text: 'Meeting room' },
-      { label: 'F', text: 'Multimedia' },
-      { label: 'G', text: 'Periodicals' },
-      { label: 'H', text: 'Reference books' },
-      { label: 'I', text: 'Tourist information' },
+      { label: "A", text: "Art collection" },
+      { label: "B", text: "Children's books" },
+      { label: "C", text: "Computers" },
+      { label: "D", text: "Local history collection" },
+      { label: "E", text: "Meeting room" },
+      { label: "F", text: "Multimedia" },
+      { label: "G", text: "Periodicals" },
+      { label: "H", text: "Reference books" },
+      { label: "I", text: "Tourist information" },
     ],
     questions: [
-      { n: 11, type: 'matching', prompt: 'Room 11', answer: 'H' },
-      { n: 12, type: 'matching', prompt: 'Room 12', answer: 'G' },
-      { n: 13, type: 'matching', prompt: 'Room 13', answer: 'D' },
-      { n: 14, type: 'matching', prompt: 'Room 14', answer: 'B' },
-      { n: 15, type: 'matching', prompt: 'Room 15', answer: 'F' },
+      { n: 11, type: "matching", prompt: "Room 11", answer: "H" },
+      { n: 12, type: "matching", prompt: "Room 12", answer: "G" },
+      { n: 13, type: "matching", prompt: "Room 13", answer: "D" },
+      { n: 14, type: "matching", prompt: "Room 14", answer: "B" },
+      { n: 15, type: "matching", prompt: "Room 15", answer: "F" },
     ],
     tapescript: `You will hear the librarian of a new town library talking to a group of people who are visiting the library.
 
@@ -310,26 +447,77 @@ OK everyone. So here we are at the entrance to the town library. My name is Ann,
 
   // ─── 8. Note Completion ───────────────────────────────────────────────────────
   {
-    id: 'p2-note-completion',
-    title: 'Note Completion',
-    taskType: 'Note Completion',
+    id: "p2-note-completion",
+    title: "Note Completion",
+    taskType: "Note Completion",
     part: 2,
-    imagePaths: ['task8-1.png', 'task8-2.png'],
+    imagePaths: ["task8-1.png", "task8-2.png"],
     qRange: [11, 20],
-    audioPath: 'ielts-listening-sample-task-8-note-completion.mp3',
-    instruction: 'Complete the notes below.',
-    wordLimit: 'NO MORE THAN THREE WORDS AND/OR A NUMBER',
+    audioPath: "ielts-listening-sample-task-8-note-completion.mp3",
+    instruction: "Complete the notes below.",
+    wordLimit: "NO MORE THAN THREE WORDS AND/OR A NUMBER",
     questions: [
-      { n: 11, type: 'fill', prompt: 'Well known for:', answer: 'classical music', alts: ['classical music concerts','classical concerts'] },
-      { n: 12, type: 'fill', prompt: 'Complex also includes (besides concert rooms etc.):', answer: 'bookshop', alts: ['a bookshop','book shop','a book shop','bookstore'] },
-      { n: 13, type: 'fill', prompt: '1960s — Centre was ___:', answer: 'planned' },
-      { n: 14, type: 'fill', prompt: 'Opened to public in:', answer: '1983', alts: ['the 1980s'] },
-      { n: 15, type: 'fill', prompt: 'Managed by:', answer: 'City Council', alts: ['the City Council'] },
-      { n: 16, type: 'fill', prompt: 'Open ___ days per year:', answer: '363' },
-      { n: 17, type: 'fill', prompt: '"The Magic Flute" venue:', answer: 'Garden Hall', alts: ['the Garden Hall'] },
-      { n: 18, type: 'fill', prompt: 'Canadian film title:', answer: 'Three Lives' },
-      { n: 19, type: 'fill', prompt: 'Canadian film ticket price:', answer: '£4.50', alts: ['4.50'] },
-      { n: 20, type: 'fill', prompt: 'Art exhibition title:', answer: 'Faces of China' },
+      {
+        n: 11,
+        type: "fill",
+        prompt: "Well known for:",
+        answer: "classical music",
+        alts: ["classical music concerts", "classical concerts"],
+      },
+      {
+        n: 12,
+        type: "fill",
+        prompt: "Complex also includes (besides concert rooms etc.):",
+        answer: "bookshop",
+        alts: ["a bookshop", "book shop", "a book shop", "bookstore"],
+      },
+      {
+        n: 13,
+        type: "fill",
+        prompt: "1960s — Centre was ___:",
+        answer: "planned",
+      },
+      {
+        n: 14,
+        type: "fill",
+        prompt: "Opened to public in:",
+        answer: "1983",
+        alts: ["the 1980s"],
+      },
+      {
+        n: 15,
+        type: "fill",
+        prompt: "Managed by:",
+        answer: "City Council",
+        alts: ["the City Council"],
+      },
+      { n: 16, type: "fill", prompt: "Open ___ days per year:", answer: "363" },
+      {
+        n: 17,
+        type: "fill",
+        prompt: '"The Magic Flute" venue:',
+        answer: "Garden Hall",
+        alts: ["the Garden Hall"],
+      },
+      {
+        n: 18,
+        type: "fill",
+        prompt: "Canadian film title:",
+        answer: "Three Lives",
+      },
+      {
+        n: 19,
+        type: "fill",
+        prompt: "Canadian film ticket price:",
+        answer: "£4.50",
+        alts: ["4.50"],
+      },
+      {
+        n: 20,
+        type: "fill",
+        prompt: "Art exhibition title:",
+        answer: "Faces of China",
+      },
     ],
     tapescript: `You will hear a man talking on the radio about a National Arts Centre.
 

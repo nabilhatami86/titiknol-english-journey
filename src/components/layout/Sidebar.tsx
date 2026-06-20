@@ -172,6 +172,11 @@ const navSections: { title: string; emoji?: string; items: NavItem[] }[] = [
             icon: Youtube,
           },
           {
+            href: "/practice/toefl-listening",
+            label: "TOEFL Listening",
+            icon: Youtube,
+          },
+          {
             href: "/practice/ielts-tests",
             label: "Mini-IELTS Tests",
             icon: BookMarked,
@@ -216,6 +221,7 @@ const GROUP_PATHS: Record<string, string[]> = {
   tn: ["/tn-basic-cource", "/tn-intermediate", "/tn-advance"],
   listening: [
     "/practice/ielts-listening",
+    "/practice/toefl-listening",
     "/practice/ielts-tests",
     "/practice/general-listening",
   ],
@@ -224,8 +230,8 @@ const GROUP_PATHS: Record<string, string[]> = {
 
 const BADGE_COLORS: Record<string, string> = {
   Beginner: "bg-primary/10 text-primary",
-  Mid:      "bg-primary/15 text-primary",
-  Adv:      "bg-primary/20 text-primary font-bold",
+  Mid: "bg-primary/15 text-primary",
+  Adv: "bg-primary/20 text-primary font-bold",
 };
 
 export function Sidebar() {
