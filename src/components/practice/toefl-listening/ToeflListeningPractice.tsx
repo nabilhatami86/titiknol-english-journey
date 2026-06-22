@@ -301,7 +301,7 @@ function QuestionCard({
             Categories
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-(--text-secondary)">
-            {question.categories.map((cat, i) => (
+            {(question.categories ?? []).map((cat, i) => (
               <div
                 key={String(i)}
                 className="rounded px-3 py-1 border border-(--border) bg-(--bg-card)"
@@ -343,7 +343,7 @@ function QuestionCard({
                     className="rounded-lg border border-(--border) bg-(--bg-card) px-2 py-1 text-sm text-(--text-secondary)"
                   >
                     <option value="">—</option>
-                    {question.categories.map((_, ci) => (
+                    {(question.categories ?? []).map((_, ci) => (
                       <option key={ci} value={String.fromCharCode(65 + ci)}>
                         {String.fromCharCode(65 + ci)}
                       </option>
@@ -352,11 +352,9 @@ function QuestionCard({
                   {submitted && (
                     <span className="text-xs text-(--text-muted)">
                       Correct: {question.answer[idx]} —{" "}
-                      {
-                        question.categories[
-                          (question.answer.charCodeAt(idx) ?? 65) - 65
-                        ]
-                      }
+                      {(question.categories ?? [])[
+                        (question.answer.charCodeAt(idx) ?? 65) - 65
+                      ] ?? ""}
                     </span>
                   )}
                 </div>
