@@ -80,6 +80,7 @@ const navSections: { title: string; emoji?: string; items: NavItem[] }[] = [
     title: "Learning",
     emoji: "",
     items: [
+      { href: "/casual-american", label: "Casual American", icon: Sparkles },
       { href: "/vocab", label: "All Vocabulary", icon: BookOpen },
       { href: "/verb", label: "Verb Library", icon: Layers },
       { href: "/grammar-guide", label: "Grammar Guide", icon: BookMarked },
