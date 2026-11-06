@@ -1,46 +1,26 @@
+import { OpenAI } from 'openai';
+
 /**
  * Shared AI call utility: GROQ_API_KEY → GROQ_API_KEY_BACKUP
  */
-
 async function groqRequest(
   prompt: string,
   maxTokens: number,
   apiKey: string,
 ): Promise<string> {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 15000);
+  const client = new OpenAI({
+    apiKey: apiKey,
+    baseURL: "https://api.groq.com/openai/v1",
+    timeout: 15000,
+  });
 
-  let res: Response;
-  try {
-    res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [{ role: "user", content: prompt }],
-        temperature: 0.3,
-        max_tokens: maxTokens,
-      }),
-      signal: controller.signal,
-    });
-  } catch (e) {
-    clearTimeout(timer);
-    if (e instanceof Error && e.name === "AbortError")
-      throw new Error("timeout");
-    throw e;
-  }
-  clearTimeout(timer);
+  const response = await (client as any).responses.create({
+    model: "openai/gpt-oss-20b",
+    input: prompt,
+    max_output_tokens: maxTokens,
+  });
 
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    if (res.status === 429) throw new Error("quota_exceeded");
-    throw new Error(err?.error?.message ?? `Groq error ${res.status}`);
-  }
-  const data = await res.json();
-  return data?.choices?.[0]?.message?.content ?? "";
+  return response?.output_text ?? "";
 }
 
 /**
@@ -62,9 +42,10 @@ export async function callAI(
   for (const key of keys) {
     try {
       return await groqRequest(prompt, maxTokens, key);
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : "";
-      if (msg !== "quota_exceeded" && msg !== "timeout") throw e;
+    } catch (e: any) {
+      const msg = e instanceof Error ? e.message : String(e);
+      const status = e?.status;
+      if (status !== 429 && msg !== "timeout" && !msg.includes("429") && !msg.includes("rate limit")) throw e;
       // quota_exceeded or timeout → try next key
     }
   }
